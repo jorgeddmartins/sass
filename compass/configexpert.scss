@@ -1,0 +1,367 @@
+
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.mainCompare {
+	position: relative;
+	width: $max-conv-width;
+	display: inline-block;
+
+	.row {
+		margin-right: $null-conv;
+		margin-left: $null-conv;
+	}
+
+	ul {
+		list-style: none;
+		margin: $null-conv;
+		padding: $null-conv;
+	}
+
+	header[role="banner"] {
+
+		background: #fafafa;
+		width: $max-conv-width;
+		padding: $small-fix-15;
+		padding-top: $null-conv;
+		padding-bottom: $null-conv;
+		border-bottom: $small-fix-10 solid #ebecee;
+		.box-logo {
+			width: 37%;
+			max-width: 391.8px;
+		    position: relative;
+		    padding: 15px;
+		    margin: auto;
+		}
+
+		.topInfo {
+			span {
+				display: block;
+				text-align: right;
+			}
+			.txtCall {
+				color: #00bd9c;
+			    font-size: $small-fix-20;
+			    font-weight: bold;
+			    padding-top: 1.5%;
+			}
+			.numCall {
+				color: #00826b;
+	    		font-size: $small-fix-30;
+	    		padding-right: $large-A00;
+			}
+		}
+	}
+
+	section[role="main"] {
+
+		padding-top: $small-fix-20;
+
+		.formGroups {
+			width: $max-conv-width;
+			display: inline-block;
+			.formFields {
+				background-color: #FAFAFA;
+			    padding: $small-fix-25;
+			    border: 1px solid #ebecee;
+			}
+			.PrivacyTxt {
+				margin-top: $small-fix-10;  
+				text-align: left;
+				padding-left: $small-fix-15;
+				padding-right: $small-fix-15; 
+				font-size: $small-fix-15 - 1; 
+				line-height: 1.5;
+				display: inline-block;
+				text-align: center;
+			}
+			.form-group {
+				margin-bottom: $small-fix-07;
+			    width: $max-conv-width;
+			    float: left;
+				label {
+					margin-top: 6px;
+				}
+				&:last-child {
+					margin-bottom: $null-conv;
+				}
+				label[for="dateBirth_"] {
+					width: 100%;
+				}
+				#title, 
+				#dateBirth_day, 
+				#dateBirth_year {
+					width: 94%;
+				}
+				#dateBirth_year {
+					float: right;
+				}
+
+			}
+			h3 {
+				font-size: $small-fix-25 - 1;
+			    font-weight: 100;
+			    color: #17a1ac;
+			    padding: $null-conv $null-conv $small-fix-25 $small-fix-13 + 1;
+			    margin: $null-conv;
+			}
+		}
+
+
+		.insideRight {
+			float: right;
+			width: 94%;
+			padding-top: $small-fix-15;
+			.topRight {
+				padding-bottom: $small-fix-10;
+			    border-bottom: solid 3px #999;
+			    display: inline-block;
+			    width: $max-conv-width;
+			}
+			p {
+				margin-top: $small-fix-15;
+				font-size: $small-fix-15 - 1;
+			    line-height: 1.5;
+			    padding: $null-conv $null-conv 20px $null-conv;
+			    margin-bottom: $null-conv;
+			}
+			ul {
+				width: $max-conv-width;
+				display: inline-block;
+				li {
+					padding: $small-fix-10 + 1;
+				    float: left;
+				    padding-left: $small-fix-50;
+				    font-size: $small-fix-15 + 1;
+				    background: url(/projects/httdocs/newsystem/views/themes/expertcompare/img/tick.svg) no-repeat;
+				    background-size: 29px;
+				    background-position: $small-fix-10;
+				}
+			}
+			h3 {
+				color: #17a1ac; 
+				font-weight: 600; 
+				margin: $small-fix-20 $null-conv $small-fix-20 $null-conv; 
+				font-size: $small-fix-20 - 2; 
+				line-height: 26px;
+			}
+			.logoWhite {
+				width: 55%;
+			}
+			.sideLogo {
+				width: $max-conv-width;
+			}
+		}
+
+		.padding-null {
+			padding: 0;
+		}
+		.col-right {
+			width: 47%;
+    		float: right;
+		}
+		.fg-bottom {
+			margin-bottom: 7px !important;
+		}
+
+		.marg-t {
+			margin-top: 20px;
+		}
+
+		.bt-compare {
+			width: 100%;
+			font-size: 20px;
+		    float: right;
+		    padding: 10px;
+		    padding-left: 30px;
+		    padding-right: 30px;
+		    background-color: #17a1ac;
+		    border-color: #17a1ac;
+		    font-weight: 700;
+		    @include border-radius(0);
+		    &:focus {
+		    	outline: 0;
+		    	box-shadow: none;
+		    }
+		}
+	}
+
+	footer[role="footconfig"] {
+
+		background: #fafafa;
+		width: $max-conv-width;
+		padding: $small-fix-15;
+		padding-top: $null-conv;
+		padding-bottom: 2%;
+		border-top: $small-fix-10 solid #ebecee;
+		margin-top: $small-fix-15 + 1;
+
+		.topFooter {
+		    background: url(/projects/httdocs/newsystem/views/themes/expertcompare/img/logo.svg) no-repeat;
+		    background-size: 19%;
+		    background-position: 0 23px;
+		    padding-top: $small-fix-15 + 2;
+		    padding-bottom: $small-fix-20;
+		    border-bottom: solid 1px #ebecee;
+		    display: inline-block;
+		    width: $max-conv-width;
+		    ul {
+		    	padding-left: 22%;
+			    width: $max-conv-width;
+			    display: inline-block;		    	
+			    li {
+		    		float: left;
+		    		padding-right: 4%;
+		    		&:last-child {
+		    			padding-right: $null-conv;
+		    		}
+		    		a {
+		    			text-decoration: none;
+    					color: #17a1ac;
+    					font-size: $small-fix-15 + 1;
+		    		}
+		    	}
+		    }
+		    p {
+		    	margin: $null-conv;
+			    font-size: $small-fix-10 + 2;
+			    color: #7a7a7a;
+			    padding-left: 22%;
+		    }
+		}
+		.infoFoot {
+			width: 80%;
+			padding-top: $small-fix-10 * 2;
+			margin: auto;
+			p {
+				color: #7a7a7a;
+			    font-size: $small-fix-10 + 2;
+			    line-height: 1.2;
+			    text-align: center;
+			    padding-bottom: $small-fix-10;
+			}
+		}
+	}
+}
+
+/* Bootstrap Forms */
+.has-feedback .form-control {
+	padding-right: 0;
+}
+
+.has-feedback label~.form-control-feedback {
+    top: 31px;
+}
+
+.form-control-feedback {
+	right: 10px;
+}
+
+
+// Thank You Page
+/* Thank You Page */
+.thankyoubase {
+
+	width: $max-conv-width; 
+	float: left;
+	padding: 3%;
+
+	p {
+		font-size: 16px;
+		color: #777;
+		font-weight: bold;
+	}
+	.searchingtxt {
+		color: #00826b;
+		text-transform: uppercase;
+	    font-size: 30px;
+	    font-weight: bold;
+	    display: block;
+	    margin-bottom: 35px;
+	}
+
+	.startOpt {
+		float: left;
+		width: 60%;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px dashed #00bd9c;
+		.infoption{
+			width: $max-conv-width; 
+			display: inline-block;
+			position: relative;
+			padding-top: 11.523%;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: $null-conv;
+			}
+			.infoption-in {
+				width: $max-conv-width;
+				height: $max-conv-height;
+				position: absolute;
+				top: $null-conv;
+				left: $null-conv;
+				.topCircle {
+					position: absolute;
+					width: 22px;
+					height: 22px;
+					top: -4px;
+					left: -4px;
+					background: #00bd9c;
+					@include border-radius($max-conv-width / 2);
+					.circle-num {
+						@include border-radius($max-conv-width / 2);
+						position: absolute;
+						width: 15px;
+						height: 15px;
+						left: 3px;
+						top: 3px;
+						strong {
+							color: $white;
+							font-size: 11px;
+							font-weight: bold;
+							position: absolute;
+							top: 0;
+							left: 4px;
+						}
+					}
+				}
+				.circle-right {
+					width: 11.523%;
+					height: $max-conv-height;
+					border: 3px solid #00bd9c;
+					position: absolute;
+					top: $null-conv;
+					left: $null-conv;
+					@include border-radius($max-conv-width / 2);
+					background: #eee;
+					overflow: hidden;
+				}
+				.right-info{
+					position: absolute;
+					height: $max-conv-width;
+					width: 85%;
+					right: $null-conv;
+					top: $null-conv;
+					padding: 6px;
+					p {
+						margin-bottom: 0;
+						font-size: 15px;
+					}
+				}
+			}
+		}
+		&:last-child {
+			padding-bottom: $null-conv;
+			border-bottom: $null-conv;
+			margin-bottom: $null-conv;
+		}
+	}
+
+}

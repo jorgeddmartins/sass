@@ -1,0 +1,571 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Login
+
+.loginView {
+	width: $max-conv-width;
+	height: $max-conv-height;
+    position: fixed;
+    top: $null-conv;
+    left: $null-conv;
+    .bottBackImage {
+    	position: absolute; 
+    	left: $null-conv; 
+    	bottom: $null-conv; 
+    	width: $max-conv-width; 
+    	max-height: $large-fix-400 + 1; // 401px
+    }
+    .loginReal {
+    	width: $max-conv-width;
+		height: $max-conv-height;
+	    position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    .leftHand, .rightHand {
+	    	height: $max-conv-height;
+	   		float: left;
+	   		padding: $small-fix-50;
+	    }
+	   .leftHand { 
+	   		width: $table-max-30; // 30%
+	   		position: relative;
+	   		z-index: $zindex-smll-02;
+	   		.smarterLogo {
+				position: relative;
+			    width: $max-conv-width;
+			    float: left;
+			    text-align: right;
+			    margin-top: $small-fix-50;
+			    @include transition(.7s);
+			    padding-right: $small-fix-90 + $small-fix-05; // 95px
+				img {
+				    width: $small-fix-80;
+				    position: relative;
+				    right: $small-fix-20 - 2;
+				    margin-bottom: $small-fix-05;
+				}
+				span {
+					color: $white; 
+					display: block; 
+					font-size: $small-fix-10 + 2;
+					font-weight: $double-zindex-smll-value;
+					letter-spacing: $small-fix-01;
+					text-transform: uppercase;
+				}
+			}
+			.gotop {
+				margin-top: $small-fix-80  + $small-fix-07; // 87px
+			}
+			h2 {
+				text-align: right;
+			    display: block;
+			    font-size: $small-fix-20 - 1;
+			    text-transform: uppercase;
+			    color: $white;
+			}
+	   	}
+
+	   .rightHand, 
+	   .centerWhite {
+	   		width: $table-max-70; // 70%
+	   		position: relative;
+	   		.loginSteps {
+	   			// width: 600px; // For Login with Steps
+	   			width: $large-fix-900; // 900px
+	   			min-height: $large-fix-250; // 250px
+	   			position: relative;
+	   			margin: $large-fix-200 + $small-fix-90 auto; // 290px
+	   			margin-bottom: $null-conv;
+			    overflow: hidden;
+			    margin-left: $small-fix-100 + $small-fix-70; // 170px
+			    .step-form-run {
+			    	position: absolute;
+				    // width: 1530000px; // For Login with Steps
+				    width: $large-fix-900;
+				    top: $null-conv;
+				    left: $null-conv;
+				    .goStep {
+				    	color: $white;
+				    	// width: 600px; // For Login with Steps
+				    	width: $large-fix-400 + $small-fix-50; // 450px
+					    float: left;
+					    padding: $small-fix-20;
+					    padding-right: $null-conv;
+					    padding-left: $null-conv;
+					    text-align: center;
+				    }
+			    }
+
+			    .goleft, 
+			    .loginSmarter, 
+			    .goright, 
+			    .forgotE, 
+			    .logResetPass {
+			    	@include loginBtn();
+	   				bottom: $small-fix-50;
+			    }
+			    .loginSmarter {
+			    	&:focus {
+			    		outline: none;
+			    	}
+			    }
+
+			    .goright {
+			    	left: $small-fix-100 + $small-fix-02;
+			    	margin-left: $null-conv;
+			    	background: $rgba-white-02;
+			    }
+			    .loginFields {
+			    	width: $large-fix-400;
+				    position: relative;
+				    margin: auto;
+				    label {
+				    	width: $max-conv-width;
+					    font-weight: $double-zindex-smll-value;
+					    letter-spacing: $small-fix-01;
+					    text-transform: uppercase;
+					    font-size: $small-fix-10 + 1;
+					    margin-bottom: $small-fix-10 + 1;
+					    line-height: $small-fix-20 + 1;
+				    }
+			    }
+			    @include inputField();
+			    input[type="text"].userEmail {
+			    	background: transparent; 
+			    	font-size: $small-fix-10 + 1; 
+			    	text-transform: uppercase; 
+			    	border: $null-conv; 
+			    	width: $max-conv-width; 
+			    	letter-spacing: $small-fix-01; 
+			    	text-align: center;
+			    	&:focus {
+			    		outline: $null-conv;
+			    	}
+			    }
+	   		}
+
+	   		.forget-pass {
+	   			position: relative; 
+	   			color: $white;
+	   			font-size: $small-fix-10 + 1;
+	   			font-weight: $double-zindex-smll-value;
+	   			letter-spacing: $small-fix-01;
+	   			text-transform: uppercase; 
+	   			top: $large-fix-200 + $small-fix-10; // 210px
+	   			left: $small-fix-100 + $small-fix-05 + 1; // 106px
+	   			text-decoration: none;
+	   			background: transparent;
+	   		}
+	   	}
+	   	.centerWhite {
+	   		width: $max-conv-width;
+	   		.loginSteps {
+	   			margin-left: auto;
+			    margin: $large-fix-200 auto $null-conv;
+			    background: $white;
+			    padding: $small-fix-20;
+			    border: $small-fix-01 solid #eee;
+			    border-bottom: $small-fix-02 solid #eee;
+			    border-radius: $small-fix-03 + 1;
+	   		}
+	   		.Stepsforgot {
+	   			background: transparent;
+			    border: $null-conv;
+			    border-bottom: $null-conv;
+	   		}
+	   		.goStep, 
+	   		.goright, 
+	   		.forget-pass {
+	   			color: #025a87 !important;
+	   		}
+	   		.forget-pass {
+	   			// left: 40%; //For Login with Steps
+    			// top: 191px; //For Login with Steps
+    			color: #025a87 !important;
+    			left: $large-fix-300;
+    			display: table;
+    			position: absolute;
+    			top: auto;
+    			bottom: $small-fix-13;
+	   		}
+	   		.smarterLogo {
+	   			width: $max-conv-width;
+			    height: $small-fix-100;
+			    float: left;
+			    text-align: center;
+			    margin-top: 124px; // 150px
+			    margin-bottom: $small-fix-10;
+			    img {
+			    	width: $small-fix-90;
+			    }
+	   		}
+	   		.forForgotPass {
+	   			background: transparent;
+	   			border: $null-conv;
+	   			border-bottom: $null-conv;
+	   		}
+	   		.topInfo {
+	   			width: $max-conv-width;
+			    float: left;
+			    text-align: center;
+			    font-size: $small-fix-15;
+			    position: relative;
+			    top: $small-fix-80 + $small-fix-07; // 87px
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    color: #025a87;
+	   		}
+	   	}
+	   	.forgetRun {
+	   		position: absolute;
+	   		top: $null-conv;
+	   		right: -2500px;
+	   	}
+    }
+}
+
+.goUp {
+	animation: goup .7s 1 forwards;
+	-webkit-animation: goup .7s 1 forwards;
+	-moz-animation: goup .7s 1 forwards;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+@keyframes goup { from{ top: $null-conv ;}; to { top: -1500px; } }
+@-webkit-keyframes goup { from{ top: $null-conv ;}; to { top: -1500px; } }
+@-moz-keyframes goup { from{ top: $null-conv ;}; to { top: -1500px; } }
+
+
+.moveLeft {
+	animation: moveLeft .7s 1 forwards;
+	-webkit-animation: moveLeft .7s 1 forwards;
+	-moz-animation: moveLeft .7s 1 forwards;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+@keyframes moveLeft { from{ left: $null-conv ;}; to { left: -2500px; } }
+@-webkit-keyframes moveLeft { from{ left: $null-conv ; }; to { left: -2500px; } }
+@-moz-keyframes moveLeft { from{ left: $null-conv ; }; to { left: -2500px; } }
+
+.moveRight {
+	animation: moveRight .7s 1 forwards;
+	-webkit-animation: moveRight .7s 1 forwards;
+	-moz-animation: moveRight .7s 1 forwards;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+@keyframes moveRight { from{ right: -2500px;}; to { right: 0; } }
+@-webkit-keyframes moveRight { from{ right: -2500px; }; to { right: 0; } }
+@-moz-keyframes moveRight { from{ right: -2500px; }; to { right: 0; } }
+
+
+.forgotPass-floor {
+ 	width: $large-fix-500 + $small-fix-100; // 600px
+ 	height: $small-fix-100 + $small-fix-80 + $small-fix-05; // 185px
+    position: relative;
+    margin-top: $small-fix-50;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    border-bottom: $small-fix-02 solid #eee;
+    margin: -20px auto $null-conv;
+    .loginFields {
+    	width: $large-fix-400; // 400px
+	    position: relative;
+	    margin: auto;
+	    label {
+	    	width: $max-conv-width;
+		    font-weight: $double-zindex-smll-value;
+		    letter-spacing: $small-fix-01;
+		    text-transform: uppercase;
+		    font-size: $small-fix-10 + 1;
+		    margin-bottom: $small-fix-10 + 1;
+		    line-height: $small-fix-20 + 1;
+		    color: $white;
+		    text-align: center;
+	    }
+    }
+    .resetPass, 
+    .gotoLog {
+    	@include loginBtn();
+	    bottom: $small-fix-20 + $small-fix-05; // 25px
+    }
+    .checkEmail-FP {
+    	width: $max-conv-width;
+    	float: left;
+    	text-align: center;
+    	text-transform: uppercase;
+    	font-size: $small-fix-13 + 1;
+	    font-weight: bold;
+	    color: #1fadcf;
+	    position: relative;
+	    top: $small-fix-40 + $small-fix-07; // 47px
+    }
+}
+
+@include remenberMe();
+
+// The Second Login
+
+.loginRealwhite {
+	width: $table-max-25; // 25%
+    position: absolute;
+    top: $table-max-17; // 17%
+    left: $null-conv;
+    right: $null-conv;
+    margin-right: auto;
+    margin-left: auto;
+    .goStep {
+    	margin-bottom: $small-fix-10;
+    	width: $max-conv-width;
+    	float: left;
+	    .loginFields {
+	    	width: $table-max-80; // 80%
+		    height: $small-fix-50;
+		    background: $white;
+		    margin: auto;
+		    border: $small-fix-01 solid #eee;
+		    .loginField {
+		    	width: $max-conv-width;
+			    height: $max-conv-height;
+			    border: $null-conv;
+			    background: transparent;
+			    padding: $small-fix-10 + 2;
+			    &:focus {
+			    	outline: $null-conv;
+			    }
+		    }
+	    }
+	    &:last-child {
+	    	margin-bottom: $null-conv;
+	    }
+	}
+}
+
+@include smarterAutofill();
+
+.errorMsg {
+	width: $max-conv-width;
+    float: left;
+    font-weight: bold;
+    margin-top: $small-fix-05;
+    font-size: $small-fix-10 + 2;
+    color: #b94a48;
+    text-align: center;
+    // display: none;
+}
+
+
+// Media
+
+@include slideTablets {
+	.loginView  {
+		.loginReal {
+			.centerWhite {
+				.topInfo {
+					top: $small-fix-30;
+				}
+				.smarterLogo {
+					margin-top: $small-fix-60 + $small-fix-02;
+				}
+			}
+		}
+	}	
+}
+
+@media (min-width: 569px) and (max-width: 740px) {
+
+	.loginView  {
+		.loginReal {
+			.centerWhite {
+				height: $large-fix-400; // 400px
+				overflow: auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 532px) and (max-width: 568px) {
+
+	.loginView  {
+		.loginReal {
+			.centerWhite {
+				height: $large-fix-300 + $small-fix-40; // 340px
+				overflow: auto;
+			}
+		}
+	}
+
+}
+
+@include slidephones {
+
+	.loginView  {
+		.loginReal {
+			.centerWhite {
+				.topInfo {
+					top: $small-fix-30 + $small-fix-05;
+				}
+				.loginSteps {
+					width: $large-fix-300 + $small-fix-40; // 340px
+					min-height: 286px;
+
+					.step-form-run {
+						width: $large-fix-300 + $small-fix-40;
+						.goStep {
+							// margin-left: -131px;
+							width: $large-fix-300 + $small-fix-40;	
+							padding-bottom: $null-conv;
+						}	
+					}
+					.goleft {
+						width: $large-fix-300;
+					}
+
+					.goright, .loginSmarter {
+						width: $max-conv-width / 2;
+					}
+					.goright {
+						left: $null-conv;
+					}
+					.loginSmarter {
+						right: $null-conv;
+						width: $table-max-90; // 90%
+					}
+
+					.loginFields {
+						width: $large-fix-300;
+						.loginField {
+							height: $small-fix-30;
+							font-size: $small-fix-15;
+						}
+						label {
+							margin-bottom: $null-conv;
+						}
+					}
+					.loginSmarter {
+						bottom: 42px;
+					}
+				}
+				.forget-pass {
+					left: 21px;
+    				top: 256px;
+				}
+				.smarterLogo {
+					margin-top: $small-fix-60 + $small-fix-03 + 1; // 116px
+				}
+			}
+		} 
+	}
+
+	.forgotPass-floor {
+		width: $large-fix-300 + $small-fix-40; // 34px
+		.resetPass, 
+		.loginFields {
+			width: $large-fix-300;
+		}
+	}
+	.remenber_me {
+		width: 127px;
+    	right: 11px;
+    	text-align: left;
+    	.remenber_me_word {
+    		margin-right: 0;
+    	}
+    	span.bigcheck {
+    		left: auto;
+    		right: 20px;
+    	}
+	}		
+
+}
+
+@include slidephonesSmall {
+
+	.loginView  {
+		.loginReal {
+			.centerWhite {
+				.topInfo {
+					top: $small-fix-30 !important;
+				}
+				.loginSteps {
+					width: $large-fix-300;
+
+					.step-form-run {
+						width: $large-fix-300;
+						.goStep {
+							// margin-left: -131px;
+							width: $large-fix-300;	
+							padding-bottom: $null-conv;
+						}	
+					}
+					.goleft {
+						width: $large-fix-250; // 250px
+					}
+					.goright, .loginSmarter {
+						width: $max-conv-width / 2;
+					}
+					.goright {
+						left: $null-conv;
+					}
+					.loginSmarter {
+						right: $null-conv;
+						width: $table-max-80 + $table-max-5 - 1; // 84%
+						bottom: $small-fix-40;
+					}
+					.loginFields {
+						width: $large-fix-300;
+						.loginField {
+							height: $small-fix-30;
+							font-size: $small-fix-13 + 1;
+						}
+						label {
+							margin-bottom: $null-conv;
+						}
+					}
+					.loginFields {
+						width: $large-fix-250; // 25px
+					}
+				}
+				.forget-pass {
+					left: $null-conv;
+					top: $large-fix-200; // 200px
+				}
+				.smarterLogo {
+					margin-top: $small-fix-50 + 2; // 64px
+				}
+				.topInfo {
+
+					top: $small-fix-40;
+				}
+			}
+		} 
+	}
+
+	.forgotPass-floor {
+		width: $large-fix-300;
+		.resetPass, 
+		.loginFields {
+
+			width: $large-fix-250; // 250px
+		}
+	}
+}
+
+.alert-danger, .alert-success {
+	position: absolute;
+    top: -69px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    z-index: 30000;
+}

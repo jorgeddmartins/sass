@@ -1,0 +1,115 @@
+
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+
+body {
+	background: #f9f9f9;
+	.width100 { // 1
+	    width: 99.2%; /* 99.65%*/
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 47% !important;
+	    }
+	}
+	.width50 { // 2
+	    width: 49.38%; /* 49.68% */
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 44% !important;
+	    }
+	}
+	.width33 { // 3
+	    width: 32.72%; /* 33%*/
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 40.5% !important;
+	    }
+	}
+	.width25 { // 4
+	    width: 24.42%; /* 24.65% */
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 39% !important;
+	    }
+	}
+	.width20 { // 5
+	    width: 19.43%; /* 19.65% */
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 37% !important;
+	    }
+	}
+	.width16 { // 6
+	    width: 16.1%; /* 16.3% */
+	    .fa-arrow-up, .fa-arrow-down {
+	    	left: 34% !important;
+	    }
+	}
+	.width13 { // 7 
+	   width: 13.72%; /* 13.95% */
+	}
+
+}
+
+
+
+
+
+
+
+.salessquare {
+	position: relative;
+	width: 16%;
+    height: 87px;
+	background: $white;
+	border: 1px solid #eee;
+	// margin: 5px;
+	margin: 0.27%;
+	float: left;
+	.square-left {
+		width: 30%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.square-right {
+		width: 70%;
+		height: 100%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 8px;
+		h4 {
+			margin-top: 0;
+			margin-bottom: 7px;
+			text-align: center;
+		}
+		.right-Info {
+			width: 100%;
+			display: inline-block;
+			span {
+				width: 50%;
+				float: left;
+				font-size: 14px;
+				text-align: center;
+			}
+			.right {
+				color: $black;
+			}
+			.left {
+				color: #777;
+			}
+		}
+	}
+	.square-red {
+		background: #cc0000;
+	}
+	.square-green {
+		background: #0A9A7A;
+	}
+}
+
+

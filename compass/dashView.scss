@@ -1,0 +1,87 @@
+
+// Header Info Elements 
+
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+#dashView {
+	position: relative;
+	float: $fltleft;
+	width: $max-conv-width;
+	max-height: 920px;
+}
+
+.hiddenflow {
+	overflow: hidden !important;
+}
+
+.dashboardView {
+	position: relative;
+	top: $null-conv;
+	left: $null-conv;
+	width: $max-conv-width;
+	height: $max-conv-height;
+	padding-top: $small-fix-15 + 1;
+	padding-bottom: $small-fix-15 + 1;
+	max-height: 970px;
+    overflow: hidden;
+	@include columnmedium();
+	.realtime-cover {
+	    position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    width: $max-conv-width;
+	    height: $max-conv-height;
+	    z-index: $zindex-smll-01;
+	    .realday-health, .bottom-title--health {
+	    	display: block;
+		    text-align: center;
+		    position: relative;
+		    text-transform: uppercase;
+		    font-weight: bold;
+	    }
+	    .realday-health {
+	    	top: 51%;
+    		color: rgba(96, 163, 208, 0.8);
+	    }
+	    .bottom-title--health {
+	    	top: 69%;
+		    color: $black;
+		    border-top: $small-fix-01 dashed rgba(96, 163, 208, 0.5);
+		    padding-top: $small-fix-07;
+		    width: 86%;
+		    margin: auto;
+	    }
+	}
+	.top-half {
+    	position: absolute;
+	    left: $null-conv;
+	    top: $null-conv;
+	    width: $max-conv-width;
+	    padding: $small-fix-15;
+	    .halfgauge-title {
+	    	display: inline-block;
+	    	font: $small-fix-13 + 0.5 "robotoregular";
+		    color: #333;
+		    font-weight: bold;
+		    border: $null-conv;
+		    background: transparent;
+	    }
+    }
+    .realtime-box {
+	    list-style: none;
+	    position: relative;
+	    top: -18px;
+	    .qx-realtime {
+	    	width: 440px;
+		    height: 347px;
+		    float: $fltleft;
+	    }
+	}
+}

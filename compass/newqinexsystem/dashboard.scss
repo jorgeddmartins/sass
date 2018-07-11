@@ -1,0 +1,139 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.dashView {
+	position: relative;
+    float: left;
+    width: $max-conv-width;
+    margin-bottom: $small-fix-20;
+}
+
+.column-medium {
+	position: relative;
+	height: 350px;
+	float: left;
+	margin: $small-fix-05 + 1;
+	background: $white;
+	border: $small-fix-01 solid #eee;
+	border-bottom: $small-fix-01 solid #ddd;
+	.columnTitle {
+		font-size:  $small-fix-10 + 1;
+    	font-weight: bold;
+		float: left;
+		text-transform: uppercase;
+		padding-left: $small-fix-10;
+	}
+	.topHeader {
+		position: relative;
+	    float: left;
+	    width: $max-conv-width;
+	    padding:  $small-fix-10 + 2;
+	    padding-top: $small-fix-17;
+	    padding-bottom: $small-fix-07;
+	}
+	.bottomBody {
+		position: relative;
+	    float: left;
+	    width: $max-conv-width;
+	    height: 88%;
+	    .bottomBody-in {
+	    	border-top: $small-fix-01 dashed rgba(72, 176, 247, 0.2);
+		    position: absolute;
+		    width: 93%;
+		    left: $null-conv;
+		    right: $null-conv;
+		    margin-left: auto;
+		    margin-right: auto;
+		    height: 98%;
+		    padding-top: $small-fix-20 + 1;
+		    bottom: $null-conv;
+		    .half-gauge {
+		    	width: $max-conv-width;
+		    	position: relative;
+		    	height: 75%;
+		    	background: rgba(72, 176, 247, 0.03);
+		    	float: left;
+		    	overflow: hidden;
+		    	.half-gauge-box {
+		    		width: $max-conv-width;
+		    		position: absolute;
+		    		top: $null-conv;
+		    		left: $null-conv;
+		    		padding-top: $max-conv-top;		    	
+		    	}
+		    	.half-chart, .half-chart-g {
+		    		width: $max-conv-width;
+		    		height: $max-conv-height;
+		    		position: absolute;
+		    		top: $small-fix-15;
+		    		left: $null-conv;
+		    		@include border-radius($max-conv-width / 2);
+		    	}
+		    	.half-chart {
+		    		border: $small-fix-70 solid rgba(72, 176, 247, 0.07);
+		    	}
+		    	.half-chart-g {
+		    		border: $small-fix-70 solid transparent;
+		    		border-left: $small-fix-70 solid rgba(83, 169, 63, 0.8);
+		    		border-bottom: $small-fix-70 solid rgba(83, 169, 63, 0.8);
+		    		@include transform($rotate-minus-45);
+		    	}
+		    	.half-chart-health {
+		    		@include animation(half-chart-health 2.8s 1 forwards);
+		    	}
+		    	.half-chart-life {
+		    		@include animation(half-chart-life 2.8s 1 forwards);
+		    	}
+		    }
+	    }
+	}
+}
+
+
+.subColumn-small {
+	position: relative;
+	width: 48%;
+	height: 170px;
+	float: left;
+	margin: $small-fix-03 + 1 + 0.4;
+	background: $white;
+	border: $small-fix-01 solid #eee;
+	border-bottom: $small-fix-01 solid #ddd;
+	.topHeader {
+		position: relative;
+	    float: left;
+	    width: $max-conv-width;
+	    padding: $small-fix-10 + 2;
+	}
+	.columnTitle {
+		font-size: $small-fix-10;
+    	font-weight: bold;
+		float: left;
+		width: $max-conv-width;
+		text-align: center;
+		padding-left: $null-conv;
+	}
+	.bottomBody {
+	    height: 77%;
+	}
+}
+
+.subColumnMargin {
+	margin-top: $null-conv;
+}
+
+.columnMediumTrans {
+	background: transparent;
+	border: $null-conv;
+}
+
+.width24 {
+	width: 24.29%;
+	max-width: 444.5px;
+}
+
+.width32 {
+	width: 32.595%;
+	max-width: 596.48px;
+} 

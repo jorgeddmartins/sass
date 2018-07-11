@@ -1,0 +1,103 @@
+/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
+	float: $fltleft;
+    background: $white;
+    border: $small-fix-01 solid $gray-smooth;
+    border-bottom: $small-fix-01 solid $gray-darkwater;
+    @include border-radius($small-fix-03);
+    margin: $marg;
+    position: $posi;
+}*/
+#leftNav-SubAccordion {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 100px; }
+
+.leftNavAccordion {
+  width: 100%;
+  max-width: 280px;
+  background: transparent;
+  display: inline-block; }
+  .leftNavAccordion .linkUrl {
+    cursor: pointer;
+    display: block;
+    padding: 7px 0 7px 0;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    text-decoration: none; }
+  .leftNavAccordion li:last-child .linkUrl {
+    border-bottom: 0; }
+  .leftNavAccordion li i.fa-chevron-down {
+    font-size: 11px;
+    top: 19px;
+    right: 58px; }
+  .leftNavAccordion li i.fa-angle-down {
+    font-size: 16px;
+    font-weight: bold;
+    top: 17px;
+    right: 62px; }
+  .leftNavAccordion li i.fa-chevron-down,
+  .leftNavAccordion li i.fa-angle-down {
+    position: absolute;
+    left: auto;
+    color: #999;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease; }
+  .leftNavAccordion li.open i.fa-chevron-down {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+  .leftNavAccordion li.Subopen i.fa-angle-down {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+  .leftNavAccordion li.default .subMenu {
+    display: block; }
+
+.subMenu,
+.SubsubMenu {
+  display: none;
+  background: #40444E;
+  font-size: 14px; }
+
+.subMenu li {
+  position: relative; }
+.subMenu a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease; }
+
+main .left-nav .new-right-ico-floor i {
+  top: 7px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+main .left-nav .new-right-ico-floor .fd {
+  top: 3px; }
+main .left-nav .new-right-ico-floor {
+  font-size: 19px;
+  color: #fff; }
+main .left-nav .new-drop-sub {
+  background: #53565F; }
+
+.navigation .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: rgba(11, 173, 134, 0.5);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)"; }
+
+/*# sourceMappingURL=accordionnav.css.map */

@@ -1,0 +1,31 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Users
+
+.users {
+	float: left;
+	width: $max-conv-width;
+	text-align: center;
+	i {
+		font-size: 69px;
+	    color: #cc0000;
+	    margin-bottom: 30px;
+	}
+	.not_Authoried {
+		margin-top: 8%;
+		p {
+			text-align: center;
+			text-transform: uppercase;
+    		font-size: 40px;
+    		letter-spacing: -2px;
+    		margin: $null-conv;
+		}
+	}
+}
+
+
+

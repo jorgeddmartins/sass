@@ -1,0 +1,633 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $small-fix-13 + 1;
+}
+
+.YourCarLow {
+    width: $max-conv-width;
+    header {
+        width: $max-conv-width;
+        padding: $small-fix-10 + 2;
+        padding-bottom: $small-fix-13 + 1;
+        // background: #003664;
+        background: $white;
+        .logoBox {
+            max-width: 270px;
+            float: left;
+            img {
+                width: $max-conv-width;
+                height: $small-fix-80;
+            }
+        }
+        .headerTxt {
+            float: right;
+            color: $white;
+            font-size: $small-fix-30;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: bold;
+            top: $small-fix-05;
+        }
+    }
+    .heroStage {
+        width: $max-conv-width;
+        float: left;
+        position: relative;
+        // border-bottom: $small-fix-17 solid $white;
+        // overflow: hidden;
+        img {
+            width: $max-conv-width;
+        }
+        .heroFloor {
+            position: absolute;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            top: $null-conv;
+            left: $null-conv;
+            .QualifiedBlk {
+                width: $max-conv-width / 2 + 4; // 54%
+                height: 400px;
+                background: $white;
+                position: absolute;
+                // left: -30px;
+                // bottom: -216px;
+                left: -63px;
+                bottom: -270px;
+                @include transform(-13deg);
+                padding: $small-fix-20;
+                .QualifiedBlkInfo {
+                    // width: 43%;
+                    // width: 434px;
+                    float: right;
+                    position: relative;
+                    height: 70%;
+                    .QualifiedPercent {
+                        color: #ffad00;
+                        float: right;
+                        font-size: $small-fix-100;
+                        font-weight: bolder;
+                        position: relative;
+                        top: -32px;
+                        letter-spacing: -8px;
+                        margin-right: $small-fix-15;
+                        hr {
+                            margin: $null-conv;
+                            border-top: $small-fix-05 + 1 solid #003664;
+                            position: relative;
+                            top: -27px;
+                        }
+                    }
+                    .QualifiedPercentTxt {
+                        float: right;
+                        text-transform: uppercase;
+                        font-size: $small-fix-20 + 3;
+                        color: #003664;
+                        font-weight: bold;
+                        width: 27%;
+                        line-height: $small-fix-30 - 1;
+                    }
+                }
+            }
+            .downQualifiedBlk {
+                width: $max-conv-width;
+                float: left;
+                position: relative;
+                top: -51px;
+                .getApp {
+                    float: right;
+                    text-transform: uppercase;
+                    font-size: $small-fix-20 - 1;
+                    color: #003664;
+                    font-weight: bold;
+                    letter-spacing: -0.5px;
+                }
+                .getAppNum {
+                    float: right;
+                    font-size: $small-fix-65;
+                    color: #ffad00;
+                    font-weight: bold;
+                    position: relative;
+                    letter-spacing: -5px;
+                    top: -17px;
+                    margin-left: $small-fix-03 + 1;
+                }
+                .getAppSecTxt {
+                    float: right;
+                    font-size: $small-fix-30;
+                    color: #ffad00;
+                    font-weight: bold;
+                    position: relative;
+                    letter-spacing: -1px;
+                    margin-left: $small-fix-07 + 1;
+                    text-transform: uppercase;
+                    top: -3px;
+                    hr {
+                        margin: $null-conv;
+                        border-top: $small-fix-05 + 1 solid #003664;
+                        position: relative;
+                        top: -5px;
+                    }
+                }
+            }
+            .formStage {
+                margin-top: $small-fix-15;
+                width: 43%;
+                max-width: 485px;
+                position: relative;
+                float: right;
+                .formStageHeader {
+                    width: 92%;
+                    position: relative;
+                    margin: auto;
+                    z-index: 1;
+                    top: -80px;
+                    .topShape {
+                        width: $max-conv-width;
+                        position: relative;
+                        float: left;
+                        background: #ffad00;
+                        height: 104px;
+                        text-align: center;
+                    }
+                    .downShape {
+                        width: $null-conv;
+                        height: $null-conv;
+                        border-top: 223px solid transparent;
+                        border-right: $small-fix-60 solid #ffad00;
+                        border-bottom: 223px solid transparent;
+                        float: left;
+                        @include transform(-90deg);
+                        position: relative;
+                        top: -193px;
+                        left: 191px;
+                    }
+                    .formStageHeaderPlat {
+                        width: $max-conv-width;
+                        top: $null-conv;
+                        left: $null-conv;
+                        padding: $small-fix-15;
+                        position: absolute;
+                        z-index: 2;
+                        text-align: center;
+                        background: #ffad00;
+                        h2 {
+                            text-transform: uppercase;
+                            color: #003662;
+                            font-weight: bold;
+                            font-size: $small-fix-30 + $small-fix-07;
+                            margin: $null-conv;
+                        }
+                        span {
+                            color: $white;
+                            text-transform: uppercase;
+                            font-size: $small-fix-15;
+                            line-height: $small-fix-25;
+                            // width: 53%;
+                            width: $max-conv-width;
+                            display: table;
+                            margin: auto;
+                        }
+                        strong {
+                            color: #223f5d;
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 99%;
+                            left: $null-conv;
+                            right: $null-conv;
+                            padding-bottom: 4%;
+                            background: inherit;
+                            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+                            -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+                        } 
+                    }       
+                }
+
+                .formShapeBody {
+                    width: $max-conv-width;
+                    padding: $small-fix-40;
+                    padding-top: $small-fix-45 + 1;
+                    padding-bottom: $small-fix-100;
+                    background: #003664;
+                    position: absolute;
+                    // top: 94px;
+                    top: $null-conv;
+                    left: $null-conv;
+
+                    // Form
+                    /* Start Form */
+
+                    .YourCarLowStepForm { 
+                        label {
+                            width: $max-conv-width;
+                            display: inline-block;
+                            color: $white;
+                            -webkit-font-smoothing: antialiased;
+                            text-shadow: rgba(0,0,0,.01) 0 0 1px;
+                            font-weight: 100;
+                            font-size: 12px;
+                        }
+                        .steps {
+                            display: none;
+                        }
+                        h2 {
+                            margin: $null-conv;
+                        }
+                        .heading {
+                            width: $max-conv-width;
+                            float: left;
+                            text-align: center;
+                            color: $white;
+                            text-transform: uppercase;
+                            font-size: $small-fix-17 + 1;
+                            letter-spacing: -1px;
+                            margin-bottom: $small-fix-13 + 1;
+                        }
+                        .form-control {
+                            position: relative;
+                            margin: auto;
+                            height: $small-fix-45 + 1;
+                            border: $null-conv;
+                            &:focus {
+                                outline: $null-conv;
+                            }
+                        }
+                        .form-control-feedback {
+                            top: $small-fix-35 + 1;
+                            right: $small-fix-10;
+                        }
+
+                        .actions {
+                            ul {
+                                list-style: none;
+                                li {
+                                    width: 48%;
+                                    text-align: center;
+                                    &:nth-child(1) {
+                                        float: left;
+                                        opacity: 0.5;
+                                        &:hover {
+                                            opacity: 1;
+                                        }
+                                    }
+                                    &:nth-child(2), 
+                                    &:nth-child(3) {
+                                        float: right;
+                                    }
+
+                                    &:nth-child(1) {
+                                        a {
+                                            &:before {
+                                                font-family: FontAwesome;
+                                                content: "\f053 ";
+                                                margin-right: 5px;  
+                                            }
+                                        }
+                                    }
+
+                                    &:nth-child(2) {
+                                        a {
+                                            &:after {
+                                                font-family: FontAwesome;
+                                                content: " \f054";  
+                                            }
+                                        }
+                                    }
+                                    a {
+                                        background: #ffad00;
+                                        color: $white;
+                                        text-transform: uppercase;
+                                        padding: $small-fix-10 + 2;
+                                        @include border-radius($small-fix-03 + 1);
+                                        font-size: $small-fix-20 + $small-fix-07;
+                                        font-weight: bold;
+                                        text-decoration: none;
+                                        width: $max-conv-width;
+                                        float: left;
+                                    }
+                                }
+                                .btnWith100 {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                    }
+
+                    /* End Form */
+
+
+                    .safeImg {
+                        position: absolute;
+                        width: 43%;
+                        left: $null-conv;
+                        bottom: -48px;
+                    }
+                    .audiImg {
+                        position: absolute;
+                        width: 65.5%;
+                        right: $null-conv;
+                        bottom: -75px;
+                    }
+                    p {
+                        text-align: center;
+                        color: $white;
+                        margin: $null-conv;
+                        font-size: $small-fix-10;
+                        margin-top: $small-fix-15;
+                    }
+                }
+            }
+        }
+    }
+
+    .underHeroStrip {
+        width: $max-conv-width;
+        background: #003664;
+        color: $white;
+        padding: $small-fix-20 $null-conv;
+        border-top: $small-fix-07 solid #ffad00;
+        float: left;
+        position: relative;
+        h3 {
+            letter-spacing: -1.5px;
+        }
+    }
+
+    .LogoStrip {
+        width: 100%;
+        background: $white;
+        position: relative;
+        float: left;
+        padding: 60px 0;
+        h2 {
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: #003664;
+        }
+        h3 {
+            line-height: 34px;
+        }
+    }
+
+    .testemStage {
+        width: $max-conv-width;
+        float: left;
+        background: #e6e6e6;
+        padding: $null-conv;
+        padding-top: $small-fix-50;
+        padding-bottom: 140px;
+        position: relative;
+        .testemBlk {
+            width: 33.3%;
+            position: relative;
+            float: left;
+            .testmenBullet {
+                width: 160px;
+                height: 160px;
+                background: $white;
+                @include border-radius($max-conv-width / 2);
+                position: relative;
+                margin: auto;
+                margin-bottom: $small-fix-20;                
+                display: table;
+                overflow: hidden;
+                border: 4px solid #ffad00;
+                i {
+                    position: absolute;
+                    left: $null-conv;
+                    top: $small-fix-55;
+                    width: $max-conv-width;
+                    text-align: center;
+                    font-size: $small-fix-40;
+                    color: #033663;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .testmenBulletTitle {
+                width: $max-conv-width;
+                float: left;
+                text-align: center;
+                text-transform: uppercase;
+                color: #033663;
+                font-size: $small-fix-20;
+                font-weight: bold;
+                margin-bottom: $small-fix-15;
+            }
+            .testmenBulletTxt {
+                width: 90%;
+                text-align: center;
+                color: #033663;
+                font-size: $small-fix-15;
+                margin: auto;
+                display: table;
+            }
+            .testemenSign {
+                width: $max-conv-width;
+                float: left;
+                text-align: center;
+                font-size: $small-fix-10 + 1;
+                color: #033663;
+                margin-top: $small-fix-20 + 2;
+            } 
+        }
+    }
+
+    .footerStage {
+        width: $max-conv-width;
+        float: left;
+        background: #003664;
+        border-top: $small-fix-07 solid #ffad00;
+        padding: $small-fix-50;
+        position: relative;
+        color: $white;
+        text-align: center;
+        .container {
+            margin-top: $small-fix-50 + $small-fix-07;
+        }
+        .footTopBullet {
+            width: 160px;
+            height: 160px;
+            @include border-radius($max-conv-width / 2);
+            background: #003664;
+            border: $small-fix-07 solid #ffad00;
+            position: absolute;
+            left: $null-conv;
+            right: $null-conv;
+            margin-left: auto;
+            margin-right: auto;
+            top: -87px;
+            display: none;
+        }
+    }
+}
+
+
+
+.sliderBox {
+    position: relative;
+    float: left;
+    margin-bottom: $small-fix-20 + $small-fix-03; // 23px
+    padding-top: $small-fix-65 - 1;
+    width: $max-conv-width;
+    .sliderBox-floor {
+        position: relative;
+        width: 85%;
+        margin: auto;
+    }
+}
+
+.slider{
+    &.slider-horizontal {
+        top: $null-conv;
+        width: $max-conv-width; // 400px
+        .slider-track-high {
+            // border: $small-fix-01 solid #eee;
+            @include border-radius($small-fix-50);
+            background: $white;
+        }
+        .slider-handle {
+            top: -15px;
+            width: $small-fix-50;
+            height: $small-fix-50;
+            background: $white;
+            background-image: none;
+            @include box-shadow($null-conv $null-conv $small-fix-07 + 1 rgba(0, 0, 0, 0.3));
+            border: $small-fix-01 solid #ccc;
+            cursor: pointer;
+            &:before {
+                content: '\f0da';
+                position: absolute;
+                font-family: 'FontAwesome';
+                color: #ffad00;
+                font-size: $small-fix-35;
+                top: $null-conv;
+                left: $small-fix-20;
+            }
+        }
+
+        .slider-track {
+            height: $small-fix-15 + 1;
+            width: $max-conv-width;
+            margin-top: -4px;
+            top: 29%;
+            left: $null-conv;
+            @include border-radius($small-fix-50);
+            box-shadow: none;
+        }
+    }  
+}
+
+#ex1Slider {
+    .slider-selection {
+        // background: #6394b8;
+        background: $white;
+        border-radius: $small-fix-50;
+        box-shadow: none;
+    }  
+}
+
+.slider {
+    .tooltip.top {
+        opacity: 1;
+        width: $max-conv-width;
+        position: static;
+        left: $null-conv !important;
+        margin-left: $null-conv !important;
+        margin-top: -69px;
+    }
+
+    .tooltip-inner {
+        width: 190px;
+        // height: $small-fix-45;
+        // color: #6394b8;
+        color: $white;
+        line-height: $small-fix-45;
+        text-align: center;
+        @include border-radius($small-fix-07);
+        background: transparent;
+        // border: $small-fix-01 solid #e0e1e2;
+        border: $null-conv;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: $small-fix-30 + $small-fix-02;
+        font-weight: 500;
+        padding: $null-conv $small-fix-20 $null-conv $small-fix-20;
+        margin-bottom: $small-fix-50 + 2;
+        cursor: default;
+        position: relative;
+        margin: auto;
+        margin-left: 87px;
+    }
+
+    .slideTemp {
+        background: #003664;
+        position: relative;
+        // left: 142px;
+        color: $white;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 33px;
+        padding-right: $null-conv;
+    }
+
+    .leftBefore {
+        left: 118px; // 109px
+        top: -46px;
+    }
+
+    .leftAfter {
+        left: 109px; // 99px
+        top: -47px;
+    }
+
+    .leftAfter100 {
+        left: 100px;
+        top: -47px;
+    }
+
+    .fakeThis {
+        position: absolute;
+        width: $max-conv-width;
+        height: 46px;
+        background: transparent;
+        top: -59px;
+        left: $null-conv;
+        z-index: 20;
+    }
+}
+
+.tooltip.top {
+    .tooltip-arrow, 
+    .tooltip-min, 
+    .tooltip-max {
+        display: none;
+    }  
+}
+
+
+.sliderBox-floor {
+    .slider-horizontal {
+        &:first-child {
+            // display: none;
+        }
+    }
+}
+
+.actions {
+    margin-top: 18px;
+}
+
+.form-group {
+    margin: 0;
+}

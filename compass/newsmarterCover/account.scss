@@ -1,0 +1,355 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Account
+
+dd {
+    display: inline;
+}
+
+.manage_Account {
+	width: 40%;
+	max-width: 752px;
+	padding: $small-fix-20;
+    margin: 85px auto 0;
+    text-align: center;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    border-bottom: $small-fix-02 solid #eee;
+    .change_Pass, .change_PassForget {
+    	text-decoration: none;
+    	padding: $small-fix-13;
+    	background: #f9f9f9;
+    	border: $small-fix-01 solid #eee;
+    	color: #333;
+    	font-size: $small-fix-13 + 1;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    	padding-right: 67px;
+    	padding-left: $small-fix-20;
+    	position: relative;
+    	@include border-radius($small-fix-50);
+    	@include transition(.4s);
+    	display: inline-block;
+        cursor: pointer;
+    	&:before {
+    		content: '\f13d';
+    		font-family: 'FontAwesome';
+    		position: absolute;
+		    right: $small-fix-20;
+		    top: $small-fix-10;
+		    font-size: $small-fix-15 + 1;
+    	}
+    	&:hover {
+    		background: #1fadcf;
+    		color: $white;
+    		border: $small-fix-01 solid #1fadcf;
+    	}
+    }
+
+    .passActive {
+        background: #1fadcf;
+        color: $white;
+        border: $small-fix-01 solid #1fadcf;
+    }
+
+    .manage_AccountAditional {
+    	display: inline-block;
+    	width: $max-conv-width;
+    	margin-top: $small-fix-30;
+    	.manage_box {
+    		margin-bottom: $small-fix-10;
+    		span {
+    			float: left;
+    			&:first-child {
+    				margin-right: $small-fix-10;
+    				text-transform: uppercase;
+    				font-weight: bold;
+    			}
+    		}
+    		.second {
+				color: #999;
+			}
+    		.linjUrl {
+    			position: relative;
+    			float: left;
+			    margin-left: $small-fix-10;
+			    text-decoration: none;
+			    text-transform: capitalize;
+			    padding-left: $small-fix-20;
+			    color: #025a87;
+			    font-weight: bold;
+                cursor: pointer;
+			    i {
+			    	position: absolute;
+			    	left: $small-fix-10;
+			    	top: $small-fix-03;
+			    }
+                .rotate90 {
+                    @include transform($rotate-90);
+                }
+    		}
+    		&:last-child {
+    			margin-bottom: $null-conv;
+    		}
+    	}
+    }
+
+    .col-md-7 {
+        width: 54%;
+    }
+}
+
+.registerUser, 
+.deleteUser {
+	position: relative;
+	float: left;
+    margin-left: $small-fix-10;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: $small-fix-20;
+    color: #025a87;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+    	text-decoration: none;
+    }
+    i {
+    	position: absolute;
+    	left: $small-fix-10;
+    	top: $small-fix-03;
+    }
+}
+
+.registerUser {
+    margin-top: $small-fix-10;
+}
+
+.deleteUser {
+    float: right;
+}
+
+
+.registerUsers {
+    padding: $null-conv;
+    padding-bottom: $small-fix-20;
+    margin-bottom: $small-fix-30;
+    border-bottom: $small-fix-01 solid #eee;
+}
+
+.inputFloor {
+    width: $max-conv-width / 2; // 50%
+    height: $small-fix-45;
+    border: $small-fix-01 solid #eee;
+    @include border-radius($small-fix-50);
+    position: relative;
+    left: 7%;
+    float: left;
+    padding-left: $small-fix-20;
+    padding-right: $small-fix-20;
+    @include transition($Sec-03);
+    &:focus {
+        outline: $null-conv;
+        @include box-shadow($null-conv $null-conv $small-fix-03 $null-conv $rgba-black-02);
+    }
+}
+
+.Manage_Floor, .changePass_Floor {
+    float: left;
+    width: $max-conv-width;
+    margin-bottom: $small-fix-20;
+    padding: $small-fix-20;
+    padding-top: $small-fix-07;
+    display: none;
+    h4 {
+        margin-top: $null-conv;
+        margin-bottom: $small-fix-20;
+        font-size: $small-fix-13 + 1;
+        color: #025a87;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-bottom: $small-fix-13 + 1;
+        border-bottom: $small-fix-01 solid #f2f2f2;
+    }
+    .sendbtn {
+        position: relative;
+        padding: $small-fix-20;
+        padding-bottom: $small-fix-10 + 1;
+        padding-top: $small-fix-10 + 1;
+        color: $white;
+        font-size: $small-fix-10 + 2;
+        font-weight: bold;
+        letter-spacing: $small-fix-01 / 2; // 0.5px
+        background: #1fadcf;
+        border: $small-fix-01 solid #1fadcf;
+        text-decoration: none;
+        display: inline-block;
+        margin: $small-fix-02;
+        @include border-radius($small-fix-50);
+        &:focus {
+            outline: $null-conv;
+        }
+    }
+    p {
+        font-size: $small-fix-20;
+        font-weight: bold;
+        color: #ddd;
+        margin: $null-conv;
+    }
+}
+
+.changePass_Floor {
+    margin-top: $small-fix-10;
+}
+
+.pass-forget {
+    width: $max-conv-width / 2 + 10;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    .inputFloor {
+        width: $max-conv-width;
+        left: $null-conv;
+        margin-bottom: $small-fix-10;
+        &:last-child {
+            margin-bottom: $null-conv;
+        }
+    }
+    .change_PassForget {
+        width: $max-conv-width;
+        padding-right: $small-fix-20;
+        &:before {
+            content: '';
+        }
+        &:focus {
+            outline: $null-conv;
+        }
+    }
+}
+
+
+// FeedBack
+
+.feedBack_Floor {
+    background: $white;
+    width: 97%;
+    padding: $small-fix-20;
+    position: relative;
+    border: $small-fix-01 solid #eee;
+    margin: auto;
+
+    h2 { margin-bottom: 15px; }
+
+    form {
+        width: 40%;
+        position: relative;
+        margin: auto;
+        label {
+            width: $max-conv-width;
+            padding-left: $small-fix-10 + 2;
+        }
+        input[type="text"] {
+            width: $max-conv-width / 2;
+            border: $null-conv;
+            @include box-shadow(none);
+            border-bottom: $small-fix-01 solid #ddd;
+            @include border-radius($null-conv);
+            font-size: $small-fix-13;
+            display: initial;
+        }
+        textarea {
+            height: 214px;
+            @include border-radius($null-conv);
+            @include box-shadow(none);
+            border: $null-conv;
+            background: #f9f9f9;
+            border-bottom: $small-fix-02 solid #f2f2f2;
+            &:focus {
+               @include box-shadow(none);
+                border: $null-conv;
+                border-bottom: $small-fix-02 solid #f2f2f2;
+            }
+        }
+
+        .btnSumt {
+            padding: $small-fix-10;
+            padding-left: $small-fix-25;
+            padding-right: $small-fix-25;
+            background: #025a87;
+            color: $white;
+            font-size: $small-fix-10 + 2;
+            font-weight: bold;
+            display: inline-block;
+            border: $null-conv;
+            @include border-radius($small-fix-03);
+            margin: $small-fix-15;
+            margin-left: $null-conv;
+            text-transform: uppercase;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+    }
+
+    .feedBack_Grid {
+        width: $max-conv-width;
+        position: relative;
+        display: inline-block;
+        .tHeadFeed {
+            width: $max-conv-width;
+            position: relative;
+            float: left;
+            height: $small-fix-35;
+            background: #f2f2f2;
+            .thFeed {
+                width: $max-conv-width / 6;
+                height: $max-conv-height;
+                position: relative;
+                float: left;
+                border-right: $small-fix-01 solid #ddd;
+                border-bottom: $small-fix-01 solid #ddd;
+                padding: $small-fix-10;
+                font-size: $small-fix-10 + 1;
+                &:last-child {
+                    border-right: $null-conv;
+                }
+                .iconFl, 
+                .iconFlDown {
+                    font-family: 'Linearicons';
+                    position: absolute;
+                    top: $small-fix-10 + 2;
+                    right: $small-fix-10 + 2;
+                    font-size: $small-fix-07 + 2;
+                    font-weight: bold;
+                    cursor: pointer;
+                    width: $small-fix-10 + 2;
+                    height: $small-fix-10 + 2;
+                    &:before {
+                        content: '\e93a';
+                    }
+                }
+                .iconFlDrop {
+                    width: 150px;
+                    height: 150px;
+                    position: absolute;
+                    right: $null-conv;
+                    top: 212%;
+                    background: #f9f9f9;
+                    display: none;
+                }
+            }
+        }
+
+        .tBodyFeed {
+            width: $max-conv-width;
+            height: 200px;
+            position: relative;
+            float: left;
+            border: 1px solid #ddd;
+            border-top: $null-conv;
+        }
+    }
+}

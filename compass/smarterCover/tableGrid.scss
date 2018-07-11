@@ -1,0 +1,546 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Table Grid
+
+.mainTableGrid {
+	overflow: auto;
+}
+
+.tableGrid {
+	width: $max-conv-width;
+	min-width: 1890px;
+	float: left;
+	padding-left: $small-fix-05;
+	padding-right: $small-fix-05;
+	.gridHeader {
+		width: $max-conv-width;
+		float: left;
+		padding: $small-fix-03 + 1;
+	    padding-bottom: $null-conv;
+	    background: $white;
+	    border: $small-fix-01 solid #eee;
+	    border-bottom: $null-conv;
+		.headGrid-row {
+			width: $max-conv-width;
+			float: left;
+			.headGrid-th {
+				position: relative;
+				float: left;
+				background: #f9f9f9;
+				padding: $small-fix-03 + 1;
+				padding-top: $small-fix-10 + 1;
+	    		padding-bottom: $small-fix-10;
+				border: $small-fix-01 solid #eee;
+				border-right: $null-conv;
+				font-size: $small-fix-10;
+			    text-align: center;
+			    text-transform: uppercase;
+			    min-height: $small-fix-30 + $small-fix-07;
+			    cursor: default;
+				&:last-child {
+					border-right: $small-fix-01 solid #eee;
+				}
+				.dropHeader {
+					position: absolute;
+				    width: $small-fix-10 + 2;
+				    height: $small-fix-10 + 2;
+				    top: $small-fix-10 + 2;
+				    right: $small-fix-05 + 1;
+				    color: $black;
+				    text-decoration: none;
+				}
+			}
+			&:first-child {
+				.headGrid-th {
+					border-bottom: $null-conv;
+				}
+			}
+		}
+	}
+	.animatedDrop {
+		background: $white;
+		position: absolute;
+		width: $large-fix-150; // 150px
+		border: $small-fix-01 solid #eee;
+		z-index: 1;
+		top: 86px;
+    	display: none;
+    	.animDropUrl {
+    		position: relative;
+    		float: left;
+		   	width: $max-conv-width;
+		    font-size: $small-fix-10;
+		    color: #333;
+		    text-decoration: none;
+		    padding: $small-fix-07;
+		    padding-left: $small-fix-40;
+		    border-bottom: $small-fix-01 solid #eee;
+		    &:hover {
+		    	background: #f9f9f9;
+		    }
+		    i {
+		    	position: absolute;
+			    left: $small-fix-10 - 1;
+			    top: $small-fix-05 + 1;
+    			font-size: $small-fix-15;
+		    }
+    	}
+    	.subGridArrow {
+    		&:after {
+    			position: absolute;
+			    content: "";
+			    vertical-align: middle;
+			    width: $null-conv;
+			    height: $null-conv;
+			    border-left: $small-fix-03 + 1 solid transparent;
+			    border-right: $small-fix-03 + 1 solid transparent;
+			    top: $small-fix-13;
+			    right: $small-fix-13 + 1;
+			    border-bottom: $small-fix-03 + 1 solid $black;
+			    @include transform($rotate-90);
+			    cursor: pointer;
+    		}
+    	}
+    	.sudAnimeDrop {
+    		width: $large-fix-200; // 200px
+		    left: $large-fix-150 - 1; // 149px
+		    position: absolute;
+		    background: $white;
+		    border: $small-fix-01 solid #eee;
+		    ul {
+		    	margin-bottom: $null-conv;
+		    	li {
+		    		padding: $small-fix-05;
+		    		padding-left: $small-fix-20 + $small-fix-05;
+		    		width: $max-conv-width;
+		    		float: left;
+		    		border-bottom: $small-fix-01 solid #eee;
+		    		input[type="checkbox"], span {
+		    			float: left;
+		    		}
+		    		input[type="checkbox"] { 
+		    			margin-right: $small-fix-10;
+		    			display: none; 
+		    		}
+		    		span {
+		    			font-size: $small-fix-10 + 1;
+					    text-transform: uppercase;
+					    position: relative;
+					    top: $small-fix-03 + 1;
+		    		}
+		    	}
+		    }
+
+
+		    // Start Switches
+
+		    @include simpleswitch();
+
+			// End Switches
+
+    	}
+    	.subColumns {
+    		top: 57px;
+    		height: 373px;
+		    display: none;
+    	}
+    	.subFilter {
+    		width: 140px;
+    		top: 86px;
+    		display: none;
+    		form {
+    			padding: $small-fix-05;
+    			float: left;
+    			width: $max-conv-width;
+    			.filterTitle {
+    				font-size: $small-fix-10;
+				    float: left;
+				    width: $max-conv-width;
+				    margin-bottom: $small-fix-02;
+    			}
+    			.equalDrop {
+    				width: $max-conv-width;
+    				float: left;
+    				height: $small-fix-20 + $small-fix-07; // 27px
+    				border: $small-fix-01 solid #eee;
+    				font-size: $small-fix-10;
+    				padding: $small-fix-07;
+    				line-height: $small-fix-10;
+    				cursor: pointer;
+    				position: relative;
+    				background: #f9f9f9;
+    				&:before {
+    					content: '';
+					    position: absolute;
+					    vertical-align: middle;
+					    width: $null-conv;
+					    height: $null-conv;
+					    border-left: $small-fix-03 + 1 solid transparent;
+					    border-right: $small-fix-03 + 1 solid transparent;
+					    top: $small-fix-10;
+					    right: $small-fix-10;
+					    border-bottom: $small-fix-03 + 1 solid #000;
+					    @include transform($rotate-180);
+    				}
+    			}
+    			.rotate0 {
+    				&:before {
+    					@include transform($null-conv);
+    				}
+    			}
+    			.equalDropNumber {
+    				width: $max-conv-width;
+    				float: left;
+    				height: $small-fix-20 + $small-fix-07; // 27px
+    				border: $small-fix-01 solid #eee;
+    				font-size: $small-fix-10;
+    				padding: $small-fix-07;
+    				line-height: $small-fix-10;
+    				cursor: pointer;
+    				position: relative;
+    				background: #f9f9f9;
+    				margin-top: $small-fix-02;
+    				margin-bottom: $small-fix-02;
+    				&:focus {
+    					outline: $null-conv;
+    				}
+    			}
+    			.equalDrop-Floor {
+    				position: absolute;
+				    width: 93%;
+				    background: $white;
+				    border: $small-fix-01 solid #eee;
+				    left: $small-fix-05;
+				    top: $small-fix-50 - 1; // 49px
+				    z-index: 1;
+				    display: none;
+				    .equalTab {
+				    	width: $max-conv-width;
+					    float: left;
+					    padding: $small-fix-03 + 1;
+					    font-size: $small-fix-10;
+					    border-bottom: $small-fix-01 solid #eee;
+					    cursor: pointer;
+					    &:last-child {
+					    	border-bottom: $null-conv;
+					    }
+				    }
+    			}
+    		}
+    	}
+	}
+	.animatedDropActive {
+		display: block;
+	}
+	.anime_1 {
+		left: $medium-fix-small - 1; // 46px
+	}
+	.anime_2 {
+		left: 164px;
+	}
+	.anime_3 {
+		left: 261px;
+	}
+	.gridBody {
+		width: $max-conv-width;
+		float: left;
+		position: relative;
+	    height: 650px;
+	    border: $small-fix-01 solid #eee;
+	    border-top: $null-conv;
+	    border-bottom: $null-conv;
+	    padding: $small-fix-03 + 1;
+	    background: $white;
+	    overflow: auto;
+		.bodyGrid-row {
+			width: $max-conv-width;
+			float: left;
+			.bodyGrid-td {
+				position: relative;
+				float: left;
+				background: #f8f8f8;
+				padding: $small-fix-07;
+				padding-top: $small-fix-10;
+	    		padding-bottom: $small-fix-10;
+				border: $small-fix-01 solid #eee;
+				border-right: $null-conv;
+				border-bottom: $null-conv;
+				font-size: $small-fix-10 + 1;
+			    text-align: center;
+			    min-height: $small-fix-30 + $small-fix-07;
+			    cursor: default;
+			    &:last-child {
+			    	border-right: $small-fix-01 solid #eee;
+			    }
+			    a {
+			    	text-decoration: none;
+			    	color: #333;
+			    	cursor: default;
+			    }
+			    a.clickon {
+			    	cursor: pointer;
+			    	&:hover {
+			    		color: #1fadcf;
+			    	}
+			    }
+			    input[type="text"] {
+			    	width: $max-conv-width;
+			    	background: transparent;
+			    	text-align: center;
+			    	border: $null-conv;
+			    	&:focus {
+			    		outline: $null-conv;
+			    	}
+			    }
+			    input[type="checkbox"] {
+			    	position: absolute;
+			    	left: $small-fix-10 + 2;
+			    	top: $small-fix-10 + 2;
+			    	margin: $null-conv;
+			    }
+			    .pointerUrl {
+			    	cursor: pointer;
+			    }
+			}
+			&:last-child {
+				.bodyGrid-td {
+					border-bottom: $small-fix-01 solid #eee;
+				}
+			}
+		}
+
+		.backBlue {
+			.bodyGrid-td {
+				background: #1fadcf;
+				a {
+					color: $white;
+				}
+				.openGridTab {
+					border-bottom: $small-fix-05 solid $white;
+				}
+			}
+		}
+		.brBott-Grid {
+			.bodyGrid-td {
+				border-bottom: $small-fix-01 solid #eee;
+			}
+		}
+		.backWhite {
+			.bodyGrid-td {
+				background: $white;
+			}
+		}
+		.borderLeft {
+			border-left: $null-conv !important;
+		}
+		.openGridTab {
+			text-decoration: none;
+			position: absolute;
+		    vertical-align: middle;
+		    width: $null-conv;
+		    height: $null-conv;
+		    border-left: $small-fix-05 solid transparent;
+		    border-right: $small-fix-05 solid transparent;
+		    top: $small-fix-15 + 1;
+		    left: $small-fix-13;
+		    border-bottom: $small-fix-05 solid $black;
+		    @include transform($rotate-90);
+		    cursor: pointer;
+		}
+
+		.openGridTabRotate {
+			@include transform(127deg);
+		}
+
+		.tableTab-floor {
+			width: $max-conv-width; 
+			position: relative; 
+			float: left;  
+			margin-bottom: $small-fix-07;
+			padding-top: $small-fix-05;
+			padding-left: $small-fix-30 + $small-fix-07 + 1; // 38px
+			display: none;
+			.tableTab-in {
+				width: $max-conv-width;
+				float: left;
+				.GridTabs {
+					float: left; 
+					width: $max-conv-width; 
+					.tabLink {
+						position: relative;
+						padding: $small-fix-07;
+						padding-left: $small-fix-10 + 2;
+						padding-right: $small-fix-10 + 2;
+						font-size: $small-fix-10;
+						border: $small-fix-01 solid #ddd;
+						border-bottom: $null-conv;
+						border-right: $null-conv;
+						background: #eee;
+						text-decoration: none;
+						color: #333;
+						float: left;
+						border-top-left-radius: $small-fix-03;
+						border-top-right-radius: $small-fix-03;
+						&:last-child {
+							border-right: $small-fix-01 solid #ddd;
+						}
+					}
+					.selected {
+						background: $white;
+						border: $small-fix-01 solid #eee;
+						border-bottom: $null-conv;
+						border-right: $null-conv;
+					}
+				}
+				.GridPlat {
+					width: $max-conv-width; 
+					float: left;
+					padding: $small-fix-05;
+    				border: $small-fix-01 solid #eee;
+    				background: $white;
+					.ChildrenGridPlat {
+						width: $max-conv-width;
+						padding: $small-fix-03 + 1;
+						background: $white;
+						float: left;
+					}
+					.headGrid-th, 
+					.bodyGrid-td {
+						text-transform: none;
+						min-height: $small-fix-01;
+					    padding-top: $small-fix-07;
+					    padding-bottom: $small-fix-05;
+					    min-height: $small-fix-20 + $small-fix-05 + 1; // 26px
+					    font-size: $small-fix-10 - 1;
+					    color: #999;
+					}
+				}
+			}
+			.gridHeader, 
+			.gridBody {
+				padding: $null-conv;
+				border: $null-conv;
+			}
+			.gridBody {
+				background: transparent;
+				height: auto;
+			}
+		}
+	}
+
+	.gridFooter {
+		float: left;
+	    position: relative;
+	    width: $max-conv-width;
+	    background: $white;
+	    height: $small-fix-40 + $small-fix-05;
+	    border: $small-fix-01 solid #eee;
+	    border-top: $null-conv;
+	    padding: $small-fix-03 + 1;
+	    .gridFtIn {
+	    	width: $max-conv-width;
+	    	float: left;
+	    	height: $max-conv-height;
+	    	background: #f9f9f9;
+	    	padding-left: $small-fix-10;
+    		padding-right: $small-fix-10;
+	    	.GridFooterBullets {
+	    		width: $small-fix-30;
+	    		height: $small-fix-30;
+	    		position: relative;
+	    		float: left;
+	    		top: $small-fix-03;
+    			@include border-radius($max-conv-width / 2);
+    			background: #eee;
+    			@include box-shadow($null-conv $null-conv $small-fix-03 $null-conv rgba(0,0,0,0.45));
+				margin-right: $small-fix-07;
+				text-decoration: none;
+				.icon {
+					position: absolute;
+				    color: #ccc;
+				    font-size: $small-fix-20 + $small-fix-03 + 1; // 24px
+				    left: $small-fix-03;
+				    top: $small-fix-02;
+				    &:hover {
+				    	color: #333;
+				    }
+				}
+				&:last-child {
+					margin-right: $null-conv;
+				}
+				span {
+					position: absolute;
+					top: $small-fix-03 + 1;
+				    left: $null-conv;
+				    width: $max-conv-width;
+				    text-align: center;
+				}
+	    	}
+	    	.BulletCounter {
+	    		background: transparent;
+	    		color: #ccc;
+	    		border: $small-fix-01 solid #ddd;
+	    		-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				&:hover {
+					background: #1fadcf;
+	    			color: $white;
+				}
+	    	}
+	    	.BulletCounter.selected {
+	    		background: #1fadcf;
+	    		color: $white;
+	    		@include box-shadow(none);
+				cursor: default;
+	    	}
+	    }
+	}
+
+	.tableGridInput {
+		position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    margin: $small-fix-05;
+	    margin-right: $null-conv;
+	    margin-bottom: $null-conv;
+	    width: $table-max-90 + $table-max-3; // 93%
+	    height: $small-fix-20 + $small-fix-05;
+	    border: $small-fix-01 solid #eee;
+	    padding: $small-fix-07;
+	    &:focus {
+	    	outline: $null-conv;
+	    }
+	}
+
+	.gridMaintabs {
+		width: $max-conv-width;
+		position: relative; 
+		float: left; 
+		margin-bottom: $small-fix-05;
+		text-align: center;
+		@include mainTabs();
+
+		.width160 {
+			width: $large-fix-150 + $small-fix-10; // 160px
+		}
+		.width186 {
+			width: 186px;
+		}
+	}
+
+
+	// Table Width
+
+	@include tableGridWidth();
+
+	.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	    background-color: rgba(0, 0, 0, 0.15);
+	    filter: "alpha(opacity=20)";
+	    -ms-filter: "alpha(opacity=20)";
+	}
+
+}

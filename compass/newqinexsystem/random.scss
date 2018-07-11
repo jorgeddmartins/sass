@@ -1,0 +1,56 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// BACK LOGIN APP
+
+@include retinascreen {
+
+	.overlay_back {
+		position: absolute;
+		overflow: hidden;
+		.overlay-t {
+			position: fixed;
+			z-index: 1;
+			// background: rgba(0,0,0, 0.2);
+			background: rgba(0,0,0, 0.2) url(http://localhost:8080/projects/httdocs/newsystem/newqinexsystem/app/login/slider/pattern.png);
+			@include smartland {
+				position: absolute;
+			}
+		}
+		.slide_round {
+			width: $max-conv-width;
+	        @include smartphones {
+	        	width: 1200px;
+	        	position: relative;
+	        	left: -500px;
+	        }
+		}
+
+		img {
+			width: $max-conv-width;
+			@include animation(backimg 40s 1 forwards);
+		    animation-delay: 0.5s;
+		    -webkit-transform: translate3d(0, 0, 0);
+		    -moz-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0);
+		    opacity: 1;
+		    @include smartphones {
+		    	width: 1100px;
+		    	position: absolute;
+	    		left: -545px;
+		    }
+		    @include smartland {
+	        	left: -200px;
+	        	position: fixed;
+	        }
+		}
+	}
+}
+
+
+@-moz-keyframes backimg { 0% { transform: scale(1); } 100% { transform: scale(1.4); } }
+@-webkit-keyframes backimg { 0% { transform: scale(1); } 100% { transform: scale(1.4); } }
+@keyframes backimg { 0% { transform: scale(1); } 100% {transform: scale(1.4); } }

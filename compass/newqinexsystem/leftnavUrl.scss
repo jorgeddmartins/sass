@@ -1,0 +1,199 @@
+
+/* Start New Left Nav */
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+/* New Nav starts Here */
+
+.mob-nav-box {
+    width: $small-fix-35;
+    position: fixed;
+    top: $small-fix-13;
+    left: $small-fix-13;
+    z-index: $zindex-value-2000 * 2; // 4000
+    display: $dispnone;
+    .trace-m {
+        height: $small-fix-03;
+        background: $gray-dark;
+        display: $dispblk;
+        margin-bottom: $small-fix-05;
+        &:first-child {
+            margin-top: $small-fix-07;
+        }
+    }
+    @include smartphones {
+        display: $dispblk;
+    }
+}
+.movnav-w {
+    left: $null-conv !important;
+}
+#leftNav-Accordion {
+    &:hover {
+        .x-dash {
+            top: -30px;
+        }
+        .dashurl-qx {
+            left: $small-fix-20 - 1;
+        }
+    }
+}
+main {
+    .left-nav {
+        .dashurl {
+            background: #14171c;
+            position: relative;
+            width: $max-conv-width;
+            height: $small-fix-60; // 60px
+            float: left;
+            .dashurl-qx, 
+            .x-dash {
+                position: absolute;
+            }
+            .dashurl-qx {
+                width: $grid-small-based + $small-fix-10; // 110px
+                height: $small-fix-25; //25px
+                top: $small-fix-20 - 1; // 19px
+                left: -160px; // 19px
+                @include transition(left 1s);
+            }
+            .x-dash {
+                width: $small-fix-20 + 2; // 22px
+                height: $small-fix-20 + 2; // 22px
+                top: $small-fix-20;
+                right: $small-fix-20;
+                @include transition(top 1s);
+            }
+        }
+        .new-left-nav-item {
+            padding-top: $small-fix-10; // 5px
+            padding-bottom: $small-fix-10; // 5px
+            position: relative;
+            display: $dispblk;
+            background: $white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1px;
+
+            &:hover, 
+            &:focus {
+                text-decoration: $none-conv;
+            }
+            .new-top-item {
+                padding-left: $small-fix-20;
+                font-size: $small-fix-10 + 1;
+                color: #777;
+                display: $dispblk;
+                width: $max-conv-width;
+                background: transparent;
+                border: $null-conv;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+            .new-top-item-second {
+                padding-left: $small-fix-20;
+                font-size: $small-fix-10 + 1;
+                letter-spacing: $small-fix-01 / 2;
+                color: $gray-dark;
+                display: $dispblk;
+                width: $max-conv-width;
+                background: transparent;
+                border: $null-conv;
+                cursor: pointer;
+                font-weight: 100;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+        }
+        .new-drop-qx {
+            position: relative; 
+            width: $max-conv-width;
+            background: #ddd;
+            margin-bottom: $small-fix-07;
+            display: $dispnone;
+            .new-sub-items {
+                margin: $null-conv;
+                padding: $null-conv;
+                border-left: $small-fix-03 solid #0BAD86;
+                list-style: $none-conv;
+            }
+            .new-sub-url {
+                padding-bottom: $small-fix-15; // 15px
+                padding-top: $small-fix-15; // 15px
+                padding-left: $small-fix-20;
+                font-size: $small-fix-13;
+                color: #777;
+                display: $dispblk;
+                text-decoration: $none-conv;
+                position: relative;
+                cursor: pointer;
+            }
+        }
+        .new-drop-sub-qx {
+            background: #53565F; 
+            display: $dispnone;
+        }
+        .color-drop-sub-sub-menu {
+            background: #64666f;
+        }
+        .paddout {
+            padding-top: $null-conv;
+            padding-bottom: $null-conv;
+        }
+        .separate-nav {
+            position: relative;
+            border-bottom: $small-fix-01 solid #999;
+            width: $medium-A19 + $small-B-05 - 1; // 94%
+            height: $null-conv;
+            display: $dispinblk;
+            margin-top: 24px; // 34px
+            margin-bottom: $small-fix-13;
+            .separ-title {
+                position: absolute;
+                top: -10px;
+                left: $small-fix-07;
+                color: #0BAD86;
+                font-size: $small-fix-15;
+                text-transform: uppercase;
+                // background: #2b303b;
+                // background: #fafafa;
+                background: #f2f2f2;
+                padding-left: $small-fix-13;
+                padding-right: $small-fix-13;
+            }
+        }
+        .new-right-ico-floor {
+            width: $small-fix-35 - 2; // 33px
+            height: $small-fix-35 - 2; // 33px
+            position: absolute;
+            right: $small-fix-15 + 2;
+            top: $small-fix-10 - 2;
+            padding: $small-fix-03 + 1;
+           // background: rgba(20, 23, 28, 0.45); // #14171c
+            background: #f8f8f8;
+            @include border-radius(0); // 50%
+        }
+        @include smartphones {
+            left: -280px; // -280px
+        }
+    }
+
+    .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, 
+    .mCS-minimal.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+    .mCS-minimal.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+        background: rgba(11, 173,134, .5);
+    }
+}
+
+// .dispBlockImp {
+//     display: block !important;
+// }

@@ -1,0 +1,57 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+}
+
+body {
+    font-family: Arial;
+    font-size: $small-fix-13 + 1;
+    overflow-x: hidden;
+    background: #f9f9f9;
+}
+
+.k-grid, 
+.k-grid-header, 
+.k-grid-content, 
+.k-grid-footer, 
+.k-grid-footer-wrap, 
+.k-master-row {
+	width: $max-conv-width;
+	float: left;
+}
+
+.k-grid {
+	padding: $small-fix-03 + 1;
+    // background: $white;
+    // border: $small-fix-01 solid #eee;
+    .k-grid-header, 
+    .k-grid-content, 
+    .k-grid-footer, 
+    .k-grid-footer-wrap {
+    	position: relative;
+    }
+    .k-master-row {
+    	position: relative;
+    }
+    .td {
+        display: table-cell;
+        span {
+           margin: $small-fix-01 / 2; // 0.5px
+            padding-left: $small-fix-12;
+            padding-right: $small-fix-12;
+            // display: table-cell;
+            float: left;
+            background: $white;
+            border: $small-fix-01 solid #eee;
+            min-width: $small-fix-40;
+            height: $small-fix-40;
+            padding-top: $small-fix-10;
+            padding-bottom: $small-fix-10;
+            font-size: $small-fix-13; 
+        }
+    }
+}

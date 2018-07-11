@@ -1,0 +1,302 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Login
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    color: #058d6c !important;
+    -webkit-text-fill-color: #058d6c !important;
+}
+
+.conv-large-A20-wl {
+    width: $max-conv-width;
+    float: left;
+}
+
+.overlay_back, 
+.overlay-t {
+	width: $max-conv-width;
+	height: $max-conv-height;
+	top: $null-conv;
+	left: $null-conv;
+}
+
+
+// LOGIN GRID COLUMN
+
+.row-content-lg {
+	position: absolute;
+	top: 20%;
+	left: $null-conv;
+	@include smartphones {
+		top: 15%;
+	}
+	@include smartland {
+		top: 7%; 
+	}   
+	.column-grid-login {
+	    background: $rgba-white-09;
+	    @include box-shadow($null-conv -1px 31px $null-conv rgba(0,0,0,0.5));
+	    position: relative;
+	    padding: $small-fix-60;
+	    width: 420px;
+	    margin: auto;
+	    // margin-left: 60%;
+	    @include smartphones  {
+	    	width: 290px;
+		    box-sizing: border-box;
+		    padding: $small-fix-15;
+		    padding-bottom: $null-conv;
+		    padding-right: $null-conv;
+		    padding-left: $null-conv;
+	    }
+	    .logo_box {
+			width: $max-conv-width;
+			text-align: center;
+			margin-bottom: 12%;
+			background: url(http://localhost:8080/projects/httdocs/newsystem/newqinexsystem/assets/img/QinexLogo.svg) no-repeat;
+			background-size: 192px;
+		    height: 50.02px;
+		    background-position: $max-conv-width / 2;
+		    @include smartphones {
+		    	background: url(http://localhost:8080/projects/httdocs/newsystem/newqinexsystem/assets/img/QinexLogo.svg) no-repeat;
+				background-size: 149px;
+				background-position: $max-conv-width / 2;
+				margin-bottom: $small-fix-20;
+		    }
+		    @include smartland {
+		    	margin-bottom: $null-conv;
+		    }
+			.img_logo {
+				width: 64%;
+				max-width: 300px;
+				@include animation(img_logo $nullSecs 1 forwards);
+			    animation-delay: $nullSecs;
+			    left: $null-conv;
+			}
+		}
+		.login_fr {
+			width: $max-conv-width;
+			display: inline-block;
+			.box-usern {
+				position: relative;
+				margin-bottom: 30px;
+				.user-login, 
+				.pass-login {
+					position: relative;
+				    text-align: center;
+				    font-size: $small-fix-13 + 1;
+				    color: #777;
+				    text-transform: uppercase;
+				    @include tranformscale(1.0);
+				    @include transition(all $Sec-03 ease-in-out);
+				    display: block;
+				    top: $small-fix-30;
+				    opacity: 1;
+				    @include smartphones {
+				    @include tranformscale(0.7);
+					top: $small-fix-07 + 1;
+					opacity: 0.7;
+				    }
+				}
+				.user-login-sc {
+					@include tranformscale(0.7);
+					top: $small-fix-07 + 1;
+					opacity: 0.7;
+					@include smartphones {
+						opacity: 0.9;
+						@include tranformscale(0.8);
+					}
+				}
+			}
+			.in-user, 
+			.in-pass {
+				text-align: center;
+				width: $max-conv-width;
+				height: $small-fix-40;
+				border: $null-conv;
+				border-bottom: $small-fix-01 solid #777;
+				font-size: $small-fix-20;
+    			color: #058d6c;
+				background: transparent;
+				margin-bottom: $small-fix-13 + 1;
+				position: relative;
+				z-index: 2;
+				&:focus {
+					outline: $null-conv;
+					border-bottom: $small-fix-02 solid #0bad86;
+				}
+				@include smartphones {
+					padding-left: $small-fix-20;
+				    padding-right: $small-fix-20;
+				    box-sizing: border-box;
+				    @include border-radius($null-conv);
+				    font-size: $small-fix-20;
+    				color: #058d6c;
+				    margin-bottom: $small-fix-20;
+				}
+			}
+
+			.in-user, 
+			.in-pass {
+				&:focus {
+					@include animation(in-user $fourSec 1 forwards);
+			        opacity: 1;
+			    }
+			}
+			.box-submit {
+				position: relative;
+				margin-top: 13%;
+				@include smartphones {
+					margin-top: $small-fix-30;
+				}
+			}
+			.fc-submit {
+				background: transparent;
+				border-style: solid;
+				border-width: $small-fix-10;
+				@include borderimg(url(http://localhost:8080/projects/httdocs/newsystem/newqinexsystem/assets/img/login.jpg)10 stretch);
+				width: auto;
+				height: $small-fix-70;
+				position: relative;
+				@include transition(all $halfSec ease-in-out);
+				opacity: $null-conv;
+				// top: -10px;
+				@include smartphones {
+					width: $max-conv-width / 2;
+					margin: auto;
+				}
+			}
+			.fc-submit-op {
+				opacity: 0.9;
+			}
+			.lg-btn-bx {
+				width: 93.2%;
+				height: $small-fix-70;
+				// background: transparent;
+				background: #fff;
+				border: $small-fix-01 solid #777;
+				color: #777;
+				text-transform: uppercase;
+				font-size: $small-fix-17 + 1;
+				cursor: pointer;
+				z-index: 2;
+			    position: absolute;
+			    top: $null-conv;
+			    left: $null-conv;
+			    right: $null-conv;
+			    margin-left: auto;
+			    margin-right: auto;
+			    @include transition(all $Sec-03 ease-in-out);
+			    padding: 24px;
+			    text-align: center;
+				&:focus {
+					outline: $null-conv;
+					text-decoration: none;
+				}
+				&:hover {
+					@include transition(all $Sec-03 ease-in-out);
+					color: #fff;
+					background: #0bad86;
+					border: 1px solid #0bad86;
+				}
+				@include smartphones {
+					width: $max-conv-width / 2;
+				}
+			}
+		}
+	}
+	p {
+		-webkit-margin-before: $null-conv;
+	    -webkit-margin-after: $null-conv;
+	    -webkit-margin-start: $null-conv;
+	    -webkit-margin-end: $null-conv;
+	    margin-before: $null-conv;
+	    margin-after: $null-conv;
+	    margin-start: $null-conv;
+	    margin-end: $null-conv;
+	}
+	.validation-summary-errors {
+		ul {
+			list-style: none;
+			margin: $null-conv;
+			padding: $null-conv;
+			margin-bottom: $small-fix-10;
+			text-align: center;
+			li {
+				font-size: $small-fix-13;
+				color: #cc0000;
+				padding: $small-fix-07;
+			}
+		}
+	}
+
+	.help-block {
+		text-align: center;
+		margin: $null-conv;
+	    font-size: $small-fix-10 + 1;
+	    font-weight: bold;
+	    color: #cc0000;
+	    display: none;
+	}
+}
+
+@-moz-keyframes in-user { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+@-webkit-keyframes in-user { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+@keyframes in-user { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+@-moz-keyframes in-pass { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+@-webkit-keyframes in-pass { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+@keyframes in-pass { 0% {  opacity: 0;} 50% {  opacity: 0.5;} 100% { opacity: 1; } }
+
+
+.loginTop {
+	top: 1000px;
+	@include animation(loginTop $oneSec 1 forwards);
+	@include animationdelay($halfSec);
+}
+
+@keyframes loginTop {
+
+	0% { top: 1000px; }
+	100% { top: $null-conv }
+}
+
+@-webkit-keyframes loginTop {
+
+	0% { top: 1000px; }
+	100% { top: $null-conv }
+}
+
+@-moz-keyframes loginTop {
+
+	0% { top: 1000px; }
+	100% { top: $null-conv }
+}
+
+.errorMsg {
+	background: rgba(243, 192, 192, 0.75); 
+	position: fixed; 
+	top: $null-conv; 
+	left: $null-conv; 
+	padding: $small-fix-13 + 1; 
+	text-align: center;
+    font-size: $small-fix-10 + 1; 
+    font-weight: bold; 
+    width: $max-conv-width; 
+    color: #cc0000; 
+    text-transform: uppercase;
+    display: none;
+}
+
+.notGo {
+	pointer-events: none;
+}
+
+// .goInL {
+// 	display: none;
+// }

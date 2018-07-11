@@ -1,0 +1,342 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.users_Settings {
+	width: $max-conv-width;
+    padding: $null-conv;
+    display: inline-block;
+    .panel-heading {
+    	padding-bottom: $small-fix-10;
+    	padding-top: $null-conv;
+    	.mainNav-Title {
+    		margin: $null-conv;
+		    text-transform: capitalize;
+		    font-size: $small-fix-20 + 2; // 22px
+		    float: left;
+		    letter-spacing: $null-conv;
+		    width: $max-conv-width;
+		    text-align: center;
+    	}
+    }
+    .btn-Grid {
+	    padding-top: $small-fix-07;
+	    padding-bottom: $small-fix-07;
+	    background: $white;
+	    border-top:  $small-fix-01 solid #eee;
+	    .grid-button.create-User {
+	    	background: #0A9A7A;
+		    color: $white;
+		    border: $small-fix-01 solid #0A9A7A;
+	    }
+	    .grid-button {
+	    	span {
+	    		top: $null-conv;
+			    left: -9px;
+			    font-size: $small-fix-17 + 2; // 19px
+	    	}
+	    }
+    }
+    .btnDisable {
+    	opacity: .5;
+    	pointer-events: none;
+    }
+    .userGrid {
+    	width: $max-conv-width;
+    	position: relative;
+    	float: left;
+    	.tHead {
+    		width: $max-conv-width;
+    		height: $small-fix-45; // 45px
+    		float: left;
+    		position: relative;
+    		border-bottom: $small-fix-01 solid #ddd;
+    		.th {
+    			width: $max-conv-width / 9;
+    			height: $max-conv-height;
+    			position: relative;
+    			float: left;
+    			padding: $small-fix-10 + 2;
+    			background: #f2f2f2;
+    			color: #777;
+    			border-right:  $small-fix-01 solid #ddd;
+    			font-size: $small-fix-13;
+    			padding-top: $small-fix-15;
+    			&:last-child {
+    				border: $null-conv;
+    			}
+    			.thDrop {
+    				position: absolute;
+    				right: $small-fix-13 + 1;
+    				top: $small-fix-20;
+    				width: $small-fix-10;
+    				height: $small-fix-10;
+    				cursor: pointer;
+    				&:after {
+    					position: absolute;
+					    content: "";
+					    vertical-align: middle;
+					    border-left: $small-fix-05 solid transparent;
+					    border-right: $small-fix-05 solid transparent;
+					    top: $small-fix-01;
+					    right: $null-conv;
+					    border-bottom: $small-fix-05 solid $black;
+					    @include transform($rotate-180);
+					    @include transition($Sec-03);
+    				}
+    			}
+    		}
+    	}
+    	.tBody {
+    		position: relative;
+		    float: left;
+		    width: $max-conv-width;
+		    .tr {
+		    	position: relative;
+		    	width: $max-conv-width;
+		    	float: left;
+		    	height: 38px;
+		    	border-bottom:  $small-fix-01 solid #eee;
+		    	.td {
+			    	width: $max-conv-width / 9;
+	    			height: $max-conv-height;
+	    			position: relative;
+	    			float: left;
+	    			padding: $small-fix-10 + 2;
+	    			color: #333;
+	    			border-right: $small-fix-01 solid #eee;
+	    			font-size: $small-fix-10 + 2;
+	    			padding-top: $small-fix-10;
+	    			padding-bottom: $small-fix-10;
+	    			&:last-child {
+						border-right: $null-conv;
+	    			}
+			    } 
+		    }
+		    .tdWhite { background: $white; }
+
+		    .tdGrey { background: #fafafa; }
+    	}
+    }
+    .usersNone { display: none; }
+}
+
+// New User Modals
+.createUserModal {
+	.bodyModal {
+		width: 1000px; // 700px, 900px
+	}
+}
+
+.EditUserModal {
+	.bodyModal {
+		width: 950px;
+	}
+}
+
+.createUserModal, 
+.EditUserModal {
+	position: fixed;
+	width: $max-conv-width;
+	height: $max-conv-height;
+	top: $null-conv;
+	left: $null-conv;
+	z-index: 999999999999;
+	display: none;
+	.backUserModal {
+		position: absolute;
+		width: $max-conv-width;
+		height: $max-conv-height;
+		top: $null-conv;
+		left: $null-conv;
+		background: $rgba-black-04;
+	}
+	.bodyModal {
+		position: relative;
+		margin: 170px auto $null-conv;
+		.userModal_Header, 
+		.userModal_Footer {
+			position: relative;
+		    width: $max-conv-width;
+		    background: #eee;
+		    padding: $small-fix-10 + 2;
+		    padding-bottom: $small-fix-10;
+		    display: table;
+		    span {
+		    	font-size: $small-fix-13;
+			    text-transform: uppercase;
+			    color: #777;
+			    float: left;
+			    margin-right: $small-fix-03;
+			    &:last-child {
+			    	margin-right: 0;
+			    }
+		    }
+		    .userFirstN, 
+		    .userLastN {
+		    	font-weight: bold;
+		    }
+		}
+		.userModal_Content {
+			position: relative;
+		    background: $white;
+		    width: $max-conv-width;
+		    padding: $small-fix-10 + 2;
+		    display: table;
+		    .new-Item-Floor {
+		    	position: relative;
+		    	width: 32.78%;
+		    	float: left;
+		    	margin: $small-fix-02;
+		    	background: $white;
+				&:before {
+					font-family: 'Linearicons';
+					font-size: $small-fix-17;
+					color: #777;
+					position: absolute;
+					top: $small-fix-10;
+					right: $small-fix-20;
+				}
+			}
+			.userN-Floor {
+				&:before { content: '\e71e'; }
+			}
+			.firstN-Floor, 
+			.lastN-Floor {
+				&:before { content: '\e7dc'; }
+			}
+			.email-Floor {
+				&:before { content: '\e695'; }
+			}
+		    .new-Item {
+		    	width: $max-conv-width;
+			    background: transparent;
+		    	position: relative;
+			    float: left;
+			    padding: $small-fix-07;
+			    padding-left: $small-fix-10 + 2;
+			    border: $small-fix-01 solid #eee;
+			    font-size: $small-fix-10 + 2;
+			    height: 40px;
+			    &:focus {
+			    	outline: none;
+			    }
+		    }
+		    .addItem_Fl {
+		    	width: $max-conv-width;
+			    position: relative;
+			    float: left;
+			    text-align: center;
+			    padding: 6px;
+			    margin-bottom: $small-fix-15;
+			    display: none;
+			    .add-todo-item {
+			    	border: $null-conv;
+				    padding: $small-fix-07;
+				    padding-left: 40px;
+				    padding-right: 40px;
+				    background: #f2f2f2;
+				    font-size: $small-fix-13;
+				    color: #777;
+				    padding-top: $small-fix-07 + 2;
+				    @include border-radius($small-fix-03);
+				    border-bottom: $small-fix-01 solid #ddd;
+				    &:focus {
+				    	outline: $null-conv;
+				    }
+			    }
+		    }
+		    .AddSomeItem {
+		    	position: absolute;
+			    font-size: $small-fix-25;
+			    color: #eee;
+			    top: 131px;
+			    text-transform: uppercase;
+			    letter-spacing: -1px;
+			    left: $null-conv;
+			    width: $max-conv-width;
+			    text-align: center;
+		    }
+
+		    .form-add-todo {
+		    	width: $max-conv-width;
+		    	position: relative;
+		    	float: left;
+		    	margin-bottom: $small-fix-15;
+		    }
+		}
+
+		.userModal_Header {
+			border-bottom: $small-fix-01 solid #ddd;
+		}
+		.userModal_Footer {
+			border-top: $small-fix-01 solid #ddd;
+			.add-submit {
+				position: relative;
+			    margin: auto;
+			    display: block;
+			    background: #0A9A7A;
+			    border: $null-conv;
+			    color: $white;
+			    padding: $small-fix-07 + 1;
+			    padding-left: $small-fix-40;
+			    padding-right: $small-fix-40;
+			    padding-top: $small-fix-10;
+			    font-size: $small-fix-13;
+			    text-transform: uppercase;
+			    &:focus {
+			    	outline: none;
+			    }
+			}
+		}
+	}
+
+	.modaluserTop {
+		margin: -333px auto $null-conv;
+		@include animation(modaluserTop $Sec-07 1 forwards);
+	}
+
+	@keyframes modaluserTop {
+		0% { margin: -333px auto $null-conv; }
+		100% { margin: 170px auto $null-conv; }
+	}
+
+	@-webkit-keyframes modaluserTop {
+		0% { margin: -333px auto $null-conv; }
+		100% { margin: 170px auto $null-conv; }
+	}
+
+	@-moz-keyframes modaluserTop {
+		0% { margin: -333px auto $null-conv; }
+		100% { margin: 170px auto $null-conv; }
+	}
+
+	.todo-list-user {
+		position: relative;
+	    float: left;
+	    width: $max-conv-width;
+	    margin: $null-conv;
+	    .liUser {
+	    	width: $max-conv-width;
+	    	float: left;
+	    	.TDItem_Fl {
+	    		width: 14%;
+	    		height: 34px;
+	    		font-size: $small-fix-10 + 1;
+	    		color: #777;
+			    float: left;
+			    padding: $small-fix-07;
+			    padding-top: $small-fix-07 + 2;
+			    background: #fafafa;
+			    border: $small-fix-01 solid #eee;
+			    margin: $small-fix-01;
+	    	}
+	    }
+	}
+}
+
+.subTr {
+	position: relative;
+    float: left;
+    width: 100%;
+}

@@ -1,0 +1,449 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Ipad & Tablets
+/******************************* Ipad & Tablets ********************************/
+
+@include deviceTabletN { // 1024 x 1200
+
+	.container {
+		width: 970px;
+	}
+
+	#slider {
+		left: $null-conv;
+		ul {
+			height: auto;
+		}
+	}
+
+	.topCompare {
+		.topHeader {
+			.topNav {
+				.nav-menu {
+				    top: $table-max-12 + 1; // 13%
+				}
+			}
+		}
+
+		.heroSection {
+			height: 280px;
+			img {
+				top: -45px;
+			}
+			.heroText {
+				width: $max-conv-width / 2;
+				padding-top: 5%;
+				.topMsg, 
+				.compareMsg, 
+				.bottomMsg, 
+				.foryouMsg {
+					width: $max-conv-width;
+				}
+				.topMsg, 
+				.bottomMsg, 
+				.foryouMsg  {
+					font-size: 3vw;
+				}
+				.compareMsg {
+					font-size: 3.5vw;
+				}
+				.bottomMsg {
+					left: -10px;
+					font-weight: 100;
+				}
+			}
+		}
+
+		.sectionLooking {
+			.sectionLooking_Floor {
+				.lookingFor_Option {
+					 width: $table-max-12 + 0.8; // 12.8%
+					.txtOpt {
+						font-size: $small-fix-10 + 2;
+					}
+				}
+			}
+		}
+
+		.sectionFindoutMore {
+			padding-top: 52px;
+    		padding-bottom: 32px;
+    		.container {
+    			h2 {
+    				font-size: 32px;
+    			}
+    			p {
+    				font-size: 20px;
+    			}
+    		}
+		}
+
+		.sectionSlide {
+			.slide_Floor {
+				padding-top: $table-max-5; // 5%
+				p {
+					font-size: $small-fix-25 - 2;
+    				line-height: 31px;
+				}
+			}
+		}
+
+		.sectionWhyCompare {
+			.container {
+				.whyCompare_Options {
+					.Option_Compare {
+						width: $table-max-30 - 1 + 0.5; // 29.5%
+						margin: $small-fix-10 + 1;
+						.title_bullet {
+							font-size: $small-fix-13 + 1;
+							margin-bottom: $small-fix-10;
+						}
+						p {
+							font-size: $small-fix-15 + 1;
+						}
+					}
+				}
+			}
+		}
+
+		.footerCompare {
+			.footerCompare_Top {
+				padding-top: 68px;
+				p {
+					font-size: 13px;
+				}
+				.footerLogo_Box {
+					width: 120px;
+    				height: 120px;
+    				top: -47px;
+    				img {
+    					width: 90px;
+    					top: 13px;
+    				}
+				}
+			}
+			.footerCompare_Bottom {
+				p {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+
+// SmartPhones portrait
+/********************************* SmartPhones portrait *******************************/
+
+@include smartphones {
+
+	.container {
+		width: $max-conv-width;
+		padding: 0;
+	}
+
+	.topCompare {
+
+		.topHeader {
+			position: fixed;
+			border-bottom: $small-fix-02 solid #eee;
+			max-height: 51px;
+			.topNav {
+				.logoBox {
+					width: $table-max-25 + 1; // 26%
+					max-width: $small-fix-100;
+					min-width: 89.69px;
+					left: $small-fix-10;
+				}
+				.nav_menu_mob {
+					display: block;
+				}
+				.nav-menu {
+					top: $small-fix-50 + 1;
+					background: $rgba-white-05;
+    				padding: $null-conv;
+    				right: -100%; //-67%
+    				width: $max-conv-width; //60%
+    				max-width: 350px;
+    				height: $max-conv-height;
+    				position: fixed;
+    				@include transition($Sec-03);
+    				.DropLink {
+    					.i_Url {
+    						&:after {
+    							top: $small-fix-15;
+    							right: $small-fix-17 + 1;
+    						}
+    					}
+    				}
+				    .item_link {
+				    	width: $max-conv-width;
+				    	margin: $null-conv;
+				    	max-width: 255px;
+				    	float: right;
+				    	.i_Url {
+				    		width: $max-conv-width;
+				    		padding: $small-fix-07 + 1;
+				    		border-top: $small-fix-01 solid transparent;
+				    	}
+				    	&:first-child {
+				    		.i_Url {
+					    		border-top: $small-fix-01 solid $white;
+					    	}
+					    	.selected {
+					    		border-top: $small-fix-01 solid #4c9dd2;
+					    	}
+				    	}
+				    }
+				    .MegaDrop_Floor {
+				    	position: relative;
+				    	max-width: 255px;
+				    	float: right;
+				    	top: $null-conv;
+				    	padding: $null-conv;
+				    	border: $small-fix-01 solid transparent;
+				    	@include border-radius($null-conv);
+				    	border-bottom: $small-fix-01 solid #eee;
+				    	max-height: 350px;
+				    	overflow: auto;
+				    	ul {
+				    		border: $null-conv;
+				    		max-width: $max-conv-width;
+				    		width: $max-conv-width;
+				    		float: left;
+				    		margin: $null-conv;
+				    	}
+				    	&:before {
+				    		display: none;
+				    	}
+				    }
+				}
+				.nav-menuGoright {
+					right: $null-conv;
+				}
+			}
+		}
+		
+		.heroSection {
+			height: auto;
+			margin-top: $small-fix-100 / 2; // 50px
+			img {
+				top: $null-conv;
+			}
+			.heroText {
+				width: $max-conv-width / 2;
+				padding-top: 5%;
+
+				.topMsg, 
+				.compareMsg, 
+				.bottomMsg, 
+				.foryouMsg {
+					width: $max-conv-width;
+				}
+				.topMsg, 
+				.bottomMsg, 
+				.foryouMsg  {
+					font-size: 4vw;
+				}
+				.compareMsg {
+					font-size: 4.5vw;
+				}
+				.bottomMsg {
+					left: -10px;
+					font-weight: 100;
+				}
+			}
+		}
+
+		.optionsSection {
+			.option_Square {
+				width: $max-conv-width / 2;
+				.option_Square-In {
+					.icon_Text {
+						font-size: $small-fix-15 + 1;
+					}
+				}
+			}
+		}
+
+		.sectionLooking {
+			padding-left: $small-fix-15;
+    		padding-right: $small-fix-15;
+    		.lookingText {
+    			font-size: $small-fix-20;
+    		}
+    		.sectionLooking_Floor {
+    			margin-top: $small-fix-15;
+    			padding: $null-conv;
+    			.lookingFor_Option {
+    				width: $half-table-max - 3; // 48%
+    				margin: $small-fix-03 + 0.4; // 3.4px
+    			}
+    		}
+		}
+
+		.sectionFindoutMore {
+		    padding: $small-fix-15;
+		    padding-top: $small-fix-40 + $small-fix-03; // 43px
+		    padding-bottom: $small-fix-25;
+		    .container {
+		    	padding: $null-conv;
+		    	h2 {
+		    		margin-top: 0;
+		    		font-size: $small-fix-20 + 2;
+		    	}
+		    	p {
+		    		font-size: $small-fix-13 + 1;
+		    		line-height: $small-fix-20;
+		    	}
+		    	.findOutBtn {
+		    		font-size: $small-fix-17 + 1;
+		    		margin-top: $small-fix-20 + 2;
+		    	}
+		    }
+		}
+
+		.sectionSlide {
+			height: 117px;
+			img {
+				height: 100%;
+			}
+			.slider_Floor {
+				padding: 0;
+			}
+			 .slide_Floor {
+	            padding-top: 5%;
+	            p {
+	                font-size: 16px;
+	                line-height: 21px;
+	            }
+	        }
+			.control_prev {
+				left: 20px;
+				i {
+					left: 5px;
+				}
+			}
+			.control_next {
+				right: 20px;
+				i {
+					left: 10px;
+				}
+			}
+			.control_prev, 
+			.control_next {
+				top: 33%;
+				width: 40px;
+				height: 40px;
+				font-size: 24px;
+				line-height: 35px;
+			}
+			#slider {
+			    left: 0;
+			    ul {
+			        height: 117px;
+			        li {
+			            width: 270px;
+			        }
+			    }
+			}
+		}
+
+		.sectionWhyCompare {
+			padding: $small-fix-15;
+			padding-bottom: $small-fix-40;
+			.container {
+				h2 {
+					font-size: $small-fix-20 + $small-fix-03;
+					margin-top: $small-fix-10;
+				}
+				.whyCompare_Options {
+					margin-top: $small-fix-07;
+					.Option_Compare {
+						width: $max-conv-width;
+						margin: $null-conv;
+						padding: $small-fix-15;
+						padding-top: $small-fix-10;
+						.title_bullet {
+							margin-bottom: $small-fix-07;
+							font-size: 14px;
+						}
+						p {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+
+		.footerCompare {
+			.footerCompare_Top {
+				padding: $small-fix-15;
+				padding-top: $small-fix-60;
+				.footerLogo_Box {
+					width: $small-fix-100;
+					height: $small-fix-100;
+					top: -37px;
+					img {
+						top: $small-fix-10;
+						width: $small-fix-70 + 2;
+					}
+				}
+				.container {
+					padding: $null-conv;
+					p {
+						font-size: $small-fix-13;
+					}
+				}
+			}
+
+			.footerCompare_Bottom {
+				padding: $small-fix-15;
+				p {
+					font-size: $small-fix-10;
+				}
+			}
+		}
+	}
+}
+
+
+// SmartPhones LandScape
+/*************************************** SmartPhones LandScape ***********************************/
+
+@include landScapeSlide {
+
+	.topCompare {
+		.sectionSlide {
+			#slider {
+			    left: $null-conv;
+			    ul {
+			        height: 117px;
+			        li {
+			            width: 370px;
+			        }
+			    }
+			}
+		}
+
+		.sectionLooking {
+    		.sectionLooking_Floor {
+    			.lookingFor_Option {
+    				width: 32% // 48%
+    			}
+    		}
+		}
+
+		.sectionWhyCompare {
+			.container {
+				.whyCompare_Options {
+					.Option_Compare {
+						width: $max-conv-width / 2;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,300 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+/*************************************** TABLETS ************************************/
+
+@include tabletsUmbracoIpad {
+
+	.YourCarLow {
+
+		.heroStage {
+			.heroFloor {
+				.formStage {
+					.formStageHeader {
+						display: none;
+						.formStageHeaderPlat {
+							h2 {
+								font-size: 33px;
+							}
+							span {
+								width: $max-conv-width;
+								font-size: 22px;
+							}
+						}
+						.topShape {
+							&:before {
+								content: '';
+							    border-top: 158px solid transparent;
+							    border-right: 40px solid #ffad00;
+							    border-bottom: 158px solid transparent;
+							    width: $null-conv;
+							    height: $null-conv;
+							    position: absolute;
+							    left: $null-conv;
+							    right: $null-conv;
+							    @include transform(-90deg);
+							    top: -2px;
+							    margin-left: auto;
+							    margin-right: auto;
+							    margin-top: -34px;
+							}
+						}
+						.downShape {
+    						display: none;
+						}
+					}
+					.formShapeBody {
+						position: relative;
+						float: left;
+						top: $null-conv;
+						margin-top: -12px;
+						padding: 15px;
+					    padding-top: 12px;
+					    padding-bottom: 62px;
+					    p {
+					    	font-size: 11px;
+					    	margin-top: 13px;
+					    }
+					    .YourCarLowStepForm {
+					    	.heading {
+					    		font-size: 19px;
+					    	}
+					    	input[type="text"].form-control {
+					    		height: 44px;
+					    	}
+					    	.actions {
+					    		ul {
+					    			li {
+					    				a {
+					    					font-size: 23px;
+					    					padding: 8px;
+					    				}
+					    			}
+					    		}
+					    	}
+					    	.form-control-feedback {
+					    		top: 46px;
+					    	}
+					    }
+					}
+				}
+				.QualifiedBlk {
+					height: 360px;
+					.QualifiedBlkInfo {
+						width: $max-conv-width;
+						height: auto;
+						.QualifiedPercent {
+							font-size: 77px;
+							top: -22px;
+							margin-right: 16px;
+							hr {
+								top: -19px;
+							}
+						}
+						.QualifiedPercentTxt {
+							width: 31%;
+							font-size: 22px;
+   			 				line-height: 23px;
+						}
+					}
+				}
+				.downQualifiedBlk {
+					top: $null-conv;
+					margin-top: -38px;
+					.getApp {
+						font-size: 17px;
+					}
+					.getAppNum {
+						font-size: 46px;
+						margin-top: -11px;
+						top: $null-conv;
+					}
+					.getAppSecTxt {
+						font-size: 23px;
+						margin-top: -1px;
+						top: $null-conv;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+@include slideTablets {}
+
+/*************************************** SMARTPHONES ************************************/
+
+@include smartphones {
+
+	.YourCarLow {
+		header {
+			padding: 12px;
+			.headerTxt {
+				display: none;
+			}
+			.logoBox {
+				max-width: 130px;
+				float: none;
+				margin: auto;
+			}
+		}
+
+		.heroStage {
+			overflow: initial;
+			border: $null-conv;
+			.heroFloor {
+				position: relative;
+				float: left;
+				.formStage {
+					width: $max-conv-width;
+					margin-bottom: 64px;
+					float: none;
+					margin: 15px auto;
+					.formStageHeader {
+						.formStageHeaderPlat {
+							h2 {
+								font-size: 33px;
+							}
+							span {
+								width: $max-conv-width;
+								font-size: 22px;
+							}
+						}
+						.topShape {
+							&:before {
+								content: '';
+							    border-top: 158px solid transparent;
+							    border-right: 40px solid #ffad00;
+							    border-bottom: 158px solid transparent;
+							    width: $null-conv;
+							    height: $null-conv;
+							    position: absolute;
+							    left: $null-conv;
+							    right: $null-conv;
+							    @include transform(-90deg);
+							    top: -2px;
+							    margin-left: auto;
+							    margin-right: auto;
+							    margin-top: -34px;
+							}
+						}
+						.downShape {
+    						display: none;
+						}
+					}
+					.formShapeBody {
+						position: relative;
+						float: left;
+						top: $null-conv;
+						// margin-top: -331px;
+						margin-top: -12px;
+						padding: 15px;
+					    padding-top: 70px;
+					    padding-bottom: 52px;
+					    p {
+					    	font-size: 11px;
+					    }
+					    .YourCarLowStepForm {
+					    	.heading {
+					    		font-size: 19px;
+					    	}
+					    	input[type="text"].form-control {
+					    		height: 44px;
+					    	}
+					    	.actions {
+					    		ul {
+					    			li {
+					    				a {
+					    					font-size: 23px;
+					    					padding: 8px;
+					    				}
+					    			}
+					    		}
+					    	}
+					    	.form-control-feedback {
+					    		top: 46px;
+					    	}
+					    }
+					}
+				}
+				.QualifiedBlk {
+					position: relative;
+					float: left;
+					bottom: $null-conv;
+					left: $null-conv;
+					width: $max-conv-width;
+					height: auto;
+					@include transform($null-conv);
+					padding-bottom: 5px;
+					margin-top: 65px;
+					.QualifiedBlkInfo {
+						width: $max-conv-width;
+						height: auto;
+						.QualifiedPercent {
+							font-size: 74px;
+							top: -22px;
+							margin-right: 16px;
+							hr {
+								top: -19px;
+							}
+						}
+						.QualifiedPercentTxt {
+							width: $max-conv-width / 2;
+							font-size: 22px;
+   			 				line-height: 23px;
+						}
+					}
+				}
+				.downQualifiedBlk {
+					top: $null-conv;
+					margin-top: -38px;
+					.getApp {
+						font-size: 17px;
+					}
+					.getAppNum {
+						font-size: 46px;
+						margin-top: -11px;
+						top: $null-conv;
+					}
+					.getAppSecTxt {
+						font-size: 23px;
+						margin-top: -1px;
+						top: $null-conv;
+					}
+				}
+			}
+			.heroImg {
+				display: none;
+			}
+		}
+
+		.testemStage {
+			padding-top: 20px;
+			padding-bottom: 63px;
+			.testemBlk {
+				width: $max-conv-width;
+				margin-bottom: 20px;
+				.testmenBullet {
+					width: 130px;
+					height: 130px;
+					i {
+						top: 42px;
+					}
+				}
+			}
+		}
+
+		.footerStage {
+			.footTopBullet {
+				width: 130px;
+				height: 130px;
+				top: -65px;
+			}
+		}
+
+	}
+}

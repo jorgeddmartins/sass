@@ -1,0 +1,1218 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Table Grid
+
+.mainTableGrid { overflow: $flowAuto; }
+
+.tableGrid {
+	width: $max-conv-width;
+	float: left;
+	padding-left: $small-fix-05;
+	padding-right: $small-fix-05;
+	.gridHeader {
+		width: $max-conv-width;
+		float: left;
+		padding: $small-fix-03 + 1;
+	    padding-bottom: $null-conv;
+	    background: $white;
+	    border: $small-fix-01 solid $gray-smooth;
+	    border-bottom: $null-conv;
+		.headGrid-row {
+			width: $max-conv-width;
+			float: left;
+			.headGrid-th {
+				position: relative;
+				float: left;
+				background: #f2f2f2;
+				padding: $small-fix-03 + 1;
+				padding-top: $small-fix-10 + 1;
+	    		padding-bottom: $small-fix-10;
+				border: $small-fix-01 solid $white;
+				border-right: $null-conv;
+				font-size: $small-fix-10;
+			    text-align: center;
+			    text-transform: uppercase;
+			    min-height: $small-fix-30 + $small-fix-07;
+			    cursor: default;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+				&:last-child {
+					border-right: $small-fix-01 solid $gray-smooth;
+				}
+				.dropHeader {
+					position: absolute;
+				    width: $small-fix-10 + 2;
+				    height: $small-fix-10 + 2;
+				    top: $small-fix-10 + 2;
+				    right: $small-fix-05 + 1;
+				    color: $black;
+				    cursor: pointer;
+				}
+			}
+			&:first-child {
+				.headGrid-th {
+					border-bottom: $null-conv;
+				}
+			}
+		}
+	}
+	.animatedDrop {
+		background: $white;
+		position: absolute;
+		width: $large-fix-150; // 150px
+		border: $small-fix-01 solid $gray-smooth;
+		z-index: 1;
+		top: $small-fix-85 + 1; // 86px
+    	display: none;
+    	.animDropUrl {
+    		position: relative;
+    		float: left;
+		   	width: $max-conv-width;
+		    font-size: $small-fix-10;
+		    color: $primary-color;
+		    text-decoration: none;
+		    padding: $small-fix-07;
+		    padding-left: $small-fix-40;
+		    border-bottom: $small-fix-01 solid $gray-smooth;
+		    &:hover {
+		    	background: #f9f9f9;
+		    }
+		    i {
+		    	position: absolute;
+			    left: $small-fix-10 - 1;
+			    top: $small-fix-05 + 1;
+    			font-size: $small-fix-15;
+		    }
+    	}
+    	.subGridArrow {
+    		cursor: pointer;
+    		&:after {
+    			position: absolute;
+			    content: "";
+			    vertical-align: middle;
+			    width: $null-conv;
+			    height: $null-conv;
+			    border-left: $small-fix-03 + 1 solid transparent;
+			    border-right: $small-fix-03 + 1 solid transparent;
+			    top: $small-fix-13;
+			    right: $small-fix-13 + 1;
+			    border-bottom: $small-fix-03 + 1 solid $black;
+			    @include transform($rotate-90);
+			    cursor: pointer;
+    		}
+    	}
+    	.sudAnimeDrop {
+    		width: $large-fix-200; // 200px
+		    left: $large-fix-150 - 1; // 149px
+		    position: absolute;
+		    background: $white;
+		    border: $small-fix-01 solid $gray-smooth;
+		    ul {
+		    	margin-bottom: $null-conv;
+		    	li {
+		    		padding: $small-fix-05;
+		    		padding-left: $small-fix-20 + $small-fix-05;
+		    		width: $max-conv-width;
+		    		float: left;
+		    		border-bottom: $small-fix-01 solid $gray-smooth;
+		    		input[type="checkbox"], span {
+		    			float: left;
+		    		}
+		    		input[type="checkbox"] { 
+		    			margin-right: $small-fix-10;
+		    			display: none; 
+		    		}
+		    		span {
+		    			font-size: $small-fix-10 + 1;
+					    text-transform: uppercase;
+					    position: relative;
+					    top: $small-fix-03 + 1;
+		    		}
+		    	}
+		    }
+
+
+		    // Start Switches
+
+		    @include simpleswitch();
+
+			// End Switches
+
+    	}
+    	.subColumns {
+    		top: 57px;
+    		height: 373px;
+		    display: $dispnone;
+		    overflow: $flowAuto;
+    	}
+    	.subFilter {
+    		width: 180px;
+    		top: $small-fix-85 + 1; // 86px
+    		display: $dispnone;
+    		form {
+    			padding: $small-fix-05;
+    			float: left;
+    			width: $max-conv-width;
+    			.filterTitle {
+    				font-size: $small-fix-07 + 1;
+				    float: left;
+				    width: $max-conv-width;
+				    margin-bottom: $small-fix-03;
+				    text-align: center;
+				    text-transform: uppercase;
+				    color: #025a87;
+				    font-weight: bold;
+				    letter-spacing: $small-fix-01 / 2; // 0.5px
+    			}
+    			.equalDrop {
+    				width: $max-conv-width;
+    				float: left;
+    				height: $small-fix-30 + $small-fix-03 + 1; // 34px
+    				border: $small-fix-01 solid $gray-smooth;
+    				font-size: $small-fix-10 + 1;
+    				padding: $small-fix-07;
+    				line-height: $small-fix-20 - 2; // 20px
+    				cursor: pointer;
+    				position: relative;
+    				background: #f9f9f9;
+    				&:before {
+    					content: '';
+					    position: absolute;
+					    vertical-align: middle;
+					    width: $null-conv;
+					    height: $null-conv;
+					    border-left: $small-fix-03 + 1 solid transparent;
+					    border-right: $small-fix-03 + 1 solid transparent;
+					    top: $small-fix-10 + $small-fix-03 + 1; // 16px
+					    right: $small-fix-10;
+					    border-bottom: $small-fix-03 + 1 solid $black;
+					    @include transform($rotate-180);
+    				}
+    			}
+    			.rotate0 {
+    				&:before {
+    					@include transform($null-conv);
+    				}
+    			}
+    			.equalDropNumber {
+    				width: $max-conv-width;
+    				float: left;
+    				height: $small-fix-30 + $small-fix-03 + 1; // 34px
+    				border: $small-fix-01 solid $gray-smooth;
+    				font-size: $small-fix-10 + 2;
+    				padding: $small-fix-07;
+    				cursor: pointer;
+    				position: relative;
+    				background: #f9f9f9;
+    				margin-top: $small-fix-02;
+    				margin-bottom: $small-fix-02;
+    				&:focus {
+    					outline: $null-conv;
+    				}
+    			}
+    			.equalDrop-Floor {
+    				position: absolute;
+				    width: 93%;
+				    background: $white;
+				    border: $small-fix-01 solid $gray-smooth;
+				    left: $small-fix-05;
+				    top: $small-fix-50 + $small-fix-05; // 55px
+				    z-index: 1;
+				    display: $dispnone;
+				    .equalTab {
+				    	width: $max-conv-width;
+					    float: left;
+					    padding: $small-fix-03 + 1;
+					    font-size: $small-fix-10;
+					    border-bottom: $small-fix-01 solid $gray-smooth;
+					    cursor: pointer;
+					    &:last-child {
+					    	border-bottom: $null-conv;
+					    }
+				    }
+    			}
+    		}
+    	}
+	}
+	.animatedDropActive { display: block; }
+
+	.anime_1 { left: $medium-fix-small - 1; } // 46px
+	.anime_2 { left: 164px; }
+	.anime_3 { left: 261px; }
+
+	.gridBody {
+		width: $max-conv-width;
+		float: left;
+		position: relative;
+	    border: $small-fix-01 solid $gray-smooth;
+	    border-top: $null-conv;
+	    border-bottom: $null-conv;
+	    padding: $small-fix-03 + 1;
+	    background: $white;
+		.bodyGrid-row {
+			width: $max-conv-width;
+			float: left;
+			position: relative;
+			.bodyGrid-td {
+				position: relative;
+				float: left;
+				background: #f8f8f8;
+				padding: $small-fix-07;
+				padding-top: $small-fix-10;
+	    		padding-bottom: $small-fix-10;
+				border: $small-fix-01 solid $gray-smooth;
+				border-right: $null-conv;
+				border-bottom: $null-conv;
+				font-size: $small-fix-10 + 1;
+			    text-align: center;
+			    min-height: $small-fix-30 + $small-fix-07;
+			    cursor: default;
+			    overflow: hidden;
+    			text-overflow: ellipsis;
+			    &:last-child {
+			    	border-right: $small-fix-01 solid $gray-smooth;
+			    }
+			    a {
+			    	text-decoration: none;
+			    	color: $primary-color;
+			    	cursor: default;
+			    }
+			    a.clickon {
+			    	cursor: pointer;
+			    	&:hover {
+			    		color: #1fadcf;
+			    	}
+			    }
+			    input[type="text"] {
+			    	width: $max-conv-width;
+			    	background: transparent;
+			    	text-align: center;
+			    	border: $null-conv;
+			    	overflow: hidden;
+    				text-overflow: ellipsis;
+			    	&:focus {
+			    		outline: $null-conv;
+			    	}
+			    }
+			    input[type="checkbox"] {
+			    	position: absolute;
+			    	left: $small-fix-10 + 2;
+			    	top: $small-fix-10 + 2;
+			    	margin: $null-conv;
+			    }
+			    .pointerUrl {
+			    	cursor: pointer;
+			    }
+			}
+			&:last-child {
+				.bodyGrid-td {
+					border-bottom: $small-fix-01 solid $gray-smooth;
+				}
+			}
+
+			.InsurerDrop {
+
+				.InsuDrop_Floor {
+					position: absolute;
+				    width: 92%;
+				    height: 79%;
+				    top: $small-fix-03 + 1;
+				    left: $small-fix-03 + 1;
+				    .DropInsu {
+				    	position: absolute;
+					    width: $max-conv-width;
+					    text-align: left;
+					    left: $null-conv;
+					    top: $null-conv;
+					    padding: $small-fix-05 + 1;
+					    cursor: pointer;
+					    overflow: hidden;
+					    white-space: nowrap;
+					    text-overflow: ellipsis;
+					    &:after {
+					    	position: absolute;
+						    content: "";
+						    vertical-align: middle;
+						    width: $null-conv;
+						    height: $null-conv;
+						    border-left: $small-fix-03 + 1 solid transparent;
+						    border-right: $small-fix-03 + 1 solid transparent;
+						    top: $small-fix-12;
+						    right: $small-fix-05;
+						    border-bottom: $small-fix-03 + 1 solid $black;
+						    @include transform($rotate-180);
+						    @include transition($Sec-03);
+						    cursor: pointer;
+					    }
+			    	}
+
+			    	.rotateIn0 {
+						&:after {
+							@include transform($rotateNull);
+						}
+					}
+				}
+
+				.InsuDrop_Floor_Drop {
+					position: absolute;
+				    width: 150px;
+				    margin: $null-conv;
+				    top: $small-fix-30 - 1;
+				    left: $null-conv;
+				    background: $white;
+				    border: $small-fix-01 solid $gray-smooth;
+				    z-index: 1;
+				    @include box-shadow($null-conv $small-fix-03 $small-fix-12 $null-conv rgba(0, 0, 0, 0.35));
+					display: none;
+				    li {
+				    	float: left;
+				    	width: $max-conv-width;
+				    	.InsureD {
+				    		padding: $small-fix-07 + 1;
+				    		float: left;
+				    		width: $max-conv-width;
+				    		border-bottom: $small-fix-01 solid $gray-smooth;
+				    		color: #777;
+				    		font-size: $small-fix-12;
+				    		text-align: left;
+				    		cursor: pointer;
+				    		position: relative;
+				    		box-sizing: content-box;
+				    		@include transition($Sec-04);
+				    		&:hover {
+				    			background: #f9f9f9;
+				    			color: $black;
+				    			padding-left: $small-fix-12;
+				    			border-top-right-radius: $small-fix-50;
+				    			border-bottom-right-radius: $small-fix-50;
+				    			border-bottom: $small-fix-02 solid #ddd;
+				    		}
+				    	}
+				    	&:last-child {
+				    		.InsureD {
+				    			border-bottom: $null-conv;
+				    		}
+				    	}
+				    }
+				}
+		    }
+
+		    .iconGrid {
+		    	position: absolute;
+			    top: $small-fix-05;
+			    left: $small-fix-07 + 1;
+			    font-size: $small-fix-20 + $small-fix-03 + 1; // 24px
+			    z-index: $zindex-smll-20;
+			    cursor: pointer;
+			    color: #025a87;
+		    }
+		}
+
+		.backBlue {
+			.bodyGrid-td {
+				background: #1fadcf;
+				a {
+					color: $white;
+				}
+				.openGridTab {
+					border-bottom: $small-fix-05 solid $white;
+				}
+			}
+		}
+		.brBott-Grid {
+			.bodyGrid-td {
+				border-bottom: $small-fix-01 solid $gray-smooth;
+			}
+		}
+		.backWhite {
+			.bodyGrid-td {
+				background: $white;
+			}
+		}
+		.backblue {
+			.bodyGrid-td {
+				background: #1dafd0;
+				color: $white;
+				.DropInsu {
+					&:after {
+						border-bottom: $small-fix-04 solid $white !important;
+					}
+				}
+			}
+		}
+		.borderLeft {
+			border-left: $null-conv !important;
+		}
+		.openGridTab {
+			text-decoration: none;
+			position: absolute;
+		    vertical-align: middle;
+		    width: $null-conv;
+		    height: $null-conv;
+		    border-left: $small-fix-05 solid transparent;
+		    border-right: $small-fix-05 solid transparent;
+		    top: $small-fix-15 + 1;
+		    left: $small-fix-13;
+		    border-bottom: $small-fix-05 solid $black;
+		    @include transform($rotate-90);
+		    cursor: pointer;
+		}
+
+		.openGridTabRotate {
+			@include transform(127deg);
+		}
+
+		.tableTab-floor {
+			width: $max-conv-width; 
+			position: relative; 
+			float: left;  
+			padding-top: $small-fix-10;
+			padding-bottom: $small-fix-10;
+			background: #f2f2f2;
+			display: none;
+			overflow: auto;
+    		height: 70vh;
+			.freeAdd_Floor {
+				width: $max-conv-width;
+				float: left;
+				.tabTopGrid {
+					float: left;
+					width: 10%;
+					position: relative;
+					padding-left: $small-fix-10 + 1;
+					.tabLink {
+						cursor: pointer;
+						padding: $small-fix-13;
+					    background: #fafafa;
+					    border-bottom: $small-fix-01 solid #f2f2f2;
+					    text-transform: capitalize;
+					    font-size: $small-fix-10 + 2;
+					    color: #025a87;
+					    float: left;
+					    margin: $small-fix-01 / 2;
+					    padding-left: $small-fix-15;
+					    padding-right: $small-fix-15;
+					    width: $max-conv-width;
+					    text-align: center;
+					    @include transition($Sec-04);
+					    letter-spacing: $small-fix-01 / 2;
+					    &:hover {
+					    	background: $gray-smooth;
+					    	color: #333;
+					    }
+					}
+
+					.selectedTab {
+						background: #1fadcf;
+						color: $white;
+						position: relative;
+						@include border-radius($small-fix-05);
+						&:after {
+							content: '\e93c';
+							font-family: 'Linearicons';
+							font-weight: bold;
+							position: absolute;
+						    right: $small-fix-07 + 1;
+						    top: $small-fix-13;
+						}
+					}
+				}
+				.subFreeGrid {
+					width: 89.55%;
+				    float: right;
+				    padding: $small-fix-05;
+				    position: relative;
+				    &:last-child {
+						.right_Square {
+							display: none;
+						}
+					}
+				    .freeInside {
+				    	position: relative;
+				    	width: 85%;
+				    	float: left;
+				    }
+				    .Sc_Square {
+			    		width: $max-conv-width;
+			    		float: left;
+			    		padding: $small-fix-07;
+			    		margin: $small-fix-05;
+			    		padding-left: $small-fix-10 + 2;
+			    		padding-right: $small-fix-10 + 2;
+			    	}
+			    	.UpdatePol_title {
+		    		    margin: $null-conv;
+					    font-size: $small-fix-13 + 1;
+					    font-weight: bold;
+					    border-bottom: $small-fix-02 solid $white;
+					    padding-bottom: $small-fix-07;
+					    margin-bottom: $small-fix-07;
+					    display: inline-block;
+			    	}
+			    	.tableUpdated {
+			    		width: $max-conv-width;
+			    		float: left;
+			    		margin-top: $small-fix-03;
+			    		.tableUpdated_Top, 
+			    		.tableUpdated_Bottom {
+			    			width: $max-conv-width;
+			    			float: left;
+			    			padding: $small-fix-10;
+			    			.UpdateBlk {
+			    				position: relative;
+			    				width: $max-conv-width / 4; 
+			    				float: left; 
+			    				padding: $small-fix-05; // 12px
+			    				.inputPlat {
+			    					position: relative;
+			    					width: $max-conv-width;
+			    					float: left;
+			    					margin-bottom: $small-fix-05;
+			    					background: #fafafa;
+			    					label {
+									    position: absolute;
+									    left: $small-fix-20;
+									    top: $small-fix-10 + 2;
+									    font-size: $small-fix-10 + 2;
+									    padding-left: $small-fix-05;
+									    margin-bottom: $small-fix-02;
+									    z-index: 1;
+			    					}
+			    					input[type="text"], select {
+			    						width: $max-conv-width;
+			    						float: left;
+			    						height: $small-fix-40;
+			    						padding: $small-fix-10 + 2;
+			    						background: transparent;
+			    						border: $null-conv;
+			    						color: #025a87;
+			    						@include border-radius($small-fix-07);
+			    						border-left: $small-fix-01 solid $white;
+			    						border-bottom: $small-fix-01 solid $white;
+			    						padding-left: 118px;
+			    						text-align: right;
+			    						position: relative;
+			    						z-index: $zindex-smll-10;
+			    						&:focus {
+			    							outline: $null-conv;
+			    						}
+			    					}
+			    					&:last-child {
+			    						margin-bottom: $null-conv;
+			    					}
+
+			    					select {
+			    						-webkit-appearance: none;
+    									-moz-appearance: none;
+			    					}
+			    					select::-ms-expand {
+									    display: none;
+									}
+									i {
+										position: absolute;
+										top: $small-fix-10;
+										top: $small-fix-10 + 1;
+									    right: 100px;
+									    font-size: $small-fix-17 + 1;
+									    color: #ccc;
+									}
+			    				}
+			    				.k-policy-floor {
+			    					position: relative;
+									float: left;
+									width: $max-conv-width;
+									height: $small-fix-40;
+									background: #fafafa;
+									border-left: $small-fix-01 solid $white;
+    								border-bottom: $small-fix-01 solid $white;
+    								@include border-radius($small-fix-07);
+								}
+								.k-dropdown {
+									padding: $small-fix-10 + 2;
+									text-transform: uppercase;
+									font-size: $small-fix-10 + 2;
+									cursor: pointer;
+									&:after {
+										position: absolute;
+									    content: "";
+									    vertical-align: middle;
+									    width: $null-conv;
+									    height: $null-conv;
+									    border-left: $small-fix-05 solid transparent;
+									    border-right: $small-fix-05 solid transparent;
+									    top: $small-fix-20 - 2;
+									    right: $small-fix-13 + 1;
+									    border-bottom: $small-fix-05 solid $black;
+									    @include transform($rotate-180);
+									    cursor: pointer;
+									    @include transition($Sec-04);
+									}
+								}
+								.k-widget {
+									width: $max-conv-width;
+								    height: $small-fix-40;
+								    position: relative;
+								    float: left;
+								    color: #025a87;
+								    text-align: right;
+								    padding-right: $small-fix-35;
+								    i {
+								    	display: none;
+								    }
+								}
+								.rotate0 {
+									&:after {
+										@include transform($rotateNull);
+									}
+								}
+								.k-policy-dropDown {
+									width: $max-conv-width;
+									background: $white;
+									border: $small-fix-01 solid $gray-smooth;
+									position: absolute;
+									top: $small-fix-40 - 1;
+									left: $null-conv;
+									margin-bottom: $null-conv;
+									z-index: $zindex-smll-10;
+									@include border-radius($small-fix-03 + 1);
+									display: none;
+									z-index: $index-smll-30;
+									&:before {
+										position: absolute;
+									    content: "";
+									    vertical-align: middle;
+									    width: $null-conv;
+									    height: $null-conv;
+									    border-left: $small-fix-07 solid transparent;
+									    border-right: $small-fix-07 solid transparent;
+									    top: -7px;
+									    right: $null-conv;
+									    left: $null-conv;
+									    margin-left: auto;
+									    margin-right: auto;
+									    border-bottom: $small-fix-07 solid #ddd;
+									    @include transform($rotateNull);
+									}
+									li {
+										float: left;
+										width: $max-conv-width;
+										.dropProvider {
+											position: relative;
+											float: left;
+											width: $max-conv-width;
+											padding: $small-fix-35;
+											padding-top: $small-fix-07 + 1;
+				    						padding-bottom: $small-fix-07 + 1;
+											font-size: $small-fix-13;
+											color: #999;
+											cursor: pointer;
+											border-bottom: $small-fix-01 solid $gray-smooth;
+											text-align: right;
+											@include transition($Sec-04);
+											&:hover {
+												background: #f9f9f9;
+												color: #025a87;
+											}
+											i {
+												position: absolute;
+												left: $small-fix-35;
+												right: auto;
+												top: $small-fix-13;
+												color: #025a87;
+												font-weight: bold;
+											}
+										}
+									}
+								}
+			    			}
+			    			.greyBack {
+			    				background: #f2f2f2;
+			    			}
+			    		}
+			    		.tableUpdated_Top {
+			    			padding-top: $small-fix-01;
+			    		}
+			    		.tableUpdated_Bottom {
+			    			padding-top: $null-conv;
+			    			.UpdateBlk {
+			    				padding: $small-fix-07 - 2;
+			    			}
+			    		}
+			    	}
+			    	.fTab-0, .fTab-1 {
+			    		margin-top: $null-conv;
+			    		margin-bottom: $null-conv;
+			    		padding-bottom: $null-conv;
+			    	}
+			    	.freeInWidth {
+			    		width: 98.75%;
+			    	}
+			    	.polDet {
+			    		width: $max-conv-width;
+						display: inline-block;
+						color: #1fadcf;    
+						font-size: $small-fix-17 + 1;
+    					text-transform: uppercase;
+    					margin-bottom: $small-fix-07;
+    					margin-left: $small-fix-03;
+			    	}
+			    	.polDet_opt {
+			    		width: $max-conv-width;
+			    		float: left;
+			    		margin: $null-conv;
+			    		li {
+			    			float: left;
+						    padding: $small-fix-07;
+						    font-size: $small-fix-10 + 2;
+						    padding-left: $small-fix-25;
+						    padding-right: $small-fix-25;
+						    padding-bottom: $small-fix-05;
+						    margin: $small-fix-03;
+						    background: $gray-smooth;
+						    border: $small-fix-02 solid $white;
+						    @include border-radius($small-fix-07);
+						    min-height: $small-fix-50;
+						    .opt_Title {
+						    	color: #999;
+						    	text-transform: uppercase;
+							    width: $max-conv-width;
+							    float: left;
+						    }
+			    			.opt_content {
+			    				font-weight: bold;
+			    			}
+			    		}
+			    	}
+			    	.fTabSquare {
+						position: relative;
+						width: 20%;
+						float: left;
+						font-size: $small-fix-10 + 2;
+						padding: $small-fix-07;
+						padding-left: $small-fix-20;
+					    padding-right: $small-fix-20;
+						background: $rgba-white-07;
+						border: $small-fix-02 solid #f2f2f2;
+						i {
+							position: absolute;
+						    font-size: $small-fix-20;
+						    color: #ccc;
+						    right: $small-fix-10 + 2;
+						    top: $small-fix-17;
+						}
+					}
+					.opt_Title {
+						color: #999;
+				    	text-transform: uppercase;
+					    width: $max-conv-width;
+					    float: left;
+					}
+					.opt_content {
+						font-weight: bold;
+						width: $max-conv-width;
+						border: $null-conv;
+						padding-top: $small-fix-03;
+						background: transparent;
+						&:focus {
+							outline: $null-conv;
+						}
+					}
+				}
+				.right_Square {
+					width: 15%;
+					position: relative;
+					float: right;
+			    	padding: $small-fix-07;
+			    	.right_Blk {
+			    		width: $max-conv-width;
+			    		position: relative;
+			    		float: left;
+			    		margin-bottom: $small-fix-02;
+			    		&:last-child {
+			    			margin-bottom: $null-conv;
+			    		}
+			    		label {
+			    			margin: $null-conv;
+			    			float: left;
+			    			font-size: $small-fix-10 + 2;
+			    			position: absolute;
+			    			right: $small-fix-30 - 1;
+			    			width: auto;
+			    			top: $small-fix-10 + 1;
+			    		}
+			    		input[type="text"], 
+			    		.k-rightInput-floor {
+			    			width: $max-conv-width;
+						    height: $small-fix-40 - 2;
+						    border: $small-fix-02 solid $white;
+						    background: #f8f8f8;
+						    padding: $small-fix-15;
+						    padding-right: $small-fix-80;
+						    color: #025a87;
+						    &:focus {
+						    	outline: $null-conv;
+						    }
+						    .k-widget {
+						    	width: $max-conv-width;
+						    	position: absolute;
+						    	height: $max-conv-height;
+						    	cursor: pointer;
+						    	top: $null-conv;
+						    	left: $null-conv;
+						    	padding: $small-fix-15;
+    							padding-top: $small-fix-10 + 2;
+    							font-size: $small-fix-12;
+						    }
+			    		}
+			    		.k-rightInput-floor {
+			    			.k-dropdown {
+			    				&:after {
+							    	position: absolute;
+								    content: "";
+								    vertical-align: middle;
+								    width: $null-conv;
+								    height: $null-conv;
+								    border-left: $small-fix-05 solid transparent;
+								    border-right: $small-fix-05 solid transparent;
+								    top: $small-fix-17 + 1;
+								    right: $small-fix-10 + 1;
+								    border-bottom: $small-fix-05 solid $black;
+								    @include transform($rotate-180);
+								    cursor: pointer;
+								    @include transition($Sec-04);
+							    }
+			    			}
+			    			.rotate0 {
+				    			&:after {
+				    				@include transform($rotateNull);
+				    			}
+				    		}
+			    		}
+			    	}
+
+			    	.rightB_Square_2, 
+			    	.rightB_Square_3, 
+			    	.rightB_Square_4, 
+			    	.rightB_Square_5, 
+			    	.rightB_Square_6 {
+			    		&:after {
+			    			position: absolute;
+						    content: "";
+						    vertical-align: middle;
+						    border-left: $small-fix-05 solid transparent;
+						    border-right: $small-fix-05 solid transparent;
+						    top: $small-fix-17;
+						    right: $small-fix-10 + 1;
+						    border-bottom: $small-fix-05 solid $black;
+						    @include transform($rotate-180);
+						    cursor: pointer;
+						    @include transition($Sec-04);
+			    		}
+			    	}
+
+			    	.rightBrotate0 {
+			    		&:after {
+			    			@include transform(0deg);
+			    		}
+			    	}
+
+
+			    	.k-right-dropDown {
+			    		position: relative;
+			    		float: left;
+			    		width: $max-conv-width;
+			    		background: $white;
+			    		margin-bottom: $null-conv;
+			    		display: none;
+			    		li {
+			    			width: $max-conv-width;
+			    			float: left;
+			    			.rightDrop-in {
+			    				position: relative;
+							    float: left;
+							    width: $max-conv-width;
+							    padding: $small-fix-15;
+							    padding-top: $small-fix-10;
+							    padding-bottom: $small-fix-07 + 1;
+							    font-size: $small-fix-13;
+							    color: #999;
+							    cursor: pointer;
+							    border-bottom: $small-fix-01 solid $gray-smooth;
+							    text-align: left;
+							    @include transition($Sec-04);
+							    &:hover {
+							    	background: #f9f9f9;
+							    }
+			    			}
+			    		}
+			    	}
+			    	.btnPlat {
+			    		position: relative;
+			    		width: $max-conv-width;
+			    		float: left;
+			    		margin-top: $small-fix-05;
+			    		margin-bottom: $small-fix-15;
+			    	}
+			    	.btnPlat_1 { margin-bottom: $null-conv; }
+			    	.rightBlkBtn {
+			    		border: $null-conv;
+			    		padding: $small-fix-10 + 1;
+			    		padding-left: $small-fix-20;
+			    		padding-right: $small-fix-50 - 1;
+			    		background: #0A977A;
+			    		color: $white;
+			    		font-size: $small-fix-13;
+			    		font-weight: bold;
+			    		@include border-radius($small-fix-03);
+			    		position: relative;
+			    		width: $max-conv-width;
+			    		&:focus {
+			    			outline: $null-conv;
+			    		}
+			    		i {
+			    			position: absolute;
+			    			right: $small-fix-10;
+			    			top: $small-fix-10 + 1;
+			    			font-size: $small-fix-17 + 1;
+			    		}
+			    	}
+				}
+			}
+
+			.tableTab-in {
+				width: $max-conv-width;
+				float: left;
+				.GridTabs {
+					float: left; 
+					width: $max-conv-width; 
+					.tabLink {
+						position: relative;
+						padding: $small-fix-07;
+						padding-left: $small-fix-10 + 2;
+						padding-right: $small-fix-10 + 2;
+						font-size: $small-fix-10;
+						border: $small-fix-01 solid #ddd;
+						border-bottom: $null-conv;
+						border-right: $null-conv;
+						background: $gray-smooth;
+						text-decoration: none;
+						color: #333;
+						float: left;
+						border-top-left-radius: $small-fix-03;
+						border-top-right-radius: $small-fix-03;
+						&:last-child {
+							border-right: $small-fix-01 solid #ddd;
+						}
+					}
+					.selected {
+						background: $white;
+						border: $small-fix-01 solid $gray-smooth;
+						border-bottom: $null-conv;
+						border-right: $null-conv;
+					}
+				}
+				.GridPlat {
+					width: $max-conv-width; 
+					float: left;
+					padding: $small-fix-05;
+    				border: $small-fix-01 solid $gray-smooth;
+    				background: $white;
+					.ChildrenGridPlat {
+						width: $max-conv-width;
+						padding: $small-fix-03 + 1;
+						background: $white;
+						float: left;
+					}
+					.headGrid-th, 
+					.bodyGrid-td {
+						text-transform: none;
+						min-height: $small-fix-01;
+					    padding-top: $small-fix-07;
+					    padding-bottom: $small-fix-05;
+					    min-height: $small-fix-20 + $small-fix-05 + 1; // 26px
+					    font-size: $small-fix-10 - 1;
+					    color: #999;
+					}
+				}
+			}
+
+			.gridHeader, 
+			.gridBody {
+				padding: $null-conv;
+				border: $null-conv;
+			}
+			.gridBody {
+				background: transparent;
+				height: auto;
+			}
+		}
+	}
+
+	.gridFooter {
+		float: left;
+	    position: relative;
+	    width: $max-conv-width;
+	    background: $white;
+	    height: $small-fix-40 + $small-fix-05;
+	    border: $small-fix-01 solid $gray-smooth;
+	    border-top: $null-conv;
+	    padding: $small-fix-03 + 1;
+	    .gridFtIn {
+	    	width: $max-conv-width;
+	    	float: left;
+	    	height: $max-conv-height;
+	    	background: #f2f2f2;
+	    	padding-left: $small-fix-10;
+    		padding-right: $small-fix-10;
+	    	.GridFooterBullets {
+	    		width: $small-fix-30;
+	    		height: $small-fix-30;
+	    		position: relative;
+	    		float: left;
+	    		top: $small-fix-03;
+    			@include border-radius($max-conv-width / 2);
+    			background: $gray-smooth;
+    			@include box-shadow($null-conv $null-conv $small-fix-03 $null-conv $rgba-black-045);
+				margin-right: $small-fix-07;
+				text-decoration: none;
+				.icon {
+					position: absolute;
+				    color: #ccc;
+				    font-size: $small-fix-20 + $small-fix-03 + 1; // 24px
+				    left: $small-fix-03;
+				    top: $small-fix-02;
+				    &:hover {
+				    	color: $primary-color;
+				    }
+				}
+				&:last-child {
+					margin-right: $null-conv;
+				}
+				span {
+					position: absolute;
+					top: $small-fix-03 + 1;
+				    left: $null-conv;
+				    width: $max-conv-width;
+				    text-align: center;
+				}
+	    	}
+	    	.BulletCounter {
+	    		background: transparent;
+	    		color: #ccc;
+	    		border: $small-fix-01 solid #ddd;
+	    		cursor: pointer;
+	    		@include box-shadow(none);
+				&:hover {
+					background: #1fadcf;
+	    			color: $white;
+				}
+	    	}
+	    	.BulletCounter.selected {
+	    		background: #1fadcf;
+	    		color: $white;
+	    		@include box-shadow(none);
+				cursor: default;
+	    	}
+	    }
+	}
+
+	.tableGridInput {
+		position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    margin: $small-fix-05;
+	    margin-right: $null-conv;
+	    margin-bottom: $null-conv;
+	    width: $table-max-90 + $table-max-3; // 93%
+	    height: $small-fix-20 + $small-fix-05;
+	    border: $small-fix-01 solid $gray-smooth;
+	    padding: $small-fix-07;
+	    &:focus {
+	    	outline: $null-conv;
+	    }
+	}
+
+	.gridMaintabs {
+		width: $max-conv-width;
+		position: relative; 
+		float: left; 
+		margin-bottom: $small-fix-05;
+		text-align: center;
+		@include mainTabs();
+
+		.width160 {
+			width: $large-fix-150 + $small-fix-10; // 160px
+		}
+		.width186 {
+			width: 186px;
+		}
+		.mainTab {
+			cursor: pointer;
+		}
+	}
+
+
+	// Table Width
+
+	@include tableGridWidth();
+
+	.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	    background-color: rgba(0, 0, 0, 0.15);
+	    filter: "alpha(opacity=20)";
+	    -ms-filter: "alpha(opacity=20)";
+	}
+
+	.firstInp {
+		display: none;
+	}
+}
+
+.regSquare {
+	background: $white;
+    border: $small-fix-01 solid $gray-smooth;
+    border-bottom: $small-fix-02 solid $gray-smooth;
+    width: 80%;
+    margin: $small-fix-20 auto;
+    display: table;
+}
+
+.toolTipChase {
+	position: absolute;
+    width: 250px;
+    top: $small-fix-07; // 264px
+    right: 44px;
+    background: #FFEEB5;
+    border: $small-fix-01 solid #FFE58F;
+    @include border-radius($small-fix-03 + 1);
+    padding: $small-fix-07;
+    z-index: $double-zindex-smll-value;
+    display: none;
+    &:after {
+    	position: absolute;
+	    content: "";
+	    vertical-align: middle;
+	    width: $null-conv;
+	    height: $null-conv;
+	    border-left: $small-fix-07 solid transparent;
+	    border-right: $small-fix-07 solid transparent;
+	    top: $small-fix-10 + 2;
+	    right: -11px;
+	    border-bottom: $small-fix-07 solid #FFE58F;
+	    @include transform($rotate-90);
+	    cursor: pointer;
+    }
+    .tooTip_In {
+    	margin: $null-conv;
+    	font-size: $small-fix-10 + 1;
+    	word-break: break-all;
+    	line-height: $small-fix-15;
+    }
+}
+
+
+// For Elements that have no Classes defined
+// $('span:not([class!=""])').css('color', 'red');

@@ -1,0 +1,209 @@
+// Header Info Elements 
+@import '_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '_mixins';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.setitngsView {
+    position: relative;
+    top: $null-conv;
+    left: $null-conv;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    padding-bottom: $small-fix-15 + 1;
+    max-height: 970px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.settings_menu {
+    width: $max-conv-width;
+    padding: $null-conv;
+    display: inline-block;
+    .panel-heading {
+        padding-bottom: $small-fix-10;
+        padding-top: $null-conv;
+       h4 {
+            margin: $null-conv;
+            text-transform: capitalize;
+            font-size: $small-fix-20 + 2;
+            float: left;
+            letter-spacing: 0;
+            width: $max-conv-width;
+            text-align: center;
+        } 
+    }
+    .btn-Grid {
+        padding-top: $small-fix-07;
+        padding-bottom: $small-fix-07;
+        background: $white;
+        border-top: $small-fix-01 solid #eee;
+    }
+
+    #grid-head-6, 
+    #grid-head-7, 
+    #grid-head-8, 
+    #grid-head-9, 
+    #grid-head-10, 
+    #grid-head-11, 
+    #grid-head-12 {
+        &:after {
+            display: none;
+        }
+    }
+
+    .btnDisable {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.menuSettingsGrid {
+    display: none;
+}
+
+.imagesettings {
+    display: none;
+
+    .mCS-minimal.mCSB_scrollTools {
+       .mCSB_dragger {
+         .mCSB_dragger_bar {
+                background-color: rgba(0,0,0,0.15);
+                filter: "alpha(opacity=20)";
+                -ms-filter: "alpha(opacity=20)";
+            } 
+        } 
+    }
+}
+
+
+.settingsgGrid {
+    width: 70%;
+    position: relative;
+    display: table;
+    padding-top: $small-fix-20;
+    padding-bottom: $small-fix-20;
+    margin: auto;
+    .nav-setitngs-btns {
+        width: $max-conv-width; // 97.3%
+        margin-top: $small-fix-07;
+        margin-bottom: $small-fix-07;
+        background: $white;
+        padding: $small-fix-10;
+        border: $small-fix-01 solid #eee;
+        border-bottom: $small-fix-01 solid #ddd;
+        @include border-radius($small-fix-03);
+        float: left;
+    }
+    .column-dragdrop {
+        position: relative;
+        border: $small-fix-01 solid #eee;
+        border-bottom: $small-fix-01 solid #ddd;
+        padding: $small-fix-15;
+        float: left;
+        margin-top: $small-fix-07;
+        margin-bottom: $small-fix-07;
+        margin-left: $null-conv;
+        margin-right: $null-conv;
+        min-height: 50px;
+        @include border-radius($small-fix-03);
+        background: $white;
+    }
+
+    .column-46 {
+        width: 46%;
+        .auto-search {
+            max-width: 520px;
+            margin: $small-fix-10 auto $small-fix-20;
+            padding: $small-fix-13 + 1 $small-fix-10 + 2;
+            font-size: $small-fix-13 + 1;
+            font-weight: bold;
+            height: auto;
+            @include border-radius($null-conv);
+            border: 1px solid #eee;
+            border-bottom: $small-fix-02 solid #eee;
+            box-shadow: none;
+            @include transition(all 0.5s ease-in-out);
+        }
+    }
+    .column-53 {
+        width: 53%;
+        float: right;
+    }
+    .updatenav {
+        background: #fafafa;
+        width: 60px;
+        height: 60px;
+        color: #333;
+        border: $null-conv;
+        margin-right: $small-fix-20;
+        text-transform: uppercase;
+        font-weight: bold;
+        background: #fafafa;
+        @include border-radius($max-conv-width / 2);
+        float: left;
+        &:focus {
+            outline: $null-conv;
+        }
+        i {
+            font-size: 30px;
+        }
+
+    }
+    .setpermitions {
+        width: 60px;
+        height: 60px;
+        padding: 30px;
+        @include border-radius($max-conv-width / 2);
+        margin-right: 20px;
+        background: #FF7300;
+        color: $white;
+        border: $null-conv;
+        float: left;
+        &:focus {
+            outline: $null-conv;
+        }
+        i {
+            top: -17px;
+            position: relative;
+            font-size: 30px;
+            left: -15px;
+        }
+    }
+    .setsave {
+        width: 60px;
+        height: 60px;
+        padding: 30px;
+        margin-right: 20px;
+        @include border-radius($max-conv-width / 2);
+        color: $white;
+        background: #5cb85c;
+        border: $null-conv;
+        float: left;
+        &:focus {
+            outline: $null-conv;
+        }
+        i {
+            top: -14px;
+            position: relative;
+            font-size: 30px;
+            left: -13px;
+        }
+    }
+    .notallowed-nav {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+    #drag-menu-left, 
+    #drag-menu-right {
+        height: 600px;
+        overflow: hidden;
+   }
+
+
+}
+
+.newSettings {
+    width: $max-conv-width !important;
+}

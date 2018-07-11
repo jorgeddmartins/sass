@@ -1,0 +1,336 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Dashboard
+
+.Dashboard {
+	padding-top: $small-fix-15;
+	padding-bottom: $small-fix-15;
+	.dashCharts {
+		position: relative;
+		margin: .5%;
+		@include border-radius($small-fix-05);
+	    padding-right: $null-conv;
+	    padding-left: $null-conv;
+	    border: $small-fix-01 solid #eee;
+	    border-bottom: $small-fix-02 solid #eee;
+	    background: $white;
+	    height: $fourtyvh; // 40vh
+	    float: left;
+	    .chartTitle {
+	    	width: $max-conv-width;
+		    float: left;
+		    padding: $small-fix-20;
+		    padding-bottom: $small-fix-13;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    color: #1fadcf;
+		    letter-spacing: -0.5px;
+	    }
+
+
+	    .chart_Floor {
+			position: absolute;
+			width: $max-conv-width;
+			height: $max-conv-height;
+			top: $null-conv;
+			left: $null-conv;
+			padding: $small-fix-10;
+			padding-top: $null-conv;
+			padding-bottom: $null-conv;
+		}
+
+
+	}
+	.topChart {
+		width: 24%;
+		max-width: 456px;
+	}
+	.bottomChart50 {
+		width: 49%;
+    	max-width: 931px;
+	}
+
+	.getDataFloor {
+		.panel-input:nth-child(1), 
+		.panel-input:nth-child(2), 
+		.panel-input:nth-child(3) {
+			display: none;
+		}
+	}
+	.top-Grid {
+		padding-left: 21%;
+		margin-bottom: $small-fix-05 !important;
+	}
+}
+
+
+// All Charts
+.Allchart_Floor {
+	position: absolute;
+    width: $max-conv-width;
+    left: $null-conv;
+    bottom: $null-conv;
+    height: 87%;
+    .AllChart_Title {
+    	width: $max-conv-width;
+    	float: left;
+    	padding: $small-fix-05;
+    	text-align: center;
+    	.AllChart_InTitle {
+    		margin: $small-fix-05;
+    		font-size: $small-fix-10 + 1;
+    		font-weight: bold;
+    		.square {
+    			width: $small-fix-10 + 1;
+			    height: $small-fix-10 + 1;
+			    display: inline-block;
+			    position: relative;
+			    top: $small-fix-01 + 0.5; // 1.5px
+			    margin-right: $small-fix-03;
+    		}
+    		.squareOrange {
+    			background: rgba(255, 104, 0, 1);
+    		}
+    		.squareGreen {
+    			background: rgba(160, 167, 0, 1);
+    		}
+    	}
+    }
+    .AllCharts_Plat {
+    	position: absolute;
+    	width: $max-conv-width;
+    	left: $null-conv;
+    	bottom: $null-conv;
+    	height: 90%;
+    	.AllCharts_InPlat {
+    		width: 91%;
+    		height: 95%;
+    		position: absolute;
+    		right: $null-conv;
+    		top: $null-conv;
+    		margin-right: $small-fix-07 + 1;
+    		border: $small-fix-01 solid #eee;
+    		border-bottom: $small-fix-01 solid #333;
+    		.chartSpace {
+    			position: relative;
+			    width: 11.1%;
+			    height: $max-conv-height;
+			    border-right: $small-fix-01 solid #eee;
+			    float: left;
+			    &:last-child {
+			    	border-right: $null-conv;
+			    }
+			    span {
+			    	position: relative;
+				    width: $max-conv-width;
+				    height: 10%;
+				    border-bottom: $small-fix-01 solid #eee;
+				    float: left;
+				    &:last-child {
+				    	border-bottom: $null-conv;
+				    }
+			    }
+			    .chartSpacePlat {
+			    	position: absolute;
+				    width: $max-conv-width;
+				    height: $max-conv-height;
+				    top: $null-conv;
+				    left: $null-conv;
+				    .ChartBar {
+				    	position: absolute;
+					    width: $small-fix-10 + 2;
+					    bottom: $null-conv;
+					    border-bottom: $null-conv;
+					    height: $null-conv;
+					    .ChartBarToolTip {
+					    	position: absolute;
+					    	width: auto;
+    						white-space: nowrap;
+					    	padding: $small-fix-05;
+					    	padding-left: $small-fix-10;
+					    	padding-right: $small-fix-10;
+					    	padding-bottom: $small-fix-03;
+					    	height: auto;
+					    	top: $small-fix-05 + 1;
+					    	z-index: 20;
+					    	color: $white;
+					    	font-size: $small-fix-10 + 1;
+    						left: $small-fix-13 + 1;
+    						@include border-radius($small-fix-03 + 1);
+    						display: none;
+					    }
+
+					    .Orange {
+					    	background: #ff6800;
+					    }
+					    .Green {
+					    	background: #a0a700;
+					    }
+				    }
+				    .OrangeBar {
+				    	background: #ff6800;
+				    	left: $small-fix-07;
+				    }
+				    .GreenBar {
+				    	background: #a0a700;
+				    	left: $small-fix-20 + $small-fix-05 + 1; // 26px
+				    }
+
+
+				    // New Bars Inside
+				    .SpacePlatBar {
+				    	position: absolute;
+				    	width: $small-fix-10 + 2;
+				    	bottom: $null-conv;
+				    	height: $null-conv;
+				    	border-bottom: $null-conv;
+				    	.ChartBarToolTip {
+				    		position: absolute;
+						    width: auto;
+						    white-space: nowrap;
+						    padding: $small-fix-10 / 2;
+						    padding-left: $small-fix-10;
+						    padding-right: $small-fix-10;
+						    padding-bottom: $small-fix-03;
+						    height: auto;
+						    top: $small-fix-05 + 1;
+						    z-index: 20;
+						    color: $white;
+						    font-size: $small-fix-10 + 1;
+						    left: $small-fix-13 + 1;
+						    @include border-radius($small-fix-03 + 1);
+						    display: none;
+				    	}
+				    	.Orange {
+				    		background: #ff6800;
+				    	}
+				    	.Green {
+				    		background: #a0a700;
+				    	}
+				    }
+
+
+			    }
+    		}
+    	}
+    }
+
+    .leftScale {
+    	position: absolute;
+	    width: $small-fix-30 + 1; // 31px
+	    top: $null-conv;
+	    left: $null-conv;
+	    height: 95%;
+	    span {
+	    	float: left;
+	    	width: $max-conv-width;
+	    	text-align: center;
+	    	margin-bottom: $small-fix-10 - 1 + 0.3; // 9.3px
+	    	color: #025a87;
+	    	&:first-child {
+	    		margin-top: -10px;
+	    	}
+	    	&:last-child {
+	    		margin-bottom: $null-conv;
+	    	}
+	    }
+    }
+
+    // Bar Inside Chart
+    .barHeight {
+    	width: 14.27%;
+    	height: $max-conv-height;
+    	position: relative;
+    	float: left;
+    	border: $small-fix-01 solid #eee;
+    	border-right: $null-conv;
+    	border-bottom: $null-conv;
+    	&:first-child {
+    		border-left: $null-conv;
+    	}
+    }
+}
+
+.sdaySundayOrange {
+	@include animation(sdaySundayOrange $oneSec 1 forwards);
+}
+.sdaySundayGreen {
+	@include animation(sdaySundayGreen $oneSec 1 forwards);
+}
+.sdayMondayOrange {
+	@include animation(sdayMondayOrange $oneSec 1 forwards);
+}
+.sdayMondayGreen {
+	@include animation(sdayMondayGreen $oneSec 1 forwards);
+}
+.sdayTuesdayOrange {
+	@include animation(sdayTuesdayOrange $oneSec 1 forwards);
+}
+.sdayTuesdayGreen {
+	@include animation(sdayTuesdayGreen $oneSec 1 forwards);
+}
+
+.sdayWednesdayOrange {
+	@include animation(sdayWednesdayOrange $oneSec 1 forwards);
+}
+.sdayWednesdayGreen {
+	@include animation(sdayWednesdayGreen $oneSec 1 forwards);
+}
+
+
+// Cards
+.active-card {
+	position: absolute;
+	width: $max-conv-width;
+	height: $max-conv-height;
+	.card {
+		width: $max-conv-width;
+	    height: 68%;
+	    color: $white;
+	    overflow: hidden;
+	    position: relative;
+	    @include border-radius($null-conv);
+	    border-top-right-radius: $small-fix-03 + 1;
+	    border-top-left-radius: $small-fix-03 + 1;
+	    h6 {
+	    	display: block;
+		    position: relative;
+		    text-align: center;
+		    margin-top: $small-fix-10;
+		    font-size: 6em;
+		    top: $table-max-30 - 1; // 29%
+	    }
+	}
+	.well {
+		min-height: 130px;
+	    padding: $small-fix-05;
+		margin-bottom: $null-conv;
+		font-size: 3em;
+		background: transparent;
+		@include box-shadow(none);
+		border: $null-conv;
+		h3 {
+			position: absolute;
+		    width: $max-conv-width;
+		    text-align: center;
+		    margin-top: $table-max-10; // 10%
+		    margin-bottom: $small-fix-15;
+		    text-transform: uppercase;
+			font-size: $small-fix-20;
+		}
+	}
+	.label-info {
+	    background: #5bc0de;
+	}
+	.green-info {
+	    background: #0f9d58;
+	}
+	.yellow-info {
+	    background: #f8b2a5;
+	}
+}

@@ -1,0 +1,294 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Policies
+
+.realPolicies {
+	h2 {
+		margin-top: $small-fix-20;
+	    margin-bottom: $small-fix-20;
+	    border-left: $null-conv;
+	    padding-left: $null-conv;
+	    text-align: center;
+	    text-transform: uppercase;
+    	font-size: $small-fix-20;
+    	display: inline-block;
+    	width: $max-conv-width;
+    	color: #025a87;
+	}
+
+	// New Grid
+	.SmarterGrid {
+		position: relative;
+		width: $max-conv-width;
+		margin-top: $small-fix-15;
+		float: left;
+		.top-Grid {
+			width: $max-conv-width;
+			display: inline-block;
+			margin-bottom: $small-fix-15;
+			position: relative;
+			float: left;
+			// overflow: auto;
+			.panel-input {
+				height: 41px;
+				position: relative;
+				float: left;
+				margin: $small-fix-05;
+				label {
+					padding: $null-conv $small-fix-15;
+					position: relative;
+					height: $max-conv-height;
+					background: #f9f9f9;
+				    border: $small-fix-01 solid #eee;
+				    border-right: $null-conv;
+				    line-height: 2.8em;
+				    float: left;
+				    margin: 0;
+				}
+				.k-widget {
+					width: 190px;
+					height: $small-fix-40;
+					position: relative;
+					float: left;
+					background: $white;
+					border: $small-fix-01 solid #eee;
+					color: #025a87;
+					.k-input {
+						width: $max-conv-width;
+						height: $max-conv-height;
+						float: left;
+						padding: $small-fix-07;
+						padding-right: $small-fix-40 + $small-fix-05; // 45px
+						border: $null-conv;
+						position: absolute;
+					    z-index: 1;
+					    background: transparent;
+					    cursor: pointer;
+					    &:focus {
+					    	outline: $null-conv;
+					    }
+					}
+				}
+
+				.k-widget-calendar {
+					&:after {
+						content: '\f073';
+						font-family:'FontAwesome';
+						width: $small-fix-40;
+					    position: absolute;
+					    right: $null-conv;
+					    top: $null-conv;
+					    text-align: center;
+					    height: $max-conv-height;
+					    font-size: $small-fix-20;
+					    line-height: 1.9em;
+					    background: #f9f9f9;
+					    border-left: $small-fix-01 solid #eee;
+					}
+				}
+
+				.k-days-floor {
+					float: left;
+					height: $small-fix-40;
+				}
+
+				.k-dropdown {
+					padding: $small-fix-10 + 2;
+					text-transform: uppercase;
+					font-size: $small-fix-10 + 2;
+					cursor: pointer;
+					&:after {
+						position: absolute;
+					    content: "";
+					    vertical-align: middle;
+					    width: $null-conv;
+					    height: $null-conv;
+					    border-left: $small-fix-05 solid transparent;
+					    border-right: $small-fix-05 solid transparent;
+					    top: $small-fix-20 - 2;
+					    right: $small-fix-13 + 1;
+					    border-bottom: $small-fix-05 solid $black;
+					    @include transform(180deg);
+					    cursor: pointer;
+					}
+				}
+
+				.rotate0 {
+					&:after {
+						@include transform($rotateNull);
+					}
+				}
+				
+				.k-days-dropDown {
+					width: $max-conv-width;
+					background: $white;
+					border: $small-fix-01 solid #eee;
+					position: absolute;
+					top: $small-fix-40 + 1;
+					left: $null-conv;
+					margin-bottom: $null-conv;
+					z-index: 1;
+					display: none;
+					&:before {
+						position: absolute;
+					    content: "";
+					    vertical-align: middle;
+					    width: $null-conv;
+					    height: $null-conv;
+					    border-left: $small-fix-07 solid transparent;
+					    border-right: $small-fix-07 solid transparent;
+					    top: -7px;
+					    right: $null-conv;
+					    left: $null-conv;
+					    margin-left: auto;
+					    margin-right: auto;
+					    border-bottom: $small-fix-07 solid #eee;
+					    @include transform($rotateNull);
+					}
+					li {
+						float: left;
+						width: $max-conv-width;
+						.dropDays {
+							float: left;
+							width: $max-conv-width;
+							padding: $small-fix-10 + 2;
+							padding-top: $small-fix-07 + 1;
+    						padding-bottom: $small-fix-07 + 1;
+							font-size: $small-fix-13;
+							color: #999;
+							cursor: pointer;
+							border-bottom: $small-fix-01 solid #eee;
+							&:hover {
+								background: #f9f9f9;
+								color: #333;
+							}
+						}
+					}
+				}
+
+				@include smarterBtnHeader();
+			}
+		}
+	}
+
+	.dateinputPicker {
+		&:after {
+			content: '\e836';
+			font-family: Linearicons-Free;
+			font-size: $small-fix-15;
+			font-weight: bold;
+			color: $black;
+			position: absolute;
+			right: $small-fix-13 + 1;
+    		top: $small-fix-07;
+		}
+	}
+}
+
+
+// .getDataMain {
+// 	width: 733px;
+// 	float: left;
+// 	overflow: auto;
+// }
+
+// .getDataFloor {
+// 	width: 990px;
+// 	float: left;
+// }
+
+
+
+
+
+
+// Media Queries
+
+@include smartphonesUmbraco {
+
+	.realPolicies {
+		h2 {
+		    margin-bottom: 0;
+		}
+	}
+}
+
+@include ipadSmarter {
+
+	.realPolicies {
+		h2 {
+		    margin-bottom: 0;
+		}
+	}
+}
+
+
+
+
+/* Bootstrap Table*/
+
+.New-Modal50 {
+	width: 50%;
+	max-width: 940px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: $white;
+	border: 1px solid #eee;
+	position: relative;
+	display: inline-block;
+	.new_Modal50Tr {
+		.border-right {
+			border-right: 1px solid #eee;
+			padding-bottom: 15px;
+		}
+		
+	}
+	.dialog_title {
+		width: 100%;
+		float: left;
+		text-align: center;
+		font-size: 12px;
+		text-transform: uppercase;
+    	color: #999;
+    	margin-top: 10px;
+	}
+
+	.new_modal50Inp {
+		width: 100%;
+		height: 37px;
+		border: 1px solid #eee;
+		padding: 10px;
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.new_Modal50TrBtn {
+		margin-top: 30px;
+		text-align: center;
+		.modalBTn {
+			color: $white;
+			text-transform: uppercase;
+			font-size: 17px;
+			padding: 15px;
+			padding-left: 70px;
+			padding-right: 70px;
+			background: #eee;
+			display: inline-block;
+			text-decoration: none;
+			margin: 5px;
+		}
+
+		.modalBtnGreen {
+			background: #0A9A7A;
+		}
+
+		.modalBtnRed {
+			background: #c0392b;
+		}
+	}
+}

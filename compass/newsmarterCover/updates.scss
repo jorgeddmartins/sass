@@ -1,0 +1,303 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+
+.calendar * {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: $small-fix-10 + 1;
+}
+
+.calendar {
+    position: absolute;
+    cursor: default;
+    float: left;
+    padding: 0;
+    padding-top: 10px;
+    background: $white;
+    // left: $null-conv;
+    // top: $max-conv-top;
+    z-index: 1;
+    @include box-shadow(0 0 7px 0 rgba(0,0,0,0.20));
+    display: none;
+    .c-pad-top {
+    	padding-top: 3%;
+    }
+    .c-grid {
+	    float: left;
+	    // width: 302px;
+	    width: 282px;
+	    height: inherit;
+	    position: relative;
+
+	    .trGrid {
+			position: relative;
+			float: left;
+		    width: $max-conv-width;
+		}
+
+	    .c-day, .c-day-previous-month, .c-day-next-month {
+
+	    	// width: 14.28%;
+	    	width: 13%;
+	    	min-width: 39.25px;
+		    max-width: $small-fix-40 + 2;
+		    height: $small-fix-30 + $small-fix-01;
+		    // background: #DBEBE3;
+		    // color: #1A8755;
+		    background: rgba(31, 173, 207, 0.2);
+		    color: #025a87;
+		    float: left;
+		    text-align: center;
+		    cursor: pointer;
+		    margin: $small-fix-01 / 2;
+	    }
+
+	    .c-day {
+		    @include transition(.3s);
+		    &:hover {
+		    	background: #025a87;
+		    	color: $white;
+		    }
+		}
+
+		.c-day-previous-month, .c-day-next-month  {
+		    opacity: 0.5;
+		}
+
+		.c-week-day {
+		    // width: 14.28%;
+		    width: 13.25%;
+		    min-width: 40px;
+		    height: 10.38%;
+		    color: #025a87;
+		    float: left;
+		    text-align: center;
+		    font-weight: bold;
+		    font-size: $small-fix-10 + 1;
+		    padding-top: 1%;
+		    margin-bottom: 4px;
+		}
+
+		.c-month {
+		    // width: 85%;
+		    width: 85%;
+		    // min-width: 235.55px;
+		    height: 12%;
+		    text-align: center;
+		}
+
+		.c-nav-btn-over {
+		    font-weight: bold;
+		}
+
+		.today-select, .thisSelect {
+		    // background: #1A8755;
+		    background: #025a87;
+		    color: $white;
+		}
+
+		.c-event {
+		    color: $white;
+		    font-weight: bold;
+		    cursor: pointer;
+		}
+
+		.c-grid-title {
+		    font-weight: bold;
+		    float: left;
+		    color: #025a87;
+		    margin-bottom: $small-fix-07;
+		    padding-top: 2% !important;
+		}
+
+		.c-next, .c-previous {
+			width: 7.5%;
+			height: $small-fix-30 - 1;
+			text-align: center;
+		    cursor: pointer;
+		    padding-top: $null-conv !important;
+		    float: left;
+		    font-size: $small-fix-20;
+		    font-weight: 100;
+		}
+
+		.c-next, .c-previous {
+			&:before {
+				font-family: 'Linearicons';
+				position: relative;
+				top: -1.5px;
+			}
+		} 
+
+		.c-next {
+			&:before {
+				content: "\e93c";
+				
+			}
+		}
+
+		.c-previous {
+			&:before {
+				content: "\e93b";
+			}
+		}
+
+		.dateTimepopUp {
+			width: 185px;
+			padding: 6px;
+			z-index: 20000;
+		}
+
+		.topFirst { top: 12px; }
+
+		.topSecond { top: 45px; }
+
+		.topThird { top: 78px; }
+
+		.topFourth { top: 112px; }
+
+		.topFifth { top: 147px; }
+
+		.topSixth { top: 181px; }
+
+		.left1 { left: -70px; }
+
+		.left2 { left: -28px; }
+
+		.left3 { left: 16px; }
+
+		.left4 { left: 57px; }
+
+		.left5 { left: 102px; }
+
+		.left6 { left: 145px; }
+
+		.left7 { left: 188px; }
+	}
+
+
+
+	.c-Timer {
+		width: 273px;
+		.cTimerIn {
+			position: relative;
+			float: left;
+			width: $max-conv-width;
+			top: $small-fix-60 + 1;
+			.c-Time, .c-Time-f {
+				width: 44.34px;
+			    height: $small-fix-30 + $small-fix-03;
+			    background: #DBEBE3;
+			    color: #1A8755;
+			    font-size: $small-fix-12;
+			    float: left;
+			    text-align: center;
+			    cursor: pointer;
+			    margin: $small-fix-01 / 2;
+			    padding-top: 4%;
+			    @include transition(.3s);
+			    &:hover {
+			    	background: #1A8755;
+		    		color: $white;
+			    }
+			}
+
+			.thisSelect {
+				background: #1A8755;
+		    	color: $white;
+			}
+		}
+
+		.timerTitle {
+			color: #1A8755;
+			position: absolute;
+			float: left;
+			width: $max-conv-width;
+			text-align: center;
+			font-size: $small-fix-13;
+			font-weight: bold;
+			padding: $small-fix-07;
+			left: $null-conv;
+			top: $small-fix-02;
+		}
+	}
+	.c-Minute {
+		width: 187px;
+		.cMinuteIn {
+			position: relative;
+			float: left;
+			width: $max-conv-width;
+			top: $small-fix-60 + 1;
+			.c-Min {
+				position: relative;
+			    float: left;
+			    width: 45px;
+			    height: $small-fix-40 - 1;
+			    background: #DBEBE3;
+			    color: #1A8755;
+			    padding: $small-fix-04;
+			    padding-right: $small-fix-07;
+			    padding-top: $small-fix-15 + 1;
+			    cursor: pointer;
+			    margin: $small-fix-01 / 2;
+			    font-weight: 100;
+			    font-size: $small-fix-10 + 1;
+			    text-align: center;
+			    @include transition(.3s);
+			    &:hover {
+			    	background: #1A8755;
+		    		color: $white;
+			    }
+			}
+			.thisSelect {
+				background: #1A8755;
+		    	color: $white;
+			}
+		}
+	}
+
+	.c-Timer, .c-Minute {
+		position: relative;
+	    float: left;
+	    height: 265px;
+	    margin-left: $small-fix-15;
+	}
+
+}
+
+.timerSubTitle {
+	color: #1A8755;
+	position: absolute;
+	float: left;
+	width: $max-conv-width;
+	text-align: center;
+	font-size: $small-fix-12;
+	font-weight: bold;
+	padding: $small-fix-07;
+	left: $null-conv;
+	top: $small-fix-30 + $small-fix-07;
+} 
+
+.calendar-sm .c-pad-top {
+    padding-top: 2%;
+}
+
+.dispBl {
+	display: block !important;
+}
+
+.width8 {
+	width: 818.32px;
+}
+
+.calendar.is-open {
+	display: block;
+}
+
+
+.calendar {
+	// left: 88px;
+    top: 89%;
+}

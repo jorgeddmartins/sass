@@ -1,0 +1,246 @@
+// Header Info Elements 
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Grid View
+.search_TopBar {
+    width: $max-conv-width;
+    display: inline-block;
+    .panel-input {
+        height: $small-fix-40;
+        position: relative;
+        float: left;
+        margin: $small-fix-05;
+        &:first-child { margin-left: $null-conv; }
+        .k-days-floor {
+            float: left;
+            height: $small-fix-40;
+        }
+        .k-widget {
+            width: 190px;
+            height: $small-fix-40;
+            position: relative;
+            float: left;
+            background: $white;
+            border: $small-fix-01 solid #eee;
+            color: #025a87;
+            .k-input {
+                width: $max-conv-width;
+                height: $max-conv-height;
+                float: left;
+                padding: $small-fix-07;
+                padding-right: $small-fix-40 + $small-fix-05;
+                border: $null-conv;
+                position: absolute;
+                z-index: 1;
+                background: transparent;
+                color: #0A9A7A;
+                font-size: $small-fix-13;
+                font-weight: bold;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+        }
+        .k-dropdown {
+            padding: $small-fix-10 + 2;
+            text-transform: uppercase;
+            font-size: $small-fix-10 + 2;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 solid transparent;
+                border-right: $small-fix-05 solid transparent;
+                top: $small-fix-17 + 1;
+                right: $small-fix-13 + 1;
+                border-bottom: $small-fix-05 solid $black;
+                @include transform($rotate-180);
+                @include transition($Sec-03);
+                cursor: pointer;
+            }
+        }
+        .k-days-dropDown {
+            width: $max-conv-width;
+            background: $white;
+            border: $small-fix-01 solid #eee;
+            position: absolute;
+            top: $small-fix-40 + 1;
+            left: $null-conv;
+            margin-bottom: $null-conv;
+            z-index: 1;
+            display: none;
+            &:before {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-07 solid transparent;
+                border-right: $small-fix-07 solid transparent;
+                top: -7px;
+                right: $null-conv;
+                left: $null-conv;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom: $small-fix-07 solid #eee;
+                @include transform($rotateNull);
+            }
+            li {
+                float: left;
+                width: $max-conv-width;
+                .dropDays {
+                    float: left;
+                    width: $max-conv-width;
+                    padding: $small-fix-10 + 2;
+                    padding-top: $small-fix-07 + 1;
+                    padding-bottom: $small-fix-07 + 1;
+                    font-size: $small-fix-13;
+                    color: #999;
+                    cursor: pointer;
+                    border-bottom: $small-fix-01 solid #eee;
+                }
+            }
+        }
+        .rotate0 { &:after { @include transform($rotateNull); } }
+
+        label, .boxSystem_Arrow {
+            padding: $null-conv $small-fix-15;
+            position: relative;
+            height: $max-conv-height;
+            background: #f9f9f9;
+            border: $small-fix-01 solid #eee;
+            border-right: $null-conv;
+            line-height: 2.8em;
+            float: left;
+            margin: $null-conv;
+        }
+        .boxSystem_Arrow {
+            border-right: $small-fix-01 solid #eee;
+            width: $small-fix-40 + $small-fix-03 + 1;
+            i {
+                font-size: $small-fix-25;
+                position: absolute;
+                left: $null-conv;
+                right: $null-conv;
+                text-align: center;
+                top: $small-fix-05 + 1;
+                color: $black;
+                font-weight: bold;
+            }
+        }
+        .k-widget-calendar {
+            &:after {
+                content: '\f073';
+                font-family: 'FontAwesome';
+                width: $small-fix-40;
+                position: absolute;
+                right: $null-conv;
+                top: $null-conv;
+                text-align: center;
+                height: $max-conv-height;
+                font-size: $small-fix-20;
+                line-height: 1.9em;
+                background: #f9f9f9;
+                border-left: $small-fix-01 solid #eee;
+                color: #1A8755;
+            }
+        }
+        .k-button {
+            height: $small-fix-40;
+            background: #0A9A7A;
+            border: $null-conv;
+            color: $white;
+            text-transform: uppercase;
+            padding-left: $small-fix-55;
+            padding-right: $small-fix-55;
+            border: $small-fix-01 solid #0A9A7A;
+            @include transition($Sec-07);
+            &:hover {
+                background: #088267;
+                border: $small-fix-01 solid #088267;
+            }
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+    }
+}
+
+// Grid System
+.gridSystemView {
+    width: $max-conv-width;
+    height: 94%;
+    max-height: 865px;
+    float: left;
+    background: $white;
+    overflow: auto;
+    display: block;
+
+    // Table Leads
+    .allLeadsTab {
+        border-spacing: $small-fix-02;
+        border-collapse: initial;
+        thead {
+            .k-header {
+                padding: .5em .6em .4em .6em;
+                font-weight: normal;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                text-align: left;
+                background: #eee;
+                .k-link {
+                    font-size: $small-fix-10 + 1;
+                    font-weight: bold;
+                    display: block;
+                    text-align: left;
+                    padding: .4em .6em .4em .6em;
+                    color: $black;
+                    margin-right: $small-fix-15;
+                    text-transform: uppercase;
+                }
+            }
+            .tabInput {
+                border: $small-fix-01 solid #eee;
+                height: $small-fix-20 + $small-fix-07; // 27px
+                width: $small-fix-100 + $small-fix-02; // 102px
+                padding: $small-fix-07;
+                margin-bottom: $small-fix-02;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+            .width145 { width: 145px; }
+            .width130 { width: $small-fix-100 + $small-fix-30; } // 130px
+        }
+        tbody {
+           td[role="gridcell"] {
+                border-style: none;
+                padding: $small-fix-07 + 2;
+                overflow: hidden;
+                vertical-align: middle;
+                text-overflow: ellipsis;
+                font-size: $small-fix-10 + 1;
+                border: $small-fix-01 solid #eee;
+                background: #f9f9f9;
+                position: relative;
+                i {
+                    position: absolute;
+                    top: 23%;
+                    left: 32%;
+                    font-size: $small-fix-17;
+                    cursor: pointer;
+                    &:hover {
+                        color: #f55753;
+                    }
+                }
+            } 
+        }
+        .dispNoneInput { display: none; }
+        .leadUrl { cursor: pointer; }
+    }
+}

@@ -1,0 +1,140 @@
+
+// Header Info Elements 
+
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+#leftNav-SubAccordion {
+	display: inline-block;
+	width: $max-conv-width;
+	padding-bottom: 100px;
+}
+
+.leftNavAccordion {
+ 	width: $max-conv-width;
+ 	max-width: 280px;
+ 	background: transparent;
+    display: inline-block;
+    .linkUrl {
+    	cursor: pointer;
+		display: block;
+		padding: $small-fix-07 $null-conv $small-fix-07 $null-conv;
+		color: #4D4D4D;
+		font-size: $small-fix-07 * 2;
+		font-weight: 700;
+		position: relative;
+		@include transition(all 0.4s ease);
+	    text-decoration: none;
+    }
+
+    li {
+    	&:last-child {
+    		.linkUrl {
+    			border-bottom: $null-conv;
+    		}
+    	}
+    	i.fa-chevron-down {
+    		font-size: $small-fix-10 + 1;
+		    top: $small-fix-20 - 1;
+		    right: $small-fix-60 - 2;
+		}
+		i.fa-angle-down {
+			font-size: $small-fix-15 + 1;
+		    font-weight: bold;
+		    top: $small-fix-15 + 2;
+		    right: $small-fix-60 + 2;
+		}
+		i.fa-chevron-down, 
+		i.fa-angle-down {
+			position: absolute;
+			left: auto;
+		    color: #999;
+		    @include transition(all 0.4s ease);
+		}
+    }
+    li.open {
+    	i.fa-chevron-down {
+    		@include transform($rotate-180);
+    	}
+    }
+    li.Subopen {
+    	i.fa-angle-down {
+    		@include transform($rotate-180);
+    	}
+    }
+
+    li.default {
+    	.subMenu  {
+			display: block;
+    	}
+    }
+}
+
+.subMenu, 
+.SubsubMenu {
+ 	display: none;
+ 	font-size: $small-fix-10 + 4;
+}
+
+.subMenu {
+	li {
+		position: relative;
+	}
+	a {
+		display: block;
+	 	text-decoration: none;
+	 	@include transition(all 0.25s ease);
+	}
+}
+
+main {
+	.left-nav {
+		.new-right-ico-floor {
+			i {
+			    top: 7px;
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    margin-left: auto;
+			    margin-right: auto;
+			    text-align: center;
+			}
+			.fd {
+				top: 3px;
+			}
+		}
+		.new-right-ico-floor {
+			font-size: 21px;
+    		color: #999;
+    		right: 12px;
+		}
+		.new-drop-sub {
+			// background: #53565F;
+			background: #ccc;
+		}
+	} 
+}
+
+
+.navigation {
+	.mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	    background-color: rgba(11,173,134,0.5);
+	    filter: "alpha(opacity=20)";
+	    -ms-filter: "alpha(opacity=20)";
+	}
+}
+
+
+.fa-chevron-down {
+	@include transition(.3s);
+}
+
+.upRotate {
+	@include transform(180deg);
+}

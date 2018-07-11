@@ -1,0 +1,101 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Users Start
+
+.user_component {
+	.panel-heading {
+		padding-bottom: $small-fix-10;
+    	padding-top: $null-conv;
+    	position: relative;
+    	h4 {
+    		margin: $null-conv;
+		    text-transform: capitalize;
+		    font-size: $small-fix-20 + 2;
+		    float: left;
+		    letter-spacing: $null-conv;
+		    width: $max-conv-width;;
+		    text-align: center;
+    	}
+	}
+	li {
+		width: $max-conv-width;
+		float: left;
+		margin: $small-fix-01 + 0.5;
+		position: relative;
+		.user_bl {
+			float: left;
+			width: $table-max-10; // 10%
+			padding: $small-fix-10 + 2;
+			text-align: center;
+			border-right: $small-fix-03 solid #f9f9f9;
+			i {
+				font-size: $small-fix-20 - 1;
+				color: #cc0000;
+				cursor: pointer;
+			}
+		}
+		.newUBtn {
+		    height: $small-fix-40 + 2; // 42px
+		    background: #0A9A7A;
+		    border: $null-conv;
+		    color: $white;
+		    text-transform: uppercase;
+		    padding-left: $small-fix-40; // 40px
+		    padding-right: $small-fix-40; // 40px
+		    border: $small-fix-01 solid #0A9A7A;
+		    @include transition($Sec-07);
+		    position: relative;
+		    padding-top: $small-fix-10 + 2;
+		    font-size: $small-fix-10 + $small-fix-03;
+		    display: inline-block;
+		}
+	}
+	.userButtonli {
+		height: $small-fix-40 + 2; // 42px
+		text-align: center;
+		margin-top: $small-fix-07;
+	}
+	.topLetUsers {
+		background: #eee;
+		.user_bl {
+			font-size: $small-fix-10 + 2;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    color: #999;
+		}
+	}
+	.letUsers {
+		background: $white;
+	}
+}
+
+
+// Register User
+
+
+.registerPanel {
+	h4 {
+		margin: 0;
+	    text-transform: capitalize;
+	    font-size: 22px;
+	    float: left;
+	    letter-spacing: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	.registerBox {
+		float: none;
+		background: $white;
+		border: 1px solid #eee;
+		@include border-radius(5px);
+		padding: 40px;
+		padding-left: 60px;
+		padding-right: 60px;
+		margin: 50px auto;
+		margin-bottom: 0;
+	}
+}
+

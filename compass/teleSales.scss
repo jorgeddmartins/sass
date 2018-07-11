@@ -1,0 +1,1888 @@
+// Header Info Elements 
+@import '_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '_mixins';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.leftMini, 
+.rightMini {
+    float: $fltleft;
+}
+
+.navLeftSales {
+    left: -280px !important;
+    top: $small-fix-90 + 2 !important;
+}
+
+.left68 {
+    left: $small-fix-80 + $small-fix-03 + 1 !important;
+    top: $small-fix-30 - 2 !important;
+}
+
+.left0 {
+    left: $null-conv !important;
+}
+
+.leftMini {
+    width: $table-max-70; // 70%
+    position: relative;
+    .header-sales {
+        padding-top: $small-fix-13;
+    }
+}
+.navGo-left {
+    left: -50px !important;
+}
+.leftMini-left {
+    -webkit-animation: leftMinileft .35s 1 forwards;
+    -moz-animation: leftMinileft .35s 1 forwards;
+    -ms-animation: leftMinileft .35s 1 forwards;
+    animation: leftMinileft .35s 1 forwards;
+    -webkit-animation-delay: $null-conv;
+    animation-delay: $null-conv;
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -moz-transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0);
+    // -webkit-animation-fill-mode: both;
+    // animation-fill-mode: both
+}
+
+@keyframes leftMinileft {
+    from { left: $null-conv; }
+    to { left: 279px; }
+}
+
+@-webkit-keyframes leftMinileft {
+    from { left: $null-conv; }
+    to { left: 279px; }
+}
+
+@-moz-keyframes leftMinileft {
+    from { left: $null-conv; }
+    to { left: 279px; }
+}
+
+.leftMini-right {
+    -webkit-animation: leftMiniright .35s 1 forwards;
+    -moz-animation: leftMiniright .35s 1 forwards;
+    -ms-animation: leftMiniright .35s 1 forwards;
+    animation: leftMiniright .35s 1 forwards;
+    -webkit-animation-delay: $null-conv;
+    animation-delay: $null-conv;
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -moz-transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0);
+    // -webkit-animation-fill-mode: both;
+    // animation-fill-mode: both
+}
+
+@keyframes leftMiniright {
+    from { left: 279px; }
+    to { left: $null-conv; }
+}
+
+@-webkit-keyframes leftMiniright {
+    from { left: 279px; }
+    to { left: $null-conv; }
+}
+
+@-moz-keyframes leftMiniright {
+    from { left: 279px; }
+    to { left: $null-conv; }
+}
+
+.rightMini {
+    width: $table-max-30; // 30%
+    max-width: 566px;
+    position: relative;
+}
+
+.top93 {
+    height: $small-fix-90 + $small-fix-03 !important;
+}
+
+.avatarSales {
+    top: $small-fix-25 + 1 !important;
+}
+
+.mainSales {
+    width: $max-conv-width;
+    float: $fltleft;
+    position: relative;
+}
+
+.teleSales_nav, 
+.teleSales_nav_close {
+    position: fixed;
+    padding: $small-fix-05 + 1;
+    padding-left: $small-fix-15 + 1;
+    padding-right: $small-fix-15 + 1;
+    background: #f5f5f5;
+    border-bottom: $small-fix-02 solid #eee;
+    border-right: $small-fix-01 solid #eee;
+    top: $small-fix-25 + 1;
+    left: $small-fix-20 + 3;
+    z-index: 7000;
+    font-size: $small-fix-20 + 1;
+    color: #333;
+    @include border-radius($small-fix-03);
+    @include transition(all .3s ease-in-out);
+    &:hover {
+       color: #0A9A7A 
+    }
+}
+
+.teleSales_Change {
+    color: #0A9A7A !important;
+}
+
+.topTasks {
+    position: fixed;
+    top: $small-fix-05 + 1;
+    left: 23%; //39%
+    z-index: 70000;
+    .topTaskBlk {
+        float: $fltleft;
+        margin-right: $small-fix-20 + 10;
+        position: relative;
+        width: $small-fix-80 - 2;  // 78px
+        height: $small-fix-80 - 2; // 78px
+        border: $small-fix-15 solid #f5f5f5;
+        @include border-radius($max-conv-width / 2);
+        &:last-child {
+            margin-right: $null-conv;
+        }
+        .taskTitle {
+            background: #f5f5f5;
+            padding: $small-fix-05 + 1;
+            padding-left: $small-fix-10 + 2;
+            padding-right: $small-fix-10 + 2;
+            border: $small-fix-01 solid #eee;
+            display: inline-block;
+        }
+        .taskTotl {
+            background: #0A9A7A;
+            padding: $small-fix-05 + 1;
+            color: $white;
+            border: $small-fix-01 solid #0A9A7A;
+            display: inline-block;
+        }
+    }
+
+    .circleTask {
+        width: $small-fix-80;
+        height: $small-fix-80;
+        position: relative;
+        float: $fltleft;
+        margin: $small-fix-05;
+        margin-top: $small-fix-02;
+        .circleTask-in {
+            position: relative;
+            top: $null-conv;
+            left: $null-conv;
+            right: $null-conv;
+            margin-left: auto;
+            margin-right: auto;
+            width: $small-fix-60;
+            height: $small-fix-60;
+            @include border-radius($max-conv-width / 2);
+            i {
+                position: relative;
+                left: $null-conv;
+                top: $small-fix-07;
+                text-align: center;
+                font-size: $small-fix-13 + 1;
+                width: $max-conv-width;
+                float: $fltleft;
+            }
+            .colorRed {
+                color: #cc0000;
+            }
+            .colorBlue {
+                color: #0080ff;
+            }
+            .colorGreen {
+                color: #0A9A7A;
+            }
+            .colorOrange {
+                color: #f5c073;
+            }
+            .colorPurple {
+                color: #8e44ad;
+            }
+            .numDta {
+                width: $max-conv-width;
+                float: $fltleft;
+                text-align: center;
+                font-size: $small-fix-20 + 2 + 0.5; // 22.5px
+                margin-top: $small-fix-05;
+            }
+        }
+        .borderRed {
+            border: $small-fix-02 solid #CC0000;
+            border-bottom: $small-fix-02 solid transparent;
+        }
+        .borderBlue {
+            border: $small-fix-02 solid #0080ff;
+            border-bottom: $small-fix-02 solid transparent;
+        }
+        .borderGreen {
+            border: $small-fix-02 solid #0A9A7A;
+            border-bottom: $small-fix-02 solid transparent;
+        }
+        .borderOrange {
+            border: $small-fix-02 solid #f5c073;
+            border-bottom: $small-fix-02 solid transparent;
+        }
+        .borderPurple {
+            border: $small-fix-02 solid #8e44ad;
+            border-bottom: $small-fix-02 solid transparent;
+        }
+        .circleTask-title {
+            width: $max-conv-width;
+            float: $fltleft;
+            text-align: center;
+            font-size: $small-fix-10 + 2;
+            font-weight: bold;
+        }
+    }
+}
+
+
+.teleSales {
+    position: relative;
+    // top: $null-conv;
+    top: $small-fix-35 + $small-fix-03;
+    left: $null-conv;
+    width: $max-conv-width;
+    height: $large-fix-900 + $small-fix-40; // 940px
+    overflow: hidden;
+    display: inline-block;
+    @include transition(all .5s ease-in-out);
+}
+
+.teleSales_menu {
+    width: $max-conv-width;
+    padding: $small-fix-15;
+    display: inline-block;
+    padding-left: $small-fix-20; // 75px
+    padding-top: $null-conv;
+    padding-right: $small-fix-07;
+    .header-sales, 
+    .body-sales {
+        width: $max-conv-width;
+        position: relative; 
+        float: $fltleft;
+    }
+    .left-sales {
+        width: $max-conv-width; // 70%  
+        float: $fltleft;
+        .top-Search, 
+        .tabs {
+            // padding-bottom: $small-fix-10 - $small-fix-03;
+            // padding-top: $small-fix-10;
+            // padding-left: $small-fix-10;
+            // padding-right: $small-fix-10;
+            padding: 7px;
+        }
+        .top-Search {
+            padding-bottom: $small-fix-15;
+        }
+        .tabs {
+            background: $white;
+        }
+    }
+
+    .flip-container {
+        -webkit-perspective: $large-fix-1000;
+        -moz-perspective: $large-fix-1000;
+        -o-perspective: $large-fix-1000;
+        perspective: $large-fix-1000;
+        margin-right: $small-fix-05;
+        margin-left: $small-fix-05;
+        float: $fltleft;
+        color: $white;
+    }
+
+    .flip-container:hover .flipper,  
+    .flip-container.hover .flipper {
+        -webkit-transform: rotateY($rotate-180);
+        -moz-transform: rotateY($rotate-180);
+        -o-transform: rotateY($rotate-180);
+        transform: rotateY($rotate-180);
+    }
+
+    .flipper {
+        -webkit-transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 0.6s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 0.6s;
+        -o-transform-style: preserve-3d;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+        width: $small-fix-70;
+        height: $small-fix-40 + $small-fix-03;
+        float: $fltleft;
+        @include border-radius($small-fix-03);
+        background: #f3f3f4;
+    }
+
+    .grid-button {
+        width: $small-fix-70;
+        height: $small-fix-40 + $small-fix-03;
+        padding: $null-conv;
+        border: $small-fix-01 solid #ddd;
+        border-top: $null-conv;
+        border-left: $null-conv;
+        font-size: $small-fix-13 + 1;
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: $null-conv;
+        color: #333;
+        @include border-radius($small-fix-03);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        top: $null-conv;
+        left: $null-conv;
+    }
+
+    .grid-button-up {
+         z-index: 2;
+         transform: rotateY(0deg);
+         -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+    }
+
+    .grid-button-back {
+        -webkit-transform: rotateY($rotate-180);
+        -moz-transform: rotateY($rotate-180);
+        -o-transform: rotateY($rotate-180);
+        transform: rotateY($rotate-180);
+        border: $null-conv !important;
+    }
+
+    .grid-button-back .backTitle, .cardThis .backTitle {
+        position: relative;
+        top: $null-conv;
+        left: $null-conv;
+        float: $fltleft;
+        font-size: $small-fix-10 + 2;
+        text-align: center;
+        width: $max-conv-width;
+        padding: $small-fix-05 + 1;
+        line-height: $small-fix-15;
+    }
+
+    .grid-button:hover, 
+    .grid-button:focus {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .grid-button span, 
+    .grid-button i {
+        position: relative;
+        top: $small-fix-03;
+        left: -5px;
+        float: $fltleft;
+    }
+
+    .tabs .grid-button i, 
+    .cardThis i {
+        position: absolute;
+        left: $null-conv;
+        right: $null-conv;
+        margin: auto;
+        top: $small-fix-05;
+        text-align: center;
+        font-size: $small-fix-13 + 1;
+    }
+
+    .grid-button .numDta, 
+    .cardThis .numDta {
+        top: $small-fix-20 - 1;
+        right: $null-conv;
+        left: $null-conv;
+        height: $small-fix-20 + 2;
+        width: auto;
+        position: absolute;
+        border-bottom-left-radius: $small-fix-10;
+        border-bottom-right-radius: $small-fix-10;
+        border-top-left-radius: $small-fix-10;
+        border-top-right-radius: $small-fix-10;
+    }
+
+    .cardThis .numDta {
+        top: $small-fix-20 + 1; // 21px
+    }
+
+    .grid-button .numDta .countDta, 
+    .cardThis .numDta .countDta {
+        width: $max-conv-width;
+        float: $fltleft;
+        text-align: center;
+        font-size: $small-fix-13;
+        font-weight: bold;
+        color: #333;
+        left: $null-conv;
+        top: $small-fix-03;
+        padding-left: $small-fix-07 + 1;
+        padding-right: $small-fix-07 + 1;
+    }
+
+    .btnDisable {
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    .btnEnable {
+        opacity: 1;
+        background: #0A9A7A !important;
+        color: $white !important;
+        border: $small-fix-01 solid #0A9A7A;
+        // @include transition(all .6s ease-in-out);
+    }
+
+    .btnEnable {
+       i {
+            color: $white;
+        } 
+    } 
+
+    .btnEnable .numDta .countDta, 
+    .btnEnable .backTitle {
+        color: $white;
+    }
+
+    .btnDisable {
+        opacity: 1;
+        pointer-events: none;
+    }
+    .right-sales {
+        width: $max-conv-width; // 30% 
+        float: $fltleft; 
+    }
+
+    .right-sales {
+        padding: $small-fix-10;
+        position: relative;
+    }
+    .miniLeadScreen {
+        position: relative;
+        width: $max-conv-width;
+        display: inline-block;
+        margin-bottom: $small-fix-15; // 15px
+    }
+
+    .leads_load {
+        background: #f5f5f5;
+        // padding: $small-fix-10 + 2;
+        width: $max-conv-width;
+        display: inline-block;
+    } 
+
+    .inputPicker {
+        height: $small-fix-40;
+        float: $fltleft;
+        margin-right: $small-fix-15;
+        position: relative;
+        label {
+            font-size: $small-fix-13;
+            font-weight: bold;
+            display: inline-block;
+            margin: $null-conv;
+            position: relative;
+            top: $small-fix-10 - 2;
+            margin-right: $small-fix-10 + 2;
+        }
+        .datepicker {
+            position: relative;
+            height: $small-fix-40;
+            width: $large-fix-200 + $small-fix-15; // 215px
+            float: $fltright;
+            padding: $small-fix-10;
+            border: $small-fix-01 solid #ddd;
+            z-index: 200;
+            background: transparent;
+            cursor: pointer;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+        i {
+            position: absolute;
+            right: $small-fix-10 + 1;
+            font-size: $small-fix-20;
+            color: #0A9A7A;
+            top: $small-fix-10;
+        }
+    }
+
+    .datePicker-cover {
+        float: $fltright;
+        background: $white;
+    }
+
+    .select_timeLeads {
+        background: $white;
+        line-height: $small-fix-30 + $small-fix-05 + 1;
+        @include border-radius($null-conv);
+        cursor: pointer;
+        position: relative;
+        width: $small-fix-100 + $small-fix-80; // 180px
+        height: $small-fix-40;
+        float: $fltleft;
+        border: $small-fix-01 solid #ddd;
+        margin-right: $small-fix-20;
+        &:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            width: $null-conv;
+            height: $null-conv;
+            border-left: $small-fix-05 + 1 solid transparent;
+            border-right: $small-fix-05 + 1 solid transparent;
+            z-index: 10;
+            top: $table-max-45 + 1; // 46%
+            right: $small-fix-10;
+            border-bottom: $small-fix-05 + 1 solid #2b303b;
+            transform: rotate($rotate-180);
+        }
+        span {
+            width: $max-conv-width !important;
+            display: block;
+            padding-top: $small-fix-01;
+            padding-left: $small-fix-10 + 1;
+            font-size: $small-fix-13 + 1;
+            text-transform: initial;
+            color: #555;
+        }
+        .select_inner {
+            background: $white;
+            @include border-radius($null-conv);
+            box-shadow: $null-conv $null-conv $small-fix-10 rgba(0, 0, 0, 0.2);
+            color: #687278;
+            display: none;
+            position: absolute;
+            left: $null-conv;
+            top: $max-conv-width;
+            width: $max-conv-width;
+            font-size: $small-fix-13;
+            z-index: 3;
+            li {
+                border-bottom: $small-fix-01 solid #eee;
+                padding: $null-conv $small-fix-15;
+                @include transition(all .4s ease-in-out);
+                &:hover {
+                    background: rgba(219, 235, 227, 0.4);
+                }
+            }
+        }
+    }
+    .rotate90 {
+        &:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            width: $null-conv;
+            height: $null-conv;
+            border-left: $small-fix-05 + 1 solid transparent;
+            border-right: $small-fix-05 + 1 solid transparent;
+            z-index: 10;
+            top: $table-max-45 + 1; // 46%
+            right: $small-fix-10;
+            border-bottom: $small-fix-05 + 1 solid #2b303b;
+            transform: rotate($null-conv);
+        }
+    }
+
+    .emailData {
+        position: relative;
+        float: $fltleft;
+        width: $table-max-30 + 2 + 0.3; // 32.3%
+        height: $small-fix-40 + $small-fix-05;
+        margin: $table-max-05; // 0.5%
+        .screenData {
+            width: $max-conv-width;
+            margin: $null-conv;
+        }
+
+        .showData {
+            position: absolute;
+            padding: $small-fix-07;
+            padding-left: $small-fix-10 + 1;
+            padding-right: $small-fix-10 + 1;
+            border: $small-fix-01 solid #ddd;
+            border-bottom: $small-fix-02 solid #ddd;
+            background: #f5f5f5;
+            top: $small-fix-40 + $small-fix-03 + 1; // 44px
+            right: $small-fix-05 + 1;
+            font-size: $small-fix-10 + 2;
+            @include border-radius($small-fix-03);
+            display: none;
+            z-index: 200;
+            &:before {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 + 1 solid transparent;
+                border-right: $small-fix-05 + 1 solid transparent;
+                z-index: 10;
+                top: -7px;
+                right: $small-fix-80; // 80px
+                border-bottom: $small-fix-05 + 1 solid #ddd;
+                transform: rotate($null-conv);
+            }
+        }
+    }
+
+    .source {
+        cursor: pointer;
+    }
+
+    .sourceinfo {
+        text-decoration: underline;
+    }
+
+    .sourceDta {
+        position: absolute;
+        padding: $small-fix-07;
+        padding-left: $small-fix-10 + 1;
+        padding-right: $small-fix-10 + 1;
+        border: $small-fix-01 solid #ddd;
+        border-bottom: $small-fix-02 solid #ddd;
+        background: #f5f5f5;
+        top: $small-fix-40 + $small-fix-03 + 1; // 44px
+        right: -178px;
+        @include border-radius($small-fix-03);
+        display: none;
+        z-index: 200;
+        width: $large-fix-400 + $small-fix-90; // 490px
+        &:before {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            width: $null-conv;
+            height: $null-conv;
+            border-left: $small-fix-05 + 1 solid transparent;
+            border-right: $small-fix-05 + 1 solid transparent;
+            z-index: 10;
+            top: -7px;
+            right: $null-conv;
+            left: $small-fix-50 + $small-fix-05 + 1; //56px
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: $small-fix-05 + 1 solid #ddd;
+            transform: rotate($null-conv);
+        }
+    }
+
+    pre {
+        padding: $null-conv;
+        margin: $null-conv;
+        font-size: $small-fix-10 + 2;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: pre-line;
+        background: transparent;
+        border: $null-conv;
+        font-family: 'robotolight';
+        @include border-radius($null-conv);
+    }
+
+    .phoneDta {
+        width: $table-max-30 + 2 + 0.3; // 32.3%
+        margin: $table-max-05; // 0.5%
+        height: $small-fix-40 + $small-fix-05;
+        border: $small-fix-01 solid #ddd;
+        background: $white;
+        float: $fltleft;
+        position: relative;
+        .screenData {
+            width: $max-conv-width;
+            height: $small-fix-40 + $small-fix-03;
+            margin: $null-conv;
+            border: $null-conv;
+            padding-top: $small-fix-15 + 2;
+            padding-bottom: $null-conv;
+        }
+    }
+
+    .screenData {
+        width: $table-max-30 + 2 + 0.3; // 32.3%
+        background: $white;
+        position: relative;
+        .unvalid {
+            float: $fltright;
+            margin-right: $table-max-10; // 10%
+           .fa-close, .fa-exclamation-circle {
+                color: #cc0000;
+            }
+            .fa-check {
+                color: #0A9A7A;
+            } 
+        }
+        .ban {
+            float: $fltright;
+            margin-right: $table-max-3; // 3%
+            i {
+                @include transition(all .5s ease-in-out);
+            }
+        }
+        .ban-black {
+            color: $black;
+        }
+        .ban-grey {
+            color: #ccc;
+            &:hover {
+                i {
+                    color: $black;
+                }
+            }
+        }
+        .ban-red {
+            color: #cc0000;
+        }
+        
+    }
+
+    .screenData, 
+    .inputPicker_mini {
+        height: $small-fix-40 + $small-fix-05;
+        float: $fltleft;
+        margin: $table-max-05; // 0.5%
+        padding: $small-fix-10 + 2;
+        font-size: $small-fix-13;
+        border: $small-fix-01 solid #ddd;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .inputPicker_mini {
+        width: $table-max-45 - 2; // 43%
+        padding: $null-conv;
+        position: relative;
+        background: $white;
+        .datepicker {
+            height: $small-fix-40 + $small-fix-03;
+            width: $max-conv-width;
+            float: $fltleft;
+            padding: $small-fix-10;
+            border: $null-conv;
+            position: relative;
+            z-index: 100;
+            background: transparent;
+            cursor: pointer;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+        i {
+            position: absolute;
+            right: $small-fix-10 + 1;
+            font-size: $small-fix-20;
+            color: #0A9A7A;
+            top: $small-fix-10 + 2;
+        }
+    }
+
+    .datePicker-first {
+        width: 32%;
+    }
+
+    .width32 {
+        width: 32.3%;
+    }
+
+    .button_Flag, 
+    .button_Clock {
+        position: relative;
+        float: $fltleft;
+        width: 10%;
+        margin: 0.5%;
+        .miniLeads-Btn {
+            width: $max-conv-width;
+            margin: $null-conv;
+        }
+    }
+
+    .clockBtn {
+        background: #f5c073;
+    }
+
+    .clockBtn i {
+        -webkit-text-stroke: $small-fix-01 #f5c073;
+    }
+
+    .sendMTip {
+        left: -10px !important;
+        border-top: $small-fix-01 solid $white;
+    }
+
+    .selectUser {
+        left: -10px !important;
+    }
+
+    .eachTime {
+        left: -8px !important;
+        border-top: $small-fix-01 solid $white;
+    }
+    .transferTip {
+        left: $null-conv !important;
+        right: $null-conv;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: $small-fix-01 solid $white;
+    }
+
+    .rejectTip, 
+    .retainTip, 
+    .deleteTip {
+        border-top: $small-fix-01 solid $white;
+    }
+
+    .flagTip, 
+    .clockTip, 
+    .sendMTip, 
+    .selectUser, 
+    .eachTime, 
+    .transferTip, 
+    .rejectTip, 
+    .retainTip, 
+    .deleteTip {
+        width: $small-fix-80; // 80px
+        position: absolute;
+        padding: $small-fix-05;
+        background: rgba(219, 235, 227, 1);
+        color: #054d3d;
+        font-size: $small-fix-10 + 1;
+        font-weight: bold;
+        top: -26px;
+        left: -16px;
+        text-align: center;
+        @include border-radius($small-fix-03);
+        display: none;
+        &:before {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            width: $null-conv;
+            height: $null-conv;
+            border-left: $small-fix-05 + 1 solid transparent;
+            border-right: $small-fix-05 + 1 solid transparent;
+            z-index: 10;
+            top: $small-fix-20 + $small-fix-05;
+            right: $null-conv;
+            left: $null-conv;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: $small-fix-05 + 1 solid rgba(219, 235, 227, 1);
+            @include transform($rotate-180);
+        }
+    }
+
+    .miniLeads-Btn {
+        width: 10%;
+        height: $small-fix-40 + $small-fix-05;
+        float: $fltleft;
+        margin: 0.5%;
+        position: relative;
+        // background: #0A9A7A;
+        color: $white;
+        font-size: $small-fix-35; // 24px
+        text-align: center;
+        &:hover {
+            color: $white;
+        }
+        i {
+            position: absolute;
+            left: $null-conv;
+            right: $null-conv;
+            margin-left: auto;
+            margin-right: auto;
+            top: 11%;
+        }
+    }
+
+    .btnAddTask {
+        font-size: $small-fix-30;
+        i {
+            top: 15%;
+        }
+    }
+
+    .productAw {
+        position: relative;
+        float: $fltleft;
+        // width: 44%;
+        width: 43.7%;
+        margin: 0.5%;
+        height: $small-fix-40 + $small-fix-05;
+        background: rgba(219, 235, 227, 1);
+        .miniProductAw {
+            width: $max-conv-width;
+            height: $small-fix-40 + $small-fix-05;
+            float: $fltleft;
+            padding: $small-fix-13;
+            border: $small-fix-01 solid transparent;
+            color: $black;
+            font-size: $small-fix-13;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover {
+                color: $black;
+            }
+        }
+        .miniProductAw-Floor {
+            position: absolute;
+            width: $max-conv-width;
+            top: $small-fix-40 + $small-fix-05 + 1;
+            left: $null-conv;
+            z-index: 20000;
+            height: $large-fix-300 + $small-fix-50; // 350px
+            display: none;
+            &:before {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 + 1 solid transparent;
+                border-right: $small-fix-05 + 1 solid transparent;
+                z-index: 10;
+                top: -5px;
+                right: $null-conv;
+                left: $null-conv;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom: $small-fix-05 + 1 solid $white;
+                @include transform($null-conv);
+            }
+        }
+
+        .mCS-minimal.mCSB_scrollTools {
+            .mCSB_dragger {
+               .mCSB_dragger_bar {
+                    background-color: #dbebe3;
+                    background-color: rgba(219, 235, 227, .9);
+                    filter: "alpha(opacity=20)";
+                    -ms-filter: "alpha(opacity=20)";
+                } 
+            }
+        } 
+    }
+
+
+    // Lead ID Info 
+    /* Lead ID Info */
+
+    .leadId_info {
+        position: relative;
+        float: $fltleft;
+        width: $max-conv-width;
+        padding: 0.5%;
+        margin-bottom: 0.5%;
+        .leadinfo-row {
+            background: #0A9A7A;
+            width: 20%;
+            float: $fltleft;
+            position: relative;
+            border-right: $small-fix-02 solid #f5f5f5;
+            &:last-child {
+                border-right: $null-conv;
+            }
+        }
+        .leadInfo_ID {
+            padding: $small-fix-13 + 1;
+            padding-left: $small-fix-10;
+            padding-right: $small-fix-10;
+            color: $white;
+        }
+        .top_title, .btt_info {
+            display: block;
+            padding: $small-fix-05;
+            font-size: $small-fix-10 + 1;
+        }
+        .top_title {
+            padding-bottom: $null-conv;
+            color: #054d3d;
+            font-family: 'robotoregular';
+            font-weight: bold;
+        }
+        .btt_info {
+            color: $white;
+            padding-bottom: $small-fix-07 + 1;
+            font-weight: bold;
+        }
+    }
+
+    .flagBtn {
+        background: #0A9A7A;
+    }
+
+    .userBtn {
+        background: #e79b7b;
+        i {
+            -webkit-text-stroke: $small-fix-02 #e79b7b;
+        }
+    }
+
+
+    // Notifications
+    /* Notfications */
+
+    .topNotification {
+        position: relative; 
+        width: $max-conv-width; 
+        float: $fltleft; 
+
+        .ico-plat, 
+        .notifi-plat {
+            background: $white;
+            height: $small-fix-40;
+            float: $fltleft;
+            border: $small-fix-01 solid #eee;
+            margin: 0.2%;
+            padding: $small-fix-10;
+        }
+        .notifi_notes {
+            width: 29.45%;
+            margin: 0.2%;
+            float: $fltleft;
+            position: relative;
+            .notifi-plat {
+                width: $max-conv-width;
+                margin: $null-conv;
+            }
+            .showDtaNotes {
+                position: absolute;
+                padding: $small-fix-07;
+                padding-left: $small-fix-10 + 1;
+                padding-right: $small-fix-10 + 1;
+                border: $small-fix-01 solid #ddd;
+                border-bottom: $small-fix-02 solid #ddd;
+                background: #f5f5f5;
+                top: $small-fix-35 + 2; // 37px
+                right: $small-fix-05 + 1;
+                font-size: $small-fix-10 + 1;
+                @include border-radius($small-fix-03);
+                z-index: 100;
+                min-width: 90%;
+                display: none;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    vertical-align: middle;
+                    width: $null-conv;
+                    height: $null-conv;
+                    border-left: $small-fix-05 + 1 solid transparent;
+                    border-right: $small-fix-05 + 1 solid transparent;
+                    z-index: 10;
+                    top: -7px;
+                    right: $small-fix-60 + 2; // 62px
+                    border-bottom: $small-fix-05 + 1 solid #ddd;
+                    transform: rotate($null-conv);
+                }
+            }
+        }
+        .notifi-plat {
+            font-size: $small-fix-13;
+            &:focus {
+                outline: none;
+            }
+        }
+        .ico-plat {
+            width: 10%;
+            text-align: center;
+            
+            i {
+                font-size: $small-fix-20;
+            }
+            .redIco {
+                color: #cc0000;
+            }
+            .greenIco {
+                color: #0A9A7A;
+            }
+            .greyIco {
+                color: #ccc;
+            }
+        }
+        .topCalndarNoti, 
+        .notifi-plat {
+            // width: 44%;
+            width: 29.45%;
+        }
+
+        .topCalndarNoti {
+            position: relative;
+            float: $fltleft;
+            // width: 44%;
+            height: $small-fix-40;
+            margin: 0.2%;
+            background: $white;
+            .notifi-plat {
+                width: $max-conv-width;
+                margin: $null-conv;
+                background: transparent;
+                cursor: pointer;
+                position: relative;
+                z-index: 1;
+            }
+            i {
+                position: absolute;
+                right: $small-fix-10 + 1;
+                font-size: $small-fix-15;
+                color: #0A9A7A;
+                top: $small-fix-10 + 3;
+            }
+        }
+
+        .button_default-mini {
+            width: $small-fix-20;
+            height: $small-fix-20;
+            background: #0A9A7A;
+            position: absolute;
+            z-index: 100;
+            top: $small-fix-10 + 1;
+            right: $small-fix-07 + 1;
+            @include border-radius($max-conv-width / 2);
+            i {
+                position: absolute;
+                top: $small-fix-03 + 1;
+                left: $small-fix-03 + 1;
+                color: $white;
+                font-size: $small-fix-10 + 2;
+            }
+        }
+        .button_default-none {
+            display: none;
+        }
+    }
+
+    .width22 {
+        width: 22%;
+    }
+
+    .backGreen {
+        background: #0A9A7A;
+        i {
+            -webkit-text-stroke: $small-fix-02 #0A9A7A;
+        }
+    }
+    .backBlue {
+        background: #0080ff;
+        i {
+            -webkit-text-stroke: $small-fix-02 #0080ff;
+        }
+
+    }
+    .backPurple {
+        background: #8e44ad;
+        i {
+            -webkit-text-stroke: $small-fix-02 #8e44ad;
+        }
+    }
+    .backRed {
+        background: #cc0000;
+        i {
+            -webkit-text-stroke: $small-fix-02 #cc0000;
+        }
+    }
+
+    .DisableElement {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+}
+
+
+// Start Flipper
+.card {
+    position: relative;
+    float: $fltleft;
+    padding-bottom: $small-fix-40 + $small-fix-03; // 43px
+    width: $small-fix-70;
+    text-align: center;
+    cursor: pointer;
+    margin-left: $small-fix-03;
+    margin-right: $small-fix-03;
+}
+
+.card__front,
+.card__back {
+    position: absolute;
+    top: $null-conv;
+    left: $null-conv;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    text-transform: uppercase;
+}
+
+.card__front,
+.card__back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .6s;
+    transition: transform .6s;
+}
+
+.card__front {
+    background: #f3f3f4;
+    border: $small-fix-01 solid #ddd;
+    border-top: $null-conv;
+    border-left: $null-conv;
+    @include border-radius($small-fix-03);
+}
+
+.card__back {
+    background: #f3f3f4;
+    border: $small-fix-01 solid #ddd;
+    border-top: $null-conv;
+    border-right: $null-conv;
+    @include border-radius($small-fix-03);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+
+.btnEnable {
+    opacity: 1;
+    background: #0A9A7A !important;
+    color: $white !important;
+    border: $small-fix-01 solid #0A9A7A;
+}
+
+.card__text {
+    display: inline-block;
+    position: absolute;
+    top: $null-conv;
+    right: $null-conv;
+    bottom: $null-conv;
+    left: $null-conv;
+    margin: auto;
+    height: $small-fix-20;
+    color: #333;
+    line-height: $small-fix-20;
+}
+
+.btnEnable .card__text {
+    color: $white;
+}
+
+.card.effect__hover:hover .card__front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    
+}
+
+.card.effect__hover:hover .card__back {
+    -webkit-transform: rotateY($null-conv);
+    transform: rotateY($null-conv);
+}
+
+// Ends Flipper
+
+
+.caseTopFlag {
+    float: $fltright;
+    position: relative;
+    width: 4.5%;
+    right: $small-fix-07 + 1;
+    top: 1.5px;
+    z-index: 2000;
+    margin: $small-fix-05;
+    margin-top: $null-conv;
+    margin-bottom: $null-conv;
+    .btnflagTask {
+        margin: $null-conv;
+        width: $max-conv-width;
+        height: $small-fix-35 + 1;
+        top: $small-fix-02;
+        @include border-radius($small-fix-03 + 1);
+        font-size: $small-fix-25;
+        @include transition(all .8s ease-in-out);
+        text-decoration: none;
+        i {
+            top: 19%;
+        }
+    }
+
+    .btnFlagDesable {
+        background: #f3f3f4;
+        border-bottom: $small-fix-02 solid #eee;
+        border-right: $small-fix-01 solid #eee;
+        pointer-events: none;
+    }
+}
+
+
+
+.userDrop {
+    bottom: $small-fix-100 + $small-fix-70 - 2; // 168px
+    width: $table-max-60; // 60%
+    max-width: $large-fix-300 + $small-fix-30; // 330px
+    // left: 17%;
+    left: 9%;
+}
+
+.flagDrop {
+    width: $large-fix-300 + $small-fix-30; // 330px
+    left: -140px;
+    top: $small-fix-40 + 1;
+}
+
+.clockDrop {
+    bottom: $large-fix-200 + $small-fix-40 - 2; // 238px
+    width: 49%; // 60%
+    max-width: $large-fix-200 + $small-fix-60; // 260px
+    left: 26%;
+    // display: block !important;
+    .clock-selectTime {
+        position: relative;
+        background: #0A9A7A;
+        float: $fltleft;
+        padding: $small-fix-10;
+        padding-right: $small-fix-40;
+        color: $white;
+        font-size: $small-fix-15 + 1;
+        margin: $small-fix-03 + 1;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            text-decoration: none;
+        }
+        i {
+            font-size: $small-fix-20;
+            position: absolute;
+            top: $small-fix-10 + 1;
+            right: $small-fix-13 + 4;
+        }
+    }
+}
+
+.userDrop, 
+.flagDrop, 
+.clockDrop {
+    position: absolute;
+    z-index: 1000;
+    background: $white;
+    padding: $small-fix-15;
+    border: $small-fix-01 solid $gray-smooth;
+    border-bottom: $small-fix-02 solid $gray-smooth;
+    @include border-radius($small-fix-03);
+    -webkit-box-shadow: $null-conv $null-conv 18px $null-conv rgba(0,0,0,0.35);
+    -moz-box-shadow: $null-conv $null-conv 18px $null-conv rgba(0,0,0,0.35);
+    box-shadow: $null-conv $null-conv 18px $null-conv rgba(0,0,0,0.35);
+    display: none;
+    .select_timeLeads {
+        background: $white;
+        line-height: $small-fix-35 + 1;
+        @include border-radius($null-conv);
+        cursor: pointer;
+        position: relative;
+        width: 76%;
+        height: $small-fix-40 + $small-fix-05;
+        float: $fltleft;
+        border: $small-fix-01 solid #ddd;
+        margin: 0.5%;
+        span {
+            position: relative;
+            top: $small-fix-03 + 1;
+        }
+    }
+    .selectTask_F {
+        position: relative;
+        float: $fltleft;
+        width: $max-conv-width;
+        margin-bottom: $small-fix-15;
+        &:last-child {
+            margin-bottom: $null-conv;
+        }
+        .haveNotes {
+            background: $white;
+            @include border-radius($null-conv);
+            cursor: pointer;
+            position: relative;
+            padding: $small-fix-10;
+            font-size: $small-fix-10 + 2;
+            width: 76%;
+            height: $small-fix-50 + $small-fix-05; // 55px
+            float: $fltleft;
+            border: $small-fix-01 solid #ddd;
+            margin: 0.5%;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+
+    }
+}
+
+.edit-lead, 
+.leadtasks {
+    float: $fltleft;
+}
+
+.leadtasks {
+    padding-top: $small-fix-20;
+}
+
+
+// Mini Table
+.miniTableView {
+    width: $max-conv-width; 
+    padding-top: $small-fix-15;
+    display: inline-block;
+    .tableView-Header {
+        width: $max-conv-width; 
+        float: $fltleft;
+        margin: 0.5%;
+        margin-bottom: $null-conv;
+        .header-Td {
+            background: #f9f9f9;
+            width: 16.4%;
+            height: $small-fix-20 * 2;
+            padding: $small-fix-10 + 1;
+            font-size: $small-fix-10 + 2;
+            color: #333;
+            margin: 0.1%;
+            border-bottom: $small-fix-01 solid #ddd;
+            border-right: $small-fix-01 solid #eee;
+            float: $fltleft;
+            cursor: default;
+        } 
+    }
+    .tableView-Body {
+        width: $max-conv-width; 
+        float: $fltleft;
+        margin: 0.5%;
+        margin-top: $null-conv;
+        .b-Row {
+            width: $max-conv-width;
+            float: $fltleft;
+        }
+        .whiteTd {
+            background: $white;
+        }
+        .body-Td {
+            width: 16.4%;
+            height: $small-fix-30 + $small-fix-03;
+            padding: $small-fix-07;
+            padding-left: $small-fix-10 + 1;
+            font-size: $small-fix-10 + 2;
+            color: #333;
+            margin: 0.1%;
+            border-bottom: $small-fix-01 solid #eee;
+            border-right: $small-fix-01 solid #eee;
+            float: $fltleft;
+            cursor: default;
+        }
+    } 
+}
+
+.miniLeadspinner {
+    position: absolute;
+    top: $null-conv;
+    left: $null-conv;
+    background: $rgba-white-08;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    z-index: 100;
+    i {
+        position: absolute;
+        left: $null-conv;
+        right: $null-conv;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+        font-size: $small-fix-50 + $small-fix-05; // 55px
+        color: #0A9A7A;
+        opacity: 0.7;
+    }
+}
+
+.noneSpinner {
+    display: none;
+}
+
+.time_Flash {
+    position: absolute;
+    width: $max-conv-width;
+    height: $max-conv-height / 2;
+    top: $null-conv;
+    left: $null-conv;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 7000;
+    display: none;
+    .timeUpdate {
+        color: $black;
+        display: block;
+        text-align: center;
+        font-size: $small-fix-30;
+        font-weight: bold;
+        position: relative;
+        top: 35%;
+        background: rgba(10, 154, 122, .95);
+        padding: $small-fix-15;
+        color: $white;
+    }
+}
+
+
+// Top Small Charts Pie's
+.donut-chart {
+    position: relative;
+    width: $small-fix-80;
+    height: $small-fix-80;
+    @include border-radius($max-conv-width / 2);
+    float: $fltleft;
+    margin-right: $small-fix-20;
+    display: none;
+    &:last-child {
+        margin-right: $null-conv;
+    }
+}
+
+.center {
+    background: $black;
+    position: absolute;
+    text-align: center;
+    font: $small-fix-10 'robotoregular';
+    color: $white;
+    text-transform: uppercase;
+    top: $null-conv;
+    left: $null-conv;
+    bottom: $null-conv;
+    right: $null-conv;
+    width: $small-fix-50;
+    height: $small-fix-50;
+    margin: auto;
+    @include border-radius($max-conv-width / 2);
+    line-height: $small-fix-20 + $small-fix-07;
+    padding: 15% $null-conv $null-conv;
+}
+
+.portion-block {
+    @include border-radius($max-conv-width / 2);
+    clip: rect($null-conv, $small-fix-80, $small-fix-80, $small-fix-40);
+    height: $max-conv-height;
+    position: absolute;
+    width: $max-conv-width;
+}
+
+.circle {
+    @include border-radius($max-conv-width / 2);
+    clip: rect($null-conv, $small-fix-40, $small-fix-80, $null-conv);
+    height: $max-conv-height;
+    position: absolute;
+    width: $max-conv-width;
+    font-size: 1.5rem;
+}
+
+
+#part1 {
+    @include transform(0deg);
+   .circle {
+        background-color: #E64C65;
+        @include animation(first 1s 1 forwards);
+    }
+} 
+
+.topZpart1 {
+    width: $small-fix-20 + 2;
+    height: $small-fix-50;
+    border: $null-conv;
+    position: absolute;
+    top: -4px;
+    right: $small-fix-03 + 1;
+    z-index: 100;
+    @include transform(-40deg);
+    background: transparent;
+    cursor: pointer;
+} 
+
+#part2 {
+    @include transform(100deg);
+   .circle {
+        background-color: #11A8AB;
+        @include animation(second 1s 1 forwards 1s);
+        cursor: pointer;
+    } 
+}
+
+#part3 {
+     @include transform(250deg);
+   .circle {
+        background-color: #4FC4F6;
+        @include animation(third 0.5s 1 forwards 2s);
+        cursor: pointer;
+    } 
+} 
+
+.circleTip-part3, 
+.circleTip-part2,  
+.circleTip-part1 {
+    color: $white; 
+    display: none;
+    font-size: 1.2rem;
+    line-height: $small-fix-15;
+    text-transform: uppercase;
+}
+
+.circleTip-part3 {
+    background: #4FC4F6; 
+}
+
+.circleTip-part2 {
+    background: #11A8AB;
+}
+
+.circleTip-part1 {
+    background: #E64C65; 
+}
+
+
+/* Start Top Container */
+// Top Container 
+.noFlipcontainer {
+    position: relative; 
+    width: $small-fix-80; 
+    min-height: $small-fix-60 + $small-fix-05; 
+    margin: $small-fix-05; 
+    top: $small-fix-01; 
+    float: $fltleft; 
+    @include border-radius($small-fix-03 + 1);
+    background: #f5f5f5;
+    color: #333;
+    .titleFlip {
+        font: $small-fix-07 + 2 'robotoregular';
+        font-weight: bold;
+        width: $max-conv-width;
+        float: $fltleft;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        padding: $small-fix-03 + 1;
+    }
+    .noFlipIcon {
+        float: $fltleft;
+        width: $max-conv-width;
+        text-align: center;
+    }
+    .numDta {
+        width: $max-conv-width;
+        text-align: center;
+        font: $small-fix-15 + 2 'robotoregular';
+        padding: $small-fix-03 + 1;
+        position: absolute;
+        left: $null-conv;
+        bottom: $null-conv;
+    }
+}
+
+.flipRed, 
+.flipBlue, 
+.flipGreen, 
+.flipPurple, 
+.flipOrange, 
+.flipGrey, 
+.flipMidiumGrey, 
+.flipSmothGrey, 
+.flipSmothOrange {
+    color: $white;
+}
+
+.flipRed {
+    background: #CC0000;
+}
+
+.flipBlue {
+    background: #0080ff;
+}
+
+.flipGreen {
+    background: #0A9A7A;
+}
+
+.flipPurple {
+    background: #8e44ad;
+}
+
+.flipOrange {
+    background: #f5c073;
+}
+
+.flipSmothOrange {
+    background: #f8d29d;
+}
+
+.flipGrey {
+    background: #333;
+}
+
+.flipMidiumGrey {
+    background: #999;
+}
+
+.flipSmothGrey {
+    background: #ccc;
+}
+
+.flipMargin-right {
+    margin-right: $small-fix-40 + $small-fix-05;
+}
+
+/* End Top Container */
+
+
+// Leads Grid
+.gridnewsystem {
+    position: relative;
+    width: $max-conv-width;  
+    float: $fltleft;
+    margin-top: $small-fix-10 + 2;
+    .gridnewsystem-Thead {
+        float: $fltleft;
+        width: $max-conv-width;
+        .gridnewsystem-Thead-tr {
+            float: $fltleft;
+            width: $max-conv-width;
+            .gridnewsystem-Thead-td {
+                width: 10.11%; // 12%
+                min-height: $small-fix-40;
+                padding: $small-fix-10 + 2;
+                padding-top: $small-fix-07 + 2;
+                padding-bottom: $small-fix-07 + 2;
+                background: rgba(224, 224, 224, 0.3);
+                border: $small-fix-02 solid #f5f5f5;
+                border-top: $null-conv;
+                border-left: $null-conv;
+                font-weight: bold;
+                float: $fltleft;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: $small-fix-13;
+                text-transform: uppercase;
+                &:last-child {
+                    border-right: $null-conv;
+                }
+            }
+            .width33 {
+                width: 3%;
+            }
+        }
+        .gridnewsystem-Thead-tr-before {
+            .gridnewsystem-Thead-td {
+                &:before {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    .gridnewsystem-Tbody {
+        background: $white;
+        width: $max-conv-width;
+        float: $fltleft;
+        .gridnewsystem-Tbody-tr {
+            float: $fltleft;
+            width: $max-conv-width;
+            .gridnewsystem-Tbody-td {
+                width: 10.11%; // 12%
+                min-height: $small-fix-40;
+                padding: $small-fix-10 + 2;
+                padding-top: $small-fix-07 + 2;
+                padding-bottom: $small-fix-07 + 2;
+                border: $small-fix-02 solid #f5f5f5;
+                border-top: $null-conv;
+                border-left: $null-conv;
+                float: $fltleft;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: $small-fix-13;
+                color: #777;
+                &:last-child {
+                    border-right: $null-conv;
+                }
+            }
+            .gridnewsystem-Tbody-red {
+                background: #f55753;
+                color: $white;
+            }
+            .gridnewsystem-Tbody-orange {
+                background: #f1a83b;
+                color: $white;
+            }
+            .gridnewsystem-Tbody-green {
+                background: #27ae60;
+                color: $white;
+            }
+            .width33 {
+                width: 3%;
+            }
+        }
+    }
+}
+
+.openleads {
+    position: absolute;
+    width: $max-conv-width;
+    height: 500px;
+    left: $null-conv;
+    bottom: -477px;
+    background: $white;
+    @include box-shadow(0 -2px $small-fix-05 $null-conv $rgba-black-02);
+    @include transition(all .3s ease-in-out);
+    z-index: 2;
+    .close-OPenleads {
+        position: absolute;
+        top: $small-fix-10;
+        right: $small-fix-20;
+        font-size: $small-fix-20 + 3;
+        color: $black;
+    }
+}
+
+.openLeadsBottom {
+    bottom: $null-conv;
+}
+
+.reject-Affiliate {
+    position: relative;
+    float: $fltleft;
+    .switch {
+        top: $null-conv;
+    }
+    .slider {
+        background: #f5f5f5;
+        .switchBtn {
+            &:before {
+                content: "";
+            }
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+// Media
+
+@include smartTeleSales {}

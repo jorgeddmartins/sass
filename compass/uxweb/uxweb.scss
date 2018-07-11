@@ -1,0 +1,26 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+header, footer, section {
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+header, footer {
+	padding: 30px;
+	float: left;
+	background: #eee;
+}
+
+section {
+	padding: 20px;
+	float: left;
+	height: 820px;
+	background: #f9f9f9;
+}
+
+

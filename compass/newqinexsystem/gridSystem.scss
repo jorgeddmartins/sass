@@ -1,0 +1,416 @@
+// Header Info Elements 
+@import '_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '_mixins';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Grid System
+.row-grid-system {
+    margin:  $null-conv !important;
+    @include mediumtablet { // 1024px to 1200px
+        margin-top: 1%; // 1%
+        margin-bottom: 2%; // 2%
+    }
+    .t-grid-head, 
+    .t-grid-body, 
+    .t-grid-footer {
+        width: $table-max;
+        float: $fltleft;
+    }
+    .t-tr {
+        float: $fltleft;
+        width: $max-conv-width;
+        position: relative;
+        border-bottom: $small-fix-01 solid #ddd;
+        &:last-child {
+            border-bottom: $null-conv;
+        }
+        &:hover {
+            background: $table-tr-hover;
+        }
+    }
+    .back-t-tr {
+        background: #f9f9f9;
+    }
+    .tgb-50, .tgb-25, .tgb-30, .tgb-40, .tgb-35, .tgb-20, .tgb-45, .tgb-100, .tgb-70, .tgb-60, .tgb-10, .tgb-11, .tgb-15, .tgb-05, 
+    .tgb-80, .tgb-85, .tgb-90, .tgb-95, .tgbst-100, .tgbst-50, .tgbst-55, .tgbst-40, .tgbst-45, .tgbst-30, .tgbst-35, .tgbst-20, 
+    .tgbst-25, .tgbst-500, .tgbst-1000, .tgbst-700, .tgbst-1400, .tgbst-250, .tab-6-25, .tgb-5, .tgb-1-05, .tgb-13 {
+        float: $fltleft;
+        padding: $small-fix-10;
+        padding-top: $small-fix-15 - 2;
+        padding-bottom: $small-fix-15 - 2;
+        font-size: $small-fix-15;
+        border-right: $small-fix-01 dotted $gray-smooth;
+        text-align: center;
+        position: relative;
+        &:first-child {
+            padding-left: $small-fix-15 + 1;
+            text-align: left;
+        }
+        &:last-child {
+            border-right: $null-conv;
+        }
+    }
+
+    // Dynamic Table
+    .tgb-100 {
+        width: $table-max; // 100%
+    }
+    .tgb-90 {
+        width: $table-max-90; // 90%
+    }
+    .tgb-95 {
+        width: $table-max-95; // 95%
+    }
+    .tgb-80 {
+        width: $table-max-80; // 80%
+    }
+    .tgb-85 {
+        width: $table-max-85; // 85%
+    }
+    .tgb-70 {
+        width: $table-max-70; // 70%
+    }
+    .tgb-60 {
+        width: $table-max-60; // 60%
+    }
+    .tgb-50 {
+        width: $half-table-max; // 50%
+    }
+    .tgb-20 {
+        width: $table-max-20; // 20%
+    }
+    .tgb-25 {
+        width: $table-max-25; // 25%
+    }
+    .tgb-30 {
+        width: $table-max-30; // 30%
+    }
+    .tgb-35 {
+        width: $table-max-35; // 35%
+    }
+    .tgb-40 {
+        width: $table-max-40; // 40%
+    }
+    .tgb-45 {
+        width: $table-max-45; // 45%
+    }
+    .tgb-10 {
+        width: $table-max-10; // 10%
+    }
+    .tgb-11 {
+        width: $table-max-10 + 1 + 0.11; // 11.11%
+    }
+    .tgb-13 {
+        width: 16.65%;
+    }
+    .tgb-15 {
+        width: $table-max-15; // 15%
+    }
+    .tgb-5 {
+        width: $table-max-10 / 2; // 5%
+    }
+    .tab-6-25 {
+        width: 6.25%; // 16.25%
+        background: #f5f5f5;
+        border-right: $small-fix-01 solid #ddd;
+    }
+    .tgb-05 {
+        width: $table-max-05; // 0.5%
+    }
+    .t-grid-head {
+        .tgb-10 {
+            width: 9.85%;
+            max-width: 180.19px;
+            background: #f5f5f5;
+            border-right: $small-fix-01 solid #ddd;
+            border-bottom: $small-fix-02 solid #eee;
+            text-transform: uppercase;
+            color: $black;
+            font-size: $small-fix-10 + 3;
+            text-align: left;
+            padding-top: $small-fix-10;
+            padding-bottom: $small-fix-10;
+            height: $small-fix-40;
+            &:last-child {
+                border-right: $null-conv;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 + 1 solid transparent;
+                border-right: $small-fix-05 + 1 solid transparent;
+                top: 50.5%;
+                right: $small-fix-10;
+                border-bottom: $small-fix-05 + 1 solid #777;
+                transform: rotate($rotate-180);
+                cursor: pointer;
+            } 
+        }
+        .no-arrow {
+            &:after {
+                position: absolute;
+                content: "";
+                border: $null-conv solid transparent;
+            }
+        }
+        .tgb-1-05 {
+            width: 1.5%; 
+            height: $small-fix-40;
+            background: #f5f5f5;
+            border-right: $small-fix-01 solid #ddd;
+            border-bottom: $small-fix-02 solid #eee;
+            color: #f5f5f5;
+            &:last-child {
+                border-right: $null-conv;
+            } 
+        }
+        .tab-head-11 {
+            background: #f5f5f5 url(../../img/addgrid.svg) no-repeat;
+            background-size: $small-fix-13 + 1;
+            background-position: $half-conv-width $half-conv-width;
+            border-right: 0;
+            cursor: pointer;
+        }
+        .gridInput {
+            position: absolute;
+            left: $null-conv;
+            top: $small-fix-02;
+            width: 94%; // 94%
+            right: $null-conv;
+            margin-left: auto;
+            margin-right: auto;
+            border: $small-fix-01 solid #eee;
+            font-size: $small-fix-10 + 2;
+            box-shadow: none;
+            @include border-radius($null-conv);
+        }
+        .tgb-11 {
+            max-width: 203.67px;
+        }
+        .tgb-11, 
+        .tgb-13 {
+            background: #f5f5f5;
+            border-right: $small-fix-01 solid #ddd;
+            border-bottom: $small-fix-02 solid #eee;
+            text-transform: uppercase;
+            color: $black;
+            font-size: $small-fix-10 + 3;
+            text-align: left;
+            padding-top: $small-fix-10;
+            padding-bottom: $small-fix-10;
+            height: $small-fix-40;
+            &:last-child {
+                border-right: $null-conv;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 + 1 solid transparent;
+                border-right: $small-fix-05 + 1 solid transparent;
+                top: 50.5%;
+                right: $small-fix-10;
+                border-bottom: $small-fix-05 + 1 solid #777;
+                transform: rotate($rotate-180);
+                cursor: pointer;
+            } 
+        }
+    }
+    .t-grid-body {
+        position: relative;
+        .tgb-10 {
+            width: 9.85%;
+            max-width: 180.19px;
+            border-right: $small-fix-01 dotted #eee;
+            color: $black;
+            font-size: $small-fix-10 + 3;
+            text-align: left;
+            padding-top: $small-fix-10;
+            padding-bottom: $small-fix-10;
+            height: $small-fix-40;
+        }
+        .tgb-grey-color {
+            background: #f9f9f9;
+        }
+        .tgb-icogrey-color {
+            background: #ddd;
+        }
+        .tgb-white-color {
+            background: $white;
+        }
+        i {
+            display: block;
+            font-size: $small-fix-30 + $small-fix-01; // 31px
+            text-align: center;
+            top: -6px;
+            position: relative;
+            color: $white;
+            cursor: pointer;
+        }
+        .cursPoint {
+            cursor: pointer;
+        }
+        .tab-body-3 {
+            &:hover {
+                background: #f9f9f9;
+                font-weight: bold;
+            }
+        }
+        .tgb-11 {
+            max-width: 203.67px;
+        }
+        .tgb-11, 
+        .tgb-13 {
+            border-right: $small-fix-01 dotted #eee;
+            color: $black;
+            font-size: $small-fix-10 + 3;
+            text-align: left;
+            padding-top: $small-fix-10;
+            padding-bottom: $small-fix-10;
+            height: $small-fix-40;
+        }
+        .tgb-13 {
+            input[type="text"] {
+                width: $max-conv-width;
+                border: $null-conv;
+                background: transparent;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+        }
+    }
+    .t-grid-footer {
+        background: #f2f2f2;
+        border-top: $small-fix-01 solid #ddd;
+        padding: $small-fix-17;
+    }
+
+    // Special Table Grid Chart
+    .tgb-8-3 {
+        width: 8.3%;
+        left: $null-conv;
+    }
+    .tgb-16-6 {
+        width: 8.3%; // 16.6%
+        left: 8.3%; 
+    }
+    .tgb-24-9 {
+        width: 8.3%; // 24.9%
+        left: 16.6%;
+    }
+    .tgb-33-2 {
+        width: 8.3%; // 33.2%
+        left: 24.9%;
+    }
+    .tgb-41-5 {
+        width: 8.3%; // 41.5%
+        left: 33.2%;
+    }
+    .tgb-49-8 {
+        width: 8.3%; // 49.8%
+        left: 41.5%;
+    }
+    .tgb-58-1 {
+        width: 8.3%; // 58.1%
+        left: 49.8%;
+    }
+    .tgb-66-4 {
+        width: 8.3%; // 66.4%
+        left: 58.1%;
+    }
+    .tgb-74-7 {
+        width: 8.3%; // 74.7%
+        left: 66.4%;
+    }
+    .tgb-83 {
+        width: 8.3%; // 83%
+        left: 74.7%;
+    }
+    .tgb-91-3 {
+        width: 8.3%; // 91.3%
+        left: 83%;
+    }
+    .tgb-99-6 {
+        width: 8.3%; // 99.6%
+        left: 91.3%;
+    }
+
+    // Static Table
+    .tgbst-1400 {
+        width: $double-table-fix-basic; // 1400px
+    }
+    .tgbst-1000 {
+        width: $table-fix-1000; // 1000px
+    }
+    .tgbst-700 {
+        width: $table-fix-basic; // 700px
+    }
+    .tgbst-500 {
+        width: $table-fix-500; // 500px
+    }
+    .tgbst-250 {
+        width: $table-fix-250; // 250px
+    }
+    .tgbst-100 {
+        width: $table-fix-100; // 100px
+    }
+    .tgbst-50 {
+        width: $table-fix-50; // 50px
+    }
+    .tgbst-55 {
+        width: $table-fix-55; // 55px
+    }
+    .tgbst-40 {
+        width: $table-fix-40; // 40px
+    }
+    .tgbst-45 {
+        width: $table-fix-45; // 45px
+    }
+    .tgbst-30 {
+        width: $table-fix-30; // 30px
+    }
+    .tgbst-35 {
+        width: $table-fix-35; // 35px
+    }
+    .tgbst-20 {
+        width: $table-fix-20; // 20px
+    }
+    .tgbst-25 {
+        width: $table-fix-25; // 25px
+    }
+
+    .null-bordRight {
+        border-right: $null-conv;
+    }
+    .null-bordLeft {
+        border-left: $null-conv;
+    }
+    .null-bord {
+        border: $null-conv;
+    }
+    .openGrid {
+        position: relative;
+        padding: $null-conv !important;
+    }
+    .dispN {
+        display: none;
+    }
+    .area-right {
+        position: relative;
+    }
+    .paddGlobal {
+        padding: $small-fix-07;
+    }
+    .gridDesc {
+        margin-top: $small-fix-05;
+        float: left;
+    }
+}

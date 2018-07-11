@@ -1,0 +1,373 @@
+// Header Info Elements 
+@import '_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '_mixins';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.producttypeview {
+    .productypecontent {
+        padding-top: $small-fix-13 + 2; // 15px
+        padding-bottom: $small-fix-13 + 2; // 15px 
+        display: inline-block;
+        margin-left: 60px;
+        width: 97%;
+        .panel-heading {
+            padding-bottom: $small-fix-10;
+            padding-top: $small-fix-10;
+            background: #f5f5f5;
+            h4 {
+                margin: $null-conv;
+                text-transform: uppercase;
+                font: $small-fix-20 + 2 'robotoregular';
+                float: left;
+                letter-spacing: -1px;
+            }
+        }
+        .btn-Grid {
+            padding-top: $small-fix-07;
+            padding-bottom: $small-fix-07;
+            background: $white;
+            border-top: $small-fix-01 solid #eee;
+        }
+    }
+}
+
+
+// PopUp
+/* Start Pop Up Product Type */
+
+.imagesettings {
+    position: absolute;
+    width: 26%;
+    max-width: 499.19px;
+    min-width: 300px;
+    // height: 450px;
+    // padding: $small-fix-15;
+    padding-top: 60px;
+    background: $white;
+    top: $small-fix-50;
+    right: 44%;
+    border: $small-fix-01 solid #eee;
+    border-bottom: $small-fix-01 solid #ddd;
+    z-index: 2000;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    .close-floor {
+        width: $max-conv-width;
+        // background: #f9f9f9;
+        background: #0A9A7A;
+        position: absolute;
+        left: $null-conv;
+        top: $null-conv;
+        padding: $small-fix-10;
+        border-bottom: $small-fix-01 solid #088267;
+        // cursor: move;
+        .fa, .glyphicon, .fd, .lnr {
+            font-size: $small-fix-20 + 3;
+            float: right;
+            position: relative;
+            right: $small-fix-10;
+            top: $null-conv;
+            cursor: pointer;
+            color: $white;
+        }
+        h5 {
+            margin: $null-conv;
+            float: left;
+            font-size: 16px;
+            font-family: 'robotoregular';
+            padding-top: 3px;
+            padding-left: $small-fix-10;
+            color: $white;
+        }
+    }
+    .content-floor {
+        .cont-label {
+            width: $max-conv-width;
+            font: $small-fix-13 + 1 'robotoregular';
+            color: $black;
+            font-weight: bold;
+            padding-left: 15px;
+            margin-bottom: $small-fix-10;
+            float: left;
+        }
+        .library-floor {
+            position: relative;
+            width: $max-conv-width;
+            padding: $small-fix-05;
+            padding-left: 10px;
+            height: 45px;
+            border: $small-fix-01 solid #eee;
+            border-bottom: $small-fix-01 + 1 solid #eee;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-05 solid transparent;
+                border-right: $small-fix-05 solid transparent;
+                top: 50.5%;
+                right: $small-fix-10;
+                border-bottom: $small-fix-05 solid #333;
+                transform: rotate(180deg);
+                cursor: pointer;
+            }
+            span {
+                position: relative;
+                float: left;
+                padding: 6px;
+                font-weight: bold;
+                color: #777;
+            }
+        }
+
+        .icons-floor {
+            width: $max-conv-width;
+            height: 200px;
+            position: relative;
+            border: $small-fix-01 solid #eee;
+            border-bottom: $small-fix-01 + 1 solid #eee;
+            overflow: hidden;
+            .iconsFloor-in {
+                width: $max-conv-width;
+                position: relative;
+                padding: 3px;
+                padding-bottom: $null-conv;
+                height: 194px;
+            }
+        }
+
+        .rotate90 {
+            &:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                z-index: 10;
+                top: 50.5%;
+                right: $small-fix-10;
+                border-bottom: 5px solid #333;
+                transform: rotate($null-conv);
+            }
+        }
+        em {
+            display: inline-block;
+            font-size: 12px;
+            color: #ccc;
+            font-weight: bold;
+            margin-top: 6px;
+            padding-left: 5px
+        }
+        .labraryDrop {
+            position: absolute;
+            top: 48px;
+            left: $null-conv;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 94%;
+            padding: $small-fix-05;
+            border: $small-fix-01 solid #eee;
+            background: $white;
+            z-index: 10;
+            li {
+                span {
+                    display: block;
+                    padding: 8px;
+                    text-decoration: none;
+                    padding-left: $small-fix-13;
+                    font-size: $small-fix-10 + 2;
+                    color: $black;
+                    cursor: default;
+                    &:hover {
+                        background: #f9f9f9;
+                    }
+                }
+            }
+        }
+
+        .position-floor {
+            position: relative;
+            float: left;
+            width: $max-conv-width;
+            padding: $small-fix-15;
+            padding-top: $null-conv;
+        }
+
+        .save-blk {
+            background: #f9f9f9;
+            width: $max-conv-width;
+            float: left;
+            padding: $small-fix-13;
+            margin-top: $small-fix-10;
+            text-align: right;
+        }
+
+        .focusColor {
+            background: rgba(10,154,122, .6);
+            color: $white;
+        }
+    }
+
+    .ico-stage {
+        width: 60px;
+        height: 45px;
+        background: #fafafa;
+        border: $small-fix-01 solid #eee;
+        float: left;
+        margin: 2px;
+        padding: $small-fix-10;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        @include transition(all .3s ease-in-out);
+        .fa, .glyphicon, .lnr, .icon {
+            font-size: 23px;
+            cursor: pointer;
+            em {
+                font-size: $null-conv;
+                margin: $null-conv;
+                padding: $null-conv;
+            }
+        }
+        .fd {
+            position: relative;
+            top: -7px;
+            font-size: 27px;
+            em {
+                font-size: $null-conv;
+                margin: $null-conv;
+                padding: $null-conv;
+            }
+        }
+        &:hover {
+            background: rgba(10,154,122, .6);
+            color: $white;
+        }
+    }
+
+    .iconSearch-floor, 
+    .iconActive-floor {
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 4px;
+        position: relative;
+    }
+    .iconSearch-floor {
+        .auto-search {
+            position: relative;
+            width: $max-conv-width;
+            padding: 5px;
+            padding-left: 10px;
+            height: 45px;
+            border: 1px solid #eee;
+            // border-bottom: 2px solid #eee;
+            background: #fafafa;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+        .fa, .glyphicon, .fd {
+            position: absolute;
+            top: 12px;
+            right: 33px;
+            font-size: 19px;
+            color: #ddd;
+        }
+    }
+    .iconSearch-floor {
+        width: 83.6%;
+        padding-left: $null-conv;
+    }
+    .iconActive-floor {
+        margin-bottom: 2px;
+        width: 81px;
+        padding-right: 7px;
+        .ico-stage {
+            margin: $null-conv;
+            &:hover {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+
+
+    .fontawesomeFl {
+        .comingSoon {
+            font-size: 30px;
+            color: #ccc;
+            width: $max-conv-width;
+            float: left;
+            text-align: center;
+            padding-top: 60px;
+        }
+    }
+
+    .saveChanges {
+        background: rgba(10, 154, 122, 0.6);
+        border: $null-conv;
+        color: $white;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @include transition(all 1s ease-in-out);
+        &:focus {
+            outline: $null-conv;
+        }
+    }
+
+    .saveNotallowed {
+        pointer-events: none;
+        background: rgba(10, 154, 122, 0.3);
+    }
+}
+
+.optionBcak {
+    background: #f9f9f9;
+}
+
+.sub-icomenu {
+    display: none;
+}
+
+.icoM {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 39px !important;
+    font-family: 'robotoregular';
+    background: #f8f8f8;
+    position: relative;
+    cursor: pointer !important;
+    &:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 44%;
+        right: 69%;
+        border-bottom: 5px solid #333;
+        @include transform(180deg);
+        cursor: pointer;
+    }
+}
+
+.icoMRotate {
+    &:after {
+        content: "";
+        @include transform(0deg);
+    }
+}
+
+/* End Pop Up Product Type */

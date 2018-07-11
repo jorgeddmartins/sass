@@ -1,0 +1,304 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+html, body {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased !important;
+	color: #4c4c4d;
+}
+
+
+.laterLifeAssured {
+
+	a {
+		font-weight: bold;
+	    text-decoration: underline;
+	    color: #1d93b3;
+	}
+	p {
+		line-height: 20px;
+	    float: left;
+	    margin: $null-conv;
+	    width: $max-conv-width;
+	}
+
+	.container { 
+		max-width: 960px;
+		padding: $null-conv;
+	}
+
+	.laterLifeHeader {
+		background: #4cc6bb;
+		.container { padding: 25px $null-conv; }
+		.assurtedLogo {
+			width: 40%;
+			float: left;
+			img {
+				width: $max-conv-width;
+			}			
+		}
+		.assuredHeadBanner {
+			width: 46.5%;
+			float: right;
+			padding-top: 3px;
+			img {
+				width: $max-conv-width;
+			}
+		}
+	}
+
+	.assuredMain {
+		.container {
+			padding-top: 40px;
+			padding-bottom: 25px;
+			h1 {
+				font-family: 'Lato', sans-serif;
+				font-size: 44px;
+				font-weight: 900;
+				color: #484848;
+				letter-spacing: -1px;
+				margin: $null-conv;
+				padding-bottom: 30px;
+				text-align: center;
+			}
+			.assuredMainLeft {
+				width: 625px;
+				float: left;
+				.assuredTop, 
+				.assuredMiddle, 
+				.assuredMiddleBott, 
+				.assuredOptions, .pageButton { 
+					float: left;
+				}
+				.assuredTop, .assuredMiddleBott {
+					p {
+						padding-bottom: 20px;
+					}
+				}
+				.assuredMiddle {
+					p {
+						font-size: 21px;
+					    font-weight: 400;
+					    color: $white;
+					    text-align: left;
+					    letter-spacing: $null-conv;
+					    margin: 20px $null-conv;
+					    margin-top: $null-conv;
+					    padding: 30px;
+					    line-height: 26px;
+					    background: #ff6328;
+					}
+				}
+				.assuredOptions {
+					ol {
+						counter-reset: li;
+					    margin: $null-conv;
+					    padding-left: $null-conv;
+					    float: left;
+    					padding-top: 15px;
+    					padding-bottom: 15px;
+						li {
+							position: relative;
+						    margin: $null-conv $null-conv 6px 2em;
+						    padding: 9px 8px;
+						    list-style: none;
+						    font-size: 17px;
+						    margin-bottom: 10px;
+						    background: #fafafa;
+						    border-bottom: 1px solid #eee;
+							&:before {
+								content: counter(li);
+							    counter-increment: li;
+							    position: absolute;
+							    top: -4px;
+							    left: -38px;
+							    -moz-box-sizing: border-box;
+							    -webkit-box-sizing: border-box;
+							    box-sizing: border-box;
+							    color: #ff7800;
+							    text-align: center;
+							    font-size: 50px;
+							    font-weight: bold;
+							    font-family: 'Lato', sans-serif;
+							}
+						}
+					}
+				}
+
+				.pageButton {
+					padding: 25px $null-conv 16px $null-conv;
+				    text-align: center;
+				    margin: $null-conv;
+				    width: $max-conv-width;
+				}
+
+				h2 {
+					font-family: 'Lato', sans-serif;
+				    font-size: 23px;
+				    line-height: 26px;
+				    letter-spacing: -1px;
+				    font-weight: 700;
+				    color: #ff6328;
+				    margin-top: $null-conv;
+				    margin-bottom: 15px;
+				}
+
+				.assuredPicture {
+					width: $max-conv-width;
+					float: left;
+					margin-bottom: 20px;
+					img {
+						width: $max-conv-width;	
+					}
+				}
+			}
+			.assuredMainRight {
+				width: 276px;
+				float: right;
+				img {
+					width: $max-conv-width;
+					margin-bottom: 15px;
+					&:last-child {
+						margin-bottom: $null-conv;
+					}
+				}
+			}
+		}
+	}
+
+	.assuredBtn {
+		display: inline-block;
+	    text-align: center;
+	    font-size: 25px;
+	    color: $white;
+	    margin: $null-conv auto;
+	    text-decoration: none;
+	    padding: 22px 30px 22px 30px;
+	    -webkit-appearance: none;
+	    -webkit-transition: background-color 400ms ease-out;
+	    -moz-transition: background-color 400ms ease-out;
+	    transition: background-color 400ms ease-out;
+	    background: #ff7800;
+	}
+
+	.pulse {
+	    animation-name: pulse;
+	    -webkit-animation-name: pulse;
+	    animation-duration: 1.5s;
+	    -webkit-animation-duration: 1.5s;
+	    animation-iteration-count: infinite;
+	    -webkit-animation-iteration-count: infinite;
+	}
+
+	@keyframes pulse {
+		0% {transform: scale(0.9); }
+		50% { transform: scale(1); }
+		100% { transform: scale(0.9); }
+	}
+
+	@-webkit-keyframes pulse {
+		0% { -webkit-transform: scale(0.9); }
+		50% { -webkit-transform: scale(1); }
+		100% { -webkit-transform: scale(0.9); }
+	}
+
+	@-moz-keyframes pulse {
+		0% { -moz-transform: scale(0.9); }
+		50% { -moz-transform: scale(1); }
+		100% { -moz-transform: scale(0.9); }
+	}
+
+	ul {
+		list-style: none;
+		padding: $null-conv;
+		margin: $null-conv;
+	}
+
+	.assuredFooter {
+	    padding: 60px 50px;
+	    background: #4cc6bb;
+	    text-align: center;
+	    color: $white;
+	    font-size: 14px;
+	    img {
+	    	width: 220px;
+	    	margin-bottom: 17px;
+	    }
+	    p {
+	    	&:first-of-type {
+	    		margin-bottom: 20px;
+	    	}
+	    }
+	}
+
+}
+
+
+// Mu=edia
+/* Media */
+@include smartphones {
+
+	.laterLifeAssured {
+		p {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		.assuredMain {
+			.container {
+				padding-top: 17px;
+				h1 {
+					font-size: 25px;
+					padding-bottom: 14px;
+				}
+				.assuredMainLeft, 
+				.assuredMainRight {
+					width: 100%;
+				}
+				.assuredMainLeft {
+					h2 {
+						font-size: 17px;
+						line-height: 20px;
+					}
+					.assuredTop, 
+					.assuredMiddleBott {
+						p {
+							padding-bottom: 9px;
+						}
+					}
+					.assuredMiddle {
+						p {
+							font-size: 16px;
+							line-height: 22px;
+							padding: 20px;
+						}
+					}
+					.assuredOptions {
+						ol {
+							padding-left: 17px;
+							li {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+				.assuredMainRight {
+					img {
+						max-width: 276px;
+					    margin: auto;
+					    display: inherit;
+					}
+				} 
+			}
+		}
+		.assuredBtn {
+			font-size: 20px;
+		}
+		.assuredFooter {
+			padding: 25px 15px;
+		}  
+	}
+
+}

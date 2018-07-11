@@ -1,0 +1,83 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.tecnical_Floor {
+	padding-top: $small-fix-15;
+	padding-bottom: $small-fix-15;
+
+	.fr-box {
+		width: 43%;
+    	display: inline-block;
+	}
+
+	.fr-toolbar {
+		// display: none;
+		border-top: $null-conv;
+		box-shadow: none; 
+	}
+
+	.fr-box.fr-basic {
+		.fr-element {
+			padding: 40px;
+			padding-top: $small-fix-15;
+			padding-bottom: $small-fix-15;
+		}
+	}
+
+
+}
+
+body {
+
+	.fr-modal {
+		.fr-modal-wrapper {
+			border-top: $null-conv;
+			.fr-modal-head {
+				@include box-shadowdouble($null-conv $null-conv $null-conv rgba(0, 0, 0, .16), $null-conv $null-conv $null-conv $small-fix-01 rgba(0, 0, 0, .14));
+			}
+			.fr-modal-body {
+				overflow: hidden;
+				button.fr-command {
+					font-size: $small-fix-13 + 1;
+					color: $black;
+					background: #eee;
+				    font-weight: bold;
+				    padding-left: $small-fix-20;
+				    padding-right: $small-fix-20;
+				}
+			}
+		}
+	}	
+
+	.fr-box.fr-basic.fr-top {
+		.fr-wrapper {
+			@include box-shadowdouble(0 0 0 rgba(0,0,0,.12), 0 0 0 0 rgba(0,0,0,.16));
+			border: 1px solid #eee;
+			border-bottom: 2px solid #eee;
+		}
+	}
+}
+
+// body .fr-modal {
+// 	.fr-modal-wrapper {
+// 		border-top: $null-conv;
+// 		.fr-modal-head {
+// 			@include box-shadowdouble($null-conv $null-conv $null-conv rgba(0, 0, 0, .16), $null-conv $null-conv $null-conv $small-fix-01 rgba(0, 0, 0, .14));
+// 		}
+// 		.fr-modal-body {
+// 			overflow: hidden;
+// 			button.fr-command {
+// 				font-size: $small-fix-13 + 1;
+// 				color: $black;
+// 				background: #eee;
+// 			    font-weight: bold;
+// 			    padding-left: $small-fix-20;
+// 			    padding-right: $small-fix-20;
+// 			}
+// 		}
+// 	}
+// }
+
+
+

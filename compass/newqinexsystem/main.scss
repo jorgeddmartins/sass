@@ -1,0 +1,65 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Reset
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+}
+
+body {
+    background: #f9f9f9;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+.zIndex {
+    z-index: 10;
+}
+
+.row {
+    margin-left: $null-conv;
+    margin-right: $null-conv;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    color: #ccc;
+}
+
+.boxSystem {
+    height: $max-conv-height;
+    padding-top: $small-fix-75;
+    padding-left: $small-fix-75;
+    padding-bottom: $small-fix-15;
+    position: absolute;
+}

@@ -1,0 +1,119 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+}
+
+h2 {
+    margin: $null-conv;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $small-fix-13 + 1;
+}
+
+.yourFlightcontent {
+    width: 60%;
+    // max-width: 570px;
+    position: relative;
+    margin: auto;
+    background: #C5EFF7;
+    padding: $small-fix-25;
+}
+
+.YourflightStepForm {
+    .steps {
+        display: none;
+    }
+
+    .heading {
+        width: $max-conv-width;
+        color: #89a7ac;
+        font-size: $small-fix-20;
+        float: left;
+        text-align: center;
+        margin-bottom: $small-fix-17 + 1;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+
+    .form-group {
+        width: $max-conv-width;
+        margin: $null-conv;
+        margin-bottom: $small-fix-20;
+        float: left;
+        .form-control {
+            width: $max-conv-width;
+            height: 50px;
+            color: #000;
+            font-weight: bold;
+            background: $rgba-white-055;
+            // border: 2px solid #b1d7de;
+            border: $null-conv;
+            @include border-radius($null-conv);
+            @include box-shadow(none);
+            float: left;
+            &:focus {
+                outline: $null-conv;
+                @include box-shadow(none);
+            }
+        }
+
+        .form-control-feedback {
+            top: $small-fix-07 + 1;
+            right: $small-fix-15;
+        } 
+    }
+
+    .actions {
+        ul {
+            list-style: none;
+            margin: $null-conv;
+            li {
+                width: $max-conv-width / 2;
+                float: left;
+                &:nth-child(2), &:nth-child(3) {
+                    float: right;
+                    a {
+                        float: right;
+                    }
+                }
+
+                a {
+                    background: #337ab7;
+                    color: $white;
+                    float: left;
+                    width: 97%;
+                    padding: $small-fix-17;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    @include border-radius($small-fix-03 + 1);
+                }
+            }
+        }
+    }
+
+    .nameG {
+        margin-bottom: 10px;
+        .addGuest {
+            display: none;
+        }
+        &:last-child {
+          .addGuest {
+            display: block;
+            float: left;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 11px;
+            font-weight: bold;
+            margin-top: 10px;
+            text-decoration: none;
+            padding-left: 10px;
+          } 
+        }
+    }
+}

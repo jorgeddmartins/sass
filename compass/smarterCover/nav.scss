@@ -1,0 +1,429 @@
+
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Nav
+
+.realnav {
+	width: $max-conv-width;
+	height: $small-fix-50 + $small-fix-05;
+	background: $white;
+	border-bottom: $small-fix-02 solid #eee;
+	position: fixed;
+	top: $null-conv;
+	left: $null-conv;
+	z-index: 12;
+	.logo-Box {
+		width: $small-fix-40 + 2;
+	    margin: $small-fix-05 + 1 auto;
+	    position: relative;
+	    img {
+	    	width: $max-conv-width;
+	    }
+	}
+	.avatarview {
+		position: absolute;
+		top: $small-fix-05 + 1;
+		right: $small-fix-60;
+		width: auto;
+		height: $small-fix-40 + 2;
+		.aVatar {
+			width: $small-fix-40 + 2;
+			height: $small-fix-40 + 2;
+			position: relative;
+			float: left;
+			@include border-radius($max-conv-width / 2);
+			overflow: hidden;
+			img {
+				width: $max-conv-width;
+			}
+		}
+		.greeTings {
+			float: left;
+			font-size: $small-fix-10 + 2;
+			color: #025a87;
+			text-transform: uppercase;
+			position: relative;
+		    top: $small-fix-15 + 1;
+		    margin-right: $small-fix-20;
+		}
+	}
+
+	.avatarbar {
+		position: fixed;
+		width: 120px;
+		background: $white;
+		border: solid 1px #eee;
+	    border-bottom: 2px solid #eee;
+		top: 57px;
+		right: -120px;
+		padding: $null-conv;
+		padding-top: $small-fix-10;
+		@include transition($Sec-03);
+		&:before {
+			content: '';
+			position: absolute;
+		    width: $small-fix-10 + 2;
+		    height: $small-fix-10 + 2;
+		    background: $white;
+		    border: solid $small-fix-01 #eee;
+		    border-bottom: $small-fix-01 solid transparent;
+		    border-right: $small-fix-01 solid transparent;
+		    top: -7px;
+		    right: $null-conv;
+		    left: $null-conv;
+		    margin-left: auto;
+		    margin-right: auto;
+		    @include transform(45deg);
+		}
+		.avatarlink {
+			width: $max-conv-width;
+			float: left;
+			padding: $small-fix-10;
+			text-decoration: none;
+			color: #025a87;
+			font-size: $small-fix-10 + 2;
+			font-weight: bold;
+			margin-bottom: $small-fix-02;
+			i {
+				float: right;
+				font-size: $small-fix-15 + 1;
+			}
+		}
+		.logout {
+			border-top: $small-fix-01 solid #eee;
+			background: #f9f9f9;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+	.openAvatar {
+		right: $small-fix-20 - 1;
+	}
+
+	.navView {
+		width: $small-fix-40 + 2;
+		height: $small-fix-40 + 2;
+		position: absolute;
+		left: $small-fix-60;
+		top: $small-fix-05 + 1;
+		.navView-Menu {
+			width: $max-conv-width;
+			height: $max-conv-height;
+			float: left;
+			text-decoration: none;
+    		text-align: center;
+			&:after {
+    			content: '\e871';
+    			font-family: Linearicons-Free;
+    			color: #025a87;
+    			font-size: 35px;
+			    position: absolute;
+			    left: 3px;
+			    top: -3px;
+			}
+		}
+		.closeNav {
+			&:after {
+				content: '\e870';
+    			font-family: Linearicons-Free;
+    			color: #025a87;
+    			font-size: 35px;
+			    position: absolute;
+			    left: 3px;
+			    top: -3px;
+			}
+		}
+		span {
+		    position: absolute;
+		    top: $small-fix-15;
+		    left: 44px;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    font-size: $small-fix-10 + 2;
+		}
+	}
+
+	.navBar {
+		position: fixed;
+		width: 288px; // 200px
+		height: $max-conv-height;
+		top: 57px;
+		left: -100%; // -200px
+		background: $rgba-white-095;
+		border: 1px solid #eee;
+		padding-top: 30px;
+		@include transition(.3s);
+		text-align: center;
+		&:before {
+			content: '';
+		    position: absolute;
+		    width: $small-fix-10 + 2;
+		    height: $small-fix-10 + 2;
+		    background: $white;
+		    border: solid 1px #eee;
+		    border-bottom: 1px solid transparent;
+		    border-right: 1px solid transparent;
+		    top: -7px;
+		    left: 65px;
+		    @include transform(45deg);
+		}
+		.navBar-Tab {
+			color: #025a87;
+			font-size: $small-fix-13;
+			float: left;
+			padding: $small-fix-13 + 1;
+			padding-left: $null-conv;
+			padding-right: $small-fix-30;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			position: relative;
+			margin: $null-conv;
+			z-index: 100;
+			border: 1px solid $white;
+			position: relative;
+			width: 100%;
+			background: #f9f9f9;
+		}
+		.subTab {
+			&:after {
+				position: absolute;
+			    content: "";
+			    vertical-align: middle;
+			    width: $null-conv;
+			    height: $null-conv;
+			    border-left: 5px solid transparent;
+			    border-right: 5px solid transparent;
+			    top: 34px;
+			    right: $null-conv;
+			    left: -30px;
+			    margin-left: auto;
+			    margin-right: auto;
+			    border-bottom: 5px solid #025a87;
+			    @include transform(180deg);
+			}
+		}
+
+
+		// Start Nav Icons
+		/* Start Nav Icons */
+
+		.policies, 
+		.chaselog, 
+		.retention, 
+		.compliance, 
+		.finance, 
+		.confirm, 
+		.reportarget, 
+		.settings {
+			&:before {
+				font-family: Linearicons-Free;
+				color: #025a87;
+				font-size: 24px;
+				position: absolute;
+			    right: 17px;
+			    top: 5px;
+			}
+		}
+
+		.policies {
+			&:before {
+				content: '\e88e';
+			}
+		}
+		.chaselog {
+			&:before {
+				content: '\e863';
+			}
+		}
+		.retention {
+			&:before {
+				content: '\e80e';
+			}
+		}
+		.compliance {
+			&:before {
+				content: '\e88b';
+			}
+		}
+		.finance {
+			&:before {
+				content: '\e843';
+			}
+		}
+		.confirm {
+			&:before {
+				content: '\e86d';
+			}
+		}
+		.reportarget {
+			&:before {
+				content: '\e84c';
+			}
+		}
+		.settings {
+			&:before {
+				content: '\e810';
+			}
+		}
+
+		/* End Nav Icons */
+		// End Nav Icons
+
+		.barFloor {
+			width: $max-conv-width;
+		    position: relative;
+		    float: left;
+		}
+
+		.rotate0 {
+			border-bottom: $small-fix-01 solid #025a87;
+			color: #333;
+		    &:after {
+		        @include transform($rotateNull);
+		    }
+		    &:before {
+		    	color: #333;
+		    }
+		}
+	}
+
+	.navBarLeft {
+		left: $small-fix-10;
+	}
+
+	.flying-drop {
+		width: $max-conv-width;
+	    background: $white;
+	    border: $small-fix-01 solid #eee;
+	    border-bottom: $small-fix-02 solid #eee;
+	    position: relative;
+	    float: left;
+	    top: $null-conv;
+	    left: $null-conv;
+	    margin: $null-conv;
+	    opacity: $null-conv;
+	    margin-bottom: -1px;
+	    display: none;
+	    &:after {
+	    	content: '';
+		    position: absolute;
+		    width: $small-fix-10 + 2;
+		    height: $small-fix-10 + 2;
+		    background: $white;
+		    border: solid $small-fix-01 #eee;
+		    border-bottom: $small-fix-01 solid transparent;
+		    border-right: $small-fix-01 solid transparent;
+		    top: -7px;
+		    left: -10%;
+		    right: $null-conv;
+		    margin-left: auto;
+		    margin-right: auto;
+		    @include transform($rotate-45);
+		}
+		.subTabnav {
+			width: $max-conv-width;
+			float: left;
+			padding: $small-fix-10;
+			padding-left: $small-fix-40 + $small-fix-05;
+			font-size: $small-fix-10 + 1;
+			text-transform: uppercase;
+			border-bottom: $small-fix-01 solid #eee;
+			text-decoration: none;
+			color: #333;
+			text-align: left;
+			&:hover {
+				background: #f9f9f9;
+			}
+		}
+	}
+
+	.flyDown {
+		animation: flyDown .3s 1 forwards;
+		-webkit-animation: flyDown .3s 1 forwards;
+		-moz-animation: flyDown .3s 1 forwards;
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		display: block;
+	}
+
+	@keyframes flyDown {
+
+		from { top: -276px; opacity: $null-conv; }
+		50% { opacity: $null-conv; }
+		to { margin-top: 10px; opacity: 1; }
+	}
+
+	@-webkit-keyframes flyDown {
+
+		from { top: -276px; opacity: $null-conv; }
+		50% { opacity: $null-conv; }
+		to { margin-top: 10px; opacity: 1; }
+	}
+
+	@-moz-keyframes flyDown {
+
+		from { top: -276px; opacity: $null-conv; }
+		50% { opacity: $null-conv; }
+		to { margin-top: 10px; opacity: 1; }
+	}
+}
+
+
+// Media Queries
+
+@include smartphonesUmbraco {
+
+	.realnav {
+		.avatarview {
+			.greeTings {
+				display: none;
+			}
+		}
+		.navView {
+		    left: 18px;
+		} 
+		.avatarview {
+			right: 18px;
+		}
+		.navBar {
+			&:before {
+			    left: 23px;
+			}
+		}
+		.avatarbar {
+			&:before {
+				left: 80px;
+			}
+		}
+	}
+}
+
+@include ipadSmarter {
+
+	.realnav {
+		border-bottom: 1px solid #eee;
+		.navView {
+		    left: 22px;
+		}
+		.avatarview {
+			right: 22px;
+		}
+		.navBar {
+			&:before {
+			    left: 27px;
+			}
+		}
+
+		.avatarbar {
+			&:before {
+				left: 72px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,173 @@
+// Header Info Elements 
+@import '_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '_mixins';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.gridview {
+    .grContent {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: inline-block;
+        margin-left: 60px;
+        .gridHeader {
+            height: 40px;
+            padding: $null-conv;
+            margin-bottom: 20px;
+            ul {
+                .itemHeader {
+                    width: 10.915%;
+                    max-width: 200px;
+                    float: left;
+                    margin-right: 20px;
+                    border: 1px solid #ddd;
+                }
+            }
+        }
+        .gridContainer {
+            position: relative;
+            height: 86vh;
+            padding: $null-conv;
+            margin-bottom: $null-conv;
+        }
+    }
+}
+
+.gridRight {
+    right: -97%;
+    display: none !important;
+}
+
+.gridLeft {
+    -webkit-animation: gridLeft 1s 1 forwards;
+    -moz-animation: gridLeft 1s 1 forwards;
+    -ms-animation: gridLeft 1s 1 forwards;
+    animation: gridLeft 1s 1 forwards;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: block;
+}
+
+
+@-webkit-keyframes gridLeft{
+    from { right: -97%; };
+    to { right: 0; }
+}
+
+@keyframes gridLeft {
+    from { right: -97%; };
+    to { right: 0; }
+}
+
+@-moz-keyframes gridLeft {
+    from { right: -97%; };
+    to { right: 0; }
+}
+
+
+
+
+
+
+
+
+.grid-input {
+    height: 40px;
+    @include border-radius($null-conv);
+    box-shadow: $none-conv;
+    border: $null-conv;
+    &:focus {
+        outline: $null-conv;
+        border-color: #ddd;
+        box-shadow: $none-conv;
+    }
+}
+
+.tabs_floor {
+    ul {
+        .tabItem {
+            float: left;
+            .tabUrl {
+                padding: 9px;
+                padding-left: 25px;
+                padding-right: 25px;
+                border: 1px solid #ddd;
+                border-right: 0;
+                border-bottom: $none-conv;
+                text-decoration: none;
+                font-size: 13px;
+                color: $black;
+                float: left;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                -webkit-border-top-left-radius: 5px;
+                -webkit-border-top-right-radius: 5px;
+                -moz-border-top-left-radius: 5px;
+                -moz-border-top-right-radius: 5px;
+                background: #f5f5f5;
+                position: relative;
+            }
+            .selected {
+                background: $white;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 5px;
+                    background: $white;
+                    left: 0;
+                    bottom: -4px;
+                    z-index: 1;
+                }
+            }
+            &:last-child {
+                .tabUrl{
+                    border-right: 1px solid #ddd;
+                }
+            }
+        }
+    }
+}
+
+.tabs_container {
+    padding: $null-conv;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    border: 1px solid #ddd;
+    background: $white;
+}
+
+.grid-button {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 14px;
+    background: #f3f3f4;
+    color: #515967;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: right;
+    margin-left: 7px;
+    &:hover {
+        color: #515967;
+        text-decoration: none;
+    }
+    &:focus {
+        color: #515967;
+        text-decoration: none;
+    }
+    &:last-child {
+        margin-left: 0;
+    }
+    span {
+        position: relative;
+        top: 3px;
+        left: -5px;
+        float: left;
+    }
+}

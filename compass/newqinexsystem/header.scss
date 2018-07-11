@@ -1,0 +1,223 @@
+
+// Header Info Elements 
+
+@import '_variables';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+
+@import '_mixins';
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.top-nav {
+    background: $white;
+    width: $max-width;
+    top: $null-conv;
+    left: $null-conv;
+    position: fixed;
+    z-index: 2000;
+    border-bottom: $small-fix-01 solid $gray-water;
+    height: 58px;
+    @include transition(all .5s ease-in-out);
+    h1, 
+    .nav-icons {
+        min-height: $conv-smll * 3 + 6;//36px
+        //border-right: $small-fix-01 solid $gray-darkwater;
+        display: inline-block;
+    }
+    .box_lg {
+        //width: 8%;
+        width: 151.188px;
+        position: relative;
+        left: -6px;
+        top: 11px;
+        float: left;
+        @include transition(all .5s ease-in-out);
+        img {
+            width: 100%;
+        }
+        @include smartphones {
+            width: 125px;
+            left: 67px;
+        }
+    }
+    h1 {
+        color: $primary-color;
+        letter-spacing: -2px;
+        font-size: $conv-smll * 3 + 3; //33px
+        font-weight: bold;
+        padding-left: $conv-smll + 5; //15px
+        margin-right: $small-B-02;
+        padding-right: $small-B-02 * 2;
+        margin-top: $conv-smll + 2;
+    }
+    .nav-icons {
+        position: relative;
+        top: $conv-smll - 3;
+        margin-right: $conv-smll * 2;
+        padding-right: $small-B-02;
+        display: none;
+        i {
+            width: $double-conv-smll + 8;
+            height: $double-conv-smll + 8;
+            position: relative;
+            top: $conv-smll - 6;
+            float: left;
+        }
+    }
+    .search-lead-box {
+        min-height: $double-conv-smll + 16;
+        width: $conv-fix-4;
+        display: inline-block;
+        position: relative;
+        top: $conv-smll - 3;
+        display: none;
+    }
+    .avatar_room {
+        position: relative; 
+        top: $conv-smll + 1;
+        padding-right: 54px; 
+        padding-left: $double-conv-smll; 
+        float: right;
+        @include transition(all .5s ease-in-out);
+        @include smartphones {
+            padding-right: 42px;
+            padding-left: 0;
+        }
+
+        @include avatar();
+
+        .name_avatar {
+            // color: #788195;
+            color: #777;
+            font-size: $small-fix-13;
+            position: relative;
+            top: $small-fix-13;
+            float: right;
+        }
+        .avatar-modal {
+            width: $conv-fix-1 + $double-conv-smll; 
+            background: $white; 
+            top: $small-fix-50; // 50px 
+            right: $small-fix-30 + $small-fix-07; // 37px
+            padding-top: $conv-smll;
+            border: solid $small-fix-01 rgba(0,0,0,.15);
+            border-bottom: $small-fix-01 + $small-fix-01 solid rgba(0,0,0,.15);
+            -webkit-box-shadow: $null-conv $small-fix-03 + 1 $small-fix-05 rgba(0,0,0,.15);
+            box-shadow: $null-conv $small-fix-03 + 1 $small-fix-05 rgba(0,0,0,.15);
+            position: absolute;
+            .avatar-arrow  {
+                position: absolute;
+                width: $conv-smll + 2;
+                height: $conv-smll + 2;
+                background: $white;
+                border: solid $small-fix-01 rgba(0,0,0,.15);
+                border-bottom: $small-fix-01 solid rgb(255,255,255);
+                border-right: $small-fix-01 solid rgb(255,255,255);
+                top: -7px;
+                right: $double-conv-smll + 9;
+                @include transform($rotate-45);
+            }
+            .avatar-helpers {
+                width: $max-width;
+                height: $max-width;
+                padding: $null-conv;
+                margin: $null-conv;
+                top: $null-conv;
+                left: $null-conv;
+                list-style: none;
+                li {
+                    a {
+                        display: block;
+                        padding: $conv-smll;
+                        padding-left: $double-conv-smll * 2 + 5; //45px
+                        font-size: $conv-smll + 3;
+                        color: #626262;
+                    }
+                    &:hover, 
+                    &:focus {
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                    .logout-state {
+                        text-decoration: none;
+                        background: #f5f5f5;
+                        background-position: 80% 55%;
+                        background-size: 18px;
+                        color: #626262;
+                        font-weight: bold;
+                        padding-left: 18%;
+                        margin-top: 10px;
+                        border-top: 1px solid #ddd;
+                    }
+                }
+                .logout-state {
+                    a {
+                        background: $backdash url(../../img/logout.svg) no-repeat;
+                        background-position: $half-max-width + 30 $half-max-width + 5;
+                        background-size: $conv-smll + 8;
+                        color: #626262;
+                        font-weight: bold;
+                        padding-left: $medium-A12 - 2;
+                        margin-top: $conv-smll;
+                        border-top: $small-fix-01 solid $gray-darkwater;
+                        &:hover, 
+                        &:focus {   
+                            background: $backdash url(../../img/logout-active.svg) no-repeat;
+                            background-position: $half-max-width + 30 $half-max-width + 5;
+                            background-size: $conv-smll + 8;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.settings-role {
+    background: url(../../img/avatar-settings.svg) no-repeat;
+    background-position: $small-width + 5 $half-max-width;
+    background-size: $conv-smll + 4;
+    &:hover, 
+    &:focus {
+        background: $backdash url(../../img/avatar-settings-active.svg) no-repeat;
+        background-position: $small-width + 5 $half-max-width;
+        background-size: $conv-smll + 4;
+        text-decoration: none;
+    }
+}
+
+.feedback-role {
+    background: url(../../img/left.svg) no-repeat;
+    background-position: $small-width + 5 $half-max-width;
+    background-size: $conv-smll + 2;
+    &:hover, 
+    &:focus {
+        background: $backdash url(../../img/left-active.svg) no-repeat;
+        background-position: $small-width + 5 $half-max-width;
+        background-size: $conv-smll + 2;
+        text-decoration: none;
+    }
+}
+
+.help-role {
+    background: url(../../img/wifi.svg) no-repeat;
+    background-position: $small-width + 5 $half-max-width;
+    background-size: $conv-smll + 4;
+    &:hover, 
+    &:focus {
+        background: $backdash url(../../img/wifi-active.svg) no-repeat;
+        background-position: $small-width + 5 $half-max-width;
+        background-size: $conv-smll + 4;
+        text-decoration: none;
+    }
+}

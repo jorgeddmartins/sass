@@ -1,0 +1,284 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+/*************************************** TABLETS ************************************/
+
+@include tabletsUmbracoIpad {
+
+    .debtManagement { 
+
+        .ivaExample {
+            background-size: 100% 100%;
+        }
+    }
+
+}
+
+
+@include slideTablets {
+
+    .debtManagement {
+        h2 {
+            font-size: 39px;
+        }
+        .container {
+            width: 100%;
+        }
+        .heroSection {
+            .HeroInfoBoxContent {
+                .HeroInfoBox {
+                    padding-top: 10px;
+                    p {
+                        font-size: 15px;
+                        line-height: 21px;
+                        width: 90%;
+                    }
+                    .heroOPt {
+                        margin-top: 15px;
+                        margin-bottom: 13px;
+                        li {
+                            .thisOpt {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                hgroup {
+                    margin-bottom: 6px;
+                }
+            }
+            .HeroImgBox {
+                width: 57%;
+                max-width: 583px;
+            }
+        }
+
+        .downHero, 
+        .HowWorks, 
+        .ivaQualification, 
+        .ivaExample, .footerSection {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .ivaExample {
+            // background: #f1f1f1;
+            .chartArrow {
+                left: 11px;
+            }
+        } 
+    }
+
+}
+
+/*************************************** SMARTPHONES ************************************/
+
+@include smartphones {
+
+    .debtManagement {
+
+        h2 {
+            font-size: 37px;
+        }
+        header {
+            padding: 9px;
+            .logoBox {
+                max-width: 68px;
+            }
+            .navMob {
+                display: block;
+            }
+            nav {
+                display: none;
+                position: relative;
+                float: left;
+                margin-bottom: 13px;
+            }
+            .NavMenu {
+                width: 100%;
+                text-align: right;
+                margin: 3px;
+                font-size: 17px;
+            }
+        }
+
+        .downHero, 
+        .HowWorks, 
+        .ivaQualification, 
+        .ivaExample, .footerSection {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .downHero {
+            .downHeroBlk {
+                width: 100%;
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .HowWorks {
+            .WorksOptLeft, 
+            .WorksOptRight {
+                width: 100%;
+                .WorksBullet {
+                    width: 270px;
+                    height: 270px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                ul {
+                    li {
+                        .thisOpt {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            } 
+        }
+
+        .heroSection {
+            .HeroImgBox {
+                display: none;
+            }
+            .HeroInfoBoxContent {
+                position: relative;
+                hgroup {
+                    margin-bottom: 12px;
+                }
+                .HeroInfoBox {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-top: 4%;
+                    padding-bottom: 7%;
+                    p {
+                        font-size: 15px;
+                        line-height: 21px; 
+                    }
+                    .heroOPt {
+                        margin-top: 12px;
+                        margin-bottom: 24px;
+                        li {
+                            margin-bottom: 6px;
+                            .thisOpt {
+                                font-size: 12px;
+                            }
+                            &:after {
+                                top: 1.704px;
+                            }
+                        }
+                    }
+
+                    .checkBtn {
+                        margin: auto;
+                        display: table;
+                    }
+                }
+            } 
+        }
+
+        .ivaQualification {
+            .ivaOPt {
+                width: 50%;
+                .ivaBulletTxt {
+                    padding-top: 12px;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .SubTitle {
+                font-size: 22px;
+                margin-top: 8px;
+            }
+
+            .UnderSubTitle {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 15px;
+                margin-top: 11px;
+                line-height: 20px;
+            }
+
+            hr {
+                margin-top: 20px;
+            }
+
+            ul {
+                width: 100%;
+                li {
+                    .thisOpt {
+                        font-size: 14px;
+                        top: 2px;
+                    }
+                }
+            }
+
+            .checkBtnBox {
+                margin-top: 22px;
+            }
+        }
+
+        .ivaExample {
+            background: #f1f1f1;
+            .WhiteBlk {
+                max-height: 100%;
+                padding: 20px;
+            }
+            .width30, .width70 {
+                width: 100%;
+            }
+            .width30 {
+                margin-bottom: 15px;
+                &:before, 
+                &:after {
+                    display: none;
+                }
+            }
+            h2 {
+                margin-bottom: 27px;
+            }
+
+            .monthChart {
+                width: 100%;
+                margin-bottom: 17px;
+                .monthChartTitle {
+                    margin-bottom: 7px;
+                }
+                .WhiteBlkTitle {
+                    margin-bottom: 21px; 
+                }
+                .card {
+                    margin: auto;
+                    display: table;
+                    float: none;
+                }
+            }
+
+            .chartArrow {
+                display: none;
+            }
+
+            .checkBtnBox {
+                margin-top: 22px;
+            }
+
+            .DebtsPlat {
+                margin-bottom: 8px;
+            }
+        }
+
+        .footerSection {
+            .copyRight, .footerLink {
+                font-size: 12px;
+            }
+        }
+    }
+}
