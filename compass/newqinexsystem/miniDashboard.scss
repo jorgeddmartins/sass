@@ -1,0 +1,798 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('MiniDashboard') {
+	.sourcerow {
+	    float: left;
+	    width: $max-conv-width;
+	    margin-left: $null-conv;
+	    margin-right: $null-conv;
+	    position: relative;
+	    top: $null-conv;
+	    padding-right: $null-conv;
+	    box-sizing: border-box;
+	    h1 {
+		    font-size: $small-fix-20 + 2;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    margin-top: $null-conv;
+		    margin-bottom: $null-conv;
+		    display: inline-block;
+		    padding-right: $small-fix-15;
+		    padding-left: $small-fix-15;
+		    border-right: 1px solid #ccc;
+		}
+		.sourceDatafloor {
+		    width: $max-conv-width;
+		    display: inline-block;
+		}
+	}
+
+	// Data Square
+	/* Data Square */
+	.sourcePanel {
+	    width: 8%;
+	    height: 81.73px;
+	    min-width: 51.23px;
+	    min-height: 51.23px;
+	    float: left;
+	    padding-top: 4.5%;
+	    position: relative;
+	    margin: $small-fix-03;
+	    overflow: hidden;
+
+	    .bodyPanel {
+	    	width: $max-conv-width;
+	    	position: absolute;
+	    	left: $null-conv;
+	    }
+
+	    .in-sourcePanel {
+	    	position: relative;
+	    	top: -83px;
+	    	height: 82.33px;
+		    left: $null-conv;
+		    width: $max-conv-width;
+		    ul {
+			    padding-top: 1.5px;
+			    margin: $null-conv;
+			    padding: $null-conv;
+			    list-style: none;
+			    li {
+				    color: $white;
+				    font-weight: bold;
+				    text-align: center;
+				    text-transform: uppercase;
+				    font-family: Arial;
+				    font-size: 0.59vw;
+				    padding: 2%;
+				    letter-spacing: $null-conv;
+				}
+				.dispVal {
+				    font-family: Arial;
+				    font-size: 1.5vw;
+				    font-weight: bold;
+				    letter-spacing: $null-conv;
+				    padding-top: 7%;
+				}
+			}
+		}
+
+		.sourceMainSeven {
+		    width: 14.2%;
+		    height: $max-conv-height;
+		    float: left;
+		    padding: $null-conv;
+		    position: relative;
+		    .sourceBarseven,
+			.sevenBarin {
+			    position: absolute;
+			    width: 78%;
+			    left: $null-conv;
+			    right: $null-conv;
+			    bottom: $null-conv;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.sourceBarseven {
+				background: #0ebaaa;
+			}
+			.sevenBarin {
+				background: #0ca597;
+			}
+
+			.firstAffiliBar,
+			.firstDrigitBar,
+			.secondAffiliBar,
+			.secondDrigitBar,
+			.thirdAffiliBar,
+			.thirdDrigitBar,
+			.fourthAffiliBar,
+			.fourthDrigitBar,
+			.fifthAffiliBar,
+			.fifthDrigitBar,
+			.sixthAffiliBar,
+			.sixthDrigitBar,
+			.seventhAffiliBar,
+			.seventhDrigitBar {
+			    cursor: pointer;
+			}
+
+			.firstAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(firstAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.firstaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: $small-fix-10 / 2;
+					    font: $small-fix-10 Arial;
+					    line-height: $small-fix-10 + 2;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.secondAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(secondAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.secondaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.thirdAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(thirdAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.thirdaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.fourthAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(fourthAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.fourthaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.fifthAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(fifthAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.fifthaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.sixthAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(sixthAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.sixthaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.seventhAffiliBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(seventhAffiliBar 1s 1 forwards);
+				@include animationdelay(0.3s);
+			    &:hover {
+			    	.seventhaffiliTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 67px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -28px;
+					}
+			    }
+			}
+
+			.firstDrigitBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(firstDrigitBar 1s 1 forwards);
+				@include animationdelay(0.9s);
+			    &:hover {
+			    	.firstdigitTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 65px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -30px;
+					}
+			    }
+			}
+
+			.secondDrigitBar {
+				@include transition(all 0.5s ease-in-out);
+				@include animation(secondDrigitBar 1s 1 forwards);
+				@include animationdelay(0.9s);
+			    &:hover {
+			    	.seconddigitTip {
+					    opacity: 1;
+					    z-index: 2;
+					    width: 65px;
+					    padding: 5px;
+					    font: 10px Arial;
+					    line-height: 12px;
+					    top: -30px;
+					}
+			    }
+			}
+		}
+		.thirdDrigitBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(thirdDrigitBar 1s 1 forwards);
+			@include animationdelay(0.9s);
+		    &:hover {
+		    	.thirddigitTip {
+				    opacity: 1;
+				    z-index: 2;
+				    width: 65px;
+				    padding: 5px;
+				    font: 10px Arial;
+				    line-height: 12px;
+				    top: -30px;
+				}
+		    }
+		}
+		.fourthDrigitBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(fourthDrigitBar 1s 1 forwards);
+			@include animationdelay(0.9s);
+		    &:hover {
+		    	.fourthdigitTip {
+				    opacity: 1;
+				    z-index: 2;
+				    width: 65px;
+				    padding: 5px;
+				    font: 10px Arial;
+				    line-height: 12px;
+				    top: -30px;
+				}
+		    }
+		}
+
+		.fifthDrigitBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(fifthDrigitBar 1s 1 forwards);
+			@include animationdelay(0.9s);
+		    &:hover {
+		    	.fifthdigitTip {
+				    opacity: 1;
+				    z-index: 2;
+				    width: 65px;
+				    padding: 5px;
+				    font: 10px Arial;
+				    line-height: 12px;
+				    top: -30px;
+				}
+		    }
+		}
+		.sixthDrigitBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(sixthDrigitBar 1s 1 forwards);
+			@include animationdelay(0.9s);
+		    &:hover {
+		    	.sixthdigitTip {
+				    opacity: 1;
+				    z-index: 2;
+				    width: 65px;
+				    padding: 5px;
+				    font: 10px Arial;
+				    line-height: 12px;
+				    top: -30px;
+				}
+		    }
+		}
+
+		.seventhDrigitBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(seventhDrigitBar 1s 1 forwards);
+			@include animationdelay(0.9s);
+		    &:hover {
+		    	.seventhdigitTip {
+				    opacity: 1;
+				    z-index: 2;
+				    width: 65px;
+				    padding: 5px;
+				    font: 10px Arial;
+				    line-height: 12px;
+				    top: -30px;
+				}
+		    }
+		}
+	}
+
+	.sourceMainBar {
+	    width: 6.15%; // 6%
+	    height: $max-conv-height;
+	    float: left;
+	    padding: $null-conv;
+	    position: relative;
+	    margin-left: 0.5%;
+	    margin-right: 0.5%;
+
+	    .sourceBar {
+		    width: $max-conv-width;
+		    position: absolute;
+		    left: $null-conv;
+		    bottom: $null-conv;
+		}
+		.firstBar,
+		.secondBar,
+		.thirdBar,
+		.fourthBar,
+		.fifthBar,
+		.sixthBar,
+		.seventhBar,
+		.eighthBar,
+		.ninethBar,
+		.tenthBar,
+		.eleventhBar,
+		.twelvethBar,
+		.thirteenthBar,
+		.fourteenthBar {
+		    cursor: pointer;
+		    background: rgba(0,0,0, 0.15);
+		}
+
+		// Color for Negative Val Bars
+		.negVal { background: #cc0000 }
+
+		.firstBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(firstBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.firstTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.secondBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(secondBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.secondTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.thirdBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(thirdBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.thirdTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.fourthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(fourthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.fourthTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.fifthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(fifthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.fifthTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.sixthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(sixthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.sixthTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.seventhBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(seventhBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.seventhTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.eighthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(eighthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.eighthTip {
+		    		@include mdashtip(-20px, 65px);
+				}
+		    }
+		}
+
+		.ninethBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(ninethBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.ninethTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.tenthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(tenthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.tenthTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.eleventhBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(eleventhBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.eleventhTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.twelvethBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(twelvethBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.twelvethTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.thirteenthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(thirteenthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.thirteenthTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.fourteenthBar {
+			@include transition(all 0.5s ease-in-out);
+			@include animation(fourteenthBar 1s 1 forwards);
+			@include animationdelay(0.3s);
+		    &:hover {
+		    	.fourteenthTip {
+		    		@include mdashtip(-22px, 65px);
+				}
+		    }
+		}
+
+		.ninethTip,
+		.tenthTip,
+		.eleventhTip,
+		.twelvethTip,
+		.thirteenthTip,
+		.fourteenthTip {
+		    left: auto;
+		    right: $max-conv-right;
+		    &:before {
+		    	position: absolute;
+			    content: '';
+			    width: $null-conv;
+			    height: $null-conv;
+			    border-left: 4px solid transparent;
+			    border-right: 4px solid transparent;
+			    top: 55%;
+			    right: -7%;
+			    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+			    cursor: pointer;
+			    @include transform(90deg);
+		    }
+		}
+	}
+
+	.fifthaffiliTip,
+	.fifthdigitTip,
+	.sixthaffiliTip,
+	.sixthdigitTip,
+	.seventhaffiliTip,
+	.seventhdigitTip {
+	    left: auto !important;
+	    right: $max-conv-right;
+	    &:before {
+	    	position: absolute;
+		    content: '';
+		    width: $null-conv;
+		    height: $null-conv;
+		    border-left: 4px solid transparent;
+		    border-right: 4px solid transparent;
+		    top: 65%;
+		    right: -7%;
+		    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+		    cursor: pointer;
+		    @include transform(90deg);
+	    }
+	}
+
+	.firstaffiliTip,
+	.firstdigitTip,
+	.secondaffiliTip,
+	.seconddigitTip,
+	.thirdaffiliTip,
+	.thirddigitTip,
+	.fourthaffiliTip,
+	.fourthdigitTip {
+		&:before {
+			position: absolute;
+		    content: '';
+		    width: $null-conv;
+		    height: $null-conv;
+		    border-left: 4px solid transparent;
+		    border-right: 4px solid transparent;
+		    top: 65%;
+		    left: -7%;
+		    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+		    cursor: pointer;
+		    @include transform(-90deg);
+		}
+	}
+
+	.firstTip,
+	.secondTip,
+	.thirdTip,
+	.fourthTip,
+	.fifthTip,
+	.sixthTip,
+	.seventhTip,
+	.eighthTip {
+		&:before {
+			position: absolute;
+		    content: '';
+		    width: $null-conv;
+		    height: $null-conv;
+		    border-left: 4px solid transparent;
+		    border-right: 4px solid transparent;
+		    top: 55%;
+		    left: -7%;
+		    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+		    cursor: pointer;
+		    @include transform(-90deg);
+		}
+	}
+
+	.sourceBartitle {
+	    display: block;
+	    padding: 10px;
+	    padding-bottom: $null-conv;
+	    padding-top: 5px;
+	    color: $white;
+	    font-size: 11px;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	    letter-spacing: 0.5px;
+	    text-align: center;
+	}
+
+	.sourcetip {
+	    background: rgba(0, 0, 0, 0.5);
+	    position: absolute;
+	    z-index: 10;
+	    left: $max-conv-left;
+	    top: 5px;
+	    width: $null-conv;
+	    padding: $null-conv;
+	    color: $white;
+	    font: $null-conv Arial;
+	    @include border-radius(3px);
+	    opacity: $null-conv;
+	    letter-spacing: 0.5px;
+	    @include transition(all 0.3s ease-in-out);
+	}
+
+	// Body Element
+	body {
+
+		// 1 Slide, Width 100%
+		.width100 { 
+		    width: 99.65%;
+		    @include mdashtipWidIn();
+		}
+
+		// 2 Slides, Width 50%
+		.width50 {
+			width: 49.68%;
+			@include mdashtipWidIn();
+		}
+
+		// 3 Slides, Width 33%
+		.width33 {
+			width: 33%;
+			@include mdashtipWidIn();
+		}
+
+		// 4 Slides, Width 25%
+		.width25 {
+			width: 24.65%;
+			@include mdashtipWidIn();
+		}
+
+		// 5 slides, Width 20%
+		.width20 {
+			width: 19.65%;
+			@include mdashtipWidIn();
+		}
+
+		// 6 Slides, Width 16%
+		.width16 {
+			width: 16.3%;
+			@include mdashtipWidIn();
+		}
+
+		// 7 Slides, Width 13%
+		.width13 {
+			width: 13.95%;
+			@include mdashtipWidIn();
+		}
+
+		// 8 Slides, Width 12%
+		.width12 {
+			width: 12.18%;
+			@include mdashtipWidIn();
+		}
+
+		// 9 Slides, Width 10%
+		.width10 {
+			width: 10.79%;
+			@include mdashtipWidIn();
+		}
+
+		// 10 slides, Width 9%
+		.width9 {
+			width: 9.76%;
+			@include mdashtipWidIn();
+		}
+
+		// 11 Slides, Width 7%
+		.width8-76 {
+			width: 8.76%;
+			@include mdashtipWidIn();
+		}
+
+	}
+
+	// Color For Blue Bars 
+	.sourceBlueBar {
+	    background: #48b0f7 !important;
+	}
+
+	// Color For Green Bars
+	.sourceGreenBar {
+	    background: #10cfbd !important;
+	}
+
+
+	// Color For Blue Panel Bars
+	.sourceBlue {
+		background: #48b0f7;
+	}
+
+	// Color For Green Panel Bars
+	.sourceGreen {
+		background: #10cfbd;	
+	}
+
+
+	// Bar Charts Panels
+	.sourceFlBar, .sourceFlBarSeven {
+	    position: relative;
+	    width: 95%;
+	    top: 7px;
+	    //background: rgba(0,0,0, .1);    
+	    height: 60%;
+	    margin: auto;
+	}
+
+
+	@media (max-width: 1355.9322px) {
+	    .sourcePanel .in-sourcePanel ul li {
+	        font-size: 8px;
+	    }
+	}
+
+	@media (min-width: 3728.81356px) {
+	    .sourcePanel .in-sourcePanel ul li {
+	        font-size: 22px;
+	    }
+	}
+
+	@media (max-width: 600px) {
+	    .sourcePanel .in-sourcePanel ul .dispVal {
+	        font-size: 9px;
+	    }
+	}
+
+	@media (min-width: 1666.66667px) {
+	    .sourcePanel .in-sourcePanel ul .dispVal {
+	        font-size: 25px;
+	    }
+	}
+}

@@ -1,0 +1,516 @@
+// Header Info Elements 
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.tabs_container {
+    padding: $null-conv;
+    border: $small-fix-01 solid #ddd;
+    background: $white;
+}
+
+.grid-button {
+    border: $small-fix-01 solid #ccc;
+    padding: $small-fix-10 $small-fix-20;
+    font-size: $small-fix-13 + 1;
+    background: #f3f3f4;
+    color: #515967;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: right;
+    margin-left: $small-fix-07;
+    cursor: pointer;
+    &:hover {
+        color: #515967;
+        text-decoration: none;
+    }
+    &:focus {
+        color: #515967;
+        text-decoration: none;
+    }
+    &:last-child {
+        margin-left: $null-conv;
+    }
+    span {
+        position: relative;
+        top: $small-fix-03;
+        left: -5px;
+        float: left;
+    }
+}
+
+.dispN {
+    display: none;
+}
+
+.addMenu, 
+.addMenuG {
+    background: #0A9A7A;
+    color: $white;
+    border: 1px solid #0A9A7A;
+    &:hover {
+        color: $white;
+    }
+}
+
+.mainMenu {
+    position: relative;
+    float: left;
+    width: $max-conv-width;
+    margin-top: $small-fix-20;
+    padding: $small-fix-17;
+    background: #fafafa;
+    .dragdroprow {
+        width: 80%;
+        margin-left: $null-conv;
+        margin-right: $null-conv;
+        position: relative;
+        top: $null-conv;
+        box-sizing: border-box;
+        margin: auto;
+        padding: $null-conv;
+        display: inherit;
+        .nav-setitngs-btns {
+            width: 272px; // 97.3%
+            margin: $small-fix-07;
+            background: $white;
+            border: $null-conv;
+            border-bottom: $small-fix-01 solid #ddd;
+            @include border-radius($small-fix-03);
+            float: left;
+            position: relative;
+        }
+        .column-dragdrop {
+            position: relative;
+            border: $null-conv;
+            padding: $small-fix-15;
+            @include border-radius($small-fix-03);
+            float: left;
+            margin: $small-fix-07;
+            min-height: $small-fix-50;
+            #drag-menu-left, 
+            #drag-menu-right {
+                height: 608px; //600px
+            }
+
+            .switch_prod {
+                top: $small-fix-07 + 1;
+                right: $small-fix-10;
+                position: absolute;
+                width: $small-fix-25;
+                height: 24px;
+                border: $small-fix-01 solid #333;
+                @include border-radius($max-conv-width / 2); // 50%
+                display: none;
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: $small-fix-17 + 1;
+                    height: $small-fix-17 + 1;
+                    top: $small-fix-02;
+                    left: $small-fix-03;
+                    margin-bottom: $null-conv;
+                    input {
+                        display: none;
+                    }
+                }
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: $null-conv;
+                    left: -1px;
+                    right: $null-conv;
+                    bottom: $null-conv;
+                    background: #333;
+                    @include transition($Sec-04);
+                    @include border-radius($max-conv-width / 2);
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: $null-conv;
+                        width: $null-conv;
+                        left: $null-conv;
+                        bottom: $null-conv;
+                        background: transparent;
+                        @include transition($nullSecs);
+                        z-index: -1;
+                    }
+                }
+
+                input:checked + .slider {
+                    background: #0A9A7A;
+                }
+
+                input:focus + .slider {
+                    box-shadow: $null-conv $null-conv $small-fix-01 #0A9A7A;
+                }
+
+                input:checked + .slider:before {
+                    -webkit-transform: translateX($null-conv);
+                    -ms-transform: translateX($null-conv);
+                    -moz-transform: translateX($null-conv);
+                    transform: translateX($null-conv);
+                }
+            }
+
+            .dd-list {
+                .dd-list {
+                    .switch_prod {
+                        top: $small-fix-10;
+                    }
+                }
+            }
+
+            .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+                background-color: $white;
+                background-color: rgba(0, 0, 0, 0.2);
+                filter: "alpha(opacity=20)";
+                -ms-filter: "alpha(opacity=20)";
+            }
+
+        }
+        .column-45, 
+        .column-51 { background: #fafafa; }
+        .column-45 { width: 42%; } // 45%
+        .column-51 { width: 32%; } // 51.26%
+
+        h2 {
+            margin-top: $null-conv;
+            padding-left: $small-fix-10;
+        }
+        .update-nav-settings, 
+        .update-navSV {
+            width:  $small-fix-60;
+            height:  $small-fix-60;
+            position: relative;
+            float: left;
+            @include border-radius($max-conv-width / 2);
+            @include border($null-conv);
+            margin: $small-fix-10;
+            &:focus {
+                outline: none;
+            }
+        }
+        .updatenav, 
+        .setpermitions, 
+        .setsave, 
+        .setsavepermit {
+            &:before {
+                font-family: 'Linearicons';
+                position: absolute;
+                font-size: 29px;
+                top: $small-fix-07 + 1;
+                left: $small-fix-15 + 1;
+            }
+        }
+        .updatenav {
+            background: #f9f9f9;
+            color: $black;
+            &:before {
+                content: '\e7b0';
+            }
+        }
+        .setpermitions {
+            background: #FF7300;
+            color: $white;
+            &:before {
+                content: '\e66e';
+            }
+        }
+        .setsave, 
+        .setsavepermit {
+            background: #5cb85c;
+            color: $white;
+            &:before {
+                content: '\e6ae';
+            }
+        }
+        .notallowed-nav {
+            pointer-events: none;
+            color: #ccc;
+            background: #f9f9f9;
+            opacity: 0.7;
+        }
+    }
+}
+
+.adMinSelect {
+    position: absolute;
+    top: $max-conv-top + 4; // 104%
+    left: $null-conv;
+    width: $max-conv-width;
+    height: 45px;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    display: none;
+    .adMinInp {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        border: $null-conv;
+        padding: $small-fix-15;
+        font-size: $small-fix-13;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        border-left: $small-fix-05 solid transparent;
+        border-right: $small-fix-05 solid transparent;
+        top: $small-fix-20;
+        right: $small-fix-13 + 1;
+        border-bottom: $small-fix-05 solid $black;
+        @include transform($rotate-180);
+        @include transition($Sec-03);
+        cursor: pointer;
+    }
+}
+
+.adMinRotate0 {
+    &:after {
+        @include transform($null-conv);
+    }
+}
+
+.adMinSelect_Drop {
+    width: $max-conv-width;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    position: absolute;
+    z-index: 1;
+    left: $null-conv;
+    top: 161%;
+    list-style: none;
+    padding: $null-conv;
+    display: none;
+    li {
+        .thisDrop {
+            width: $max-conv-width;
+            float: left;
+            padding: $small-fix-07;
+            padding-left: $small-fix-20;
+            font-size: $small-fix-13;
+            color: #999;
+            border-bottom: $small-fix-01 solid #eee;
+            cursor: pointer;
+            @include transition($Sec-03);
+            &:hover {
+                background: #f9f9f9;
+            }
+        }
+
+        .selectDrop {
+            background: #f9f9f9;
+        }
+    }
+}
+
+
+/* Start Add New Item Modal */
+// Start Add New Item Modal
+.ItemModal {
+    position: fixed;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    top : $null-conv;
+    left: $null-conv;
+    z-index: 999999999999;
+
+    display: none;
+
+    .ItemModal_back {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        background: $rgba-black-04;
+        top : $null-conv;
+        left: $null-conv;
+    }
+
+    .ItemModal_Square {
+        width: 750px;
+        position: relative;
+        margin: 180px auto $null-conv;
+        .ItemModal_Header, 
+        .ItemModal_Footer {
+            position: relative;
+            width: $max-conv-width;
+            background: #eee;
+            padding: $small-fix-10 + 2;
+            padding-bottom: $small-fix-10;
+            display: table;
+        }
+        .ItemModal_Header {
+            border-bottom: $small-fix-01 solid #ddd;
+            span {
+                font-size: $small-fix-13;
+                text-transform: uppercase;
+                color: #777;
+                float: left;
+            }
+        }
+        .ItemModal_Content {
+            position: relative;
+            background: $white;
+            width: $max-conv-width;
+            min-height: 250px;
+            padding: $small-fix-10 + 2;
+            display: table;
+            .todo-item-delete {
+                height: $small-fix-30;
+                width: $small-fix-30;
+                float: left;
+                position: relative;
+                margin-left: $small-fix-05;
+                top: $small-fix-03 + 1;
+                cursor: pointer;
+                i {
+                    font-size: $small-fix-20;
+                    position: absolute;
+                    top: 4.5px;
+                    left: $small-fix-05 + 1;
+                }
+            }
+            .AddSomeItem {
+                position: absolute;
+                font-size: $small-fix-25;
+                color: #eee;
+                top: 131px;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+                left: $null-conv;
+                width: $max-conv-width;
+                text-align: center;
+            }
+        }
+        .ItemModal_Footer {
+            border-top: $small-fix-01 solid #ddd;
+            .add-submit {
+                position: relative;
+                margin: auto;
+                display: block;
+                background: #0A9A7A;
+                border: $null-conv;
+                color: $white;
+                padding: $small-fix-07 + 1;
+                padding-left: $small-fix-40;
+                padding-right: $small-fix-40;
+                padding-top: $small-fix-10;
+                font-size: $small-fix-13;
+                text-transform: uppercase;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .todo-list {
+        li, 
+        .tr {
+            width: $max-conv-width;
+            float: left;
+            position: relative;
+        }
+        .tgbN {
+            display: none;
+        }
+        .new-top-item-second {
+            display: block;
+        }
+        .switch_prod, .li {
+            display: none;
+        }
+    }
+    .TDItem_Fl {
+        width: 31.45%;
+        background: #f9f9f9;
+        margin: $small-fix-01;
+        height: 36px;
+        input {
+            position: absolute;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            top: $null-conv;
+            left: $null-conv;
+            padding: $small-fix-07;
+            padding-left: $small-fix-10 + 2;
+            background: transparent;
+            border: $null-conv;
+            font-size: $small-fix-13;
+            color: #777;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .new-Item {
+        width: 32.78%;
+        background: $white;
+        border: $null-conv;
+        margin: $small-fix-02;
+        &:focus {
+            outline: none;
+        }
+    }
+    .TDItem_Fl, 
+    .new-Item {
+        position: relative;
+        float: left;
+        padding: $small-fix-07;
+        padding-left: $small-fix-10 + 2;
+        border-bottom: $small-fix-01 solid #ddd;
+    }
+    .addItem_Fl {
+        width: $max-conv-width;
+        position: relative;
+        float: left;
+        text-align: center;
+        padding: $small-fix-05 + 1;
+        margin-bottom: $small-fix-15;
+        display: none;
+        .add-todo-item {
+            border: $null-conv;
+            padding: $small-fix-07;
+            padding-left: $small-fix-40;
+            padding-right: $small-fix-40;
+            background: #f2f2f2;
+            font-size: $small-fix-13;
+            color: #777;
+            padding-top: $small-fix-07 + 2;
+            @include border-radius($small-fix-03);
+            border-bottom: $small-fix-01 solid #ddd;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.strike {
+    .TDItem_Fl {
+        text-decoration: line-through;
+        opacity: .3;
+    }
+}
+
+.addItemTodo {
+    width: $max-conv-width;
+    float: left;
+}
+
+.menusettings {
+    display: none;
+}
+
+// .todo-item-delete {
+//     display: none;
+// }
+
+// End Add New Item Modal
+/* End Add New Item Modal */

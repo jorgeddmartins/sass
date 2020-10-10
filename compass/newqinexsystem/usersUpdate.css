@@ -1,0 +1,333 @@
+.users_Settings {
+  width: 100%;
+  padding: 0;
+  display: inline-block; }
+  .users_Settings .panel-heading {
+    padding-bottom: 10px;
+    padding-top: 0; }
+    .users_Settings .panel-heading .mainNav-Title {
+      margin: 0;
+      text-transform: capitalize;
+      font-size: 22px;
+      float: left;
+      letter-spacing: 0;
+      width: 100%;
+      text-align: center; }
+  .users_Settings .btn-Grid {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: #fff;
+    border-top: 1px solid #eee; }
+    .users_Settings .btn-Grid .grid-button.create-User {
+      background: #0A9A7A;
+      color: #fff;
+      border: 1px solid #0A9A7A; }
+    .users_Settings .btn-Grid .grid-button span {
+      top: 0;
+      left: -9px;
+      font-size: 19px; }
+  .users_Settings .btnDisable {
+    opacity: .5;
+    pointer-events: none; }
+  .users_Settings .userGrid {
+    width: 100%;
+    position: relative;
+    float: left; }
+    .users_Settings .userGrid .tHead {
+      width: 100%;
+      height: 45px;
+      float: left;
+      position: relative;
+      border-bottom: 1px solid #ddd; }
+      .users_Settings .userGrid .tHead .th {
+        width: 11.11111%;
+        height: 100%;
+        position: relative;
+        float: left;
+        padding: 12px;
+        background: #f2f2f2;
+        color: #777;
+        border-right: 1px solid #ddd;
+        font-size: 13px;
+        padding-top: 15px; }
+        .users_Settings .userGrid .tHead .th:last-child {
+          border: 0; }
+        .users_Settings .userGrid .tHead .th .thDrop {
+          position: absolute;
+          right: 14px;
+          top: 20px;
+          width: 10px;
+          height: 10px;
+          cursor: pointer; }
+          .users_Settings .userGrid .tHead .th .thDrop:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            top: 1px;
+            right: 0;
+            border-bottom: 5px solid #000;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -o-transition: 0.3s; }
+    .users_Settings .userGrid .tBody {
+      position: relative;
+      float: left;
+      width: 100%; }
+      .users_Settings .userGrid .tBody .tr {
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 38px;
+        border-bottom: 1px solid #eee; }
+        .users_Settings .userGrid .tBody .tr .td {
+          width: 11.11111%;
+          height: 100%;
+          position: relative;
+          float: left;
+          padding: 12px;
+          color: #333;
+          border-right: 1px solid #eee;
+          font-size: 12px;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          .users_Settings .userGrid .tBody .tr .td:last-child {
+            border-right: 0; }
+      .users_Settings .userGrid .tBody .tdWhite {
+        background: #fff; }
+      .users_Settings .userGrid .tBody .tdGrey {
+        background: #fafafa; }
+  .users_Settings .usersNone {
+    display: none; }
+
+.createUserModal .bodyModal {
+  width: 1000px; }
+
+.EditUserModal .bodyModal {
+  width: 950px; }
+
+.createUserModal,
+.EditUserModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999999999;
+  display: none; }
+  .createUserModal .backUserModal,
+  .EditUserModal .backUserModal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); }
+  .createUserModal .bodyModal,
+  .EditUserModal .bodyModal {
+    position: relative;
+    margin: 170px auto 0; }
+    .createUserModal .bodyModal .userModal_Header,
+    .createUserModal .bodyModal .userModal_Footer,
+    .EditUserModal .bodyModal .userModal_Header,
+    .EditUserModal .bodyModal .userModal_Footer {
+      position: relative;
+      width: 100%;
+      background: #eee;
+      padding: 12px;
+      padding-bottom: 10px;
+      display: table; }
+      .createUserModal .bodyModal .userModal_Header span,
+      .createUserModal .bodyModal .userModal_Footer span,
+      .EditUserModal .bodyModal .userModal_Header span,
+      .EditUserModal .bodyModal .userModal_Footer span {
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #777;
+        float: left;
+        margin-right: 3px; }
+        .createUserModal .bodyModal .userModal_Header span:last-child,
+        .createUserModal .bodyModal .userModal_Footer span:last-child,
+        .EditUserModal .bodyModal .userModal_Header span:last-child,
+        .EditUserModal .bodyModal .userModal_Footer span:last-child {
+          margin-right: 0; }
+      .createUserModal .bodyModal .userModal_Header .userFirstN,
+      .createUserModal .bodyModal .userModal_Header .userLastN,
+      .createUserModal .bodyModal .userModal_Footer .userFirstN,
+      .createUserModal .bodyModal .userModal_Footer .userLastN,
+      .EditUserModal .bodyModal .userModal_Header .userFirstN,
+      .EditUserModal .bodyModal .userModal_Header .userLastN,
+      .EditUserModal .bodyModal .userModal_Footer .userFirstN,
+      .EditUserModal .bodyModal .userModal_Footer .userLastN {
+        font-weight: bold; }
+    .createUserModal .bodyModal .userModal_Content,
+    .EditUserModal .bodyModal .userModal_Content {
+      position: relative;
+      background: #fff;
+      width: 100%;
+      padding: 12px;
+      display: table; }
+      .createUserModal .bodyModal .userModal_Content .new-Item-Floor,
+      .EditUserModal .bodyModal .userModal_Content .new-Item-Floor {
+        position: relative;
+        width: 32.78%;
+        float: left;
+        margin: 2px;
+        background: #fff; }
+        .createUserModal .bodyModal .userModal_Content .new-Item-Floor:before,
+        .EditUserModal .bodyModal .userModal_Content .new-Item-Floor:before {
+          font-family: 'Linearicons';
+          font-size: 17px;
+          color: #777;
+          position: absolute;
+          top: 10px;
+          right: 20px; }
+      .createUserModal .bodyModal .userModal_Content .userN-Floor:before,
+      .EditUserModal .bodyModal .userModal_Content .userN-Floor:before {
+        content: '\e71e'; }
+      .createUserModal .bodyModal .userModal_Content .firstN-Floor:before,
+      .createUserModal .bodyModal .userModal_Content .lastN-Floor:before,
+      .EditUserModal .bodyModal .userModal_Content .firstN-Floor:before,
+      .EditUserModal .bodyModal .userModal_Content .lastN-Floor:before {
+        content: '\e7dc'; }
+      .createUserModal .bodyModal .userModal_Content .email-Floor:before,
+      .EditUserModal .bodyModal .userModal_Content .email-Floor:before {
+        content: '\e695'; }
+      .createUserModal .bodyModal .userModal_Content .new-Item,
+      .EditUserModal .bodyModal .userModal_Content .new-Item {
+        width: 100%;
+        background: transparent;
+        position: relative;
+        float: left;
+        padding: 7px;
+        padding-left: 12px;
+        border: 1px solid #eee;
+        font-size: 12px;
+        height: 40px; }
+        .createUserModal .bodyModal .userModal_Content .new-Item:focus,
+        .EditUserModal .bodyModal .userModal_Content .new-Item:focus {
+          outline: none; }
+      .createUserModal .bodyModal .userModal_Content .addItem_Fl,
+      .EditUserModal .bodyModal .userModal_Content .addItem_Fl {
+        width: 100%;
+        position: relative;
+        float: left;
+        text-align: center;
+        padding: 6px;
+        margin-bottom: 15px;
+        display: none; }
+        .createUserModal .bodyModal .userModal_Content .addItem_Fl .add-todo-item,
+        .EditUserModal .bodyModal .userModal_Content .addItem_Fl .add-todo-item {
+          border: 0;
+          padding: 7px;
+          padding-left: 40px;
+          padding-right: 40px;
+          background: #f2f2f2;
+          font-size: 13px;
+          color: #777;
+          padding-top: 9px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          border-radius: 3px;
+          border-bottom: 1px solid #ddd; }
+          .createUserModal .bodyModal .userModal_Content .addItem_Fl .add-todo-item:focus,
+          .EditUserModal .bodyModal .userModal_Content .addItem_Fl .add-todo-item:focus {
+            outline: 0; }
+      .createUserModal .bodyModal .userModal_Content .AddSomeItem,
+      .EditUserModal .bodyModal .userModal_Content .AddSomeItem {
+        position: absolute;
+        font-size: 25px;
+        color: #eee;
+        top: 131px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        left: 0;
+        width: 100%;
+        text-align: center; }
+      .createUserModal .bodyModal .userModal_Content .form-add-todo,
+      .EditUserModal .bodyModal .userModal_Content .form-add-todo {
+        width: 100%;
+        position: relative;
+        float: left;
+        margin-bottom: 15px; }
+    .createUserModal .bodyModal .userModal_Header,
+    .EditUserModal .bodyModal .userModal_Header {
+      border-bottom: 1px solid #ddd; }
+    .createUserModal .bodyModal .userModal_Footer,
+    .EditUserModal .bodyModal .userModal_Footer {
+      border-top: 1px solid #ddd; }
+      .createUserModal .bodyModal .userModal_Footer .add-submit,
+      .EditUserModal .bodyModal .userModal_Footer .add-submit {
+        position: relative;
+        margin: auto;
+        display: block;
+        background: #0A9A7A;
+        border: 0;
+        color: #fff;
+        padding: 8px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        font-size: 13px;
+        text-transform: uppercase; }
+        .createUserModal .bodyModal .userModal_Footer .add-submit:focus,
+        .EditUserModal .bodyModal .userModal_Footer .add-submit:focus {
+          outline: none; }
+  .createUserModal .modaluserTop,
+  .EditUserModal .modaluserTop {
+    margin: -333px auto 0;
+    -webkit-animation: modaluserTop 0.7s 1 forwards;
+    -moz-animation: modaluserTop 0.7s 1 forwards;
+    -o-animation: modaluserTop 0.7s 1 forwards;
+    animation: modaluserTop 0.7s 1 forwards; }
+@keyframes modaluserTop {
+  0% {
+    margin: -333px auto 0; }
+  100% {
+    margin: 170px auto 0; } }
+@-webkit-keyframes modaluserTop {
+  0% {
+    margin: -333px auto 0; }
+  100% {
+    margin: 170px auto 0; } }
+@-moz-keyframes modaluserTop {
+  0% {
+    margin: -333px auto 0; }
+  100% {
+    margin: 170px auto 0; } }
+  .createUserModal .todo-list-user,
+  .EditUserModal .todo-list-user {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0; }
+    .createUserModal .todo-list-user .liUser,
+    .EditUserModal .todo-list-user .liUser {
+      width: 100%;
+      float: left; }
+      .createUserModal .todo-list-user .liUser .TDItem_Fl,
+      .EditUserModal .todo-list-user .liUser .TDItem_Fl {
+        width: 14%;
+        height: 34px;
+        font-size: 11px;
+        color: #777;
+        float: left;
+        padding: 7px;
+        padding-top: 9px;
+        background: #fafafa;
+        border: 1px solid #eee;
+        margin: 1px; }
+
+.subTr {
+  position: relative;
+  float: left;
+  width: 100%; }
+
+/*# sourceMappingURL=usersUpdate.css.map */

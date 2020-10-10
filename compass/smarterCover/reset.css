@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: rgba(240, 250, 253, 0.35); }
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+.zIndex {
+  z-index: 10; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+::-webkit-input-placeholder {
+  color: #ccc; }
+
+::-moz-placeholder {
+  color: #ccc; }
+
+:-ms-input-placeholder {
+  color: #ccc; }
+
+:-moz-placeholder {
+  color: #ccc; }
+
+.appview {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 55px; }
+
+/*# sourceMappingURL=reset.css.map */

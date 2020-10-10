@@ -1,0 +1,303 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+// Radio Switches
+/* Start Radio Buttons */
+.switch-radio {
+    position: relative;
+    height: $small-fix-30 + 1;
+    width: $max-conv-width; //100%
+    margin: $small-fix-17 auto;
+    background: #ddd;
+    border-radius: $small-fix-03 + 1;
+    margin-bottom: $null-conv;
+    @include border-radius($small-fix-02);
+}
+
+.switch-label {
+    position: relative;
+    z-index: 2;
+    float: left;
+    line-height: $small-fix-25 + 1;
+    font-size: $small-fix-10 + 2;
+    text-align: center;
+    cursor: pointer;
+    color: #aaa;
+    text-transform: uppercase;
+    top: $small-fix-03;
+    margin: $null-conv;
+    letter-spacing: .5px;
+    width: $max-conv-width / 2;
+    font-weight: 100;
+}
+.switch-label:active {
+    font-weight: bold;
+}
+
+.switch-label-on {
+    float: right;
+}
+
+.switch-input {
+    display: none;
+}
+.switch-input:checked + .switch-label {
+    font-weight: bold;
+    color: $white;
+    @include transition(0.15s ease-out);
+    -webkit-transition-property: color, text-shadow;
+    -moz-transition-property: color, text-shadow;
+    -ms-transition-property: color, text-shadow;
+    -o-transition-property: color, text-shadow;
+    transition-property: color, text-shadow;
+    &:before {
+        content: '\f00c';
+        font-family: FontAwesome;
+        color: $white;
+        font-size: $small-fix-10 + 2;
+        padding-right: $small-fix-03;
+    }
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+    left: $max-conv-left / 2;
+}
+
+.switch-selection, 
+.switch-selection-joint, 
+.switch-selection-smoker, 
+.switch-selection-YNBig, 
+.switch-selection-poldetail {
+    position: absolute;
+    z-index: 1;
+    top: $null-conv;
+    left: $small-fix-01;
+    display: block;
+    width: $max-conv-width / 2; // 81px
+    height: $small-fix-30 + 1;
+    @include border-radius($small-fix-03);
+    background: #3d566e;
+    @include transition(left 0.15s ease-out);
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection-joint {
+    left: $max-conv-width / 2;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection-smoker {
+    left: $max-conv-width / 2;
+}
+.switch-selection-smoker { width: $max-conv-width / 2; }
+
+.YNBig {
+    .switch-input:checked + .switch-label-on ~ .switch-selection-YNBig {
+        left: $max-conv-width / 2;
+    }
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection-poldetail {
+    left: $max-conv-width / 2;
+}
+
+.switch-selection, 
+.switch-selection-joint, 
+.switch-selection-smoker, 
+.switch-selection-YNBig, 
+.switch-selection-poldetail {
+    @include border-radius($small-fix-02);
+}
+
+/* End Radio Buttons */
+
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: $small-fix-35;
+    margin: $null-conv;
+    cursor: pointer;
+    font-size: $small-fix-20 + 2; // 22px
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+    top: $small-fix-05;
+}
+
+.container-check input {
+    position: absolute;
+    opacity: $null-conv;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: $null-conv;
+    left: $null-conv;
+    height: $small-fix-25;
+    width: $small-fix-25;
+    background-color: #eee;
+    @include border-radius($small-fix-03);
+}
+
+.container-check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container-check input:checked ~ .checkmark {
+    background: #1fadcf;
+    border: 1px solid #1fadcf;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-check .checkmark:after {
+    left: $small-fix-07 + 2;
+    top: $small-fix-05 + 1;
+    width: $small-fix-07;
+    height: $small-fix-10 + 1;
+    border: solid white;
+    border-width: $null-conv $small-fix-03 $small-fix-03 $null-conv;
+    @include transform(45deg);
+}
+
+
+/* Start CheckBoxes */
+
+.switch_box {
+    position: relative;
+    float: left;
+    height: $small-fix-30;
+    width: $max-conv-width;
+}
+
+.switch {
+    input[type="checkbox"] {
+        display: none;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: $max-conv-width;
+    height: $small-fix-30;
+    top: $null-conv;
+    margin-bottom: $null-conv;
+    input {
+        display: none;
+    }
+}
+
+.slider, 
+.sliderSmall, 
+.sliderMedium, 
+.sliderExtraSm, 
+.sliderIsPolicy {
+    position: absolute;
+    cursor: pointer;
+    top: $null-conv;
+    left: -1px;
+    right: $null-conv;
+    bottom: $null-conv;
+    background: #ddd;
+    @include transition(.4s);
+    @include border-radius($small-fix-03 + 1);
+    &:before {
+        position: absolute;
+        content: "";
+        height: 28px;
+        width: $small-fix-30 + 1;
+        left: $small-fix-01;
+        bottom: $small-fix-01;
+        background: $white;
+        @include transition(.4s);
+        z-index: 300;
+        @include border-radius($small-fix-03 + 1);
+    }
+
+    .switchBtnG, .switchBtnS{
+        text-transform: uppercase;
+        &:after {
+            position: absolute;
+            top: $small-fix-05 + 1;
+            font-size: $small-fix-13;
+            color: $black;
+            font-weight: 700;
+            letter-spacing: $small-fix-01 / 2;
+        }
+    }
+    .switchBtnG {
+        &:after {
+            content: "Male";
+            right: 38%;
+        }
+    }
+    .switchBtnS {
+        &:after {
+            content: "No";
+            right: 43%;
+        }
+    }
+}
+
+.sliderExtraSm {
+    &:before {
+        width: 28px;
+    }
+}
+
+input:checked + .slider, 
+input:checked + .sliderSmall, 
+input:checked + .sliderMedium, 
+input:checked + .sliderExtraSm, 
+input:checked + .sliderIsPolicy {
+    background: #ddd;
+    .switchBtnG {
+        &:after {
+            content: "Female";
+        }
+    }
+    .switchBtnS {
+        text-transform: uppercase;
+        &:after {
+            content: "Yes";
+        }
+    }
+}
+
+input:focus + .slider, 
+input:focus + .sliderSmall,
+input:focus + .sliderMedium, 
+input:focus + .sliderExtraSm, 
+input:focus + .sliderIsPolicy {
+    box-shadow: $null-conv $null-conv $small-fix-01 #ddd;
+}
+
+input:checked + .slider:before {
+    @include transformtranslatex(165px);
+}
+
+input:checked + .sliderSmall:before {
+    @include transformtranslatex(113px);
+}
+
+input:checked + .sliderMedium:before {
+    @include transformtranslatex(136px);
+}
+
+input:checked + .sliderExtraSm:before {
+    @include transformtranslatex(64px);
+}
+
+input:checked + .sliderIsPolicy:before {
+    @include transformtranslatex(266px);
+}
+
+/* End CheckBoxes */

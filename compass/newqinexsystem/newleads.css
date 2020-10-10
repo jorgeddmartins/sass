@@ -1,0 +1,403 @@
+.TopLeads, .TopGridLead {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  float: left; }
+  .TopLeads .panel-input, .TopGridLead .panel-input {
+    position: relative;
+    height: 100%;
+    margin: 5px;
+    margin-top: 0;
+    float: left; }
+    .TopLeads .panel-input input, .TopGridLead .panel-input input {
+      height: 100%;
+      background: #fff;
+      padding: 12px;
+      color: #025a87;
+      font-size: 12px;
+      text-transform: uppercase;
+      border: 1px solid #ddd; }
+      .TopLeads .panel-input input:focus, .TopGridLead .panel-input input:focus {
+        outline: 0; }
+    .TopLeads .panel-input .daysTime, .TopGridLead .panel-input .daysTime {
+      width: 150px;
+      cursor: pointer; }
+    .TopLeads .panel-input .Drop_Panel, .TopGridLead .panel-input .Drop_Panel {
+      position: absolute;
+      left: 0;
+      top: 102%;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ddd;
+      z-index: 10;
+      margin: 0;
+      display: none; }
+      .TopLeads .panel-input .Drop_Panel li, .TopGridLead .panel-input .Drop_Panel li {
+        float: left;
+        width: 100%; }
+        .TopLeads .panel-input .Drop_Panel li .dropItem, .TopGridLead .panel-input .Drop_Panel li .dropItem {
+          width: 100%;
+          float: left;
+          padding: 12px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          color: #999;
+          font-size: 13px;
+          border-bottom: 1px solid #eee;
+          cursor: pointer;
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s; }
+          .TopLeads .panel-input .Drop_Panel li .dropItem:hover, .TopGridLead .panel-input .Drop_Panel li .dropItem:hover {
+            background: #fafafa; }
+    .TopLeads .panel-input label, .TopGridLead .panel-input label {
+      padding: 0 15px;
+      position: relative;
+      height: 100%;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-right: 0;
+      line-height: 2.8em;
+      float: left;
+      margin: 0; }
+    .TopLeads .panel-input .k-widget, .TopGridLead .panel-input .k-widget {
+      width: 190px;
+      height: 40px;
+      position: relative;
+      float: left;
+      background: #fff;
+      border: 1px solid #eee;
+      color: #025a87; }
+      .TopLeads .panel-input .k-widget .k-input, .TopGridLead .panel-input .k-widget .k-input {
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding: 7px;
+        padding-right: 45px;
+        border: 0;
+        position: absolute;
+        z-index: 1;
+        background: transparent;
+        color: #0A9A7A;
+        font-size: 13px;
+        font-weight: bold;
+        text-transform: initial; }
+    .TopLeads .panel-input .k-widget-calendar:after, .TopGridLead .panel-input .k-widget-calendar:after {
+      content: '\f073';
+      font-family: 'FontAwesome';
+      width: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      height: 100%;
+      font-size: 20px;
+      line-height: 1.9em;
+      background: #f9f9f9;
+      border-left: 1px solid #eee;
+      color: #1A8755; }
+    .TopLeads .panel-input .boxSystem_Arrow, .TopGridLead .panel-input .boxSystem_Arrow {
+      width: 44px;
+      padding: 0 15px;
+      position: relative;
+      height: 100%;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      line-height: 2.8em;
+      float: left;
+      margin: 0;
+      cursor: pointer; }
+      .TopLeads .panel-input .boxSystem_Arrow i, .TopGridLead .panel-input .boxSystem_Arrow i {
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 6px;
+        color: #000;
+        font-weight: bold; }
+    .TopLeads .panel-input .k-button, .TopGridLead .panel-input .k-button {
+      height: 40px;
+      background: #0A9A7A;
+      border: 0;
+      color: #fff;
+      text-transform: uppercase;
+      padding-left: 55px;
+      padding-right: 55px;
+      border: 1px solid #0A9A7A;
+      transition: 0.7s;
+      -webkit-transition: 0.7s;
+      -moz-transition: 0.7s;
+      -o-transition: 0.7s;
+      font-size: 14px; }
+      .TopLeads .panel-input .k-button:focus, .TopGridLead .panel-input .k-button:focus {
+        outline: 0; }
+  .TopLeads .daysFl:after, .TopGridLead .daysFl:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 18px;
+    right: 14px;
+    border-bottom: 5px solid #000;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer; }
+  .TopLeads .rotate0:after, .TopGridLead .rotate0:after {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg); }
+
+#nav-right .moveRight {
+  right: 1170px !important; }
+
+.tableLead {
+  position: relative;
+  width: 100%;
+  height: 92.7%;
+  float: left;
+  margin-top: 20px; }
+  .tableLead .tabsTL {
+    width: 100%;
+    height: 40px;
+    float: left;
+    position: relative;
+    z-index: 1; }
+    .tableLead .tabsTL .tabL {
+      padding: 9px;
+      height: 100%;
+      position: relative;
+      float: left;
+      font-size: 12px;
+      border: 1px solid #ddd;
+      border-right: 0;
+      padding-left: 22px;
+      padding-right: 22px;
+      background: #f2f2f2;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      cursor: pointer;
+      text-transform: uppercase;
+      padding-top: 12px;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .tableLead .tabsTL .tabL:last-child {
+        border-right: 1px solid #ddd; }
+      .tableLead .tabsTL .tabL:hover {
+        background: #fff; }
+    .tableLead .tabsTL .selected {
+      background: #fff;
+      border-bottom: 1px solid #fff;
+      cursor: default; }
+  .tableLead .tableLead_Grid {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 96%;
+    background: #fff;
+    border: 1px solid #ddd;
+    top: -1px; }
+    .tableLead .tableLead_Grid .top_Bar {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      padding: 7px; }
+      .tableLead .tableLead_Grid .top_Bar .top_Bar_Msg {
+        font-size: 13px;
+        position: relative;
+        top: 10px; }
+      .tableLead .tableLead_Grid .top_Bar .top_Bar_Btn {
+        padding: 10px 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        float: right;
+        background: #f2f2f2;
+        border: 1px solid #ddd;
+        margin-left: 2px;
+        margin-right: 2px;
+        cursor: pointer;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        .tableLead .tableLead_Grid .top_Bar .top_Bar_Btn:hover {
+          background: #ddd; }
+  .tableLead .GridLeads {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    height: 93.5%; }
+    .tableLead .GridLeads .GridLeads_THeader {
+      width: 100%;
+      float: left; }
+      .tableLead .GridLeads .GridLeads_THeader .tr_heather {
+        position: relative;
+        width: 100%;
+        float: left;
+        border-bottom: 0; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather .Grid_th {
+          position: relative;
+          float: left;
+          height: 33px;
+          background: #f2f2f2;
+          border: 1px solid #ddd;
+          border-right: 0;
+          border-bottom: 0;
+          font-size: 12px;
+          text-transform: uppercase; }
+          .tableLead .GridLeads .GridLeads_THeader .tr_heather .Grid_th input {
+            padding: 9px;
+            padding-left: 15px;
+            background: transparent;
+            border: 0;
+            position: relative;
+            float: left;
+            height: 100%;
+            width: 100%; }
+            .tableLead .GridLeads .GridLeads_THeader .tr_heather .Grid_th input:focus {
+              outline: 0; }
+          .tableLead .GridLeads .GridLeads_THeader .tr_heather .Grid_th:last-child {
+            border-right: 1px solid #ddd; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather .th_Null {
+          padding-right: 1%;
+          padding-left: 1.02%; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather .th_full {
+          width: 6.993%; }
+          .tableLead .GridLeads .GridLeads_THeader .tr_heather .th_full i {
+            position: absolute;
+            right: 13px;
+            font-size: 12px;
+            top: 14px;
+            cursor: pointer; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather:last-child {
+          border-bottom: 1px solid #ddd; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather .border-left {
+          border-left: 0; }
+        .tableLead .GridLeads .GridLeads_THeader .tr_heather .border-right {
+          border-right: 0 !important; }
+      .tableLead .GridLeads .GridLeads_THeader .bottom_tr .Grid_th input {
+        height: 24px;
+        background: #fff;
+        top: 4px;
+        padding: 10px;
+        width: 92%;
+        left: 5px; }
+      .tableLead .GridLeads .GridLeads_THeader .bottom_tr .noInput input {
+        background: transparent;
+        pointer-events: none; }
+    .tableLead .GridLeads .GirBody_Fl {
+      width: 100%;
+      float: left;
+      height: 84.7%;
+      overflow: hidden; }
+      .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody {
+        width: 100%;
+        float: left; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .tr_body {
+          position: relative;
+          width: 100%;
+          float: left;
+          height: 33px; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .Grid_td {
+          position: relative;
+          float: left;
+          height: 33px;
+          border: 1px solid #eee;
+          border-right: 0;
+          border-bottom: 0;
+          font-size: 11px;
+          padding: 9px;
+          padding-left: 15px;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+          .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .Grid_td a {
+            text-decoration: none; }
+          .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .Grid_td input {
+            padding: 9px;
+            padding-left: 0;
+            background: transparent;
+            border: 0;
+            position: relative;
+            float: left;
+            height: 100%;
+            width: 100%;
+            font-size: 11px; }
+            .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .Grid_td input:focus {
+              outline: 0; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .backWhite {
+          background: #fff; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .backGrey {
+          background: #f9f9f9; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .border-left {
+          border-left: 0; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .border-right {
+          border-right: 0; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .td_full {
+          width: 6.993%; }
+        .tableLead .GridLeads .GirBody_Fl .GridLeads_TBody .td_Null {
+          padding-right: 1%;
+          padding-left: 1.02%; }
+      .tableLead .GridLeads .GirBody_Fl .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: #fff;
+        background-color: rgba(0, 0, 0, 0.2);
+        filter: "alpha(opacity=20)";
+        -ms-filter: "alpha(opacity=20)"; }
+
+.leadView .top-nav-down .source-info .alertmodal {
+  width: auto;
+  background: #1e2129;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 1px;
+  cursor: pointer;
+  color: #ff0000;
+  position: absolute;
+  left: 114px;
+  top: 24px;
+  padding-left: 5px;
+  padding-right: 5px; }
+.leadView .leadScreenView {
+  height: 87vh;
+  top: 43px; }
+
+.GridFooter {
+  background: #f2f2f2;
+  width: 100%;
+  height: 35px;
+  float: left; }
+
+body .calendar .c-grid .c-next,
+body .calendar .c-grid .c-previous,
+body .calendarSingle .c-grid .c-next,
+body .calendarSingle .c-grid .c-previous {
+  position: relative;
+  top: 105px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder; }
+body .calendar .c-grid .c-next,
+body .calendarSingle .c-grid .c-next {
+  right: -50px; }
+body .calendar .c-grid .c-previous,
+body .calendarSingle .c-grid .c-previous {
+  left: -65px; }
+body .calendar .c-grid .today-select,
+body .calendarSingle .c-grid .today-select {
+  background: rgba(26, 135, 85, 0.6); }
+
+/*# sourceMappingURL=newleads.css.map */

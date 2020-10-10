@@ -1,0 +1,81 @@
+.user_component .panel-heading {
+  padding-bottom: 10px;
+  padding-top: 0;
+  position: relative; }
+  .user_component .panel-heading h4 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 22px;
+    float: left;
+    letter-spacing: 0;
+    width: 100%;
+    text-align: center; }
+.user_component li {
+  width: 100%;
+  float: left;
+  margin: 1.5px;
+  position: relative; }
+  .user_component li .user_bl {
+    float: left;
+    width: 10%;
+    padding: 12px;
+    text-align: center;
+    border-right: 3px solid #f9f9f9; }
+    .user_component li .user_bl i {
+      font-size: 19px;
+      color: #cc0000;
+      cursor: pointer; }
+  .user_component li .newUBtn {
+    height: 42px;
+    background: #0A9A7A;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #0A9A7A;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    position: relative;
+    padding-top: 12px;
+    font-size: 13px;
+    display: inline-block; }
+.user_component .userButtonli {
+  height: 42px;
+  text-align: center;
+  margin-top: 7px; }
+.user_component .topLetUsers {
+  background: #eee; }
+  .user_component .topLetUsers .user_bl {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #999; }
+.user_component .letUsers {
+  background: #fff; }
+
+.registerPanel h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 22px;
+  float: left;
+  letter-spacing: 0;
+  width: 100%;
+  text-align: center; }
+.registerPanel .registerBox {
+  float: none;
+  background: #fff;
+  border: 1px solid #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  padding: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 50px auto;
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=users.css.map */

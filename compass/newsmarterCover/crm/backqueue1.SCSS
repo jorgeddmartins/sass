@@ -1,0 +1,21 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+.backqueueGrid, .backqueueTasks {
+	height: 400px;
+	position: relative;
+	float: left;
+}
+
+
+.backqueueGrid {
+	width: 60%;
+
+	background: #eee;
+}
+
+.backqueueTasks {
+	width: 40%;
+
+	background: #f9f9f9;
+}

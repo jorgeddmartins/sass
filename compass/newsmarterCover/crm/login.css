@@ -1,0 +1,99 @@
+.loginTemp {
+  background: rgba(31, 173, 207, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .loginTemp .login_Content {
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    width: 400px;
+    margin: 120px auto 0;
+    padding: 25px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s; }
+    .loginTemp .login_Content .Box_InputLogin {
+      width: 100%;
+      display: table;
+      position: relative;
+      margin-bottom: 5px; }
+      .loginTemp .login_Content .Box_InputLogin label {
+        position: absolute;
+        top: 17px;
+        left: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        width: 100%;
+        text-align: center; }
+      .loginTemp .login_Content .Box_InputLogin .LoginInput {
+        width: 100%;
+        display: table;
+        padding: 7px;
+        border: 0;
+        border-bottom: 1px solid #ddd;
+        font-size: 15px;
+        color: #000;
+        height: 50px;
+        background: transparent;
+        text-align: center; }
+        .loginTemp .login_Content .Box_InputLogin .LoginInput:focus {
+          outline: 0; }
+      .loginTemp .login_Content .Box_InputLogin:last-of-type {
+        margin-bottom: 0; }
+        .loginTemp .login_Content .Box_InputLogin:last-of-type .LoginInput {
+          border-bottom: 0; }
+    .loginTemp .login_Content .errorMsg {
+      display: none;
+      width: 100%;
+      float: left;
+      padding: 4px;
+      font-size: 10px;
+      color: #cc0000;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+      text-align: center;
+      text-transform: uppercase; }
+    .loginTemp .login_Content .SubBtn {
+      background: #1fadcf;
+      color: #fff;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 13.3px;
+      padding-top: 15px;
+      height: 46.59px;
+      text-decoration: none;
+      cursor: pointer;
+      display: table;
+      margin-top: 12px; }
+    .loginTemp .login_Content .GoLogin {
+      width: 70px;
+      display: table;
+      margin: 0 auto 20px; }
+      .loginTemp .login_Content .GoLogin img {
+        width: 100%; }
+    .loginTemp .login_Content:hover {
+      background: rgba(255, 255, 255, 0.4); }
+  .loginTemp .bottPage {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.7; }
+    .loginTemp .bottPage img {
+      width: 100%; }
+
+/*# sourceMappingURL=login.css.map */

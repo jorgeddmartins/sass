@@ -1,0 +1,100 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+
+.dropToolTip {
+	position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    background: $white;
+    width: 32px;
+    height: $max-conv-height;
+    cursor: default;
+
+    .searchTip {
+    	background: #2796c6;
+    	border: 1px solid #2796c6;
+    	color: $white;
+	    position: absolute;
+	    top: -24px;
+	    padding: 5px!important;
+	    padding-bottom: 4px!important;
+	    padding-left: 8px!important;
+	    padding-right: 8px!important;
+	    white-space: nowrap;
+	    z-index: 10000;
+	    font-size: 10px;
+	    font-family: arial;
+	    font-weight: 100;
+	    @include border-radius(3px);
+	    cursor: default;
+	    text-transform: uppercase;
+	   	display: none;
+	    &:after {
+	   		content: '';
+	   		position: absolute;
+	   		border-left: 5px solid transparent;
+	   		border-right: 5px solid transparent;
+	   		top: 107%;
+	   		border-bottom: 6px solid #2796c6;
+	   		left: 50%;
+	   		transform: translate(-50%, 0) rotate(180deg);
+	   		-webkit-transform: translate(-50%, 0) rotate(180deg);
+	   		-moz-transform: translate(-50%, 0) rotate(180deg);
+	   }
+    }
+    &:hover {
+    	.searchTip {
+    		@include animation( tipjump .20s linear);
+    	}
+    }
+}
+
+// ToolTips Hover's
+.dropToolTip.periStat {
+	&:before, 
+	&:after {
+		top: 9px;
+    	left: 9px;
+    	position: absolute;
+	    font-size: 17px;
+	    color: #999;
+	    @include transition(.5s);
+	}
+
+	&:before { content: '\f065'; }
+
+	&:after { content: '\10f065'; }
+
+	&:hover {
+		&:before, 
+		&:after {
+			color: #e67e22;
+		}
+		.periTip { display: block; }
+	}
+}
+
+.flipImg {
+	&:hover {
+		.flipImgToolTip {
+			@include animation( tipjump .20s linear);
+			display: block;
+		}
+	}
+}
+
+
+
+@include keyframes(tipjump) {
+
+	0% { transform: scale(0,0); opacity: 0;}
+
+	50% { transform: scale(1.2, 1.2); opacity: .3; }
+
+	75% { transform: scale(.9, .9); opacity: .7; }
+
+	100% { transform: scale(1, 1); opacity: 1; }
+}

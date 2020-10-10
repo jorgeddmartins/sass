@@ -1,0 +1,1563 @@
+.qinexRoute .clockDrop {
+  bottom: 199px; }
+.qinexRoute .userDrop {
+  bottom: 202px; }
+.qinexRoute .clockBtn,
+.qinexRoute .miniProductAw,
+.qinexRoute .flagBtn,
+.qinexRoute .clock-selectTime,
+.qinexRoute .miniLeads-Btn {
+  cursor: pointer; }
+.qinexRoute .to-transfer i {
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  left: 32px;
+  top: -4px; }
+.qinexRoute .teleSales_menu .productAw .miniProductAw {
+  padding-top: 16px;
+  text-align: center; }
+.qinexRoute .teleSales_menu .productAw .miniProductAw-Floor {
+  height: 320px; }
+  .qinexRoute .teleSales_menu .productAw .miniProductAw-Floor .form-article {
+    border: 0; }
+  .qinexRoute .teleSales_menu .productAw .miniProductAw-Floor #mCSB_2_container {
+    border-bottom: 1px solid #eee; }
+  .qinexRoute .teleSales_menu .productAw .miniProductAw-Floor .margin-r-null {
+    margin-bottom: 0; }
+.qinexRoute .teleSales_menu .leads_load {
+  background: transparent; }
+.qinexRoute .teleSales_menu .right-sales {
+  padding-right: 0;
+  padding-left: 20px; }
+.qinexRoute .teleSales_menu .cardThis .backTitle {
+  font-size: 11px; }
+.qinexRoute .gridnewsystem .gridnewsystem-Thead .gridnewsystem-Thead-tr .gridnewsystem-Thead-td {
+  font-size: 11px;
+  min-height: 35px; }
+.qinexRoute .gridnewsystem .gridnewsystem-Tbody .gridnewsystem-Tbody-tr .gridnewsystem-Tbody-td {
+  padding-top: 11px; }
+.qinexRoute .userDropTele-floor {
+  float: left;
+  width: 76%;
+  height: 45px;
+  margin: 0.5%; }
+  .qinexRoute .userDropTele-floor .k-droptele {
+    background: #fff;
+    line-height: 36px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    float: left;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase; }
+.qinexRoute .leadModal {
+  padding-right: 0;
+  padding-left: 20px; }
+.qinexRoute .k-userDropTele-dropDown {
+  width: 77%;
+  background: #fff;
+  border: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  display: none; }
+  .qinexRoute .k-userDropTele-dropDown li .dropuserTele {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    background: #f9f9f9;
+    color: #999;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: default; }
+  .qinexRoute .k-userDropTele-dropDown li:last-child .dropuserTele {
+    border-bottom: 0; }
+.qinexRoute .row-grid-system .t-grid-head .tgb-13 {
+  font-size: 12px;
+  color: #333;
+  padding-top: 14px;
+  text-align: center; }
+.qinexRoute .row-grid-system .t-grid-head .grid-head-6 {
+  border-right: 0; }
+.qinexRoute .row-grid-system .t-grid-body .tr {
+  float: left;
+  width: 100%; }
+  .qinexRoute .row-grid-system .t-grid-body .tr li {
+    list-style: none; }
+.qinexRoute .row-grid-system .t-grid-body .tgb-13 {
+  color: #999;
+  text-align: center; }
+  .qinexRoute .row-grid-system .t-grid-body .tgb-13 input[type="text"] {
+    color: #999;
+    text-align: center; }
+.qinexRoute .row-grid-system .t-grid-body .thisBorder {
+  border-bottom: 1px solid #f9f9f9; }
+.qinexRoute .optionBcak {
+  background: #f9f9f9; }
+.qinexRoute .sub-icomenu,
+.qinexRoute .sub-famenu {
+  display: none; }
+.qinexRoute .icoM,
+.qinexRoute .icoFA {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 20px !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #f8f8f8;
+  position: relative;
+  cursor: pointer !important; }
+  .qinexRoute .icoM:after,
+  .qinexRoute .icoFA:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 44%;
+    right: 69%;
+    border-bottom: 5px solid #333;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    cursor: pointer; }
+.qinexRoute .icoMRotate:after {
+  content: "";
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); }
+.qinexRoute .bootstrapFontFl,
+.qinexRoute .foundationFontFl,
+.qinexRoute .icomoonFontFl,
+.qinexRoute .icomoonpackFl,
+.qinexRoute .fontawesomeFl {
+  display: none; }
+.qinexRoute #nav-right .marchants-blk {
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee; }
+  .qinexRoute #nav-right .marchants-blk .marchants-name {
+    background: #f2f2f2;
+    padding: 10px;
+    font-size: 15px;
+    color: #999;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none; }
+    .qinexRoute #nav-right .marchants-blk .marchants-name:hover {
+      color: #0A9A7A; }
+.qinexRoute #nav-right .marchants-commands .right_title {
+  font-size: 13px;
+  color: #999;
+  letter-spacing: 0.3px; }
+.qinexRoute .productsinfo .RightProdBlks {
+  margin-bottom: 0;
+  max-height: 890px;
+  overflow: hidden; }
+.qinexRoute .switch_prod .slider:before {
+  position: absolute;
+  content: '';
+  font-family: FontAwesome;
+  padding: 1px;
+  padding-left: 11px;
+  font-size: 16px;
+  color: #ccc; }
+.qinexRoute .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  top: 2px;
+  margin-bottom: 0; }
+  .qinexRoute .switch input {
+    display: none; }
+.qinexRoute .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  background: #ddd;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  height: 18px; }
+  .qinexRoute .slider:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: -5px;
+    background: #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 300;
+    border: 1px solid #eee; }
+  .qinexRoute .slider .switchBtn {
+    text-transform: uppercase; }
+    .qinexRoute .slider .switchBtn:after {
+      content: "Off";
+      position: absolute;
+      right: 6px;
+      top: 9px;
+      font-size: 10px;
+      color: #999; }
+    .qinexRoute .slider .switchBtn:before {
+      content: "On";
+      position: absolute;
+      left: 7px;
+      top: 9px;
+      font-size: 11px;
+      color: #fff; }
+.qinexRoute input:checked + .slider:before {
+  transform: translateX(11px);
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  -moz-transform: translateX(11px);
+  background: #0A9A7A;
+  border: 2px solid #0A9A7A; }
+.qinexRoute input:checked + .slider:before {
+  position: absolute;
+  content: '';
+  font-family: FontAwesome;
+  padding: 1px;
+  padding-left: 9px;
+  font-size: 16px;
+  color: #ccc; }
+.qinexRoute .merchant-Title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center; }
+.qinexRoute .merchant-Floor {
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  float: left; }
+  .qinexRoute .merchant-Floor .merchant-Tabs {
+    width: 100%;
+    height: 33px;
+    float: left;
+    text-align: center; }
+    .qinexRoute .merchant-Floor .merchant-Tabs .item-tab {
+      position: relative;
+      padding: 14.5px;
+      font-size: 12px;
+      text-transform: uppercase;
+      background: #fff;
+      letter-spacing: 0.3px;
+      border: 1px solid #eee;
+      border-bottom: 0;
+      border-right: 0;
+      cursor: pointer; }
+      .qinexRoute .merchant-Floor .merchant-Tabs .item-tab:last-child {
+        border-right: 1px solid #eee; }
+    .qinexRoute .merchant-Floor .merchant-Tabs .item-selected {
+      background: #eee;
+      font-weight: bold;
+      cursor: default; }
+      .qinexRoute .merchant-Floor .merchant-Tabs .item-selected:before {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        bottom: 6px;
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        border-bottom: 5px solid #000;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        cursor: default; }
+  .qinexRoute .merchant-Floor .allowed_floor {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    border: 1px solid #eee; }
+    .qinexRoute .merchant-Floor .allowed_floor .allowed-in {
+      width: 100%;
+      height: 100%;
+      float: left;
+      padding-top: 15px;
+      margin-bottom: 15px; }
+  .qinexRoute .merchant-Floor .AffiliatesFloor {
+    width: 100%;
+    float: left; }
+    .qinexRoute .merchant-Floor .AffiliatesFloor .AffiliattesText {
+      width: 100%;
+      float: left;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #777; }
+    .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data {
+      width: 100%;
+      float: left;
+      margin-top: 20px; }
+      .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor {
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 45px; }
+        .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate {
+          width: 350px;
+          height: 100%;
+          border: 1px solid #eee;
+          position: relative;
+          margin: auto;
+          z-index: 1;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px; }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .k-drop {
+            position: relative;
+            width: 100%;
+            float: left;
+            padding: 13px;
+            padding-left: 20px;
+            font-size: 13px;
+            color: #777;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+            cursor: pointer; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .k-drop:before {
+              position: absolute;
+              content: "";
+              vertical-align: middle;
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              top: 19px;
+              right: 20px;
+              border-bottom: 5px solid #000;
+              transform: rotate(-180deg);
+              -webkit-transform: rotate(-180deg);
+              -moz-transform: rotate(-180deg);
+              -o-transform: rotate(-180deg);
+              transition: 0.4s;
+              -webkit-transition: 0.4s;
+              -moz-transition: 0.4s;
+              -o-transition: 0.4s;
+              cursor: default; }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .rotate0:before {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg); }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .ItemDrop {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #eee;
+            display: none; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .ItemDrop li {
+              float: left;
+              width: 100%; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .ItemDrop li .IDrop {
+                width: 100%;
+                float: left;
+                padding: 7px;
+                font-size: 12px;
+                padding-left: 20px;
+                cursor: pointer; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .dropDown-Floor .dropDown-Affiliate .ItemDrop li .seleted {
+                background: #eee; }
+      .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid {
+        display: none; }
+      .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid,
+      .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid {
+        position: relative;
+        width: 100%;
+        float: left;
+        margin-top: 40px; }
+        .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In,
+        .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In,
+        .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In,
+        .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In {
+          width: 43%;
+          min-width: 769.69px;
+          max-width: 769.69px;
+          height: 100%;
+          margin: auto; }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader {
+            width: 100%;
+            float: left; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr {
+              position: relative;
+              float: left;
+              width: 100%;
+              height: 37px; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader {
+                position: relative;
+                float: left;
+                height: 100%; }
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader {
+                  position: absolute;
+                  left: 12px;
+                  top: 5px;
+                  height: 25px;
+                  width: 88%;
+                  border: 1px solid #eee;
+                  padding: 7px;
+                  color: #777; }
+                  .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader:focus,
+                  .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader:focus,
+                  .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader:focus,
+                  .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .TabHeader .inputTxtHeader:focus {
+                    outline: 0; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .width04,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .width04,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .width04,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .width04 {
+                width: 25%;
+                background: #f2f2f2;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: -0.5px;
+                padding: 12px;
+                text-align: center; }
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .width04:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .width04:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .tHeader .tHeader_Tr .width04:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .tHeader .tHeader_Tr .width04:last-child {
+                  border-right: 0; }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .TBody,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .TBody,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .TBody,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .TBody {
+            width: 100%;
+            float: left; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .TBody .tBody_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .TBody .tBody_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .TBody .tBody_Tr,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .TBody .tBody_Tr {
+              position: relative;
+              float: left;
+              width: 100%;
+              height: 37px; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .TBody .tBody_Tr .TabBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .TabBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .TBody .tBody_Tr .TabBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .TabBody {
+                width: 25%;
+                position: relative;
+                float: left;
+                height: 100%;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+                background: #f9f9f9;
+                padding: 12px;
+                text-align: center;
+                font-size: 12px;
+                color: #777; }
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .TBody .tBody_Tr .TabBody:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .TabBody:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .TBody .tBody_Tr .TabBody:last-child,
+                .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .TabBody:last-child {
+                  border-right: 0; }
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .TBody .tBody_Tr .checkBoxBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .checkBoxBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .TBody .tBody_Tr .checkBoxBody,
+              .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .TBody .tBody_Tr .checkBoxBody {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto; }
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck,
+          .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck {
+            position: relative;
+            width: 24%;
+            min-width: 184.72px;
+            max-width: 184.72px;
+            margin: auto; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck span,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck span,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck span,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck span {
+              float: left;
+              font-weight: bold; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"],
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"],
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"],
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"] {
+              display: none; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck label {
+              font-size: 24px;
+              color: #bfbfbf;
+              display: inline-block;
+              padding: 0 0 0 1em;
+              cursor: pointer;
+              min-height: 0; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck .checkbox,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck .checkbox,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck .checkbox,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck .checkbox {
+              margin-top: 0;
+              margin-bottom: 0;
+              margin-right: 5px;
+              float: left; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck label:before {
+              content: '';
+              display: inline-block;
+              background: #55D8C6;
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 20px;
+              width: 20px;
+              margin-right: 10px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              border-radius: 50%;
+              -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+              -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+              box-sizing: border-box;
+              border: 10px solid #f9f9f9;
+              transition: border 0.3s ease;
+              -webkit-transition: border 0.3s ease;
+              -moz-transition: border 0.3s ease;
+              -o-transition: border 0.3s ease; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"]:checked + label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"]:checked + label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"]:checked + label:before,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"]:checked + label:before {
+              border-color: #fff;
+              border-width: 3px; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"] + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"] + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"] + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"] + label {
+              transition: color 0.7s ease;
+              -webkit-transition: color 0.7s ease;
+              -moz-transition: color 0.7s ease;
+              -o-transition: color 0.7s ease; }
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"]:checked + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .Affiliates_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"]:checked + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .Affiliates_Grid_In .topCheck input[type="checkbox"]:checked + label,
+            .qinexRoute .merchant-Floor .AffiliatesFloor .affiliates-Data .AllowedAge_Grid .AllowedAge_Grid_In .topCheck input[type="checkbox"]:checked + label {
+              color: #5D5D5D; }
+  .qinexRoute .merchant-Floor .backListBtn {
+    position: absolute;
+    margin-left: 30px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    padding-left: 13px;
+    text-decoration: none; }
+    .qinexRoute .merchant-Floor .backListBtn:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 5px;
+      left: 0;
+      border-bottom: 5px solid #000;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      cursor: default; }
+.qinexRoute .AllowedAffiliates .switch_prod {
+  top: 12px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  .qinexRoute .AllowedAffiliates .switch_prod .slider {
+    background: #ddd; }
+    .qinexRoute .AllowedAffiliates .switch_prod .slider:before {
+      content: "";
+      height: 23px;
+      width: 23px;
+      bottom: -6px; }
+  .qinexRoute .AllowedAffiliates .switch_prod .switch {
+    width: 39px;
+    height: 12px; }
+    .qinexRoute .AllowedAffiliates .switch_prod .switch input:checked + .slider {
+      background: #0A9A7A; }
+.qinexRoute .AllowedAffiliates .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  top: 2px;
+  margin-bottom: 0; }
+  .qinexRoute .AllowedAffiliates .switch input {
+    display: none; }
+.qinexRoute .AllowedAffiliates .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  background: #ddd;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  height: 18px; }
+  .qinexRoute .AllowedAffiliates .slider:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: -5px;
+    background: #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 300;
+    border: 1px solid #eee; }
+  .qinexRoute .AllowedAffiliates .slider .switchBtn {
+    text-transform: uppercase; }
+    .qinexRoute .AllowedAffiliates .slider .switchBtn:after {
+      content: "Off";
+      position: absolute;
+      right: 6px;
+      top: 9px;
+      font-size: 10px;
+      color: #999; }
+    .qinexRoute .AllowedAffiliates .slider .switchBtn:before {
+      content: "On";
+      position: absolute;
+      left: 7px;
+      top: 9px;
+      font-size: 11px;
+      color: #fff; }
+.qinexRoute .AllowedAffiliates input:checked + .slider:before {
+  transform: translateX(11px);
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  -moz-transform: translateX(11px);
+  background: #0A9A7A;
+  border: 2px solid #0A9A7A; }
+.qinexRoute .subscont {
+  border: 0; }
+  .qinexRoute .subscont .switch_prod {
+    position: relative;
+    top: 20px;
+    float: right; }
+    .qinexRoute .subscont .switch_prod .switch {
+      height: 17px; }
+      .qinexRoute .subscont .switch_prod .switch .slider {
+        background: #ddd; }
+        .qinexRoute .subscont .switch_prod .switch .slider:before {
+          content: "";
+          bottom: -6px;
+          border: 1px solid #dbebe3; }
+    .qinexRoute .subscont .switch_prod input:checked + .slider {
+      background: #0A9A7A; }
+  .qinexRoute .subscont .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    top: 2px;
+    margin-bottom: 0; }
+    .qinexRoute .subscont .switch input {
+      display: none; }
+  .qinexRoute .subscont .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    background: #ddd;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    height: 18px; }
+    .qinexRoute .subscont .slider:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      left: 2px;
+      bottom: -5px;
+      background: #eee;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      z-index: 300;
+      border: 1px solid #eee; }
+    .qinexRoute .subscont .slider .switchBtn {
+      text-transform: uppercase; }
+      .qinexRoute .subscont .slider .switchBtn:after {
+        content: "Off";
+        position: absolute;
+        right: 6px;
+        top: 9px;
+        font-size: 10px;
+        color: #999; }
+      .qinexRoute .subscont .slider .switchBtn:before {
+        content: "On";
+        position: absolute;
+        left: 7px;
+        top: 9px;
+        font-size: 11px;
+        color: #fff; }
+  .qinexRoute .subscont input:checked + .slider:before {
+    transform: translateX(11px);
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    -moz-transform: translateX(11px);
+    background: #0A9A7A;
+    border: 2px solid #0A9A7A; }
+  .qinexRoute .subscont .label-subscribe-inactive {
+    display: block;
+    color: #333; }
+.qinexRoute .rightAditional .form-article {
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+  min-height: 60px; }
+  .qinexRoute .rightAditional .form-article .label {
+    background: #fff; }
+.qinexRoute .rightAditional .borderGreen {
+  border-bottom: 2px solid #0A9A7A; }
+  .qinexRoute .rightAditional .borderGreen .static-ico-sm {
+    border-bottom: 8px solid #0A9A7A; }
+.qinexRoute .rightAditional .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)"; }
+.qinexRoute .rightAditional .k-selectFloor-dropDown {
+  z-index: 0; }
+.qinexRoute .rightAditional .accor-Open-floor {
+  max-height: 68%; }
+.qinexRoute .rightAditional #ProductAnswers {
+  display: block; }
+.qinexRoute #rotation-Accordion .form-article {
+  margin-bottom: 0;
+  border: 0;
+  min-height: auto; }
+  .qinexRoute #rotation-Accordion .form-article .label {
+    background: #fff; }
+  .qinexRoute #rotation-Accordion .form-article .objType {
+    border-bottom: 1px solid #eee; }
+.qinexRoute #aditional-Accordion {
+  position: relative;
+  height: 100%; }
+  .qinexRoute #aditional-Accordion .form-article {
+    border-bottom: 0;
+    border-left: 0; }
+.qinexRoute .RotationRow {
+  float: left;
+  width: 100%;
+  height: 100%; }
+  .qinexRoute .RotationRow .deliveryRotation {
+    width: 82%;
+    height: 100%;
+    position: relative;
+    float: left;
+    padding-top: 12px; }
+    .qinexRoute .RotationRow .deliveryRotation .deliveryTitleTemp {
+      background: #fff;
+      width: 100%;
+      padding: 15px;
+      float: left;
+      margin-bottom: 20px; }
+      .qinexRoute .RotationRow .deliveryRotation .deliveryTitleTemp h4 {
+        margin: 0;
+        font-weight: bold;
+        float: left;
+        font-size: 14px;
+        margin-right: 15px;
+        position: relative;
+        top: 9px;
+        text-transform: uppercase;
+        letter-spacing: -0.5px; }
+      .qinexRoute .RotationRow .deliveryRotation .deliveryTitleTemp .submit-Btn {
+        background: #eee;
+        padding: 7px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #000;
+        border: 1px solid #ddd;
+        float: left;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 6px;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+    .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom {
+      position: relative;
+      width: 100%;
+      min-height: 81vh;
+      background: #fff;
+      float: left;
+      margin-bottom: 20px;
+      padding-bottom: 13px; }
+      .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom h4 {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 15px;
+        background: #f9f9f9;
+        margin: 0;
+        margin-bottom: 15px;
+        padding-left: 70px;
+        font-size: 17px;
+        font-weight: bold;
+        border-bottom: 2px solid #eee; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom h4 i {
+          position: absolute;
+          left: 26px;
+          font-size: 22px;
+          top: 13px; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom h4 input {
+          background: transparent;
+          border: 0;
+          width: 50%; }
+      .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ProdTabs {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 42px;
+        border-bottom: 1px solid #eee; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ProdTabs .tab {
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #eee;
+          border-bottom: 0;
+          position: relative;
+          display: table-cell;
+          text-transform: uppercase;
+          padding-left: 20px;
+          padding-right: 20px;
+          cursor: pointer;
+          color: #999;
+          border-right: 0;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 3px; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ProdTabs .tab:last-child {
+            border-right: 1px solid #eee; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ProdTabs .tabUp {
+          background: #0A9A7A;
+          color: #fff;
+          font-weight: bold;
+          cursor: default;
+          border: 0; }
+      .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 69vh;
+        border: 1px solid #eee;
+        border-top: 0;
+        padding: 5px; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableThead {
+          width: 100%;
+          height: 40px;
+          float: left;
+          background: #fafafa; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableThead .thThead {
+            width: 12.5%;
+            height: 100%;
+            border-right: 1px solid #ddd;
+            float: left;
+            text-transform: uppercase;
+            padding: 12px;
+            padding-top: 13px;
+            font-size: 12px;
+            font-weight: bold; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableThead .thThead:last-child {
+              border-right: 0; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody {
+          width: 100%;
+          float: left;
+          background: #fdfdfd;
+          border-top: 2px solid #f2f2f2; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .tBody_Tab {
+            width: 100%;
+            padding: 12px;
+            position: relative;
+            float: left;
+            background: #f8f8f8;
+            border-bottom: 2px solid #eee;
+            font-weight: bold;
+            font-size: 13px;
+            padding-left: 54px;
+            padding-bottom: 10px;
+            cursor: pointer; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .tBody_Tab:after {
+              position: absolute;
+              content: "";
+              vertical-align: middle;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              top: 19px;
+              left: 14px;
+              border-bottom: 5px solid #000;
+              transform: rotate(90deg);
+              -webkit-transform: rotate(90deg);
+              -moz-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              transition: 0.3s;
+              -webkit-transition: 0.3s;
+              -moz-transition: 0.3s;
+              -o-transition: 0.3s; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .rotate153:after {
+            transform: rotate(153deg);
+            -webkit-transform: rotate(153deg);
+            -moz-transform: rotate(153deg);
+            -o-transform: rotate(153deg); }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .tBodyTab_Plat {
+            width: 100%;
+            position: relative;
+            float: left;
+            height: 0;
+            border: 1px solid #000; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .close {
+            opacity: 0; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .slideD {
+            -webkit-animation: slideD 0.5s 1 forwards;
+            -moz-animation: slideD 0.5s 1 forwards;
+            -o-animation: slideD 0.5s 1 forwards;
+            animation: slideD 0.5s 1 forwards; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTbody .slideU {
+            -webkit-animation: slideU 0.5s 1 forwards;
+            -moz-animation: slideU 0.5s 1 forwards;
+            -o-animation: slideU 0.5s 1 forwards;
+            animation: slideU 0.5s 1 forwards; }
+@-webkit-keyframes slideD {
+  0% {
+    height: 0; }
+  100% {
+    height: 300px; } }
+@-moz-keyframes slideD {
+  0% {
+    height: 0; }
+  100% {
+    height: 300px; } }
+@-ms-keyframes slideD {
+  0% {
+    height: 0; }
+  100% {
+    height: 300px; } }
+@keyframes slideD {
+  0% {
+    height: 0; }
+  100% {
+    height: 300px; } }
+@-webkit-keyframes slideU {
+  0% {
+    height: 300px; }
+  100% {
+    height: 0; } }
+@-moz-keyframes slideU {
+  0% {
+    height: 300px; }
+  100% {
+    height: 0; } }
+@-ms-keyframes slideU {
+  0% {
+    height: 300px; }
+  100% {
+    height: 0; } }
+@keyframes slideU {
+  0% {
+    height: 300px; }
+  100% {
+    height: 0; } }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTfoot {
+          position: relative;
+          float: left;
+          width: 100%; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .tableTfoot .tFoot {
+            width: 12.5%;
+            float: left;
+            position: relative;
+            padding: 12px;
+            padding-bottom: 0;
+            padding-top: 7px;
+            font-size: 13px;
+            color: #0A9A7A;
+            font-weight: bold; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container {
+          margin-bottom: 15px; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom {
+          padding: 12px; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container,
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom {
+          float: left;
+          width: 100%; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour,
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour {
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+            position: relative; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyTitle,
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyTitle {
+              float: left;
+              width: 100%;
+              margin-bottom: 10px;
+              padding-left: 1px; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom,
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom {
+              width: 300px;
+              height: 40px;
+              border: 1px solid #ccc;
+              position: relative;
+              float: left; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom:after,
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                top: 18px;
+                right: 14px;
+                border-bottom: 5px solid #000;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -o-transition: 0.3s;
+                cursor: pointer; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom input,
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border: 0;
+                padding: 12px;
+                font-size: 13px;
+                cursor: pointer; }
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom input:focus,
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom input:focus {
+                  outline: 0; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRamdom0:after,
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRamdom0:after {
+              transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -o-transform: rotate(0deg); }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom_Drop,
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom_Drop {
+              width: 300px;
+              position: absolute;
+              top: 71px;
+              left: 0;
+              border: 1px solid #ccc;
+              background: #fff;
+              display: none; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom_Drop li,
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom_Drop li {
+                padding: 7px;
+                padding-left: 12px;
+                font-size: 12px;
+                font-weight: bold;
+                border-bottom: 1px solid #eee;
+                cursor: pointer; }
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom_Drop li:hover,
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom_Drop li:hover {
+                  background: #0A9A7A;
+                  color: #fff; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container .DailyHour .dailyRandom_Drop .dailySelect,
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .table_Container_Bottom .DailyHour .dailyRandom_Drop .dailySelect {
+                background: #0A9A7A;
+                color: #fff; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .top_reference {
+          width: 100%;
+          float: left;
+          font-size: 11px;
+          color: #777; }
+        .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops {
+          width: 500px;
+          position: relative;
+          float: left; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In {
+            width: 100%;
+            height: 40px;
+            position: relative;
+            float: left;
+            margin-bottom: 10px; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In:last-child {
+              margin-bottom: 0; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn {
+              width: 50%;
+              height: 100%;
+              position: relative;
+              float: left; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .labelDrop {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                text-align: right;
+                padding-right: 15px; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectDrop {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                float: left;
+                border: 1px solid #ccc; }
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectDrop input {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: 0;
+                  padding: 12px;
+                  font-size: 13px;
+                  cursor: pointer; }
+                  .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectDrop input:focus {
+                    outline: 0; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectArrow:after {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                top: 18px;
+                right: 14px;
+                border-bottom: 5px solid #777;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -o-transition: 0.3s;
+                cursor: pointer; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectRotate0:after {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -o-transform: rotate(0deg); }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .selectClock:after {
+                content: '\f017';
+                font-family: 'FontAwesome';
+                font-size: 19px;
+                color: #777;
+                position: absolute;
+                top: 6px;
+                right: 12px; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn ul {
+                width: 251px;
+                position: absolute;
+                top: 41px;
+                left: 0;
+                border: 1px solid #ccc;
+                background: #fff;
+                z-index: 100;
+                margin: 0;
+                max-height: 194px;
+                overflow: auto;
+                display: none; }
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn ul li {
+                  padding: 7px;
+                  padding-left: 12px;
+                  font-size: 12px;
+                  font-weight: bold;
+                  border-bottom: 1px solid #eee;
+                  cursor: pointer; }
+                  .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn ul li:hover {
+                    background: #0A9A7A;
+                    color: #fff; }
+                .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn ul .dailySelect {
+                  background: #0A9A7A;
+                  color: #fff; }
+              .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .timeDrop_In .dropIn .dropClose {
+                display: none !important; }
+          .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .saveDailyHour {
+            position: relative;
+            float: right;
+            padding: 8px;
+            background: #eee;
+            border: 1px solid #ddd;
+            color: #333;
+            font-weight: bold;
+            padding-left: 45px;
+            padding-right: 30px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border-radius: 3px;
+            margin-top: 12px; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .saveDailyHour:before {
+              content: '\e6ae';
+              font-family: 'Linearicons';
+              position: absolute;
+              top: 8px;
+              left: 16px;
+              font-size: 15px;
+              color: #777; }
+            .qinexRoute .RotationRow .deliveryRotation .delivery_Bottom .ContentTabs .timeDrops .saveDailyHour:hover {
+              border-bottom: 2px solid #ddd;
+              border-left: 2px solid #ddd; }
+  .qinexRoute .RotationRow .rightAditional {
+    top: 58px; }
+  .qinexRoute .RotationRow .accor-link {
+    position: relative;
+    z-index: 100; }
+.qinexRoute .deliveryIn {
+  float: left;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  background: #fff; }
+  .qinexRoute .deliveryIn li {
+    padding-top: 23px;
+    padding-bottom: 22px;
+    float: left;
+    width: 100%;
+    padding-left: 25px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    cursor: pointer; }
+    .qinexRoute .deliveryIn li i {
+      font-size: 23px;
+      color: #333;
+      float: left;
+      width: 23px;
+      text-align: center;
+      position: absolute;
+      top: 11px;
+      left: 25px; }
+    .qinexRoute .deliveryIn li a,
+    .qinexRoute .deliveryIn li span {
+      color: #999;
+      text-decoration: none;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 100%;
+      padding: 12px;
+      padding-left: 67px; }
+    .qinexRoute .deliveryIn li span {
+      cursor: pointer; }
+    .qinexRoute .deliveryIn li:hover {
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd !important; }
+  .qinexRoute .deliveryIn .backDeleveFocus {
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd !important; }
+    .qinexRoute .deliveryIn .backDeleveFocus i {
+      color: #777; }
+
+.Search_Fl {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 7px; }
+  .Search_Fl .auto-search {
+    background: #f9f9f9;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #f9f9f9;
+    border-bottom: 2px solid #eee;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    height: 52px; }
+    .Search_Fl .auto-search:focus {
+      outline: 0;
+      border-color: #eee;
+      box-shadow: none; }
+  .Search_Fl:before {
+    font-family: 'Linearicons';
+    content: '\e922';
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    color: #999;
+    font-size: 20px; }
+
+#Logs {
+  margin: 0;
+  float: left; }
+
+.mHighl {
+  background: #ffcc00 !important;
+  color: #000 !important;
+  padding: 2px;
+  text-transform: lowercase; }
+
+.mHighlAfter {
+  padding: 0; }
+
+#Logs .form-article {
+  min-height: auto;
+  border: 0; }
+  #Logs .form-article p {
+    border-bottom: 1px solid #eee; }
+  #Logs .form-article .label {
+    background: #fff; }
+
+.RotationWrap {
+  width: 83%;
+  padding: 20px;
+  padding-left: 0;
+  padding-top: 0;
+  position: relative;
+  float: left; }
+  .RotationWrap .panel {
+    position: relative;
+    padding: 12px;
+    width: 100%;
+    float: left;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    margin-bottom: 10px;
+    border: 1px solid #eee; }
+
+#LogHistory .form-article {
+  margin-bottom: 0;
+  min-height: auto; }
+#LogHistory .label {
+  z-index: 0; }
+
+.RotationWrap .panel-heading {
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee; }
+.RotationWrap .ProdTitle {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  .RotationWrap .ProdTitle h4 {
+    margin: 0; }
+    .RotationWrap .ProdTitle h4 i {
+      margin-right: 7px; }
+.RotationWrap .panelProd {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 40px; }
+  .RotationWrap .panelProd .PanelTabs {
+    width: 100%;
+    float: left;
+    height: 40px; }
+    .RotationWrap .panelProd .PanelTabs .PTb {
+      background: #f9f9f9;
+      width: 70px;
+      height: 100%;
+      position: relative;
+      float: left;
+      padding: 9px;
+      border: 1px solid #ddd;
+      border-right: 0;
+      border-bottom: 0;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      cursor: pointer; }
+      .RotationWrap .panelProd .PanelTabs .PTb:last-child {
+        border-right: 1px solid #ddd; }
+    .RotationWrap .panelProd .PanelTabs .PTbSele {
+      background: #0A9A7A;
+      color: #fff;
+      border: 1px solid #0A9A7A;
+      cursor: default; }
+  .RotationWrap .panelProd .PanelTable {
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd; }
+    .RotationWrap .panelProd .PanelTable .THeader,
+    .RotationWrap .panelProd .PanelTable .TBody,
+    .RotationWrap .panelProd .PanelTable .tr {
+      width: 100%;
+      float: left; }
+      .RotationWrap .panelProd .PanelTable .THeader .th,
+      .RotationWrap .panelProd .PanelTable .TBody .th,
+      .RotationWrap .panelProd .PanelTable .tr .th {
+        position: relative;
+        float: left;
+        width: 13.8%;
+        height: 30px;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-right: 0;
+        border-top: 0;
+        padding: 8px;
+        font-size: 11px;
+        padding-left: 15px;
+        color: #777;
+        text-transform: uppercase; }
+      .RotationWrap .panelProd .PanelTable .THeader .firstTh,
+      .RotationWrap .panelProd .PanelTable .TBody .firstTh,
+      .RotationWrap .panelProd .PanelTable .tr .firstTh {
+        width: 3.4%;
+        border-left: 0;
+        padding-left: 7px; }
+      .RotationWrap .panelProd .PanelTable .THeader .bodyTab,
+      .RotationWrap .panelProd .PanelTable .TBody .bodyTab,
+      .RotationWrap .panelProd .PanelTable .tr .bodyTab {
+        position: relative;
+        width: 100%;
+        float: left;
+        height: 45px;
+        background: #f2f2f2;
+        padding: 14px;
+        padding-left: 40px;
+        border-bottom: 2px solid #fff;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer; }
+        .RotationWrap .panelProd .PanelTable .THeader .bodyTab:last-of-type,
+        .RotationWrap .panelProd .PanelTable .TBody .bodyTab:last-of-type,
+        .RotationWrap .panelProd .PanelTable .tr .bodyTab:last-of-type {
+          border-bottom: 0; }
+        .RotationWrap .panelProd .PanelTable .THeader .bodyTab .dropTh,
+        .RotationWrap .panelProd .PanelTable .TBody .bodyTab .dropTh,
+        .RotationWrap .panelProd .PanelTable .tr .bodyTab .dropTh {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          left: 10px;
+          top: 10px;
+          cursor: pointer; }
+          .RotationWrap .panelProd .PanelTable .THeader .bodyTab .dropTh:after,
+          .RotationWrap .panelProd .PanelTable .TBody .bodyTab .dropTh:after,
+          .RotationWrap .panelProd .PanelTable .tr .bodyTab .dropTh:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            top: 9px;
+            right: 4px;
+            border-bottom: 5px solid #000;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -o-transition: 0.3s; }
+        .RotationWrap .panelProd .PanelTable .THeader .bodyTab .dropTh45:after,
+        .RotationWrap .panelProd .PanelTable .TBody .bodyTab .dropTh45:after,
+        .RotationWrap .panelProd .PanelTable .tr .bodyTab .dropTh45:after {
+          transform: rotate(145deg);
+          -webkit-transform: rotate(145deg);
+          -moz-transform: rotate(145deg);
+          -o-transform: rotate(145deg); }
+      .RotationWrap .panelProd .PanelTable .THeader .dropBodyTab,
+      .RotationWrap .panelProd .PanelTable .TBody .dropBodyTab,
+      .RotationWrap .panelProd .PanelTable .tr .dropBodyTab {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        float: left;
+        background: #fff;
+        display: none; }
+
+template {
+  display: block; }
+
+/*# sourceMappingURL=resetSystem.css.map */

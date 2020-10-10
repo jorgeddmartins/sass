@@ -1,0 +1,160 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// .customer-photo {
+//     display: inline-block;
+//     width: 32px;
+//     height: 32px;
+//     border-radius: 50%;
+//     background-size: 32px 35px;
+//     background-position: center center;
+//     vertical-align: middle;
+//     line-height: 32px;
+//     box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0,0,0,.2);
+//     margin-left: 5px;
+// }
+
+// .customer-name {
+//     display: inline-block;
+//     vertical-align: middle;
+//     line-height: 32px;
+//     padding-left: 3px;
+// }
+
+
+#k-grid-content {
+
+	.mCSB_inside > .mCSB_container {
+	    margin-right: $null-conv;
+	}
+}
+
+.k-grid.k-widget {
+	font-size: $small-fix-10 + 1;
+	line-height: $small-fix-10 + 1;
+}
+
+.k-grid-header {
+	.k-header>.k-link {
+		font-size: $small-fix-10;
+		text-transform: uppercase;
+		color: #999;
+	}
+}
+
+.watermark {
+	font-size: $small-fix-10 + 2;
+	color: #ccc;
+}
+
+.k-grid {
+	.k-grid-header {
+		.k-header-column-menu { 
+		    bottom: $small-fix-07 + 1;
+		    width: $null-conv;
+		    height: $null-conv;
+		    right: $small-fix-03;
+		}
+		th { padding-right: $small-fix-13; }
+	}
+
+	.k-dropdown {
+		.k-dropdown-wrap { display: none; }
+	}
+
+	.k-filter-row {
+
+		th { padding: 2px; }
+	}
+
+	.k-grid-content {
+
+		td { padding: $small-fix-07 + 2; }
+	}
+
+	.k-filtercell>span {
+
+		.k-dropdown-operator { margin-left: $null-conv; }
+	}
+
+	.k-autocomplete {
+	    padding: $null-conv;
+
+	    .k-input {
+	    	padding-left: $small-fix-03;
+	    	padding-right: $small-fix-03;
+	    }
+	}
+
+	.k-datepicker { height: 24.5px; }
+}
+
+#tabstrip {
+
+	h2 {
+		font-weight: lighter;
+		font-size: 5em;
+		line-height: 1;
+		padding: 0 0 0 $small-fix-30;
+		margin: $null-conv;
+
+		span {
+			background: none;
+			padding-left: $small-fix-05;
+			font-size: .3em;
+			vertical-align: top;
+		}
+	}
+
+	p {
+		margin: $null-conv;
+		padding: $null-conv;
+	}
+}
+
+.tableLead {
+	.k-content { background: transparent; }
+
+	.k-tabstrip>.k-content {
+		border: $null-conv;
+		background: transparent;
+		padding: $null-conv;
+	}
+}
+
+
+#AllLeadsGrid {
+	.k-grouping-header {
+		background-color: $white;
+		padding: $small-fix-07;
+	    padding-left: $small-fix-10 + 2;
+	    font-size: $small-fix-10 + 2;
+	}
+}
+
+#tabstrip {
+	.k-grid {
+		border-top: $null-conv;
+	}
+}
+
+.k-tabstrip-top>.k-tabstrip-items {
+	.k-item {
+		font-size: $small-fix-10 + 2;
+		padding-left: $small-fix-13;
+    	padding-right: $small-fix-13;
+	}
+}
+
+.k-tabstrip-items {
+	.k-item {
+		color: #0A9A7A;
+	    text-transform: uppercase;
+	    &:hover {
+	    	color: #0A9A7A;	
+	    	border: 1px solid #eee;
+	    }
+	}
+}
+

@@ -1,0 +1,938 @@
+.sourcerow {
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  box-sizing: border-box; }
+  .sourcerow h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid #ccc; }
+  .sourcerow .sourceDatafloor {
+    width: 100%;
+    display: inline-block; }
+
+/* Data Square */
+.sourcePanel {
+  width: 8%;
+  height: 81.73px;
+  min-width: 51.23px;
+  min-height: 51.23px;
+  float: left;
+  padding-top: 4.5%;
+  position: relative;
+  margin: 3px;
+  overflow: hidden; }
+  .sourcePanel .bodyPanel {
+    width: 100%;
+    position: absolute;
+    left: 0; }
+  .sourcePanel .in-sourcePanel {
+    position: relative;
+    top: -83px;
+    height: 82.33px;
+    left: 0;
+    width: 100%; }
+    .sourcePanel .in-sourcePanel ul {
+      padding-top: 1.5px;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .sourcePanel .in-sourcePanel ul li {
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Arial;
+        font-size: 0.59vw;
+        padding: 2%;
+        letter-spacing: 0; }
+      .sourcePanel .in-sourcePanel ul .dispVal {
+        font-family: Arial;
+        font-size: 1.5vw;
+        font-weight: bold;
+        letter-spacing: 0;
+        padding-top: 7%; }
+  .sourcePanel .sourceMainSeven {
+    width: 14.2%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    position: relative; }
+    .sourcePanel .sourceMainSeven .sourceBarseven,
+    .sourcePanel .sourceMainSeven .sevenBarin {
+      position: absolute;
+      width: 78%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-left: auto;
+      margin-right: auto; }
+    .sourcePanel .sourceMainSeven .sourceBarseven {
+      background: #0ebaaa; }
+    .sourcePanel .sourceMainSeven .sevenBarin {
+      background: #0ca597; }
+    .sourcePanel .sourceMainSeven .firstAffiliBar,
+    .sourcePanel .sourceMainSeven .firstDrigitBar,
+    .sourcePanel .sourceMainSeven .secondAffiliBar,
+    .sourcePanel .sourceMainSeven .secondDrigitBar,
+    .sourcePanel .sourceMainSeven .thirdAffiliBar,
+    .sourcePanel .sourceMainSeven .thirdDrigitBar,
+    .sourcePanel .sourceMainSeven .fourthAffiliBar,
+    .sourcePanel .sourceMainSeven .fourthDrigitBar,
+    .sourcePanel .sourceMainSeven .fifthAffiliBar,
+    .sourcePanel .sourceMainSeven .fifthDrigitBar,
+    .sourcePanel .sourceMainSeven .sixthAffiliBar,
+    .sourcePanel .sourceMainSeven .sixthDrigitBar,
+    .sourcePanel .sourceMainSeven .seventhAffiliBar,
+    .sourcePanel .sourceMainSeven .seventhDrigitBar {
+      cursor: pointer; }
+    .sourcePanel .sourceMainSeven .firstAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: firstAffiliBar 1s 1 forwards;
+      -moz-animation: firstAffiliBar 1s 1 forwards;
+      -o-animation: firstAffiliBar 1s 1 forwards;
+      animation: firstAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .firstAffiliBar:hover .firstaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .secondAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: secondAffiliBar 1s 1 forwards;
+      -moz-animation: secondAffiliBar 1s 1 forwards;
+      -o-animation: secondAffiliBar 1s 1 forwards;
+      animation: secondAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .secondAffiliBar:hover .secondaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .thirdAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: thirdAffiliBar 1s 1 forwards;
+      -moz-animation: thirdAffiliBar 1s 1 forwards;
+      -o-animation: thirdAffiliBar 1s 1 forwards;
+      animation: thirdAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .thirdAffiliBar:hover .thirdaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .fourthAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: fourthAffiliBar 1s 1 forwards;
+      -moz-animation: fourthAffiliBar 1s 1 forwards;
+      -o-animation: fourthAffiliBar 1s 1 forwards;
+      animation: fourthAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .fourthAffiliBar:hover .fourthaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .fifthAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: fifthAffiliBar 1s 1 forwards;
+      -moz-animation: fifthAffiliBar 1s 1 forwards;
+      -o-animation: fifthAffiliBar 1s 1 forwards;
+      animation: fifthAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .fifthAffiliBar:hover .fifthaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .sixthAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: sixthAffiliBar 1s 1 forwards;
+      -moz-animation: sixthAffiliBar 1s 1 forwards;
+      -o-animation: sixthAffiliBar 1s 1 forwards;
+      animation: sixthAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .sixthAffiliBar:hover .sixthaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .seventhAffiliBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: seventhAffiliBar 1s 1 forwards;
+      -moz-animation: seventhAffiliBar 1s 1 forwards;
+      -o-animation: seventhAffiliBar 1s 1 forwards;
+      animation: seventhAffiliBar 1s 1 forwards;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      animation-delay: 0.3s; }
+      .sourcePanel .sourceMainSeven .seventhAffiliBar:hover .seventhaffiliTip {
+        opacity: 1;
+        z-index: 2;
+        width: 67px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -28px; }
+    .sourcePanel .sourceMainSeven .firstDrigitBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: firstDrigitBar 1s 1 forwards;
+      -moz-animation: firstDrigitBar 1s 1 forwards;
+      -o-animation: firstDrigitBar 1s 1 forwards;
+      animation: firstDrigitBar 1s 1 forwards;
+      -webkit-animation-delay: 0.9s;
+      -moz-animation-delay: 0.9s;
+      animation-delay: 0.9s; }
+      .sourcePanel .sourceMainSeven .firstDrigitBar:hover .firstdigitTip {
+        opacity: 1;
+        z-index: 2;
+        width: 65px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -30px; }
+    .sourcePanel .sourceMainSeven .secondDrigitBar {
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-animation: secondDrigitBar 1s 1 forwards;
+      -moz-animation: secondDrigitBar 1s 1 forwards;
+      -o-animation: secondDrigitBar 1s 1 forwards;
+      animation: secondDrigitBar 1s 1 forwards;
+      -webkit-animation-delay: 0.9s;
+      -moz-animation-delay: 0.9s;
+      animation-delay: 0.9s; }
+      .sourcePanel .sourceMainSeven .secondDrigitBar:hover .seconddigitTip {
+        opacity: 1;
+        z-index: 2;
+        width: 65px;
+        padding: 5px;
+        font: 10px Arial;
+        line-height: 12px;
+        top: -30px; }
+  .sourcePanel .thirdDrigitBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: thirdDrigitBar 1s 1 forwards;
+    -moz-animation: thirdDrigitBar 1s 1 forwards;
+    -o-animation: thirdDrigitBar 1s 1 forwards;
+    animation: thirdDrigitBar 1s 1 forwards;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+    .sourcePanel .thirdDrigitBar:hover .thirddigitTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5px;
+      font: 10px Arial;
+      line-height: 12px;
+      top: -30px; }
+  .sourcePanel .fourthDrigitBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: fourthDrigitBar 1s 1 forwards;
+    -moz-animation: fourthDrigitBar 1s 1 forwards;
+    -o-animation: fourthDrigitBar 1s 1 forwards;
+    animation: fourthDrigitBar 1s 1 forwards;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+    .sourcePanel .fourthDrigitBar:hover .fourthdigitTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5px;
+      font: 10px Arial;
+      line-height: 12px;
+      top: -30px; }
+  .sourcePanel .fifthDrigitBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: fifthDrigitBar 1s 1 forwards;
+    -moz-animation: fifthDrigitBar 1s 1 forwards;
+    -o-animation: fifthDrigitBar 1s 1 forwards;
+    animation: fifthDrigitBar 1s 1 forwards;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+    .sourcePanel .fifthDrigitBar:hover .fifthdigitTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5px;
+      font: 10px Arial;
+      line-height: 12px;
+      top: -30px; }
+  .sourcePanel .sixthDrigitBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: sixthDrigitBar 1s 1 forwards;
+    -moz-animation: sixthDrigitBar 1s 1 forwards;
+    -o-animation: sixthDrigitBar 1s 1 forwards;
+    animation: sixthDrigitBar 1s 1 forwards;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+    .sourcePanel .sixthDrigitBar:hover .sixthdigitTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5px;
+      font: 10px Arial;
+      line-height: 12px;
+      top: -30px; }
+  .sourcePanel .seventhDrigitBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: seventhDrigitBar 1s 1 forwards;
+    -moz-animation: seventhDrigitBar 1s 1 forwards;
+    -o-animation: seventhDrigitBar 1s 1 forwards;
+    animation: seventhDrigitBar 1s 1 forwards;
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s; }
+    .sourcePanel .seventhDrigitBar:hover .seventhdigitTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5px;
+      font: 10px Arial;
+      line-height: 12px;
+      top: -30px; }
+
+.sourceMainBar {
+  width: 6.15%;
+  height: 100%;
+  float: left;
+  padding: 0;
+  position: relative;
+  margin-left: 0.5%;
+  margin-right: 0.5%; }
+  .sourceMainBar .sourceBar {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .sourceMainBar .firstBar,
+  .sourceMainBar .secondBar,
+  .sourceMainBar .thirdBar,
+  .sourceMainBar .fourthBar,
+  .sourceMainBar .fifthBar,
+  .sourceMainBar .sixthBar,
+  .sourceMainBar .seventhBar,
+  .sourceMainBar .eighthBar,
+  .sourceMainBar .ninethBar,
+  .sourceMainBar .tenthBar,
+  .sourceMainBar .eleventhBar,
+  .sourceMainBar .twelvethBar,
+  .sourceMainBar .thirteenthBar,
+  .sourceMainBar .fourteenthBar {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.15); }
+  .sourceMainBar .negVal {
+    background: #cc0000; }
+  .sourceMainBar .firstBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: firstBar 1s 1 forwards;
+    -moz-animation: firstBar 1s 1 forwards;
+    -o-animation: firstBar 1s 1 forwards;
+    animation: firstBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .firstBar:hover .firstTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .secondBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: secondBar 1s 1 forwards;
+    -moz-animation: secondBar 1s 1 forwards;
+    -o-animation: secondBar 1s 1 forwards;
+    animation: secondBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .secondBar:hover .secondTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .thirdBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: thirdBar 1s 1 forwards;
+    -moz-animation: thirdBar 1s 1 forwards;
+    -o-animation: thirdBar 1s 1 forwards;
+    animation: thirdBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .thirdBar:hover .thirdTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .fourthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: fourthBar 1s 1 forwards;
+    -moz-animation: fourthBar 1s 1 forwards;
+    -o-animation: fourthBar 1s 1 forwards;
+    animation: fourthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .fourthBar:hover .fourthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .fifthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: fifthBar 1s 1 forwards;
+    -moz-animation: fifthBar 1s 1 forwards;
+    -o-animation: fifthBar 1s 1 forwards;
+    animation: fifthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .fifthBar:hover .fifthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .sixthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: sixthBar 1s 1 forwards;
+    -moz-animation: sixthBar 1s 1 forwards;
+    -o-animation: sixthBar 1s 1 forwards;
+    animation: sixthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .sixthBar:hover .sixthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .seventhBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: seventhBar 1s 1 forwards;
+    -moz-animation: seventhBar 1s 1 forwards;
+    -o-animation: seventhBar 1s 1 forwards;
+    animation: seventhBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .seventhBar:hover .seventhTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .eighthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: eighthBar 1s 1 forwards;
+    -moz-animation: eighthBar 1s 1 forwards;
+    -o-animation: eighthBar 1s 1 forwards;
+    animation: eighthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .eighthBar:hover .eighthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -20px; }
+  .sourceMainBar .ninethBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: ninethBar 1s 1 forwards;
+    -moz-animation: ninethBar 1s 1 forwards;
+    -o-animation: ninethBar 1s 1 forwards;
+    animation: ninethBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .ninethBar:hover .ninethTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .tenthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: tenthBar 1s 1 forwards;
+    -moz-animation: tenthBar 1s 1 forwards;
+    -o-animation: tenthBar 1s 1 forwards;
+    animation: tenthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .tenthBar:hover .tenthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .eleventhBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: eleventhBar 1s 1 forwards;
+    -moz-animation: eleventhBar 1s 1 forwards;
+    -o-animation: eleventhBar 1s 1 forwards;
+    animation: eleventhBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .eleventhBar:hover .eleventhTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .twelvethBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: twelvethBar 1s 1 forwards;
+    -moz-animation: twelvethBar 1s 1 forwards;
+    -o-animation: twelvethBar 1s 1 forwards;
+    animation: twelvethBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .twelvethBar:hover .twelvethTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .thirteenthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: thirteenthBar 1s 1 forwards;
+    -moz-animation: thirteenthBar 1s 1 forwards;
+    -o-animation: thirteenthBar 1s 1 forwards;
+    animation: thirteenthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .thirteenthBar:hover .thirteenthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .fourteenthBar {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-animation: fourteenthBar 1s 1 forwards;
+    -moz-animation: fourteenthBar 1s 1 forwards;
+    -o-animation: fourteenthBar 1s 1 forwards;
+    animation: fourteenthBar 1s 1 forwards;
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+    .sourceMainBar .fourteenthBar:hover .fourteenthTip {
+      opacity: 1;
+      z-index: 2;
+      width: 65px;
+      padding: 5.5px;
+      padding-top: 3.5px;
+      font: 9px Arial;
+      top: -22px; }
+  .sourceMainBar .ninethTip,
+  .sourceMainBar .tenthTip,
+  .sourceMainBar .eleventhTip,
+  .sourceMainBar .twelvethTip,
+  .sourceMainBar .thirteenthTip,
+  .sourceMainBar .fourteenthTip {
+    left: auto;
+    right: 100%; }
+    .sourceMainBar .ninethTip:before,
+    .sourceMainBar .tenthTip:before,
+    .sourceMainBar .eleventhTip:before,
+    .sourceMainBar .twelvethTip:before,
+    .sourceMainBar .thirteenthTip:before,
+    .sourceMainBar .fourteenthTip:before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      top: 55%;
+      right: -7%;
+      border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg); }
+
+.fifthaffiliTip,
+.fifthdigitTip,
+.sixthaffiliTip,
+.sixthdigitTip,
+.seventhaffiliTip,
+.seventhdigitTip {
+  left: auto !important;
+  right: 100%; }
+  .fifthaffiliTip:before,
+  .fifthdigitTip:before,
+  .sixthaffiliTip:before,
+  .sixthdigitTip:before,
+  .seventhaffiliTip:before,
+  .seventhdigitTip:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    top: 65%;
+    right: -7%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
+
+.firstaffiliTip:before,
+.firstdigitTip:before,
+.secondaffiliTip:before,
+.seconddigitTip:before,
+.thirdaffiliTip:before,
+.thirddigitTip:before,
+.fourthaffiliTip:before,
+.fourthdigitTip:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: 65%;
+  left: -7%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg); }
+
+.firstTip:before,
+.secondTip:before,
+.thirdTip:before,
+.fourthTip:before,
+.fifthTip:before,
+.sixthTip:before,
+.seventhTip:before,
+.eighthTip:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  top: 55%;
+  left: -7%;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg); }
+
+.sourceBartitle {
+  display: block;
+  padding: 10px;
+  padding-bottom: 0;
+  padding-top: 5px;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center; }
+
+.sourcetip {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 10;
+  left: 100%;
+  top: 5px;
+  width: 0;
+  padding: 0;
+  color: #fff;
+  font: 0 Arial;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 0;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+body .width100 {
+  width: 99.65%; }
+  body .width100 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width100 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width50 {
+  width: 49.68%; }
+  body .width50 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width50 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width33 {
+  width: 33%; }
+  body .width33 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width33 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width25 {
+  width: 24.65%; }
+  body .width25 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width25 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width20 {
+  width: 19.65%; }
+  body .width20 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width20 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width16 {
+  width: 16.3%; }
+  body .width16 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width16 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width13 {
+  width: 13.95%; }
+  body .width13 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width13 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width12 {
+  width: 12.18%; }
+  body .width12 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width12 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width10 {
+  width: 10.79%; }
+  body .width10 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width10 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width9 {
+  width: 9.76%; }
+  body .width9 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width9 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+body .width8-76 {
+  width: 8.76%; }
+  body .width8-76 .in-sourcePanel ul li {
+    padding-top: 10px;
+    padding: 10px; }
+  body .width8-76 .in-sourcePanel ul .dispVal {
+    padding-top: 0; }
+
+.sourceBlueBar {
+  background: #48b0f7 !important; }
+
+.sourceGreenBar {
+  background: #10cfbd !important; }
+
+.sourceBlue {
+  background: #48b0f7; }
+
+.sourceGreen {
+  background: #10cfbd; }
+
+.sourceFlBar, .sourceFlBarSeven {
+  position: relative;
+  width: 95%;
+  top: 7px;
+  height: 60%;
+  margin: auto; }
+
+@media (max-width: 1355.9322px) {
+  .sourcePanel .in-sourcePanel ul li {
+    font-size: 8px; } }
+@media (min-width: 3728.81356px) {
+  .sourcePanel .in-sourcePanel ul li {
+    font-size: 22px; } }
+@media (max-width: 600px) {
+  .sourcePanel .in-sourcePanel ul .dispVal {
+    font-size: 9px; } }
+@media (min-width: 1666.66667px) {
+  .sourcePanel .in-sourcePanel ul .dispVal {
+    font-size: 25px; } }
+
+/*# sourceMappingURL=miniDashboard.css.map */

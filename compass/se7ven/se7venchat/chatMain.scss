@@ -1,0 +1,675 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	background: #f4f8fb;
+	font-size: 14px;
+
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.imBack {
+	position: fixed;
+	top: 0;
+	left: -330px;
+	height: $max-conv-height;
+}
+
+.overlay_App {
+	position: absolute;
+	width: $max-conv-width;
+	height: $max-conv-height;
+	top: 0;
+	left: 0;
+	background: rgba(80, 123, 155, .5);
+	z-index: 7;
+
+	.topSection, 
+	.bottomSection {
+		width: $max-conv-width;
+	    float: left;
+	    position: relative;
+	    padding: 17px;
+	}
+
+	.topSection {
+	    height: 46%;
+	    padding-top: 50px;
+    	letter-spacing: 0.5px;
+
+    	.topSmall_Title {
+    		color: $white;
+    		padding-bottom: 80px;
+		    float: left;
+		    width: $max-conv-width;
+		    text-align: left;
+		    padding-left: 27px;
+		    position: relative;
+		    left: -100%;
+		    //left: 0;
+    	}
+
+    	.WelcomeTxt_Blk {
+    		width: $max-conv-width;
+    		float: left;
+
+    		.Top_welcome_txt {
+    			width: $max-conv-width;
+			    float: left;
+			    color: $white;
+			    text-align: left;
+			    font-size: 30px;
+			    font-weight: 100;
+			    font-family: Arial;
+			    padding-left: 27px;
+			    position: relative;
+			    left: -100%;
+    		}
+
+    		.Bottom_welcome_txt {
+    			width: $max-conv-width;
+			    float: left;
+			    text-align: right;
+			    color: $white;
+			    font-size: 27px;
+			    font-weight: bold;
+			    margin-top: -8px;
+			    padding-right: 27px;
+			    position: relative;
+			    right: -100%;
+			    letter-spacing: -1px;
+    		}
+    	}
+	}
+
+	.bottomSection {
+	    height: 54%;
+	    padding: 0;
+
+	    .tab_top, 
+	    .tab_top_Up {
+	    	width: $max-conv-width;
+	    	height: $max-conv-height;
+	    	position: relative;
+	    	background: rgba(80,123,155, 0.37);
+	    	border-top-left-radius: 12px;
+    		border-top-right-radius: 12px; 
+    		padding: 17px;
+    		bottom: -100%;
+	    }
+
+	    .tab_top {
+	    	//left: -100%;
+	    	.tab_Top_Txt {
+	    		font-size: 14px;
+	    		color: $white;
+	    		font-style: italic;
+	    		font-weight: 100;
+	    		line-height: 19px;
+	    	}
+	    }
+
+	    .tab_top_Up {
+	    	background: rgba(244,248,251, 0.25);
+		    z-index: 10;
+		    position: absolute;
+		    bottom: -100%;
+		    //right: -100%;
+		    left: 0;
+		    height: 80%;
+		    padding: 25px;
+		    padding-top: 30px;
+
+		    .tab_Top_Btns {
+		    	width: $max-conv-width;
+		    	height: 50px;
+		    	float: left;
+
+		    	.action_Btn {
+		    		width: 154px;
+		    		height: $max-conv-height;
+		    		position: relative;
+		    		text-align: center;
+		    		font-size: 14px;
+		    		font-weight: 100;
+		    		padding: 18px;
+		    		@include border-radius(50px);
+		    		text-transform: uppercase;
+		    		cursor: pointer;
+		    		letter-spacing: 1px;
+		    		text-decoration: none;
+		    	}
+
+		    	.signUp {
+		    		color: $black;
+		    		background: rgba(255, 255, 255, .5);
+		    		float: left;
+		    	}
+
+		    	.signIn, 
+		    	.sigInW {
+		    		color: $white;
+		    		background: #507b9b;
+		    		float: right;
+		    	}
+
+		    	.sigInW {
+		    		width: $max-conv-width;
+		    	}
+		    }
+
+		    .middleOr {
+		    	width: auto;
+			    padding-top: 40px;
+			    padding-bottom: 11px;
+			    display: inline-block;
+
+		    	.trace {
+		    		width: 60px;
+		    		height: 1px;
+		    		border-top: 1px solid $white;
+		    		float: left;
+		    	}
+
+		    	.trace_Letter {
+		    		font-size: 17px;
+				    float: left;
+				    font-weight: 100;
+				    padding-left: 15px;
+				    padding-right: 15px;
+				    color: $white;
+				    margin-top: -11px;
+		    	}
+		    }
+	    }
+	}
+}
+
+.goLeft {
+	left: 0;
+	@include animation(goLeft .2s 1 forwards);
+}
+
+@include keyframes(goLeft) {
+
+	0% { left: -100%; }
+	100% { left: 0; }
+}
+
+.goRight {
+	right: 0;
+	@include animation(goRight .2s 1 forwards);
+}
+
+@include keyframes(goRight) {
+
+	0% { right: -100%; }
+	100% { right: 0; }
+}
+
+.goTop {
+	bottom: 0;
+	@include animation(goTop .2s 1 forwards);
+}
+
+@include keyframes(goTop) {
+
+	0% { bottom: -100%; }
+	100% { bottom: 0; }
+}
+
+.goBottom {
+	bottom: 0;
+	@include animation(goBottom .2s 1 forwards);
+}
+
+@include keyframes(goBottom) {
+
+	0% { bottom: 0; }
+	100% { bottom: -100%; }
+}
+
+.SignUp_popUp {
+	width: $max-conv-width;
+	height: $max-conv-height;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(80,123,155, 0.57);
+	z-index: 100000;
+	display: none;
+
+	.TopClose {
+		position: absolute;
+		width: $max-conv-width;
+		height: $max-conv-height;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+
+	.SignUp_popUp_In {
+		width: $max-conv-width;
+		height: 77%;
+		position: absolute;
+		bottom: -100%;
+		//bottom: 0;
+		left: 0;
+		background: $white;
+		border-top-left-radius: 12px;
+    	border-top-right-radius: 12px; 
+	}
+}
+
+// Main Chat Page
+.ChatApp, 
+.goChatApp {
+	.WChat {
+		width: $max-conv-width;
+		float: left;
+		position: relative;
+		padding: 20px;
+	}
+
+	.HeaderChat {
+		background: #373e46;
+		height: 94px;
+
+		i.lnr-magnifier, 
+		span.plus, 
+		span.mTxt, 
+		i.lnr-arrow-left {
+			position: absolute;
+			color: #f4f8fb;
+		}
+
+		i.lnr-magnifier, 
+		i.lnr-arrow-left {
+			font-size: 24px;
+			top: 20px;
+			left: 20px;
+		}
+		span.plus {
+			font-size: 33px;
+		    top: 10px;
+		    right: 20px;
+		}
+
+		.opacityPlus {
+			opacity: 0.5;
+		}
+
+		span.mTxt {
+			top: 20px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			font-size: 15px;
+		}
+
+		.Avatar {
+			position: absolute;
+		    width: 60px;
+		    height: 60px;
+		    bottom: -35px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			-moz-transform: translate(-50%, 0);
+			padding: 2px;
+
+			background: #f4f8fb;
+			@include border-radius($max-conv-width / 2);
+
+			// border: 1px solid #fff;
+
+			img {
+				width: $max-conv-width;
+				@include border-radius($max-conv-width / 2);
+			}
+
+			.status {
+				position: absolute;
+				width: 17px;
+				height: 17px;
+				background: #eee;
+				bottom: 3px;
+				right: 0;
+				@include border-radius($max-conv-width / 2);
+			}
+
+			.online {
+				background: #249d5a;
+			}
+
+			i.lnr-cog {
+				position: absolute;
+				top: -7px;
+    			right: -22px;
+				color: #f4f8fb;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.SectionChat {
+
+		.bChat_B {
+			width: $max-conv-width;
+			float: left;
+			margin-top: 33px;
+			margin-bottom: 17px;
+			overflow-y: scroll;
+			.bChat_BIn {
+				position: relative;
+				width: max-content;
+				float: left;
+
+				// .Blk_InChat {
+				// 	position: relative;
+				// 	background: $white;
+				// 	width: 250px;
+				// 	height: 100px;
+
+				// 	float: left;
+				// 	margin: 4px;
+				// }
+			}
+		}
+
+		.Blk_InChat {
+			position: relative;
+			background: $white;
+			width: 250px;
+			height: 100px;
+
+			float: left;
+			margin: 4px;
+
+			.top_avatar, 
+			.bottom_avatar {
+				width: 100%;
+				float: left;
+				padding: 7px;
+				.avat {
+					position: relative;
+					width: 40px;
+					height: 40px;
+					@include border-radius(50%);
+					float: left;
+					margin-right: 10px;
+					img {
+						width: 100%;
+						@include border-radius(50%);
+					}
+				}
+
+				.avatName {
+					position: relative;
+					float: left;
+				    font-size: 14px;
+				    font-weight: bold;
+				    color: #000;
+				    letter-spacing: 0.5px;
+				    top: 12px;
+				}
+
+				p {
+					text-align: left;
+				    font-size: 12px;
+				    color: #999;
+				    font-weight: 100;
+				    letter-spacing: 0.5px;
+				}
+
+				.status {
+					position: relative;
+					width: 14px;
+					height: 14px;
+					background: #eee;
+					top: 14px;
+    				left: 7px;
+    				float: left;
+					@include border-radius($max-conv-width / 2);
+				}
+
+				.online {
+					background: #249d5a;
+				}
+
+				.timeChat {
+					position: relative;
+					float: right;
+					font-size: 11px;
+					color: #777;
+					top: 15px;
+				}
+			}
+		}
+
+		.recent_Chats {
+			float: left;
+		    width: $max-conv-width;
+		    text-align: left;
+		    padding: 7px;
+		    font-size: 15px;
+		    color: #373e46;
+		    letter-spacing: 0.5px;
+		}
+
+		div.sChat {
+			width: $max-conv-width;
+			float: left;
+			position: relative;
+
+			.Blk_InChat {
+				width: 290px;
+				&:nth-child(even) { float: right; }
+			}
+		}
+	}
+}
+
+.goChatApp {
+	.Avatar {
+	    width: 40px !important;
+	    height: 40px !important;
+	    bottom: 6px !important;
+		padding: 0 !important;
+
+		background: transparent !important;
+
+		.status {
+			width: 13px !important;
+			height: 13px !important;
+			bottom: -2px !important;
+		}
+	}
+
+	.chatBody {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 46px;
+		padding: 17px;
+		text-align: right;
+		max-height: 528px;
+    	overflow: auto;
+	}
+
+
+	.tempChat {
+		position: relative;
+		width: 100%;
+		float: left;
+
+		.msgBy {
+			position: relative;
+			background: $white;
+		    max-width: 75%;
+		    min-width: 69px;
+		    float: right;
+		    border: 1px solid #eee;
+		    @include border-radius(3px);
+		    padding: 7px;
+		    margin: 5px;
+		    padding-top: 33px;
+
+		    img {
+		    	position: absolute;
+			    width: 33px;
+			    height: 33px;
+			    top: -7px;
+			    left: -10px;
+			    @include border-radius(50%);
+		    }
+
+		    .timeChat {
+		    	position: absolute;
+		    	top: 7px;
+		    	right: 7px;
+		    	font-size: 11px;
+		    	color: #999;
+		    }
+
+		    .msgRec {
+		    	width: 100%;
+			    float: left;
+			    font-size: 13px;
+			    letter-spacing: 0.5px;
+			    margin: 0;
+			    line-height: 18px;
+			    text-align: left;
+			    word-break: break-all;
+		    }
+		}
+	}
+
+	.footerGoChat {
+		position: fixed;
+		width: $max-conv-width;
+		min-height: 45px;
+		background: $white;
+		left: 0;
+		bottom: 0;
+		padding: 7px;
+		padding-left: 30px;
+		padding-right: 15px;
+		border-top: 1px solid #eee;
+
+		span.lnr-arrow-right {
+			float: right;
+		    font-size: 28px;
+		    color: #999;
+		    position: relative;
+		    cursor: pointer;
+		}
+	}
+}
+
+
+.plusUser {
+	position: fixed;
+	width: $max-conv-width;
+	height: $max-conv-height;
+	background: $white;
+	left: 100%;
+	top: 55px;
+	z-index: 99999;
+	border-bottom: 1px solid #eee;
+	padding: 15px;
+
+	//display: none;
+
+	.inEspanTitle {
+		width: $max-conv-width;
+		float: left;
+		color: $black;
+		font-size: 13px;
+		text-align: left;
+		font-weight: bold;
+		margin-bottom: 12px;
+		margin-top: 40px;
+		padding-top: 100px;
+	}
+
+	.inputEspan {
+		width: $max-conv-width;
+		height: 55px;
+		border: 1px solid #ddd;
+		padding: 20px;
+		float: left;
+
+		.placeHolder {
+			font-size: 14px;
+		    color: #ddd;
+		    float: left;
+		    letter-spacing: 0.5px;
+		}
+	}
+}
+
+
+.Ooptions {
+	position: absolute;
+    top: 13px;
+    left: 12px;
+    font-size: 18px;
+    color: #999;
+}
+
+
+.typ_Fl_01 {
+    position: relative;
+    width: 87%;
+    height: 30px ! important;
+    min-height: 30px !important;
+    color: $black;
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 14px;
+    border: 0;
+    background: transparent;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+
+    &:focus {
+    	outline: none;
+    }
+}
+
+
+::placeholder {
+  color: #ddd;
+}
+
+
+
+// Media
+.w_1024.Ipad {
+
+	.imBack {
+		left: -124px;
+	}
+}
+
+.w_1366.Ipad {
+
+	.imBack {
+		left: -185px;
+	}
+}

@@ -1,12 +1,3 @@
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .top-nav {
   background: #fff;
   width: 100%;
@@ -194,24 +185,6 @@
     background-size: 14px;
     text-decoration: none; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .row-table-normal {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -398,15 +371,6 @@
 .tgb-100 {
   width: 100%; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .row-conv {
   margin-right: 0;
   margin-left: 0;
@@ -587,15 +551,6 @@
 .conv-height-fix-750 {
   height: 750px; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .grid-conv-full {
   margin: 0 auto;
   height: 4000px;
@@ -1291,15 +1246,6 @@ input:-webkit-autofill:active {
 .k-animation-container .k-list-container #DateAvailiableFrom_timeview .k-item:nth-child(n+86) {
         display: none;
 }  15 min Interval */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-width: 200px) {
   .overlay_back {
     position: absolute;
@@ -1359,15 +1305,6 @@ input:-webkit-autofill:active {
     transform: scale(1); }
   to {
     transform: scale(1.4); } }
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .overlay_back {
   position: absolute;
   	/*.round_1 {
@@ -1690,25 +1627,7 @@ ul {
     opacity: 0; } }
 /* Left Nav Elements */
 /* Start Left Nav */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 /* Start New Left Nav */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 /* New Nav starts Here */
 .mob-nav-box {
   width: 35px;
@@ -2803,15 +2722,6 @@ main .a-bottom-logs {
     width: 100%; }
 
 /* Start Left Nav */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #nav-right #button-nav-right {
   width: 53px;
   height: 52px;
@@ -3804,15 +3714,6 @@ input:checked + .slider:before {
   src: url("../fonts/roboto-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-thin-webfont.woff") format("woff"), url("../fonts/roboto-thin-webfont.ttf") format("truetype"), url("../fonts/roboto-thin-webfont.svg#robotolight") format("svg");
   font-weight: normal;
   font-style: normal; }
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .leadView {
   display: none;
   padding-left: 73px; }
@@ -4415,15 +4316,6 @@ fieldset[disabled]
 .displN {
   display: none !important; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .aditional-info .accor-link {
   background: #eee;
   color: #333;
@@ -4746,15 +4638,6 @@ fieldset[disabled]
 .cs-active {
   z-index: 200; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .minform-height {
   min-height: 104px; }
 
@@ -4806,22 +4689,28 @@ body .notallowed {
     border-radius: 50%;
     -webkit-animation: spin-load 1s linear infinite;
     -moz-animation: spin-load 1s linear infinite;
+    -o-animation: spin-load 1s linear infinite;
     animation: spin-load 1s linear infinite; }
 
 @-webkit-keyframes spin-load {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg); } }
-@-moz-keyframes spin-load {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(360deg); } }
-@keyframes spin-load {
-  from {
+  0% {
     transform: rotate(0deg); }
-  to {
+  100% {
+    transform: rotate(360deg); } }
+@-moz-keyframes spin-load {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@-ms-keyframes spin-load {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes spin-load {
+  0% {
+    transform: rotate(0deg); }
+  100% {
     transform: rotate(360deg); } }
 .box-m-pl,
 .box-m-pl2,
@@ -5072,8 +4961,7 @@ body .notallowed {
 .form-article-maxpf {
   min-height: 59px;
   float: left;
-  margin-right: 1.1%;
-  margin-bottom: 1.1%;
+  margin: 2.5px;
   position: relative; }
 
 .form-article {
@@ -5243,9 +5131,11 @@ body .notallowed {
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none; }
   @media (min-width: 1024px) and (max-width: 1850px) {
@@ -5260,12 +5150,9 @@ body .notallowed {
   background: transparent; }
 
 .label {
-  width: 75%;
   padding-left: 12px;
   text-transform: uppercase;
-  color: #ccc;
-  position: relative;
-  z-index: 1;
+  z-index: 1000;
   top: 7px;
   border: 0;
   text-align: left;
@@ -5685,7 +5572,7 @@ body .notallowed {
   padding: 0;
   padding-top: 16%;
   padding-bottom: 15%;
-  z-index: 5000;
+  z-index: 99999999999999999999;
   display: none; }
 
 .copiedback {
@@ -5844,30 +5731,12 @@ body .notallowed {
   height: 100%;
   z-index: 2000; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .rolemain {
   position: relative;
   width: 100%;
   float: right;
   top: 39px; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #dashView {
   position: relative;
   float: left;
@@ -5898,19 +5767,19 @@ body .notallowed {
     border-radius: 3px;
     position: relative; }
     .dashboardView .column-medium img {
-      transition: all 7s ease-in-out;
-      -webkit-transition: all 7s ease-in-out;
-      -moz-transition: all 7s ease-in-out;
-      -o-transition: all 7s ease-in-out; }
+      transition: all 0.7s ease-in-out;
+      -webkit-transition: all 0.7s ease-in-out;
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out; }
     .dashboardView .column-medium:hover img {
       transform: scale(1.4);
       -webkit-transform: scale(1.4);
       -moz-transform: scale(1.4);
       -o-transform: scale(1.4);
-      transition: all 7s ease-in-out;
-      -webkit-transition: all 7s ease-in-out;
-      -moz-transition: all 7s ease-in-out;
-      -o-transition: all 7s ease-in-out; }
+      transition: all 0.7s ease-in-out;
+      -webkit-transition: all 0.7s ease-in-out;
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out; }
   .dashboardView .realtime-cover {
     position: absolute;
     top: 0;
@@ -5956,15 +5825,6 @@ body .notallowed {
       height: 347px;
       float: left; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .row-conv {
   margin-right: 0;
   margin-left: 0;
@@ -6145,15 +6005,6 @@ body .notallowed {
 .conv-height-fix-750 {
   height: 750px; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .btn-conv-active {
   width: 60px;
   background: #eee;
@@ -6394,15 +6245,6 @@ body {
         right: 0; } }
 
 /* Aditional Info Elements */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #datetimepicker,
 #datepicker,
 #datepicker2 {
@@ -6706,15 +6548,6 @@ body {
   .xdsoft_datetimepicker .xdsoft_year span:after {
     right: 35.5%; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .gridview .grContent {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -6846,15 +6679,6 @@ body {
     left: -5px;
     float: left; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .row-grid-system {
   margin: 0 !important; }
   @media (min-width: 1024px) and (max-width: 1200px) {
@@ -7169,15 +6993,6 @@ body {
     margin-top: 5px;
     float: left; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .producttypeview .productypecontent {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -7478,15 +7293,6 @@ body {
   -o-transform: rotate(0deg); }
 
 /* End Pop Up Product Type */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #leftNav-SubAccordion {
   display: inline-block;
   width: 100%;
@@ -7580,15 +7386,6 @@ main .left-nav .new-drop-sub {
   filter: "alpha(opacity=20)";
   -ms-filter: "alpha(opacity=20)"; }
 
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .setitngsView {
   position: relative;
   top: 0;
@@ -7772,15 +7569,6 @@ main .left-nav .new-drop-sub {
   width: 100% !important; }
 
 /* Start Navdrop */
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #nestable {
   max-width: 520px;
   margin: auto; }
@@ -8233,15 +8021,6 @@ h2 {
 
   .dd + .dd {
     margin-left: 2%; } }
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 .leftMini,
 .rightMini {
   float: left; }

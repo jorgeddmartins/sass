@@ -1,0 +1,113 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+.loginTemp {
+	background: rgba(31, 173, 207, 0.1); 
+	position: absolute; 
+	width: $max-conv-width; 
+	height: $max-conv-height;
+
+	.login_Content {
+		background: rgba(255, 255, 255, 0.2);
+		position: relative; 
+		width: 400px; 
+		margin: 120px auto $null-conv; 
+		padding: $small-fix-25; // 45px
+		@include border-radius($small-fix-03 + 1);
+		@include box-shadow($null-conv $null-conv $small-fix-05 $null-conv rgba(0, 0, 0, 0.25));
+		@include transition(.5s);
+
+		.Box_InputLogin {
+			width: $max-conv-width;
+			display: table;
+			position: relative;
+			margin-bottom: $small-fix-05;
+			label {
+				position: absolute;
+				top: $small-fix-17;
+    			left: $null-conv; // 25px
+    			text-transform: uppercase;
+    			font-size: $small-fix-10 + 2;
+    			@include transition(.2s);
+    			width: $max-conv-width;
+    			text-align: center;
+			}
+			.LoginInput {
+				width: $max-conv-width;
+				display: table;
+				padding: $small-fix-07;
+				// padding-left: $small-fix-25;
+				border: $null-conv;
+				border-bottom: $small-fix-01 solid #ddd;
+				font-size: $small-fix-15;
+				color: $black;
+				height: 50px;
+				background: transparent;
+				text-align: center;
+				&:focus {
+					outline: $null-conv;
+				}
+			}
+			&:last-of-type {
+				margin-bottom: $null-conv;
+				.LoginInput {
+					border-bottom: $null-conv;
+				}
+			}
+		}
+
+		.errorMsg {
+			display: none;
+		    width: $max-conv-width;
+		    float: left;
+		    padding:$small-fix-03 + 1;
+		    font-size: $small-fix-10;
+		    color: #cc0000;
+		    font-weight: bold;
+		    // padding-left: $small-fix-25 + 1;
+		    letter-spacing: $small-fix-0 + 0.3; //0.3px
+		    text-align: center;
+		    text-transform: uppercase;
+		}
+
+		.SubBtn {
+			background: #1fadcf;
+		    color: $white;
+		    width: $max-conv-width;
+		    position: relative;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-size: $small-fix-13 + 1;
+		    padding: $small-fix-13 + 0.3; // 13,3px
+		    padding-top: $small-fix-15;
+		    height: 46.59px;
+		    text-decoration: none;
+		    cursor: pointer;
+		    display: table;
+		    margin-top: $small-fix-10 + 2;
+		}
+
+		.GoLogin {
+			width: 70px;
+		    display: table;
+		    margin: $null-conv auto $small-fix-20;
+		    img {
+		    	width: $max-conv-width;
+		    }
+		}
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.4);
+		}
+	}
+
+	.bottPage {
+		position: fixed;
+	    width: $max-conv-width;
+	    bottom: $null-conv;
+	    opacity: 0.7;
+	    img {
+	    	width: $max-conv-width;
+	    }
+	}
+}

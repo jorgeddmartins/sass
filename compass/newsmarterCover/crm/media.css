@@ -1,0 +1,294 @@
+@media (min-width: 1600px) and (max-width: 1600px) {
+  body {
+    overflow: auto; }
+
+  .HeaderLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+    .HeaderLeft .HeaderLeft_In .newsFloor {
+      left: 7px;
+      float: left;
+      width: 74%; }
+
+  .HeaderRight {
+    position: fixed;
+    top: 0; }
+
+  .costumerDetails .QutBtn {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .costumerDetails .downCostumer {
+    width: 53.6%; }
+  .costumerDetails .btnW49 {
+    padding-top: 25px;
+    line-height: 13px; }
+  .costumerDetails .GeneQtBtn:before {
+    left: 23%; }
+  .costumerDetails .costumerBoard .estraWPlus {
+    width: 47%; }
+  .costumerDetails .costumerBoard .addPoliBtn:before {
+    left: 29%; }
+  .costumerDetails .costumerBoard .extraBtn {
+    padding-top: 8px;
+    padding-bottom: 9px; }
+
+  .policyTemp .costumerDetails .costumerRight {
+    height: 93vh !important; }
+  .policyTemp .costumerRight {
+    height: 93vh !important; }
+
+  .taskSection .allTabs-Content .notes_Floor {
+    max-height: 63vh; }
+
+  .SmarterSection {
+    top: 76px;
+    margin-bottom: 15px; }
+
+  .tTopHomebodyFish {
+    height: 11.2vh; }
+
+  .tBottomHomebodyFish {
+    height: 12.4vh; }
+
+  .CostDetInpt {
+    width: 24.38%; }
+
+  .slider-list {
+    left: 45px;
+    width: 93.5%; }
+
+  nav[role="navigation"] .mainNav {
+    display: none;
+    width: 175px;
+    margin-top: 13px;
+    padding: 10px;
+    padding-left: 6px; }
+    nav[role="navigation"] .mainNav .navRoute {
+      margin: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0; }
+
+  .navBorderBtt {
+    border-bottom: 1px solid #ccc;
+    height: auto; }
+
+  .NavMob {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 2px;
+    left: 26px;
+    top: -2px;
+    cursor: pointer; }
+    .NavMob:before {
+      content: '\f0c9';
+      position: absolute;
+      right: 0;
+      top: 1px;
+      font-family: FontAwesome;
+      font-size: 20px; }
+
+  .phoneAdt_Fl .phoneAdt {
+    margin: 6px; } }
+@media (min-width: 1200px) and (max-width: 1440px) {
+  body {
+    overflow: auto; }
+
+  .HeaderLeft {
+    width: 67%;
+    position: fixed;
+    z-index: 500;
+    left: 0;
+    top: 0; }
+    .HeaderLeft .HeaderLeft_In .newsFloor {
+      width: 64%;
+      float: left;
+      left: 9px; }
+      .HeaderLeft .HeaderLeft_In .newsFloor .newsTitle {
+        display: none; }
+      .HeaderLeft .HeaderLeft_In .newsFloor .newsSlider {
+        width: 95%; }
+
+  .HeaderRight {
+    width: 33%;
+    position: fixed; }
+    .HeaderRight .topHeaderRight .topHeaderRight_Floor .LocalDateTime {
+      display: none; }
+    .HeaderRight .topHeaderRight .topHeaderRight_Floor .newsSlider {
+      width: 48%; }
+
+  nav[role="navigation"] .mainNav {
+    display: none;
+    width: 175px;
+    margin-top: 13px;
+    padding: 10px;
+    padding-left: 6px; }
+    nav[role="navigation"] .mainNav .navRoute {
+      margin: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0; }
+
+  .navBorderBtt {
+    border-bottom: 1px solid #ccc;
+    height: auto; }
+
+  .costumerDetails .costumerBoard {
+    width: 50%;
+    margin-bottom: 7px; }
+  .costumerDetails .details_Left {
+    width: 49.5%; }
+
+  .SmarterSection {
+    width: 67%;
+    margin-top: 74px;
+    margin-bottom: 14px; }
+
+  .leadTNav .bigBtn {
+    display: none; }
+
+  .taskSection .allTabs-Content .notes_Floor {
+    max-height: 60.5vh; }
+
+  .columnState_Fl .stateColumn {
+    height: 9vh; }
+    .columnState_Fl .stateColumn .state-In {
+      font-size: 14px;
+      padding: 13px;
+      padding-top: 24px; }
+
+  .width54 {
+    width: 52%; }
+
+  .NavMob {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 2px;
+    left: 26px;
+    top: -2px;
+    cursor: pointer; }
+    .NavMob:before {
+      content: '\f0c9';
+      position: absolute;
+      right: 0;
+      top: 1px;
+      font-family: FontAwesome;
+      font-size: 20px; }
+
+  .GoFishBtn {
+    height: 48px;
+    font-size: 11px;
+    padding-top: 17px; }
+
+  .policyTemp .costumerDetails .costumerRight {
+    height: 104.5vh !important; }
+
+  .phoneAdt_Fl .phoneAdt {
+    margin: 2px;
+    margin-left: 0;
+    margin-top: 4px;
+    margin-bottom: 0; }
+
+  .switch-label {
+    font-size: 10px; }
+
+  .leadTNav .LRefr_Fl .referenceLead {
+    font-size: 20px; }
+
+  .costumerDetails .btnsLft {
+    margin-left: 3px; }
+  .costumerDetails .QutBtn {
+    padding: 33px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px; }
+  .costumerDetails .btnW49 {
+    margin-right: .7%;
+    font-size: 8px;
+    letter-spacing: 0;
+    padding-top: 27px; }
+  .costumerDetails .btnW13 {
+    width: 14%;
+    min-width: 40px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 8px; }
+  .costumerDetails .downCostumer {
+    width: 54%; }
+  .costumerDetails .GeneQtBtn:before {
+    left: 17%;
+    top: 11px; }
+  .costumerDetails .costumerBoard .estraWPlus {
+    width: 48.3%;
+    margin-left: 3px;
+    margin-right: 3px; }
+  .costumerDetails .costumerBoard .addPoliBtn:before {
+    left: 21%; }
+
+  .tTopHomebodyFish {
+    height: 10.9vh; }
+
+  .tBottomHomebodyFish {
+    height: 12.1vh; }
+
+  .CostDetInpt {
+    width: 24.21%; }
+
+  .slider-list {
+    left: 53px;
+    width: 88%; } }
+@media (min-width: 1440px) and (max-width: 1440px) {
+  .HeaderLeft {
+    width: 65%; }
+    .HeaderLeft .HeaderLeft_In .newsFloor {
+      width: 68%;
+      left: 17px; }
+
+  .SmarterSection {
+    width: 65%; }
+
+  .HeaderRight {
+    width: 35%; }
+    .HeaderRight .topHeaderRight .topHeaderRight_Floor .LocalDateTime {
+      display: block;
+      right: 10px;
+      top: 7px;
+      font-size: 11px; }
+
+  input:checked + .slider:before {
+    transform: translateX(220px);
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    -moz-transform: translateX(220px); }
+
+  input:checked + .sliderSmall:before {
+    transform: translateX(153px);
+    -webkit-transform: translateX(153px);
+    -ms-transform: translateX(153px);
+    -moz-transform: translateX(153px); }
+
+  input:checked + .sliderMedium:before {
+    transform: translateX(176px);
+    -webkit-transform: translateX(176px);
+    -ms-transform: translateX(176px);
+    -moz-transform: translateX(176px); }
+
+  input:checked + .sliderIsPolicy:before {
+    transform: translateX(347px);
+    -webkit-transform: translateX(347px);
+    -ms-transform: translateX(347px);
+    -moz-transform: translateX(347px); }
+
+  .taskSection .bottomNav_Floor {
+    height: 9.3vh; }
+
+  .policyTemp .costumerDetails .costumerRight {
+    height: 99vh !important; }
+
+  .slider-list {
+    left: 53px;
+    width: 90%; } }
+
+/*# sourceMappingURL=media.css.map */

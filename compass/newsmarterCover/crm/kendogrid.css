@@ -1,0 +1,83 @@
+#k-grid-content .mCSB_inside > .mCSB_container {
+  margin-right: 0; }
+
+.k-grid.k-widget {
+  font-size: 11px;
+  line-height: 11px; }
+
+.k-grid-header .k-header > .k-link {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999; }
+
+.watermark {
+  font-size: 12px;
+  color: #ccc; }
+
+.k-grid .k-grid-header .k-header-column-menu {
+  bottom: 8px;
+  width: 0;
+  height: 0;
+  right: 3px; }
+.k-grid .k-grid-header th {
+  padding-right: 13px; }
+.k-grid .k-dropdown .k-dropdown-wrap {
+  display: none; }
+.k-grid .k-filter-row th {
+  padding: 2px; }
+.k-grid .k-grid-content td {
+  padding: 9px; }
+.k-grid .k-filtercell > span .k-dropdown-operator {
+  margin-left: 0; }
+.k-grid .k-autocomplete {
+  padding: 0; }
+  .k-grid .k-autocomplete .k-input {
+    padding-left: 3px;
+    padding-right: 3px; }
+.k-grid .k-datepicker {
+  height: 24.5px; }
+
+#tabstrip h2 {
+  font-weight: lighter;
+  font-size: 5em;
+  line-height: 1;
+  padding: 0 0 0 30px;
+  margin: 0; }
+  #tabstrip h2 span {
+    background: none;
+    padding-left: 5px;
+    font-size: .3em;
+    vertical-align: top; }
+#tabstrip p {
+  margin: 0;
+  padding: 0; }
+
+.tableLead .k-content {
+  background: transparent; }
+.tableLead .k-tabstrip > .k-content {
+  border: 0;
+  background: transparent;
+  padding: 0; }
+
+#AllLeadsGrid .k-grouping-header {
+  background-color: #fff;
+  padding: 7px;
+  padding-left: 12px;
+  font-size: 12px; }
+
+#tabstrip .k-grid {
+  border-top: 0; }
+
+.k-tabstrip-top > .k-tabstrip-items .k-item {
+  font-size: 12px;
+  padding-left: 13px;
+  padding-right: 13px; }
+
+.k-tabstrip-items .k-item {
+  color: #0A9A7A;
+  text-transform: uppercase; }
+  .k-tabstrip-items .k-item:hover {
+    color: #0A9A7A;
+    border: 1px solid #eee; }
+
+/*# sourceMappingURL=kendogrid.css.map */

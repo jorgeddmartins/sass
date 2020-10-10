@@ -1,0 +1,2071 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Reset
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    // 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    // sans-serif;
+
+    //font-family: Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+    display: block;
+}
+
+ul { list-style: none; }
+
+nav {
+    position: absolute;
+    z-index: 1000;
+}
+
+.Plandscape {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $white;
+    z-index: 999;
+    padding-top: 25%;
+    display: none;
+
+     img {
+        width: 79px;
+    }
+}
+
+.loadElm {
+    width: $max-conv-width;
+    height: $max-conv-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgb(255, 255, 255);
+    padding-top: 70%;
+    //display: none;
+
+    img {
+        width: 79px;
+    }
+}
+
+.App, 
+.ApphOME, 
+.AppSignup, 
+.deskApp {
+    position: absolute;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    top: 0;
+    left: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden; 
+}
+
+.App {
+    .backImg {
+        // width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: -290px;
+        //left: 0;
+        -webkit-animation: backimg 7s linear infinite;
+        -moz-animation: backimg 7s linear infinite;
+        animation: backimg 7s linear infinite;
+        //animation-delay: 0.5s;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes backimg {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
+
+@-webkit-keyframes backimg {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
+
+@-moz-keyframes backimg {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.7);
+    }
+}
+
+
+.ApphOME {
+    z-index: 1;
+    // background: rgba(7, 49, 61, 0.60);
+    background: rgba(7, 49, 61, 0.75);
+    position: relative;
+    float: left;
+    header {
+        position: relative;
+        width: $max-conv-width;
+        float: left;
+        padding: 12px;
+        .logo_Box {
+            float: left;
+            width: 60px;
+            position: relative;
+            left: 35px;
+            top: 7px;
+            img {
+                width: $max-conv-width;
+            }
+        }
+    }
+
+    section {
+        position: relative;
+        float: left;
+        width: $max-conv-width;
+        padding: 50px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        color: $white;
+        font-size: 14px;
+        text-align: left;
+
+        span {
+            width: $max-conv-width;
+            float: left;
+            padding: 3px;
+            padding-left: 0;
+        }
+
+        .DeskGo, 
+        .DeskLogin {
+            width: auto;
+            cursor: pointer;
+            margin-top: 10px;
+            position: relative;
+            padding: 5px;
+            padding-left: 0;
+            padding-right: 40px;
+            float: left;
+            text-decoration: none;
+            color: $white;
+            i {
+                font-size: 23px;
+                position: absolute;
+                right: 0;
+                top: 2px;
+            }
+        }
+
+        .DeskLogin {
+            display: none;
+        }
+
+    }
+
+    @include transition(all .4s);
+
+}
+
+.keyPad_Row {
+    position: relative;
+    width: $max-conv-width;
+   // padding: 15px;
+    padding-top: 20px;
+    float: left;
+}
+
+.padBubbs {
+    width: $max-conv-width;
+    // height: 12px;
+    float: left;
+    // border: 1px solid #fff;
+    position: relative;
+    height: 22px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .addBubbs {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        .addBubbs_In {
+            position: relative;
+            max-width: 265px;
+            float: left;
+            left: 50%;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            overflow: hidden;
+            .keyNum {
+                width: 12px;
+                height: 12px;
+                @include border-radius($max-conv-width / 2);
+                background: rgba(255, 255, 255, 1);
+                margin: 5px;
+                display: inline-block;
+                font-size: 0;
+            }
+        }
+    }
+
+    .bubbs_in {
+        //width: 63%;
+        position: relative;
+        float: left;
+        //margin-left: 7%;
+        //top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+
+        .bubble {
+            width: 12px;
+            height: 12px;
+            @include border-radius($max-conv-width / 2);
+            background: rgba(255, 255, 255, .45);
+            margin: 5px;
+            display: inline-block;
+        }
+
+    }
+}
+
+#KeyPad {
+
+    width: $max-conv-width;
+    max-width: 275px;
+    //height: 200px;
+    float: left;
+    position: relative;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+
+    .keyNum, 
+    .Alphabet {
+        width: 50px;
+        height: 50px;
+        @include border-radius($max-conv-width / 2);
+        float: left;
+        margin: 7%;
+        margin-bottom: 5%;
+        margin-top: 0;
+        background: rgba(255, 255, 255, .6);
+        font-size: 21px;
+        color: $black;
+       // padding-left: 12px;
+        padding: 0;
+        padding-top: 12px;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #eee;
+        &:nth-child(10), 
+        &:nth-child(7) {
+            background: transparent;
+           // font-size: 0;
+        }
+        &:nth-child(7) {
+            color: $white;
+            font-size: 35px;
+            padding-top: 5px;
+            //border: 0;
+        }
+        &:nth-child(10) {
+            border: 0;
+        }
+    }
+    .del {
+        position: absolute;
+        right: 33px;
+        bottom: 24px;
+        width: auto;
+        font-size: 13px;
+    }
+    .Alphabet {
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        //background: transparent;
+        color: $black;
+        font-size: 25px;
+        padding-top: 3px;
+        line-height: 43px;
+    }
+}
+
+.letterPad_Row {
+    position: absolute;
+    width: $max-conv-width;
+    max-width: 327px;
+    //left: 50%;
+    left: -44%;
+    bottom: 43px;
+    height: 321px;
+    padding: 15px;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    .keyNum, 
+    .numeric, 
+    .lowercase, 
+    .atSign {
+        width: 41px;
+        height: 41px;
+        @include border-radius($max-conv-width / 2);
+        float: left;
+        margin: 3%;
+        margin-top: 0;
+        background: rgba(255, 255, 255, .6);
+        font-size: 15px;
+        color: $black;
+        //text-transform: lowercase;
+       // padding-left: 12px;
+        padding: 0;
+        padding-top: 11px;
+        cursor: pointer;
+        text-align: center;
+        border: 1px solid #eee;
+    }
+
+    .uppers {
+        &:nth-child(56),
+        &:nth-child(57),
+        &:nth-child(59),
+        &:nth-child(60) {
+            border: 0;
+            background: transparent;
+        }
+    }
+
+    .lowers {
+        &:nth-child(26),
+        &:nth-child(27),
+        &:nth-child(29),
+        &:nth-child(30) {
+            border: 0;
+            background: transparent;
+        }
+    }
+
+    .numeric,
+    .lowercase, .atSign {
+        position: absolute;
+        bottom: 7px;
+        left: 75px;
+        font-weight: bold;
+    }
+
+    .lowercase {
+        left: 191px;
+        //text-transform: uppercase;
+    }
+
+    .atSign {
+        left: 15px;
+    }
+
+    .uppers {
+        display: none;
+    }
+
+
+    .signPad_Row {
+        position: absolute;
+        width: 100%;
+        bottom: 7px;
+        left: -100%;
+        padding: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        //background: #fff;
+        // border: 1px solid #000;
+
+        .lowercase {
+            bottom: 0;
+        }
+    }
+
+    .signPleft {
+        left: 107%;
+        animation: signPleft .3s 1 forwards;
+        -webkit-animation: signPleft .3s 1 forwards;
+        -moz-animation: signPleft .3s 1 forwards;
+    }
+
+    @include keyframes(signPleft) {
+
+        0% { left: -100%; }
+        100% { left: 107%; }
+    }
+
+}
+
+
+.letterKeyLeft {
+    left: 50%;
+    @include animation( letterKeyLeft 0.4s 1 forwards );
+}
+
+@keyframes letterKeyLeft {
+
+    0% { left: -44%; }
+    100% { left: 50%; }
+}
+
+@-webkit-keyframes letterKeyLeft {
+
+    0% { left: -44%; }
+    100% { left: 50%; }
+}
+
+@-moz-keyframes letterKeyLeft {
+
+    0% { left: -44%; }
+    100% { left: 50%; }
+}
+
+
+
+.tkeyPad {
+    position: relative;
+    float: left;
+    width: $max-conv-width;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.leftHome {
+    left: -100%;
+}
+
+.AppSignup {
+    position: fixed;
+    background: #f9f9f9;
+    z-index: 1;
+    left: auto;
+    right: -100%;
+    padding: 25px;
+    padding-top: 0;
+    @include transition(all .4s);
+
+    header {
+        position: relative;
+        width: $max-conv-width;
+        float: left;
+        padding: 17px;
+        padding-bottom: 14px;
+        span {
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .Hbtttrace {
+            width: 70px;
+            height: 3px;
+            background: #ddd;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+        }
+    }
+
+    .subTitlesup {
+        width: $max-conv-width;
+        float: left;
+        font-size: 13px;
+        color: #7c7777; 
+        text-align: left;
+        padding-top: 30px;
+        padding-bottom: 7px;
+    }
+
+    form {
+        .InpPassCode {
+            position: relative;
+            width: $max-conv-width;
+            height: 50px;
+            float: left;
+            border: 2px solid #eee;
+            padding: 15px;
+            font-size: 15px;
+            color: #7c7777;
+            text-align: left;
+            padding-top: 14px;
+            letter-spacing: 1px;
+            background: $white;
+            &:focus {
+                outline: none;
+            }
+            .placeholder {
+                position: absolute;
+                width: $max-conv-width;
+                height: $max-conv-height;
+                top: 0;
+                left: 0;
+                padding: 15px;
+                color: #ddd;
+            }
+        }
+        .bttInp {
+            width: $max-conv-width;
+            float: left;
+            text-align: left;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+
+        .crBtn_Floor {
+            position: relative;
+            width: $max-conv-width;
+            height: 45px;
+            float: left;
+            margin-top: 17px;
+
+            .CreatePass {
+                position: absolute;
+                height: $max-conv-width;
+                padding-left: 70px;
+                padding-right: 70px;
+                @include border-radius(50px);
+                background: #abdcf5;
+                color: $white;
+                font-size: 15px;
+                left: $max-conv-width / 2;
+                transform: translate(-50%, 0);
+                -webkit-transform: translate(-50%, 0);
+                -moz-transform: translate(-50%, 0);
+                padding-top: 15px;
+                font-weight: bold;
+                letter-spacing: 1px;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    #KeyPad {
+        .keyNum:nth-child(7) {
+            color: $black;
+        }
+    }
+
+    .keyPad_Row {
+        bottom: -410px;
+    }
+
+    .Success_popUp {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, .20);
+        padding: 20px;
+        display: none;
+        .Success_in {
+            width: 100%;
+            max-height: 170px;
+            position: relative;
+            background: $white;
+            @include border-radius(7px);
+            padding: 15px;
+           // bottom: -25%;
+            bottom: -104%;
+            text-align: center;
+            span {
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+                color: #777;
+            }
+            span.setPass {
+                width: 100%;
+                display: inline-block;
+                color: $black;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding-bottom: 9px;
+            }
+            span.gSec {
+                width: 100%;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                //color: $black;
+                letter-spacing: 0;
+                padding: 7px;
+            }
+        }
+    }
+
+    .Success-Up {
+        bottom: -25%;
+        @include animation(successup 0.4s 1 forwards);
+    }
+
+    @keyframes successup {
+        0% { bottom: -104%; }
+        100% { bottom: -25%; }
+    }
+
+    @-webkit-keyframes successup {
+        0% { bottom: -104%; }
+        100% { bottom: -25%; }
+    }
+
+    @-moz-keyframes successup {
+        0% { bottom: -104%; }
+        100% { bottom: -25%; }
+    }
+
+    .letterPad_Row {
+        .del {
+            position: absolute;
+            bottom: 29px;
+            right: 29px;
+        }
+    }
+} 
+
+
+.SettingsApp, 
+.createTApp {
+
+    header {
+        position: relative;
+        width: $max-conv-width;
+        float: left;
+        padding: 17px;
+        padding-bottom: 14px;
+        z-index: 1;
+        background: $white;
+        span {
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .Hbtttrace {
+            width: 70px;
+            height: 3px;
+            background: #ddd;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+        }
+
+        .backLink {
+            position: absolute;
+            left: 17px;
+            top: 17px;
+            color: #333;
+            text-decoration: none;
+            text-align: left;
+            i {
+                font-size: 25px;
+            }
+        }
+
+        .saveSettings, 
+        .RemoveKeyBoard {
+            position: absolute;
+            right: 17px;
+            top: 17px;
+            font-size: 15px;
+            color: #06617b;
+        }
+
+        .RemoveKeyBoard {
+            display: none;
+        }
+
+    }
+
+    .userInfo {
+        position: relative;
+        width: 100%;
+        float: left;
+        padding-top: 20px;
+        color: #a5a2a2;
+        font-size: 13px;
+        z-index: 1;
+        background: $white;
+    }
+
+
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 15px;
+        height: auto;
+       // border: 1px solid #000;
+    }
+
+    .signPad_Row {
+        background: $white;
+    }
+}
+
+
+
+.keypadUp {
+    bottom: 0;
+    @include animation(keypadup 0.3s 1 forwards);
+}
+
+@keyframes keypadup {
+    0% { bottom: -362px; }
+    100% { bottom: 0; }
+}
+@-webkit-keyframes keypadup {
+    0% { bottom: -362px; }
+    100% { bottom: 0; }
+}
+@-moz-keyframes keypadup {
+    0% { bottom: -362px; }
+    100% { bottom: 0; }
+}
+
+.rightSign {
+    right: 0;
+}
+
+.keyPadHUp {
+    bottom: 0;
+    @include animation( keyPadHUp 0.3s 1 forwards );
+}
+
+@keyframes keyPadHUp {
+    0% { bottom: 0; }
+    100% { bottom: -470px; }
+}
+
+@-webkit-keyframes keyPadHUp {
+    0% { bottom: 0; }
+    100% { bottom: -470px; }
+}
+
+@-moz-keyframes keyPadHUp {
+    0% { bottom: 0; }
+    100% { bottom: -470px; }
+}
+
+
+.letterPad_Row {
+    bottom: -23px;
+    .del {
+        position: absolute;
+        width: auto;
+        bottom: 21px;
+        left: 260px;
+    }
+}
+
+.AppSignup {
+    .letterPad_Row {
+        //bottom: 73px;
+        top: 240px; //42%
+    }
+}
+
+input.keyNumVal {
+    display: none;
+}
+
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #ddd; 
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #ddd; 
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #ddd; 
+} 
+
+
+.deskApp {
+    overflow: auto;
+    header {
+        width: $max-conv-width;
+        position: relative;
+        float: left;
+        min-height: 222px;
+        overflow: hidden;
+        img {
+            //position: relative;
+            position: absolute;
+            width: auto;
+            height: 250px;
+            left: 0;
+            top: 0;
+        }
+
+        .top_header {
+            width: $max-conv-width;
+            height: $max-conv-height;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(7, 49, 61, 0.68);
+            padding: 39px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-top: 27px;
+            padding-right: 27px;
+            .nameTitle {
+                width: $max-conv-width;
+                color: $white;
+                font-weight: 400;
+                text-align: left;
+                float: left;
+                font-size: 31px;
+            }
+            .Jposition {
+                width: $max-conv-width;
+                color: #d5d2d2;
+                text-align: left;
+                font-size: 12px;
+                float: left;
+                margin-top: 3px;
+                letter-spacing: 0.5px;
+            }
+
+            .edit_Blk {
+                width: $max-conv-width;
+                float: left;
+                margin-top: 20px;
+                // border: 1px solid #fff;
+                // height: 35px;
+
+                .settingd_btn {
+                    position: relative;
+                    float: left;
+                    height: 32px;
+                    border: 1px solid $white;
+                    background: transparent;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding: 9px;
+                    padding-left: 10px;
+                    padding-right: 50px;
+                    padding-top: 8px;
+                    letter-spacing: 0.5px;
+                    text-decoration: none;
+                }
+
+                .WHours {
+                    width: 40%;
+                    float: right;
+                    margin-top: 3px;
+                   // border: 1px solid #fff;
+                    .WHtitle, 
+                    .WHdesc {
+                        width: $max-conv-width;
+                        float: left;
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: $white;
+                        text-align: left;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .WHdesc {
+                        font-weight: bold;
+                        color: #d5d2d2;
+                        letter-spacing: 0.5px;
+                        padding-top: 4px;
+                    }
+                }
+            }
+
+            .code7, 
+            .access7 {
+                width: $max-conv-width;
+                position: absolute;
+                bottom: 35px;
+                left: 0;
+                font-size: 10px;
+                color: $white;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                text-align: left;
+                padding-left: 50px;
+                span {
+                    color: #d5d2d2;
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .access7 {
+                bottom: 18px;
+            }
+        }
+    }
+} 
+
+.workApp, 
+.teamsApp, 
+.ClientsApp {
+    width: $max-conv-width;
+    //height: 200px;
+    float: left;
+    position: relative;
+    background: #06617b;
+
+    .leftApp, 
+    .rightApp {
+        position: relative;
+        width: 50%;
+        padding: 15px;
+        float: left;
+
+
+        // height: 150px;
+        // border: 1px solid #fff;
+    }
+
+    .leftApp {
+        padding-left: 20px;
+    }
+
+    .rightApp {
+        padding-right: 20px;
+    }
+}
+
+.teamsApp {
+    background: #2a768c;
+}
+
+.ClientsApp {
+    background: $white;
+}
+
+.ChartApp {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    @include border-radius($max-conv-width / 2);
+    float: left;
+    background: rgba(6, 87, 111, 1);
+    padding: 10px;
+
+    .sTartCa {
+        position: absolute;
+        width: 32px;
+        height: 1px;
+        border-top: 1px solid $white;
+        left: 125px;
+        top: 74px;
+        z-index: 1;
+
+        .sTnum {
+            position: absolute;
+            top: -10px;
+            right: -12px;
+            font-size: 15px;
+            color: $white;
+        }
+    }
+}
+
+.ChartApp.CaWork {
+    .sTartCa {
+        border-top: 1px solid #ddb117;
+    }
+}
+
+.ChartApp.CaTeam {
+    background: rgba(6, 87, 111, .4);
+    .sTartCa {
+        border-top: 1px solid #c85b42;
+    }
+}
+
+.ChartApp.CaClients {
+    background: #eee;
+    .sTartCa {
+        border-top: 1px solid #06617b;
+        .sTnum {
+            color: #06617b;
+        }
+    }
+}
+
+.workApp, 
+.ClientsApp {
+    .rightApp {
+        padding-left: 0;
+    }
+}
+
+.workApp, 
+.teamsApp {
+    h2 {
+        width: $max-conv-width;
+        float: left;
+        text-align: left;
+        font-size: 20px;
+        line-height: 20px;
+        color: #ddd;
+        font-weight: 100;
+        padding: 15px;
+        padding-top: 7px;
+    }
+    .DaysOff {
+        width: $max-conv-width;
+        float: left;
+        padding: 15px;
+
+        .Day_Off {
+            width: $max-conv-width;
+            float: left;
+            font-size: 11px;
+            color: $white;
+            text-align: left;
+        }
+    }
+    .actBtn {
+        position: relative;
+        float: left;
+        text-decoration: none;
+        color: #b3e0ed;
+        font-size: 10px;
+        padding: 17px;
+        border: 1px solid #4a8393;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 15px;
+        margin-top: 21px;
+        margin-bottom: 7px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        &:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #4a8393;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .DateTime {
+        float: left;
+        width: $max-conv-width;
+        color: $white;
+        font-weight: 100;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        margin-top: 7px;
+    }
+
+    .Team_Request {
+
+        width: $max-conv-width;
+        float: left;
+        margin-top: 7px;
+        margin-bottom: 15px;
+
+        .TRequest_title {
+            width: $max-conv-width;
+            float: left;
+            font-size: 12px;
+            color: $white;
+            font-weight: bold;
+            padding-bottom: 14px;
+        }
+
+        .Teamms_Blk {
+            position: relative;
+            float: left;
+            width: 100%;
+            //height: 222px;
+            //height: 105px;
+            overflow: auto;
+
+            .Teamms_Blk_In {
+                position: relative;
+                width: max-content; // auto
+               // height: 100%;
+                padding: 26px;
+                padding-top: 0;
+                padding-bottom: 0;
+
+                .r_Team {
+                    position: relative;
+                    width: 320px;
+                    background: #06617b;
+                    float: left;
+                    height: 108px;
+                    padding: 10px;
+                    margin-right: 30px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .img_F {
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        float: left;
+                        @include border-radius(50%);
+
+                        img {
+                            width: 100%;
+                            @include border-radius(50%);
+                        }
+                    }
+
+                    .t_info {
+                        position: relative;
+                        width: 215px;
+                        height: 100%;
+                        float: left;
+                        margin-left: 15px;
+                        //border: 1px solid #fff;
+
+                        .t_info_Title {
+                            width: 100%;
+                            float: left;
+                            color: #b3e0ed;
+                            font-size: 12px;
+                            font-weight: bold;
+                            text-align: left;
+                            padding: 7px;
+                            padding-left: 0;
+                        }
+
+                        .t_info_parag {
+                            width: 100%;
+                            float: left;
+                            padding: 7px;
+                            font-size: 11px;
+                            color: $white;
+                            text-align: left;
+                            padding-top: 0;
+                            padding-left: 0;
+                        }
+
+                        .actBtn {
+                            margin: 0;
+                            float: right;
+                            text-transform: uppercase;
+                        }
+                    }
+            
+                    .close_Team {
+                        position: absolute;
+                        right: 10px;
+                        top: 0;
+                        color: $white;
+                        font-size: 23px;
+                        @include transform(45deg);
+                        //cursor: pointer;
+                        z-index: 10;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.acceptModal, 
+.removeModal, .sAllTeams {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 100;
+    
+    .aModal_in, 
+    .rModal_in {
+        position: absolute;
+        width: 80%;
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: $white;
+        //top: 37%;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #777;
+    }
+
+    .sAll_In {
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background: $white;
+        left: 0;
+        bottom: -100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 15px;
+    }
+}
+
+.aModalNone {
+    display: none;
+}
+
+.tAccepted {
+    top: 37%;
+    @include animation( tAccepted .3s 1 forwards);
+}
+
+@include keyframes(tAccepted) {
+
+    0% { top: 100%; }
+    100% { top: 37%;  }
+}
+
+.tRemoved {
+    top: 37%;
+    @include animation( tRemoved .3s 1 forwards);
+}
+
+@include keyframes(tRemoved) {
+
+    0% { top: 100%; }
+    100% { top: 37%;  }
+}
+
+.sTeams {
+    bottom: 0;
+    @include animation( sTeams .3s 1 forwards);
+}
+
+@include keyframes(sTeams) {
+
+    0% { bottom: -100%; }
+    100% { bottom: 0; }
+
+}
+
+
+
+// .teamsApp {
+//     .Donut7 {
+//         border: 15px solid #c85b42;
+//     }
+// }
+
+.pchart.pc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pchart.pc-container svg.pc-chart {
+  display: block;
+  height: 100%;
+}
+
+.pchart.pc-container svg.pc-chart path.pc-bg {
+  fill: none;
+  stroke: #d8d6d6;
+  stroke-width: 4;
+  stroke-dasharray: 100,100;
+}
+
+.pchart.pc-container svg.pc-chart path.pc-fill {
+  fill: none;
+  stroke-width: 4;
+  stroke: black;
+  stroke-dasharray: 0,100;
+  -webkit-transition: stroke-dasharray 1s linear;
+  transition: stroke-dasharray 1s linear;
+}
+
+.pchart.pc-container div.pc-text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pchart.pc-container div.pc-text:hover .pc-num #pc-percent {
+  opacity: 0%;
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+}
+
+.pchart.pc-container div.pc-text:hover .pc-num #pc-actual {
+  opacity: 100%;
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+}
+
+.pchart.pc-container div.pc-text .pc-num {
+  min-height: 1px;
+  margin-top: 8%;
+  height: 25% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-percent {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.075rem !important;
+  position: absolute;
+  left: 50%;
+  opacity: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-actual {
+  font-size: 1.3rem;
+  font-weight: 400;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  letter-spacing: 0.075rem !important;
+  position: absolute;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.pchart.pc-container div.pc-text #pc-unit {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+
+#containerW {
+    height: 130px;
+    width: 130px;
+    @include transform(90deg);
+}
+#containerW .pc-text{
+    color: #fff;
+    //transform: rotate(-90deg);
+    @include transform(-90deg);
+    /* top: 0; */
+    left: 2px;
+    //font-family: "Roboto Condensed";
+}
+#containerW .pc-bg {
+   stroke: transparent;
+}
+#containerW .pc-fill{
+    stroke: #ddb117;
+}
+
+
+#containerT {
+    height: 130px;
+    width: 130px;
+    @include transform(90deg);
+}
+#containerT .pc-text{
+    color: #fff;
+    //font-family: "Roboto Condensed";
+    @include transform(-90deg);
+    /* top: 0; */
+    left: 6px;
+}
+#containerT .pc-bg {
+   stroke: transparent;
+}
+#containerT .pc-fill{
+    stroke: #c85b42;
+}
+
+
+#containerC {
+    height: 130px;
+    width: 130px;
+    @include transform(90deg);
+}
+#containerC .pc-text{
+    color: #06617b;
+    //font-family: "Roboto Condensed";
+    @include transform(-90deg);
+    /* top: 0; */
+    left: 6px;
+}
+#containerC .pc-bg {
+   stroke: rgba(222, 228, 230, 0.7);
+}
+#containerC .pc-fill{
+    stroke: #06617b;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-percent, 
+.pchart.pc-container div.pc-text .pc-num #pc-actual {
+    top: 26px;
+    font-size: 48px;
+    opacity: 1;
+}
+
+
+footer {
+    position: relative;
+    width: $max-conv-width;
+    float: left;
+    padding: 15px;
+    padding-bottom: 10px;
+    background: $white;
+    height: 117px;
+}
+
+.dispN {
+    display: none;
+}
+
+.fakeForm {
+    width: $max-conv-width;
+    float: left;
+    padding: 20px;
+    position: relative;
+    .formSett {
+        width: $max-conv-width;
+        float: left;
+        padding: 15px;
+        padding-bottom: 10px;
+        font-size: 19px;
+        color: #AEB8BC;
+        text-align: left;
+
+        .SettKeyNum {
+            display: block !important;
+            float: left;
+        }
+    }
+}
+
+.SettingsApp {
+
+    .keyPad_Row {
+        background: $white;
+        bottom: -362px;
+        padding-top: 0;
+        position: absolute;
+        left: 0;
+        z-index: 100;
+        #KeyPad .keyNum:nth-child(7) {
+            color: $black;
+        }
+    }
+
+    .keypadUp {
+        bottom: 225px;
+        -webkit-animation: keypadupS 0.3s 1 forwards;
+        -moz-animation: keypadupS 0.3s 1 forwards;
+        -o-animation: keypadupS 0.3s 1 forwards;
+        animation: keypadupS 0.3s 1 forwards;
+    }
+
+    @include keyframes(keypadupS) {
+        0% { bottom: -362px; }
+
+        100% { bottom: 225px; }
+    }
+
+    .SfnameTop {
+        top: -227px;
+        animation: SfnameTop .3s 1 forwards;
+        -webkit-animation: SfnameTop .3s 1 forwards;
+        -moz-animation: SfnameTop .3s 1 forwards;
+    }
+
+    @include keyframes(SfnameTop) {
+
+        0% { top: 285px; }
+        100% { top: -227px; }
+    }
+
+    .padBubbs {
+        display: none;
+    }
+
+    .letterPad_Row {
+        max-width: 327px;
+        //left: 185px;
+        bottom: auto;
+        top: 151px;
+        background: $white;
+    }
+
+    .letterPadLeft {
+        left: 185px;
+        animation: letterPadLeft .3s 1 forwards;
+        -webkit-animation: letterPadLeft .3s 1 forwards;
+        -moz-animation: letterPadLeft .3s 1 forwards;
+    }
+
+    @include keyframes(letterPadLeft) {
+        0% { left: -44%; }
+        100% { left: 185px; }
+    }
+
+
+    .TLess58 {
+        top: -54px;
+        animation: TLess58 .3s 1 forwards;
+        -webkit-animation: TLess58 .3s 1 forwards;
+        -moz-animation: TLess58 .3s 1 forwards;
+    }
+
+    .TLess102 {
+        top: -102px;
+        animation: TLess102 .3s 1 forwards;
+        -webkit-animation: TLess102 .3s 1 forwards;
+        -moz-animation: TLess102 .3s 1 forwards;   
+    }
+
+    .TLess150 {
+        top: -150px;
+        animation: TLess150 .3s 1 forwards;
+        -webkit-animation: TLess150 .3s 1 forwards;
+        -moz-animation: TLess150 .3s 1 forwards;   
+    }
+
+    .TLess198 {
+        top: -150px;
+        animation: TLess198 .3s 1 forwards;
+        -webkit-animation: TLess198 .3s 1 forwards;
+        -moz-animation: TLess198 .3s 1 forwards;   
+    }
+
+    @include keyframes(TLess58) {
+
+        0% { top: 0; }
+        100% { top: -58px; }
+    }
+
+    @include keyframes(TLess102) {
+
+        0% { top: 0; }
+        100% { top: -102px; }
+    }
+
+    @include keyframes(TLess150) {
+
+        0% { top: 0; }
+        100% { top: -150px; }
+    }
+
+    @include keyframes(TLess198) {
+
+        0% { top: 0; }
+        100% { top: -198px; }
+    }
+
+}
+
+
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 30px;
+  height: 18px;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+  float: left;
+}
+
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #ddd;
+  //box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+  background: #06617b;
+}
+
+.react-switch-checkbox:checked + .react-switch-label {
+    background: transparent;
+    border: 1px solid #06617b;
+}
+
+.react-switch-label:active .react-switch-button {
+  //width: 60px;
+}
+
+.Switch_Box, 
+.Switch_Title {
+    float: left;
+}
+.Switch_Box {
+    padding-left: 14px;
+    margin-top: 15px;
+}
+
+.Switch_Title {
+    font-size: 13px;
+    color: #06617b;
+    padding-right: 10px;
+    position: relative;
+    top: 1PX;
+}
+
+
+.CalendarApp, 
+.ChatApp {
+    float: left;
+    width: 100%;
+    margin-top: 50px;
+
+    .ch_Fl_01 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 100%;
+        z-index: 1;
+        //display: none;
+    }
+
+    .typeText, .Top_Header {
+        width: 100%;
+        min-height: 77px;
+        background: rgba(20, 20, 20, 1); // #141414
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 7px;
+        text-align: left;
+        padding-left: 15px;
+        border-top: 1px solid #3d3d3d;
+        z-index: 10;
+        .typ_Fl_01 {
+            position: relative;
+            width: 88%;
+            min-height: 33px !important;
+            color: #eee;
+            font-size: 15px;
+            display: inline-block;
+            padding: 8px;
+            border: 0;
+            background: transparent;
+            font-weight: 100;
+            .keyNum {
+                color: $white;
+                font-size: 13px;
+                padding-right: 1px;
+            }
+
+            .keyNum.lowers, .keyNum.uppers {
+                display: inline !important;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .Top_Header {
+        position: absolute;
+        border-bottom: 1px solid #3d3d3d;
+        border-top: 0;
+        height: 57px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding-left: 50px;
+        img {
+            width: 43px;
+            height: 43px;
+            @include border-radius(50%);
+            float: left;
+        }
+
+        ._Title_Top {
+            width: 70%;
+            float: left;
+            padding-left: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: $white;
+            padding-top: 9px;
+        }
+
+        ._SubTitle_Top {
+            width: 70%;
+            float: left;
+            padding-left: 15px;
+            font-size: 11px;
+            font-weight: bold;
+            color: #999;
+        }
+
+        .status {
+            width: 13px;
+            height: 13px;
+            position: absolute;
+            background: #008b00;
+            border-radius: 50%;
+            top: 16px;
+            left: 189px;
+            border: 2px solid #cce7cc;
+        }
+    }
+
+    .chatLeft {
+        left: 0;
+        @include animation(chatLeft .4s 1 forwards);
+    }
+
+    @include keyframes(chatLeft) {
+
+        0% { left: 100%; }
+        100% { left: 0; }
+    }
+
+    .chatUp {
+        bottom: 174px;
+        @include animation(chatup .3s 1 forwards);
+    }
+
+    @include keyframes(chatup) {
+
+        0% { bottom: 0; }
+        100% { bottom: 174px; }
+    }
+}
+
+.ChatApp {
+
+    .chatkeypad {
+        .keyPad_Row {
+
+            position: absolute;
+            width: 100%;
+            padding-top: 20px;
+            //bottom: 32px;
+            bottom: -152px;
+
+            .padBubbs { display: none; }
+
+            #KeyPad {
+                width: 100%;
+                max-width: initial;
+                float: left;
+                position: relative;
+                left: 0;
+                transform: translate(0, 0);
+                -webkit-transform: translate(0, 0);
+                -moz-transform: translate(0, 0);
+                background: rgba(20, 20, 20, 0.7);
+                padding: 15px;
+                padding-top: 0;
+                .keyNum, 
+                .Alphabet {
+                    width: 8%;
+                    max-width: 27.59px;
+                    height: 25px;
+                    @include border-radius(3px);
+                    float: left;
+                    margin: 1%;
+                    /* margin-top: 0; */
+                    background: #3d3d3d;
+                    font-size: 13px;
+                    color: $white;
+                    padding: 0;
+                    padding-top: 3px;
+                    cursor: pointer;
+                    text-align: center;
+                    border: 1px solid #777;
+                }
+
+                .Alphabet {
+                    line-height: 20px;
+                    position: relative;
+                }
+
+            }
+        }
+
+        .letterPad_Row {
+            position: absolute;
+            width: 100%;
+            max-width: initial;
+            left: 187px;
+            bottom: 43px;
+            height: 169px;
+            padding: 15px;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            bottom: -30%;
+            background: rgba(20, 20, 20, .7);
+            padding-top: 0;
+            .keyNum, 
+            .atSign, 
+            .numeric, 
+            .lowercase {
+                width: 8%;
+                max-width: 27.59px;
+                height: 25px;
+                @include border-radius(3px);
+                float: left;
+                margin: 1%;
+                /* margin-top: 0; */
+                background: #3d3d3d;
+                font-size: 13px;
+                color: $white;
+                padding: 0;
+                padding-top: 3px;
+                cursor: pointer;
+                text-align: center;
+                border: 1px solid #777;
+            }
+
+            .numeric, 
+            .lowercase {
+                position: relative;
+                left: 0;
+                bottom: 0;
+            }
+
+            .signPad_Row {
+                display: none;
+            }
+
+            .del {
+                color: $white;
+            }
+        }
+    }
+
+    .padUp {
+        bottom: 0;
+        @include animation(padUp .3s 1 forwards);
+    }
+
+    @include keyframes(padUp) {
+
+        0% { bottom: -30%; }
+        100% { bottom: 0; }
+    }
+
+
+    .receive {
+        overflow: auto;
+        // margin-top: 37px;
+        text-align: left;
+        padding: 15px;
+        /* float: left; */
+        width: 100%;
+        max-height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 77px;
+        padding-top: 138px;
+        .temp {
+            width: 100%; 
+            float: left; 
+            padding: 7px;
+
+            .msgBy {
+                position: relative;
+                float: right;
+                max-width: 85%;
+
+                img {
+                    position: absolute;
+                    z-index: 1;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    top: -4px;
+                    left: -10px;
+                    border: 2px solid $white;
+                } 
+            }
+
+            .msgRec {
+                position: relative;
+                float: right;
+                padding: 20px;
+                padding-left: 36px;
+                padding-bottom: 15px;
+                color: #eee;
+                background: #2b2b2b;
+                border-radius: 4px;
+                max-width: 100%;
+                font-size: 15px;
+                word-break: break-all;
+                line-height: 15px;
+
+                img {
+                    position: relative;
+                    border-radius: 0;
+                    border: 0;
+                    width: auto;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .recUp {
+        bottom: 252px;
+        @include animation(recUp .3s 1 forwards);
+    }
+
+    @include keyframes(recUp) {
+
+        0% { bottom: 77px; }
+        100% { bottom: 252px; }
+    }
+}
+
+
+
+@media screen and (orientation: landscape) {
+    .Plandscape {
+        display: block;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .Plandscape {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1920px) and (max-height: 1440px) {}
+
+@media all and (min-width: 1001px) {}

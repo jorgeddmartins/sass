@@ -1,460 +1,488 @@
 @import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
 @import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
 
+@include thisComponent('NewLeads') {
 
-// New Leads Grid
-.TopLeads {
-	width: $max-conv-width;
-	height: $small-fix-40;
-	position: relative;
-	float: left;
-
-	.panel-input {
+	// New Leads Grid
+	.TopLeads, .TopGridLead {
+		width: $max-conv-width;
+		height: $small-fix-40;
 		position: relative;
-		height: $max-conv-height;
-		margin: $small-fix-05;
-		margin-top: $null-conv;
 		float: left;
-
-		input {
+		.panel-input {
+			position: relative;
 			height: $max-conv-height;
-			background: $white;
-			padding: $small-fix-10 + 2;
-			color: #025a87;
-			font-size: $small-fix-10 + 2;
-			text-transform: uppercase;
-			border: $small-fix-01 solid #ddd;
-			&:focus {
-				outline: $null-conv;
+			margin: $small-fix-05;
+			margin-top: $null-conv;
+			float: left;
+			input {
+				height: $max-conv-height;
+				background: $white;
+				padding: $small-fix-10 + 2;
+				color: #025a87;
+				font-size: $small-fix-10 + 2;
+				text-transform: uppercase;
+				border: $small-fix-01 solid #ddd;
+				&:focus {
+					outline: $null-conv;
+				}
+			}
+			.daysTime {
+				width: 150px;
+				cursor: pointer;
+			} 
+			.Drop_Panel {
+				position: absolute;
+				left: $null-conv;
+				top: $max-conv-top + 2; //102%
+				width: $max-conv-width;
+				background: $white;
+				border: $small-fix-01 solid #ddd;
+				z-index: 10;
+				margin: $null-conv;
+				display: none;
+				li {
+					float: left;
+					width: $max-conv-width;
+					.dropItem {
+						width: $max-conv-width;
+						float: left;
+						padding: $small-fix-10 + 2;
+						padding-top: $small-fix-07;
+	    				padding-bottom: $small-fix-07;
+						color: #999;
+						font-size: $small-fix-13;
+						border-bottom: $small-fix-01 solid #eee;
+						cursor: pointer;
+						@include transition(.3s);
+						&:hover {
+							background: #fafafa;
+						}
+					}
+				}
+			}
+
+			label {
+				padding: $null-conv $small-fix-15;
+			    position: relative;
+			    height: $max-conv-height;
+			    background: #f9f9f9;
+			    border: 1px solid #eee;
+			    border-right: $null-conv;
+			    line-height: 2.8em;
+			    float: left;
+			    margin: $null-conv;
+			}
+			.k-widget {
+				width: 190px;
+			    height: $small-fix-40;
+			    position: relative;
+			    float: left;
+			    background: $white;
+			    border: 1px solid #eee;
+			    color: #025a87;
+			    .k-input {
+		    	    width: $max-conv-width;
+				    height: $max-conv-height;
+				    float: left;
+				    padding: $small-fix-07;
+				    padding-right: 45px;
+				    border: $null-conv;
+				    position: absolute;
+				    z-index: 1;
+				    background: transparent;
+				    color: #0A9A7A;
+				    font-size: $small-fix-13;
+				    font-weight: bold;
+				    text-transform: initial;
+			    }
+			}
+
+			.k-widget-calendar {
+				&:after {
+					content: '\f073';
+				    font-family: 'FontAwesome';
+				    width: $small-fix-40;
+				    position: absolute;
+				    right: $null-conv;
+				    top: $null-conv;
+				    text-align: center;
+				    height: $max-conv-height;
+				    font-size: $small-fix-20;
+				    line-height: 1.9em;
+				    background: #f9f9f9;
+				    border-left: 1px solid #eee;
+				    color: #1A8755;
+				}
+			}
+
+			.boxSystem_Arrow {
+	    		width: 44px;
+	    		padding: $null-conv $small-fix-15;
+			    position: relative;
+			    height: $max-conv-height;
+			    background: #f9f9f9;
+			    border: $small-fix-01 solid #eee;
+			    line-height: 2.8em;
+			    float: left;
+			    margin: $null-conv;
+			    cursor: pointer;
+			    i {
+			    	font-size: $small-fix-25;
+				    position: absolute;
+				    left: $null-conv;
+				    right: $null-conv;
+				    text-align: center;
+				    top: $small-fix-05 + 1;
+				    color: $black;
+				    font-weight: bold;
+			    }
+			}
+
+			.k-button {
+				height: $small-fix-40;
+			    background: #0A9A7A;
+			    border: $null-conv;
+			    color: $white;
+			    text-transform: uppercase;
+			    padding-left: $small-fix-55;
+			    padding-right: $small-fix-55;
+			    border: 1px solid #0A9A7A;
+			    @include transition(.7s);
+			    font-size: 14px;
+			    &:focus {
+			    	outline: $null-conv;
+			    }
 			}
 		}
 
-		.daysTime {
-			width: 150px;
-			cursor: pointer;
-		} 
+		.daysFl {
+			&:after {
+				position: absolute;
+			    content: "";
+			    vertical-align: middle;
+			    border-left: $small-fix-05 solid transparent;
+			    border-right: $small-fix-05 solid transparent;
+			    top: $small-fix-17 + 1;
+			    right: $small-fix-13 + 1;
+			    border-bottom: $small-fix-05 solid $black;
+			    @include transform(180deg);
+			    @include transition(.3s);
+			    cursor: pointer;
+			}
+		}
 
-		.Drop_Panel {
-			position: absolute;
-			left: $null-conv;
-			top: $max-conv-top + 2; //102%
+		.rotate0 {
+			&:after {
+				@include transform(0deg);
+			}
+		}
+	}
+
+	#nav-right .moveRight {
+		right: 1170px !important;
+	}
+
+	// Lead Table
+	.tableLead {
+		position: relative; 
+		width: $max-conv-width; 
+		height: 92.7%; 
+		float: left; 
+		margin-top: $small-fix-20; 
+
+		.tabsTL {
 			width: $max-conv-width;
+			height: $small-fix-40;
+			float: left;
+			position: relative;
+			z-index: 1;
+
+			.tabL {
+				padding: $small-fix-07 + 2;
+			    height: $max-conv-height;
+			    position: relative;
+			    float: left;
+			    font-size: $small-fix-10 + 2;
+			    border: $small-fix-01 solid #ddd;
+			    border-right: $null-conv;
+			    padding-left: $small-fix-20 + 2; // 22px
+			    padding-right: $small-fix-20 + 2; // 22px
+			    background: #f2f2f2;
+			    border-top-left-radius: $small-fix-03;
+			    border-top-right-radius: $small-fix-03;
+			    cursor: pointer;
+			    text-transform: uppercase;
+	    		padding-top: $small-fix-10 + 2;
+	    		@include transition(.3s);
+			    &:last-child {
+			    	border-right: $small-fix-01 solid #ddd;
+			    }
+			    &:hover {
+			    	background: $white;
+			    }
+			}
+
+			.selected {
+				background: $white;
+				border-bottom: 1px solid $white;
+				cursor: default;
+			}
+		}
+
+		.tableLead_Grid {
+			position: relative;
+			float: left;
+			width: $max-conv-width;
+			height: 96%;
 			background: $white;
-			border: $small-fix-01 solid #ddd;
-			z-index: 10;
-			margin: $null-conv;
-			display: none;
-			li {
-				float: left;
+			border: 1px solid #ddd;
+			top: -1px;
+
+			.top_Bar {
 				width: $max-conv-width;
-				.dropItem {
-					width: $max-conv-width;
-					float: left;
-					padding: $small-fix-10 + 2;
-					padding-top: $small-fix-07;
-    				padding-bottom: $small-fix-07;
-					color: #999;
+				display: inline-block;
+				position: relative;
+				padding: $small-fix-07;
+				.top_Bar_Msg {
 					font-size: $small-fix-13;
-					border-bottom: $small-fix-01 solid #eee;
+					position: relative;
+					top: $small-fix-10;
+				}
+				.top_Bar_Btn {
+					padding: $small-fix-10 $small-fix-20;
+					font-size: $small-fix-10 + 2;
+					text-transform: uppercase;
+					float: right;
+					background: #f2f2f2;
+					border: 1px solid #ddd;
+					margin-left: $small-fix-02;
+					margin-right: $small-fix-02;
 					cursor: pointer;
 					@include transition(.3s);
 					&:hover {
-						background: #fafafa;
+						background: #ddd;
 					}
 				}
 			}
 		}
 
-		label {
-			padding: $null-conv $small-fix-15;
-		    position: relative;
-		    height: $max-conv-height;
-		    background: #f9f9f9;
-		    border: 1px solid #eee;
-		    border-right: $null-conv;
-		    line-height: 2.8em;
-		    float: left;
-		    margin: $null-conv;
-		}
-
-		.k-widget {
-			width: 190px;
-		    height: $small-fix-40;
-		    position: relative;
-		    float: left;
-		    background: $white;
-		    border: 1px solid #eee;
-		    color: #025a87;
-
-		    .k-input {
-	    	    width: $max-conv-width;
-			    height: $max-conv-height;
-			    float: left;
-			    padding: $small-fix-07;
-			    padding-right: 45px;
-			    border: $null-conv;
-			    position: absolute;
-			    z-index: 1;
-			    background: transparent;
-			    color: #0A9A7A;
-			    font-size: $small-fix-13;
-			    font-weight: bold;
-			    text-transform: initial;
-		    }
-		}
-
-		.k-widget-calendar {
-			&:after {
-				content: '\f073';
-			    font-family: 'FontAwesome';
-			    width: $small-fix-40;
-			    position: absolute;
-			    right: $null-conv;
-			    top: $null-conv;
-			    text-align: center;
-			    height: $max-conv-height;
-			    font-size: $small-fix-20;
-			    line-height: 1.9em;
-			    background: #f9f9f9;
-			    border-left: 1px solid #eee;
-			    color: #1A8755;
-			}
-		}
-
-		.boxSystem_Arrow {
-    		width: 44px;
-    		padding: $null-conv $small-fix-15;
-		    position: relative;
-		    height: $max-conv-height;
-		    background: #f9f9f9;
-		    border: $small-fix-01 solid #eee;
-		    line-height: 2.8em;
-		    float: left;
-		    margin: $null-conv;
-		    cursor: pointer;
-		    i {
-		    	font-size: $small-fix-25;
-			    position: absolute;
-			    left: $null-conv;
-			    right: $null-conv;
-			    text-align: center;
-			    top: $small-fix-05 + 1;
-			    color: $black;
-			    font-weight: bold;
-		    }
-		}
-
-		.k-button {
-			height: $small-fix-40;
-		    background: #0A9A7A;
-		    border: $null-conv;
-		    color: $white;
-		    text-transform: uppercase;
-		    padding-left: 55px;
-		    padding-right: 55px;
-		    border: 1px solid #0A9A7A;
-		    @include transition(.7s);
-		    &:focus {
-		    	outline: $null-conv;
-		    }
-		}
-	}
-
-	.daysFl {
-		&:after {
-			position: absolute;
-		    content: "";
-		    vertical-align: middle;
-		    border-left: $small-fix-05 solid transparent;
-		    border-right: $small-fix-05 solid transparent;
-		    top: $small-fix-17 + 1;
-		    right: $small-fix-13 + 1;
-		    border-bottom: $small-fix-05 solid $black;
-		    @include transform(180deg);
-		    @include transition(.3s);
-		    cursor: pointer;
-		}
-	}
-
-	.rotate0 {
-		&:after {
-			@include transform(0deg);
-		}
-	}
-}
-
-#nav-right .moveRight {
-	right: 1170px !important;
-}
-
-// Lead Table
-.tableLead {
-	position: relative; 
-	width: $max-conv-width; 
-	height: 92.7%; 
-	float: left; 
-	margin-top: $small-fix-20; 
-
-	.tabsTL {
-		width: $max-conv-width;
-		height: $small-fix-40;
-		float: left;
-		position: relative;
-		z-index: 1;
-
-		.tabL {
-			padding: $small-fix-07 + 2;
-		    height: $max-conv-height;
-		    position: relative;
-		    float: left;
-		    font-size: $small-fix-10 + 2;
-		    border: $small-fix-01 solid #ddd;
-		    border-right: $null-conv;
-		    padding-left: $small-fix-20 + 2; // 22px
-		    padding-right: $small-fix-20 + 2; // 22px
-		    background: #f2f2f2;
-		    border-top-left-radius: $small-fix-03;
-		    border-top-right-radius: $small-fix-03;
-		    cursor: pointer;
-		    text-transform: uppercase;
-    		padding-top: $small-fix-10 + 2;
-    		@include transition(.3s);
-		    &:last-child {
-		    	border-right: $small-fix-01 solid #ddd;
-		    }
-		    &:hover {
-		    	background: $white;
-		    }
-		}
-
-		.selected {
-			background: $white;
-			border-bottom: 1px solid $white;
-			cursor: default;
-		}
-	}
-
-	.tableLead_Grid {
-		position: relative;
-		float: left;
-		width: $max-conv-width;
-		height: 96%;
-		background: $white;
-		border: 1px solid #ddd;
-		top: -1px;
-
-		.top_Bar {
+		.GridLeads {
 			width: $max-conv-width;
 			display: inline-block;
 			position: relative;
-			padding: $small-fix-07;
-			.top_Bar_Msg {
-				font-size: $small-fix-13;
-				position: relative;
-				top: $small-fix-10;
-			}
-			.top_Bar_Btn {
-				padding: $small-fix-10 $small-fix-20;
-				font-size: $small-fix-10 + 2;
-				text-transform: uppercase;
-				float: right;
-				background: #f2f2f2;
-				border: 1px solid #ddd;
-				margin-left: $small-fix-02;
-				margin-right: $small-fix-02;
-				cursor: pointer;
-				@include transition(.3s);
-				&:hover {
-					background: #ddd;
-				}
-			}
-		}
-	}
-
-	.GridLeads {
-		width: $max-conv-width;
-		display: inline-block;
-		position: relative;
-    	height: 93.5%;
-		.GridLeads_THeader {
-			width: $max-conv-width;
-			float: left;
-			.tr_heather {
-				position: relative;
+	    	height: 93.5%;
+			.GridLeads_THeader {
 				width: $max-conv-width;
 				float: left;
-				border-bottom: $null-conv;
-				.Grid_th {
-					position: relative;
-					float: left;
-					height: $small-fix-40; 
-					background: #f2f2f2;
-					border: 1px solid #ddd;
-					border-right: $null-conv;
-					border-bottom: $null-conv;
-					font-size: $small-fix-10 + 2;
-				    text-transform: uppercase;
-				    input {
-				    	padding: $small-fix-07 + 2;
-					    padding-left: $small-fix-15;
-					    background: transparent;
-					    border: $null-conv;
-					    position: relative;
-					    float: left;
-					    height: $max-conv-height;
-					    // width: 126.93px;
-					    width: $max-conv-width;
-					    &:focus {
-					    	outline: $null-conv;
-					    }
-				    }
-					&:last-child {
-						border-right: 1px solid #ddd;
-					}
-				}
-				.th_Null {
-					padding-right: 1%; 
-					padding-left: 1.02%;
-				}
-				.th_full {
-					// width: 5%;
-					width: 6.993%;
-					i {
-						position: absolute;
-						right: $small-fix-13;
-					    font-size: $small-fix-10 + 2;
-					    top: $small-fix-13 + 1;
-					    cursor: pointer;
-					}
-				}
-				&:last-child {
-					border-bottom: 1px solid #ddd;
-				}
-				.border-left {
-					border-left: $null-conv;
-				}
-				.border-right {
-					border-right: $null-conv !important;
-				}
-			}
-			.bottom_tr {
-				.Grid_th {
-					input {
-						height: $small-fix-30;
-					    background: $white;
-					    top: $small-fix-03 + 1;
-					    padding: $small-fix-10;
-					    width: 92%;
-	    				left: $small-fix-05;
-					}
-				}
-				.noInput {
-					input {
-						background: transparent;
-						pointer-events: none;
-					}
-				}
-			}
-		}
-		.GirBody_Fl {
-			width: $max-conv-width;
-			float: left;
-			height: 84%;
-			overflow: hidden;
-			.GridLeads_TBody {
-				width: $max-conv-width;
-				float: left;
-				.tr_body {
+				.tr_heather {
 					position: relative;
 					width: $max-conv-width;
 					float: left;
-					height: $small-fix-30 + 3; // 33px
-				}
-				.Grid_td {
-					position: relative;
-				    float: left;
-				    height: $small-fix-30 + 3; // 33px
-				    border: 1px solid #eee;
-				    border-right: $null-conv;
-				    border-bottom: $null-conv;
-				    font-size: $small-fix-10 + 1;
-				    padding: $small-fix-07 + 2;
-					padding-left: $small-fix-15;
-					text-overflow: ellipsis;
-    				overflow: hidden;
-					a {
-						text-decoration: none;
-					}
-				    // text-transform: uppercase;
-				    input {
-				    	padding: $small-fix-07 + 2;
-					    padding-left: 0;
-					    background: transparent;
-					    border: $null-conv;
-					    position: relative;
-					    float: left;
-					    height: $max-conv-height;
-					    width: $max-conv-width;
-					    font-size: $small-fix-10 + 1;
-					    &:focus {
-					    	outline: $null-conv;
+					border-bottom: $null-conv;
+					.Grid_th {
+						position: relative;
+						float: left;
+						height: $small-fix-30 + 3; // 40px
+						background: #f2f2f2;
+						border: 1px solid #ddd;
+						border-right: $null-conv;
+						border-bottom: $null-conv;
+						font-size: $small-fix-10 + 2;
+					    text-transform: uppercase;
+					    input {
+					    	padding: $small-fix-07 + 2;
+						    padding-left: $small-fix-15;
+						    background: transparent;
+						    border: $null-conv;
+						    position: relative;
+						    float: left;
+						    height: $max-conv-height;
+						    width: $max-conv-width;
+						    &:focus {
+						    	outline: $null-conv;
+						    }
 					    }
-				    }
+						&:last-child {
+							border-right: 1px solid #ddd;
+						}
+					}
+					.th_Null {
+						padding-right: 1%; 
+						padding-left: 1.02%;
+					}
+					.th_full {
+						// width: 5%;
+						width: 6.993%;
+						i {
+							position: absolute;
+							right: $small-fix-13;
+						    font-size: $small-fix-10 + 2;
+						    top: $small-fix-13 + 1;
+						    cursor: pointer;
+						}
+					}
+					&:last-child {
+						border-bottom: 1px solid #ddd;
+					}
+					.border-left {
+						border-left: $null-conv;
+					}
+					.border-right {
+						border-right: $null-conv !important;
+					}
 				}
-
-				.backWhite { background: $white; }
-
-				.backGrey { background: #f9f9f9; }
-
-				.border-left { border-left: $null-conv; }
-
-				.border-right { border-right: $null-conv; }
-
-				.td_full { width: 6.993%; }
-
-				.td_Null {
-					padding-right: 1%;
-    				padding-left: 1.02%;
+				.bottom_tr {
+					.Grid_th {
+						input {
+							height: $small-fix-20 + 4; // 30px
+						    background: $white;
+						    top: $small-fix-03 + 1;
+						    padding: $small-fix-10;
+						    width: 92%;
+		    				left: $small-fix-05;
+						}
+					}
+					.noInput {
+						input {
+							background: transparent;
+							pointer-events: none;
+						}
+					}
 				}
 			}
+			.GirBody_Fl {
+				width: $max-conv-width;
+				float: left;
+				height: 84.7%; // 84%
+				overflow: hidden;
+				.GridLeads_TBody {
+					width: $max-conv-width;
+					float: left;
+					.tr_body {
+						position: relative;
+						width: $max-conv-width;
+						float: left;
+						height: $small-fix-30 + 3; // 33px
+					}
+					.Grid_td {
+						position: relative;
+					    float: left;
+					    height: $small-fix-30 + 3; // 33px
+					    border: 1px solid #eee;
+					    border-right: $null-conv;
+					    border-bottom: $null-conv;
+					    font-size: $small-fix-10 + 1;
+					    padding: $small-fix-07 + 2;
+						padding-left: $small-fix-15;
+						text-overflow: ellipsis;
+	    				overflow: hidden;
+						a {
+							text-decoration: none;
+						}
+					    // text-transform: uppercase;
+					    input {
+					    	padding: $small-fix-07 + 2;
+						    padding-left: 0;
+						    background: transparent;
+						    border: $null-conv;
+						    position: relative;
+						    float: left;
+						    height: $max-conv-height;
+						    width: $max-conv-width;
+						    font-size: $small-fix-10 + 1;
+						    &:focus {
+						    	outline: $null-conv;
+						    }
+					    }
+					}
 
-			.mCS-minimal.mCSB_scrollTools {
-				.mCSB_dragger {
-					.mCSB_dragger_bar {
-					    background-color: $white;
-					    background-color: rgba(0,0,0,0.2);
-					    filter: "alpha(opacity=20)";
-					    -ms-filter: "alpha(opacity=20)";
-					}	
+					.backWhite { background: $white; }
+
+					.backGrey { background: #f9f9f9; }
+
+					.border-left { border-left: $null-conv; }
+
+					.border-right { border-right: $null-conv; }
+
+					.td_full { width: 6.993%; }
+
+					.td_Null {
+						padding-right: 1%;
+	    				padding-left: 1.02%;
+					}
+				}
+
+				.mCS-minimal.mCSB_scrollTools {
+					.mCSB_dragger {
+						.mCSB_dragger_bar {
+						    background-color: $white;
+						    background-color: rgba(0,0,0,0.2);
+						    filter: "alpha(opacity=20)";
+						    -ms-filter: "alpha(opacity=20)";
+						}	
+					}
 				}
 			}
 		}
 	}
-}
 
-
-// New Leads Screen
-.leadView {
-	.top-nav-down {
-		.source-info {
-			.alertmodal {
-				width: $small-fix-35;
-			    background: #1e2129;
-			    text-align: center;
-			    @include border-radius($small-fix-03);
-			    box-sizing: border-box;
-			    padding: $small-fix-01;
-			    cursor: pointer;
-			    color: #ff0000;
-			    position: absolute;
-			    left: 114px;
-			    top: $small-fix-20 + 4;
+	// New Leads Screen
+	.leadView {
+		.top-nav-down {
+			.source-info {
+				.alertmodal {
+					//width: $small-fix-35;
+					width: auto;
+				    background: #1e2129;
+				    text-align: center;
+				    @include border-radius($small-fix-03);
+				    box-sizing: border-box;
+				    padding: $small-fix-01;
+				    cursor: pointer;
+				    color: #ff0000;
+				    position: absolute;
+				    left: 114px;
+				    top: $small-fix-20 + 4;
+				    padding-left: $small-fix-05;
+	    			padding-right: $small-fix-05;
+				}
 			}
+		}
+
+		.leadScreenView {
+		    height: $eightyvh + $sevenvh; // 87vh
+		    top: 43px;
 		}
 	}
 
-	.leadScreenView {
-	    height: $eightyvh + $sevenvh; // 87vh
-	    top: 43px;
+	.GridFooter {
+		background: #f2f2f2;
+		width: $max-conv-width;
+		height: $small-fix-35;
+		float: left;
+	}
+
+	body {
+		.calendar, 
+		.calendarSingle {
+			.c-grid {
+
+				.c-next, 
+				.c-previous {
+					position: relative;
+				    top: 105px;
+				    color: $white;
+				    font-size: $small-fix-40;
+				    font-weight: bolder;
+				}
+
+				.c-next { right: -50px; }
+
+				.c-previous { left: -65px; }
+
+				.today-select { background: rgba(26, 135, 85, .6); }
+			}
+		}
 	}
 }

@@ -1,0 +1,767 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px; }
+
+.debtManagement {
+  width: 100%; }
+  .debtManagement h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 63px;
+    font-family: 'Roboto Condensed', sans-serif; }
+  .debtManagement ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .debtManagement .bulletDebt {
+    position: relative;
+    margin: auto;
+    display: table;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .debtManagement .container {
+    position: relative;
+    height: 100%;
+    max-width: 1072px; }
+  .debtManagement header {
+    padding: 27px;
+    position: relative; }
+    .debtManagement header .logoBox {
+      max-width: 270px;
+      float: left; }
+      .debtManagement header .logoBox img {
+        width: 100%; }
+    .debtManagement header .NavMenu {
+      float: right;
+      color: #663b45;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      top: 10px; }
+    .debtManagement header .navMob {
+      width: 28px;
+      float: right;
+      position: relative;
+      top: 2px;
+      cursor: pointer;
+      display: none; }
+      .debtManagement header .navMob i {
+        font-size: 28px;
+        color: #663b45; }
+  .debtManagement .heroSection {
+    width: 100%;
+    float: left;
+    background: #663b45;
+    position: relative; }
+    .debtManagement .heroSection .HeroImgBox {
+      width: 50%;
+      max-width: 960px;
+      float: right; }
+      .debtManagement .heroSection .HeroImgBox img {
+        width: 100%; }
+    .debtManagement .heroSection .HeroInfoBoxContent {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .debtManagement .heroSection .HeroInfoBoxContent hgroup {
+        margin-bottom: 20px; }
+      .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox {
+        width: 60%;
+        height: 100%;
+        position: relative;
+        float: left;
+        padding-left: 12px;
+        padding-top: 7%; }
+        .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox h2 {
+          color: #fff; }
+        .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox p {
+          color: #fff;
+          margin: 0;
+          font-size: 18px;
+          line-height: 27px; }
+        .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt {
+          display: inline-block;
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: 37px; }
+          .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            position: relative;
+            min-height: 21px; }
+            .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li:last-child {
+              margin-bottom: 0; }
+            .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li:before {
+              content: '';
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              background: #fff;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              border-radius: 50%;
+              left: 0;
+              top: 0; }
+            .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li:after {
+              content: '\f111';
+              font-family: 'FontAwesome';
+              position: absolute;
+              left: 4.3px;
+              top: 1.565px;
+              z-index: 2;
+              font-size: 12.5px;
+              color: #f6931e; }
+            .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li .thisOpt {
+              color: #fff;
+              font-size: 16px;
+              padding-left: 34px;
+              position: relative;
+              top: -1px; }
+  .debtManagement .downHero {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f1f1f1;
+    float: left; }
+    .debtManagement .downHero .downHeroBlk {
+      width: 33.3%;
+      float: left; }
+      .debtManagement .downHero .downHeroBlk .topBullet {
+        width: 110px;
+        height: 110px;
+        border: 3px solid #f6911d;
+        background: #fff;
+        margin-bottom: 10px; }
+        .debtManagement .downHero .downHeroBlk .topBullet:before {
+          content: '\e919';
+          font-family: 'Linearicons';
+          color: #f6911d;
+          font-size: 37px;
+          position: absolute;
+          top: 24%;
+          left: 32%; }
+      .debtManagement .downHero .downHeroBlk .bulletTitle {
+        width: 100%;
+        float: left;
+        text-align: center;
+        color: #f6911d;
+        font-size: 16px; }
+      .debtManagement .downHero .downHeroBlk .bulletTxt {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 19px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 7px; }
+  .debtManagement .HowWorks {
+    width: 100%;
+    float: left;
+    background: url(http://localhost:8080/projects/httdocs/newsystem/views/themes/debtmanagement/img/backColor.jpg) no-repeat;
+    background-size: 100%;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    .debtManagement .HowWorks img {
+      width: 100%; }
+    .debtManagement .HowWorks h2 {
+      text-align: center;
+      color: #f6931e;
+      letter-spacing: -3px; }
+    .debtManagement .HowWorks .HowWorksOpt {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: inline-block; }
+    .debtManagement .HowWorks .WorksOptLeft,
+    .debtManagement .HowWorks .WorksOptRight {
+      width: 46%;
+      height: 100%;
+      position: relative; }
+      .debtManagement .HowWorks .WorksOptLeft .WorksBullet,
+      .debtManagement .HowWorks .WorksOptRight .WorksBullet {
+        width: 330px;
+        height: 330px;
+        background: #663b44;
+        margin-bottom: 30px;
+        position: relative; }
+        .debtManagement .HowWorks .WorksOptLeft .WorksBullet i,
+        .debtManagement .HowWorks .WorksOptRight .WorksBullet i {
+          color: #f6931e;
+          font-size: 65px;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          top: 39%; }
+      .debtManagement .HowWorks .WorksOptLeft .WorksBulletTitle,
+      .debtManagement .HowWorks .WorksOptRight .WorksBulletTitle {
+        width: 100%;
+        float: left;
+        font-size: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 12px; }
+      .debtManagement .HowWorks .WorksOptLeft p,
+      .debtManagement .HowWorks .WorksOptRight p {
+        float: left;
+        width: 100%;
+        color: #a5a5a5;
+        font-weight: 100;
+        font-size: 16px;
+        margin-bottom: 20px; }
+      .debtManagement .HowWorks .WorksOptLeft ul li,
+      .debtManagement .HowWorks .WorksOptRight ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+        min-height: 28px;
+        position: relative; }
+        .debtManagement .HowWorks .WorksOptLeft ul li:before,
+        .debtManagement .HowWorks .WorksOptRight ul li:before {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background: #f6931e;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          left: 0;
+          top: 0; }
+        .debtManagement .HowWorks .WorksOptLeft ul li:after,
+        .debtManagement .HowWorks .WorksOptRight ul li:after {
+          content: '\f00c';
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: 4px;
+          top: 0;
+          z-index: 2;
+          font-size: 17px;
+          color: #fff; }
+        .debtManagement .HowWorks .WorksOptLeft ul li .thisOpt,
+        .debtManagement .HowWorks .WorksOptRight ul li .thisOpt {
+          color: #a5a5a5;
+          font-size: 16px;
+          font-weight: 100;
+          padding-left: 34px;
+          position: relative;
+          top: 1px; }
+    .debtManagement .HowWorks .WorksOptLeft {
+      float: left; }
+    .debtManagement .HowWorks .WorksOptRight {
+      float: right; }
+  .debtManagement .ivaQualification {
+    width: 100%;
+    background: #663b44;
+    float: left;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    .debtManagement .ivaQualification h2 {
+      text-align: center;
+      color: #fff;
+      letter-spacing: -3px; }
+    .debtManagement .ivaQualification .SubTitle,
+    .debtManagement .ivaQualification .UnderSubTitle {
+      width: 100%;
+      display: inline-block; }
+    .debtManagement .ivaQualification .SubTitle {
+      color: #f6931e;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: bold; }
+    .debtManagement .ivaQualification .UnderSubTitle {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 50px; }
+    .debtManagement .ivaQualification .ivaOPt {
+      width: 25%;
+      float: left; }
+      .debtManagement .ivaQualification .ivaOPt .ivaBullet {
+        width: 120px;
+        height: 120px;
+        background: #f6931e;
+        font-family: 'Linearicons';
+        position: relative; }
+        .debtManagement .ivaQualification .ivaOPt .ivaBullet:before {
+          position: absolute;
+          font-size: 40px;
+          color: #663b44;
+          top: 26%;
+          left: 32%; }
+      .debtManagement .ivaQualification .ivaOPt .CreditCards:before {
+        content: '\e759'; }
+      .debtManagement .ivaQualification .ivaOPt .StoreCards:before {
+        content: '\e75c'; }
+      .debtManagement .ivaQualification .ivaOPt .PaydayLoans:before {
+        content: '\e764'; }
+      .debtManagement .ivaQualification .ivaOPt .Overdrafts:before {
+        content: '\e758'; }
+      .debtManagement .ivaQualification .ivaOPt .PersonalLoans:before {
+        content: '\e71e'; }
+      .debtManagement .ivaQualification .ivaOPt .LinesOfCredit:before {
+        content: '\e78b'; }
+      .debtManagement .ivaQualification .ivaOPt .BusinessDebt:before {
+        content: '\e747'; }
+      .debtManagement .ivaQualification .ivaOPt .Catalogues:before {
+        content: '\e714'; }
+      .debtManagement .ivaQualification .ivaOPt .ivaBulletTxt {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 17px;
+        color: #ded8d8;
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: 100; }
+    .debtManagement .ivaQualification p {
+      width: 100%;
+      display: inline-block;
+      color: #ded8d8;
+      font-size: 19px;
+      font-weight: 100;
+      text-align: center;
+      margin: 0;
+      margin-top: 20px;
+      line-height: 23px; }
+    .debtManagement .ivaQualification hr {
+      border-top: 1px solid #ded8d8;
+      margin-top: 50px; }
+    .debtManagement .ivaQualification ul {
+      position: relative;
+      margin: auto;
+      display: table;
+      width: 44%;
+      margin-top: 10px; }
+      .debtManagement .ivaQualification ul li {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+        min-height: 28px;
+        position: relative; }
+        .debtManagement .ivaQualification ul li:before {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background: #f6931e;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          left: 0;
+          top: 0; }
+        .debtManagement .ivaQualification ul li:after {
+          content: '\f00c';
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: 4px;
+          top: 0;
+          z-index: 2;
+          font-size: 17px;
+          color: #fff; }
+        .debtManagement .ivaQualification ul li .thisOpt {
+          color: #ded8d8;
+          font-size: 18px;
+          font-weight: 100;
+          padding-left: 34px;
+          position: relative;
+          top: -1px; }
+    .debtManagement .ivaQualification .checkBtnBox {
+      margin-top: 50px; }
+  .debtManagement .ivaExample {
+    width: 100%;
+    background: url(http://localhost:8080/projects/httdocs/newsystem/views/themes/debtmanagement/img/couple.jpg) no-repeat;
+    background-size: 100%;
+    float: left;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    .debtManagement .ivaExample h2 {
+      text-align: center;
+      color: #f6931e;
+      letter-spacing: -3px;
+      margin-bottom: 50px; }
+    .debtManagement .ivaExample .WhiteBlk {
+      background: #fff;
+      max-height: 507px;
+      -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+      padding: 40px;
+      position: relative; }
+    .debtManagement .ivaExample .width30 {
+      width: 36%;
+      float: left; }
+      .debtManagement .ivaExample .width30:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 47px solid transparent;
+        border-right: 47px solid transparent;
+        top: 46%;
+        right: -70px;
+        border-bottom: 47px solid #eee;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        z-index: 1; }
+      .debtManagement .ivaExample .width30:before {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 44px solid transparent;
+        border-right: 44px solid transparent;
+        top: 46.1%;
+        right: -65px;
+        border-bottom: 44px solid #fff;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        z-index: 7; }
+    .debtManagement .ivaExample .width70 {
+      width: 61%;
+      float: right; }
+    .debtManagement .ivaExample .checkBtnBox {
+      margin-top: 50px; }
+    .debtManagement .ivaExample .WhiteBlkTitle {
+      width: 100%;
+      padding: 5px;
+      background: #f6931e;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+      float: left;
+      text-align: center;
+      margin-bottom: 38px; }
+    .debtManagement .ivaExample .DebtsPlat {
+      width: 100%;
+      float: left;
+      margin-bottom: 17px; }
+      .debtManagement .ivaExample .DebtsPlat:last-child {
+        margin-bottom: 0;
+        margin-top: 12px; }
+        .debtManagement .ivaExample .DebtsPlat:last-child .DebtsPlatOPt {
+          font-size: 22px;
+          font-weight: bold; }
+      .debtManagement .ivaExample .DebtsPlat .DebtsPlatOPt {
+        width: 50%;
+        float: left;
+        font-size: 20px;
+        color: #434341; }
+      .debtManagement .ivaExample .DebtsPlat .DebtsRightOpt {
+        background: #e1e1e1;
+        text-align: center; }
+    .debtManagement .ivaExample .monthChart {
+      width: 225px;
+      margin-bottom: 33px; }
+      .debtManagement .ivaExample .monthChart .monthChartTitle {
+        color: #f6931e;
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px; }
+      .debtManagement .ivaExample .monthChart .chartCenterMain {
+        font-size: 65px;
+        color: #663b44;
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+        top: 18%;
+        letter-spacing: -2px; }
+      .debtManagement .ivaExample .monthChart .chartCenterDefault {
+        width: 100%;
+        float: left;
+        text-align: center;
+        color: #d7d7d7;
+        text-transform: uppercase;
+        font-size: 22px;
+        position: relative;
+        top: 10%;
+        letter-spacing: -1px; }
+    .debtManagement .ivaExample .leftChart {
+      float: left; }
+    .debtManagement .ivaExample .rightChart {
+      float: right; }
+    .debtManagement .ivaExample .chartArrow {
+      position: relative;
+      float: left;
+      top: 159px;
+      left: 23px; }
+    .debtManagement .ivaExample .chartBott {
+      width: 33.3%;
+      float: left; }
+      .debtManagement .ivaExample .chartBott .cBtTitle {
+        width: 100%;
+        float: left;
+        text-align: center;
+        color: #b3b3b3;
+        font-size: 13px;
+        text-transform: uppercase; }
+      .debtManagement .ivaExample .chartBott .cBTotal {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 31px;
+        color: #f6931e;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        top: -9px;
+        letter-spacing: -1.5px; }
+  .debtManagement .footerSection {
+    width: 100%;
+    background: #575757;
+    float: left;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    .debtManagement .footerSection p {
+      color: #fff;
+      font-weight: 100;
+      font-size: 13px;
+      margin-bottom: 20px; }
+    .debtManagement .footerSection img {
+      float: left; }
+    .debtManagement .footerSection .copyRight {
+      width: 100%;
+      float: left;
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 7px;
+      margin-top: 5px;
+      font-weight: 100; }
+    .debtManagement .footerSection .footerLink {
+      float: left;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 100;
+      margin-right: 10px;
+      padding-right: 10px;
+      border-right: 1px solid #fff; }
+      .debtManagement .footerSection .footerLink:last-child {
+        margin: 0;
+        padding: 0;
+        border: 0; }
+  .debtManagement .orangeColor {
+    color: #f6931e; }
+  .debtManagement .checkBtnBox {
+    width: 100%;
+    float: left;
+    text-align: center; }
+  .debtManagement .checkBtn {
+    font-size: 33px;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    padding-left: 27px;
+    padding-right: 27px; }
+  .debtManagement .checkBtnOrange {
+    background: #f6931e;
+    color: #fff;
+    border: 4px solid #fff; }
+  .debtManagement .checkBtnBrown {
+    background: #663b44;
+    color: #fff;
+    border: 4px solid #f7921e; }
+  .debtManagement .checkBtnBrownW {
+    background: #663b44;
+    color: #fff;
+    border: 4px solid #fff; }
+
+.card {
+  float: left; }
+
+.donut-chart {
+  position: relative;
+  border-radius: 50%; }
+  .donut-chart .quad {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .donut-chart .chart-center {
+    position: absolute;
+    border-radius: 50%; }
+    .donut-chart .chart-center span {
+      display: block;
+      text-align: center; }
+
+@-webkit-keyframes chart1 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90deg); } }
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg); } }
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(270deg); } }
+@-webkit-keyframes chartCover {
+  0%,
+        90% {
+    opacity: 1; }
+  91%,
+        100% {
+    opacity: 0; } }
+.donut-chart.chart1 {
+  width: 225px;
+  height: 225px;
+  background: #e1e1e1; }
+  .donut-chart.chart1 .quad {
+    width: 112.5px;
+    height: 112.5px;
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+    display: none; }
+    .donut-chart.chart1 .quad.one {
+      -webkit-transform: rotate(360deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chart1 0.7s linear;
+      display: block; }
+    .donut-chart.chart1 .quad.two {
+      -webkit-transform: rotate(90deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate2 0.7s linear;
+      display: block; }
+    .donut-chart.chart1 .quad.three {
+      -webkit-transform: rotate(180deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate3 0.7s linear;
+      display: block; }
+    .donut-chart.chart1 .quad.four {
+      -webkit-transform: rotate(270deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate4 0.7s linear;
+      display: block; }
+    .donut-chart.chart1 .quad.top {
+      display: block;
+      background: #e1e1e1;
+      opacity: 0;
+      -webkit-animation: chartCover 0.01s linear 0.58333s both; }
+  .donut-chart.chart1 .chart-center {
+    top: 25px;
+    left: 25px;
+    width: 175px;
+    height: 175px;
+    background: #fff; }
+
+@-webkit-keyframes chart3 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(61.2deg); } }
+@-webkit-keyframes chartRotate2 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90deg); } }
+@-webkit-keyframes chartRotate3 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg); } }
+@-webkit-keyframes chartRotate4 {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(270deg); } }
+@-webkit-keyframes chartCover {
+  0%,
+        90% {
+    opacity: 1; }
+  91%,
+        100% {
+    opacity: 0; } }
+.donut-chart.chart3 {
+  width: 225px;
+  height: 225px;
+  background: #e1e1e1; }
+  .donut-chart.chart3 .quad {
+    width: 112.5px;
+    height: 112.5px;
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0;
+    -webkit-border-radius: 100% 0 0 0;
+    border-radius: 100% 0 0 0;
+    display: none; }
+    .donut-chart.chart3 .quad.one {
+      -webkit-transform: rotate(61.2deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chart3 0.7s linear;
+      display: block; }
+    .donut-chart.chart3 .quad.two {
+      -webkit-transform: rotate(90deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate2 0.7s linear; }
+    .donut-chart.chart3 .quad.three {
+      -webkit-transform: rotate(180deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate3 0.7s linear; }
+    .donut-chart.chart3 .quad.four {
+      -webkit-transform: rotate(270deg);
+      -webkit-transform-origin: bottom right;
+      background: #663b44;
+      -webkit-animation: chartRotate4 0.7s linear; }
+    .donut-chart.chart3 .quad.top {
+      display: block;
+      background: #e1e1e1; }
+  .donut-chart.chart3 .chart-center {
+    top: 25px;
+    left: 25px;
+    width: 175px;
+    height: 175px;
+    background: #fff; }
+
+/*# sourceMappingURL=debtmanagementConfig.css.map */

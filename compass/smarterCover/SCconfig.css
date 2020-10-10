@@ -1,0 +1,2051 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: rgba(240, 250, 253, 0.35); }
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+.zIndex {
+  z-index: 10; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+::-webkit-input-placeholder {
+  color: #ccc; }
+
+::-moz-placeholder {
+  color: #ccc; }
+
+:-ms-input-placeholder {
+  color: #ccc; }
+
+:-moz-placeholder {
+  color: #ccc; }
+
+.appview {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 55px; }
+
+.realnav {
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12; }
+  .realnav .logo-Box {
+    width: 42px;
+    margin: 6px auto;
+    position: relative; }
+    .realnav .logo-Box img {
+      width: 100%; }
+  .realnav .avatarview {
+    position: absolute;
+    top: 6px;
+    right: 60px;
+    width: auto;
+    height: 42px; }
+    .realnav .avatarview .aVatar {
+      width: 42px;
+      height: 42px;
+      position: relative;
+      float: left;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden; }
+      .realnav .avatarview .aVatar img {
+        width: 100%; }
+    .realnav .avatarview .greeTings {
+      float: left;
+      font-size: 12px;
+      color: #025a87;
+      text-transform: uppercase;
+      position: relative;
+      top: 16px;
+      margin-right: 20px; }
+  .realnav .avatarbar {
+    position: fixed;
+    width: 120px;
+    background: #fff;
+    border: solid 1px #eee;
+    border-bottom: 2px solid #eee;
+    top: 57px;
+    right: -120px;
+    padding: 0;
+    padding-top: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+    .realnav .avatarbar:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .avatarbar .avatarlink {
+      width: 100%;
+      float: left;
+      padding: 10px;
+      text-decoration: none;
+      color: #025a87;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 2px; }
+      .realnav .avatarbar .avatarlink i {
+        float: right;
+        font-size: 16px; }
+    .realnav .avatarbar .logout {
+      border-top: 1px solid #eee;
+      background: #f9f9f9;
+      text-transform: uppercase;
+      font-weight: bold; }
+  .realnav .openAvatar {
+    right: 19px; }
+  .realnav .navView {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 60px;
+    top: 6px; }
+    .realnav .navView .navView-Menu {
+      width: 100%;
+      height: 100%;
+      float: left;
+      text-decoration: none;
+      text-align: center; }
+      .realnav .navView .navView-Menu:after {
+        content: '\e871';
+        font-family: Linearicons-Free;
+        color: #025a87;
+        font-size: 35px;
+        position: absolute;
+        left: 3px;
+        top: -3px; }
+    .realnav .navView .closeNav:after {
+      content: '\e870';
+      font-family: Linearicons-Free;
+      color: #025a87;
+      font-size: 35px;
+      position: absolute;
+      left: 3px;
+      top: -3px; }
+    .realnav .navView span {
+      position: absolute;
+      top: 15px;
+      left: 44px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px; }
+  .realnav .navBar {
+    position: fixed;
+    width: 288px;
+    height: 100%;
+    top: 57px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #eee;
+    padding-top: 30px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-align: center;
+    /* Start Nav Icons */
+    /* End Nav Icons */ }
+    .realnav .navBar:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      left: 65px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .navBar .navBar-Tab {
+      color: #025a87;
+      font-size: 13px;
+      float: left;
+      padding: 14px;
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      margin: 0;
+      z-index: 100;
+      border: 1px solid #fff;
+      position: relative;
+      width: 100%;
+      background: #f9f9f9; }
+    .realnav .navBar .subTab:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 34px;
+      right: 0;
+      left: -30px;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 5px solid #025a87;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg); }
+    .realnav .navBar .policies:before,
+    .realnav .navBar .chaselog:before,
+    .realnav .navBar .retention:before,
+    .realnav .navBar .compliance:before,
+    .realnav .navBar .finance:before,
+    .realnav .navBar .confirm:before,
+    .realnav .navBar .reportarget:before,
+    .realnav .navBar .settings:before {
+      font-family: Linearicons-Free;
+      color: #025a87;
+      font-size: 24px;
+      position: absolute;
+      right: 17px;
+      top: 5px; }
+    .realnav .navBar .policies:before {
+      content: '\e88e'; }
+    .realnav .navBar .chaselog:before {
+      content: '\e863'; }
+    .realnav .navBar .retention:before {
+      content: '\e80e'; }
+    .realnav .navBar .compliance:before {
+      content: '\e88b'; }
+    .realnav .navBar .finance:before {
+      content: '\e843'; }
+    .realnav .navBar .confirm:before {
+      content: '\e86d'; }
+    .realnav .navBar .reportarget:before {
+      content: '\e84c'; }
+    .realnav .navBar .settings:before {
+      content: '\e810'; }
+    .realnav .navBar .barFloor {
+      width: 100%;
+      position: relative;
+      float: left; }
+    .realnav .navBar .rotate0 {
+      border-bottom: 1px solid #025a87;
+      color: #333; }
+      .realnav .navBar .rotate0:after {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
+      .realnav .navBar .rotate0:before {
+        color: #333; }
+  .realnav .navBarLeft {
+    left: 10px; }
+  .realnav .flying-drop {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    margin-bottom: -1px;
+    display: none; }
+    .realnav .flying-drop:after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      left: -10%;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .flying-drop .subTabnav {
+      width: 100%;
+      float: left;
+      padding: 10px;
+      padding-left: 45px;
+      font-size: 11px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #333;
+      text-align: left; }
+      .realnav .flying-drop .subTabnav:hover {
+        background: #f9f9f9; }
+  .realnav .flyDown {
+    animation: flyDown .3s 1 forwards;
+    -webkit-animation: flyDown .3s 1 forwards;
+    -moz-animation: flyDown .3s 1 forwards;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    display: block; }
+@keyframes flyDown {
+  from {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    margin-top: 10px;
+    opacity: 1; } }
+@-webkit-keyframes flyDown {
+  from {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    margin-top: 10px;
+    opacity: 1; } }
+@-moz-keyframes flyDown {
+  from {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  to {
+    margin-top: 10px;
+    opacity: 1; } }
+@media (min-width: 220px) and (max-width: 1023px) {
+  .realnav .avatarview .greeTings {
+    display: none; }
+  .realnav .navView {
+    left: 18px; }
+  .realnav .avatarview {
+    right: 18px; }
+  .realnav .navBar:before {
+    left: 23px; }
+  .realnav .avatarbar:before {
+    left: 80px; } }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .realnav {
+    border-bottom: 1px solid #eee; }
+    .realnav .navView {
+      left: 22px; }
+    .realnav .avatarview {
+      right: 22px; }
+    .realnav .navBar:before {
+      left: 27px; }
+    .realnav .avatarbar:before {
+      left: 72px; } }
+.loginView {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .loginView .bottBackImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 401px; }
+  .loginView .loginReal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .loginView .loginReal .leftHand, .loginView .loginReal .rightHand {
+      height: 100%;
+      float: left;
+      padding: 50px; }
+    .loginView .loginReal .leftHand {
+      width: 30%;
+      position: relative;
+      z-index: 2; }
+      .loginView .loginReal .leftHand .smarterLogo {
+        position: relative;
+        width: 100%;
+        float: left;
+        text-align: right;
+        margin-top: 50px;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -o-transition: 0.7s;
+        padding-right: 95px; }
+        .loginView .loginReal .leftHand .smarterLogo img {
+          width: 80px;
+          position: relative;
+          right: 18px;
+          margin-bottom: 5px; }
+        .loginView .loginReal .leftHand .smarterLogo span {
+          color: #fff;
+          display: block;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          text-transform: uppercase; }
+      .loginView .loginReal .leftHand .gotop {
+        margin-top: 87px; }
+      .loginView .loginReal .leftHand h2 {
+        text-align: right;
+        display: block;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #fff; }
+    .loginView .loginReal .rightHand,
+    .loginView .loginReal .centerWhite {
+      width: 70%;
+      position: relative; }
+      .loginView .loginReal .rightHand .loginSteps,
+      .loginView .loginReal .centerWhite .loginSteps {
+        width: 900px;
+        min-height: 250px;
+        position: relative;
+        margin: 290px auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        margin-left: 170px; }
+        .loginView .loginReal .rightHand .loginSteps .step-form-run,
+        .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+          position: absolute;
+          width: 900px;
+          top: 0;
+          left: 0; }
+          .loginView .loginReal .rightHand .loginSteps .step-form-run .goStep,
+          .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+            color: #fff;
+            width: 450px;
+            float: left;
+            padding: 20px;
+            padding-right: 0;
+            padding-left: 0;
+            text-align: center; }
+        .loginView .loginReal .rightHand .loginSteps .goleft,
+        .loginView .loginReal .rightHand .loginSteps .loginSmarter,
+        .loginView .loginReal .rightHand .loginSteps .goright,
+        .loginView .loginReal .rightHand .loginSteps .forgotE,
+        .loginView .loginReal .rightHand .loginSteps .logResetPass,
+        .loginView .loginReal .centerWhite .loginSteps .goleft,
+        .loginView .loginReal .centerWhite .loginSteps .loginSmarter,
+        .loginView .loginReal .centerWhite .loginSteps .goright,
+        .loginView .loginReal .centerWhite .loginSteps .forgotE,
+        .loginView .loginReal .centerWhite .loginSteps .logResetPass {
+          margin: 0;
+          padding: 8px;
+          font-size: 15px;
+          line-height: 29px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          text-align: center;
+          text-decoration: none;
+          width: 400px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          color: #1fadcf;
+          background: transparent;
+          border: 1px solid #1fadcf;
+          transition: 0.1s;
+          -webkit-transition: 0.1s;
+          -moz-transition: 0.1s;
+          -o-transition: 0.1s;
+          bottom: 50px; }
+          .loginView .loginReal .rightHand .loginSteps .goleft:hover,
+          .loginView .loginReal .rightHand .loginSteps .loginSmarter:hover,
+          .loginView .loginReal .rightHand .loginSteps .goright:hover,
+          .loginView .loginReal .rightHand .loginSteps .forgotE:hover,
+          .loginView .loginReal .rightHand .loginSteps .logResetPass:hover,
+          .loginView .loginReal .centerWhite .loginSteps .goleft:hover,
+          .loginView .loginReal .centerWhite .loginSteps .loginSmarter:hover,
+          .loginView .loginReal .centerWhite .loginSteps .goright:hover,
+          .loginView .loginReal .centerWhite .loginSteps .forgotE:hover,
+          .loginView .loginReal .centerWhite .loginSteps .logResetPass:hover {
+            border: 0;
+            background: #1fadcf;
+            color: #fff; }
+        .loginView .loginReal .rightHand .loginSteps .goright,
+        .loginView .loginReal .centerWhite .loginSteps .goright {
+          left: 102px;
+          margin-left: 0;
+          background: rgba(255, 255, 255, 0.2); }
+        .loginView .loginReal .rightHand .loginSteps .loginFields,
+        .loginView .loginReal .centerWhite .loginSteps .loginFields {
+          width: 400px;
+          position: relative;
+          margin: auto; }
+          .loginView .loginReal .rightHand .loginSteps .loginFields label,
+          .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+            width: 100%;
+            font-weight: 100;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 11px;
+            margin-bottom: 11px;
+            line-height: 21px; }
+        .loginView .loginReal .rightHand .loginSteps .loginField,
+        .loginView .loginReal .centerWhite .loginSteps .loginField {
+          width: 100%;
+          padding: 15px;
+          font-size: 19px;
+          background: transparent;
+          color: #1fadcf;
+          border: 0;
+          border-bottom: 1px solid #ddd;
+          height: 50px;
+          text-align: center; }
+          .loginView .loginReal .rightHand .loginSteps .loginField:focus,
+          .loginView .loginReal .centerWhite .loginSteps .loginField:focus {
+            outline: 0; }
+        .loginView .loginReal .rightHand .loginSteps input[type="text"].userEmail,
+        .loginView .loginReal .centerWhite .loginSteps input[type="text"].userEmail {
+          background: transparent;
+          font-size: 11px;
+          text-transform: uppercase;
+          border: 0;
+          width: 100%;
+          letter-spacing: 1px;
+          text-align: center; }
+          .loginView .loginReal .rightHand .loginSteps input[type="text"].userEmail:focus,
+          .loginView .loginReal .centerWhite .loginSteps input[type="text"].userEmail:focus {
+            outline: 0; }
+      .loginView .loginReal .rightHand .forget-pass,
+      .loginView .loginReal .centerWhite .forget-pass {
+        position: relative;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        top: 210px;
+        left: 106px;
+        text-decoration: none;
+        background: transparent; }
+    .loginView .loginReal .centerWhite {
+      width: 100%; }
+      .loginView .loginReal .centerWhite .loginSteps {
+        margin-left: auto;
+        margin: 200px auto 0;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-bottom: 2px solid #eee;
+        border-radius: 4px; }
+      .loginView .loginReal .centerWhite .Stepsforgot {
+        background: transparent;
+        border: 0;
+        border-bottom: 0; }
+      .loginView .loginReal .centerWhite .goStep,
+      .loginView .loginReal .centerWhite .goright,
+      .loginView .loginReal .centerWhite .forget-pass {
+        color: #025a87 !important; }
+      .loginView .loginReal .centerWhite .forget-pass {
+        color: #025a87 !important;
+        left: 300px;
+        display: table;
+        position: absolute;
+        top: auto;
+        bottom: 13px; }
+      .loginView .loginReal .centerWhite .smarterLogo {
+        width: 100%;
+        height: 100px;
+        float: left;
+        text-align: center;
+        margin-top: 124px;
+        margin-bottom: 10px; }
+        .loginView .loginReal .centerWhite .smarterLogo img {
+          width: 90px; }
+      .loginView .loginReal .centerWhite .forForgotPass {
+        background: transparent;
+        border: 0;
+        border-bottom: 0; }
+      .loginView .loginReal .centerWhite .topInfo {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        top: 87px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #025a87; }
+    .loginView .loginReal .forgetRun {
+      position: absolute;
+      top: 0;
+      right: -2500px; }
+
+.goUp {
+  animation: goup .7s 1 forwards;
+  -webkit-animation: goup .7s 1 forwards;
+  -moz-animation: goup .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+@-webkit-keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+@-moz-keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+.moveLeft {
+  animation: moveLeft .7s 1 forwards;
+  -webkit-animation: moveLeft .7s 1 forwards;
+  -moz-animation: moveLeft .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+@-webkit-keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+@-moz-keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+.moveRight {
+  animation: moveRight .7s 1 forwards;
+  -webkit-animation: moveRight .7s 1 forwards;
+  -moz-animation: moveRight .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+@-webkit-keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+@-moz-keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+.forgotPass-floor {
+  width: 600px;
+  height: 185px;
+  position: relative;
+  margin-top: 50px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  margin: -20px auto 0; }
+  .forgotPass-floor .loginFields {
+    width: 400px;
+    position: relative;
+    margin: auto; }
+    .forgotPass-floor .loginFields label {
+      width: 100%;
+      font-weight: 100;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 11px;
+      line-height: 21px;
+      color: #fff;
+      text-align: center; }
+  .forgotPass-floor .resetPass,
+  .forgotPass-floor .gotoLog {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1fadcf;
+    background: transparent;
+    border: 1px solid #1fadcf;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    bottom: 25px; }
+    .forgotPass-floor .resetPass:hover,
+    .forgotPass-floor .gotoLog:hover {
+      border: 0;
+      background: #1fadcf;
+      color: #fff; }
+  .forgotPass-floor .checkEmail-FP {
+    width: 100%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1fadcf;
+    position: relative;
+    top: 47px; }
+
+.remenber_me {
+  width: auto;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  bottom: 9px;
+  right: 222px; }
+  .remenber_me span.bigcheck {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  .remenber_me span.bigcheck-target {
+    font-family: FontAwesome;
+    color: #025a87;
+    font-size: 20px;
+    cursor: pointer; }
+  .remenber_me input[type='checkbox'].bigcheck {
+    display: none; }
+  .remenber_me input[type='checkbox'].bigcheck + span.bigcheck-target:after {
+    content: ""; }
+  .remenber_me input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
+    content: ""; }
+  .remenber_me label.bigcheck {
+    width: 0;
+    height: 0; }
+  .remenber_me .remenber_me_word {
+    margin-right: 111px;
+    position: relative;
+    top: 7px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #025a87; }
+
+.loginRealwhite {
+  width: 25%;
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto; }
+  .loginRealwhite .goStep {
+    margin-bottom: 10px;
+    width: 100%;
+    float: left; }
+    .loginRealwhite .goStep .loginFields {
+      width: 80%;
+      height: 50px;
+      background: #fff;
+      margin: auto;
+      border: 1px solid #eee; }
+      .loginRealwhite .goStep .loginFields .loginField {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: transparent;
+        padding: 12px; }
+        .loginRealwhite .goStep .loginFields .loginField:focus {
+          outline: 0; }
+    .loginRealwhite .goStep:last-child {
+      margin-bottom: 0; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 550000s ease-in-out 0s;
+  color: #1fadcf !important;
+  -webkit-text-fill-color: #1fadcf !important;
+  background-color: transparent !important; }
+
+.errorMsg {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #b94a48;
+  text-align: center;
+  display: none; }
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 30px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 62px; } }
+@media (min-width: 569px) and (max-width: 740px) {
+  .loginView .loginReal .centerWhite {
+    height: 400px;
+    overflow: auto; } }
+@media (min-width: 532px) and (max-width: 568px) {
+  .loginView .loginReal .centerWhite {
+    height: 340px;
+    overflow: auto; } }
+@media (min-width: 340px) and (max-width: 768px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 35px; }
+  .loginView .loginReal .centerWhite .loginSteps {
+    width: 340px;
+    min-height: 286px; }
+    .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+      width: 340px; }
+      .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+        width: 340px;
+        padding-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .goleft {
+      width: 300px; }
+    .loginView .loginReal .centerWhite .loginSteps .goright, .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      width: 50%; }
+    .loginView .loginReal .centerWhite .loginSteps .goright {
+      left: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      right: 0;
+      width: 90%; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields .loginField {
+        height: 30px;
+        font-size: 15px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+        margin-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      bottom: 42px; }
+  .loginView .loginReal .centerWhite .forget-pass {
+    left: 21px;
+    top: 256px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 64px; }
+
+  .forgotPass-floor {
+    width: 340px; }
+    .forgotPass-floor .resetPass,
+    .forgotPass-floor .loginFields {
+      width: 300px; }
+
+  .remenber_me {
+    width: 127px;
+    right: 11px;
+    text-align: left; }
+    .remenber_me .remenber_me_word {
+      margin-right: 0; }
+    .remenber_me span.bigcheck {
+      left: auto;
+      right: 20px; } }
+@media (min-width: 220px) and (max-width: 339px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 30px !important; }
+  .loginView .loginReal .centerWhite .loginSteps {
+    width: 300px; }
+    .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+        width: 300px;
+        padding-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .goleft {
+      width: 250px; }
+    .loginView .loginReal .centerWhite .loginSteps .goright, .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      width: 50%; }
+    .loginView .loginReal .centerWhite .loginSteps .goright {
+      left: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      right: 0;
+      width: 84%;
+      bottom: 40px; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields .loginField {
+        height: 30px;
+        font-size: 14px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+        margin-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 250px; }
+  .loginView .loginReal .centerWhite .forget-pass {
+    left: 0;
+    top: 200px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 52px; }
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 40px; }
+
+  .forgotPass-floor {
+    width: 300px; }
+    .forgotPass-floor .resetPass,
+    .forgotPass-floor .loginFields {
+      width: 250px; } }
+.realdash .SC_title,
+.realdash .SC_ChartsFloor {
+  width: 100%;
+  float: left;
+  padding: 10px; }
+.realdash .SC_title h2 {
+  margin: 7px;
+  display: inline-block;
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.chart_plat {
+  float: left;
+  width: 20%;
+  background: #fff;
+  border: 1px solid #eee;
+  margin: 7px; }
+
+.realPolicies h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 0;
+  padding-left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+  color: #025a87; }
+.realPolicies .SmarterGrid {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  float: left; }
+  .realPolicies .SmarterGrid .top-Grid {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+    position: relative;
+    float: left; }
+    .realPolicies .SmarterGrid .top-Grid .panel-input {
+      height: 41px;
+      position: relative;
+      float: left;
+      margin: 5px; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input label {
+        padding: 0 15px;
+        position: relative;
+        height: 100%;
+        background: #f9f9f9;
+        border: 1px solid #eee;
+        border-right: 0;
+        line-height: 2.8em;
+        float: left;
+        margin: 0; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-widget {
+        width: 190px;
+        height: 40px;
+        position: relative;
+        float: left;
+        background: #fff;
+        border: 1px solid #eee;
+        color: #025a87; }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-widget .k-input {
+          width: 100%;
+          height: 100%;
+          float: left;
+          padding: 7px;
+          padding-right: 45px;
+          border: 0;
+          position: absolute;
+          z-index: 1;
+          background: transparent;
+          cursor: pointer; }
+          .realPolicies .SmarterGrid .top-Grid .panel-input .k-widget .k-input:focus {
+            outline: 0; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-widget-calendar:after {
+        content: '\f073';
+        font-family: 'FontAwesome';
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        height: 100%;
+        font-size: 20px;
+        line-height: 1.9em;
+        background: #f9f9f9;
+        border-left: 1px solid #eee; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-floor {
+        float: left;
+        height: 40px; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-dropdown {
+        padding: 12px;
+        text-transform: uppercase;
+        font-size: 12px;
+        cursor: pointer; }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-dropdown:after {
+          position: absolute;
+          content: "";
+          vertical-align: middle;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          top: 18px;
+          right: 14px;
+          border-bottom: 5px solid #000;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          cursor: pointer; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .rotate0:after {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-dropDown {
+        width: 100%;
+        background: #fff;
+        border: 1px solid #eee;
+        position: absolute;
+        top: 41px;
+        left: 0;
+        margin-bottom: 0;
+        z-index: 1;
+        display: none; }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-dropDown:before {
+          position: absolute;
+          content: "";
+          vertical-align: middle;
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          top: -7px;
+          right: 0;
+          left: 0;
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom: 7px solid #eee;
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg); }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-dropDown li {
+          float: left;
+          width: 100%; }
+          .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-dropDown li .dropDays {
+            float: left;
+            width: 100%;
+            padding: 12px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 13px;
+            color: #999;
+            cursor: pointer;
+            border-bottom: 1px solid #eee; }
+            .realPolicies .SmarterGrid .top-Grid .panel-input .k-days-dropDown li .dropDays:hover {
+              background: #f9f9f9;
+              color: #333; }
+      .realPolicies .SmarterGrid .top-Grid .panel-input .k-button {
+        height: 40px;
+        background: #1fadcf;
+        border: 0;
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 55px;
+        padding-right: 55px;
+        border: 1px solid #1fadcf;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -o-transition: 0.7s; }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-button:hover {
+          background: #025a87;
+          border: 1px solid #025a87; }
+        .realPolicies .SmarterGrid .top-Grid .panel-input .k-button:focus {
+          outline: 0; }
+.realPolicies .dateinputPicker:after {
+  content: '\e836';
+  font-family: Linearicons-Free;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  right: 14px;
+  top: 7px; }
+
+@media (min-width: 220px) and (max-width: 1023px) {
+  .realPolicies h2 {
+    margin-bottom: 0; } }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .realPolicies h2 {
+    margin-bottom: 0; } }
+/* Bootstrap Table*/
+.New-Modal50 {
+  width: 50%;
+  max-width: 940px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  position: relative;
+  display: inline-block; }
+  .New-Modal50 .new_Modal50Tr .border-right {
+    border-right: 1px solid #eee;
+    padding-bottom: 15px; }
+  .New-Modal50 .dialog_title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    margin-top: 10px; }
+  .New-Modal50 .new_modal50Inp {
+    width: 100%;
+    height: 37px;
+    border: 1px solid #eee;
+    padding: 10px; }
+    .New-Modal50 .new_modal50Inp:focus {
+      outline: 0; }
+  .New-Modal50 .new_Modal50TrBtn {
+    margin-top: 30px;
+    text-align: center; }
+    .New-Modal50 .new_Modal50TrBtn .modalBTn {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 17px;
+      padding: 15px;
+      padding-left: 70px;
+      padding-right: 70px;
+      background: #eee;
+      display: inline-block;
+      text-decoration: none;
+      margin: 5px; }
+    .New-Modal50 .new_Modal50TrBtn .modalBtnGreen {
+      background: #0A9A7A; }
+    .New-Modal50 .new_Modal50TrBtn .modalBtnRed {
+      background: #c0392b; }
+
+/* Aditional Info Elements */
+#datetimepicker,
+#datepicker,
+#datepicker2 {
+  cursor: pointer; }
+
+.xdsoft_datetimepicker {
+  background: #fbfdfc;
+  color: #333;
+  padding: 7px;
+  padding-top: 7px;
+  position: absolute;
+  z-index: 100;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #f5f5f5;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none; }
+  .xdsoft_datetimepicker table {
+    width: 100%;
+    margin-top: 10px; }
+  .xdsoft_datetimepicker .xdsoft_datepicker {
+    width: 51.84%;
+    width: 263.531px;
+    float: left;
+    margin-left: 0; }
+  .xdsoft_datetimepicker .xdsoft_timepicker {
+    text-align: left;
+    width: 332.938px;
+    float: right;
+    position: relative;
+    top: 46px; }
+    .xdsoft_datetimepicker .xdsoft_timepicker:before, .xdsoft_datetimepicker .xdsoft_timepicker:after {
+      color: #1A8755;
+      text-transform: uppercase;
+      padding: 10px;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      position: absolute;
+      text-transform: uppercase; }
+    .xdsoft_datetimepicker .xdsoft_timepicker:before {
+      content: 'Please, Choose Your Time';
+      font-size: 14px;
+      top: -55px;
+      left: 23%; }
+    .xdsoft_datetimepicker .xdsoft_timepicker:after {
+      content: 'hour : minutes';
+      font-size: 11px;
+      top: -8px;
+      left: 41%; }
+  .xdsoft_datetimepicker .xdsoft_calendar td,
+  .xdsoft_datetimepicker .xdsoft_calendar th {
+    width: 7%;
+    color: #025a87;
+    font-size: 11px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+    height: 32px; }
+  .xdsoft_datetimepicker .xdsoft_calendar th {
+    text-transform: uppercase;
+    color: #025a87;
+    font-weight: 100;
+    margin-bottom: 3px;
+    height: 27px;
+    font-size: 10px;
+    cursor: default; }
+  .xdsoft_datetimepicker .xdsoft_calendar td {
+    background: rgba(31, 173, 207, 0.2);
+    border: 1px solid #fff;
+    vertical-align: bottom;
+    padding-right: 0;
+    padding-bottom: 7px;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+    .xdsoft_datetimepicker .xdsoft_calendar td:hover {
+      color: #fff;
+      background: rgba(31, 173, 207, 0.5); }
+  .xdsoft_datetimepicker .xdsoft_mounthpicker {
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 100%; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_prev,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_today_button,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_month,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_year {
+      float: left; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_next {
+      float: right;
+      transform: rotate(180deg); }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_prev,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_next {
+      background: url(../../img/arrow-thin.svg) no-repeat;
+      background-size: 20px;
+      width: 24px;
+      height: 20px;
+      border: 0; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_prev,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_today_button {
+      margin-right: 20px; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_today_button {
+      width: 24px;
+      height: 20px;
+      background: url(../../img/home-calendar.svg) no-repeat;
+      background-size: 20px;
+      border: 0; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_month {
+      margin-right: 35px;
+      margin-left: 0; }
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_month,
+    .xdsoft_datetimepicker .xdsoft_mounthpicker .xdsoft_year {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 2px; }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current {
+    background: #1fadcf url(../../img/calendar.svg) no-repeat;
+    background-size: 15px;
+    background-position: 20% 20%;
+    color: #fff;
+    font-weight: bold; }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month,
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    cursor: default; }
+  .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_current {
+    color: #fff;
+    background: #1fadcf url(../../img/clock.svg) no-repeat;
+    background-size: 15px;
+    background-position: 20% 20%;
+    font-weight: bold; }
+  .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_disabled {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    cursor: default; }
+  .xdsoft_datetimepicker .xdsoft_select {
+    display: none; }
+  .xdsoft_datetimepicker .xdsoft_time_box .xdsoft_time {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: right;
+    width: 54px;
+    height: 50px;
+    padding: 4px;
+    padding-right: 7px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding-top: 27px;
+    background: #DBEBE3;
+    color: #1A8755;
+    display: inline-block;
+    margin: 0.5px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+    .xdsoft_datetimepicker .xdsoft_time_box .xdsoft_time:hover {
+      background: #1A8755;
+      color: #fff; }
+  .xdsoft_datetimepicker .xdsoft_scrollbar {
+    position: absolute;
+    width: 10px !important;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer; }
+    .xdsoft_datetimepicker .xdsoft_scrollbar > .xdsoft_scroller {
+      background: rgba(31, 173, 207, 0.1);
+      height: 37px !important;
+      border-radius: 0;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out; }
+      .xdsoft_datetimepicker .xdsoft_scrollbar > .xdsoft_scroller:hover {
+        background: rgba(31, 173, 207, 0.2); }
+  .xdsoft_datetimepicker .xdsoft_scroller_box {
+    position: relative; }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+    height: 250px;
+    overflow: hidden;
+    background: url(../../img/time.svg) no-repeat;
+    background-size: 60px;
+    background-position: 5% 45%;
+    border: 0; }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev {
+    transform: rotate(90deg);
+    left: 9%;
+    top: 79px;
+    z-index: 5; }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
+    transform: rotate(-90deg);
+    left: 10%;
+    bottom: 94px;
+    z-index: 5; }
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
+    width: 20px;
+    height: 24px;
+    background: url(../../img/arrow-thin.svg) no-repeat;
+    background-size: 20px;
+    border: 0;
+    position: relative; }
+  .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect {
+    right: 0;
+    width: 100%; }
+    .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect > div {
+      width: 100%;
+      margin-right: 1px; }
+  .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
+    background: #fff;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    z-index: 100;
+    display: none;
+    height: 165px;
+    overflow-y: hidden;
+    padding-top: 0; }
+  .xdsoft_datetimepicker .xdsoft_label span {
+    cursor: pointer;
+    color: #025a87;
+    font-size: 11px; }
+  .xdsoft_datetimepicker .xdsoft_label .xdsoft_monthselect {
+    width: 100%;
+    left: 0; }
+    .xdsoft_datetimepicker .xdsoft_label .xdsoft_monthselect > div {
+      width: 100%;
+      margin-right: 1px; }
+  .xdsoft_datetimepicker .xdsoft_option {
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 10px;
+    width: 86px;
+    height: 40px;
+    margin: .5px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    display: inline-block;
+    background: rgba(31, 173, 207, 0.1);
+    color: #025a87;
+    text-align: center;
+    padding-top: 15px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+    .xdsoft_datetimepicker .xdsoft_option:hover {
+      background: rgba(31, 173, 207, 0.2); }
+  .xdsoft_datetimepicker .xdsoft_current {
+    background: rgba(31, 173, 207, 0.2); }
+  .xdsoft_datetimepicker .xdsoft_time_variant {
+    width: 274px;
+    margin: auto;
+    text-align: center;
+    margin-right: 0; }
+  .xdsoft_datetimepicker .xdsoft_year .xdsoft_yearselect .xdsoft_option {
+    width: 86px;
+    font-size: 11px; }
+  .xdsoft_datetimepicker .xdsoft_month span,
+  .xdsoft_datetimepicker .xdsoft_year span {
+    position: relative; }
+    .xdsoft_datetimepicker .xdsoft_month span:after,
+    .xdsoft_datetimepicker .xdsoft_year span:after {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-top: transparent !important;
+      border-left: transparent !important;
+      border: 1px solid #000;
+      position: absolute;
+      top: 100%;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+  .xdsoft_datetimepicker .xdsoft_month span:after {
+    right: 45%; }
+  .xdsoft_datetimepicker .xdsoft_year span:after {
+    right: 35.5%; }
+
+.mainTableGrid {
+  overflow: auto; }
+
+.tableGrid {
+  width: 100%;
+  min-width: 1890px;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .tableGrid .gridHeader {
+    width: 100%;
+    float: left;
+    padding: 4px;
+    padding-bottom: 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-bottom: 0; }
+    .tableGrid .gridHeader .headGrid-row {
+      width: 100%;
+      float: left; }
+      .tableGrid .gridHeader .headGrid-row .headGrid-th {
+        position: relative;
+        float: left;
+        background: #f9f9f9;
+        padding: 4px;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        border: 1px solid #eee;
+        border-right: 0;
+        font-size: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 37px;
+        cursor: default; }
+        .tableGrid .gridHeader .headGrid-row .headGrid-th:last-child {
+          border-right: 1px solid #eee; }
+        .tableGrid .gridHeader .headGrid-row .headGrid-th .dropHeader {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          top: 12px;
+          right: 6px;
+          color: #000;
+          text-decoration: none; }
+      .tableGrid .gridHeader .headGrid-row:first-child .headGrid-th {
+        border-bottom: 0; }
+  .tableGrid .animatedDrop {
+    background: #fff;
+    position: absolute;
+    width: 150px;
+    border: 1px solid #eee;
+    z-index: 1;
+    top: 86px;
+    display: none; }
+    .tableGrid .animatedDrop .animDropUrl {
+      position: relative;
+      float: left;
+      width: 100%;
+      font-size: 10px;
+      color: #333;
+      text-decoration: none;
+      padding: 7px;
+      padding-left: 40px;
+      border-bottom: 1px solid #eee; }
+      .tableGrid .animatedDrop .animDropUrl:hover {
+        background: #f9f9f9; }
+      .tableGrid .animatedDrop .animDropUrl i {
+        position: absolute;
+        left: 9px;
+        top: 6px;
+        font-size: 15px; }
+    .tableGrid .animatedDrop .subGridArrow:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      top: 13px;
+      right: 14px;
+      border-bottom: 4px solid #000;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      cursor: pointer; }
+    .tableGrid .animatedDrop .sudAnimeDrop {
+      width: 200px;
+      left: 149px;
+      position: absolute;
+      background: #fff;
+      border: 1px solid #eee; }
+      .tableGrid .animatedDrop .sudAnimeDrop ul {
+        margin-bottom: 0; }
+        .tableGrid .animatedDrop .sudAnimeDrop ul li {
+          padding: 5px;
+          padding-left: 25px;
+          width: 100%;
+          float: left;
+          border-bottom: 1px solid #eee; }
+          .tableGrid .animatedDrop .sudAnimeDrop ul li input[type="checkbox"], .tableGrid .animatedDrop .sudAnimeDrop ul li span {
+            float: left; }
+          .tableGrid .animatedDrop .sudAnimeDrop ul li input[type="checkbox"] {
+            margin-right: 10px;
+            display: none; }
+          .tableGrid .animatedDrop .sudAnimeDrop ul li span {
+            font-size: 11px;
+            text-transform: uppercase;
+            position: relative;
+            top: 4px; }
+      .tableGrid .animatedDrop .sudAnimeDrop .switch_prod {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        position: relative;
+        top: 0; }
+        .tableGrid .animatedDrop .sudAnimeDrop .switch_prod .switch {
+          top: 0;
+          width: 22px;
+          height: 22px; }
+        .tableGrid .animatedDrop .sudAnimeDrop .switch_prod .slider {
+          background: #eee;
+          left: 14px;
+          height: 20px;
+          width: 20px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          border: 2px solid #ddd; }
+          .tableGrid .animatedDrop .sudAnimeDrop .switch_prod .slider:before {
+            background: transparent;
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 2px;
+            top: 2px;
+            transition: 0.7s;
+            -webkit-transition: 0.7s;
+            -moz-transition: 0.7s;
+            -o-transition: 0.7s;
+            z-index: 300;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            cursor: pointer; }
+      .tableGrid .animatedDrop .sudAnimeDrop input:checked + .slider:before {
+        background: #0A9A7A; }
+      .tableGrid .animatedDrop .sudAnimeDrop input:focus + .slider {
+        box-shadow: 0 0 1px #0A9A7A; }
+      .tableGrid .animatedDrop .sudAnimeDrop input:checked + .slider:before {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -moz-transform: translateX(0); }
+    .tableGrid .animatedDrop .subColumns {
+      top: 57px;
+      height: 373px;
+      display: none; }
+    .tableGrid .animatedDrop .subFilter {
+      width: 140px;
+      top: 86px;
+      display: none; }
+      .tableGrid .animatedDrop .subFilter form {
+        padding: 5px;
+        float: left;
+        width: 100%; }
+        .tableGrid .animatedDrop .subFilter form .filterTitle {
+          font-size: 10px;
+          float: left;
+          width: 100%;
+          margin-bottom: 2px; }
+        .tableGrid .animatedDrop .subFilter form .equalDrop {
+          width: 100%;
+          float: left;
+          height: 27px;
+          border: 1px solid #eee;
+          font-size: 10px;
+          padding: 7px;
+          line-height: 10px;
+          cursor: pointer;
+          position: relative;
+          background: #f9f9f9; }
+          .tableGrid .animatedDrop .subFilter form .equalDrop:before {
+            content: '';
+            position: absolute;
+            vertical-align: middle;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            top: 10px;
+            right: 10px;
+            border-bottom: 4px solid #000;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg); }
+        .tableGrid .animatedDrop .subFilter form .rotate0:before {
+          transform: rotate(0);
+          -webkit-transform: rotate(0);
+          -moz-transform: rotate(0);
+          -o-transform: rotate(0); }
+        .tableGrid .animatedDrop .subFilter form .equalDropNumber {
+          width: 100%;
+          float: left;
+          height: 27px;
+          border: 1px solid #eee;
+          font-size: 10px;
+          padding: 7px;
+          line-height: 10px;
+          cursor: pointer;
+          position: relative;
+          background: #f9f9f9;
+          margin-top: 2px;
+          margin-bottom: 2px; }
+          .tableGrid .animatedDrop .subFilter form .equalDropNumber:focus {
+            outline: 0; }
+        .tableGrid .animatedDrop .subFilter form .equalDrop-Floor {
+          position: absolute;
+          width: 93%;
+          background: #fff;
+          border: 1px solid #eee;
+          left: 5px;
+          top: 49px;
+          z-index: 1;
+          display: none; }
+          .tableGrid .animatedDrop .subFilter form .equalDrop-Floor .equalTab {
+            width: 100%;
+            float: left;
+            padding: 4px;
+            font-size: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer; }
+            .tableGrid .animatedDrop .subFilter form .equalDrop-Floor .equalTab:last-child {
+              border-bottom: 0; }
+  .tableGrid .animatedDropActive {
+    display: block; }
+  .tableGrid .anime_1 {
+    left: 46px; }
+  .tableGrid .anime_2 {
+    left: 164px; }
+  .tableGrid .anime_3 {
+    left: 261px; }
+  .tableGrid .gridBody {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 650px;
+    border: 1px solid #eee;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 4px;
+    background: #fff;
+    overflow: auto; }
+    .tableGrid .gridBody .bodyGrid-row {
+      width: 100%;
+      float: left; }
+      .tableGrid .gridBody .bodyGrid-row .bodyGrid-td {
+        position: relative;
+        float: left;
+        background: #f8f8f8;
+        padding: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid #eee;
+        border-right: 0;
+        border-bottom: 0;
+        font-size: 11px;
+        text-align: center;
+        min-height: 37px;
+        cursor: default; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td:last-child {
+          border-right: 1px solid #eee; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td a {
+          text-decoration: none;
+          color: #333;
+          cursor: default; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td a.clickon {
+          cursor: pointer; }
+          .tableGrid .gridBody .bodyGrid-row .bodyGrid-td a.clickon:hover {
+            color: #1fadcf; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td input[type="text"] {
+          width: 100%;
+          background: transparent;
+          text-align: center;
+          border: 0; }
+          .tableGrid .gridBody .bodyGrid-row .bodyGrid-td input[type="text"]:focus {
+            outline: 0; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td input[type="checkbox"] {
+          position: absolute;
+          left: 12px;
+          top: 12px;
+          margin: 0; }
+        .tableGrid .gridBody .bodyGrid-row .bodyGrid-td .pointerUrl {
+          cursor: pointer; }
+      .tableGrid .gridBody .bodyGrid-row:last-child .bodyGrid-td {
+        border-bottom: 1px solid #eee; }
+    .tableGrid .gridBody .backBlue .bodyGrid-td {
+      background: #1fadcf; }
+      .tableGrid .gridBody .backBlue .bodyGrid-td a {
+        color: #fff; }
+      .tableGrid .gridBody .backBlue .bodyGrid-td .openGridTab {
+        border-bottom: 5px solid #fff; }
+    .tableGrid .gridBody .brBott-Grid .bodyGrid-td {
+      border-bottom: 1px solid #eee; }
+    .tableGrid .gridBody .backWhite .bodyGrid-td {
+      background: #fff; }
+    .tableGrid .gridBody .borderLeft {
+      border-left: 0 !important; }
+    .tableGrid .gridBody .openGridTab {
+      text-decoration: none;
+      position: absolute;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 16px;
+      left: 13px;
+      border-bottom: 5px solid #000;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      cursor: pointer; }
+    .tableGrid .gridBody .openGridTabRotate {
+      transform: rotate(127deg);
+      -webkit-transform: rotate(127deg);
+      -moz-transform: rotate(127deg);
+      -o-transform: rotate(127deg); }
+    .tableGrid .gridBody .tableTab-floor {
+      width: 100%;
+      position: relative;
+      float: left;
+      margin-bottom: 7px;
+      padding-top: 5px;
+      padding-left: 38px;
+      display: none; }
+      .tableGrid .gridBody .tableTab-floor .tableTab-in {
+        width: 100%;
+        float: left; }
+        .tableGrid .gridBody .tableTab-floor .tableTab-in .GridTabs {
+          float: left;
+          width: 100%; }
+          .tableGrid .gridBody .tableTab-floor .tableTab-in .GridTabs .tabLink {
+            position: relative;
+            padding: 7px;
+            padding-left: 12px;
+            padding-right: 12px;
+            font-size: 10px;
+            border: 1px solid #ddd;
+            border-bottom: 0;
+            border-right: 0;
+            background: #eee;
+            text-decoration: none;
+            color: #333;
+            float: left;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+            .tableGrid .gridBody .tableTab-floor .tableTab-in .GridTabs .tabLink:last-child {
+              border-right: 1px solid #ddd; }
+          .tableGrid .gridBody .tableTab-floor .tableTab-in .GridTabs .selected {
+            background: #fff;
+            border: 1px solid #eee;
+            border-bottom: 0;
+            border-right: 0; }
+        .tableGrid .gridBody .tableTab-floor .tableTab-in .GridPlat {
+          width: 100%;
+          float: left;
+          padding: 5px;
+          border: 1px solid #eee;
+          background: #fff; }
+          .tableGrid .gridBody .tableTab-floor .tableTab-in .GridPlat .ChildrenGridPlat {
+            width: 100%;
+            padding: 4px;
+            background: #fff;
+            float: left; }
+          .tableGrid .gridBody .tableTab-floor .tableTab-in .GridPlat .headGrid-th,
+          .tableGrid .gridBody .tableTab-floor .tableTab-in .GridPlat .bodyGrid-td {
+            text-transform: none;
+            min-height: 1px;
+            padding-top: 7px;
+            padding-bottom: 5px;
+            min-height: 26px;
+            font-size: 9px;
+            color: #999; }
+      .tableGrid .gridBody .tableTab-floor .gridHeader,
+      .tableGrid .gridBody .tableTab-floor .gridBody {
+        padding: 0;
+        border: 0; }
+      .tableGrid .gridBody .tableTab-floor .gridBody {
+        background: transparent;
+        height: auto; }
+  .tableGrid .gridFooter {
+    float: left;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    height: 45px;
+    border: 1px solid #eee;
+    border-top: 0;
+    padding: 4px; }
+    .tableGrid .gridFooter .gridFtIn {
+      width: 100%;
+      float: left;
+      height: 100%;
+      background: #f9f9f9;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .tableGrid .gridFooter .gridFtIn .GridFooterBullets {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: left;
+        top: 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        background: #eee;
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.45);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.45);
+        margin-right: 7px;
+        text-decoration: none; }
+        .tableGrid .gridFooter .gridFtIn .GridFooterBullets .icon {
+          position: absolute;
+          color: #ccc;
+          font-size: 24px;
+          left: 3px;
+          top: 2px; }
+          .tableGrid .gridFooter .gridFtIn .GridFooterBullets .icon:hover {
+            color: #333; }
+        .tableGrid .gridFooter .gridFtIn .GridFooterBullets:last-child {
+          margin-right: 0; }
+        .tableGrid .gridFooter .gridFtIn .GridFooterBullets span {
+          position: absolute;
+          top: 4px;
+          left: 0;
+          width: 100%;
+          text-align: center; }
+      .tableGrid .gridFooter .gridFtIn .BulletCounter {
+        background: transparent;
+        color: #ccc;
+        border: 1px solid #ddd;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none; }
+        .tableGrid .gridFooter .gridFtIn .BulletCounter:hover {
+          background: #1fadcf;
+          color: #fff; }
+      .tableGrid .gridFooter .gridFtIn .BulletCounter.selected {
+        background: #1fadcf;
+        color: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        cursor: default; }
+  .tableGrid .tableGridInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 93%;
+    height: 25px;
+    border: 1px solid #eee;
+    padding: 7px; }
+    .tableGrid .tableGridInput:focus {
+      outline: 0; }
+  .tableGrid .gridMaintabs {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 5px;
+    text-align: center; }
+    .tableGrid .gridMaintabs .mainTab {
+      position: relative;
+      padding: 80px;
+      padding-bottom: 11px;
+      padding-top: 12px;
+      padding-left: 20px;
+      color: #333;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      text-decoration: none;
+      display: inline-block;
+      margin: 2px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px; }
+      .tableGrid .gridMaintabs .mainTab .tabCount {
+        position: absolute;
+        right: 13px;
+        top: 4px;
+        font-size: 22px;
+        font-weight: bold; }
+    .tableGrid .gridMaintabs .selected {
+      background: #1fadcf;
+      color: #fff;
+      border: 1px solid #1fadcf; }
+    .tableGrid .gridMaintabs .width160 {
+      width: 160px; }
+    .tableGrid .gridMaintabs .width186 {
+      width: 186px; }
+  .tableGrid .table01 {
+    width: 1.91%; }
+    .tableGrid .table01 input[type="text"] {
+      width: 0;
+      height: 0;
+      padding: 0;
+      border: 0; }
+  .tableGrid .table02 {
+    width: 3% -1; }
+    .tableGrid .table02 input[type="text"] {
+      width: 0;
+      height: 0;
+      padding: 0;
+      border: 0; }
+  .tableGrid .table05 {
+    width: 5%; }
+  .tableGrid .table06 {
+    width: 6.665%; }
+  .tableGrid .table07 {
+    width: 4.896%; }
+  .tableGrid .table07-95 {
+    width: 7.95%; }
+  .tableGrid .table07-none input[type="text"] {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0; }
+  .tableGrid .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(0, 0, 0, 0.15);
+    filter: "alpha(opacity=20)";
+    -ms-filter: "alpha(opacity=20)"; }
+
+/*# sourceMappingURL=SCconfig.css.map */

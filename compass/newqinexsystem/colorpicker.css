@@ -1,0 +1,667 @@
+.openCPicker {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: rgba(10, 154, 122, 0.7);
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  top: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+  .openCPicker:before {
+    content: "\f1fb";
+    font-family: 'FontAwesome';
+    font-size: 15px;
+    position: absolute;
+    left: 6px;
+    top: 4px; }
+  .openCPicker .openCPickerToolTip {
+    width: 130px;
+    padding: 4px;
+    position: absolute;
+    top: -26px;
+    left: -50px;
+    color: #fff;
+    background: #0A9A7A;
+    text-align: center;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 1000;
+    display: none; }
+    .openCPicker .openCPickerToolTip:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      top: 100%;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 7px solid #0A9A7A;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg); }
+
+.colorPickerFloor {
+  width: 328px;
+  border: 1px solid #eee;
+  background: #fff;
+  position: absolute;
+  top: -49px;
+  left: 98%;
+  padding: 3px;
+  display: none; }
+  .colorPickerFloor .clEl {
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 0;
+    cursor: pointer; }
+  .colorPickerFloor .inputPicker {
+    width: 160px;
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    border: 0;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    text-align: center; }
+    .colorPickerFloor .inputPicker:focus {
+      outline: 0; }
+  .colorPickerFloor .cl_0 {
+    background: #fff; }
+  .colorPickerFloor .cl_1 {
+    background: #f5f5f5; }
+  .colorPickerFloor .cl_2 {
+    background: #ebebeb; }
+  .colorPickerFloor .cl_3 {
+    background: #e0e0e0; }
+  .colorPickerFloor .cl_4 {
+    background: #d6d6d6; }
+  .colorPickerFloor .cl_5 {
+    background: #ccc; }
+  .colorPickerFloor .cl_6 {
+    background: #c2c2c2; }
+  .colorPickerFloor .cl_7 {
+    background: #b8b8b8; }
+  .colorPickerFloor .cl_8 {
+    background: #adadad; }
+  .colorPickerFloor .cl_9 {
+    background: #a3a3a3; }
+  .colorPickerFloor .cl_10 {
+    background: #999; }
+  .colorPickerFloor .cl_11 {
+    background: #8f8f8f; }
+  .colorPickerFloor .cl_12 {
+    background: #858585; }
+  .colorPickerFloor .cl_13 {
+    background: #7a7a7a; }
+  .colorPickerFloor .cl_14 {
+    background: #707070; }
+  .colorPickerFloor .cl_15 {
+    background: #666; }
+  .colorPickerFloor .cl_16 {
+    background: #5c5c5c; }
+  .colorPickerFloor .cl_17 {
+    background: #525252; }
+  .colorPickerFloor .cl_18 {
+    background: #474747; }
+  .colorPickerFloor .cl_19 {
+    background: #3d3d3d; }
+  .colorPickerFloor .cl_20 {
+    background: #333; }
+  .colorPickerFloor .cl_21 {
+    background: #292929; }
+  .colorPickerFloor .cl_22 {
+    background: #1f1f1f; }
+  .colorPickerFloor .cl_23 {
+    background: #141414; }
+  .colorPickerFloor .cl_24 {
+    background: #0a0a0a; }
+  .colorPickerFloor .cl_25 {
+    background: #000; }
+  .colorPickerFloor .cl_26 {
+    background: #e5f1ff; }
+  .colorPickerFloor .cl_27 {
+    background: #cce4ff; }
+  .colorPickerFloor .cl_28 {
+    background: #b2d7ff; }
+  .colorPickerFloor .cl_29 {
+    background: #99caff; }
+  .colorPickerFloor .cl_30 {
+    background: #7fbdff; }
+  .colorPickerFloor .cl_31 {
+    background: #66afff; }
+  .colorPickerFloor .cl_32 {
+    background: #4ca2ff; }
+  .colorPickerFloor .cl_33 {
+    background: #3295ff; }
+  .colorPickerFloor .cl_34 {
+    background: #1988ff; }
+  .colorPickerFloor .cl_35 {
+    background: #007bff; }
+  .colorPickerFloor .cl_36 {
+    background: #006ee5; }
+  .colorPickerFloor .cl_37 {
+    background: #0062cc; }
+  .colorPickerFloor .cl_38 {
+    background: #0056b2; }
+  .colorPickerFloor .cl_39 {
+    background: #004999; }
+  .colorPickerFloor .cl_40 {
+    background: #003d7f; }
+  .colorPickerFloor .cl_41 {
+    background: #003166; }
+  .colorPickerFloor .cl_42 {
+    background: #00244c; }
+  .colorPickerFloor .cl_43 {
+    background: #001833; }
+  .colorPickerFloor .cl_44 {
+    background: #000c19; }
+  .colorPickerFloor .cl_45 {
+    background: #e7f5f7; }
+  .colorPickerFloor .cl_46 {
+    background: #d0ecf0; }
+  .colorPickerFloor .cl_47 {
+    background: #b9e3e9; }
+  .colorPickerFloor .cl_48 {
+    background: #a2d9e2; }
+  .colorPickerFloor .cl_49 {
+    background: #8bd0db; }
+  .colorPickerFloor .cl_50 {
+    background: #73c7d4; }
+  .colorPickerFloor .cl_51 {
+    background: #5cbdcd; }
+  .colorPickerFloor .cl_52 {
+    background: #45b4c6; }
+  .colorPickerFloor .cl_53 {
+    background: #2eabbf; }
+  .colorPickerFloor .cl_54 {
+    background: #17a2b8; }
+  .colorPickerFloor .cl_55 {
+    background: #1491a5; }
+  .colorPickerFloor .cl_56 {
+    background: #128193; }
+  .colorPickerFloor .cl_57 {
+    background: #107180; }
+  .colorPickerFloor .cl_58 {
+    background: #0d616e; }
+  .colorPickerFloor .cl_59 {
+    background: #0b515c; }
+  .colorPickerFloor .cl_60 {
+    background: #094049; }
+  .colorPickerFloor .cl_61 {
+    background: #063037; }
+  .colorPickerFloor .cl_62 {
+    background: #042024; }
+  .colorPickerFloor .cl_63 {
+    background: #021012; }
+  .colorPickerFloor .cl_64 {
+    background: #e9f6ec; }
+  .colorPickerFloor .cl_65 {
+    background: #d4edd9; }
+  .colorPickerFloor .cl_66 {
+    background: #bee4c7; }
+  .colorPickerFloor .cl_67 {
+    background: #a9dbb4; }
+  .colorPickerFloor .cl_68 {
+    background: #93d3a2; }
+  .colorPickerFloor .cl_69 {
+    background: #7eca8f; }
+  .colorPickerFloor .cl_70 {
+    background: #68c17c; }
+  .colorPickerFloor .cl_71 {
+    background: #52b86a; }
+  .colorPickerFloor .cl_72 {
+    background: #3daf57; }
+  .colorPickerFloor .cl_73 {
+    background: #28a745; }
+  .colorPickerFloor .cl_74 {
+    background: #24963e; }
+  .colorPickerFloor .cl_75 {
+    background: #208537; }
+  .colorPickerFloor .cl_76 {
+    background: #1c7430; }
+  .colorPickerFloor .cl_77 {
+    background: #186429; }
+  .colorPickerFloor .cl_78 {
+    background: #145322; }
+  .colorPickerFloor .cl_79 {
+    background: #10421b; }
+  .colorPickerFloor .cl_80 {
+    background: #0c3214; }
+  .colorPickerFloor .cl_81 {
+    background: #08210d; }
+  .colorPickerFloor .cl_82 {
+    background: #041006; }
+  .colorPickerFloor .cl_83 {
+    background: #e8f9f4; }
+  .colorPickerFloor .cl_84 {
+    background: #d2f4ea; }
+  .colorPickerFloor .cl_85 {
+    background: #bceedf; }
+  .colorPickerFloor .cl_86 {
+    background: #a5e9d5; }
+  .colorPickerFloor .cl_87 {
+    background: #8fe4cb; }
+  .colorPickerFloor .cl_88 {
+    background: #79dec0; }
+  .colorPickerFloor .cl_89 {
+    background: #62d9b6; }
+  .colorPickerFloor .cl_90 {
+    background: #4cd3ab; }
+  .colorPickerFloor .cl_91 {
+    background: #36cea1; }
+  .colorPickerFloor .cl_92 {
+    background: #20c997; }
+  .colorPickerFloor .cl_93 {
+    background: #1cb487; }
+  .colorPickerFloor .cl_94 {
+    background: #19a078; }
+  .colorPickerFloor .cl_95 {
+    background: #168c69; }
+  .colorPickerFloor .cl_96 {
+    background: #13785a; }
+  .colorPickerFloor .cl_97 {
+    background: #10644b; }
+  .colorPickerFloor .cl_98 {
+    background: #0c503c; }
+  .colorPickerFloor .cl_99 {
+    background: #093c2d; }
+  .colorPickerFloor .cl_100 {
+    background: #06281e; }
+  .colorPickerFloor .cl_101 {
+    background: #03140f; }
+  .colorPickerFloor .cl_102 {
+    background: #f0ecf8; }
+  .colorPickerFloor .cl_103 {
+    background: #e2d9f2; }
+  .colorPickerFloor .cl_104 {
+    background: #d3c6ec; }
+  .colorPickerFloor .cl_105 {
+    background: #c5b3e6; }
+  .colorPickerFloor .cl_106 {
+    background: #b7a0e0; }
+  .colorPickerFloor .cl_107 {
+    background: #a88dd9; }
+  .colorPickerFloor .cl_108 {
+    background: #9a7ad3; }
+  .colorPickerFloor .cl_109 {
+    background: #8b67cd; }
+  .colorPickerFloor .cl_110 {
+    background: #7d54c7; }
+  .colorPickerFloor .cl_111 {
+    background: #6f42c1; }
+  .colorPickerFloor .cl_112 {
+    background: #633bad; }
+  .colorPickerFloor .cl_113 {
+    background: #58349a; }
+  .colorPickerFloor .cl_114 {
+    background: #4d2e87; }
+  .colorPickerFloor .cl_115 {
+    background: #422773; }
+  .colorPickerFloor .cl_116 {
+    background: #372160; }
+  .colorPickerFloor .cl_117 {
+    background: #2c1a4d; }
+  .colorPickerFloor .cl_118 {
+    background: #211339; }
+  .colorPickerFloor .cl_119 {
+    background: #160d26; }
+  .colorPickerFloor .cl_120 {
+    background: #0b0613; }
+  .colorPickerFloor .cl_121 {
+    background: #fcebf3; }
+  .colorPickerFloor .cl_122 {
+    background: #fad8e8; }
+  .colorPickerFloor .cl_123 {
+    background: #f8c5dc; }
+  .colorPickerFloor .cl_124 {
+    background: #f5b1d1; }
+  .colorPickerFloor .cl_125 {
+    background: #f39ec5; }
+  .colorPickerFloor .cl_126 {
+    background: #f18bba; }
+  .colorPickerFloor .cl_127 {
+    background: #ee77ae; }
+  .colorPickerFloor .cl_128 {
+    background: #ec64a3; }
+  .colorPickerFloor .cl_129 {
+    background: #ea5197; }
+  .colorPickerFloor .cl_130 {
+    background: #e83e8c; }
+  .colorPickerFloor .cl_131 {
+    background: #d0377e; }
+  .colorPickerFloor .cl_132 {
+    background: #b93170; }
+  .colorPickerFloor .cl_133 {
+    background: #a22b62; }
+  .colorPickerFloor .cl_134 {
+    background: #8b2554; }
+  .colorPickerFloor .cl_135 {
+    background: #741f46; }
+  .colorPickerFloor .cl_136 {
+    background: #5c1838; }
+  .colorPickerFloor .cl_137 {
+    background: #45122a; }
+  .colorPickerFloor .cl_138 {
+    background: #2e0c1c; }
+  .colorPickerFloor .cl_139 {
+    background: #17060e; }
+  .colorPickerFloor .cl_140 {
+    background: #fbeaec; }
+  .colorPickerFloor .cl_141 {
+    background: #f8d6d9; }
+  .colorPickerFloor .cl_142 {
+    background: #f4c2c7; }
+  .colorPickerFloor .cl_143 {
+    background: #f1aeb4; }
+  .colorPickerFloor .cl_144 {
+    background: #ed9aa2; }
+  .colorPickerFloor .cl_145 {
+    background: #ea858f; }
+  .colorPickerFloor .cl_146 {
+    background: #e6717c; }
+  .colorPickerFloor .cl_147 {
+    background: #e35d6a; }
+  .colorPickerFloor .cl_148 {
+    background: #df4957; }
+  .colorPickerFloor .cl_149 {
+    background: #dc3545; }
+  .colorPickerFloor .cl_150 {
+    background: #c62f3e; }
+  .colorPickerFloor .cl_151 {
+    background: #b02a37; }
+  .colorPickerFloor .cl_152 {
+    background: #9a2530; }
+  .colorPickerFloor .cl_153 {
+    background: #841f29; }
+  .colorPickerFloor .cl_154 {
+    background: #6e1a22; }
+  .colorPickerFloor .cl_155 {
+    background: #58151b; }
+  .colorPickerFloor .cl_156 {
+    background: #420f14; }
+  .colorPickerFloor .cl_157 {
+    background: #2c0a0d; }
+  .colorPickerFloor .cl_158 {
+    background: #160506; }
+  .colorPickerFloor .cl_159 {
+    background: #fef2e7; }
+  .colorPickerFloor .cl_160 {
+    background: #fee5d0; }
+  .colorPickerFloor .cl_161 {
+    background: #fed8b8; }
+  .colorPickerFloor .cl_162 {
+    background: #fecba1; }
+  .colorPickerFloor .cl_163 {
+    background: #febe89; }
+  .colorPickerFloor .cl_164 {
+    background: #fdb172; }
+  .colorPickerFloor .cl_165 {
+    background: #fda45a; }
+  .colorPickerFloor .cl_166 {
+    background: #fd9742; }
+  .colorPickerFloor .cl_167 {
+    background: #fd8a2b; }
+  .colorPickerFloor .cl_168 {
+    background: #fd7e14; }
+  .colorPickerFloor .cl_169 {
+    background: #e37112; }
+  .colorPickerFloor .cl_170 {
+    background: #ca6410; }
+  .colorPickerFloor .cl_171 {
+    background: #b1580e; }
+  .colorPickerFloor .cl_172 {
+    background: #974b0c; }
+  .colorPickerFloor .cl_173 {
+    background: #7e3f0a; }
+  .colorPickerFloor .cl_174 {
+    background: #653208; }
+  .colorPickerFloor .cl_175 {
+    background: #4b2506; }
+  .colorPickerFloor .cl_176 {
+    background: #321904; }
+  .colorPickerFloor .cl_177 {
+    background: #190c02; }
+  .colorPickerFloor .cl_178 {
+    background: #fff8e6; }
+  .colorPickerFloor .cl_179 {
+    background: #fff2cd; }
+  .colorPickerFloor .cl_180 {
+    background: #ffecb4; }
+  .colorPickerFloor .cl_181 {
+    background: #ffe69b; }
+  .colorPickerFloor .cl_182 {
+    background: #ffe083; }
+  .colorPickerFloor .cl_183 {
+    background: #ffd96a; }
+  .colorPickerFloor .cl_184 {
+    background: #ffd351; }
+  .colorPickerFloor .cl_185 {
+    background: #ffcd38; }
+  .colorPickerFloor .cl_186 {
+    background: #ffc71f; }
+  .colorPickerFloor .cl_187 {
+    background: #ffc107; }
+  .colorPickerFloor .cl_188 {
+    background: #e5ad06; }
+  .colorPickerFloor .cl_189 {
+    background: #cc9a05; }
+  .colorPickerFloor .cl_190 {
+    background: #b28704; }
+  .colorPickerFloor .cl_191 {
+    background: #997304; }
+  .colorPickerFloor .cl_192 {
+    background: #7f6003; }
+  .colorPickerFloor .cl_193 {
+    background: #664d02; }
+  .colorPickerFloor .cl_194 {
+    background: #4c3902; }
+  .colorPickerFloor .cl_195 {
+    background: #332601; }
+  .colorPickerFloor .cl_196 {
+    background: #191300; }
+  .colorPickerFloor .cl_197 {
+    background: #fef9f7; }
+  .colorPickerFloor .cl_198 {
+    background: #fef4ef; }
+  .colorPickerFloor .cl_199 {
+    background: #feefe7; }
+  .colorPickerFloor .cl_200 {
+    background: #feeae0; }
+  .colorPickerFloor .cl_201 {
+    background: #fee5d8; }
+  .colorPickerFloor .cl_202 {
+    background: #fde0d0; }
+  .colorPickerFloor .cl_203 {
+    background: #fddbc9; }
+  .colorPickerFloor .cl_204 {
+    background: #fdd6c1; }
+  .colorPickerFloor .cl_205 {
+    background: #fdd1b9; }
+  .colorPickerFloor .cl_206 {
+    background: #fdccb2; }
+  .colorPickerFloor .cl_207 {
+    background: #e3b7a0; }
+  .colorPickerFloor .cl_208 {
+    background: #caa38e; }
+  .colorPickerFloor .cl_209 {
+    background: #b18e7c; }
+  .colorPickerFloor .cl_210 {
+    background: #977a6a; }
+  .colorPickerFloor .cl_211 {
+    background: #7e6659; }
+  .colorPickerFloor .cl_212 {
+    background: #655147; }
+  .colorPickerFloor .cl_213 {
+    background: #4b3d35; }
+  .colorPickerFloor .cl_214 {
+    background: #322823; }
+  .colorPickerFloor .cl_215 {
+    background: #09080A; }
+  .colorPickerFloor .cl_216 {
+    background: #676561; }
+  .colorPickerFloor .cl_217 {
+    background: #87837C; }
+  .colorPickerFloor .cl_218 {
+    background: #493A36; }
+  .colorPickerFloor .cl_219 {
+    background: #5F2806; }
+  .colorPickerFloor .cl_220 {
+    background: #B4B18C; }
+  .colorPickerFloor .cl_221 {
+    background: #C7C59D; }
+  .colorPickerFloor .cl_222 {
+    background: #A09773; }
+  .colorPickerFloor .cl_223 {
+    background: #857FA1; }
+  .colorPickerFloor .cPickerContent,
+  .colorPickerFloor .cPickerContentExtra {
+    width: 320px;
+    float: left; }
+  .colorPickerFloor .cPickerContentExtra {
+    margin-left: 3px;
+    border: 1px solid #ddd; }
+    .colorPickerFloor .cPickerContentExtra .OneBlk {
+      width: 46.8%;
+      float: left;
+      margin: 5px;
+      padding: 10px;
+      padding-top: 3px; }
+    .colorPickerFloor .cPickerContentExtra .one {
+      position: relative;
+      float: left;
+      margin-left: -7px;
+      width: 25px;
+      height: 25px;
+      box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -webkit-border-radius: 50% 50% 0 50%;
+      -moz-border-radius: 50% 50% 0 50%;
+      -ms-border-radius: 50% 50% 0 50%;
+      border-radius: 50% 50% 0 50%;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      cursor: pointer; }
+  .colorPickerFloor .delCol {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    background: #eee;
+    margin-top: 4px;
+    color: #777;
+    font-size: 13px;
+    cursor: pointer; }
+
+#GSettings {
+  position: relative;
+  width: 786px;
+  float: left;
+  margin-top: 10px;
+  padding: 7px; }
+  #GSettings .fGlobalSett {
+    position: relative;
+    width: 251px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #eee;
+    float: left;
+    margin: 3px;
+    padding: 10px; }
+    #GSettings .fGlobalSett .GsettT {
+      width: 100%;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px; }
+    #GSettings .fGlobalSett .blkOpt {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      float: left;
+      margin-bottom: 7px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #eee; }
+      #GSettings .fGlobalSett .blkOpt:last-of-type {
+        margin-bottom: 0;
+        border-bottom: 0; }
+      #GSettings .fGlobalSett .blkOpt .in_Opt {
+        float: left;
+        height: 100%;
+        position: relative; }
+      #GSettings .fGlobalSett .blkOpt .IcPtl {
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 500; }
+      #GSettings .fGlobalSett .blkOpt .IcPdes {
+        width: 100%;
+        font-size: 10px;
+        color: #999;
+        float: left;
+        text-transform: initial; }
+      #GSettings .fGlobalSett .blkOpt .Left,
+      #GSettings .fGlobalSett .blkOpt .Right {
+        align-items: center;
+        display: flex; }
+      #GSettings .fGlobalSett .blkOpt .Left {
+        width: 60%;
+        justify-content: left; }
+      #GSettings .fGlobalSett .blkOpt .Right {
+        width: 40%;
+        justify-content: center; }
+      #GSettings .fGlobalSett .blkOpt .GenCpk {
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #f9f9f9;
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        cursor: pointer; }
+  #GSettings .btn_Row {
+    width: 100%;
+    float: left;
+    margin: 3px;
+    margin-top: 70px; }
+    #GSettings .btn_Row .sClo {
+      height: 40px;
+      background: #0A9A7A;
+      border: 0;
+      color: #fff;
+      text-transform: uppercase;
+      padding-left: 30px;
+      padding-right: 30px;
+      border: 1px solid #0A9A7A;
+      font-size: 14px; }
+      #GSettings .btn_Row .sClo:focus {
+        outline: 0; }
+
+/*# sourceMappingURL=colorpicker.css.map */

@@ -1,0 +1,322 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+/* Start Main Nav */
+
+nav {
+    position: relative;
+	width: $max-conv-width;
+	padding-top: $small-fix-03;
+	padding-bottom: $small-fix-03;
+	padding-left: $small-fix-15; // 40px
+	background: #eee;
+	float: left;
+    // height: 31px;
+	.navRoute {
+		font-size: $small-fix-10 + 2;
+	    color: $black;
+	    float: left;
+	    padding-right: $small-fix-10 + 1;
+	    margin: $small-fix-03;
+	    margin-right: $small-fix-07; // 10px
+	    text-decoration: none;
+	    position: relative;
+		top: $small-fix-05;
+		letter-spacing: .5px;
+        margin-top: $null-conv;
+        cursor: pointer;
+	}
+    .dropD {
+        &:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            border-left: $small-fix-03 + 1 solid transparent;
+            border-right: $small-fix-03 + 1 solid transparent;
+            top: $small-fix-07;
+            right: $null-conv;
+            border-bottom: $small-fix-03 + 1 solid $black;
+            @include transform(180deg);
+            @include transition(.3s);
+        }
+    }
+
+    .dropRotate0 {
+        &:after {
+          @include transform(0deg);  
+        }
+    }
+}
+
+.search_Floor {
+    position: absolute;
+    height: $small-fix-25;
+    right: $small-fix-03; // 0
+    top: $small-fix-03;
+    padding-right: $small-fix-07;
+    .searchTxt {
+        color: #9a9a9a;
+        text-transform: uppercase;
+        font-size: $small-fix-10;
+        letter-spacing: 0.3px;
+        float: left;
+        position: relative;
+        top: $small-fix-05 + 1;
+    }
+
+    .searchLead {
+    	width: $null-conv;
+	    float: left;
+	    height: $max-conv-height;
+	    border: $null-conv;
+	    @include border-radius($small-fix-03 + 1);
+		font-size: $small-fix-10 + 2;
+        padding: 0;
+	    &:focus {
+	    	outline: $null-conv;
+	    }
+    }
+
+    .slideSearch {
+        width: $null-conv;
+        padding: $small-fix-07;
+        margin-left: $small-fix-03 + 1;
+        @include box-shadow(0 0 $small-fix-05 0 rgba(0, 0, 0, .45));
+        @include animation(slideSearch .3s 1 forwards);
+    }
+
+    @keyframes slideSearch {
+        0% { width: $null-conv; }
+        100% { width: 200px; }
+    }
+
+    @-webkit-keyframes slideSearch {
+        0% { width: $null-conv; }
+        100% { width: 200px; }
+    }
+
+    @-moz-keyframes slideSearch {
+        0% { width: $null-conv; }
+        100% { width: 200px; }
+    }
+
+    .searchIco, 
+    .goSearch, 
+    .SearchSpinner {
+        width: $small-fix-20 + 2; //22px
+        height: $small-fix-20 + 2; //22px
+        float: left;
+        position: relative;
+        top: 1px;
+        margin-left: $small-fix-07;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            font-family: FontAwesome;
+            font-size: $small-fix-20 + 2;
+            top: -5px;
+            left: 1px;
+        }
+    }
+
+    .searchIco {
+        &:before { 
+            content: '\f002';
+            color: #777;
+        }
+    }
+
+    .goSearch {
+        display: none;
+        &:before{
+            content: '\f061';
+            color: rgb(10, 154, 122);
+        }
+    }
+
+    .SearchSpinner {
+        display: none;
+        &:before {
+            content: '\f110';
+            color: #777;
+        }
+    }
+}
+
+
+// Menu
+.mainNav {
+    // width: 100%;
+    float: left;
+    margin: $null-conv;
+    padding: $null-conv;
+    list-style: none;
+    height: 25px;
+    position: relative;
+    @include transition(.1s);
+    .menuDrop {
+        float: left;
+        position: relative;
+        &:last-of-type {
+            .navRoute {
+                margin-right: $null-conv;
+            }
+        }
+
+        .dropTop {
+            position: relative;
+            float: left;
+            width: $max-conv-width;
+            display: none;
+            .dropNav {
+                position: absolute;
+                // width: 200px;
+                top: $null-conv; //132%
+                left: $null-conv;
+                z-index: 10000000000;
+                padding: $null-conv;
+
+                .dropNavOpt {
+                    position: relative;
+                    width: $max-conv-width;
+                    background: $white;
+                    border: 1px solid #ddd;
+                    display: inline-block;
+                    margin-top: $small-fix-05;
+                    padding: $small-fix-05;
+                    li {
+                        list-style: none;
+                        .navUrl {
+                            position: relative;
+                            width: $max-conv-width;
+                            float: left;
+                            padding: $small-fix-03 + 1;
+                            font-size: $small-fix-10 + 1;
+                            text-transform: uppercase;
+                            color: #777;
+                            text-decoration: none;
+                            @include transition(.2s);
+                            white-space: nowrap;
+                            &:hover {
+                                background: #1fadcf;
+                                color: $white;
+                            }
+                            &:hover {
+                                &:before {
+                                    color: $white;
+                                }
+                            }
+                            &:before {
+                                font-family: FontAwesome;
+                                font-size: $small-fix-15 + 1;
+                                color: $black;
+                                position: absolute;
+                                top: $small-fix-01;
+                                left: $small-fix-03;
+                            }
+                        }
+
+                        .paddLeftLog {
+                            padding-left: $small-fix-25;
+                        }
+                        .reportbugIcon {
+                            cursor: pointer;
+                        }
+
+                        .helpIcon {
+                            &:before {
+                                content: '\f29c';
+                            }
+                        }
+
+                        .accountIcon {
+                            &:before {
+                                content: '\f2be';
+                            }
+                        }
+
+                        .glossaryIcon {
+                            &:before {
+                                content: '\f1c3'; 
+                            }
+                        }
+
+                        .bugIcon {
+                            &:before {
+                                content: '\f06e';
+                            }
+                        }
+
+                        .reportbugIcon {
+                            &:before {
+                                content: '\f188';
+                            }
+                        }
+
+                        .refreshIcon {
+                            &:before {
+                                content: '\f021';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra Nav */
+.HeaderLeft {
+
+    .slideNav {
+        width: 97%;
+
+        i {
+            position: absolute;
+            top: $small-fix-05;
+            right: $small-fix-10;
+            font-size: $small-fix-17 + 2;
+            color: #1f2d3b;
+            cursor: pointer;
+        }
+    }
+}
+
+.extraNav {
+    position: absolute;
+    background: $white;
+    left: 98%;
+    top: $max-conv-top;
+    z-index: 10000;
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    border-top: 1px solid $white;
+    padding: $small-fix-05;
+    padding-top: $null-conv;
+    padding-bottom: $small-fix-07;
+    display: none;
+    .menuDrop {
+        width: $max-conv-width;
+        margin: $small-fix-03;
+        .navRoute {
+            color: #777;
+        }
+        .dropTop {
+            left: -117px;
+            top: -20px;
+
+            .dropNav {
+                .dropNavOpt {
+                    background: #fafafa;
+                }
+            }
+        }
+    }
+}
+
+.NavMob {
+    display: none;
+}
+
+/* End Main Nav */

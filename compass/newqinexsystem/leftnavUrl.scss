@@ -10,7 +10,6 @@
 
 
 /* New Nav starts Here */
-
 .mob-nav-box {
     width: $small-fix-35;
     position: fixed;
@@ -164,8 +163,6 @@ main {
                 color: #0BAD86;
                 font-size: $small-fix-15;
                 text-transform: uppercase;
-                // background: #2b303b;
-                // background: #fafafa;
                 background: #f2f2f2;
                 padding-left: $small-fix-13;
                 padding-right: $small-fix-13;
@@ -178,7 +175,6 @@ main {
             right: $small-fix-15 + 2;
             top: $small-fix-10 - 2;
             padding: $small-fix-03 + 1;
-           // background: rgba(20, 23, 28, 0.45); // #14171c
             background: #f8f8f8;
             @include border-radius(0); // 50%
         }
@@ -193,7 +189,3 @@ main {
         background: rgba(11, 173,134, .5);
     }
 }
-
-// .dispBlockImp {
-//     display: block !important;
-// }

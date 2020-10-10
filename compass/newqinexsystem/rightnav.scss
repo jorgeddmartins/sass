@@ -6,1070 +6,1701 @@
 @import '_mixins';
 @import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
 
-#nav-right {
-    #button-nav-right {
-        width: $small-fix-50 + $small-fix-03;
-        height: $small-fix-50 + 2;
-        // background: #fafafa url(../../img/navright/controlpanel.svg) no-repeat;
-        background: $white; // #fafafa
-        background-size: $small-fix-40 - 2;
-        background-position: $max-conv-width / 2 $max-conv-width / 2;
-        border-right: $null-conv;
-        position: fixed;
-        right: -1px;
-        top: $small-fix-02;
-        z-index: 320000;
-        @include border-radius($null-conv);
-        border-top-left-radius: $max-conv-width / 2;
-        border-bottom-left-radius: $max-conv-width / 2;
-        cursor: pointer;
-        @include mindesktop {
-            top: $half-conv-width;
-        }
-        &:hover,
-        &:focus {
-            background: $white;
-            background-size: $small-fix-30 + $small-fix-07 + 1;
-            background-position: $half-max-width $half-max-width;
-        }
-        i {
-            font-size: $small-fix-20 + $small-fix-03;
-            // color: #999;
-            color: #0A9A7A;
-            top: $small-fix-15;
-            left: $small-fix-15;
-            position: absolute;
-        }
-    }
-    @include mindesktop {
+
+@include thisComponent('RightNav') {
+
+    #nav-right {
         #button-nav-right {
-            display: $dispnone;
+            width: $small-fix-50 + $small-fix-03;
+            height: $small-fix-50 + 2;
+            background: $white; // #fafafa
+            background-size: $small-fix-40 - 2;
+            background-position: $max-conv-width / 2 $max-conv-width / 2;
+            border-right: $null-conv;
+            position: fixed;
+            right: -1px;
+            top: $small-fix-02;
+            z-index: 320000;
+            @include border-radius($null-conv);
+            border-top-left-radius: $small-fix-07; // 50%
+            border-bottom-left-radius: $small-fix-07; // 50%
+            cursor: pointer;
+            @include mindesktop {
+                //top: $half-conv-width;
+            }
+            &:hover,
+            &:focus {
+                background: $white;
+                background-size: $small-fix-30 + $small-fix-07 + 1;
+                background-position: $half-max-width $half-max-width;
+            }
+            i {
+                font-size: $small-fix-20 + $small-fix-03;
+                color: #0A9A7A;
+                top: $small-fix-15;
+                left: $small-fix-15;
+                position: absolute;
+            }
+        }
+        @include mindesktop {
+            #button-nav-right {
+                //display: $dispnone;
+            }
+            .right-nav {
+                //display: $dispnone;
+            }
         }
         .right-nav {
-            display: $dispnone;
+            width: $large-fix-1000 + $large-fix-150 + $small-fix-20; // 1170px
+            margin-right: -1170px;
         }
-    }
-    .right-nav {
-        width: $large-fix-1000 + $large-fix-150 + $small-fix-20; // 1170px
-        margin-right: -1170px;
-    }
-    .margin-right-bar {
-        margin-right: $null-conv;
-    }
-    .right-nav-1024 {
-        width: $large-fix-900 + $small-fix-60 + $small-fix-05; // 965px
-        margin-right: -965px;
-    }
-    .right-nav {
-        background: $backdash-smooth;
-        border-left: $small-fix-01 solid #ccc;
-        top: $small-fix-02; // 59px
-        height: $max-width;
-        position: fixed;
-        right: $null-conv;
-        z-index: 310000;
-        h2 {
-            margin: $null-conv;
-            text-transform: uppercase;
-            font-size: $small-fix-15 + 1;
-            text-align: center;
-            background: #DBEBE3;
-            padding: $small-fix-15 - 1;
-            font-weight: bold;
-            color: #0A9A7A;
+        .margin-right-bar {
+            margin-right: $null-conv;
         }
-    }
-    .marchants-blk {
-        background: $white;
-        padding: $null-conv;
-        border: $small-fix-01 solid #DBEBE3;
-        border-bottom: $small-fix-01 + 1 solid #DBEBE3;
-        float: $fltleft;
-        display: $dispblk;
-        border-radius: $small-fix-05 - 2;
-        .marchants-name {
-            background: #DBEBE3;
-            padding: $small-fix-10;
-            font-size: $small-fix-15;
-            color: #0A9A7A;
-            text-transform: uppercase;
+        .right-nav-1024 {
+            width: $large-fix-900 + $small-fix-60 + $small-fix-05; // 965px
+            margin-right: -965px;
+        }
+        .right-nav {
+            background: $backdash-smooth;
+            border-left: $small-fix-01 solid #ddd; // #ccc
+            top: $null-conv; // 59px
+            height: $max-width;
+            position: fixed;
+            right: $null-conv;
+            z-index: 10000000000;
+            overflow: hidden;
+            h2 {
+                margin: $null-conv;
+                text-transform: uppercase;
+                font-size: $small-fix-15 + 1;
+                text-align: center;
+                background: #DBEBE3;
+                padding: $small-fix-15 - 1;
+                font-weight: bold;
+                color: #0A9A7A;
+            }
+        }
+        .marchants-blk {
+            background: $white;
+            padding: $null-conv;
+            border: $small-fix-01 solid #DBEBE3;
+            border-bottom: $small-fix-01 + 1 solid #DBEBE3;
+            float: $fltleft;
             display: $dispblk;
-            text-align: center;
-            letter-spacing: $small-fix-01;
-            font-weight: bold;
+            border-radius: $small-fix-05 - 2;
+            .marchants-name {
+                background: #DBEBE3;
+                padding: $small-fix-10;
+                font-size: $small-fix-15;
+                color: #0A9A7A;
+                text-transform: uppercase;
+                display: $dispblk;
+                text-align: center;
+                letter-spacing: $small-fix-01;
+                font-weight: bold;
+            }
+        }
+        .marchants-commands {
+            display: $dispinblk;
+            padding: $small-fix-15 - 3;
+            .right_title {
+                display: $dispinblk;
+                font-size: $small-fix-15 - 1;
+                color: #0A9A7A;
+                position: relative;
+                top: $null-conv;
+                width: $medium-A16 + 8; //68%
+            }
+            .rights-blk {
+                display: $dispinblk;
+                width: $large-A20;
+                padding-left: $small-fix-10;
+                padding-right: $small-fix-10 + 2;
+                position: relative;
+                &:last-child {
+                    margin-right: $null-conv;
+                    hr {
+                        display: $dispnone;
+                    }
+                }
+                hr {
+                    margin-top: $small-fix-15;
+                    margin-bottom: $small-fix-10;
+                    border-top: $small-fix-01 solid #DBEBE3;
+                }
+            }
+        }
+    }
+    #button-nav-right,
+    .right-nav {
+        @include transition(all .3s ease-in-out);
+    }
+    .margin-right {
+        margin-right: $large-fix-1000 + $small-fix-100 + $small-fix-70 + 1; // 1170px
+    }
+    .teleSalesinfo, 
+    .productsinfo {
+        position: relative;
+        float: $fltleft;
+        width: $max-conv-width;
+    }
+    .productsinfo {
+        .productsTabs {
+            position: relative;
+            width: $max-conv-width;
+            display: inline-block;
+            .productTab {
+                width: $max-conv-width / 2;
+                padding: $small-fix-15 + 1 $small-fix-50;
+                font-size: $small-fix-13 + 1;
+                background: #f3f3f4;
+                color: #333;
+                text-transform: uppercase;
+                font-weight: 500;
+                float: $fltleft;
+                margin-top: $null-conv;
+                margin-bottom: $null-conv;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                span {
+                    width: $small-fix-20;
+                    height: $small-fix-20;
+                    float: right;
+                    right: 168px;
+                    position: relative;
+                    top: $small-fix-02;
+                    cursor: pointer;
+                    i {
+                        font-size: $small-fix-17;
+                    }
+                }
+            }
+            .tabEnable {
+                background: #dbebe3;
+                color: #0A9A7A;
+                font-weight: bold;
+                cursor: default;
+            }
+        }
+        .RightProdBlks {
+            width: $max-conv-width;
+            padding: $small-fix-15;
+            padding-top: $small-fix-03;
+            margin-bottom: $small-fix-15;
+            float: $fltleft;
+            position: relative;
+            &:last-child {
+                margin-bottom: $null-conv;
+            }
         }
     }
     .marchants-commands {
-        display: $dispinblk;
-        padding: $small-fix-15 - 3;
-        .right_title {
-            display: $dispinblk;
-            font-size: $small-fix-15 - 1;
-            color: #0A9A7A;
-            position: relative;
-            top: 0;
-            width: $medium-A16 + 8; //68%
-        }
-        .rights-blk {
-            display: $dispinblk;
-            width: $large-A20;
-            padding-left: $small-fix-10;
-            padding-right: $small-fix-10 + 2;
-            position: relative;
-            &:last-child {
-                margin-right: $null-conv;
-                hr {
-                    display: $dispnone;
-                }
-            }
-            hr {
-                margin-top: $small-fix-15;
-                margin-bottom: $small-fix-10;
-                border-top: $small-fix-01 solid #DBEBE3;
-            }
-        }
-    }
-}
-#button-nav-right,
-.right-nav {
-    @include transition(all .3s ease-in-out);
-}
-.margin-right {
-    margin-right: $large-fix-1000 + $small-fix-100 + $small-fix-70 + 1; // 1170px
-}
-.teleSalesinfo, 
-.productsinfo {
-    position: relative;
-    float: $fltleft;
-    width: $max-conv-width;
-}
-.productsinfo {
-    .productsTabs {
-        position: relative;
-        width: $max-conv-width;
-        display: inline-block;
-        .productTab {
-            width: $max-conv-width / 2;
-            padding: $small-fix-15 + 1 $small-fix-50;
-            font-size: $small-fix-13 + 1;
-            background: #f3f3f4;
-            color: #333;
-            text-transform: uppercase;
-            font-weight: 500;
-            float: $fltleft;
-            margin-top: $null-conv;
-            margin-bottom: $null-conv;
-            position: relative;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-            span {
-                width: $small-fix-20;
-                height: $small-fix-20;
-                float: right;
-                right: 168px;
-                position: relative;
-                top: $small-fix-02;
-                cursor: pointer;
-                i {
-                    font-size: $small-fix-17;
-                }
-            }
-        }
-        .tabEnable {
-            background: #dbebe3;
-            color: #0A9A7A;
-            font-weight: bold;
-            cursor: default;
-        }
-    }
-    .RightProdBlks {
-        width: $max-conv-width;
-        padding: $small-fix-15;
-        padding-top: $small-fix-03;
-        margin-bottom: $small-fix-15;
-        float: $fltleft;
-        position: relative;
-        &:last-child {
-            margin-bottom: $null-conv;
-        }
-    }
-}
-.marchants-commands {
-    .switch_prod {
-        position: absolute;
-        right: $small-fix-10;
-        top: 0.3px;
-        .switch {
-            top: $null-conv;
-            width: $small-fix-40 + $small-fix-05 + 1; // 46px
-            height: $small-fix-20 + 2; // 22px
-        }
-        .slider {
-            background: #c0392b;
-            left: $small-fix-15 - 1;
-            &:before {
-                position: absolute;
-                content: "";
-                height: $small-fix-20 + $small-fix-07 + 1; // 28px
-                width: $small-fix-20 + $small-fix-07 + 1; // 28px
-                left: -11px;
-                bottom: -3px;
-                background: $white;
-                @include transition(0.4s);
-                z-index: 300;
-                border: $small-fix-01 solid #ddd;
-            }
-        }
-    }
-
-    @include switch();
-}
-.grid-conv-full {
-    width: $max-conv-width;
-    position: relative;
-    top: $null-conv;
-    .conv-grid-item {
-        width: 227px;
-        padding: $small-fix-03;
-        position: relative;
-    }
-    .marchants-blk {
-        background: $white;
-        padding: $null-conv;
-        border: $small-fix-01 solid #DBEBE3;
-        border-bottom: $small-fix-02 solid #DBEBE3;
-        float: left;
-        display: block;
-        border-radius: $small-fix-03;
-        width: $max-conv-width;
-        .marchants-name {
-            background: #DBEBE3;
-            padding: $small-fix-10;
-            font-size: $small-fix-15;
-            color: #0A9A7A;
-            text-transform: uppercase;
-            display: block;
-            text-align: center;
-            letter-spacing: $small-fix-01;
-            font-weight: bold;
-        }
-        .marchants-commands {
-            display: inline-block;
-            padding: $small-fix-10 + 2;
-            width: $max-conv-width;
-            .rights-blk {
-                display: inline-block;
-                width: $max-conv-width;
-                padding-left: $small-fix-10;
-                padding-right: $small-fix-10 + 2;
-                &:last-child {
-                    margin-right: $null-conv;
-                }
-                .right_title {
-                    display: inline-block;
-                    font-size: $small-fix-15 - 1;
-                    color: #0A9A7A;
-                    position: relative;
-                    top: $small-fix-05;
-                    width: 68%;
-                }
-            }
-        }
-    }
-}
-.grid-conv-full {
-    margin: $null-conv auto;
-    height: 4000px;
-    width: $max-conv-width !important;
-}
-.teleSalesinfo {
-    .rightInfoBlks {
-        width: $max-conv-width;
-        padding: $small-fix-15;
-        padding-top: $small-fix-03;
-        margin-bottom: $small-fix-15;
-        float: $fltleft;
-        position: relative;
-        &:last-child {
-            margin-bottom: $null-conv;
-        }
-    }
-    .infoSquare {
-        background: $white;
-        border: $small-fix-01 solid #eee;
-        border-bottom: $small-fix-01 solid #ddd;
-        @include border-radius($small-fix-03);
-        margin-bottom: $small-fix-10;
-        padding: $small-fix-15;
-        padding-top: $small-fix-10 + 2;
-        padding-bottom: $small-fix-05 + 2;
-        position: relative;
-        width: 18.77%; // 23.77%
-        float: $fltleft;
-        margin: $small-fix-05 + 2;
-        .dtaSquare {
-            width: $max-conv-width;
-            display: inline-block;
-            text-align: center;
-            font-size: $small-fix-35 + 2;
-            margin-bottom: $small-fix-03 + 1;
-        }
-        .titleSquare {
-            font-size: $small-fix-13 + 1;
-            color: #ccc;
-            width: $max-conv-width;
-            display: inline-block;
-            text-align: center;
-            font-weight: 100;
-            text-transform: uppercase;
-            margin-bottom: $small-fix-10;
-        }
-        i {
+        .switch_prod {
             position: absolute;
-            bottom: $small-fix-15;
-            left: $small-fix-15;
-            font-size: $small-fix-20 + 2;
+            right: $small-fix-10;
+            top: 0.3px;
+            .switch {
+                top: $null-conv;
+                width: $small-fix-40 + $small-fix-05 + 1; // 46px
+                height: $small-fix-20 + 2; // 22px
+            }
+            .slider {
+                background: #c0392b;
+                left: $small-fix-15 - 1;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    height: $small-fix-20 + $small-fix-07 + 1; // 28px
+                    width: $small-fix-20 + $small-fix-07 + 1; // 28px
+                    left: -11px;
+                    bottom: -3px;
+                    background: $white;
+                    @include transition(0.4s);
+                    z-index: 300;
+                    border: $small-fix-01 solid #ddd;
+                }
+            }
         }
-        .greenPhone {
-            color: #0A9A7A;
+
+        @include switch();
+    }
+    .grid-conv-full {
+        width: $max-conv-width;
+        position: relative;
+        top: $null-conv;
+        .conv-grid-item {
+            width: 227px;
+            padding: $small-fix-03;
+            position: relative;
         }
-        .purplePhone {
-            color: #8e44ad;
-        }
-        .redPhone {
-            color: #CC0000;
-        }
-        .orangePhone {
-            color: #f5c073;
-        }
-        .bluePhone {
-            color: #0080ff;
+        .marchants-blk {
+            background: $white;
+            padding: $null-conv;
+            border: $small-fix-01 solid #DBEBE3;
+            border-bottom: $small-fix-02 solid #DBEBE3;
+            float: left;
+            display: block;
+            border-radius: $small-fix-03;
+            width: $max-conv-width;
+            .marchants-name {
+                background: #DBEBE3;
+                padding: $small-fix-10;
+                font-size: $small-fix-15;
+                color: #0A9A7A;
+                text-transform: uppercase;
+                display: block;
+                text-align: center;
+                letter-spacing: $small-fix-01;
+                font-weight: bold;
+            }
+            .marchants-commands {
+                display: inline-block;
+                padding: $small-fix-10 + 2;
+                width: $max-conv-width;
+                .rights-blk {
+                    display: inline-block;
+                    width: $max-conv-width;
+                    padding-left: $small-fix-10;
+                    padding-right: $small-fix-10 + 2;
+                    &:last-child {
+                        margin-right: $null-conv;
+                    }
+                    .right_title {
+                        display: inline-block;
+                        font-size: $small-fix-15 - 1;
+                        color: #0A9A7A;
+                        position: relative;
+                        top: $small-fix-05;
+                        width: 68%;
+                    }
+                }
+            }
         }
     }
-    .infoCharts {
-        position: relative;
-        float: $fltleft;
-        width: $max-conv-width;
-        margin-bottom: $small-fix-05 + 2;
-        &:last-of-type {
-            margin-bottom: $null-conv;
+    .grid-conv-full {
+        margin: $null-conv auto;
+        height: 4000px;
+        width: $max-conv-width !important;
+    }
+    .teleSalesinfo {
+        .rightInfoBlks {
+            width: $max-conv-width;
+            padding: $small-fix-15;
+            padding-top: $small-fix-03;
+            margin-bottom: $small-fix-15;
+            float: $fltleft;
+            position: relative;
+            background: #f9f9f9;
+            &:last-child {
+                margin-bottom: $null-conv;
+            }
         }
         .infoSquare {
-            &:first-child, 
-            &:nth-child(2) {
-                cursor: pointer;
-            }
-        }
-    }
-    .chartUser, 
-    .newLineChart {
-        position: relative;
-        float: $fltleft;
-        width: $max-conv-width;
-        background: $white;
-        border: $small-fix-01 solid #eee;
-        border-bottom: $small-fix-01 solid #ddd;
-        @include border-radius($small-fix-03);
-        margin-bottom: $null-conv;
-        padding-top: $null-conv;
-        padding-bottom: $small-fix-05 + 2;
-        height: 345px;
-        overflow: hidden;
-        margin-bottom: $small-fix-13 + 1;
-        &:last-of-type {
-            margin-bottom: $null-conv;
-        }
-        h3 {
-            font-size: $small-fix-20 - 2; 
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .infoBars {
-            float: $fltleft;
-            width: $max-conv-width;
-            text-align: center;
-            margin-top: $null-conv;
+            background: $white;
+            border: $small-fix-01 solid #eee;
+            border-bottom: $small-fix-01 solid #ddd;
+            @include border-radius($small-fix-03);
             margin-bottom: $small-fix-10;
-            .infoBars-subtitle {
-                padding: $small-fix-07;
-                font-size: $small-fix-10 + 1;
+            padding: $small-fix-15;
+            padding-top: $small-fix-10 + 2;
+            padding-bottom: $small-fix-05 + 2;
+            position: relative;
+            width: 18.77%; // 23.77%
+            float: $fltleft;
+            margin: $small-fix-05 + 2;
+            .dtaSquare {
+                width: $max-conv-width;
+                display: inline-block;
+                text-align: center;
+                font-size: $small-fix-35 + 2;
+                margin-bottom: $small-fix-03 + 1;
+            }
+            .titleSquare {
+                font-size: $small-fix-13 + 1;
+                color: #ccc;
+                width: $max-conv-width;
+                display: inline-block;
+                text-align: center;
+                font-weight: 100;
                 text-transform: uppercase;
-                font-weight: bold;
+                margin-bottom: $small-fix-10;
+            }
+            i {
+                position: absolute;
+                bottom: $small-fix-15;
+                left: $small-fix-15;
+                font-size: $small-fix-20 + 2;
+            }
+            .greenPhone {
+                color: #0A9A7A;
+            }
+            .purplePhone {
+                color: #8e44ad;
+            }
+            .redPhone {
+                color: #CC0000;
+            }
+            .orangePhone {
+                color: #f5c073;
+            }
+            .bluePhone {
+                color: #0080ff;
+            }
+        }
+        .infoCharts {
+            position: relative;
+            float: $fltleft;
+            width: $max-conv-width;
+            margin-bottom: $small-fix-05 + 2;
+            &:last-of-type {
+                margin-bottom: $null-conv;
+            }
+            .infoSquare {
+                &:first-child, 
+                &:nth-child(2) {
+                    cursor: pointer;
+                }
+            }
+        }
+        .merchantInfo {
+            // height: 1500px;
+            height: 92vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .chartUser, 
+        .newLineChart {
+            position: relative;
+            float: $fltleft;
+            width: $max-conv-width;
+            background: $white;
+            border: $small-fix-01 solid #eee;
+            border-bottom: $small-fix-01 solid #ddd;
+            @include border-radius($small-fix-03);
+            margin-bottom: $null-conv;
+            padding-top: $null-conv;
+            padding-bottom: $small-fix-05 + 2;
+            height: 345px;
+            overflow: hidden;
+            margin-bottom: $small-fix-13 + 1;
+            &:last-of-type {
+                margin-bottom: $null-conv;
+            }
+            .userChartTitle {
+                font-size: $small-fix-15 + 1;
+                font-weight: bold; 
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+            .infoBars {
+                float: $fltleft;
+                width: $max-conv-width;
+                text-align: center;
+                margin-top: $null-conv;
+                margin-bottom: $small-fix-10;
+                .infoBars-subtitle {
+                    padding: $small-fix-07;
+                    font-size: $small-fix-10 + 1;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .allColor {
+                    color: rgba(96, 163, 208, 0.7);
+                }
+                .hotColor {
+                    color: rgba(96, 163, 208, 0.5);
+                }
+                .pqColor {
+                    color: rgba(96, 163, 208, 0.9);
+                }
+                .notColor {
+                    color: rgba(96, 163, 208, 0.4);
+                }
+                .rejectedColor {
+                    color: rgba(255, 181, 60, 0.6);
+                }
+                .delectedColor {
+                    color: rgba(255, 141, 0, 0.7);
+                }
+                .retainedColor {
+                    color: rgba(255, 104, 0, 0.7);
+                }
+            }
+        }
+
+        .chartUser {
+            .infoBars {
+                margin-top: 10px;
+            }
+        }
+
+        .newLineChart {
+            padding: $small-fix-10;
+            height: 380px;
+        }
+        .teleReportbarTabs {
+            position: relative;
+            width: $max-conv-width;
+            display: inline-block;
+            .tabReportUser {
+                width: $max-conv-width / 2;
+                padding: $small-fix-15 + 2 $small-fix-50;
+                font-size: $small-fix-13 + 1;
+                background: #f3f3f4;
+                color: #333;
+                text-transform: uppercase;
+                font-weight: 500;
+                float: $fltleft;
+                margin-top: $null-conv;
+                margin-bottom: $null-conv;
+                position: relative;
+                text-decoration: none;
+                text-align: center;
                 cursor: pointer;
             }
-            .allColor {
-                color: rgba(96, 163, 208, 0.7);
-            }
-            .hotColor {
-                color: rgba(96, 163, 208, 0.5);
-            }
-            .pqColor {
-                color: rgba(96, 163, 208, 0.9);
-            }
-            .notColor {
-                color: rgba(96, 163, 208, 0.4);
-            }
-            .rejectedColor {
-                color: rgba(255, 181, 60, 0.6);
-            }
-            .delectedColor {
-                color: rgba(255, 141, 0, 0.7);
-            }
-            .retainedColor {
-                color: rgba(255, 104, 0, 0.7);
+            .tabEnable {
+                background: #dbebe3;
+                color: #0A9A7A;
+                font-weight: bold;
+                pointer-events: none;
             }
         }
-    }
-    .newLineChart {
-        padding: $small-fix-10;
-        height: 380px;
-    }
-    .teleReportbarTabs {
-        position: relative;
-        width: $max-conv-width;
-        display: inline-block;
-        .tabReportUser {
-            width: $max-conv-width / 2;
-            padding: $small-fix-15 + 2 $small-fix-50;
-            font-size: $small-fix-13 + 1;
-            background: #f3f3f4;
-            color: #333;
-            text-transform: uppercase;
-            font-weight: 500;
-            float: $fltleft;
-            margin-top: $null-conv;
-            margin-bottom: $null-conv;
+        .width50 {
+            width: $table-max-70; // 70%
+            padding: $null-conv;
+            margin: $small-fix-25 auto $null-conv;
             position: relative;
-            text-decoration: none;
-            text-align: center;
+            float: none;
         }
-        .tabEnable {
-            background: #dbebe3;
-            color: #0A9A7A;
-            font-weight: bold;
-            pointer-events: none;
-        }
-    }
-    .width50 {
-        width: $table-max-70; // 70%
-        padding: $null-conv;
-        margin: $small-fix-25 auto $null-conv;
-        position: relative;
-        float: none;
-    }
-    .Uheader {
-        background: #f3f3f4;
-        width: $max-conv-width;
-        float: $fltleft;
-        .UheaderElm {
-            float: $fltleft;
-            padding: $small-fix-13 + 1;
-            text-align: center;
-            border-right: $small-fix-02 solid #f9f9f9;
-            font-size: $small-fix-13 + 1;
-            text-transform: uppercase;
-            color: #777;
-            padding-left: $small-fix-20;
-            padding-right: $small-fix-20;
-            &:last-child {
-                border-right: $null-conv;
-            }
-        }
-    }
-    .width10 {
-        width: $table-max-10; // 10%
-    }
-    .width55 {
-        width: $table-max-55; // 55%
-    }
-    .width35 {
-        width: $table-max-35; // 35%
-    }
-    .Ubody {
-        width: $max-conv-width;
-        float: left;
-        .UTbody {
+        .Uheader {
+            background: #f3f3f4;
             width: $max-conv-width;
             float: $fltleft;
-            border-bottom: $small-fix-02 solid #f9f9f9;
-            &:last-of-type {
-                border-bottom: $null-conv;
-            }
-            .UbodyElm {
-                position: relative;
+            .UheaderElm {
                 float: $fltleft;
                 padding: $small-fix-13 + 1;
                 text-align: center;
                 border-right: $small-fix-02 solid #f9f9f9;
                 font-size: $small-fix-13 + 1;
-                color: $black;
+                text-transform: uppercase;
+                color: #777;
                 padding-left: $small-fix-20;
                 padding-right: $small-fix-20;
-                height: $small-fix-40 + $small-fix-07; // 47px
                 &:last-child {
                     border-right: $null-conv;
                 }
             }
         }
-    }
-    .chartUserPadd {
-        padding: $small-fix-13;
-    }
-}
-.k-tooltip {
-    z-index: 2000000000000 !important;
-}
-.out-Chart-Bar {
-    position: relative;
-    width: $max-conv-width;
-    float: $fltleft;
-    height: $table-max-80; // 80%
-    overflow: hidden;
-}
-.goleft {
-    left: $small-fix-30 + $small-fix-03;
-    padding-left: $small-fix-03 !important;
-}
-.goright {
-    right: $small-fix-30 + $small-fix-03;
-     padding-right: $small-fix-03 !important;
-}
-.goslideHidden {
-    opacity: .4;
-    pointer-events: none;
-}
-.goleft, 
-.goright {
-    position: absolute;
-    top: $small-fix-20 + $small-fix-03;
-    font-size: $small-fix-20;
-    color: rgba(96, 163, 208, .9);
-    width: $small-fix-40;
-    height: $small-fix-40;
-    padding: $small-fix-05;
-    padding-top: $small-fix-05 + 1;
-    text-align: center;
-    @include border-radius($max-conv-width / 2);
-    background: rgba(96, 163, 208, .15);
-    cursor: pointer;
-    &:hover, 
-    &:focus {
-        color: rgba(96, 163, 208, .9);
-    }
-}
-.chart-bar-slide {
-    position: absolute;
-    width: 10000px;
-    bottom: $small-fix-20;
-    left: $null-conv;
-    border-top: $small-fix-01 solid #eee; 
-    @include animation(chartbarslide .7s 1 forwards); 
-    overflow: hidden;
-
-    @keyframes chartbarslide {
-        0% {height: $null-conv;}
-        100% {height: 262px}
-    } 
-    @-webkit-keyframes chartbarslide {
-        0% {height: $null-conv;}
-        100% {height: 262px}
-    }
-    @-moz-keyframes chartbarslide {
-        0% {height: $null-conv;}
-        100% {height: 262px}
-    }  
-
-    .chart-Bar-T {
-        position: relative;
-        width: $table-max-20; // 25% // 16.6% // 20%
-        max-width: 227.39px;
-        float: $fltleft;
-        height: $max-conv-height;
-        padding: $small-fix-15;
-        padding-bottom: $null-conv;
-        padding-top: $null-conv;
-        text-align: justify;
-        border-left: $small-fix-01 solid #eee;
-        &:first-child {
-            border-left: $null-conv;
+        .width10 {
+            width: $table-max-10; // 10%
         }
-        .barT-main {
-            width: $table-max-12 + 2 + 0.2; // 14.2%
-            float: $fltleft;
-            height: $table-max-90; // 90%
-            position: relative;
-            .barD {
-                position: absolute;
-                width: $table-max-90 + $table-max-5; //90% //87% // 95%
-                left: $null-conv;
-                right: $null-conv;
-                margin: auto;
-                bottom: $null-conv;
-            }
-            .barTipVal {
-                background: rgba(238, 238, 238, .9);
-                color: $black;
-                padding: $small-fix-10 + 2;
-                padding-left: $small-fix-10;
-                padding-right: $small-fix-10;
-                position: absolute;
-                bottom: $table-max-20 + $table-max-3; // 23%
-                left: $small-fix-25 + 2;
-                opacity: $null-conv;
-                white-space: nowrap;
-                font-size: $small-fix-10 + 2;
-            }
-            .barDone {
-                background: rgba(96, 163, 208, 0.7);
-                @include animation(barDone 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3; // 3%
-                    .tipone {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDtwo {
-                background: rgba(96, 163, 208, 0.5);
-                @include animation(barDtwo 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3; // 3%
-                    .tiptwo {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDthree {
-                background: rgba(96, 163, 208, 0.9);
-                @include animation(barDthree 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3;
-                    .tipthree {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDfour {
-                background: rgba(96, 163, 208, 0.4);
-                @include animation(barDfour 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3;
-                    .tipfour {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDfive {
-                background: rgba(255, 181, 60, 0.6);
-                @include animation(barDfive 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3;
-                    .tipfive {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDsix {
-                background: rgba(255, 141, 0, .7);
-                @include animation(barDsix 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3;
-                    .tipsix {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
-            .barDseven {
-                background: rgba(255, 104, 0, .7);
-                @include animation(barDseven 1s 1 forwards);
-                @include transition(.5s);
-                &:hover {
-                    bottom: $table-max-3;
-                    .tipseven {
-                        opacity: 1;
-                        z-index: 10000000;
-                    }
-                }
-            }
+        .width55 {
+            width: $table-max-55; // 55%
         }
-        .setDateUser {
-            float: left;
+        .width35 {
+            width: $table-max-35; // 35%
+        }
+        .Ubody {
             width: $max-conv-width;
-            padding: $small-fix-07 + 1;
-            text-align: center;
-            font-size: $small-fix-10 + 2;
+            float: left;
+            .UTbody {
+                width: $max-conv-width;
+                float: $fltleft;
+                border-bottom: $small-fix-02 solid #f9f9f9;
+                &:last-of-type {
+                    border-bottom: $null-conv;
+                }
+                .UbodyElm {
+                    position: relative;
+                    float: $fltleft;
+                    padding: $small-fix-13 + 1;
+                    text-align: center;
+                    border-right: $small-fix-02 solid #f9f9f9;
+                    font-size: $small-fix-13 + 1;
+                    color: $black;
+                    padding-left: $small-fix-20;
+                    padding-right: $small-fix-20;
+                    height: $small-fix-40 + $small-fix-07; // 47px
+                    &:last-child {
+                        border-right: $null-conv;
+                    }
+                }
+            }
+        }
+        .chartUserPadd {
+            padding: $small-fix-13;
         }
     }
-    .overTool {
-        opacity: 1 !important;
-        z-index: 10000000;
+    .k-tooltip {
+        z-index: 2000000000000 !important;
     }
-    .barBott {
-        bottom: $table-max-3 !important;
-    }
-}
-
-// Start Switch Buttons ON/OFF
-
-// .switch {
-//     input[type="checkbox"] {
-//         display: none;
-//     }
-// }
-
-// .switch {
-//     position: relative;
-//     display: inline-block;
-//     width: $small-fix-60 - 2;
-//     height: $small-fix-35 - 2;
-//     top: -6px;
-//     margin-bottom: $null-conv;
-//     input {
-//         display: none;
-//     }
-// }
-
-// .slider {
-//     position: absolute;
-//     cursor: pointer;
-//     top: $null-conv;
-//     left: -1px;
-//     right: $null-conv;
-//     bottom: $null-conv;
-//     background: #ddd;
-//     @include transition(.4s);
-//     &:before {
-//         position: absolute;
-//         content: "";
-//         height: $small-fix-30 + 1;
-//         width: $small-fix-30 + 1;
-//         left: $small-fix-01;
-//         bottom: $small-fix-01;
-//         background: $white;
-//         @include transition(.4s);
-//         z-index: 300;
-//     }
-//     .switchBtn {
-//         text-transform: uppercase;
-//         &:after {
-//             content: "Off";
-//             position: absolute;
-//             right: $small-fix-05 + 1;
-//             top: $small-fix-10 - 1;
-//             font-size: $small-fix-10;
-//             color: #999;
-//         }
-//         &:before {
-//             content: "On";
-//             position: absolute;
-//             left: $small-fix-07;
-//             top: $small-fix-10 - 1;
-//             font-size: $small-fix-10 + 1;
-//             color: $white;
-//         }
-//     }
-// }
-
-// input:checked + .slider {
-//     background: #0A9A7A;
-// }
-
-// input:focus + .slider {
-//     box-shadow: $null-conv $null-conv $small-fix-01 #0A9A7A;
-// }
-
-// input:checked + .slider:before {
-//     -webkit-transform: translateX($small-fix-20 + $small-fix-05 + 1);
-//     -ms-transform: translateX($small-fix-20 + $small-fix-05 + 1);
-//     -moz-transform: translateX($small-fix-20 + $small-fix-05 + 1);
-//     transform: translateX($small-fix-20 + $small-fix-05 + 1);
-// }
-
-
-/* Rounded sliders */
-
-.slider.round {
-    @include border-radius($small-fix-30 + $small-fix-03 + 1); // 34px
-}
-.slider.round:before { 
-    @include border-radius($max-conv-width / 2);
-}
-// End Switch Buttons ON/OFF
-
-.userReport {
-    height: 429px !important;
-    padding-top: $small-fix-05 !important;
-}
-.highcharts-button, 
-.highcharts-axis-title, 
-.highcharts-credits {
-    display: none;
-}
-.highcharts-tooltip {
-    .highcharts-tooltip-box {
-        stroke: transparent !important;
-    }
-}
-.modalCharts {
-
-    .uniqueCall-Modal {
-        &:before {
-            content: "";
-            left: $small-fix-100;
-        }
-    }
-    .totalCalls-Modal {
-        &:before {
-            content: "";
-            left: $small-fix-100;
-        }
-    }
-    .totalCalls-Modal, 
-    .uniqueCall-Modal {
-        position: absolute;
-        width: $half-table-max + $table-max-5; // 96.2% // 55%
-        height: 402px; // 419px
-        left: $max-conv-width; // 22px
-        top: $null-conv;
-        background: $white;
-        z-index: 300000000000000000;
-        border: $small-fix-01 solid #eee;
-        padding: $small-fix-15 + 1;
-        &:before {
-            position: absolute;
-            content: "";
-            vertical-align: middle;
-            width: $null-conv;
-            height: $null-conv;
-            border-left: $small-fix-07 + 1 solid transparent;
-            border-right: $small-fix-07 + 1 solid transparent;
-            z-index: 10;
-            top: -8px;
-            border-bottom: $small-fix-07 + 1 solid #333;
-            transform: rotate($null-conv);
-        }
-    }
-    .totalCalls-Modal, .uniqueCall-Modal {
-        .highcharts-container {
-            height: 375px !important;
-        }
-    }
-}
-.uniqueNow {
-    width: $max-conv-width;
-    height: $table-max-45; // 45%
-    position: absolute;
-    top: $small-fix-100 + $small-fix-15 + 1; // 116px
-    right: -100%;
-    background: rgba(219, 235, 227, .3);
-    z-index: 3000;
-    @include animation(uniqueNow $Sec-07 1 forwards);
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-@keyframes uniqueNow {
-    0% {left: $max-conv-width;}
-    100% {left: 21.5%; }
-}
-@-webkit-keyframes uniqueNow {
-    0% {left: $max-conv-width;}
-    100% {left: 21.5%; }
-}
-@-moz-keyframes uniqueNow {
-    0% {left: $max-conv-width;}
-    100% {left: 21.5%; }
-}
-.callsNow {
-    width: $max-conv-width;
-    height: $table-max-45; // 45%
-    position: absolute;
-    top: $small-fix-100 + $small-fix-15 + 1; // 116px
-    right: -100%;
-    background: rgba(219, 235, 227, .3);
-    z-index: 3000;
-    @include animation(callsNow $Sec-07 1 forwards);
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-@keyframes callsNow {
-    0% {left: $max-conv-width;}
-    100% {left: $small-fix-20 + 2; }
-}
-@-webkit-keyframes callsNow {
-    0% {left: $max-conv-width;}
-    100% {left: $small-fix-20 + 2; }
-}
-@-moz-keyframes callsNow {
-    0% {left: $max-conv-width;}
-    100% {left: $small-fix-20 + 2; }
-}
-.modalCharts-Open {
-    width: $max-conv-width;
-    height: 410px; // 45%
-    position: absolute;
-    top: $small-fix-100 + $small-fix-15 + 1; // 116px
-    right: -100%;
-    background: rgba(219, 235, 227, .3);
-    z-index: 3000;
-    @include animation(modalChartsOpen $Sec-07 1 forwards);
-    -webkit-animation-delay: $null-conv;
-    animation-delay: $null-conv;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-@keyframes modalChartsOpen {
-    0% {right: -100%;}
-    100% {right: $null-conv; }
-}
-@-webkit-keyframes modalChartsOpen {
-    0% {right: -100%;}
-    100% {right: $null-conv; }
-}
-@-moz-keyframes modalChartsOpen {
-    0% {right: -100%;}
-    100% {right: $null-conv; }
-}
-.modalCharts-Open-Now {
-    width: $max-conv-width;
-    height: 410px; //45%
-    position: absolute;
-    top: $small-fix-100 + $small-fix-15 + 1; // 116px
-    right: -100%;
-    background: rgba(219, 235, 227, .3);
-    z-index: 3000;
-    @include animation(modalChartsOpenNow  .7s 1 forwards);
-    -webkit-animation-delay: $null-conv;
-    animation-delay: $null-conv;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-@keyframes modalChartsOpenNow {
-    0% { right: -100%; }
-    100% { right: $null-conv }
-}
-@-webkit-keyframes modalChartsOpenNow {
-    0% { right: -100%; }
-    100% { right: $null-conv }
-}
-@-moz-keyframes modalChartsOpenNow {
-    0% { right: -100%; }
-    100% { right: $null-conv }
-}
-.opacity07 {
-    opacity: .7 !important;
-}
-.totalCalls, 
-.uniqueCall {
-    &:hover {
-        opacity: .7 !important;
-    }
-}
-.UserReportBtns {
-    position: relative; 
-    z-index: 1;
-    padding: $small-fix-10 + 2;
-    padding-bottom: $null-conv;
-    padding-top: $small-fix-05;
-    width: $max-conv-width;
-    display: inline-block;
-    .ReportBtn {
+    .out-Chart-Bar {
         position: relative;
-        width: $small-fix-60 + $small-fix-05;
-        height: $small-fix-40;
-        padding: $null-conv;
-        border: $small-fix-01 solid #ddd;
-        border-top: $null-conv;
-        border-left: $null-conv;
-        font-size: $small-fix-10 + 1;
-        background: #f9f9f9;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin: $small-fix-02;
-        color: #333;
-        @include border-radius($small-fix-03);
+        width: $max-conv-width;
         float: $fltleft;
+        height: $table-max-80; // 80%
+        overflow: hidden;
+    }
+    .goleft {
+        left: $small-fix-30 + $small-fix-03;
+        padding-left: $small-fix-03 !important;
+        &:before {
+            content: '\f060';
+            font-family: FontAwesome;
+        }
+    }
+    .goright {
+        right: $small-fix-30 + $small-fix-03;
+         padding-right: $small-fix-03 !important;
+         &:before {
+            content: '\f061';
+            font-family: FontAwesome;
+         }
+    }
+    .goslideHidden {
+        opacity: .4;
+        pointer-events: none;
+    }
+    .goleft, 
+    .goright {
+        position: absolute;
+        top: $small-fix-20 + $small-fix-03;
+        font-size: $small-fix-20;
+        color: rgba(96, 163, 208, .9);
+        width: $small-fix-40;
+        height: $small-fix-40;
+        padding: $small-fix-05;
+        padding-top: $small-fix-05 + 1;
         text-align: center;
+        @include border-radius($max-conv-width / 2);
+        background: rgba(96, 163, 208, .15);
+        cursor: pointer;
         &:hover, 
         &:focus {
+            color: rgba(96, 163, 208, .9);
+        }
+    }
+    .chart-bar-slide {
+        position: absolute;
+        width: 10000px;
+        bottom: $small-fix-20;
+        left: $null-conv;
+        border-top: $small-fix-01 solid #eee; 
+        @include animation(chartbarslide .7s 1 forwards); 
+        overflow: hidden;
+
+        @include keyframes(chartbarslide) {
+            0% {height: $null-conv;}
+            100% {height: 262px}
+        }
+
+        .chart-Bar-T {
+            position: relative;
+            width: $table-max-20; // 25% // 16.6% // 20%
+            max-width: 227.39px;
+            float: $fltleft;
+            height: $max-conv-height;
+            padding: $small-fix-15;
+            padding-bottom: $null-conv;
+            padding-top: $null-conv;
+            text-align: justify;
+            border-left: $small-fix-01 solid #eee;
+            &:first-child {
+                border-left: $null-conv;
+            }
+            .barT-main {
+                width: 16.5%; // 14.2%
+                float: $fltleft;
+                height: $table-max-90; // 90%
+                position: relative;
+                .barD {
+                    position: absolute;
+                    width: $table-max-90 + $table-max-5; //90% //87% // 95%
+                    left: $null-conv;
+                    right: $null-conv;
+                    margin: auto;
+                    bottom: $null-conv;
+                }
+                .barTipVal {
+                    background: rgba(238, 238, 238, .9);
+                    color: $black;
+                    padding: $small-fix-10 + 2;
+                    padding-left: $small-fix-10;
+                    padding-right: $small-fix-10;
+                    position: absolute;
+                    //bottom: $table-max-20 + $table-max-3; // 23%
+                    top: 10px;
+                    left: $small-fix-30 + 1;
+                    opacity: $null-conv;
+                    white-space: nowrap;
+                    font-size: $small-fix-10 + 2;
+                }
+                .barDone {
+                    background: rgba(96, 163, 208, 0.7);
+                    @include animation(barDone 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3; // 3%
+                        .tipone {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDtwo {
+                    background: rgba(96, 163, 208, 0.5);
+                    @include animation(barDtwo 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3; // 3%
+                        .tiptwo {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDthree {
+                    background: rgba(96, 163, 208, 0.9);
+                    @include animation(barDthree 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3;
+                        .tipthree {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDfour {
+                    background: rgba(96, 163, 208, 0.4);
+                    @include animation(barDfour 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3;
+                        .tipfour {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDfive {
+                    background: rgba(255, 181, 60, 0.6);
+                    @include animation(barDfive 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3;
+                        .tipfive {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDsix {
+                    background: rgba(255, 141, 0, .7);
+                    @include animation(barDsix 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3;
+                        .tipsix {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+                .barDseven {
+                    background: rgba(255, 104, 0, .7);
+                    @include animation(barDseven 1s 1 forwards);
+                    @include transition(.5s);
+                    &:hover {
+                        bottom: $table-max-3;
+                        .tipseven {
+                            opacity: 1;
+                            z-index: 10000000;
+                        }
+                    }
+                }
+            }
+            .setDateUser {
+                float: left;
+                width: $max-conv-width;
+                padding: $small-fix-07 + 1;
+                text-align: center;
+                font-size: $small-fix-10 + 2;
+            }
+        }
+        .overTool {
+            opacity: 1 !important;
+            z-index: 10000000;
+        }
+        .barBott {
+            bottom: $table-max-3 !important;
+        }
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        @include border-radius($small-fix-30 + $small-fix-03 + 1); // 34px
+    }
+    .slider.round:before { 
+        @include border-radius($max-conv-width / 2);
+    }
+    // End Switch Buttons ON/OFF
+
+    .userReport {
+        // height: 429px !important;
+        height: 451px !important;
+        padding-top: $small-fix-05 !important;
+    }
+    .highcharts-button, 
+    .highcharts-axis-title, 
+    .highcharts-credits {
+        display: none;
+    }
+    .highcharts-tooltip {
+        .highcharts-tooltip-box {
+            stroke: transparent !important;
+        }
+    }
+    .modalCharts {
+        .uniqueCall-Modal {
+            &:before {
+                content: "";
+                left: $small-fix-100;
+            }
+        }
+        .totalCalls-Modal {
+            &:before {
+                content: "";
+                left: $small-fix-100;
+            }
+        }
+        .totalCalls-Modal, 
+        .uniqueCall-Modal {
+            position: absolute;
+            width: $half-table-max + $table-max-5; // 96.2% // 55%
+            height: 402px; // 419px
+            left: $max-conv-width; // 22px
+            top: $small-fix-03;
+            background: $white;
+            z-index: 300000000000000000;
+            border: $small-fix-01 solid #eee;
+            padding: $small-fix-15 + 1;
+            &:before {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                width: $null-conv;
+                height: $null-conv;
+                border-left: $small-fix-07 + 1 solid transparent;
+                border-right: $small-fix-07 + 1 solid transparent;
+                z-index: 10;
+                top: -8px;
+                border-bottom: $small-fix-07 + 1 solid #333;
+                transform: rotate($null-conv);
+            }
+        }
+        .totalCalls-Modal, 
+        .uniqueCall-Modal {
+            .highcharts-container {
+                height: 375px !important;
+            }
+        }
+    }
+    .uniqueNow {
+        width: $max-conv-width;
+        height: $table-max-45; // 45%
+        position: absolute;
+        top: $small-fix-100 + $small-fix-15 + 1; // 116px
+        right: -100%;
+        background: rgba(219, 235, 227, .3);
+        z-index: 3000;
+        @include animation(uniqueNow $Sec-07 1 forwards);
+        @include animationdelay(.5s);
+        @include transformtranslate3d(0, 0, 0);
+    }
+    @include keyframes(uniqueNow) {
+        0% { left: $max-conv-width; }
+        100% { left: 21.5%; }
+    }
+
+    .callsNow {
+        @include animation(callsNow $Sec-07 1 forwards);
+    }
+    @include keyframes(callsNow) {
+        0% { left: $max-conv-width; }
+        100% { left: $small-fix-20 + 2; } 
+    }
+
+    .callsNow, 
+    .callsBack {
+        @include animationdelay(.5s);
+    }
+
+    .clseTCalls, 
+    .clseUCalls {
+        cursor: pointer;
+        position: absolute;
+        right: $small-fix-10;
+        top: 9px;
+    }
+
+    .modalCharts-Open, 
+    .modalCharts-Open-Now {
+        width: $max-conv-width;
+        height: 410px; // 45%
+        position: absolute;
+        top: $small-fix-100 + $small-fix-15 + 1; // 116px
+        right: -100%;
+        background: rgba(219, 235, 227, .3);
+        z-index: 3000;
+        // @include animation(modalChartsOpen $Sec-07 1 forwards);
+        @include animationdelay(0s);
+    }
+
+    .modalCharts-Open {
+        @include animation(modalChartsOpen $Sec-07 1 forwards);
+        //@include animationdelay(0s);
+    }
+    @include keyframes(modalChartsOpen) {
+        0% { right: -100%; }
+        100% { right: $null-conv; }
+    }
+
+    .modalCharts-Open-Now {
+        @include animation(modalChartsOpenNow $Sec-07 1 forwards);
+       // @include animationdelay(0s);
+    }
+    @include keyframes(modalChartsOpenNow) {
+        0% { right: -100%; }
+        100% { right: $null-conv; }
+    }
+
+    .opacity07 {
+        opacity: .7 !important;
+    }
+    .totalCalls, 
+    .uniqueCall {
+        &:hover {
+            opacity: .7 !important;
+        }
+    }
+    .UserReportBtns {
+        position: relative; 
+        z-index: 1;
+        padding: $small-fix-10 + 2;
+        padding-bottom: $null-conv;
+        padding-top: $small-fix-05;
+        width: auto;
+        float: right;
+        .ReportBtn {
+            position: relative;
+            width: $small-fix-60 + $small-fix-05;
+            height: $small-fix-40;
+            padding: $null-conv;
+            border: $small-fix-01 solid #ddd;
+            border-top: $null-conv;
+            border-left: $null-conv;
+            font-size: $small-fix-10 + 1;
+            background: #f9f9f9;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: $small-fix-02;
+            color: #333;
+            @include border-radius($small-fix-03);
+            float: $fltleft;
+            text-align: center;
+            &:hover, 
+            &:focus {
+                text-decoration: none;
+            }
+            .Top {
+                float: $fltleft;
+                width: $max-conv-width;
+                margin: $small-fix-03;
+                margin-bottom: $null-conv;
+                margin-left: $null-conv;
+                margin-right: $null-conv;
+            }
+            .Bottom {
+                float: $fltleft;
+                width: $max-conv-width;
+                margin: $null-conv;
+                font-size:  $small-fix-13;
+                font-weight: bold;
+            }
+        }
+        .ReportSmallBtn {
             text-decoration: none;
-        }
-        .Top {
-            float: $fltleft;
-            width: $max-conv-width;
-            margin: $small-fix-03;
-            margin-bottom: $null-conv;
-            margin-left: $null-conv;
-            margin-right: $null-conv;
-        }
-        .Bottom {
-            float: $fltleft;
-            width: $max-conv-width;
-            margin: $null-conv;
-            font-size:  $small-fix-13;
+            color: $black;
+            font-size: $small-fix-10 + 2;
+            margin: $small-fix-03 + 1;
+            float: left;
+            margin-right: $small-fix-10;
+            text-transform: capitalize;
+            cursor: pointer;
             font-weight: bold;
         }
+        .ReportSmallBtnEbable {
+            color: #0A9A7A;
+            cursor: default;
+        }
+        .btnEnable {
+            opacity: 1;
+            background: #0A9A7A;
+            color: $white;
+            border: $small-fix-01 solid #0A9A7A;
+        }
     }
-    .ReportSmallBtn {
-        text-decoration: none;
-        color: $black;
-        font-size: $small-fix-13;
-        margin: $small-fix-03 + 1;
+    #chartUserReportDeleted, 
+    #chartUserReportRetained, 
+    #chartUserReportRejected, 
+    #chartUserReportTransPQ, 
+    #chartUserReportTransNotHQPQ {
+        display: none;
+    }
+    .highcharts-title {
+        font-size: $small-fix-15 !important;
+        fill: #999 !important;
+    }
+    .product-telesales {
+        display: none;
+    }
+}
+
+.chartUserReport, 
+.chartUserReport_In {
+    width: $max-conv-width;
+    position: relative;
+    float: left;
+}
+
+.chartUserReport {
+    height: 84%;
+}
+
+.chartUserReport_In {
+    height: 90%;
+    max-height: 313.73px;
+    .leftNumbChart {
+        width: 5%;
+        position: relative;
+        float: left;
+        margin-right: $small-fix-05;
+    }
+    .rightNChart {
+        width: 94%;
+        position: relative;
+        float: left;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        .trr {
+            width: $max-conv-width;
+            float: left;
+            height: 20%;
+            border-bottom: 1px solid #eee;
+        }
+        .nChartPl {
+            position: absolute;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            top: $null-conv;
+            left: $null-conv;
+            .bltr {
+                width: 12.5%;
+                position: relative;
+                height: $max-conv-height;
+                float: left;
+                &:hover {
+                    background: rgba(226,217,242, 0.13);
+                }
+                .mh {
+                    width: $small-fix-10;
+                    height: $max-conv-height;
+                    position: absolute;
+                    top: $null-conv;
+                    left: 45%;
+                    .CBullet {
+                        width: $small-fix-10;
+                        height: $small-fix-10;
+                        position: absolute;
+                        left: $null-conv;
+
+                        @include transition(.1s);
+                        z-index: 1000;
+
+                        &:hover {
+                            width: $small-fix-13;
+                            height: $small-fix-13;
+                            left: -1.5px;
+                        }
+                    }
+                    .blueBlt {
+                        background: #7cb5ec;
+                    }
+
+                    .redBlt {
+                        background: #f15c80;
+                    }
+
+                    .blackBlt {
+                        background: #000;
+                    }
+
+                    .greenBlt {
+                        background: #90ed7d;
+                    }
+
+                    .orangeBlt {
+                        background: #f7a35c;
+                    }
+
+                    .purpleBlt {
+                        background: #8085e9;
+                    }
+
+                    // Bullet Lines
+                    .svgLine {
+                        height: 2px;
+                        left: $null-conv;
+                    }
+
+                    // Blue Lines
+                    .b0 {
+                        width: 138px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 28.4%;
+                        @include transform(-15deg);
+                    }
+
+                    .b1 {
+                        width: 140px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 40%;
+                        @include transform(-16deg);
+                    }
+
+                    .b2 {
+                        width: 154px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 32%;
+                        @include transform(34.5deg);
+                        left: -4px;
+                    }
+
+                    .b3 {
+                        width: 187px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 39%;
+                        @include transform(-46deg);
+                        left: -22px;
+                    }
+
+                    .b4 {
+                        width: 130px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 59.5%;
+                        @include transform(4deg);
+                        left: 7px;
+                    }
+
+                    .b5 {
+                        width: 138px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 66.3%;
+                        @include transform(-21.9deg);
+                        left: 3px;
+                    }
+
+                    .b6 {
+                        width: 204px;
+                        border-bottom: 2px solid #7cb5ec;
+                        position: absolute;
+                        bottom: 47.5%;
+                        @include transform(52deg);
+                        left: -31px;
+                    }
+
+                    // Red Lines
+                    .r0 {
+                        width: 141px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 25%;
+                        @include transform(23deg);
+                    }
+
+                    .r1 {
+                        width: 209px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 42%;
+                        @include transform(-53deg);
+                        left: -34px;
+                    }
+
+                    .r2 {
+                        width: 220px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 40%;
+                        @include transform(54deg);
+                        left: -37px;
+                    }
+
+                    .r3 {
+                        width: 126px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 10%;
+                        @include transform(4deg);
+                        left: 8px;
+                    }
+
+                    .r4 {
+                        width: 178px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 27%;
+                        @include transform(-43deg);
+                        left: -17px;
+                    }
+
+                    .r5 {
+                        width: 139px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 40.5%;
+                        @include transform(19deg);
+                    }
+
+                    .r6 {
+                        width: 191px;
+                        border-bottom: 2px solid #f15c80;
+                        position: absolute;
+                        bottom: 55%;
+                        @include transform(-47deg);
+                        left: -25px;
+                    }
+
+                    // Black Lines
+                    .bl0 {
+                        width: 220px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 53%;
+                        @include transform(52deg);
+                        left: -36px;
+                    }
+
+                    .bl1 {
+                        width: 163px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 41%;
+                        @include transform(-36deg);
+                        left: -8px;
+                    }
+
+                    .bl2 {
+                        width: 152px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 44%;
+                        @include transform(31deg);
+                        left: -4px;
+                    }
+
+                    .bl3 {
+                        width: 139px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 22.3%;
+                        @include transform(21deg);
+                    }
+
+                    .bl4 {
+                        width: 180px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 34%;
+                        @include transform(-43deg);
+                        left: -15px;
+                    }
+
+                    .bl5 {
+                        width: 172px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 71%;
+                        @include transform(-40deg);
+                        left: -14px;
+                    }
+
+                    .bl6 {
+                        width: 284px;
+                        border-bottom: 2px solid $black;
+                        position: absolute;
+                        bottom: 50%;
+                        @include transform(62.5deg);
+                        left: -70px;
+                    }
+
+                    // Green Lines
+                    .g0 {
+                        width: 191px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 29%;
+                        @include transform(133deg);
+                        left: -21px;
+                    }
+
+                    .g1 {
+                        width: 172px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 33%;
+                        @include transform(42deg);
+                        left: -15px;
+                    }
+
+                    .g2 {
+                        width: 138px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 8.3%;
+                        @include transform(13.5deg);
+                        left: 5px;
+                    }
+
+                    .g3 {
+                        width: 236px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 35%;
+                        @include transform(123deg);
+                        left: -45px;
+                    }
+
+                    .g4 {
+                        width: 240px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 35%;
+                        @include transform(57deg);
+                        left: -46px;
+                    }
+
+                    .g5 {
+                        width: 183px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 22%;
+                        @include transform(-45deg);
+                        left: -21px;
+                    }
+
+                    .g6 {
+                        width: 138px;
+                        border-bottom: 2px solid #90ed7d;
+                        position: absolute;
+                        bottom: 49.4%;
+                        @include transform(-14deg);
+                        left: 6px;
+                    }
+
+                    .org0 {
+                        width: 192px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 32%;
+                        left: -24px;                        
+                        @include transform(48deg);
+                    }
+
+                    .org1 {
+                        width: 138px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 17%;
+                        @include transform(-22deg);
+                        left: 2px;
+                    }
+
+                    .org2 {
+                        width: 210px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 53%;
+                        @include transform(-52deg);
+                        left: -33px;
+                    }
+
+                    .org3 {
+                        width: 192px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 57%;
+                        left: -24px;                        
+                        @include transform(48deg);
+                    }
+
+                    .org4 {
+                        width: 132px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 35.2%;
+                        @include transform(-5.5deg);
+                        left: 6px;
+                    }
+
+                    .org5 {
+                        width: 164px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 20%;
+                        @include transform(39deg);
+                        left: -12px;
+                    }
+
+                    .org6 {
+                        width: 177px;
+                        border-bottom: 2px solid #f7a35c;
+                        position: absolute;
+                        bottom: 22%;
+                        @include transform(-44deg);
+                        left: -16px;
+                    }
+
+                    .pr0 {
+                        width: 164px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 80%;
+                        @include transform(37deg);
+                        left: -12px;
+                    }
+
+                    .pr1 {
+                        width: 138px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 72%;
+                        @include transform(-22deg);
+                        left: 2px;
+                    }
+
+                    .pr2 {
+                        width: 169px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 63%;
+                        @include transform(40deg);
+                        left: -12px;
+                    }
+
+                    .pr3 {
+                        width: 132px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 43%;
+                        @include transform(9.5deg);
+                        left: 6px;
+                    }
+
+                    .pr4 {
+                        width: 203px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 64%;
+                        @include transform(-50.3deg);
+                        left: -29px;
+                    }
+
+                    .pr5 {
+                        width: 252px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 55%;
+                        @include transform(60deg);
+                        left: -55px;
+                    }
+
+                    .pr6 {
+                        width: 189px;
+                        border-bottom: 2px solid #8085e9;
+                        position: absolute;
+                        bottom: 42%;
+                        @include transform(-47deg);
+                        left: -21px;
+                    }
+                }
+
+                .blTrTip {
+                    background: rgba(249, 249, 249, 0.9);
+                    border: 1px solid #eee;
+                    width: 167px;
+                    position: absolute;
+                    right: 77px;
+                    top: 23%;
+                    z-index: 10000;
+                    padding: $small-fix-07 + 1;
+                    display: none;
+                    .tipDate {
+                        width: $max-conv-width;
+                        float: left;
+                        font-size: $small-fix-10 + 2;
+                        color: #999;
+                        padding-left: $small-fix-10;
+                        margin-bottom: $small-fix-07;
+                    }
+                    .ProAc {
+                        width: $max-conv-width;
+                        padding-left: $small-fix-15 + 1;
+                        font-size: $small-fix-10;
+                        margin-bottom: $small-fix-05;
+                        &:last-of-type {
+                            margin-bottom: $null-conv;
+                        }
+
+                        .ttVal {
+                            font-size: $small-fix-10 + 1;
+                            float: right;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .datChCon {
+            width: 12.5%; 
+            height: $max-conv-height; 
+            position: relative; 
+            float: left; 
+            padding: $small-fix-05;
+            text-align: center;
+            font-size: $small-fix-10 + 1;
+            color: #999;
+            &:last-of-type {
+               border-right: 1px solid #eee; 
+            }
+        }
+    }
+
+    .leftNumbChart, 
+    .rightNChart {
+        height: $max-conv-height;
+    }
+
+    .leftNumbChart {
+        .chartScl {
+            width:  $max-conv-width;
+            float: left;
+            font-size: $small-fix-10 + 1;
+            color: #999;
+            text-align: right;
+            position: relative;
+            margin-bottom: 83%;
+            top: -7px;
+            &:last-of-type {
+                margin-bottom: $null-conv;
+            }
+        }
+    }
+}
+
+.ActionsPro {
+    position: relative;
+    width: $max-conv-width;
+    float: left;
+    padding: $small-fix-07;
+    height: 60px;
+    .ActP_In {
+        position: absolute;
+        width: 45%;
+        margin: auto;
+        left: $null-conv;
+        right: $null-conv;
+        bottom: $small-fix-07 + 1;
+        .ProAc {
+            font-size: $small-fix-10 + 1;
+            font-weight: bold;
+            padding-left: $small-fix-15;
+            margin-right: $small-fix-15;
+            cursor: pointer;
+        }
+    }
+}
+
+.ProAc {
+    position: relative;
+    float: left;
+    &:last-child {
+        margin-right: $null-conv;
+    }
+    &:before {
+        content: '';
+        width: $small-fix-10 + 1;
+        height: $small-fix-10 + 1;
+        position: absolute;
+        left: $null-conv;
+        top: 1.85px;
+        @include border-radius($max-conv-width / 2);
+        background: #ddd;
+    }
+}
+
+.trsCl {
+    &:before {
+        background: #7cb5ec;
+    }
+}
+.delCl {
+    &:before {
+        background: #f15c80;
+    }
+}
+.rejCl {
+    &:before {
+        background: $black;
+    }
+}
+.retCl {
+    &:before {
+        background: #90ed7d;
+    }
+}
+.trPQCl {
+    &:before {
+        background: #f7a35c;
+    }
+}
+.trxCl {
+    &:before {
+        background: #8085e9;
+    }
+}
+.linOpc {
+    color: #ddd;
+    &:before {
+        background: #ddd;
+    }
+}
+
+.chartDN {
+    display: none;
+}
+
+.ProductsLoop {
+    -moz-column-width: 13em; // 13em
+    -webkit-column-width: 13em; // 13em
+    column-width: 13em; // 13em
+    -moz-column-gap: $small-fix-05;
+    -webkit-column-gap: $small-fix-05;
+    column-gap: $small-fix-05;
+    position: relative;
+
+    .ProdItem {
+        display: inline-block;
+        width: $max-conv-width;
+        background: $white;
+        padding: $null-conv;
+        border: 1px solid #DBEBE3;
+        margin-top: $small-fix-05;
+        .prod-name {
+            width: $max-conv-width;
+            background: #eee;
+            padding: $small-fix-05 $small-fix-10;
+            font-size: $small-fix-10 + 1;
+            color: #999;
+            text-transform: uppercase;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+        }
+        .prod-commands {
+            display: inline-block;
+            padding: $small-fix-07; // 12px
+            width: $max-conv-width;
+            .rights-blk {
+                display: inline-block;
+                width: $max-conv-width;
+                .right_title {
+                    display: inline-block;
+                    font-size: $small-fix-10 + 1;
+                    color: $black;
+                    position: relative;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    p {
+        margin: $null-conv;
+        text-align: left;
+        line-height: $small-fix-20;
+    }
+
+    .switch_prod {
+        position: relative;
         float: right;
-        margin-right: $small-fix-10;
-        text-transform: capitalize;
-        cursor: pointer;
+        .switch {
+            height: $small-fix-17;
+            .slider {
+                background: transparent;
+                border: $small-fix-02 solid #eee;
+                &:before {
+                    content: "";
+                    bottom: 1px;
+                }
+            }
+        }
+
+        input:checked + .slider { 
+            background: transparent;
+            border: $small-fix-02 solid #0A9A7A;
+        }
     }
-    .ReportSmallBtnEbable {
-        color: #0A9A7A;
-        cursor: default;
-    }
-    .btnEnable {
-        opacity: 1;
-        background: #0A9A7A;
-        color: $white;
-        border: $small-fix-01 solid #0A9A7A;
+
+    @include switch();
+}
+
+.merchantInfo {
+    .ProductsLoop {
+        .ProdItem {
+
+            .prod-name { cursor: pointer; }           
+        }
     }
 }
-#chartUserReportDeleted, 
-#chartUserReportRetained, 
-#chartUserReportRejected, 
-#chartUserReportTransPQ, 
-#chartUserReportTransNotHQPQ {
+
+.teleSrightNav {
     display: none;
 }
-.highcharts-title {
-    font-size: $small-fix-15 !important;
-    fill: #999 !important;
-}
-.product-telesales {
-    display: none;
-}
+
+
+
+/*<script>
+    $(document).ready(function () {
+        $('.grid-conv-full').masonry({
+            itemSelector: '.conv-grid-item',
+            columnWidth: 230,
+            isFitWidth: true
+        });
+    });
+ 
+</script>*/

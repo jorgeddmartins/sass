@@ -1,0 +1,386 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.GridCalendPot {
+    width: $max-conv-width;
+    height: $max-conv-height;
+    position: fixed;
+    left: $null-conv;
+    top: $null-conv;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 10000000;
+    display: none;
+
+    .CloseCalend {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        left: $null-conv;
+        top: $null-conv;
+    }
+
+    .GridCalendar {
+        width: 300px;
+        box-shadow: $null-conv $null-conv $small-fix-07 $null-conv rgba(0, 0, 0, 0.4);
+        background: $white;
+        position: relative;
+        top: 116px;
+        // left: 239px;
+        left: 172px;
+        padding: $small-fix-07;
+        display: inline-block;
+        overflow: hidden;
+        .calendDragTitle {
+            width: $max-conv-width;
+            float: left;
+            text-align: center;
+            font-size: $small-fix-10 + 2;
+            color: #3d566e;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: $small-fix-05;
+        }
+
+        .CalendPlat {
+            width: 1027px;
+            height: 80%;
+            float: left;
+            position: relative;
+        }
+
+        .Days_B, 
+        .Months_B, 
+        .Years_B {
+            width: 286px;
+            float: left;
+            height: $max-conv-height;
+            position: relative;
+            margin-right: $small-fix-07;
+            position: relative;
+        }
+
+        .Years_B { margin-right: $null-conv; }
+
+        .Slide_Day, 
+        .Slide_Month, 
+        .Slide_Year {
+            position: relative;
+            float: left;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            background: $white;
+            z-index: 100;
+        } 
+        .DayB_Item, 
+        .MonthB_Item, 
+        .YearsB_Item {
+            width: 46.5px;
+            height: $small-fix-35 + 1; // 36px
+            background: rgba(31, 173, 207, 0.2);
+            color: #025a87;
+            text-align: center;
+            padding: $small-fix-10 + 1;
+            margin: $small-fix-01 / 2; // 0.5px
+            float: left;
+            cursor: pointer;
+            font-size: $small-fix-10 + 1;
+            @include transition(.3s);
+            &:hover {
+                background: #025a87;
+                color: $white;
+            }
+        }
+        .DaySelected, 
+        .MonthSelected, 
+        .YearSelected {
+            background: #025a87;
+            color: $white;
+        }
+        .TDsDateselected {
+            background: #1fadcf;
+            color: $white;
+        }
+        .MonthB_Item {
+            width: 70.4px;
+            height: 61px;
+            padding-top: $small-fix-20 + 4; // 24px
+        }
+        .YearsB_Item { width: 56.2px; } 
+        .SlideTGo {
+            width: $max-conv-width;
+            display: inline-block;
+            margin-top: $small-fix-07;
+            margin-bottom: $small-fix-03;
+            .DayToMonth, 
+            .ToBack {
+                float: right;
+                font-size: $small-fix-10 + 1;
+                color: #025a87;
+                text-transform: uppercase;
+                margin-right: $small-fix-15 + 1;
+                cursor: pointer; 
+            }
+            .ToBack {
+                float: left;
+                margin-left: $small-fix-15 + 1;
+                display: none;
+            }
+        }
+        .TodaysDate {
+            width: $max-conv-width;
+            float: left;
+            padding: $small-fix-07;
+            padding-bottom: $small-fix-03;
+            margin-top: $small-fix-07;
+            text-align: center;
+            font-size: $small-fix-10 + 1;
+            color: #025a87;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: $small-fix-01 / 2;
+        }
+    }
+
+    .opacitGridCalend { opacity: 0.7; }
+}
+
+.inpZx { z-index: 10; }
+
+// Header Calendar
+.HeaderGCalen {
+    position: fixed;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    left: $null-conv;
+    top: $null-conv;
+    background: rgba(0, 0, 0, 0.12);
+    display: none;
+    .CloseCalend {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        top: $null-conv;
+        left: $null-conv;
+    }
+    .HeaderGridCalend {
+        width: 289.5px; // 250px
+        // height: 291px; // 250px
+        max-height: 245px; // 279px
+        box-shadow: $null-conv $null-conv $small-fix-07 0 rgba(0, 0, 0, 0.4);
+        background: $white;
+        position: relative;
+        top: 181px; // 177px
+        left: 42.5%;
+        padding: $small-fix-07;
+        display: inline-block;
+        overflow: hidden;
+        // @include transition(.2s);
+        .SlideCalenGrid {
+            width: $max-conv-width; // 724px 236px
+            float: left;
+            position: relative;
+            height: 724px; //200px
+            .DaySlideHead, 
+            .MonthSlideHead, 
+            .YearSlideHead {
+                width: $max-conv-width;
+                height: 241px; // 200px
+                position: relative;
+                float: left;
+                margin-bottom: $small-fix-07;
+                background: $white;
+            }
+            .MonthSlideHead {
+                height: 200px;
+            }
+            .YearSlideHead {
+                margin-bottom: $null-conv;
+            }
+
+            .dyItem, 
+            .mthItem, 
+            .yeItem {
+                width: 37.3px;
+                height: $small-fix-30;
+                position: relative;
+                background: rgba(242, 242, 242, 1);
+                color: $black;
+                text-align: center;
+                padding: $small-fix-07 + 2;
+                font-size: $small-fix-10 + 1;
+                color: #777;
+                margin: $small-fix-01;
+                cursor: pointer;
+                @include transition(.3s);
+                &:hover {
+                    background: #ddd;
+                }
+            }
+
+            .today, 
+            .selectThis, 
+            .selectMth, 
+            .selectYear {
+                background: #ddd;
+                font-weight: bold;
+            }
+            .mthItem {
+                width: 89.7px; // 76.6px
+                height: 48px;
+                padding: $small-fix-17 + 1;
+                float: left;
+            }
+            .yeItem {
+                width: 53.1px;
+                height: $small-fix-33; // 33px
+                float: left;
+            }
+            .empty {
+                background: rgba(242, 242, 242, .5);
+                pointer-events: none;
+            }
+        }
+        .TopHeadC { 
+            width: $max-conv-width;
+            height: $small-fix-30;
+            float: left;
+            position: relative;
+            background: #f2f2f2;
+            margin-bottom: $small-fix-05 + 1;
+            z-index: 1;
+            .TopHContent {
+                width: $max-conv-width;
+                float: left;
+                text-align: center;
+                font-size: $small-fix-10 + 2;
+                color: $black;
+                font-weight: bold;
+                letter-spacing: $small-fix-01;
+                padding: $small-fix-05 + 1;
+            }
+        }
+
+        .fa-3x {
+            font-size: $small-fix-17;
+            position: absolute;
+            z-index: 1;
+            top: $small-fix-13 + 1;
+            cursor: pointer;
+            color: #777;
+            z-index: 2;
+        }
+        .prev-month {
+            left: $small-fix-15;
+        }
+        .next-month {
+            right: $small-fix-15;
+        }
+
+        .lookMonth, 
+        .lookYear { top: $small-fix-13 }
+
+        .lookMonth { left: 81px }
+
+        .lookYear { right: 81px }
+
+        .MonthTopN { @include animation(MonthTopN .3s 1 forwards) }
+        @keyframes MonthTopN {
+            0% { top: $null-conv }
+            100% { top: -249px  }
+        }
+        @-webkit-keyframes MonthTopN {
+            0% { top: $null-conv  }
+            100% { top: -249px  }
+        }
+        @-moz-keyframes MonthTopN {
+            0% { top: $null-conv }
+            100% { top: -249px }
+        }
+
+        .CalendDownN { @include animation(CalendDownN .3s 1 forwards) }
+        @keyframes CalendDownN {
+            0% { top: -249px }
+            100% { top: $null-conv }
+        }
+        @-webkit-keyframes CalendDownN {
+            0% { top: -249px }
+            100% { top: $null-conv }
+        }
+        @-moz-keyframes CalendDownN {
+            0% { top: -249px }
+            100% { top: $null-conv }
+        }
+
+        .YearTopN { @include animation(YearTopN .3s 1 forwards) }
+        @keyframes YearTopN {
+            0% { top: $null-conv }
+            100% { top: -455px }
+        }
+
+        @-webkit-keyframes YearTopN {
+            0% { top: $null-conv }
+            100% { top: -455px }
+        }
+    }
+    .day30 {
+        max-height: 279px;
+    }
+
+    .leftCalend {
+        left: 49.3%;
+    }
+
+    .potFirst {
+        left: 49%;
+    }
+    .potSecond {
+        left: 69%;
+    }
+    .canFirst {
+        left : 10%;
+    }
+    .canSecond {
+        left: 75.5%;
+    }
+    .canThird {
+        left: 82%;
+    }
+    .onFirst {
+        left: 55.5%;
+    }
+    .tkFirst {
+        left: 27.8%;
+    }
+    .tkSecond {
+        left: 37.5%;
+    }
+    .tkThird {
+        left: 47.7%;
+    }
+}
+
+.table {
+    border: $null-conv;
+      tbody  {
+        tr > {
+            th {
+                border: $null-conv;
+                font-size: $small-fix-10 + 2;
+                vertical-align: middle;
+                text-align: center;
+                padding-bottom: $small-fix-03;
+                padding-top: $small-fix-03 + 1;
+            } 
+        } 
+    } 
+}
+
+.topBar {
+    position: absolute;
+    width: $max-conv-width;
+    background: $white;
+    height: $small-fix-07;
+    top: $null-conv;
+    left: $null-conv;
+}

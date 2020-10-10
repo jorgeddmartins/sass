@@ -1,0 +1,473 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Main Grid
+
+/* Start Main Grid */
+
+.GridSmarter {
+    width: $max-conv-width;
+    height: 83.5vh; // 85VH 79vh
+    position: relative;
+    float: left;
+    border: $small-fix-01 solid #ddd;
+    margin-top: $small-fix-07 + 2;
+}
+
+.StHeader, 
+.TrHeader, 
+.StBody, 
+.TrBody, 
+.AllPolHeader, 
+.AllPolBody {
+    width: $max-conv-width;
+    float: left;
+}
+
+#StBodySalePerson {
+    max-height: 72vh;
+}
+
+.StBody, .AllPolBody {
+    max-height: 72vh; // 78vh 71vh
+    .mCSB_inside > {
+       .mCSB_container { margin-right: $null-conv; } 
+    }
+}
+
+.TrBody {
+    position: relative;
+    min-height: $small-fix-25;
+    display: inline-flex;
+
+    .paddLeftGrid {
+        i {
+            font-size: $small-fix-13 + 1;
+            position: absolute;
+            top: $small-fix-03;
+            left: $small-fix-07;
+            color: $black;
+            cursor: pointer;
+            @include transition(.3s);
+        }
+        .rotate45 {
+            @include transform(45deg);
+            color: $white;
+        }
+    }
+}
+
+.ThHeader, 
+.TdBody {
+    width: 6.345%;
+    padding: $small-fix-03;
+    border-bottom: $small-fix-01 solid #ddd;
+    margin: $small-fix-03;
+    color: #777;
+    float: left;
+    word-break: break-all;
+    margin-bottom: $null-conv;
+}
+
+.ThHeader {
+    text-transform: uppercase;
+    font-size: $small-fix-10;
+}
+
+.salesGWith { width: 19.65% }
+.GridInpWith { width: 6.345% }
+.salestypesGridWidth { width: 49.65% }
+
+.EditInputtypes {
+    width: $max-conv-width / 2;
+    border: $null-conv;
+    background: transparent;
+    &:focus {
+        outline: $null-conv;
+    }
+}
+
+.HeaderSearch {
+    position: relative;
+    width: $max-conv-width; 
+    float: left;
+}
+
+.headerInpBox {
+    position: relative;
+    width: 6.345%; 
+    float:left; 
+    margin: $small-fix-03; 
+    margin-top: $null-conv;
+    input[type="text"] {
+        margin: $null-conv;
+        width: $max-conv-width;
+        padding-right: $small-fix-25 + 2; // 27px
+    }
+}
+
+.headerInput10 {
+    width: 9.68%;
+}
+
+.inpCalndar {
+    &:before {
+        content: '\f073';
+        font-family: FontAwesome;
+        color: #999;
+        font-size: $small-fix-17;
+        position: absolute;
+        top: $small-fix-02;
+        right: $small-fix-07;
+    }
+}
+
+.addNRecBtn {
+    background: #1fadcf;
+    color: $white;
+    font-size: $small-fix-10 + 1;
+    text-transform: uppercase;
+    float: left;
+    padding: $small-fix-07;
+    padding-left: $small-fix-25;
+    padding-right: $small-fix-10 + 2;
+    cursor: pointer;
+    @include transition(.3s);
+    &:hover {
+        background: #3d566e;
+    }
+}
+
+.topBtnHeader {
+    width: $max-conv-width; 
+    padding: $small-fix-03 + 1; 
+    float: left; 
+    background: #f9f9f9; 
+    border-bottom: 1px solid #eee;
+}
+
+.gridSearchIn {
+    float: left;
+    padding: $small-fix-03;
+    margin: $small-fix-03;
+    padding-left: $small-fix-07;
+    padding-right: $small-fix-07;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    height: $small-fix-27 + 1; // 28px
+    font-size: $small-fix-10 + 2;
+    margin-top: $null-conv;
+    margin-bottom: $small-fix-07;
+    border-top: $null-conv;
+    &:focus {
+        outline: $null-conv;
+    }
+}
+
+.TdBody {
+    position: relative;
+    text-transform: initial;
+    font-size: $small-fix-10 + 1;
+    line-height: $small-fix-13;
+    border-bottom: $null-conv;
+}
+
+.paddLeftGrid {
+    padding-left: $small-fix-25;
+}
+
+
+// Start Search Template
+@include searchbar();
+// End Search Template
+
+
+.gridTabs {
+    // width: 60%;
+    height: $max-conv-height; // 100%
+    position: relative;
+    float: left;
+    // margin-left: 1.5%;
+    margin-left: $small-fix-15;
+    ul {
+        list-style: none;
+        margin: $null-conv;
+        padding: $null-conv;
+       .item {
+            float: left;
+            position: relative;
+            text-align: center;
+            line-height: $small-fix-30;
+            a {
+                background: #f9f9f9;
+                margin: $small-fix-02;
+                margin-top: $null-conv;
+                margin-bottom: $null-conv;
+                letter-spacing: $null-conv;
+                position: relative;
+                display: block;
+                width: auto;
+                height: $small-fix-30 + 1;
+                font-size: $small-fix-10;
+                font-weight: bold;
+                letter-spacing: $small-fix-01;
+                text-transform: uppercase;
+                text-decoration: none;
+                cursor: pointer;
+                padding-left: $small-fix-10;
+                padding-right: $small-fix-10;
+                color: #777;
+                border: $small-fix-01 solid #f9f9f9;
+                border-bottom: $small-fix-01 solid #ddd;
+                border-right: $small-fix-01 solid #ddd;
+                cursor: pointer;
+            }
+
+            .selected {
+                border: $small-fix-01 solid #1dafd0;
+                background: #1dafd0;
+                color: $white !important;
+            }
+        } 
+    }
+}
+
+.listenliveTemp {
+	.GridSmarter { margin-top: $null-conv; }
+	.ThHeader, 
+    .TdBody { width: 19.5%; }
+}
+
+.tdFoot {
+    .SelectedFoot {
+        background: #1fadcf;
+        border: #1fadcf;
+        color: $white;
+        top: -6px;
+        padding-top: $small-fix-03 + 1;
+    }
+}
+
+.FlipLead_Blk {
+    position: relative;
+    height: $small-fix-30 + 1;
+    float: left;
+    margin-left: $small-fix-50; // 50px
+
+    .FlipLead_Title {
+        position: relative;
+        top: $small-fix-07 + 1;
+        float: left;
+        font-size: $small-fix-10;
+        font-weight: bold;
+        color: $black;
+        margin-right: $small-fix-10;
+    }
+
+    .flipBox {
+        width: $small-fix-50;
+        height: $small-fix-27 + 2; // 29px
+        float: left;
+        position: relative;
+        overflow: hidden;
+        input[type="checkbox"] {
+            opacity: $null-conv;
+        }
+
+        .pot_box {
+            width: $small-fix-50; // 50px
+            height: $small-fix-27; // 27px
+            border: $small-fix-01 solid;
+            position: absolute;
+            left: $null-conv;
+            top: $null-conv;
+            @include border-radius(50px);
+            cursor: pointer;
+            margin: $null-conv;
+            text-align: center;
+            font-size: $small-fix-10 + 1;
+            font-weight: bold;
+            color: $white;
+
+            letter-spacing: $small-fix-01;
+            text-transform: uppercase;
+            padding: 4.2px;
+
+            @include transition(.2s);
+        }
+
+        .offColor {
+            background: #ddd;
+            border: $small-fix-01 solid #ddd;
+        }
+
+        .onColor {
+            background: #1fadcf;
+            border: $small-fix-01 solid #1fadcf;
+        }
+    }
+}
+
+// Sub Grid
+.DropBodyTr {
+    width: $max-conv-width;
+    float: left;
+    padding: $small-fix-07;
+    padding-left: $small-fix-30;
+    padding-right: $small-fix-20;
+    padding-top: $small-fix-03 + 1;
+    display: none;
+
+    .SuGridBox {
+        width: $max-conv-width;
+        float: left;
+        background: #f9f9f9;
+        padding: $small-fix-03 + 1;
+
+        .row_Tabs {
+            width: $max-conv-width;
+            float: left;
+            border-bottom: $small-fix-01 solid #ddd;
+
+            .subTab {
+                float: left;
+                padding: $small-fix-05;
+                font-size: $small-fix-10;
+                color: #777;
+                text-transform: uppercase;
+                border: $small-fix-01 solid #ddd;
+                border-right: $null-conv;
+                border-bottom: $null-conv;
+                background: #f2f2f2;
+                letter-spacing: .3px;
+                padding-left: $small-fix-10;
+                padding-right: $small-fix-10;
+                cursor: pointer;
+                border-top-left-radius: $small-fix-03 + 1;
+                border-top-right-radius: $small-fix-03 + 1;
+                height: 26px;
+                padding-top: $small-fix-07;
+                @include transition(.2s);
+                &:last-child {
+                    border-right: $small-fix-01 solid #ddd;  
+                }
+            }
+
+            .subTabSelected {
+                background: $white;
+                color: $black;
+                position: relative;
+                padding-top: $small-fix-10;
+                font-weight: bold;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: $null-conv;
+                    width: $max-conv-width;
+                    bottom: -1px;
+                    border-bottom: 1px solid $white; 
+                }
+            }
+        }
+
+        .SubGrid_Flr {
+            background: $white;
+            float: left;
+            width: $max-conv-width;
+            border: 1px solid #ddd;
+            border-top: $null-conv;
+
+            .THeader {
+                .ThHeader {
+                    width: auto;
+                    padding: .164%;
+                    padding-right: .982%;
+                }
+            }
+
+            .TBody {
+
+                .TdBody {
+                    width: auto;
+                    padding: .164%;
+                }
+
+                .RiskWidth {
+                    width: 4.5%;
+                }
+
+                .SaleWidth {
+                    width: 3.8%;
+                }
+
+                .DateRiskWidth {
+                    width: 4.8%;
+                }
+
+                .OnRiskWidth {
+                    width: 5.4%;
+                }
+
+                .SumWidth {
+                    width: 4.9%;
+                }
+
+                .PaymentWidth {
+                    width: 5%;
+                }
+
+                .GuarteeWidth {
+                    width: 5.2%;
+                }
+
+                .TermWidth {
+                    width: 2.6%;
+                }
+
+                .ConfirmWidth {
+                    width: 9.5%;
+                }
+
+                .NetWidth {
+                    width: 4.4%;
+                }
+
+                .CommissionWidth {
+                    width: 7.2%;
+                }
+
+                .CDiferenceWidth {
+                    width: 7.9%;
+                }
+
+                .CDiference2Width {
+                    width: 8.5%;
+                }
+                .PositiveClawbackWidth {
+                    width: 6.5%;
+                }
+
+                .ClawBackStateWidth {
+                    width: 8.7%;
+                }
+  
+            }
+        }
+    }
+}
+
+/* End Main Grid */
+
+/* Start Settings Grid */
+
+.SettingsGrid {
+    width: $max-conv-width;
+    float: left;
+    margin-top: $small-fix-10;
+    .tSettWidth {
+        width: 24.67%;;
+    }
+}
+
+/* End Settings Grid */

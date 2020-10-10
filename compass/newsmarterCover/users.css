@@ -1,0 +1,18 @@
+.users {
+  float: left;
+  width: 100%;
+  text-align: center; }
+  .users i {
+    font-size: 69px;
+    color: #cc0000;
+    margin-bottom: 30px; }
+  .users .not_Authoried {
+    margin-top: 8%; }
+    .users .not_Authoried p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 40px;
+      letter-spacing: -2px;
+      margin: 0; }
+
+/*# sourceMappingURL=users.css.map */

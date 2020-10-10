@@ -1,0 +1,161 @@
+/*************************************** TABLETS ************************************/
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .debtManagement .ivaExample {
+    background-size: 100% 100%; } }
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .debtManagement h2 {
+    font-size: 39px; }
+  .debtManagement .container {
+    width: 100%; }
+  .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox {
+    padding-top: 10px; }
+    .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox p {
+      font-size: 15px;
+      line-height: 21px;
+      width: 90%; }
+    .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt {
+      margin-top: 15px;
+      margin-bottom: 13px; }
+      .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li .thisOpt {
+        font-size: 14px; }
+  .debtManagement .heroSection .HeroInfoBoxContent hgroup {
+    margin-bottom: 6px; }
+  .debtManagement .heroSection .HeroImgBox {
+    width: 57%;
+    max-width: 583px; }
+  .debtManagement .downHero,
+  .debtManagement .HowWorks,
+  .debtManagement .ivaQualification,
+  .debtManagement .ivaExample, .debtManagement .footerSection {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .debtManagement .ivaExample .chartArrow {
+    left: 11px; } }
+/*************************************** SMARTPHONES ************************************/
+@media (min-width: 220px) and (max-width: 1023px) {
+  .debtManagement h2 {
+    font-size: 37px; }
+  .debtManagement header {
+    padding: 9px; }
+    .debtManagement header .logoBox {
+      max-width: 68px; }
+    .debtManagement header .navMob {
+      display: block; }
+    .debtManagement header nav {
+      display: none;
+      position: relative;
+      float: left;
+      margin-bottom: 13px; }
+    .debtManagement header .NavMenu {
+      width: 100%;
+      text-align: right;
+      margin: 3px;
+      font-size: 17px; }
+  .debtManagement .downHero,
+  .debtManagement .HowWorks,
+  .debtManagement .ivaQualification,
+  .debtManagement .ivaExample, .debtManagement .footerSection {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .debtManagement .downHero .downHeroBlk {
+    width: 100%;
+    margin-bottom: 12px; }
+    .debtManagement .downHero .downHeroBlk:last-child {
+      margin-bottom: 0; }
+  .debtManagement .HowWorks .WorksOptLeft,
+  .debtManagement .HowWorks .WorksOptRight {
+    width: 100%; }
+    .debtManagement .HowWorks .WorksOptLeft .WorksBullet,
+    .debtManagement .HowWorks .WorksOptRight .WorksBullet {
+      width: 270px;
+      height: 270px; }
+    .debtManagement .HowWorks .WorksOptLeft p,
+    .debtManagement .HowWorks .WorksOptRight p {
+      font-size: 14px; }
+    .debtManagement .HowWorks .WorksOptLeft ul li .thisOpt,
+    .debtManagement .HowWorks .WorksOptRight ul li .thisOpt {
+      font-size: 13px; }
+  .debtManagement .heroSection .HeroImgBox {
+    display: none; }
+  .debtManagement .heroSection .HeroInfoBoxContent {
+    position: relative; }
+    .debtManagement .heroSection .HeroInfoBoxContent hgroup {
+      margin-bottom: 12px; }
+    .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 4%;
+      padding-bottom: 7%; }
+      .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox p {
+        font-size: 15px;
+        line-height: 21px; }
+      .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt {
+        margin-top: 12px;
+        margin-bottom: 24px; }
+        .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li {
+          margin-bottom: 6px; }
+          .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li .thisOpt {
+            font-size: 12px; }
+          .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .heroOPt li:after {
+            top: 1.704px; }
+      .debtManagement .heroSection .HeroInfoBoxContent .HeroInfoBox .checkBtn {
+        margin: auto;
+        display: table; }
+  .debtManagement .ivaQualification .ivaOPt {
+    width: 50%; }
+    .debtManagement .ivaQualification .ivaOPt .ivaBulletTxt {
+      padding-top: 12px;
+      padding-bottom: 15px; }
+  .debtManagement .ivaQualification .SubTitle {
+    font-size: 22px;
+    margin-top: 8px; }
+  .debtManagement .ivaQualification .UnderSubTitle {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .debtManagement .ivaQualification p {
+    font-size: 15px;
+    margin-top: 11px;
+    line-height: 20px; }
+  .debtManagement .ivaQualification hr {
+    margin-top: 20px; }
+  .debtManagement .ivaQualification ul {
+    width: 100%; }
+    .debtManagement .ivaQualification ul li .thisOpt {
+      font-size: 14px;
+      top: 2px; }
+  .debtManagement .ivaQualification .checkBtnBox {
+    margin-top: 22px; }
+  .debtManagement .ivaExample {
+    background: #f1f1f1; }
+    .debtManagement .ivaExample .WhiteBlk {
+      max-height: 100%;
+      padding: 20px; }
+    .debtManagement .ivaExample .width30, .debtManagement .ivaExample .width70 {
+      width: 100%; }
+    .debtManagement .ivaExample .width30 {
+      margin-bottom: 15px; }
+      .debtManagement .ivaExample .width30:before, .debtManagement .ivaExample .width30:after {
+        display: none; }
+    .debtManagement .ivaExample h2 {
+      margin-bottom: 27px; }
+    .debtManagement .ivaExample .monthChart {
+      width: 100%;
+      margin-bottom: 17px; }
+      .debtManagement .ivaExample .monthChart .monthChartTitle {
+        margin-bottom: 7px; }
+      .debtManagement .ivaExample .monthChart .WhiteBlkTitle {
+        margin-bottom: 21px; }
+      .debtManagement .ivaExample .monthChart .card {
+        margin: auto;
+        display: table;
+        float: none; }
+    .debtManagement .ivaExample .chartArrow {
+      display: none; }
+    .debtManagement .ivaExample .checkBtnBox {
+      margin-top: 22px; }
+    .debtManagement .ivaExample .DebtsPlat {
+      margin-bottom: 8px; }
+  .debtManagement .footerSection .copyRight, .debtManagement .footerSection .footerLink {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=debtmanagementQueries.css.map */

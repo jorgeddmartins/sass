@@ -30,7 +30,7 @@ main {
         background: #f5f5f5;
         // border-right: 2px solid #eee;
         height: $max-width;
-        z-index: 20000; // 2000
+        z-index: 4000000; // 2000
         padding: $null-conv;
         @include transition(all .3s ease-in-out);
         @include transitiondelay(0s);
@@ -175,9 +175,6 @@ main {
                     .right-ico-floor {
                         border: $small-fix-01 solid #0bad86;
                     }
-                    /*.floor-opace {
-                        display: $dispblk;
-                    }*/
                 }
                 .arrow-left {
                     width: $conv-smll;

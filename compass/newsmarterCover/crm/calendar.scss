@@ -1,0 +1,173 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+// Start Calendar
+/* Start Calendar */
+.dob_Calendar {
+	position: absolute;
+	width: 300px;
+	height: 281px;
+	@include box-shadow(0 0 $small-fix-07 0 rgba(0, 0, 0, .4));
+	top: $max-conv-top + 3; // 103%
+	left: $null-conv;
+	z-index: 10000000000;
+	display: none;
+	overflow: hidden;
+	.dobCalendar_Slide {
+		position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    background: $white;
+	    width: 900px;
+	    height: $max-conv-height;
+	    .cal_Fl {
+	    	position: relative;
+	    	float: left;
+	    	width: 300px;
+	    	height: $max-conv-height;
+	    	padding: $small-fix-02;
+	    	.clDTitle {
+	    		position: relative;
+			    width: $max-conv-width;
+			    float: left;
+			    padding: $small-fix-07;
+			    text-align: center;
+			    font-size: $small-fix-13;
+			    color: #025a87;
+			    font-weight: bold;
+	    	}
+	    }
+	}
+}
+
+.dayItem, 
+.monthItem, 
+.yearItem, 
+.DtDay, 
+.DtMonth, 
+.DtYear {
+	height: 35px;
+	background: rgba(31, 173, 207, 0.2);
+	color: #025a87;
+	text-align: center;
+	padding: $small-fix-10 + 1;
+	margin: $small-fix-01 / 2; // 0.5px
+	float: left;
+	cursor: pointer;
+	font-size: $small-fix-10 + 1;
+	@include transition(.3s);
+	&:hover {
+		background: #025a87;
+		color: $white;
+	}
+}
+
+.selected {
+	background: #025a87;
+	color: $white;
+}
+
+.dayItem, .DtDay {
+	width: 41.2px;
+}
+
+.monthItem {
+	width: 73px;
+	height: 58px;
+	padding-top: 23px;
+}
+.yearItem {
+	width: 48.2px;
+}
+
+.slideToGo, .TodayTime {
+	position: relative;
+    float: left;
+    width: $max-conv-width;
+    margin-top: $small-fix-07 + 1;
+    text-align: center;
+    .linkTo {
+	    position: relative;
+	    font-size: $small-fix-10 + 1;
+	    color: #025a87;
+	    text-transform: uppercase;
+	    padding: $small-fix-07;
+	    margin-left: $small-fix-10;
+	    margin-right: $small-fix-10;
+	    cursor: pointer;
+    }
+}
+
+.TodayTime {
+	color: #025a87;
+    font-size: $small-fix-10 + 2;
+    text-transform: uppercase;
+    background: rgba(31, 173, 207, 0.07);
+    padding: $small-fix-07;
+}
+// End Calendar
+/* End Calendar */
+
+
+.goDay300 { @include animation(goDay300 .35s 1 forwards); }
+.goDay600 { @include animation(goDay600 .35s 1 forwards); }
+.goMonth300 { @include animation(goMonth300 .35s 1 forwards); }
+.goMonth600 { @include animation(goMonth600 .35s 1 forwards); }
+.goYear300 { @include animation(goYear300 .35s 1 forwards); }
+.goYear600 { @include animation(goYear600 .35s 1 forwards); }
+
+@keyframes goDay300 { 0% { left: $null-conv } 100% { left: -300px } }
+@-webkit-keyframes goDay300 { 0% { left: $null-conv } 100% { left: -300px } }
+@-moz-keyframes goDay300 { 0% { left: $null-conv } 100% { left: -300px } }
+
+@keyframes goDay600 { 0% { left: $null-conv } 100% { left: -600px } }
+@-webkit-keyframes goDay600 { 0% { left: $null-conv } 100% { left: -600px } }
+@-moz-keyframes goDay600 { 0% { left: $null-conv } 100% { left: -600px } }
+
+@keyframes goMonth300 { 0% { left: -300px } 100% { left: $null-conv } }
+@-webkit-keyframes goMonth300 { 0% { left: -300px } 100% { left: $null-conv } }
+@-moz-keyframes goMonth300 { 0% { left: -300px } 100% { left: $null-conv } }
+
+@keyframes goMonth600 { 0% { left: -300px } 100% { left: -600px } }
+@-webkit-keyframes goMonth600 { 0% { left: -300px } 100% { left: -600px } }
+@-moz-keyframes goMonth600 { 0% { left: -300px } 100% { left: -600px } }
+
+@keyframes goYear300 { 0% { left: -600px } 100% { left: $null-conv } }
+@-webkit-keyframes goYear300 { 0% { left: -600px } 100% { left: $null-conv } }
+@-moz-keyframes goYear300 { 0% { left: -600px } 100% { left: $null-conv } }
+
+@keyframes goYear600 { 0% { left: -600px } 100% { left: -300px } }
+@-webkit-keyframes goYear600 { 0% { left: -600px } 100% { left: -300px } }
+@-moz-keyframes goYear600 { 0% { left: -600px } 100% { left: -300px } }
+
+
+.goDay259 { @include animation(goDay259 .35s 1 forwards); }
+.goMonth259 { @include animation(goMonth259 .35s 1 forwards); }
+.goYear518 { @include animation(goYear518 .35s 1 forwards); }
+.goYear0 { @include animation(goYear0 .35s 1 forwards); }
+.goMonth518 { @include animation(goMonth518 .35s 1 forwards); }
+.goYear259 { @include animation(goYear259 .35s 1 forwards); }
+
+@keyframes goDay259 { 0% { left: $null-conv } 100% { left: -259px } }
+@-webkit-keyframes goDay259 { 0% { left: $null-conv } 100% { left: -259px } }
+@-moz-keyframes goDay259 { 0% { left: $null-conv } 100% { left: -259px } }
+
+@keyframes goMonth259 { 0% { left: -259px } 100% { left: $null-conv } }
+@-webkit-keyframes goMonth259 { 0% { left: -259px } 100% { left: $null-conv } }
+@-moz-keyframes goMonth259 { 0% { left: -259px } 100% { left: $null-conv } }
+
+@keyframes goYear518 { 0% { left: $null-conv } 100% { left: -520.5px } }
+@-webkit-keyframes goYear518 { 0% { left: $null-conv } 100% { left: -520.5px } }
+@-moz-keyframes goYear518 { 0% { left: $null-conv } 100% { left: -520.5px } }
+
+@keyframes goYear0 { 0% { left: -520.5px } 100% { left: $null-conv } }
+@-webkit-keyframes goYear0 { 0% { left: -520.5px } 100% { left: $null-conv } }
+@-moz-keyframes goYear0 { 0% { left: -520.5px } 100% { left: $null-conv } }
+
+@keyframes goMonth518 { 0% { left: -259px } 100% { left: -520.5px } }
+@-webkit-keyframes goMonth518 { 0% { left: -259px } 100% { left: -520.5px } }
+@-moz-keyframes goMonth518 { 0% { left: -259px } 100% { left: -520.5px } }
+
+@keyframes goYear259 { 0% { left: -520.5px } 100% { left: -259px } }
+@-webkit-keyframes goYear259 { 0% { left: -520.5px } 100% { left: -259px } }
+@-moz-keyframes goYear259 { 0% { left: -520.5px } 100% { left: -259px } }

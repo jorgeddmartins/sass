@@ -1,0 +1,792 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('PopUps') {
+
+    /* Start Pop ups */
+    .takeLead_Fl, 
+    .dobC_Fl, 
+    .smsNote_Fl, 
+    .taskNote_Fl, 
+    .bugReport {
+    	width: $max-conv-width;
+        height: $max-conv-height;
+        position: fixed;
+        top: $null-conv;
+        left: $null-conv;
+        background: rgba(0, 0, 0, .2);
+        z-index: 100000000;
+        display: none;
+    }
+
+    .smsNote_Fl, 
+    .taskNote_Fl, 
+    .bugReport {
+    	.closeSmsNote, 
+        .closebugReport {
+    		position: absolute;
+    		width: $max-conv-width;
+    		height: $max-conv-height;
+    		top: $null-conv;
+    		left: $null-conv;
+    	}
+    	.closeNotes {
+    		position: absolute;
+    	    right: $small-fix-10;
+    	    top: $small-fix-10;
+    	    font-size: $small-fix-17 + 1;
+    	    cursor: pointer;
+    	}
+    	.smsNote_Content, 
+        .bugReport_Content {
+    		background: $white;
+    	    width: 600px;
+    	    margin: 170px auto $null-conv;
+    	    @include box-shadow(0 0 $small-fix-05 0 rgba(0,0,0,0.45));
+    	    position: relative;
+        	z-index: 10000;
+        	padding: $small-fix-30;
+        	display: table;
+        	@include border-radius($small-fix-03 + 1);
+        	.Lock_Content {
+        		pointer-events: none;
+        		position: relative;
+        		width: $max-conv-width; // 100%
+        		height: $max-conv-height;
+        		float: left;
+        	}
+
+        	h3 {
+        		width: $max-conv-width;
+        		margin: $null-conv;
+        		text-align: center;
+        		float: left;
+        		padding: $small-fix-10;
+        		padding-top: $null-conv;
+        		font-size: $small-fix-17 + 2;
+        		text-transform: uppercase;
+        		font-weight: 700;
+        		color: #1fadcf;
+        	}
+
+        	.sms_Inpt, 
+        	.task_Inp {
+        		width: $max-conv-width;
+        		height: $small-fix-40;
+        		position: relative;
+        		float: left;
+        		border: $small-fix-01 solid #ddd;
+        		border-bottom: $small-fix-02 solid #ddd;
+        		pointer-events: initial;
+        		padding: $small-fix-10;
+        		margin: $small-fix-05;
+        		margin-left: $null-conv;
+       			margin-right: $null-conv;
+        		font-size: $small-fix-10 + 2;
+        		color: #777;
+        		padding-bottom: $small-fix-10 + 2;
+        		@include border-radius($small-fix-03 + 1);
+        		&:focus {
+        			outline: $null-conv;
+        		}
+        	}
+
+        	.sms_TextArea, 
+        	.task_TextArea {
+        		height: 100px;
+        	}
+
+        	.addSms_Btn, 
+        	.addTask_Btn {
+        		cursor: pointer;
+    		    float: left;
+    		    width: $max-conv-width;
+    		    text-align: center;
+    		    padding: $small-fix-10;
+    		    background: #1fadcf;
+    		    color: $white;
+    		    text-transform: uppercase;
+    		    margin-top: $small-fix-07;
+    		    margin: $small-fix-05;
+    		    margin-left: $null-conv;
+        		margin-right: $null-conv;
+    		    pointer-events: initial;
+    		    @include border-radius($small-fix-03);
+    		    letter-spacing: $small-fix-01 / 2; // .5px
+        	}
+    	}
+
+        .bugReport_Content {
+            width: 810px;
+            padding: $null-conv;
+        }
+    }
+
+    .SmsCustomer {
+        position: relative;
+        width: $max-conv-width;
+        float: left;
+        border: $small-fix-01 solid #ddd;
+        .SmsCustomerTitle {
+            position: relative;
+            padding: $small-fix-03 + 1;
+            width: $max-conv-width;
+            float: left;
+            font-size: $small-fix-10 + 2;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: #eee;
+            padding-left: $small-fix-15;
+            padding-right: $small-fix-15;
+            letter-spacing: .3px;
+            min-height: $small-fix-25;
+        }
+        .Form_Temp {
+            position: relative;
+            width: $max-conv-width;
+            float: left;
+            padding: $small-fix-10;
+
+            .SelectTemp, 
+            .MsgTemp{
+                position: relative;
+                margin: $small-fix-03;
+                margin-bottom: $null-conv;
+            }
+
+            .SelectTemp, 
+            .MsgTemp {
+                float: left;
+                width: $max-conv-width / 2;
+                .Select_Box {
+                    position: relative;
+                    width: $max-conv-width;
+                    float: left;
+                    margin-bottom: $small-fix-10;
+                    &:last-of-type {
+                        margin-bottom: $null-conv;
+                    }
+
+                    .label {
+                        width: $max-conv-width;
+                        float: left;
+                        font-size: $small-fix-10 + 2;
+                        text-transform: uppercase;
+                        color: $black;
+                        margin-bottom: $small-fix-05;
+                        padding: $null-conv;
+                        text-align: left;
+                        letter-spacing: $null-conv;
+                    }
+
+                    .Input_Box {
+                        position: relative;
+                        width: $max-conv-width;
+                        height: $small-fix-35;
+                        float: left;
+                        border: $small-fix-01 solid #ddd;
+                        input[type="text"] {
+                            pointer-events: initial;
+                            width: $max-conv-width;
+                            height: $max-conv-height;
+                            border: $null-conv;
+                            padding: $small-fix-07;
+                            font-size: $small-fix-10 + 2;
+                            color: #777;
+                            &:focus {
+                                outline: $null-conv;
+                            }
+                        }
+                    }
+
+                    .SelectCustomer1, 
+                    .SelectCustomer2, 
+                    .TaskCustomer {
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            vertical-align: middle;
+                            border-left: $small-fix-05 solid transparent;
+                            border-right: $small-fix-05 solid transparent;
+                            top: $small-fix-15;
+                            right: $small-fix-13 + 1;
+                            border-bottom: $small-fix-05 solid $black;
+                            @include transform(180deg);
+                            @include transition(0.3s);
+                        }
+                        input[type="text"] {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .SendSms_Btn {
+                    pointer-events: initial;
+                    width: $max-conv-width;
+                    height: 38px;
+                    float: left;
+                    background: #1fadcf;
+                    border: $null-conv;
+                    color: $white;
+                    font-size: $small-fix-15;
+                    text-transform: uppercase;
+                    margin-top: $small-fix-20;
+                    text-align: center;
+                    padding: $small-fix-07 + 2;
+                    cursor: pointer;
+                }
+                .disabled {
+                    pointer-events: none;
+                    opacity: .4;
+                }
+            }
+
+            .MsgTemp {
+                float: right;
+                width: 47%;
+            }
+
+            .SmsArea {
+                pointer-events: initial;
+                width: $max-conv-width;
+                height: 15.4vh;
+                float: left;
+                padding: $small-fix-07;
+                border: $small-fix-01 solid #ddd;
+                font-size: $small-fix-10 + 2;
+                color: #777;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+
+            .SelectCustomer_Fl {
+                width: $max-conv-width;
+                background: $white;
+                border: $small-fix-01 solid #ddd;
+                position: absolute;
+                top: $max-conv-top + 2; // 102%
+                left: $null-conv;
+                padding: $null-conv;
+                z-index: 100;
+                display: none;
+
+                li {
+                    list-style: none;
+                    .SelectOPt {
+                        width: $max-conv-width;
+                        float: left;
+                        padding: $small-fix-05;
+                        color: #999;
+                        font-size: $small-fix-13;
+                        border-bottom: $small-fix-01 solid #ddd;
+                        cursor: pointer;
+                        background: #f9f9f9;
+                    }
+                }
+            }
+        }
+    }
+
+    .customerJointSelect {
+        margin-top: $small-fix-10 + 2;
+        display: none;
+    }
+
+    .warningNote {
+        float: left;
+        width: $max-conv-width;
+        padding: $small-fix-07;
+        padding-top: $null-conv;
+        padding-left: $small-fix-10;
+        font-size: $small-fix-10 + 2;
+        color: red;
+        font-weight: bold;
+        display: none;
+    }
+
+    .modalContent_Header {
+        width: $max-conv-width;
+        padding: $small-fix-15;
+        padding-left: $small-fix-30;
+        padding-top: $small-fix-20 + 2;
+        background: #f9f9f9;
+        float: left;
+        position: relative;
+        border-bottom: $small-fix-02 solid #eee;
+        h6 {
+            text-transform: uppercase;
+            margin: $null-conv;
+        }
+
+        i {
+            position: absolute;
+            right: $small-fix-25;
+            top: $small-fix-15 + 1;
+            font-size: $small-fix-20 + 2;
+            cursor: pointer;
+        }
+
+        .closeTip {
+            position: absolute;
+            padding: $small-fix-03 + 1;
+            padding-left: $small-fix-20;
+            padding-right: $small-fix-20;
+            background: #1fadcf;
+            border: $small-fix-01 solid #1fadcf;
+            font-size: $small-fix-10 + 1;
+            text-transform: uppercase;
+            top: -16px;
+            right: -4px;
+            color: $white;
+            @include border-radius($small-fix-03 + 1);
+            cursor: default;
+            display: none;
+            &:after {
+                width: $null-conv;
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                border-left: $small-fix-05 solid transparent;
+                border-right: $small-fix-05 solid transparent;
+                top: $small-fix-20 + 4; // 24px
+                right: $null-conv;
+                left: $null-conv;
+                margin-left: auto;
+                margin-right: auto;
+                border-bottom: $small-fix-05 solid #1fadcf;
+                @include transform(180deg);
+                @include transition(.3s);
+            }
+        }
+    }
+
+    .modalContent_Body {
+        position: relative;
+        float: left;
+        width: $max-conv-width;
+        padding: $small-fix-15;
+        padding-top: $small-fix-25;
+        padding-bottom: $small-fix-25;
+        background: $white;
+
+        .load_content, 
+        .form-group {
+            width: $max-conv-width;
+            float: left;
+            position: relative;
+        }
+        label {
+            color: #025a87;
+            width: $max-conv-width;
+            span {
+                color: #cc0000;
+            }
+        }
+        textarea {
+            width: $max-conv-width;
+            height: 214px;
+            display: inline-block;
+            border: $small-fix-01 solid #ddd;
+            padding: $small-fix-10;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+
+        #priority-group {
+            width: $max-conv-width / 2; //50%
+            float: left;
+            position: relative;
+            .priority_Select {
+                width: $max-conv-width;
+                height: $small-fix-40;
+                border: $small-fix-01 solid #ddd;
+                float: left;
+                position: relative;
+                background: $white;
+                &:after {
+                    position: absolute;
+                    content: "";
+                    vertical-align: middle;
+                    border-left: $small-fix-05 solid transparent;
+                    border-right: $small-fix-05 solid transparent;
+                    top: $small-fix-17 + 1;
+                    right: $small-fix-13 + 1;
+                    border-bottom: $small-fix-05 solid $black;
+                    @include transform(180deg);
+                    @include transition(0.3s);
+                    cursor: pointer;
+                }
+                input {
+                    width: $max-conv-width;
+                    height: $max-conv-height;
+                    position: absolute;
+                    top: $null-conv;
+                    left: $null-conv;
+                    border: $null-conv;
+                    padding: $small-fix-07;
+                    cursor: pointer;
+                    &:focus {
+                        outline: $null-conv;
+                    }
+                }
+            }
+
+            .PriorityDrop {
+                width: $max-conv-width;
+                position: absolute;
+                top: 104%;
+                background: $white;
+                border: $small-fix-01 solid #ddd;
+                z-index: 100;
+                display: none;
+
+                .option {
+                    float: left;
+                    width: $max-conv-width;
+                    padding: $small-fix-07;
+                    padding-left: $small-fix-30;
+                    font-size: $small-fix-13;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-bottom: $small-fix-01 solid #eee;
+                    @include transition(0.3s);
+                    &:hover {
+                        background: #f9f9f9;
+                         padding-left: $small-fix-40;
+                    }
+                }
+
+                .select {
+                    position: relative;
+                    background: #f9f9f9;
+                    padding-left: $small-fix-40;
+                    &:before {
+                        content: '\e934';
+                        font-family: 'Linearicons';
+                        position: absolute;
+                        top: $small-fix-05 + 1;
+                        right: $small-fix-20;
+                        font-size: $small-fix-15 + 1;
+                        color: #025a87;
+                    }
+                }
+            }
+        }
+
+        .priority_Left {
+            padding-right: $small-fix-15;
+        }
+        .priority_Right {
+            padding-left: $small-fix-15;
+        } 
+    }
+
+    .modalContent_Footer {
+        width: $max-conv-width;
+        padding: $small-fix-10 + 2;
+        padding-left: $small-fix-30;
+        padding-top: $small-fix-13 + 1;
+        background: #f9f9f9;
+        float: left;
+        position: relative;
+        border-top: $small-fix-02 solid #eee;
+
+        .btnStop {
+            float: right;
+            text-decoration: none;
+            font-size: $small-fix-10 + 1;
+            text-transform: uppercase;
+            padding: $small-fix-07;
+        }
+
+        .btnStopSub {
+            padding: $small-fix-07;
+            padding-left: $small-fix-15;
+            padding-right: $small-fix-15;
+            background: #025a87;
+            color: $white;
+            font-size: $small-fix-10 + 2;
+            font-weight: bold;
+            float: right;
+            margin-right: $small-fix-10;
+            border: $null-conv;
+            @include border-radius($small-fix-03);
+        }
+    }
+
+    .fileUpload {
+        position: relative;
+        float: left;
+        input.uploadlogo {
+            position: absolute;
+            top: $null-conv;
+            right: $null-conv;
+            margin: $null-conv;
+            padding: $null-conv;
+            font-size: $small-fix-20;
+            cursor: pointer;
+            opacity: $null-conv;
+            filter: alpha(opacity=0);
+            width: $max-conv-width;
+            height: $small-fix-40 + 2;
+        }
+    }
+
+    .blue-btn {
+        background: transparent;
+        border: solid 1px #1fadcf;
+        @include border-radius($null-conv);
+        color: #1fadcf;
+        font-size: $small-fix-13 + 1;
+        margin-bottom: $small-fix-20;
+        padding: $small-fix-10 $small-fix-20;
+        margin: $null-conv;
+        @include transition(0.3s);
+        &:hover {
+            background: #1fadcf;
+            color: $white;
+        }
+    }
+
+    .grabFiles {
+        width: 185px;
+        padding: $small-fix-07;
+        position: absolute;
+        left: $null-conv;
+        top: 72px;
+        font-size: $small-fix-10 + 2;
+        color: #999;
+        background: #f9f9f9;
+        border: $small-fix-01 solid #eee;
+    }
+
+    .loadImage {
+        width: 200px;
+        height: 120px;
+        position: relative;
+        float: left;
+        left: $small-fix-50;
+        overflow: hidden;
+        background: #f9f9f9;
+        border: $small-fix-01 solid #eee;
+        &:before {
+            width: $max-conv-width;
+            content: 'Paste Image (ctrl + v)';
+            position: absolute;
+            top: 56%;
+            left: $null-conv;
+            color: #ccc;
+            font-size: $small-fix-13;
+            text-align: center;
+        }
+        &:after {
+            content: '\f03e';
+            font-family: FontAwesome;
+            color: #ccc;
+            font-size: $small-fix-25;
+            position: absolute;
+            top: 20%;
+            left: 84px;
+        }
+        img {
+            width: $max-conv-width;
+            height: auto;
+            position: absolute;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+
+    .toolLoadI {
+        position: absolute;
+        background: #025a87;
+        color: $white;
+        padding: $small-fix-07;
+        font-size: $small-fix-10 + 1;
+        border-radius: $small-fix-03;
+        top: 67px;
+        left: 56%;
+        z-index: 100;
+        display: none;
+        &:after {
+            position: absolute;
+            content: "";
+            vertical-align: middle;
+            border-left: $small-fix-05 solid transparent;
+            border-right: $small-fix-05 solid transparent;
+            top: $small-fix-10 + 2;
+            left: -7px;
+            border-bottom: $small-fix-05 solid #025a87;
+            @include transform(-90deg);
+            @include transition(.3s);
+            cursor: pointer;
+        }
+    }
+
+    .SendSmsCover {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        top: $null-conv;
+        left: $null-conv;
+        background: rgba(255, 255, 255, .9);
+        display: none;
+        .SmsCoverMsg {
+            float: left;
+            width: $max-conv-width;
+            text-align: center;
+            margin-top: 22%;
+            font-size: $small-fix-13 + 1;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btns_Fl {
+            position: relative;
+            margin: auto;
+            display: table;
+            .confirmBtn, 
+            .CancelSendSms {
+                pointer-events: initial;
+                height: 38px;
+                float: left;
+                border: $null-conv;
+                font-size: $small-fix-13;
+                text-transform: uppercase;
+                padding-left: $small-fix-20;
+                padding-right: $small-fix-20;
+                padding-top: $small-fix-03;
+                &:focus {
+                    outline: $null-conv;
+                }
+            }
+            .confirmBtn {
+                background: #1fadcf;
+                color: $white;
+            }
+            .CancelSendSms {
+                background: #ddd;
+                color: #777;
+            }
+        }
+    }
+
+    /* End Pop ups */
+
+    .modal-open {
+       .modal {
+            overflow: hidden;
+        } 
+    }
+
+    .ModalErrorPot {
+        position: fixed;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        top: $null-conv;
+        left: $null-conv;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 10000;
+        display: none;
+
+        .ErrorPotContent {
+            position: relative;
+            margin: 150px auto $null-conv;
+            width: 700px;
+            padding: $small-fix-20;
+            background: $white;
+            font-size: $small-fix-13;
+            color: #777;
+            line-height: $small-fix-20 + 2;
+            @include border-radius(4px);
+            @include box-shadow($null-conv $null-conv $small-fix-05 $null-conv rgba(0,0,0,0.35));
+
+        }
+    }
+
+
+    // Replace Pop Up
+    /* Replace Pop Up */
+    .replacePop {
+
+        width: $max-conv-width;
+        height: $max-conv-height;
+        position: fixed;
+        top: $null-conv;
+        left: $null-conv;
+        background: $rgba-black-01;
+        z-index: 100000000;
+
+        .closeReplPop {
+            position: absolute;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            top: $null-conv;
+            left: $null-conv;
+        }
+
+        .replNote_Content {
+            background: $white;
+            width: 600px;
+            margin: 170px auto $null-conv;
+            @include box-shadow(0 0 $small-fix-05 0 rgba(0,0,0,0.45));
+            position: relative;
+            z-index: 10000;
+            padding: $small-fix-30;
+            display: table;
+            @include border-radius($small-fix-03 + 1);
+
+            .RepMsg {
+                float: left;
+                width: $max-conv-width;
+                margin-bottom: $small-fix-20;
+                margin-top: $small-fix-15;
+                font-size: $small-fix-13;
+                color: $black;
+                text-transform: uppercase;
+                padding-left: $small-fix-10;
+                padding-right: $small-fix-10;
+            }
+
+            .closeReplace {
+                position: absolute;
+                right: $small-fix-10;
+                top: $small-fix-10;
+                font-size: $small-fix-17 + 1;
+                cursor: pointer;
+            }
+            
+            .Replac_Btn {
+                pointer-events: initial;
+                width: 32%;
+                height: $small-fix-37 + 1; 
+                float: left;
+                background: #1fadcf;
+                border: $null-conv;
+                color: $white;
+                font-size: $small-fix-15;
+                text-transform: uppercase;
+                margin-top: $small-fix-20;
+                text-align: center;
+                padding: $small-fix-07 + 2;
+                cursor: pointer;
+                margin: $small-fix-03;
+            }
+        }
+    }
+
+    .replPoDelete {
+        display: none;
+    }
+}
+
+
+// .notallowed {
+//     pointer-events: none;
+//     background: #f9f9f9;
+//     color: #000;
+//     cursor: not-allowed;
+//     opacity: 0.6;
+// }

@@ -1,0 +1,445 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include fixedrange1600() { // 1600px x 1600px
+
+    body { overflow: auto; }
+
+    .HeaderLeft {
+        position: fixed;
+        top: $null-conv;
+        left: $null-conv;
+        z-index: 100;
+        .HeaderLeft_In {
+            .newsFloor {
+                left: 7px;
+                float: left;
+                width: 74%;
+            } 
+        }  
+    }
+
+    .HeaderRight {
+        position: fixed;
+        top: $null-conv;
+    }
+
+    .costumerDetails {
+        .QutBtn {
+            padding-left: $small-fix-30;
+            padding-right: $small-fix-30;
+        }
+        .downCostumer {
+            width: 53.6%;
+        }
+        .btnW49 {
+            padding-top: $small-fix-25;
+            line-height: $small-fix-13;
+        } 
+
+        .GeneQtBtn {
+            &:before {
+                left: 23%;
+            }
+        }
+
+        .costumerBoard {
+            .estraWPlus {
+                width: 47%;
+            }
+
+            .addPoliBtn {
+                &:before {
+                    left: 29%; 
+                }
+            }
+
+            .extraBtn {
+                padding-top: $small-fix-07 + 1;
+                padding-bottom: $small-fix-07 + 2;
+            }
+        }
+    }
+
+    .policyTemp {
+        .costumerDetails {
+            .costumerRight {
+                height: 93vh !important;
+            }
+        }
+
+        .costumerRight {
+            height: 93vh !important;
+        }
+    }
+
+    .taskSection {
+        .allTabs-Content {
+            .notes_Floor {
+                max-height: 63vh;
+            }   
+        }
+    }
+
+    .SmarterSection {
+        top: 76px; // 90px
+        margin-bottom: $small-fix-15;
+    }
+
+    .tTopHomebodyFish {
+        height: 11.2vh;
+    }
+
+    .tBottomHomebodyFish {
+        height: 12.4vh;
+    }
+
+    .CostDetInpt {
+        width: 24.38%;
+    }
+
+    .slider-list {
+        left: 45px;
+        width: 93.5%;
+    }
+
+    nav[role="navigation"] {
+        .mainNav {
+            display: none;
+            width: 175px;
+            margin-top: $small-fix-13;
+            padding: $small-fix-10;
+            padding-left: $small-fix-05 + 1;
+            .navRoute {
+                margin: $small-fix-03 + 1;
+                text-transform: uppercase;
+                letter-spacing: $null-conv;
+            }
+        }
+    }
+    .navBorderBtt {
+        border-bottom: $small-fix-01 solid #ccc;
+        height: auto;
+    }
+
+    .NavMob {
+        position: relative;
+        display: block;
+        float: left;
+        padding: $small-fix-02;
+        left: $small-fix-25 + 1; // 26px
+        top: -2px;
+        cursor: pointer;
+        &:before {
+            content: '\f0c9';
+            position: absolute;
+            right: $null-conv;
+            top: $small-fix-01;
+            font-family: FontAwesome;
+            font-size: $small-fix-20;
+        }
+    }
+
+    .phoneAdt_Fl {
+       .phoneAdt {
+            margin: 6px;
+        } 
+    }
+}
+
+
+@include lapTopSmallScreens() { // 1200px x 1440px
+
+    body {
+        overflow: auto;
+    }
+
+    .HeaderLeft {
+        width: 67%;
+        position: fixed;
+        z-index: 500;
+        left: $null-conv;
+        top: $null-conv;
+        .HeaderLeft_In {
+            .newsFloor {
+                width: 64%;
+                float: left;
+                left: 9px;
+                .newsTitle {
+                    display: none;
+                }
+                .newsSlider {
+                    width: 95%;
+                }
+            }  
+        }  
+    }
+
+    .HeaderRight {
+        width: 33%;
+        position: fixed;
+        .topHeaderRight {
+            .topHeaderRight_Floor {
+                .LocalDateTime {
+                    display: none;
+                }
+                .newsSlider {
+                    width: 48%; // 64%
+                }
+            }  
+        } 
+    }
+
+    nav[role="navigation"] {
+        .mainNav {
+            display: none;
+            width: 175px;
+            margin-top: $small-fix-13;
+            padding: $small-fix-10;
+            padding-left: $small-fix-05 + 1;
+            .navRoute {
+                margin: $small-fix-03 + 1;
+                text-transform: uppercase;
+                letter-spacing: $null-conv;
+            }
+        }
+    }
+    .navBorderBtt {
+        border-bottom: $small-fix-01 solid #ccc;
+        height: auto;
+    }
+
+    .costumerDetails {
+        .costumerBoard {
+            width: $max-conv-width / 2;
+            margin-bottom: $small-fix-07;
+        } 
+        .details_Left {
+            width: 49.5%;
+        }
+    }
+
+    .SmarterSection {
+        width: 67%;
+        margin-top: 74px; // 84px
+        margin-bottom: $small-fix-13 + 1;
+    }
+
+    .leadTNav {
+        .bigBtn {
+            display: none;
+        } 
+    }
+
+    .taskSection {
+        .allTabs-Content {
+            .notes_Floor {
+                max-height: 60.5vh;
+            } 
+        }
+    }
+
+    .columnState_Fl {
+        .stateColumn {
+            height: 9vh;
+            .state-In {
+                font-size: $small-fix-13 + 1;
+                padding: $small-fix-13;
+                padding-top: $small-fix-20 + 4;
+            }
+        } 
+    }
+
+    .width54 { width: 52%; }
+
+    .NavMob {
+        position: relative;
+        display: block;
+        float: left;
+        padding: $small-fix-02;
+        left: $small-fix-25 + 1; // 26px
+        top: -2px;
+        cursor: pointer;
+        &:before {
+            content: '\f0c9';
+            position: absolute;
+            right: $null-conv;
+            top: $small-fix-01;
+            font-family: FontAwesome;
+            font-size: $small-fix-20;
+        }
+    }
+
+    .GoFishBtn {
+        height: 48px;
+        font-size: $small-fix-10 + 1;
+        padding-top: $small-fix-17;
+    }
+
+    .policyTemp {
+        .costumerDetails {
+            .costumerRight {
+                height: 104.5vh !important;
+            }
+        }
+    }
+
+    .phoneAdt_Fl {
+        .phoneAdt {
+            margin: $small-fix-02;
+            margin-left: $null-conv;
+            margin-top: $small-fix-03 + 1;
+            margin-bottom: $null-conv;
+        }
+    }
+
+    .switch-label {
+        font-size: $small-fix-10;
+    }
+
+    .leadTNav {
+        .LRefr_Fl {
+            .referenceLead {
+                font-size: $small-fix-20;
+            } 
+        }
+    }
+
+    .costumerDetails {
+
+        .btnsLft {
+            margin-left: $small-fix-03;
+        }
+
+        .QutBtn {
+            padding: $small-fix-30 + 3;
+            padding-left: $small-fix-10;
+            padding-right: $small-fix-10;
+            font-size: $small-fix-10 + 2;
+        }
+
+        .btnW49 {
+            margin-right: .7%;
+            font-size: $small-fix-07 + 1;
+            letter-spacing: $null-conv;
+            padding-top: 27px;
+        }
+
+        .btnW13 {
+            width: 14%;
+            // height: 60.25px;
+            min-width: 40px;
+            padding-left: $small-fix-07;
+            padding-right: $small-fix-07;
+            font-size: $small-fix-07 + 1;
+        }
+
+        .downCostumer { width: 54%; }
+
+        .GeneQtBtn {
+            &:before {
+                left: 17%;
+                top: 11px;
+            }
+        }
+
+        .costumerBoard {
+            .estraWPlus {
+                width: 48.3%;
+                margin-left: $small-fix-03;
+                margin-right: $small-fix-03;
+            }
+
+            .addPoliBtn {
+                &:before {
+                    left: 21%; 
+                }
+            }
+        }
+    }
+
+    .tTopHomebodyFish {
+        height: 10.9vh;
+    }
+
+    .tBottomHomebodyFish {
+        height: 12.1vh;
+    }
+
+    .CostDetInpt {
+        width: 24.21%;
+    }
+
+    .slider-list {
+        left: 53px;
+        width: 88%;
+    }
+
+}
+
+@include fixedrange1440() { // 1440px x 1440px
+
+    .HeaderLeft {
+        width: 65%;
+        .HeaderLeft_In {
+            .newsFloor {
+                width: 68%;
+                left: 17px;
+            } 
+        }
+    }
+
+    .SmarterSection {
+        width: 65%;
+    }
+    .HeaderRight {
+        width: 35%;
+
+        .topHeaderRight {
+            .topHeaderRight_Floor {
+                .LocalDateTime {
+                    display: block;
+                    right: $small-fix-10;
+                    top: $small-fix-07;
+                    font-size: $small-fix-10 + 1;
+                }
+            }
+        }
+    }
+
+    input:checked + .slider:before {
+        @include transformtranslatex(220px);
+    }
+
+    input:checked + .sliderSmall:before {
+        @include transformtranslatex(153px);
+    }
+
+    input:checked + .sliderMedium:before {
+        @include transformtranslatex(176px);
+    }
+
+    input:checked + .sliderIsPolicy:before {
+        @include transformtranslatex(347px);
+    }
+
+    .taskSection {
+        .bottomNav_Floor {
+            height: 9.3vh;
+        }  
+    }
+
+    .policyTemp {
+        .costumerDetails {
+           .costumerRight {
+                height: 99vh !important;
+            } 
+        }
+    }
+
+    .slider-list {
+        left: 53px;
+        width: 90%;
+    }
+}

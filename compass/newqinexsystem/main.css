@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #f9f9f9;
+  overflow: auto;
+  overflow-x: hidden; }
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+.zIndex {
+  z-index: 10; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+::-webkit-input-placeholder {
+  color: #ccc; }
+
+::-moz-placeholder {
+  color: #ccc; }
+
+:-ms-input-placeholder {
+  color: #ccc; }
+
+:-moz-placeholder {
+  color: #ccc; }
+
+.boxSystem {
+  height: 100%;
+  padding-top: 75px;
+  padding-left: 75px;
+  padding-bottom: 15px;
+  position: absolute; }
+
+/*# sourceMappingURL=main.css.map */

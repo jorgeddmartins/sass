@@ -1,0 +1,1641 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('ColorPickerModal') {
+
+	// Starts Color Picker
+	.openCPicker {
+		position: relative;
+		width: $small-fix-30;
+		height: $small-fix-30;
+		background: rgba(10, 154, 122, 0.7);
+		color: $white;
+		float: right;
+		cursor: pointer;
+		top: $small-fix-07;
+		@include border-radius($max-conv-width / 2);
+		&:before {
+			content: "\f1fb";
+			font-family: 'FontAwesome';
+			font-size: $small-fix-15;
+			position: absolute;
+		    left: $small-fix-05 + 1;
+		    top: $small-fix-03 + 1;
+		}
+		.openCPickerToolTip {
+			width: 130px;
+		    padding: $small-fix-03 + 1;
+		    position: absolute;
+		    top: -26px;
+		    left: -50px;
+		    color: $white;
+		    background: #0A9A7A;
+		    text-align: center;
+		    font: $small-fix-10 + 2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+		    @include border-radius($small-fix-03 + 1);
+		    z-index: 1000;
+			display: none;
+			&:after {
+				position: absolute;
+			    content: "";
+			    vertical-align: middle;
+			    width: $null-conv;
+			    height: $null-conv;
+			    border-left: $small-fix-07 solid transparent;
+			    border-right: $small-fix-07 solid transparent;
+			    top: $max-conv-top;
+			    right: $null-conv;
+			    left: $null-conv;
+			    margin-left: auto;
+			    margin-right: auto;
+			    border-bottom: $small-fix-07 solid #0A9A7A;
+			    @include transform($rotate-180);
+			}
+		}
+	}
+	.colorPickerFloor {
+		width: 328px;
+		border: 1px solid #eee;
+		background: $white;
+		position: absolute;
+		top: -49px;
+		left: 98%;
+		padding: $small-fix-03;
+		z-index: 100;
+		display: none;
+
+		.clEl {
+			width: $small-fix-20;
+			height: $small-fix-20;
+			float: left;
+			border: $null-conv;
+			cursor: pointer;
+		}
+
+		.inputPicker {
+			width: 160px; 
+			padding: $small-fix-03; 
+			padding-left: $small-fix-07; 
+			padding-right: $small-fix-07; 
+			font-size: $small-fix-10 + 2; 
+			font-weight: bold; 
+			color: #999; 
+			border: $null-conv;
+			margin-bottom: $small-fix-05;
+			margin-top: $small-fix-03;
+			text-align: center;
+			&:focus {
+				outline: $null-conv;
+			}
+		}
+
+		// White To Black Colors
+		.cl_0 {
+			background: map-get($neutral-picker, "color0");
+		}
+		.cl_1 {
+			background: map-get($neutral-picker, "color1");
+		}
+		.cl_2 {
+			background: map-get($neutral-picker, "color2");
+		}
+		.cl_3 {
+			background: map-get($neutral-picker, "color3");
+		}
+		.cl_4 {
+			background: map-get($neutral-picker, "color4");
+		}
+		.cl_5 {
+			background: map-get($neutral-picker, "color5");
+		}
+		.cl_6 {
+			background: map-get($neutral-picker, "color6");
+		}
+		.cl_7 {
+			background: map-get($neutral-picker, "color7");
+		}
+		.cl_8 {
+			background: map-get($neutral-picker, "color8");
+		}
+		.cl_9 {
+			background: map-get($neutral-picker, "color9");
+		}
+		.cl_10 {
+			background: map-get($neutral-picker, "color10");
+		}
+		.cl_11 {
+			background: map-get($neutral-picker, "color11");
+		}
+		.cl_12 {
+			background: map-get($neutral-picker, "color12");
+		}
+		.cl_13 {
+			background: map-get($neutral-picker, "color13");
+		}
+		.cl_14 {
+			background: map-get($neutral-picker, "color14");
+		}
+		.cl_15 {
+			background: map-get($neutral-picker, "color15");
+		}
+		.cl_16 {
+			background: map-get($neutral-picker, "color16");
+		}
+		.cl_17 {
+			background: map-get($neutral-picker, "color17");
+		}
+		.cl_18 {
+			background: map-get($neutral-picker, "color18");
+		}
+		.cl_19 {
+			background: map-get($neutral-picker, "color19");
+		}
+		.cl_20 {
+			background: map-get($neutral-picker, "color20");
+		}
+		.cl_21 {
+			background: map-get($neutral-picker, "color21");
+		}
+		.cl_22 {
+			background: map-get($neutral-picker, "color22");
+		}
+		.cl_23 {
+			background: map-get($neutral-picker, "color23");
+		}
+		.cl_24 {
+			background: map-get($neutral-picker, "color24");
+		}
+		.cl_25 {
+			background: map-get($neutral-picker, "color25");
+		}
+
+		// Blue Colors
+		.cl_26 {
+			background: map-get($blue-picker, "color26");
+		}
+		.cl_27 {
+			background: map-get($blue-picker, "color27");
+		}
+		.cl_28 {
+			background: map-get($blue-picker, "color28");
+		}
+		.cl_29 {
+			background: map-get($blue-picker, "color29");
+		}
+		.cl_30 {
+			background: map-get($blue-picker, "color30");
+		}
+		.cl_31 {
+			background: map-get($blue-picker, "color31");
+		}
+		.cl_32 {
+			background: map-get($blue-picker, "color32");
+		}
+		.cl_33 {
+			background: map-get($blue-picker, "color33");
+		}
+		.cl_34 {
+			background: map-get($blue-picker, "color34");
+		}
+		.cl_35 {
+			background: map-get($blue-picker, "color35");
+		}
+		.cl_36 {
+			background: map-get($blue-picker, "color36");
+		}
+		.cl_37 {
+			background: map-get($blue-picker, "color37");
+		}
+		.cl_38 {
+			background: map-get($blue-picker, "color38");
+		}
+		.cl_39 {
+			background: map-get($blue-picker, "color39");
+		}
+		.cl_40 {
+			background: map-get($blue-picker, "color40");
+		}
+		.cl_41 {
+			background: map-get($blue-picker, "color41");
+		}
+		.cl_42 {
+			background: map-get($blue-picker, "color42");
+		}
+		.cl_43 {
+			background: map-get($blue-picker, "color43");
+		}
+		.cl_44 {
+			background: map-get($blue-picker, "color44");
+		}
+		.cl_45 {
+			background: map-get($blue-picker, "color45");
+		}
+		.cl_46 {
+			background: map-get($blue-picker, "color46");
+		}
+		.cl_47 {
+			background: map-get($blue-picker, "color47");
+		}
+		.cl_48 {
+			background: map-get($blue-picker, "color48");
+		}
+		.cl_49 {
+			background: map-get($blue-picker, "color49");
+		}
+		.cl_50 {
+			background: map-get($blue-picker, "color50");
+		}
+		.cl_51 {
+			background: map-get($blue-picker, "color51");
+		}
+		.cl_52 {
+			background: map-get($blue-picker, "color52");
+		}
+		.cl_53 {
+			background: map-get($blue-picker, "color53");
+		}
+		.cl_54 {
+			background: map-get($blue-picker, "color54");
+		}
+		.cl_55 {
+			background: map-get($blue-picker, "color55");
+		}
+		.cl_56 {
+			background: map-get($blue-picker, "color56");
+		}
+		.cl_57 {
+			background: map-get($blue-picker, "color57");
+		}
+		.cl_58 {
+			background: map-get($blue-picker, "color58");
+		}
+		.cl_59 {
+			background: map-get($blue-picker, "color59");
+		}
+		.cl_60 {
+			background: map-get($blue-picker, "color60");
+		}
+		.cl_61 {
+			background: map-get($blue-picker, "color61");
+		}
+		.cl_62 {
+			background: map-get($blue-picker, "color62");
+		}
+		.cl_63 {
+			background: map-get($blue-picker, "color63");
+		}
+
+		// Green Colors
+		.cl_64 {
+			background: map-get($green-picker, "color64");
+		}
+		.cl_65 {
+			background: map-get($green-picker, "color65");
+		}
+		.cl_66 {
+			background: map-get($green-picker, "color66");
+		}
+		.cl_67 {
+			background: map-get($green-picker, "color67");
+		}
+		.cl_68 {
+			background: map-get($green-picker, "color68");
+		}
+		.cl_69 {
+			background: map-get($green-picker, "color69");
+		}
+		.cl_70 {
+			background: map-get($green-picker, "color70");
+		}
+		.cl_71 {
+			background: map-get($green-picker, "color71");
+		}
+		.cl_72 {
+			background: map-get($green-picker, "color72");
+		}
+		.cl_73 {
+			background: map-get($green-picker, "color73");
+		}
+		.cl_74 {
+			background: map-get($green-picker, "color74");
+		}
+		.cl_75 {
+			background: map-get($green-picker, "color75");
+		}
+		.cl_76 {
+			background: map-get($green-picker, "color76");
+		}
+		.cl_77 {
+			background: map-get($green-picker, "color77");
+		}
+		.cl_78 {
+			background: map-get($green-picker, "color78");
+		}
+		.cl_79 {
+			background: map-get($green-picker, "color79");
+		}
+		.cl_80 {
+			background: map-get($green-picker, "color80");
+		}
+		.cl_81 {
+			background: map-get($green-picker, "color81");
+		}
+		.cl_82 {
+			background: map-get($green-picker, "color82");
+		}
+		.cl_83 {
+			background: map-get($green-picker, "color83");
+		}
+		.cl_84 {
+			background: map-get($green-picker, "color84");
+		}
+		.cl_85 {
+			background: map-get($green-picker, "color85");
+		}
+		.cl_86 {
+			background: map-get($green-picker, "color86");
+		}
+		.cl_87 {
+			background: map-get($green-picker, "color87");
+		}
+		.cl_88 {
+			background: map-get($green-picker, "color88");
+		}
+		.cl_89 {
+			background: map-get($green-picker, "color89");
+		}
+		.cl_90 {
+			background: map-get($green-picker, "color90");
+		}
+		.cl_91 {
+			background: map-get($green-picker, "color91");
+		}
+		.cl_92 {
+			background: map-get($green-picker, "color92");
+		}
+		.cl_93 {
+			background: map-get($green-picker, "color93");
+		}
+		.cl_94 {
+			background: map-get($green-picker, "color94");
+		}
+		.cl_95 {
+			background: map-get($green-picker, "color95");
+		}
+		.cl_96 {
+			background: map-get($green-picker, "color96");
+		}
+		.cl_97 {
+			background: map-get($green-picker, "color97");
+		}
+		.cl_98 {
+			background: map-get($green-picker, "color98");
+		}
+		.cl_99 {
+			background: map-get($green-picker, "color99");
+		}
+		.cl_100 {
+			background: map-get($green-picker, "color100");
+		}
+		.cl_101 {
+			background: map-get($green-picker, "color101");
+		}
+
+		// Purple Colors
+		.cl_102 {
+			background: map-get($purple-picker, "color102");
+		}
+		.cl_103 {
+			background: map-get($purple-picker, "color103");
+		}
+		.cl_104 {
+			background: map-get($purple-picker, "color104");
+		}
+		.cl_105 {
+			background: map-get($purple-picker, "color105");
+		}
+		.cl_106 {
+			background: map-get($purple-picker, "color106");
+		}
+		.cl_107 {
+			background: map-get($purple-picker, "color107");
+		}
+		.cl_108 {
+			background: map-get($purple-picker, "color108");
+		}
+		.cl_109 {
+			background: map-get($purple-picker, "color109");
+		}
+		.cl_110 {
+			background: map-get($purple-picker, "color110");
+		}
+		.cl_111 {
+			background: map-get($purple-picker, "color111");
+		}
+		.cl_112 {
+			background: map-get($purple-picker, "color112");
+		}
+		.cl_113 {
+			background: map-get($purple-picker, "color113");
+		}
+		.cl_114 {
+			background: map-get($purple-picker, "color114");
+		}
+		.cl_115 {
+			background: map-get($purple-picker, "color115");
+		}
+		.cl_116 {
+			background: map-get($purple-picker, "color116");
+		}
+		.cl_117 {
+			background: map-get($purple-picker, "color117");
+		}
+		.cl_118 {
+			background: map-get($purple-picker, "color118");
+		}
+		.cl_119 {
+			background: map-get($purple-picker, "color119");
+		}
+		.cl_120 {
+			background: map-get($purple-picker, "color120");
+		}
+
+		// Pink Colors
+		.cl_121 {
+			background: map-get($pink-picker, "color121");
+		}
+		.cl_122 {
+			background: map-get($pink-picker, "color122");
+		}
+		.cl_123 {
+			background: map-get($pink-picker, "color123");
+		}
+		.cl_124 {
+			background: map-get($pink-picker, "color124");
+		}
+		.cl_125 {
+			background: map-get($pink-picker, "color125");
+		}
+		.cl_126 {
+			background: map-get($pink-picker, "color126");
+		}
+		.cl_127 {
+			background: map-get($pink-picker, "color127");
+		}
+		.cl_128 {
+			background: map-get($pink-picker, "color128");
+		}
+		.cl_129 {
+			background: map-get($pink-picker, "color129");
+		}
+		.cl_130 {
+			background: map-get($pink-picker, "color130");
+		}
+		.cl_131 {
+			background: map-get($pink-picker, "color131");
+		}
+		.cl_132 {
+			background: map-get($pink-picker, "color132");
+		}
+		.cl_133 {
+			background: map-get($pink-picker, "color133");
+		}
+		.cl_134 {
+			background: map-get($pink-picker, "color134");
+		}
+		.cl_135 {
+			background: map-get($pink-picker, "color135");
+		}
+		.cl_136 {
+			background: map-get($pink-picker, "color136");
+		}
+		.cl_137 {
+			background: map-get($pink-picker, "color137");
+		}
+		.cl_138 {
+			background: map-get($pink-picker, "color138");
+		}
+		.cl_139 {
+			background: map-get($pink-picker, "color139");
+		}
+
+		// Red Colors
+		.cl_140 {
+			background: map-get($red-picker, "color140");
+		}
+		.cl_141 {
+			background: map-get($red-picker, "color141");
+		}
+		.cl_142 {
+			background: map-get($red-picker, "color142");
+		}
+		.cl_143 {
+			background: map-get($red-picker, "color143");
+		}
+		.cl_144 {
+			background: map-get($red-picker, "color144");
+		}
+		.cl_145 {
+			background: map-get($red-picker, "color145");
+		}
+		.cl_146 {
+			background: map-get($red-picker, "color146");
+		}
+		.cl_147 {
+			background: map-get($red-picker, "color147");
+		}
+		.cl_148 {
+			background: map-get($red-picker, "color148");
+		}
+		.cl_149 {
+			background: map-get($red-picker, "color149");
+		}
+		.cl_150 {
+			background: map-get($red-picker, "color150");
+		}
+		.cl_151 {
+			background: map-get($red-picker, "color151");
+		}
+		.cl_152 {
+			background: map-get($red-picker, "color152");
+		}
+		.cl_153 {
+			background: map-get($red-picker, "color153");
+		}
+		.cl_154 {
+			background: map-get($red-picker, "color154");
+		}
+		.cl_155 {
+			background: map-get($red-picker, "color155");
+		}
+		.cl_156 {
+			background: map-get($red-picker, "color156");
+		}
+		.cl_157 {
+			background: map-get($red-picker, "color157");
+		}
+		.cl_158 {
+			background: map-get($red-picker, "color158");
+		}
+
+		// Orange Colors
+		.cl_159 {
+			background: map-get($orange-picker, "color159");
+		}
+		.cl_160 {
+			background: map-get($orange-picker, "color160");
+		}
+		.cl_161 {
+			background: map-get($orange-picker, "color161");
+		}
+		.cl_162 {
+			background: map-get($orange-picker, "color162");
+		}
+		.cl_163 {
+			background: map-get($orange-picker, "color163");
+		}
+		.cl_164 {
+			background: map-get($orange-picker, "color164");
+		}
+		.cl_165 {
+			background: map-get($orange-picker, "color165");
+		}
+		.cl_166 {
+			background: map-get($orange-picker, "color166");
+		}
+		.cl_167 {
+			background: map-get($orange-picker, "color167");
+		}
+		.cl_168 {
+			background: map-get($orange-picker, "color168");
+		}
+		.cl_169 {
+			background: map-get($orange-picker, "color169");
+		}
+		.cl_170 {
+			background: map-get($orange-picker, "color170");
+		}
+		.cl_171 {
+			background: map-get($orange-picker, "color171");
+		}
+		.cl_172 {
+			background: map-get($orange-picker, "color172");
+		}
+		.cl_173 {
+			background: map-get($orange-picker, "color173");
+		}
+		.cl_174 {
+			background: map-get($orange-picker, "color174");
+		}
+		.cl_175 {
+			background: map-get($orange-picker, "color175");
+		}
+		.cl_176 {
+			background: map-get($orange-picker, "color176");
+		}
+		.cl_177 {
+			background: map-get($orange-picker, "color177");
+		}
+
+		// Yellow Colors
+		.cl_178 {
+			background: map-get($yellow-picker, "color178");
+		}
+		.cl_179 {
+			background: map-get($yellow-picker, "color179");
+		}
+		.cl_180 {
+			background: map-get($yellow-picker, "color180");
+		}
+		.cl_181 {
+			background: map-get($yellow-picker, "color181");
+		}
+		.cl_182 {
+			background: map-get($yellow-picker, "color182");
+		}
+		.cl_183 {
+			background: map-get($yellow-picker, "color183");
+		}
+		.cl_184 {
+			background: map-get($yellow-picker, "color184");
+		}
+		.cl_185 {
+			background: map-get($yellow-picker, "color185");
+		}
+		.cl_186 {
+			background: map-get($yellow-picker, "color186");
+		}
+		.cl_187 {
+			background: map-get($yellow-picker, "color187");
+		}
+		.cl_188 {
+			background: map-get($yellow-picker, "color188");
+		}
+		.cl_189 {
+			background: map-get($yellow-picker, "color189");
+		}
+		.cl_190 {
+			background: map-get($yellow-picker, "color190");
+		}
+		.cl_191 {
+			background: map-get($yellow-picker, "color191");
+		}
+		.cl_192 {
+			background: map-get($yellow-picker, "color192");
+		}
+		.cl_193 {
+			background: map-get($yellow-picker, "color193");
+		}
+		.cl_194 {
+			background: map-get($yellow-picker, "color194");
+		}
+		.cl_195 {
+			background: map-get($yellow-picker, "color195");
+		}
+		.cl_196 {
+			background: map-get($yellow-picker, "color196");
+		}
+
+		// Salmon Colors
+		.cl_197 {
+			background: map-get($salmon-picker, "color197");
+		}
+		.cl_198 {
+			background: map-get($salmon-picker, "color198");
+		}
+		.cl_199 {
+			background: map-get($salmon-picker, "color199");
+		}
+		.cl_200 {
+			background: map-get($salmon-picker, "color200");
+		}
+		.cl_201 {
+			background: map-get($salmon-picker, "color201");
+		}
+		.cl_202 {
+			background: map-get($salmon-picker, "color202");
+		}
+		.cl_203 {
+			background: map-get($salmon-picker, "color203");
+		}
+		.cl_204 {
+			background: map-get($salmon-picker, "color204");
+		}
+		.cl_205 {
+			background: map-get($salmon-picker, "color205");
+		}
+		.cl_206 {
+			background: map-get($salmon-picker, "color206");
+		}
+		.cl_207 {
+			background: map-get($salmon-picker, "color207");
+		}
+		.cl_208 {
+			background: map-get($salmon-picker, "color208");
+		}
+		.cl_209 {
+			background: map-get($salmon-picker, "color209");
+		}
+		.cl_210 {
+			background: map-get($salmon-picker, "color210");
+		}
+		.cl_211 {
+			background: map-get($salmon-picker, "color211");
+		}
+		.cl_212 {
+			background: map-get($salmon-picker, "color212");
+		}
+		.cl_213 {
+			background: map-get($salmon-picker, "color213");
+		}
+		.cl_214 {
+			background: map-get($salmon-picker, "color214");
+		}
+
+		// Extra Colors
+		.cl_215 {
+			background: map-get($extra-picker, "color215");
+		}
+		.cl_216 {
+			background: map-get($extra-picker, "color216");
+		}
+		.cl_217 {
+			background: map-get($extra-picker, "color217");
+		}
+		.cl_218 {
+			background: map-get($extra-picker, "color218");
+		}
+		.cl_219 {
+			background: map-get($extra-picker, "color219");
+		}
+		.cl_220 {
+			background: map-get($extra-picker, "color220");
+		}
+		.cl_221 {
+			background: map-get($extra-picker, "color221");
+		}
+		.cl_222 {
+			background: map-get($extra-picker, "color222");
+		}
+		.cl_223 {
+			background: map-get($extra-picker, "color223");
+		}
+
+		.cPickerContent, 
+		.cPickerContentExtra {
+			width: 320px;
+			float: left;
+		}
+
+		.cPickerContentExtra {
+			margin-left: $small-fix-03;
+			border: 1px solid #ddd;
+
+			.OneBlk {
+				width: 46.8%;
+				float: left;
+				margin: $small-fix-05;
+				padding: $small-fix-10;
+    			padding-top: $small-fix-03;
+			}
+
+			.one {
+			    position: relative;
+			    float: left;
+			    margin-left: -7px;
+			    width: $small-fix-25;
+			    height: $small-fix-25;
+			    box-shadow: -2px 0 2px 0 rgba(0, 0, 0, .3);
+			    @include transition(all .2s ease-in-out);
+			    @include border-radius(50% 50% 0 50%);
+			    @include transform(45deg);
+			    cursor: pointer;
+			}
+		}
+
+		.delCol {
+			padding: $small-fix-05;
+			padding-left: $small-fix-10;
+    		padding-right: $small-fix-10;
+		    float: left;
+		    background: #eee;
+		    margin-top: $small-fix-03 + 1;
+		    color: #777;
+		    font-size: $small-fix-13;
+		    cursor: pointer;
+		}
+	}
+	// Ends Color Picker
+
+	// General Settings
+	#GSettings {
+		position: relative;
+		width: 786px; // 786px
+		float: left;
+		padding: $small-fix-07;
+
+		.fGlobalSett {
+			position: relative;
+			width: $max-conv-width; // 251px
+			background: $white;
+			border: 1px solid #eee;
+			padding: $small-fix-10;
+			padding-bottom: $null-conv;
+			display: inline-block;
+
+			.GsettT {
+				width: $max-conv-width;
+				float: left;
+				font-size: $small-fix-10 + 1;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: $small-fix-07 + 2;
+				padding-bottom: $small-fix-10;
+				border-bottom: 1px solid #eee;
+				text-transform: uppercase;
+				border: $null-conv;
+
+				&:focus { outline: $null-conv; }
+			}
+
+			.blkOpt {
+				position: relative;
+				width: $max-conv-width;
+				height: 40px;
+				float: left;
+				margin-bottom: $small-fix-07; 
+				padding: $small-fix-03 + 1;
+				padding-bottom: $small-fix-07;
+				border-bottom: 1px solid #eee;
+
+				&:last-of-type {
+					margin-bottom: $null-conv;
+					border-bottom: $null-conv;
+				}
+
+				.in_Opt {
+					float: left;
+					height: $max-conv-height;
+					position: relative;
+				}
+
+				.IcPtl {
+					font-size: $small-fix-10 + 1;
+				    text-transform: uppercase;
+				    font-weight: 500;
+				    width: $max-conv-width;
+				    float: left;
+				}
+
+				.IcPdes {
+					width: $max-conv-width;
+					font-size: $small-fix-10;
+					color: #999;
+					float: left;
+					text-transform: initial;
+					font-style: italic;
+				}
+
+				.Left, 
+				.Right {
+				    display: table;
+				}
+
+				.Left {
+					width: 60%;
+					justify-content: left;
+				}
+
+				.Right {
+					width: 40%;
+					justify-content: center;
+					.ClOpt, 
+					.archiveIco {
+						position: absolute;
+					    left: 38px;
+					    top: $small-fix-05 + 1;
+					    font-weight: bold;
+					    color: #999;
+					    font-size: $small-fix-10 + 1;
+					    cursor: pointer;
+					    display: none;
+					}
+
+					.moveTh { display: none; }
+				} 
+
+				.GenCpk {
+					width: $small-fix-35; 
+					height: $small-fix-30; 
+					position: absolute; 
+					right: $null-conv;
+					top: $null-conv;
+					background: #f9f9f9;
+					@include box-shadow(0 0 $small-fix-03 0 rgba(0,0,0,0.35));
+					@include border-radius($small-fix-03);
+					cursor: pointer;
+				}
+			}
+		}
+
+		.prodColumm {
+			-moz-column-width: 19em; // 251px
+		    -webkit-column-width: 19em; // 251px
+		    column-width: 19em; // 251px
+		    -moz-column-gap: $small-fix-05;
+		    -webkit-column-gap: $small-fix-05;
+		    column-gap: $small-fix-05;
+		    position: relative;
+		}
+	
+		.AddProperty_Fl {
+			width: $max-conv-width;
+			float: left;
+		    margin-top: $small-fix-20;
+		    padding: $small-fix-05;
+		    border-top: 1px solid #eee;
+		    border-bottom: 1px solid #eee;
+
+			.AddProBlk {
+				padding: $small-fix-10;
+				background: #eee;
+				border: 1px solid #ddd;
+				color: $black;
+				text-transform: uppercase;
+				float: left;
+				padding-left: $small-fix-20;
+			    padding-right: $small-fix-20;
+			    font-size: $small-fix-10 + 2;
+			    font-weight: bold;
+			    padding-bottom: $small-fix-07;
+			    cursor: pointer;
+			    margin: $small-fix-02;
+			}
+		}
+	}
+
+	.EditTemp {
+		width: $max-conv-width;
+	    float: left;
+	    padding: $small-fix-03;
+	    margin-bottom: $small-fix-03;
+
+	    .AddEditBtn, 
+	    .RemEditBtn {
+	    	display: flex;
+		    padding: $null-conv;
+		    padding-right: $null-conv;
+		    background: #f9f9f9;
+		    border: 1px solid #ddd;
+		    float: left;
+		    width: $small-fix-17;
+		    height: $small-fix-17;
+		    @include border-radius($max-conv-width / 2);
+		    text-align: center;
+		    align-items: center;
+		    justify-content: center;
+		    cursor: pointer;
+		    font-size: $small-fix-15;
+		    font-weight: bold;
+		    margin: 1px;
+		    color: #777;
+	    }
+
+	    .AddEditBtn { 
+	    	color: #0A9A7A; 
+	    	float: right;
+	    	margin-right: $small-fix-07;
+	    }
+
+	    .RemEditBtn {
+	    	float: right;
+	    	font-size: $small-fix-10;
+	    }
+	}
+
+	.btn_Row {
+		width: $max-conv-width;
+		float: left;
+		margin: $small-fix-03;
+		margin-top: $small-fix-07;
+		padding: $small-fix-07;
+
+		.sClo, 
+		.sReset {
+			height: 40px;
+		    background: #0A9A7A;
+		    color: $white;
+		    text-transform: uppercase;
+		    padding-left: $small-fix-30;
+		    padding-right: $small-fix-30;
+		    border: 1px solid #0A9A7A;
+		    font-size: $small-fix-13 + 1;
+		    position: relative;
+		    &:focus {
+		    	outline: $null-conv;
+		    }
+		}
+
+		.sReset {
+			background: #ddd;
+		    border: 1px solid #ddd;
+		    color: $black;
+		    margin-left: $small-fix-10 + 2;
+		}
+
+		.sClo {
+			i {
+				position: absolute;
+			    left: 9px;
+			    font-size: 20px;
+			    top: 9px;
+			}
+		}
+	}
+
+	#fileUpload {
+		.k-button.k-upload-button span, 
+		.k-button.k-primary {
+
+			font-size: $small-fix-10 + 1;
+			text-transform: uppercase;
+    		font-weight: bold;
+		}
+
+		.k-upload {
+			.k-upload-files {
+
+				.k-file-name {
+					font-size: $small-fix-10 + 2;
+    				font-weight: bold;
+				}
+
+				.k-file-size {
+					font-size: $small-fix-10;
+				}
+
+				.k-file-extension {
+					font-size: $small-fix-07 + 2;
+				}
+
+				.k-file {
+					padding: $small-fix-07;
+				}
+			} 
+
+			.k-button {
+				font-size: $small-fix-10 + 2;
+				margin: $small-fix-02;
+			}
+			.k-button.k-clear-selected, 
+			.k-button.k-upload-selected {
+				font-weight: bold;
+				border: 1px solid #ddd;
+				@include border-radius($null-conv);
+				padding: $small-fix-07 35px;
+				font-size: $small-fix-10 + 1;
+			}
+
+			.k-button.k-upload-selected {
+				background: #0A9A7A;
+			    border: 1px solid #0A9A7A;
+			    color: $white;
+			}
+		}
+
+		.k-upload-files {
+
+			padding-bottom: $null-conv;
+		}
+	}
+
+	.image-preview {
+		position: relative; 
+		float: left; 
+		width: 95px; 
+	}
+
+	.k-colorpicker {
+	    margin: $null-conv;
+
+	    .k-picker-wrap {
+	    	width: 35px;
+		    height: 30px;
+		    border: $null-conv;
+	    }
+ 
+	    .k-selected-color {
+	    	width: $max-conv-width;
+		    height: $max-conv-height;
+		    padding: $null-conv;
+		    @include border-radius($small-fix-03 + 1);
+		    cursor: pointer;
+	    }
+
+	    .k-select {
+	    	display: none;
+	    }
+	}
+
+	.k-select .k-icon {
+	    position: relative;
+	}
+
+	.k-flatcolorpicker, 
+	.k-flatcolorpicker .k-hue-slider .k-slider-track {
+	    width: 283px !important;
+	}
+
+	.k-flatcolorpicker {
+
+		.k-selected-color {
+			margin-bottom: $small-fix-05;
+	    	border: $null-conv;
+		}
+
+		.k-color-value {
+			font-size: $small-fix-13;
+	    	font-weight: bold;
+		}
+
+		.k-slider-horizontal {
+			margin-left: $null-conv;
+	    	width: $max-conv-width;
+		}
+
+		.k-draghandle {
+			width: $small-fix-17 + 1;
+		    height: $small-fix-17 + 1;
+		    border: 2px solid rgba(255,255,255,.8);
+		}
+	}
+
+	.k-slider-horizontal .k-slider-track {
+	    height: $small-fix-20;
+	    top: $null-conv;
+	}
+
+	.CreateBlk_Modal {
+		position: fixed; 
+		width: $max-conv-width; 
+		height: $max-conv-height; 
+		top: $null-conv; 
+		left: $null-conv; 
+		background: rgba(0,0,0, 0.25); 
+		z-index: 10000000;
+		display: none;
+
+		.CBlk_Floor {
+			width: 900px; 
+			padding: $small-fix-10 + 2; 
+			position: relative; 
+			margin: 12% auto ; 
+			display: table; 
+			background: $white;
+			// @include border-radius($small-fix-03 + 1);
+			// @include box-shadow(0 0 $small-fix-05 0 rgba(0, 0, 0, 0.55));
+			padding-bottom: $small-fix-07;
+			border-left: 0;
+			.CBlk_Title {
+				width: $max-conv-width;
+			    float: left;
+
+				h5 {
+					margin-top: $null-conv;
+				    text-align: center;
+				    font-weight: bold;
+				    margin: $null-conv;
+				    margin-bottom: $small-fix-03 + 1;
+				}
+				.CBlk_SubTitle {
+					width: $max-conv-width;
+				    float: left;
+				    text-align: center;
+				    font-size: $small-fix-10 + 2;
+				    color: #999;
+				    font-style: italic;
+				    text-transform: capitalize;
+				}
+			}
+
+			.iconClose {
+				position: absolute;
+			    top: $small-fix-10;
+			    right: $small-fix-10;
+			    font-size: $small-fix-10 + 2;
+			    font-weight: bold;
+			    cursor: pointer;
+			}
+
+			.CBlk_FloorLeft, 
+			.CBlk_FloorRight {
+
+				// width: $max-conv-width / 2;
+				width: 288px;
+				padding: $small-fix-15;
+
+				.ClOpt { display: block; }
+
+				.blkOpt {
+					margin-bottom: $small-fix-03;
+
+					.IcPtl, 
+					.IcPdes {
+						pointer-events: initial;
+					}
+				} 
+			}
+
+			.CBlk_FloorLeft {
+				float: left;
+				padding-left: $null-conv;
+				padding-top: $small-fix-07;
+				padding-bottom: $small-fix-07;
+				position: relative;
+				.upDBoard_Floor {
+					border: $null-conv;
+					margin: $null-conv;
+					padding: $null-conv;
+					.upDBoard-Btn {
+						background: #eee; 
+						border: 1px solid #ddd; 
+						color: $black; 
+						float: left; 
+						padding: $small-fix-05; 
+						padding-left: $small-fix-10; 
+						padding-right: $small-fix-10; 
+						padding-bottom: $small-fix-03 + 1;
+					}
+				}
+			}
+
+			.CBlk_FloorRight {
+				float: right;
+				padding: $small-fix-07;
+				background: #f9f9f9;
+			}
+		}
+
+		.upDBoard_Floor {
+			width: $max-conv-width;
+			float: left;
+			padding-top: $small-fix-07;
+			padding-bottom: $null-conv;
+		    margin-top: $small-fix-10;
+		    border-top: 1px solid #eee;
+		    position: relative;
+			.upDBoard-Btn {
+				padding: $small-fix-07;
+				float: right;
+				background: #0A9A7A;
+				border: 1px solid #0A9A7A;
+				color: $white;
+				font-size: $small-fix-10;
+				text-transform: uppercase;
+				padding-left: $small-fix-15;
+			    padding-right: $small-fix-15;
+			    padding-bottom: $small-fix-05;
+			    font-weight: bold;
+			    margin: $small-fix-02;
+			    cursor: pointer;
+			    @include border-radius($small-fix-03 + 1);
+			}
+			.ClearAll_Btn {
+				background: #eee;
+				border: 1px solid #eee;
+				color: $black;
+			}
+		}
+	}
+
+	.blkOpt {
+		position: relative;
+		width: $max-conv-width;
+		height: 40px;
+		float: left;
+		margin-bottom: $small-fix-07;
+		padding: $small-fix-03 + 1; 
+		padding-bottom: $small-fix-07;
+		border-bottom: 1px solid #eee;
+		background: $white;
+
+		&:last-of-type {
+			margin-bottom: $null-conv;
+			border-bottom: $null-conv;
+		}
+
+		.in_Opt {
+			float: left;
+			height: $max-conv-height;
+			position: relative;
+		}
+
+		.IcPtl {
+			font-size: $small-fix-10 + 1;
+		    text-transform: uppercase;
+		    font-weight: 500;
+		    width: $max-conv-width;
+		    float: left;
+		    border: $null-conv;
+		    background: transparent;
+		    pointer-events: none;
+		}
+
+		.IcPdes {
+			width: $max-conv-width;
+			font-size: $small-fix-10;
+			color: #999;
+			float: left;
+			text-transform: initial;
+			font-style: italic;
+			border: $null-conv;
+			background: transparent;
+			pointer-events: none;
+		}
+
+		.IcPtl, 
+		.IcPdes {
+			&:focus { outline: $null-conv; }
+		}
+
+		.Left, 
+		.Right {
+		    display: table;
+		}
+
+		.Left {
+			width: 60%;
+			justify-content: left;
+		}
+
+		.Right {
+			width: 40%;
+			justify-content: center;
+			.ClOpt, 
+			.archiveIco {
+				position: absolute;
+			    left: 53px;
+			    top: $small-fix-10 + 2;
+			    // font-weight: bold;
+			    color: $black;
+			    font-size: $small-fix-10;
+			    cursor: pointer;
+			}
+
+			.archiveIco {
+				left: 37px;
+				font-weight: bold;
+				color: #0A9A7A;
+			}
+
+			.moveTh {
+				cursor: move;
+			    font-size: $small-fix-20;
+			    position: absolute;
+			    top: $small-fix-05 + 1;
+			    left: $null-conv;
+			    color: #ddd;
+			}
+		} 
+
+		.GenCpk {
+			width: $small-fix-35; 
+			height: $small-fix-30; 
+			position: absolute; 
+			right: $null-conv;
+			top: $null-conv;
+			background: #f9f9f9;
+			@include box-shadow(0 0 $small-fix-03 0 rgba(0,0,0,0.35));
+			@include border-radius($small-fix-03);
+			cursor: pointer;
+		}
+	}
+
+	.closeC {
+	    width: $small-fix-20;
+	    height: $small-fix-20;
+	    background: #f9f9f9;
+	    border: 1px solid #ddd;
+	    position: relative;
+	    @include border-radius($max-conv-width / 2);
+	    cursor: pointer;
+	    z-index: 100000;
+	    float: left;
+	    margin: $small-fix-02;
+
+	    .closeC_Tip {
+	    	min-width: 61px;
+		    text-align: center;
+		    position: absolute;
+		    top: -27px;
+		    padding: $small-fix-03 !important;
+		    padding-bottom: 2px !important;
+		    padding-left: $small-fix-07 + 1 !important;
+		    padding-right: $small-fix-07 + 1 !important;
+		    white-space: nowrap;
+		    border: 1px solid #0A9A7A;
+		    z-index: 10000;
+		    font-size: $small-fix-10;
+		    font-family: arial;
+		    font-weight: 100;
+		    @include border-radius($small-fix-03);
+		    cursor: default;
+		    align-items: center;
+		    justify-content: center;
+		    text-transform: uppercase;
+		    background: #0a9a7a;
+		    color: white;
+		    left: -21px;
+		    display: none;
+		    &:after {
+                position: absolute;
+                content: "";
+                border-left: $small-fix-05 solid transparent;
+                border-right: $small-fix-05 solid transparent;
+                top: $max-conv-top;
+                left: $small-fix-20 + 4;
+                border-bottom: $small-fix-05 + 1 solid #0A9A7A;
+                @include transform(180deg);
+            }
+	    }
+	}
+
+	.SaveTip {
+		margin-left: $small-fix-07;
+		&:before {
+	    	content: '\f00c';
+	    	color: #0a9a7a;
+		    position: absolute;
+		    top: $small-fix-03;
+		    left: $small-fix-02;
+		    font-size: $small-fix-13;
+		    font-weight: bold;
+	    }
+	}
+
+	.AddTip {
+		&:before {
+			content: '\f067';
+	    	color: #777;
+		    position: absolute;
+		    top: $small-fix-03 + 1;
+		    left: $small-fix-03 + 1;
+		    font-size: $small-fix-10 + 1;
+		    font-weight: bold;
+		}
+	}
+
+	.GoArchive {
+		float: right;
+	    font-size: $small-fix-10 + 1;
+	    font-weight: bold;
+	    cursor: pointer;
+	    color: #0A9A7A;
+	}
+
+	.GoArchive_Drop {
+		position: absolute;
+	    width: 300px;
+	    min-height: 82px;
+	    // height: 200px;
+	    // border: 1px solid #000;
+	    left: $max-conv-left;
+	    top: 88px;
+	    background: #f9f9f9;
+	    padding: $small-fix-07;
+	    z-index: 100;
+	    @include box-shadow(0 0 $small-fix-02 0 rgba(0, 0, 0, 0.55));
+	    display: none;
+
+	    &:before {
+	    	content: 'Place Your Files Here';
+	    	position: absolute;
+		    font-size: 14px;
+		    top: 49%;
+		    left: 0;
+		    color: #ccc;
+		    width: $max-conv-width;
+		    text-align: center;
+	    }
+
+	    .ArchTitle {
+	    	width: $max-conv-width;
+		    float: left;
+		    text-align: center;
+		    font-size: $small-fix-10 + 1;
+		    padding: $small-fix-10;
+		    padding-top: 0;
+		    font-weight: bold;
+	    }
+
+	    .blkOpt {
+	    	margin-bottom: $small-fix-03;
+
+			.Right { 
+		    	.archiveIco {
+		    		display: none;
+		    	}
+		    }
+	    }
+	}
+
+	.DropClear {
+		&:before {
+			content: '';
+		}
+	}
+
+	.ChooseOpt {
+		width: 288px;
+		height: $max-conv-height;
+		top: $null-conv;
+		right: $max-conv-right;
+	    background: $white;
+	    float: left;
+	    padding: $small-fix-10;
+	    padding-right: $small-fix-20;
+	    padding-left: $null-conv;
+
+	    .ChooseOpt_Blk {
+
+	    	width: 87px;
+	    	height: 40px;
+	    	padding: $small-fix-03 + 1;
+	    	margin: 1px;
+	    	border: 1px solid #ddd;
+	    	background: #f9f9f9;
+	    	float: left;
+	    	cursor: pointer;
+	    	line-height: 1;
+		    align-items: center;
+		    justify-content: center;
+		    display: flex;
+
+		    .Txt_In {
+		    	font-size: $small-fix-10;
+		    	font-style: italic;
+		    	font-weight: bold;
+		    	color: #777;
+		    }
+	    }
+	}
+
+	.OverLayBtn {
+		width: 150px;
+		height: 40px;
+		margin-right: $small-fix-10;
+		float: left;
+		position: relative;
+		background: url(http://localhost:8080/projects/httdocs/newsystem/newqinexV6/src/assets/img/btn-bg-grey2.jpg);
+    	background-size: $max-conv-width;
+    	align-items: center;
+	    justify-content: center;
+	    display: flex;
+
+		.oLayer, 
+		button {
+			width: $max-conv-width;
+    		height: $max-conv-height;
+    		position: absolute;
+    		top: $null-conv;
+    		left: $null-conv;
+		}
+
+    	.oLayer {
+
+    		// background: rgba(202, 33, 218, 0.5); // Purple
+
+    		// background: rgba(236,194,65, 0.5); // Orange
+
+    		background: rgba(10,154,122, 0.5); // Green Qinex
+
+    		// background: rgba(204,0,0, 0.5); // Red
+    	}
+
+    	button {
+    		color: $white;
+    		font-size: $small-fix-10 + 2;
+    		font-weight: bold;
+    		background:transparent;
+    		border: $null-conv;
+
+    		&:focus {
+
+    			outline: $null-conv;
+    		}
+    	}
+	}
+
+	// .tobesaved {
+	// 	width: 100%;
+	//     float: left;
+	//     padding: 10px;
+	//     padding-top: 0;
+	//     font-size: 13px;
+	//     font-weight: bold;
+	//     color: #0A9A7A;
+	//     font-style: italic;
+ //    	letter-spacing: -0.5px;
+	// }
+}

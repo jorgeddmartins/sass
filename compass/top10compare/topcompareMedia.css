@@ -1,0 +1,274 @@
+/******************************* Ipad & Tablets ********************************/
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    width: 970px; }
+
+  #slider {
+    left: 0; }
+    #slider ul {
+      height: auto; }
+
+  .topCompare .topHeader .topNav .nav-menu {
+    top: 13%; }
+  .topCompare .heroSection {
+    height: 280px; }
+    .topCompare .heroSection img {
+      top: -45px; }
+    .topCompare .heroSection .heroText {
+      width: 50%;
+      padding-top: 5%; }
+      .topCompare .heroSection .heroText .topMsg,
+      .topCompare .heroSection .heroText .compareMsg,
+      .topCompare .heroSection .heroText .bottomMsg,
+      .topCompare .heroSection .heroText .foryouMsg {
+        width: 100%; }
+      .topCompare .heroSection .heroText .topMsg,
+      .topCompare .heroSection .heroText .bottomMsg,
+      .topCompare .heroSection .heroText .foryouMsg {
+        font-size: 3vw; }
+      .topCompare .heroSection .heroText .compareMsg {
+        font-size: 3.5vw; }
+      .topCompare .heroSection .heroText .bottomMsg {
+        left: -10px;
+        font-weight: 100; }
+  .topCompare .sectionLooking .sectionLooking_Floor .lookingFor_Option {
+    width: 12.8%; }
+    .topCompare .sectionLooking .sectionLooking_Floor .lookingFor_Option .txtOpt {
+      font-size: 12px; }
+  .topCompare .sectionFindoutMore {
+    padding-top: 52px;
+    padding-bottom: 32px; }
+    .topCompare .sectionFindoutMore .container h2 {
+      font-size: 32px; }
+    .topCompare .sectionFindoutMore .container p {
+      font-size: 20px; }
+  .topCompare .sectionSlide .slide_Floor {
+    padding-top: 5%; }
+    .topCompare .sectionSlide .slide_Floor p {
+      font-size: 23px;
+      line-height: 31px; }
+  .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare {
+    width: 29.5%;
+    margin: 11px; }
+    .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare .title_bullet {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare p {
+      font-size: 16px; }
+  .topCompare .footerCompare .footerCompare_Top {
+    padding-top: 68px; }
+    .topCompare .footerCompare .footerCompare_Top p {
+      font-size: 13px; }
+    .topCompare .footerCompare .footerCompare_Top .footerLogo_Box {
+      width: 120px;
+      height: 120px;
+      top: -47px; }
+      .topCompare .footerCompare .footerCompare_Top .footerLogo_Box img {
+        width: 90px;
+        top: 13px; }
+  .topCompare .footerCompare .footerCompare_Bottom p {
+    font-size: 13px; } }
+/********************************* SmartPhones portrait *******************************/
+@media (min-width: 220px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    padding: 0; }
+
+  .topCompare .topHeader {
+    position: fixed;
+    border-bottom: 2px solid #eee;
+    max-height: 51px; }
+    .topCompare .topHeader .topNav .logoBox {
+      width: 26%;
+      max-width: 100px;
+      min-width: 89.69px;
+      left: 10px; }
+    .topCompare .topHeader .topNav .nav_menu_mob {
+      display: block; }
+    .topCompare .topHeader .topNav .nav-menu {
+      top: 51px;
+      background: rgba(255, 255, 255, 0.5);
+      padding: 0;
+      right: -100%;
+      width: 100%;
+      max-width: 350px;
+      height: 100%;
+      position: fixed;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .topCompare .topHeader .topNav .nav-menu .DropLink .i_Url:after {
+        top: 15px;
+        right: 18px; }
+      .topCompare .topHeader .topNav .nav-menu .item_link {
+        width: 100%;
+        margin: 0;
+        max-width: 255px;
+        float: right; }
+        .topCompare .topHeader .topNav .nav-menu .item_link .i_Url {
+          width: 100%;
+          padding: 8px;
+          border-top: 1px solid transparent; }
+        .topCompare .topHeader .topNav .nav-menu .item_link:first-child .i_Url {
+          border-top: 1px solid #fff; }
+        .topCompare .topHeader .topNav .nav-menu .item_link:first-child .selected {
+          border-top: 1px solid #4c9dd2; }
+      .topCompare .topHeader .topNav .nav-menu .MegaDrop_Floor {
+        position: relative;
+        max-width: 255px;
+        float: right;
+        top: 0;
+        padding: 0;
+        border: 1px solid transparent;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #eee;
+        max-height: 350px;
+        overflow: auto; }
+        .topCompare .topHeader .topNav .nav-menu .MegaDrop_Floor ul {
+          border: 0;
+          max-width: 100%;
+          width: 100%;
+          float: left;
+          margin: 0; }
+        .topCompare .topHeader .topNav .nav-menu .MegaDrop_Floor:before {
+          display: none; }
+    .topCompare .topHeader .topNav .nav-menuGoright {
+      right: 0; }
+  .topCompare .heroSection {
+    height: auto;
+    margin-top: 50px; }
+    .topCompare .heroSection img {
+      top: 0; }
+    .topCompare .heroSection .heroText {
+      width: 50%;
+      padding-top: 5%; }
+      .topCompare .heroSection .heroText .topMsg,
+      .topCompare .heroSection .heroText .compareMsg,
+      .topCompare .heroSection .heroText .bottomMsg,
+      .topCompare .heroSection .heroText .foryouMsg {
+        width: 100%; }
+      .topCompare .heroSection .heroText .topMsg,
+      .topCompare .heroSection .heroText .bottomMsg,
+      .topCompare .heroSection .heroText .foryouMsg {
+        font-size: 4vw; }
+      .topCompare .heroSection .heroText .compareMsg {
+        font-size: 4.5vw; }
+      .topCompare .heroSection .heroText .bottomMsg {
+        left: -10px;
+        font-weight: 100; }
+  .topCompare .optionsSection .option_Square {
+    width: 50%; }
+    .topCompare .optionsSection .option_Square .option_Square-In .icon_Text {
+      font-size: 16px; }
+  .topCompare .sectionLooking {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .topCompare .sectionLooking .lookingText {
+      font-size: 20px; }
+    .topCompare .sectionLooking .sectionLooking_Floor {
+      margin-top: 15px;
+      padding: 0; }
+      .topCompare .sectionLooking .sectionLooking_Floor .lookingFor_Option {
+        width: 47%;
+        margin: 3.4px; }
+  .topCompare .sectionFindoutMore {
+    padding: 15px;
+    padding-top: 43px;
+    padding-bottom: 25px; }
+    .topCompare .sectionFindoutMore .container {
+      padding: 0; }
+      .topCompare .sectionFindoutMore .container h2 {
+        margin-top: 0;
+        font-size: 22px; }
+      .topCompare .sectionFindoutMore .container p {
+        font-size: 14px;
+        line-height: 20px; }
+      .topCompare .sectionFindoutMore .container .findOutBtn {
+        font-size: 18px;
+        margin-top: 22px; }
+  .topCompare .sectionSlide {
+    height: 117px; }
+    .topCompare .sectionSlide img {
+      height: 100%; }
+    .topCompare .sectionSlide .slider_Floor {
+      padding: 0; }
+    .topCompare .sectionSlide .slide_Floor {
+      padding-top: 5%; }
+      .topCompare .sectionSlide .slide_Floor p {
+        font-size: 16px;
+        line-height: 21px; }
+    .topCompare .sectionSlide .control_prev {
+      left: 20px; }
+      .topCompare .sectionSlide .control_prev i {
+        left: 5px; }
+    .topCompare .sectionSlide .control_next {
+      right: 20px; }
+      .topCompare .sectionSlide .control_next i {
+        left: 10px; }
+    .topCompare .sectionSlide .control_prev,
+    .topCompare .sectionSlide .control_next {
+      top: 33%;
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      line-height: 35px; }
+    .topCompare .sectionSlide #slider {
+      left: 0; }
+      .topCompare .sectionSlide #slider ul {
+        height: 117px; }
+        .topCompare .sectionSlide #slider ul li {
+          width: 270px; }
+  .topCompare .sectionWhyCompare {
+    padding: 15px;
+    padding-bottom: 40px; }
+    .topCompare .sectionWhyCompare .container h2 {
+      font-size: 23px;
+      margin-top: 10px; }
+    .topCompare .sectionWhyCompare .container .whyCompare_Options {
+      margin-top: 7px; }
+      .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        padding-top: 10px; }
+        .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare .title_bullet {
+          margin-bottom: 7px;
+          font-size: 14px; }
+        .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare p {
+          font-size: 14px; }
+  .topCompare .footerCompare .footerCompare_Top {
+    padding: 15px;
+    padding-top: 60px; }
+    .topCompare .footerCompare .footerCompare_Top .footerLogo_Box {
+      width: 100px;
+      height: 100px;
+      top: -37px; }
+      .topCompare .footerCompare .footerCompare_Top .footerLogo_Box img {
+        top: 10px;
+        width: 72px; }
+    .topCompare .footerCompare .footerCompare_Top .container {
+      padding: 0; }
+      .topCompare .footerCompare .footerCompare_Top .container p {
+        font-size: 13px; }
+  .topCompare .footerCompare .footerCompare_Bottom {
+    padding: 15px; }
+    .topCompare .footerCompare .footerCompare_Bottom p {
+      font-size: 10px; } }
+/*************************************** SmartPhones LandScape ***********************************/
+@media (min-width: 500px) and (max-width: 768px) {
+  .topCompare .sectionSlide #slider {
+    left: 0; }
+    .topCompare .sectionSlide #slider ul {
+      height: 117px; }
+      .topCompare .sectionSlide #slider ul li {
+        width: 370px; }
+  .topCompare .sectionLooking .sectionLooking_Floor .lookingFor_Option {
+    width: 32%; }
+  .topCompare .sectionWhyCompare .container .whyCompare_Options .Option_Compare {
+    width: 50%; } }
+
+/*# sourceMappingURL=topcompareMedia.css.map */

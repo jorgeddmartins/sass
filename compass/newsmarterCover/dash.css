@@ -1,0 +1,20 @@
+.realdash .SC_title,
+.realdash .SC_ChartsFloor {
+  width: 100%;
+  float: left;
+  padding: 10px; }
+.realdash .SC_title h2 {
+  margin: 7px;
+  display: inline-block;
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase; }
+
+.chart_plat {
+  float: left;
+  width: 20%;
+  background: #fff;
+  border: 1px solid #eee;
+  margin: 7px; }
+
+/*# sourceMappingURL=dash.css.map */

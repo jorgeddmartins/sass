@@ -1,0 +1,786 @@
+/* Start Pop ups */
+.takeLead_Fl,
+.dobC_Fl,
+.smsNote_Fl,
+.taskNote_Fl,
+.bugReport {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 100000000;
+  display: none; }
+
+.smsNote_Fl .closeSmsNote,
+.smsNote_Fl .closebugReport,
+.taskNote_Fl .closeSmsNote,
+.taskNote_Fl .closebugReport,
+.bugReport .closeSmsNote,
+.bugReport .closebugReport {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+.smsNote_Fl .closeNotes,
+.taskNote_Fl .closeNotes,
+.bugReport .closeNotes {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  cursor: pointer; }
+.smsNote_Fl .smsNote_Content,
+.smsNote_Fl .bugReport_Content,
+.taskNote_Fl .smsNote_Content,
+.taskNote_Fl .bugReport_Content,
+.bugReport .smsNote_Content,
+.bugReport .bugReport_Content {
+  background: #fff;
+  width: 600px;
+  margin: 170px auto 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 10000;
+  padding: 30px;
+  display: table;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  .smsNote_Fl .smsNote_Content .Lock_Content,
+  .smsNote_Fl .bugReport_Content .Lock_Content,
+  .taskNote_Fl .smsNote_Content .Lock_Content,
+  .taskNote_Fl .bugReport_Content .Lock_Content,
+  .bugReport .smsNote_Content .Lock_Content,
+  .bugReport .bugReport_Content .Lock_Content {
+    pointer-events: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left; }
+  .smsNote_Fl .smsNote_Content h3,
+  .smsNote_Fl .bugReport_Content h3,
+  .taskNote_Fl .smsNote_Content h3,
+  .taskNote_Fl .bugReport_Content h3,
+  .bugReport .smsNote_Content h3,
+  .bugReport .bugReport_Content h3 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    padding-top: 0;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1fadcf; }
+  .smsNote_Fl .smsNote_Content .sms_Inpt,
+  .smsNote_Fl .smsNote_Content .task_Inp,
+  .smsNote_Fl .bugReport_Content .sms_Inpt,
+  .smsNote_Fl .bugReport_Content .task_Inp,
+  .taskNote_Fl .smsNote_Content .sms_Inpt,
+  .taskNote_Fl .smsNote_Content .task_Inp,
+  .taskNote_Fl .bugReport_Content .sms_Inpt,
+  .taskNote_Fl .bugReport_Content .task_Inp,
+  .bugReport .smsNote_Content .sms_Inpt,
+  .bugReport .smsNote_Content .task_Inp,
+  .bugReport .bugReport_Content .sms_Inpt,
+  .bugReport .bugReport_Content .task_Inp {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    float: left;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    pointer-events: initial;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 12px;
+    color: #777;
+    padding-bottom: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+    .smsNote_Fl .smsNote_Content .sms_Inpt:focus,
+    .smsNote_Fl .smsNote_Content .task_Inp:focus,
+    .smsNote_Fl .bugReport_Content .sms_Inpt:focus,
+    .smsNote_Fl .bugReport_Content .task_Inp:focus,
+    .taskNote_Fl .smsNote_Content .sms_Inpt:focus,
+    .taskNote_Fl .smsNote_Content .task_Inp:focus,
+    .taskNote_Fl .bugReport_Content .sms_Inpt:focus,
+    .taskNote_Fl .bugReport_Content .task_Inp:focus,
+    .bugReport .smsNote_Content .sms_Inpt:focus,
+    .bugReport .smsNote_Content .task_Inp:focus,
+    .bugReport .bugReport_Content .sms_Inpt:focus,
+    .bugReport .bugReport_Content .task_Inp:focus {
+      outline: 0; }
+  .smsNote_Fl .smsNote_Content .sms_TextArea,
+  .smsNote_Fl .smsNote_Content .task_TextArea,
+  .smsNote_Fl .bugReport_Content .sms_TextArea,
+  .smsNote_Fl .bugReport_Content .task_TextArea,
+  .taskNote_Fl .smsNote_Content .sms_TextArea,
+  .taskNote_Fl .smsNote_Content .task_TextArea,
+  .taskNote_Fl .bugReport_Content .sms_TextArea,
+  .taskNote_Fl .bugReport_Content .task_TextArea,
+  .bugReport .smsNote_Content .sms_TextArea,
+  .bugReport .smsNote_Content .task_TextArea,
+  .bugReport .bugReport_Content .sms_TextArea,
+  .bugReport .bugReport_Content .task_TextArea {
+    height: 100px; }
+  .smsNote_Fl .smsNote_Content .addSms_Btn,
+  .smsNote_Fl .smsNote_Content .addTask_Btn,
+  .smsNote_Fl .bugReport_Content .addSms_Btn,
+  .smsNote_Fl .bugReport_Content .addTask_Btn,
+  .taskNote_Fl .smsNote_Content .addSms_Btn,
+  .taskNote_Fl .smsNote_Content .addTask_Btn,
+  .taskNote_Fl .bugReport_Content .addSms_Btn,
+  .taskNote_Fl .bugReport_Content .addTask_Btn,
+  .bugReport .smsNote_Content .addSms_Btn,
+  .bugReport .smsNote_Content .addTask_Btn,
+  .bugReport .bugReport_Content .addSms_Btn,
+  .bugReport .bugReport_Content .addTask_Btn {
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #1fadcf;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: initial;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: 0.5px; }
+.smsNote_Fl .bugReport_Content,
+.taskNote_Fl .bugReport_Content,
+.bugReport .bugReport_Content {
+  width: 810px;
+  padding: 0; }
+
+.SmsCustomer {
+  position: relative;
+  width: 100%;
+  float: left;
+  border: 1px solid #ddd; }
+  .SmsCustomer .SmsCustomerTitle {
+    position: relative;
+    padding: 4px;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #eee;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: .3px;
+    min-height: 25px; }
+  .SmsCustomer .Form_Temp {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 10px; }
+    .SmsCustomer .Form_Temp .SelectTemp,
+    .SmsCustomer .Form_Temp .MsgTemp {
+      position: relative;
+      margin: 3px;
+      margin-bottom: 0; }
+    .SmsCustomer .Form_Temp .SelectTemp,
+    .SmsCustomer .Form_Temp .MsgTemp {
+      float: left;
+      width: 50%; }
+      .SmsCustomer .Form_Temp .SelectTemp .Select_Box,
+      .SmsCustomer .Form_Temp .MsgTemp .Select_Box {
+        position: relative;
+        width: 100%;
+        float: left;
+        margin-bottom: 10px; }
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box:last-of-type,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box:last-of-type {
+          margin-bottom: 0; }
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .label,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .label {
+          width: 100%;
+          float: left;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #000;
+          margin-bottom: 5px;
+          padding: 0;
+          text-align: left;
+          letter-spacing: 0; }
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .Input_Box,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .Input_Box {
+          position: relative;
+          width: 100%;
+          height: 35px;
+          float: left;
+          border: 1px solid #ddd; }
+          .SmsCustomer .Form_Temp .SelectTemp .Select_Box .Input_Box input[type="text"],
+          .SmsCustomer .Form_Temp .MsgTemp .Select_Box .Input_Box input[type="text"] {
+            pointer-events: initial;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 7px;
+            font-size: 12px;
+            color: #777; }
+            .SmsCustomer .Form_Temp .SelectTemp .Select_Box .Input_Box input[type="text"]:focus,
+            .SmsCustomer .Form_Temp .MsgTemp .Select_Box .Input_Box input[type="text"]:focus {
+              outline: 0; }
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .SelectCustomer1:after,
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .SelectCustomer2:after,
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .TaskCustomer:after,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .SelectCustomer1:after,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .SelectCustomer2:after,
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .TaskCustomer:after {
+          position: absolute;
+          content: "";
+          vertical-align: middle;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          top: 15px;
+          right: 14px;
+          border-bottom: 5px solid #000;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s; }
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .SelectCustomer1 input[type="text"],
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .SelectCustomer2 input[type="text"],
+        .SmsCustomer .Form_Temp .SelectTemp .Select_Box .TaskCustomer input[type="text"],
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .SelectCustomer1 input[type="text"],
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .SelectCustomer2 input[type="text"],
+        .SmsCustomer .Form_Temp .MsgTemp .Select_Box .TaskCustomer input[type="text"] {
+          cursor: pointer; }
+      .SmsCustomer .Form_Temp .SelectTemp .SendSms_Btn,
+      .SmsCustomer .Form_Temp .MsgTemp .SendSms_Btn {
+        pointer-events: initial;
+        width: 100%;
+        height: 38px;
+        float: left;
+        background: #1fadcf;
+        border: 0;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        text-align: center;
+        padding: 9px;
+        cursor: pointer; }
+      .SmsCustomer .Form_Temp .SelectTemp .disabled,
+      .SmsCustomer .Form_Temp .MsgTemp .disabled {
+        pointer-events: none;
+        opacity: .4; }
+    .SmsCustomer .Form_Temp .MsgTemp {
+      float: right;
+      width: 47%; }
+    .SmsCustomer .Form_Temp .SmsArea {
+      pointer-events: initial;
+      width: 100%;
+      height: 15.4vh;
+      float: left;
+      padding: 7px;
+      border: 1px solid #ddd;
+      font-size: 12px;
+      color: #777; }
+      .SmsCustomer .Form_Temp .SmsArea:focus {
+        outline: 0; }
+    .SmsCustomer .Form_Temp .SelectCustomer_Fl {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ddd;
+      position: absolute;
+      top: 102%;
+      left: 0;
+      padding: 0;
+      z-index: 100;
+      display: none; }
+      .SmsCustomer .Form_Temp .SelectCustomer_Fl li {
+        list-style: none; }
+        .SmsCustomer .Form_Temp .SelectCustomer_Fl li .SelectOPt {
+          width: 100%;
+          float: left;
+          padding: 5px;
+          color: #999;
+          font-size: 13px;
+          border-bottom: 1px solid #ddd;
+          cursor: pointer;
+          background: #f9f9f9; }
+
+.customerJointSelect {
+  margin-top: 12px;
+  display: none; }
+
+.warningNote {
+  float: left;
+  width: 100%;
+  padding: 7px;
+  padding-top: 0;
+  padding-left: 10px;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  display: none; }
+
+.modalContent_Header {
+  width: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  padding-top: 22px;
+  background: #f9f9f9;
+  float: left;
+  position: relative;
+  border-bottom: 2px solid #eee; }
+  .modalContent_Header h6 {
+    text-transform: uppercase;
+    margin: 0; }
+  .modalContent_Header i {
+    position: absolute;
+    right: 25px;
+    top: 16px;
+    font-size: 22px;
+    cursor: pointer; }
+  .modalContent_Header .closeTip {
+    position: absolute;
+    padding: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #1fadcf;
+    border: 1px solid #1fadcf;
+    font-size: 11px;
+    text-transform: uppercase;
+    top: -16px;
+    right: -4px;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    cursor: default;
+    display: none; }
+    .modalContent_Header .closeTip:after {
+      width: 0;
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 24px;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 5px solid #1fadcf;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+
+.modalContent_Body {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #fff; }
+  .modalContent_Body .load_content,
+  .modalContent_Body .form-group {
+    width: 100%;
+    float: left;
+    position: relative; }
+  .modalContent_Body label {
+    color: #025a87;
+    width: 100%; }
+    .modalContent_Body label span {
+      color: #cc0000; }
+  .modalContent_Body textarea {
+    width: 100%;
+    height: 214px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px; }
+    .modalContent_Body textarea:focus {
+      outline: 0; }
+  .modalContent_Body #priority-group {
+    width: 50%;
+    float: left;
+    position: relative; }
+    .modalContent_Body #priority-group .priority_Select {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #ddd;
+      float: left;
+      position: relative;
+      background: #fff; }
+      .modalContent_Body #priority-group .priority_Select:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 18px;
+        right: 14px;
+        border-bottom: 5px solid #000;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        cursor: pointer; }
+      .modalContent_Body #priority-group .priority_Select input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+        padding: 7px;
+        cursor: pointer; }
+        .modalContent_Body #priority-group .priority_Select input:focus {
+          outline: 0; }
+    .modalContent_Body #priority-group .PriorityDrop {
+      width: 100%;
+      position: absolute;
+      top: 104%;
+      background: #fff;
+      border: 1px solid #ddd;
+      z-index: 100;
+      display: none; }
+      .modalContent_Body #priority-group .PriorityDrop .option {
+        float: left;
+        width: 100%;
+        padding: 7px;
+        padding-left: 30px;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        .modalContent_Body #priority-group .PriorityDrop .option:hover {
+          background: #f9f9f9;
+          padding-left: 40px; }
+      .modalContent_Body #priority-group .PriorityDrop .select {
+        position: relative;
+        background: #f9f9f9;
+        padding-left: 40px; }
+        .modalContent_Body #priority-group .PriorityDrop .select:before {
+          content: '\e934';
+          font-family: 'Linearicons';
+          position: absolute;
+          top: 6px;
+          right: 20px;
+          font-size: 16px;
+          color: #025a87; }
+  .modalContent_Body .priority_Left {
+    padding-right: 15px; }
+  .modalContent_Body .priority_Right {
+    padding-left: 15px; }
+
+.modalContent_Footer {
+  width: 100%;
+  padding: 12px;
+  padding-left: 30px;
+  padding-top: 14px;
+  background: #f9f9f9;
+  float: left;
+  position: relative;
+  border-top: 2px solid #eee; }
+  .modalContent_Footer .btnStop {
+    float: right;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 7px; }
+  .modalContent_Footer .btnStopSub {
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #025a87;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+    border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
+
+.fileUpload {
+  position: relative;
+  float: left; }
+  .fileUpload input.uploadlogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 100%;
+    height: 42px; }
+
+.blue-btn {
+  background: transparent;
+  border: solid 1px #1fadcf;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  color: #1fadcf;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  margin: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s; }
+  .blue-btn:hover {
+    background: #1fadcf;
+    color: #fff; }
+
+.grabFiles {
+  width: 185px;
+  padding: 7px;
+  position: absolute;
+  left: 0;
+  top: 72px;
+  font-size: 12px;
+  color: #999;
+  background: #f9f9f9;
+  border: 1px solid #eee; }
+
+.loadImage {
+  width: 200px;
+  height: 120px;
+  position: relative;
+  float: left;
+  left: 50px;
+  overflow: hidden;
+  background: #f9f9f9;
+  border: 1px solid #eee; }
+  .loadImage:before {
+    width: 100%;
+    content: 'Paste Image (ctrl + v)';
+    position: absolute;
+    top: 56%;
+    left: 0;
+    color: #ccc;
+    font-size: 13px;
+    text-align: center; }
+  .loadImage:after {
+    content: '\f03e';
+    font-family: FontAwesome;
+    color: #ccc;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 84px; }
+  .loadImage img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer; }
+
+.toolLoadI {
+  position: absolute;
+  background: #025a87;
+  color: #fff;
+  padding: 7px;
+  font-size: 11px;
+  border-radius: 3px;
+  top: 67px;
+  left: 56%;
+  z-index: 100;
+  display: none; }
+  .toolLoadI:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 12px;
+    left: -7px;
+    border-bottom: 5px solid #025a87;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer; }
+
+.SendSmsCover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: none; }
+  .SendSmsCover .SmsCoverMsg {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 22%;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .SendSmsCover .btns_Fl {
+    position: relative;
+    margin: auto;
+    display: table; }
+    .SendSmsCover .btns_Fl .confirmBtn,
+    .SendSmsCover .btns_Fl .CancelSendSms {
+      pointer-events: initial;
+      height: 38px;
+      float: left;
+      border: 0;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 3px; }
+      .SendSmsCover .btns_Fl .confirmBtn:focus,
+      .SendSmsCover .btns_Fl .CancelSendSms:focus {
+        outline: 0; }
+    .SendSmsCover .btns_Fl .confirmBtn {
+      background: #1fadcf;
+      color: #fff; }
+    .SendSmsCover .btns_Fl .CancelSendSms {
+      background: #ddd;
+      color: #777; }
+
+/* End Pop ups */
+.modal-open .modal {
+  overflow: hidden; }
+
+.ModalErrorPot {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  display: none; }
+  .ModalErrorPot .ErrorPotContent {
+    position: relative;
+    margin: 150px auto 0;
+    width: 700px;
+    padding: 20px;
+    background: #fff;
+    font-size: 13px;
+    color: #777;
+    line-height: 22px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35); }
+
+/* Replace Pop Up */
+.replacePop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 100000000; }
+  .replacePop .closeReplPop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .replacePop .replNote_Content {
+    background: #fff;
+    width: 600px;
+    margin: 170px auto 0;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
+    position: relative;
+    z-index: 10000;
+    padding: 30px;
+    display: table;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+    .replacePop .replNote_Content .RepMsg {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #000;
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-right: 10px; }
+    .replacePop .replNote_Content .closeReplace {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 18px;
+      cursor: pointer; }
+    .replacePop .replNote_Content .Replac_Btn {
+      pointer-events: initial;
+      width: 32%;
+      height: 38px;
+      float: left;
+      background: #1fadcf;
+      border: 0;
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-top: 20px;
+      text-align: center;
+      padding: 9px;
+      cursor: pointer;
+      margin: 3px; }
+
+.replPoDelete {
+  display: none; }
+
+/*# sourceMappingURL=popUps.css.map */

@@ -34,6 +34,7 @@
             text-align: center;
         } 
     }
+
     .btn-Grid {
         padding-top: $small-fix-07;
         padding-bottom: $small-fix-07;
@@ -59,12 +60,10 @@
     }
 }
 
-.menuSettingsGrid {
-    display: none;
-}
+.menuSettingsGrid { display: none; }
 
 .imagesettings {
-    display: none;
+    //display: none;
 
     .mCS-minimal.mCSB_scrollTools {
        .mCSB_dragger {
@@ -77,7 +76,6 @@
     }
 }
 
-
 .settingsgGrid {
     width: 70%;
     position: relative;
@@ -85,6 +83,7 @@
     padding-top: $small-fix-20;
     padding-bottom: $small-fix-20;
     margin: auto;
+
     .nav-setitngs-btns {
         width: $max-conv-width; // 97.3%
         margin-top: $small-fix-07;
@@ -96,6 +95,7 @@
         @include border-radius($small-fix-03);
         float: left;
     }
+
     .column-dragdrop {
         position: relative;
         border: $small-fix-01 solid #eee;
@@ -147,16 +147,15 @@
             outline: $null-conv;
         }
         i {
-            font-size: 30px;
+            font-size: $small-fix-30;
         }
-
     }
     .setpermitions {
         width: 60px;
         height: 60px;
-        padding: 30px;
+        padding: $small-fix-30;
         @include border-radius($max-conv-width / 2);
-        margin-right: 20px;
+        margin-right: $small-fix-20;
         background: #FF7300;
         color: $white;
         border: $null-conv;
@@ -167,15 +166,15 @@
         i {
             top: -17px;
             position: relative;
-            font-size: 30px;
+            font-size: $small-fix-30;
             left: -15px;
         }
     }
     .setsave {
         width: 60px;
         height: 60px;
-        padding: 30px;
-        margin-right: 20px;
+        padding: $small-fix-30;
+        margin-right: $small-fix-20;
         @include border-radius($max-conv-width / 2);
         color: $white;
         background: #5cb85c;
@@ -187,7 +186,7 @@
         i {
             top: -14px;
             position: relative;
-            font-size: 30px;
+            font-size: $small-fix-30;
             left: -13px;
         }
     }
@@ -199,11 +198,255 @@
     #drag-menu-right {
         height: 600px;
         overflow: hidden;
-   }
-
-
+    }
 }
 
 .newSettings {
     width: $max-conv-width !important;
+}
+
+
+/* Start WebCam */
+.SnapShot {
+    width: $max-conv-width;
+    float: left;
+    margin-bottom: $small-fix-17;
+    position: relative;
+    height: 142px; // 90px
+    margin-top: $small-fix-17;
+
+    .VideoBox {
+        position: relative;
+
+        span {
+            position: absolute;
+            width: 117px;
+            height: $small-fix-90;
+            top: $null-conv;
+            left: $null-conv;
+            background: #f9f9f9;
+            color: #dcdcdc;
+            z-index: 10;
+            font-size: $small-fix-27;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            &:before {
+                content: '\f030';
+            }
+            &:after {
+                content: '\10f030';
+            }
+            &:before, 
+            &:after {
+                position: absolute;
+                left: $null-conv;
+                right: $null-conv;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        video {
+            position: absolute;
+            top: $null-conv;
+            left: $null-conv;
+
+            @include box-shadow(0 0 3px 0 rgba(0,0,0,0.55));
+
+            padding: $small-fix-03;
+
+            @include border-radius($small-fix-03 + 1); 
+
+            z-index: 1;
+            width: 117px;
+            height: $small-fix-90;
+        }
+    }
+
+    #results {
+        border: 1px solid #ddd;
+        position: absolute;
+        top: $null-conv;
+        left: $null-conv;
+
+        @include box-shadow(0 0 3px 0 rgba(0,0,0,0.55));
+
+        @include border-radius($small-fix-03 + 1);
+
+        padding: $small-fix-03;
+
+        width: 117px;
+        height: $small-fix-90;
+    }
+
+    .takePicture, 
+    .StartVideo {
+        background: #0A9A7A;
+        border: 1px solid #0A9A7A;
+        padding: $small-fix-30;
+        padding-top: $small-fix-07;
+        padding-bottom: $small-fix-07;
+        color: $white;
+        font-size: $small-fix-10 + 1;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @include border-radius($small-fix-03 + 1);
+
+        position: absolute;
+        top: 110px;
+    }
+
+    .StartVideo {
+        background: #eee;
+        border: 1px solid #ddd;
+        color: $black;
+        left: 154px;
+    }
+
+    .startVBlock {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    .takePicture:focus, 
+    .StartVideo:focus {
+        outline: $null-conv;
+    }
+
+    .warning {
+        position: fixed;
+        width: $max-conv-width;
+        height: 58px;
+        top: $null-conv;
+        left: $null-conv;
+        background: #ccc;
+        z-index: 1000000000;
+        color: $black;
+        //text-transform: uppercase;
+        font-weight: bold;
+        font-size: $small-fix-10 + 2;
+        align-items: center;
+        //display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .warnSuccess {
+        background: rgba(10, 154, 122, 0.7);
+        color: $white;
+    }
+
+    .warnError {
+        background: rgba(255, 0, 0, 0.7);
+        color: $white;
+    }
+}
+/* End WebCam */
+
+#searchbar {
+    float: left;
+    width: $max-conv-width;
+    margin-bottom: $small-fix-10 + 2;
+    margin-top: $small-fix-03;
+
+    i {
+        font-size: $small-fix-20 + 1;
+        margin: $null-conv;
+        padding-right: $small-fix-13 + 1;
+        color: #0A9A7A;
+        float: left;
+    }
+
+    h4.pull-left {
+        white-space: nowrap;
+        width: max-content;
+    }
+
+    .panel {
+        h4 {
+           width: auto;
+            font-weight: 700;
+            font-family: "Segoe UI", Arial, Open Sans;
+            margin-bottom: $null-conv; 
+        }
+    }
+
+    .panel-heading {
+        margin: $null-conv;
+        float: left;
+        width: $max-conv-width;
+        h4 {
+            padding-right: $small-fix-15;
+            padding-top: $small-fix-05;
+            padding-bottom: $small-fix-05;
+            margin-top: $null-conv;
+            float: left;
+        }
+    }
+}
+
+.panel-body {
+    padding: $small-fix-07;
+    float: left;
+    width: $max-conv-width;
+}
+
+img.EditUserImg {
+    width: 100px;
+    height: 100px;
+    padding: $small-fix-07;
+    border: 1px solid #ddd;
+
+    @include border-radius($max-conv-width / 2);
+    @include box-shadow(0 0 3px 0 rgba(0, 0, 0, 0.55));
+
+    float: left;
+    margin-left: $small-fix-05;
+    margin-top: $small-fix-10;
+}
+
+.settingsView {
+    .k-upload {
+
+        width: 172px;
+        .k-upload-button {
+
+            span {
+                font-size: $small-fix-10;
+                text-transform: uppercase;
+                font-weight: bold;
+            } 
+        }
+    }
+
+    .nameUser {
+        width: $max-conv-width;
+        font-size: $small-fix-10 + 2;
+        font-weight: bold;
+        display: block;
+        margin-bottom: $small-fix-10;
+    }
+
+    .k-upload-files {
+        padding-bottom: $null-conv;
+        border-bottom: 1px solid transparent;
+    }
+
+    .OpenToChange {
+        position: relative;
+        float: left;
+        width: $max-conv-width;
+        margin-bottom: $small-fix-10;
+        font-size: $small-fix-10 + 1;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .FormProfile {
+        float: left;
+        width: $max-conv-width;
+        margin-bottom: $small-fix-20;
+        display: none;
+    }
 }

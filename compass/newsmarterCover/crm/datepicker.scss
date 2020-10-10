@@ -1,0 +1,237 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+.calendar * {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: $small-fix-10 + 1;
+}
+
+body .calendar {
+    position: absolute;
+    cursor: default;
+    float: left;
+    padding: $small-fix-03;
+    padding-top: $small-fix-07;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    border-bottom: $small-fix-02 solid #eee;
+    left: $null-conv;
+    top: $max-conv-top - 2;
+    z-index: 1000;
+    display: none;
+    .c-pad-top { padding-top: 3%; }
+    .c-grid {
+	    float: left;
+	    width: 282px;
+	    height: inherit;
+	    position: relative;
+	    .trGrid {
+			position: relative;
+			float: left;
+		    width: $max-conv-width;
+		}
+	    .c-day, 
+	    .c-day-previous-month, 
+	    .c-day-next-month {
+	    	width: 13%;
+		    min-width: 39.25px;
+		    max-width: $small-fix-40 + 2;
+		    height: $small-fix-30 + 1;
+		    background: rgba(31, 173, 207, 0.2);
+		    color: #025a87;
+		    float: left;
+		    text-align: center;
+		    cursor: pointer;
+		    margin: $small-fix-01 / 2; // 0.5px
+	    }
+	    .c-day {
+		    @include transition(.3s);
+		    &:hover {
+		    	background: #025a87;
+		    	color: $white;
+		    }
+		}
+
+		.c-day-previous-month, 
+		.c-day-next-month {
+		    opacity: 0.5;
+		}
+
+		.c-week-day {
+		    width: 14.28%;
+		    height: 10.38%;
+		    color: #025a87;
+		    float: left;
+		    text-align: center;
+		    font-weight: bold;
+		    font-size: $small-fix-10 + 1;
+		    padding-top: 1%;
+		    padding-bottom: $small-fix-02;
+		}
+
+		.c-month {
+		    width: 85%;
+		    height: 12%;
+		    text-align: center;
+		}
+
+		.c-nav-btn-over {
+		    font-weight: bold;
+		}
+
+		.today-select, 
+		.thisSelect {
+		    background: #025a87;
+		    color: $white;
+		}
+
+		.c-event {
+		    color: $white;
+		    font-weight: bold;
+		    cursor: pointer;
+		}
+
+		.c-grid-title {
+		    font-weight: bold;
+		    float: left;
+		    color: #025a87;
+		    margin-bottom: $small-fix-07;
+		    padding-top: 2% !important;
+		}
+
+		.c-next, 
+		.c-previous {
+			width: 7.5%;
+			height: $small-fix-30 - 1;
+			text-align: center;
+		    cursor: pointer;
+		    padding-top: $null-conv !important;
+		    float: left;
+		    font-size: $small-fix-20;
+		    font-weight: 100;
+		}
+
+		.c-next, 
+		.c-previous {
+			&:before {
+				font-family: 'Linearicons';
+				position: relative;
+				top: -1.5px;
+			}
+		} 
+
+		.c-next {
+			&:before {
+				content: "\e93c";
+			}
+		}
+
+		.c-previous {
+			&:before {
+				content: "\e93b";
+			}
+		}
+	}
+}
+
+
+
+.DatePickerCalendar, 
+.TimePickerCalendar {
+	position: absolute;
+    width: $max-conv-width;
+    top: 102%;
+    left: $null-conv;
+    background: $white;
+    border: $small-fix-01 solid #eee;
+    padding: $small-fix-03;
+    z-index: 100;
+    overflow: hidden;
+    display: none;
+    .timeOpt {
+    	background: rgba(31, 173, 207, 0.2);
+    	color: #025a87;
+    	float: left;
+    	position: relative;
+    	padding: 6.1px;
+    	padding-top: $small-fix-10;
+    	padding-bottom: $small-fix-10;
+    	font-size: $small-fix-10 + 1;
+    	margin: $small-fix-01;
+    	cursor: pointer;
+    	&:hover {
+    		background: #025a87;
+    		color: $white;
+    	}
+    }
+
+    .selctedItem {
+    	background: #025a87;
+    	color: $white;
+    }
+
+    .DteTimePicker_Slider {
+    	position: absolute;
+	    top: $null-conv;
+	    left: $null-conv;
+	    background: $white;
+	    width: 779px;
+	    height: $max-conv-height;
+	    .cal_Fl {
+		    position: relative;
+		    float: left;
+		    width: 259px;
+		    height: $max-conv-height;
+		    padding: $small-fix-02;
+		    overflow: hidden;
+		    .clDTitle {
+			    position: relative;
+			    width: $max-conv-width;
+			    float: left;
+			    padding: $small-fix-07;
+			    text-align: center;
+			    font-size: $small-fix-13;
+			    color: #025a87;
+			    font-weight: bold;
+			}
+		}
+		// .monthItem { width: 84px; }
+
+		.DtDay {
+			height: $small-fix-30;
+			padding: $small-fix-07 + 1;
+		}
+    }
+
+    .slideDayDatePicker, 
+	.slideMonthDatePicker, 
+	.slideTimeDatePicker {
+	    position: relative;
+	    float: left;
+	    width: 254px;
+	    background: $rgba-white-1;
+	    z-index: 100;
+	}
+	.slideYearDatePicker {
+		position: relative;
+	    float: left;
+	    width: 1994px;
+	    background: $rgba-white-1;
+	    .DtYear {
+		    width: $small-fix-50 + 1; // 51px
+		    height: $small-fix-35 + 1;
+		}
+	}
+
+	.slideMonthDatePicker {
+		.DtMonth {
+			width: 83px;
+			height: 45.4px;
+			padding-top: $small-fix-15 + 1;
+		}
+	}
+}
+
+.DatePickerCalendar { height: 289px; }

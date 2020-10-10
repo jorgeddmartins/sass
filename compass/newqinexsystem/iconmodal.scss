@@ -1,0 +1,348 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('IconModal') {
+
+	// Start Icon Picker 
+	.pro-imagesettings {
+	    position: absolute;
+	    width: 26%;
+	    max-width: 499.19px;
+	    min-width: 300px;
+	    padding-top: $small-fix-60;
+	    background: $white;
+	    top: 160px;
+	    right: 44%;
+	    border: $small-fix-01 solid #eee;
+	    border-bottom: $small-fix-01 solid #ddd;
+	    z-index: 2000;
+	    @include box-shadow($null-conv $null-conv $small-fix-05 $null-conv rgba(0, 0, 0, 0.15));
+	    display: none;
+	    .close-floor {
+	        width: $max-conv-width;
+	        background: #0A9A7A;
+	        position: absolute;
+	        left: $null-conv;
+	        top: $null-conv;
+	        padding: $small-fix-10;
+	        border-bottom: $small-fix-01 solid #088267;
+	        .fa, 
+	        .glyphicon, 
+	        .fd, 
+	        .lnr {
+	            font-size: $small-fix-20 + 3;
+	            float: right;
+	            position: relative;
+	            right: $small-fix-10;
+	            top: $null-conv;
+	            cursor: pointer;
+	            color: $white;
+	        }
+	        .lnr {
+	        	float: left;
+	        	cursor: default;
+	        	padding-left: $small-fix-20;
+    			color: #088267;
+	        }
+	        h5 {
+	            margin: $null-conv;
+	            float: right;
+	            font-size: $small-fix-13;
+	            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	            padding-top: $small-fix-05 + 1;
+	            padding-left: $small-fix-10;
+	            color: $white;
+	            padding-right: $small-fix-40;
+	            text-transform: uppercase;
+	        }
+	        .closesettings{
+	    		position: relative;
+	    		.coseTooltip{
+	    			width: $small-fix-70;
+	    			padding: $small-fix-03;
+	    			position: absolute;
+	    			top: -30px;
+    				left: -26px;
+	    			color: $white;
+	    			background: #0A9A7A;
+	    			text-align: center;
+	    			font: $small-fix-13 "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	    			border: $small-fix-01 solid $white;
+	    			@include border-radius($small-fix-03 + 1);
+	    			display: none;
+	    			&:after {
+	    				position: absolute;
+					    content: "";
+					    vertical-align: middle;
+					    width: $null-conv;
+					    height: $null-conv;
+					    border-left: $small-fix-07 solid transparent;
+					    border-right: $small-fix-07 solid transparent;
+					    top: $max-conv-top;
+					    right: $null-conv;
+					    left: $null-conv;
+					    margin-left: auto;
+					    margin-right: auto;
+					    border-bottom: $small-fix-07 solid $white;
+					    @include transform($rotate-180);
+	    			}
+	    		}
+	    	}
+	    }
+	    .content-floor {
+	        .cont-label {
+	            width: $max-conv-width;
+	            font: $small-fix-13 + 1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	            color: $black;
+	            font-weight: bold;
+	            padding-left: $small-fix-15;
+	            margin-bottom: $small-fix-10;
+	            float: left;
+	        }
+	        .library-floor {
+	            position: relative;
+	            width: $max-conv-width;
+	            padding: $small-fix-05;
+	            padding-left: $small-fix-10;
+	            height: $small-fix-45;
+	            //border: $small-fix-01 solid #eee;
+	            //border-bottom: $small-fix-01 solid #eee;
+	            background: #fafafa;
+	            cursor: pointer;
+	            &:after {
+	                position: absolute;
+	                content: "";
+	                vertical-align: middle;
+	                width: $null-conv;
+	                height: $null-conv;
+	                border-left: $small-fix-05 solid transparent;
+	                border-right: $small-fix-05 solid transparent;
+	                top: 50.5%;
+	                right: $small-fix-10;
+	                border-bottom: $small-fix-05 solid #333;
+	                @include transform($rotate-180);
+	                cursor: pointer;
+	            }
+	            span {
+	                position: relative;
+	                float: left;
+	                padding: $small-fix-05 + 1;
+	                font-weight: bold;
+	                color: #777;
+	            }
+	        }
+	        .icons-floor {
+	            width: $max-conv-width;
+	            height: 200px;
+	            position: relative;
+	            //border: $small-fix-01 solid #eee;
+	            //border-bottom: $small-fix-01 + 1 solid #eee;
+	            overflow: hidden;
+	            .iconsFloor-in {
+	                width: $max-conv-width;
+	                position: relative;
+	                //padding: $small-fix-03;
+	                padding-bottom: $null-conv;
+	                height: 194px;
+	            }
+	        }
+	        .rotate90 {
+	            &:after {
+	                position: absolute;
+	                content: "";
+	                vertical-align: middle;
+	                width: $null-conv;
+	                height: $null-conv;
+	                border-left: $small-fix-05 solid transparent;
+	                border-right: $small-fix-05 solid transparent;
+	                z-index: 10;
+	                top: 50.5%;
+	                right: $small-fix-10;
+	                border-bottom: $small-fix-05 solid #333;
+	                transform: rotate($null-conv);
+	            }
+	        }
+	        em {
+	            display: inline-block;
+	            font-size: $small-fix-10 + 2;
+	            color: #ccc;
+	            font-weight: bold;
+	            margin-top: $small-fix-05 + 1;
+	            padding-left: $small-fix-05;
+	        }
+	        .labraryDrop {
+	            position: absolute;
+	            top: $small-fix-40 + $small-fix-07 + 1; // 48px
+	            left: $null-conv;
+	            right: $null-conv;
+	            margin-left: auto;
+	            margin-right: auto;
+	            width: 94%;
+	            padding: $small-fix-05;
+	            border: $small-fix-01 solid #eee;
+	            background: $white;
+	            z-index: 10;
+	            li {
+	                span {
+	                    display: block;
+	                    padding: $small-fix-07 + 1;
+	                    text-decoration: none;
+	                    padding-left: $small-fix-13;
+	                    font-size: $small-fix-10 + 2;
+	                    color: $black;
+	                    cursor: default;
+	                    &:hover {
+	                        background: #f9f9f9;
+	                    }
+	                }
+	            }
+	        }
+	        .position-floor {
+	            position: relative;
+	            float: left;
+	            width: $max-conv-width;
+	            padding: $small-fix-15;
+	            padding-top: $null-conv;
+	        }
+	        .save-blk {
+	            background: #f9f9f9;
+	            width: $max-conv-width;
+	            float: left;
+	            padding: $small-fix-13;
+	            margin-top: $small-fix-10;
+	            text-align: right;
+	        }
+	        .focusColor {
+	            background: rgba(10,154,122, .6);
+	            color: $white;
+	        }
+	    }
+	    .ico-stage {
+	        width: $small-fix-60;
+	        height: $small-fix-45;
+	        background: #fafafa;
+	        //border: $small-fix-01 solid #eee;
+	        float: left;
+	        margin: $small-fix-02;
+	        padding: $small-fix-10;
+	        text-align: center;
+	        cursor: pointer;
+	        position: relative;
+	        @include transition(all $Sec-03 ease-in-out);
+	        .fa, 
+	        .fab, 
+	        .fal, 
+	        .far, 
+	        .fas,
+	        .fad, 
+	        .glyphicon, 
+	        .lnr, 
+	        .icon {
+	            font-size: $small-fix-20 + $small-fix-03;
+	            cursor: pointer;
+	            em {
+	                font-size: $null-conv;
+	                margin: $null-conv;
+	                padding: $null-conv;
+	            }
+	        }
+	        .fd {
+	            position: relative;
+	            top: -7px;
+	            font-size: $small-fix-20 + $small-fix-07;
+	            em {
+	                font-size: $null-conv;
+	                margin: $null-conv;
+	                padding: $null-conv;
+	            }
+	        }
+	        &:hover {
+	            background: rgba(10,154,122, .6);
+	            color: $white;
+	        }
+	    }
+	    .iconSearch-floor, 
+	    .iconActive-floor {
+	        float: left;
+	        padding-left: $small-fix-15;
+	        padding-right: $small-fix-15;
+	        margin-bottom: $small-fix-03 + 1;
+	        position: relative;
+	    }
+	    .iconSearch-floor {
+	        .auto-search {
+	            position: relative;
+	            width: $max-conv-width;
+	            padding: $small-fix-05;
+	            padding-left: $small-fix-10;
+	            height: $small-fix-45;
+	            //border: $small-fix-01 solid #eee;
+	            border: 0;
+	            background: #fafafa;
+	            margin: $null-conv;
+	            &:focus {
+	                outline: $null-conv;
+	            }
+	        }
+	        .fa, 
+	        .glyphicon, 
+	        .fd {
+	            position: absolute;
+	            top: $small-fix-10 + 2;
+	            right: $small-fix-30 + $small-fix-03; // 33px
+	            font-size: $small-fix-17 + 2;
+	            color: #ddd;
+	        }
+	    }
+	    .iconSearch-floor {
+	        width: 83.6%;
+	        padding-left: $null-conv;
+	    }
+	    .iconActive-floor {
+	        margin-bottom: $small-fix-02;
+	        width: $small-fix-80 + 1; // 81px
+	        padding-right: $small-fix-07;
+	        .ico-stage {
+	            margin: $null-conv;
+	            &:hover {
+	                background: $white;
+	                color: $black;
+	            }
+	        }
+	    }
+	    .saveChanges, 
+	    .saveChangesMenu {
+	        background: rgba(10, 154, 122, 0.6);
+	        border: $null-conv;
+	        color: $white;
+	        padding: $small-fix-10;
+	        padding-left: $small-fix-20;
+	        padding-right: $small-fix-20;
+	        @include transition(all .2s ease-in-out);
+	        &:focus {
+	            outline: $null-conv;
+	        }
+	    }
+	    .saveNotallowed {
+	        pointer-events: none;
+	        background: rgba(10, 154, 122, 0.3);
+	    }
+
+	    .openDropM {
+	    	display: block !important;
+	    }
+
+	    .mCS-minimal.mCSB_scrollTools {
+	    	.mCSB_dragger {
+	    		.mCSB_dragger_bar {
+				    background-color: $black;
+				    background-color: $rgba-black-03;
+				    filter: "alpha(opacity=20)";
+				    -ms-filter: "alpha(opacity=20)";
+				}
+	    	}
+	    }
+	}
+	// Ends Icon Picker
+}

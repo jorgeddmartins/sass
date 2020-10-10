@@ -1,0 +1,132 @@
+.gridview .grContent {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  margin-left: 60px; }
+  .gridview .grContent .gridHeader {
+    height: 40px;
+    padding: 0;
+    margin-bottom: 20px; }
+    .gridview .grContent .gridHeader ul .itemHeader {
+      width: 10.915%;
+      max-width: 200px;
+      float: left;
+      margin-right: 20px;
+      border: 1px solid #ddd; }
+  .gridview .grContent .gridContainer {
+    position: relative;
+    height: 86vh;
+    padding: 0;
+    margin-bottom: 0; }
+
+.gridRight {
+  right: -97%;
+  display: none !important; }
+
+.gridLeft {
+  -webkit-animation: gridLeft 1s 1 forwards;
+  -moz-animation: gridLeft 1s 1 forwards;
+  -ms-animation: gridLeft 1s 1 forwards;
+  animation: gridLeft 1s 1 forwards;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: block; }
+
+@-webkit-keyframes gridLeft {
+  from {
+    right: -97%; }
+  to {
+    right: 0; } }
+@keyframes gridLeft {
+  from {
+    right: -97%; }
+  to {
+    right: 0; } }
+@-moz-keyframes gridLeft {
+  from {
+    right: -97%; }
+  to {
+    right: 0; } }
+.grid-input {
+  height: 40px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0; }
+  .grid-input:focus {
+    outline: 0;
+    border-color: #ddd;
+    box-shadow: none; }
+
+.tabs_floor ul .tabItem {
+  float: left; }
+  .tabs_floor ul .tabItem .tabUrl {
+    padding: 9px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-bottom: none;
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    background: #f5f5f5;
+    position: relative; }
+  .tabs_floor ul .tabItem .selected {
+    background: #fff; }
+    .tabs_floor ul .tabItem .selected:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background: #fff;
+      left: 0;
+      bottom: -4px;
+      z-index: 1; }
+  .tabs_floor ul .tabItem:last-child .tabUrl {
+    border-right: 1px solid #ddd; }
+
+.tabs_container {
+  padding: 0;
+  border: 1px solid #ddd;
+  background: #fff; }
+
+.grid-button {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #f3f3f4;
+  color: #515967;
+  text-transform: uppercase;
+  font-weight: 500;
+  float: right;
+  margin-left: 7px; }
+  .grid-button:hover {
+    color: #515967;
+    text-decoration: none; }
+  .grid-button:focus {
+    color: #515967;
+    text-decoration: none; }
+  .grid-button:last-child {
+    margin-left: 0; }
+  .grid-button span {
+    position: relative;
+    top: 3px;
+    left: -5px;
+    float: left; }
+
+/*# sourceMappingURL=gridview.css.map */

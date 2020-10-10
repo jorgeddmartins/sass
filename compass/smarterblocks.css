@@ -1,0 +1,79 @@
+body {
+  background: #f9f9f9; }
+  body .width100 {
+    width: 99.2%;
+    /* 99.65%*/ }
+    body .width100 .fa-arrow-up, body .width100 .fa-arrow-down {
+      left: 47% !important; }
+  body .width50 {
+    width: 49.38%;
+    /* 49.68% */ }
+    body .width50 .fa-arrow-up, body .width50 .fa-arrow-down {
+      left: 44% !important; }
+  body .width33 {
+    width: 32.72%;
+    /* 33%*/ }
+    body .width33 .fa-arrow-up, body .width33 .fa-arrow-down {
+      left: 40.5% !important; }
+  body .width25 {
+    width: 24.42%;
+    /* 24.65% */ }
+    body .width25 .fa-arrow-up, body .width25 .fa-arrow-down {
+      left: 39% !important; }
+  body .width20 {
+    width: 19.43%;
+    /* 19.65% */ }
+    body .width20 .fa-arrow-up, body .width20 .fa-arrow-down {
+      left: 37% !important; }
+  body .width16 {
+    width: 16.1%;
+    /* 16.3% */ }
+    body .width16 .fa-arrow-up, body .width16 .fa-arrow-down {
+      left: 34% !important; }
+  body .width13 {
+    width: 13.72%;
+    /* 13.95% */ }
+
+.salessquare {
+  position: relative;
+  width: 16%;
+  height: 87px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin: 0.27%;
+  float: left; }
+  .salessquare .square-left {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .salessquare .square-right {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px; }
+    .salessquare .square-right h4 {
+      margin-top: 0;
+      margin-bottom: 7px;
+      text-align: center; }
+    .salessquare .square-right .right-Info {
+      width: 100%;
+      display: inline-block; }
+      .salessquare .square-right .right-Info span {
+        width: 50%;
+        float: left;
+        font-size: 14px;
+        text-align: center; }
+      .salessquare .square-right .right-Info .right {
+        color: #000; }
+      .salessquare .square-right .right-Info .left {
+        color: #777; }
+  .salessquare .square-red {
+    background: #cc0000; }
+  .salessquare .square-green {
+    background: #0A9A7A; }
+
+/*# sourceMappingURL=smarterblocks.css.map */

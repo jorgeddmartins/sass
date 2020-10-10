@@ -1,0 +1,491 @@
+.backQueueTemp template {
+  display: block; }
+.backQueueTemp .backqueueGrid,
+.backQueueTemp .backqueueTasks {
+  position: relative;
+  float: left; }
+.backQueueTemp .backqueueGrid {
+  width: 40%;
+  padding-right: 12px; }
+  .backQueueTemp .backqueueGrid .backQueueGr_In {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd; }
+    .backQueueTemp .backqueueGrid .backQueueGr_In .GridHeader {
+      position: relative;
+      width: 100%;
+      height: 33px;
+      background: #eee;
+      border-bottom: 1px solid #ddd; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridHeader .ExportGridBtn {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        height: 29px;
+        background: #fff;
+        padding: 4.5px;
+        padding-left: 28px;
+        padding-right: 15px;
+        padding-top: 6px;
+        border: 1px solid #eee;
+        font-size: 11px;
+        color: #777;
+        cursor: pointer;
+        transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s; }
+        .backQueueTemp .backqueueGrid .backQueueGr_In .GridHeader .ExportGridBtn:hover {
+          background: #3d566e;
+          color: #fff; }
+          .backQueueTemp .backqueueGrid .backQueueGr_In .GridHeader .ExportGridBtn:hover:before {
+            color: #fff; }
+        .backQueueTemp .backqueueGrid .backQueueGr_In .GridHeader .ExportGridBtn:before {
+          content: '\f1c3';
+          font-family: FontAwesome;
+          color: #3d566e;
+          position: absolute;
+          top: 5.5px;
+          left: 8px;
+          font-size: 13px; }
+    .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead {
+      width: 100%;
+      float: left; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead .aRdTh {
+        position: relative;
+        width: 14.28%;
+        height: 30px;
+        padding: 5px;
+        float: left;
+        border: 1px solid #eee;
+        border-right: 0;
+        border-top: 0;
+        background: #f9f9f9;
+        font-size: 10px;
+        text-transform: uppercase;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 9px;
+        color: #777;
+        cursor: pointer; }
+        .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead .aRdTh .aRin {
+          position: absolute;
+          top: 1px;
+          border: 0;
+          height: 90%;
+          left: 1px;
+          width: 97%;
+          padding: 7px; }
+          .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead .aRdTh .aRin:focus {
+            outline: 0; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead .IDate:before {
+        content: '\e836';
+        font-family: Linearicons-Free;
+        position: absolute;
+        top: 5px;
+        right: 8px;
+        z-index: 100;
+        font-size: 15px; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridHead .arrdw:before {
+        content: '\e874';
+        font-family: Linearicons-Free;
+        position: absolute;
+        top: 9px;
+        right: 5px;
+        font-size: 9px; }
+    .backQueueTemp .backqueueGrid .backQueueGr_In .GridBody {
+      width: 100%;
+      float: left;
+      max-height: 73.6vh;
+      overflow: hidden; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridBody .BTr {
+        width: 100%;
+        float: left;
+        height: 27px; }
+      .backQueueTemp .backqueueGrid .backQueueGr_In .GridBody .aRdTd {
+        position: relative;
+        width: 14.28%;
+        height: 100%;
+        padding: 5px;
+        float: left;
+        border: 1px solid #eee;
+        border-right: 0;
+        border-top: 0;
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 7px;
+        color: #777;
+        text-transform: capitalize; }
+    .backQueueTemp .backqueueGrid .backQueueGr_In .GridFooter {
+      width: 100%;
+      height: 33px;
+      float: left;
+      padding: 7px;
+      background: #eee;
+      border-top: 1px solid #ddd; }
+.backQueueTemp .backqueueTasks {
+  width: 60%; }
+  .backQueueTemp .backqueueTasks .backQueueDetails-Left,
+  .backQueueTemp .backqueueTasks .backQueueDetails-Right {
+    position: relative;
+    width: 50%; }
+  .backQueueTemp .backqueueTasks .backQueueDetails-Left {
+    float: left;
+    padding-right: 10px; }
+    .backQueueTemp .backqueueTasks .backQueueDetails-Left .formBoard_Title .pliExpandLeft,
+    .backQueueTemp .backqueueTasks .backQueueDetails-Left .formBoard_Title .pliNormalLeft {
+      position: absolute;
+      right: 15px;
+      top: 3px;
+      font-size: 20px;
+      cursor: pointer; }
+  .backQueueTemp .backqueueTasks .backQueueDetails-Right {
+    float: right;
+    border-left: 0;
+    padding-bottom: 5px; }
+    .backQueueTemp .backqueueTasks .backQueueDetails-Right .detWSmall_Fl {
+      width: 100%;
+      background: #f9f9f9;
+      padding: 6px; }
+      .backQueueTemp .backqueueTasks .backQueueDetails-Right .detWSmall_Fl .pliExpandRight,
+      .backQueueTemp .backqueueTasks .backQueueDetails-Right .detWSmall_Fl .pliNormalRight {
+        position: absolute;
+        left: 3px;
+        top: 1px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer; }
+    .backQueueTemp .backqueueTasks .backQueueDetails-Right .boxInp {
+      width: 31.6%;
+      float: left;
+      margin: .84%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      position: relative; }
+.backQueueTemp .taskSection {
+  display: block !important;
+  top: 0;
+  padding-right: 0;
+  height: auto; }
+  .backQueueTemp .taskSection .allTabs-Content .notes_Floor {
+    max-height: 35vh; }
+.backQueueTemp .costumerDetails .details_Left {
+  width: 100%;
+  padding-bottom: 15px; }
+  .backQueueTemp .costumerDetails .details_Left:last-child {
+    padding-bottom: 0; }
+.backQueueTemp .costumerDetails .tAmount {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px; }
+  .backQueueTemp .costumerDetails .tAmount:last-child {
+    padding-bottom: 0; }
+  .backQueueTemp .costumerDetails .tAmount label {
+    color: #3d566e; }
+  .backQueueTemp .costumerDetails .tAmount .tbGrid {
+    background: #f9f9f9;
+    padding: 3px;
+    border: 1px solid #eee;
+    margin-left: 7px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    top: 1px;
+    position: relative;
+    color: #3d566e; }
+    .backQueueTemp .costumerDetails .tAmount .tbGrid:focus {
+      outline: 0; }
+  .backQueueTemp .costumerDetails .tAmount .tbGridUpBt {
+    border: 0;
+    background: #1fadcf;
+    color: #fff;
+    font-size: 12px;
+    padding: 5.5px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .backQueueTemp .costumerDetails .tAmount .tbGridUpBt:focus {
+      outline: 0; }
+.backQueueTemp .UpdateLetter {
+  width: 100%;
+  float: left;
+  height: 50px;
+  padding: 41px;
+  margin-top: 7px; }
+.backQueueTemp .checkmark {
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+.backQueueTemp .boxInp {
+  width: 22.6%;
+  float: left;
+  margin: .84%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 12px; }
+  .backQueueTemp .boxInp select {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 12px; }
+    .backQueueTemp .boxInp select:focus {
+      outline: 0; }
+.backQueueTemp hr {
+  float: left;
+  width: 100%;
+  border-top: 2px solid #fff;
+  margin-bottom: 7px;
+  margin-top: 10px; }
+.backQueueTemp .Uload_fl .Uload_In {
+  background: #fff; }
+.backQueueTemp .updateCurrent_Btns {
+  right: 7px; }
+.backQueueTemp .updateCurrent_BtnsTop {
+  right: 0;
+  float: left;
+  margin-left: 7px;
+  height: 31px; }
+  .backQueueTemp .updateCurrent_BtnsTop .CurrentBtn {
+    position: relative;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 11px;
+    cursor: pointer; }
+  .backQueueTemp .updateCurrent_BtnsTop .CurrentBtnSelected {
+    text-decoration: none;
+    background: #1fadcf;
+    color: #fff; }
+  .backQueueTemp .updateCurrent_BtnsTop .paddL {
+    padding-left: 25px; }
+  .backQueueTemp .updateCurrent_BtnsTop .searchBtn:before,
+  .backQueueTemp .updateCurrent_BtnsTop .undoBtn:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    font-size: 14px; }
+  .backQueueTemp .updateCurrent_BtnsTop .searchBtn:before {
+    content: '\f002';
+    color: #fff; }
+  .backQueueTemp .updateCurrent_BtnsTop .undoBtn:before {
+    content: '\f0e2';
+    color: #999; }
+  .backQueueTemp .updateCurrent_BtnsTop .undoBtn:hover:before {
+    color: #fff; }
+.backQueueTemp .container-check .checkmark:after {
+  left: 8px;
+  top: 5px; }
+.backQueueTemp .checkmark:after {
+  left: 8px;
+  top: 5px; }
+.backQueueTemp .costumerDetails .costumerBoard {
+  border: 0; }
+.backQueueTemp .generateBtn_Fl .generatePacks {
+  height: 59px;
+  padding-left: 25px;
+  padding-top: 4px; }
+  .backQueueTemp .generateBtn_Fl .generatePacks:before {
+    left: 9%;
+    top: 17px; }
+.backQueueTemp .packT {
+  float: left;
+  font-size: 13px;
+  padding: 3px; }
+.backQueueTemp .selectPack {
+  float: right;
+  padding-bottom: 4px; }
+  .backQueueTemp .selectPack #ddlTemplate {
+    width: 140px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    font-size: 13px; }
+    .backQueueTemp .selectPack #ddlTemplate:focus {
+      outline: 0; }
+.backQueueTemp .addRecords_fl {
+  position: relative;
+  width: 100%;
+  padding-top: 7px;
+  float: left; }
+  .backQueueTemp .addRecords_fl .addRecordsBar {
+    position: relative;
+    width: 100%;
+    height: 33px;
+    background: #eee;
+    border: 1px solid #ddd;
+    float: left; }
+    .backQueueTemp .addRecords_fl .addRecordsBar .AddGridBtn {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      height: 29px;
+      background: #fff;
+      padding: 4.5px;
+      padding-left: 28px;
+      padding-right: 15px;
+      padding-top: 6px;
+      border: 1px solid #eee;
+      font-size: 11px;
+      color: #777;
+      cursor: pointer;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .backQueueTemp .addRecords_fl .addRecordsBar .AddGridBtn:before {
+        content: '\f067';
+        font-family: FontAwesome;
+        color: #3d566e;
+        position: absolute;
+        top: 5.5px;
+        left: 8px;
+        font-size: 13px; }
+      .backQueueTemp .addRecords_fl .addRecordsBar .AddGridBtn:hover {
+        background: #3d566e;
+        color: #fff; }
+        .backQueueTemp .addRecords_fl .addRecordsBar .AddGridBtn:hover:before {
+          color: #fff; }
+  .backQueueTemp .addRecords_fl .addRecordGrid {
+    position: relative;
+    width: 100%;
+    float: left; }
+    .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Header,
+    .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body,
+    .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Footer {
+      width: 100%;
+      float: left; }
+    .backQueueTemp .addRecords_fl .addRecordGrid .aRdTh {
+      width: 12.5%;
+      height: 30px;
+      padding: 5px;
+      float: left;
+      border: 1px solid #eee;
+      border-right: 0;
+      border-top: 0;
+      background: #f9f9f9;
+      font-size: 10px;
+      text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-top: 9px;
+      color: #777; }
+      .backQueueTemp .addRecords_fl .addRecordGrid .aRdTh:last-child {
+        border-right: 1px solid #eee; }
+    .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body {
+      min-height: 20px;
+      border-top: 0; }
+      .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body .addGtr {
+        width: 100%;
+        position: relative;
+        float: left; }
+        .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body .addGtr .aRdTh {
+          background: transparent;
+          height: 27px;
+          padding-top: 6px;
+          color: #3d566e; }
+        .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body .addGtr .editBtn {
+          font-size: 15px;
+          float: left;
+          margin: 8px;
+          margin-top: 0;
+          margin-bottom: 0;
+          cursor: pointer;
+          color: #3d566e; }
+          .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Body .addGtr .editBtn:hover {
+            color: #ccc; }
+    .backQueueTemp .addRecords_fl .addRecordGrid .addRecordGrid_Footer .aRdTh {
+      height: 20px;
+      font-weight: bold;
+      padding-top: 3px; }
+.backQueueTemp .RBarPadd {
+  padding: 0; }
+.backQueueTemp .leadlink {
+  position: absolute;
+  right: 38px;
+  top: 0;
+  color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #1fadcf;
+  padding: 5.3px;
+  height: 27px;
+  padding-top: 7px;
+  z-index: 20;
+  line-height: 16px;
+  cursor: pointer; }
+.backQueueTemp .checkLead {
+  font-size: 17px;
+  position: relative;
+  margin: -2px auto 0;
+  display: table;
+  color: #ccc; }
+  .backQueueTemp .checkLead:hover {
+    color: #34c634; }
+.backQueueTemp .mCSB_inside > .mCSB_container {
+  margin-right: 0; }
+.backQueueTemp .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.25); }
+.backQueueTemp .calPlt {
+  position: absolute;
+  width: 100%;
+  height: 253px;
+  z-index: 120000;
+  top: 103%;
+  left: 0;
+  display: none; }
+  .backQueueTemp .calPlt .calen_Fl {
+    width: 257px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px; }
+
+.body1008 .backqueueGrid,
+.body1008 .backqueueTasks {
+  height: 870px;
+  margin-top: 3px; }
+.body1008 .backQueueDetails-Left,
+.body1008 .backQueueDetails-Right {
+  height: 41vh; }
+
+.body969 .backqueueGrid,
+.body969 .backqueueTasks {
+  height: 830px; }
+.body969 .backQueueDetails-Left,
+.body969 .backQueueDetails-Right {
+  height: 44vh; }
+
+.widthLong {
+  width: 100%; }
+
+.SearchTbar {
+  float: left;
+  margin-left: 20px; }
+
+.tbl-hdr-row {
+  width: 100%;
+  float: left; }
+  .tbl-hdr-row .tbl-hdr-col {
+    width: 25%;
+    float: left;
+    font-size: 13px;
+    margin-bottom: 1px;
+    color: #3d566e; }
+
+.toplabD {
+  border-bottom: 1px solid #3d566e; }
+
+/*# sourceMappingURL=backqueue.css.map */

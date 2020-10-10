@@ -114,6 +114,7 @@ a {
             -webkit-box-shadow: $null-conv $small-fix-03 + 1 $small-fix-05 rgba(0,0,0,.15);
             box-shadow: $null-conv $small-fix-03 + 1 $small-fix-05 rgba(0,0,0,.15);
             position: absolute;
+            display: none;
             .avatar-arrow  {
                 position: absolute;
                 width: $conv-smll + 2;

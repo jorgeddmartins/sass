@@ -1,0 +1,225 @@
+.calendar * {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px; }
+
+body .calendar, .calendarSingle {
+  position: absolute;
+  cursor: default;
+  float: left;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  left: 0;
+  top: 100%;
+  z-index: 1;
+  display: none; }
+  body .calendar .c-pad-top, .calendarSingle .c-pad-top {
+    padding-top: 3%; }
+  body .calendar .c-grid, .calendarSingle .c-grid {
+    float: left;
+    width: 302px;
+    height: inherit;
+    position: relative; }
+    body .calendar .c-grid .trGrid, .calendarSingle .c-grid .trGrid {
+      position: relative;
+      float: left;
+      width: 100%; }
+    body .calendar .c-grid .c-day, body .calendar .c-grid .c-day-previous-month, body .calendar .c-grid .c-day-next-month, .calendarSingle .c-grid .c-day, .calendarSingle .c-grid .c-day-previous-month, .calendarSingle .c-grid .c-day-next-month {
+      width: 14.28%;
+      max-width: 42px;
+      height: 33px;
+      background: #DBEBE3;
+      color: #1A8755;
+      float: left;
+      text-align: center;
+      cursor: pointer;
+      margin: 0.5px; }
+    body .calendar .c-grid .c-day, .calendarSingle .c-grid .c-day {
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      body .calendar .c-grid .c-day:hover, .calendarSingle .c-grid .c-day:hover {
+        background: #1A8755;
+        color: #fff; }
+    body .calendar .c-grid .c-day-previous-month, body .calendar .c-grid .c-day-next-month, .calendarSingle .c-grid .c-day-previous-month, .calendarSingle .c-grid .c-day-next-month {
+      opacity: 0.5; }
+    body .calendar .c-grid .c-week-day, .calendarSingle .c-grid .c-week-day {
+      width: 14.28%;
+      height: 10.38%;
+      color: #1A8755;
+      float: left;
+      text-align: center;
+      font-weight: bold;
+      font-size: 12px;
+      padding-top: 1%; }
+    body .calendar .c-grid .c-month, .calendarSingle .c-grid .c-month {
+      width: 85%;
+      height: 12%;
+      text-align: center; }
+    body .calendar .c-grid .c-nav-btn-over, .calendarSingle .c-grid .c-nav-btn-over {
+      font-weight: bold; }
+    body .calendar .c-grid .today-select, body .calendar .c-grid .thisSelect, .calendarSingle .c-grid .today-select, .calendarSingle .c-grid .thisSelect {
+      background: #1A8755;
+      color: #fff; }
+    body .calendar .c-grid .c-event, .calendarSingle .c-grid .c-event {
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer; }
+    body .calendar .c-grid .c-grid-title, .calendarSingle .c-grid .c-grid-title {
+      font-weight: bold;
+      float: left;
+      color: #1A8755;
+      margin-bottom: 12px;
+      padding-top: 2% !important; }
+    body .calendar .c-grid .c-next, body .calendar .c-grid .c-previous, .calendarSingle .c-grid .c-next, .calendarSingle .c-grid .c-previous {
+      width: 7.5%;
+      height: 29px;
+      text-align: center;
+      cursor: pointer;
+      padding-top: 0 !important;
+      float: left;
+      font-size: 20px;
+      font-weight: 100; }
+    body .calendar .c-grid .c-next:before, body .calendar .c-grid .c-previous:before, .calendarSingle .c-grid .c-next:before, .calendarSingle .c-grid .c-previous:before {
+      font-family: 'Linearicons';
+      position: relative;
+      top: -1.5px; }
+    body .calendar .c-grid .c-next:before, .calendarSingle .c-grid .c-next:before {
+      content: "\e93c"; }
+    body .calendar .c-grid .c-previous:before, .calendarSingle .c-grid .c-previous:before {
+      content: "\e93b"; }
+    body .calendar .c-grid .dateTimepopUp, .calendarSingle .c-grid .dateTimepopUp {
+      width: 185px;
+      padding: 6px;
+      z-index: 20000; }
+    body .calendar .c-grid .topFirst, .calendarSingle .c-grid .topFirst {
+      top: 12px; }
+    body .calendar .c-grid .topSecond, .calendarSingle .c-grid .topSecond {
+      top: 45px; }
+    body .calendar .c-grid .topThird, .calendarSingle .c-grid .topThird {
+      top: 78px; }
+    body .calendar .c-grid .topFourth, .calendarSingle .c-grid .topFourth {
+      top: 112px; }
+    body .calendar .c-grid .topFifth, .calendarSingle .c-grid .topFifth {
+      top: 147px; }
+    body .calendar .c-grid .topSixth, .calendarSingle .c-grid .topSixth {
+      top: 181px; }
+    body .calendar .c-grid .left1, .calendarSingle .c-grid .left1 {
+      left: -70px; }
+    body .calendar .c-grid .left2, .calendarSingle .c-grid .left2 {
+      left: -28px; }
+    body .calendar .c-grid .left3, .calendarSingle .c-grid .left3 {
+      left: 16px; }
+    body .calendar .c-grid .left4, .calendarSingle .c-grid .left4 {
+      left: 57px; }
+    body .calendar .c-grid .left5, .calendarSingle .c-grid .left5 {
+      left: 102px; }
+    body .calendar .c-grid .left6, .calendarSingle .c-grid .left6 {
+      left: 145px; }
+    body .calendar .c-grid .left7, .calendarSingle .c-grid .left7 {
+      left: 188px; }
+  body .calendar .c-Timer, .calendarSingle .c-Timer {
+    width: 273px; }
+    body .calendar .c-Timer .cTimerIn, .calendarSingle .c-Timer .cTimerIn {
+      position: relative;
+      float: left;
+      width: 100%;
+      top: 61px; }
+      body .calendar .c-Timer .cTimerIn .c-Time, body .calendar .c-Timer .cTimerIn .c-Time-f, .calendarSingle .c-Timer .cTimerIn .c-Time, .calendarSingle .c-Timer .cTimerIn .c-Time-f {
+        width: 44.34px;
+        height: 33px;
+        background: #DBEBE3;
+        color: #1A8755;
+        font-size: 12px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        margin: 0.5px;
+        padding-top: 4%;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        body .calendar .c-Timer .cTimerIn .c-Time:hover, body .calendar .c-Timer .cTimerIn .c-Time-f:hover, .calendarSingle .c-Timer .cTimerIn .c-Time:hover, .calendarSingle .c-Timer .cTimerIn .c-Time-f:hover {
+          background: #1A8755;
+          color: #fff; }
+      body .calendar .c-Timer .cTimerIn .thisSelect, .calendarSingle .c-Timer .cTimerIn .thisSelect {
+        background: #1A8755;
+        color: #fff; }
+    body .calendar .c-Timer .timerTitle, .calendarSingle .c-Timer .timerTitle {
+      color: #1A8755;
+      position: absolute;
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 7px;
+      left: 0;
+      top: 2px; }
+  body .calendar .c-Minute, .calendarSingle .c-Minute {
+    width: 187px; }
+    body .calendar .c-Minute .cMinuteIn, .calendarSingle .c-Minute .cMinuteIn {
+      position: relative;
+      float: left;
+      width: 100%;
+      top: 61px; }
+      body .calendar .c-Minute .cMinuteIn .c-Min, .calendarSingle .c-Minute .cMinuteIn .c-Min {
+        position: relative;
+        float: left;
+        width: 45px;
+        height: 39px;
+        background: #DBEBE3;
+        color: #1A8755;
+        padding: 4px;
+        padding-right: 7px;
+        padding-top: 16px;
+        cursor: pointer;
+        margin: 0.5px;
+        font-weight: 100;
+        font-size: 11px;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        body .calendar .c-Minute .cMinuteIn .c-Min:hover, .calendarSingle .c-Minute .cMinuteIn .c-Min:hover {
+          background: #1A8755;
+          color: #fff; }
+      body .calendar .c-Minute .cMinuteIn .thisSelect, .calendarSingle .c-Minute .cMinuteIn .thisSelect {
+        background: #1A8755;
+        color: #fff; }
+  body .calendar .c-Timer, body .calendar .c-Minute, .calendarSingle .c-Timer, .calendarSingle .c-Minute {
+    position: relative;
+    float: left;
+    height: 265px;
+    margin-left: 15px; }
+
+.timerSubTitle {
+  color: #1A8755;
+  position: absolute;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px;
+  left: 0;
+  top: 37px; }
+
+.calendar-sm .c-pad-top {
+  padding-top: 2%; }
+
+.dispBl {
+  display: block !important; }
+
+.width8 {
+  width: 818.32px; }
+
+.calendar.is-open {
+  display: block; }
+
+/*# sourceMappingURL=updates.css.map */

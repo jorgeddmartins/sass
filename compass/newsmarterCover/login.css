@@ -1,0 +1,576 @@
+@charset "UTF-8";
+.loginView {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .loginView .bottBackImage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 401px; }
+  .loginView .loginReal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .loginView .loginReal .leftHand, .loginView .loginReal .rightHand {
+      height: 100%;
+      float: left;
+      padding: 50px; }
+    .loginView .loginReal .leftHand {
+      width: 30%;
+      position: relative;
+      z-index: 2; }
+      .loginView .loginReal .leftHand .smarterLogo {
+        position: relative;
+        width: 100%;
+        float: left;
+        text-align: right;
+        margin-top: 50px;
+        transition: 0.7s;
+        -webkit-transition: 0.7s;
+        -moz-transition: 0.7s;
+        -o-transition: 0.7s;
+        padding-right: 95px; }
+        .loginView .loginReal .leftHand .smarterLogo img {
+          width: 80px;
+          position: relative;
+          right: 18px;
+          margin-bottom: 5px; }
+        .loginView .loginReal .leftHand .smarterLogo span {
+          color: #fff;
+          display: block;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: 1px;
+          text-transform: uppercase; }
+      .loginView .loginReal .leftHand .gotop {
+        margin-top: 87px; }
+      .loginView .loginReal .leftHand h2 {
+        text-align: right;
+        display: block;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #fff; }
+    .loginView .loginReal .rightHand,
+    .loginView .loginReal .centerWhite {
+      width: 70%;
+      position: relative; }
+      .loginView .loginReal .rightHand .loginSteps,
+      .loginView .loginReal .centerWhite .loginSteps {
+        width: 900px;
+        min-height: 250px;
+        position: relative;
+        margin: 290px auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        margin-left: 170px; }
+        .loginView .loginReal .rightHand .loginSteps .step-form-run,
+        .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+          position: absolute;
+          width: 900px;
+          top: 0;
+          left: 0; }
+          .loginView .loginReal .rightHand .loginSteps .step-form-run .goStep,
+          .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+            color: #fff;
+            width: 450px;
+            float: left;
+            padding: 20px;
+            padding-right: 0;
+            padding-left: 0;
+            text-align: center; }
+        .loginView .loginReal .rightHand .loginSteps .goleft,
+        .loginView .loginReal .rightHand .loginSteps .loginSmarter,
+        .loginView .loginReal .rightHand .loginSteps .goright,
+        .loginView .loginReal .rightHand .loginSteps .forgotE,
+        .loginView .loginReal .rightHand .loginSteps .logResetPass,
+        .loginView .loginReal .centerWhite .loginSteps .goleft,
+        .loginView .loginReal .centerWhite .loginSteps .loginSmarter,
+        .loginView .loginReal .centerWhite .loginSteps .goright,
+        .loginView .loginReal .centerWhite .loginSteps .forgotE,
+        .loginView .loginReal .centerWhite .loginSteps .logResetPass {
+          margin: 0;
+          padding: 8px;
+          font-size: 15px;
+          line-height: 29px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          text-align: center;
+          text-decoration: none;
+          width: 400px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          color: #1fadcf;
+          background: transparent;
+          border: 1px solid #1fadcf;
+          transition: 0.1s;
+          -webkit-transition: 0.1s;
+          -moz-transition: 0.1s;
+          -o-transition: 0.1s;
+          bottom: 50px; }
+          .loginView .loginReal .rightHand .loginSteps .goleft:hover,
+          .loginView .loginReal .rightHand .loginSteps .loginSmarter:hover,
+          .loginView .loginReal .rightHand .loginSteps .goright:hover,
+          .loginView .loginReal .rightHand .loginSteps .forgotE:hover,
+          .loginView .loginReal .rightHand .loginSteps .logResetPass:hover,
+          .loginView .loginReal .centerWhite .loginSteps .goleft:hover,
+          .loginView .loginReal .centerWhite .loginSteps .loginSmarter:hover,
+          .loginView .loginReal .centerWhite .loginSteps .goright:hover,
+          .loginView .loginReal .centerWhite .loginSteps .forgotE:hover,
+          .loginView .loginReal .centerWhite .loginSteps .logResetPass:hover {
+            border: 0;
+            background: #1fadcf;
+            color: #fff; }
+        .loginView .loginReal .rightHand .loginSteps .loginSmarter:focus,
+        .loginView .loginReal .centerWhite .loginSteps .loginSmarter:focus {
+          outline: none; }
+        .loginView .loginReal .rightHand .loginSteps .goright,
+        .loginView .loginReal .centerWhite .loginSteps .goright {
+          left: 102px;
+          margin-left: 0;
+          background: rgba(255, 255, 255, 0.2); }
+        .loginView .loginReal .rightHand .loginSteps .loginFields,
+        .loginView .loginReal .centerWhite .loginSteps .loginFields {
+          width: 400px;
+          position: relative;
+          margin: auto; }
+          .loginView .loginReal .rightHand .loginSteps .loginFields label,
+          .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+            width: 100%;
+            font-weight: 100;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 11px;
+            margin-bottom: 11px;
+            line-height: 21px; }
+        .loginView .loginReal .rightHand .loginSteps .loginField,
+        .loginView .loginReal .centerWhite .loginSteps .loginField {
+          width: 100%;
+          padding: 15px;
+          font-size: 19px;
+          background: transparent;
+          color: #1fadcf;
+          border: 0;
+          border-bottom: 1px solid #ddd;
+          height: 50px;
+          text-align: center; }
+          .loginView .loginReal .rightHand .loginSteps .loginField:focus,
+          .loginView .loginReal .centerWhite .loginSteps .loginField:focus {
+            outline: 0; }
+        .loginView .loginReal .rightHand .loginSteps input[type="text"].userEmail,
+        .loginView .loginReal .centerWhite .loginSteps input[type="text"].userEmail {
+          background: transparent;
+          font-size: 11px;
+          text-transform: uppercase;
+          border: 0;
+          width: 100%;
+          letter-spacing: 1px;
+          text-align: center; }
+          .loginView .loginReal .rightHand .loginSteps input[type="text"].userEmail:focus,
+          .loginView .loginReal .centerWhite .loginSteps input[type="text"].userEmail:focus {
+            outline: 0; }
+      .loginView .loginReal .rightHand .forget-pass,
+      .loginView .loginReal .centerWhite .forget-pass {
+        position: relative;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        top: 210px;
+        left: 106px;
+        text-decoration: none;
+        background: transparent; }
+    .loginView .loginReal .centerWhite {
+      width: 100%; }
+      .loginView .loginReal .centerWhite .loginSteps {
+        margin-left: auto;
+        margin: 200px auto 0;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-bottom: 2px solid #eee;
+        border-radius: 4px; }
+      .loginView .loginReal .centerWhite .Stepsforgot {
+        background: transparent;
+        border: 0;
+        border-bottom: 0; }
+      .loginView .loginReal .centerWhite .goStep,
+      .loginView .loginReal .centerWhite .goright,
+      .loginView .loginReal .centerWhite .forget-pass {
+        color: #025a87 !important; }
+      .loginView .loginReal .centerWhite .forget-pass {
+        color: #025a87 !important;
+        left: 300px;
+        display: table;
+        position: absolute;
+        top: auto;
+        bottom: 13px; }
+      .loginView .loginReal .centerWhite .smarterLogo {
+        width: 100%;
+        height: 100px;
+        float: left;
+        text-align: center;
+        margin-top: 124px;
+        margin-bottom: 10px; }
+        .loginView .loginReal .centerWhite .smarterLogo img {
+          width: 90px; }
+      .loginView .loginReal .centerWhite .forForgotPass {
+        background: transparent;
+        border: 0;
+        border-bottom: 0; }
+      .loginView .loginReal .centerWhite .topInfo {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        top: 87px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #025a87; }
+    .loginView .loginReal .forgetRun {
+      position: absolute;
+      top: 0;
+      right: -2500px; }
+
+.goUp {
+  animation: goup .7s 1 forwards;
+  -webkit-animation: goup .7s 1 forwards;
+  -moz-animation: goup .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+@-webkit-keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+@-moz-keyframes goup {
+  from {
+    top: 0; }
+  to {
+    top: -1500px; } }
+.moveLeft {
+  animation: moveLeft .7s 1 forwards;
+  -webkit-animation: moveLeft .7s 1 forwards;
+  -moz-animation: moveLeft .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+@-webkit-keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+@-moz-keyframes moveLeft {
+  from {
+    left: 0; }
+  to {
+    left: -2500px; } }
+.moveRight {
+  animation: moveRight .7s 1 forwards;
+  -webkit-animation: moveRight .7s 1 forwards;
+  -moz-animation: moveRight .7s 1 forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0); }
+
+@keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+@-webkit-keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+@-moz-keyframes moveRight {
+  from {
+    right: -2500px; }
+  to {
+    right: 0; } }
+.forgotPass-floor {
+  width: 600px;
+  height: 185px;
+  position: relative;
+  margin-top: 50px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  margin: -20px auto 0; }
+  .forgotPass-floor .loginFields {
+    width: 400px;
+    position: relative;
+    margin: auto; }
+    .forgotPass-floor .loginFields label {
+      width: 100%;
+      font-weight: 100;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-bottom: 11px;
+      line-height: 21px;
+      color: #fff;
+      text-align: center; }
+  .forgotPass-floor .resetPass,
+  .forgotPass-floor .gotoLog {
+    margin: 0;
+    padding: 8px;
+    font-size: 15px;
+    line-height: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1fadcf;
+    background: transparent;
+    border: 1px solid #1fadcf;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    bottom: 25px; }
+    .forgotPass-floor .resetPass:hover,
+    .forgotPass-floor .gotoLog:hover {
+      border: 0;
+      background: #1fadcf;
+      color: #fff; }
+  .forgotPass-floor .checkEmail-FP {
+    width: 100%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1fadcf;
+    position: relative;
+    top: 47px; }
+
+.remenber_me {
+  width: auto;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  bottom: 9px;
+  right: 222px; }
+  .remenber_me span.bigcheck {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  .remenber_me span.bigcheck-target {
+    font-family: FontAwesome;
+    color: #025a87;
+    font-size: 20px;
+    cursor: pointer; }
+  .remenber_me input[type='checkbox'].bigcheck {
+    display: none; }
+  .remenber_me input[type='checkbox'].bigcheck + span.bigcheck-target:after {
+    content: ""; }
+  .remenber_me input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
+    content: ""; }
+  .remenber_me label.bigcheck {
+    width: 0;
+    height: 0; }
+  .remenber_me .remenber_me_word {
+    margin-right: 111px;
+    position: relative;
+    top: 7px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #025a87; }
+
+.loginRealwhite {
+  width: 25%;
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto; }
+  .loginRealwhite .goStep {
+    margin-bottom: 10px;
+    width: 100%;
+    float: left; }
+    .loginRealwhite .goStep .loginFields {
+      width: 80%;
+      height: 50px;
+      background: #fff;
+      margin: auto;
+      border: 1px solid #eee; }
+      .loginRealwhite .goStep .loginFields .loginField {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: transparent;
+        padding: 12px; }
+        .loginRealwhite .goStep .loginFields .loginField:focus {
+          outline: 0; }
+    .loginRealwhite .goStep:last-child {
+      margin-bottom: 0; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 550000s ease-in-out 0s;
+  color: #1fadcf !important;
+  -webkit-text-fill-color: #1fadcf !important;
+  background-color: transparent !important; }
+
+.errorMsg {
+  width: 100%;
+  float: left;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #b94a48;
+  text-align: center; }
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 30px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 62px; } }
+@media (min-width: 569px) and (max-width: 740px) {
+  .loginView .loginReal .centerWhite {
+    height: 400px;
+    overflow: auto; } }
+@media (min-width: 532px) and (max-width: 568px) {
+  .loginView .loginReal .centerWhite {
+    height: 340px;
+    overflow: auto; } }
+@media (min-width: 340px) and (max-width: 768px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 35px; }
+  .loginView .loginReal .centerWhite .loginSteps {
+    width: 340px;
+    min-height: 286px; }
+    .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+      width: 340px; }
+      .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+        width: 340px;
+        padding-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .goleft {
+      width: 300px; }
+    .loginView .loginReal .centerWhite .loginSteps .goright, .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      width: 50%; }
+    .loginView .loginReal .centerWhite .loginSteps .goright {
+      left: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      right: 0;
+      width: 90%; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields .loginField {
+        height: 30px;
+        font-size: 15px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+        margin-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      bottom: 42px; }
+  .loginView .loginReal .centerWhite .forget-pass {
+    left: 21px;
+    top: 256px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 64px; }
+
+  .forgotPass-floor {
+    width: 340px; }
+    .forgotPass-floor .resetPass,
+    .forgotPass-floor .loginFields {
+      width: 300px; }
+
+  .remenber_me {
+    width: 127px;
+    right: 11px;
+    text-align: left; }
+    .remenber_me .remenber_me_word {
+      margin-right: 0; }
+    .remenber_me span.bigcheck {
+      left: auto;
+      right: 20px; } }
+@media (min-width: 220px) and (max-width: 339px) {
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 30px !important; }
+  .loginView .loginReal .centerWhite .loginSteps {
+    width: 300px; }
+    .loginView .loginReal .centerWhite .loginSteps .step-form-run {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .step-form-run .goStep {
+        width: 300px;
+        padding-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .goleft {
+      width: 250px; }
+    .loginView .loginReal .centerWhite .loginSteps .goright, .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      width: 50%; }
+    .loginView .loginReal .centerWhite .loginSteps .goright {
+      left: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginSmarter {
+      right: 0;
+      width: 84%;
+      bottom: 40px; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 300px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields .loginField {
+        height: 30px;
+        font-size: 14px; }
+      .loginView .loginReal .centerWhite .loginSteps .loginFields label {
+        margin-bottom: 0; }
+    .loginView .loginReal .centerWhite .loginSteps .loginFields {
+      width: 250px; }
+  .loginView .loginReal .centerWhite .forget-pass {
+    left: 0;
+    top: 200px; }
+  .loginView .loginReal .centerWhite .smarterLogo {
+    margin-top: 52px; }
+  .loginView .loginReal .centerWhite .topInfo {
+    top: 40px; }
+
+  .forgotPass-floor {
+    width: 300px; }
+    .forgotPass-floor .resetPass,
+    .forgotPass-floor .loginFields {
+      width: 250px; } }
+.alert-danger, .alert-success {
+  position: absolute;
+  top: -69px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  z-index: 30000; }
+
+/*# sourceMappingURL=login.css.map */

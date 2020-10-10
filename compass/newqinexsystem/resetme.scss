@@ -2,9 +2,9 @@
 @import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
 
 
-div {
-    position: relative;
-    width: $max-conv-width;
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
 .Content_In {
@@ -291,7 +291,7 @@ div {
             left: -115px;
             margin-left: $small-fix-20;
             @include transform(9deg);
-            background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile.png) no-repeat;
+            background: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile.png) no-repeat;
             // background: #f9f9f9 url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile.png);
             background-position: $max-conv-width / 2 $max-conv-width / 2;
             background-size: $max-conv-width $max-conv-width;
@@ -303,7 +303,7 @@ div {
             left: -45px;
             margin-right: $null-conv;
             @include transform(-9deg);
-            background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile4.jpg) no-repeat;
+            background: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile4.jpg) no-repeat;
             // background: #e7eced url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/mobile4.jpg) no-repeat;
             background-position: $max-conv-width / 2 $max-conv-width / 2;
             background-size: $max-conv-width $max-conv-width;
@@ -536,7 +536,7 @@ div {
 
         .iBack {
             // background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/beach.jpg);
-            background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/design2.jpg);
+            background: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/design2.jpg);
             background-position: $max-conv-width / 2 $max-conv-width / 2;
             background-size: cover;
             @include animation(iBack 40s 1 forwards);
@@ -867,7 +867,7 @@ div {
         float: left;
         &:after {
 
-            content: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/carloans/logo.svg);
+            content: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/carloans/logo.svg);
         }
     }
 }
@@ -876,7 +876,7 @@ div {
     .heroTheme {
         height: $seventyvh;
         overflow: hidden;
-        background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/carloans/hero.jpg) no-repeat;
+        background: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/carloans/hero.jpg) no-repeat;
         background-position: $max-conv-width / 2 $max-conv-width / 2;
         background-size: $max-conv-width $max-conv-width;
 
@@ -919,7 +919,7 @@ div {
         width: $max-conv-width;
         height: $hundredvh; // 100vh
         float: left;
-        background: url(http://192.168.101.230:8080/projects/httdocs/newsystem/newqinex/src/assets/img/future3.jpg);
+        background: url(http://localhost:8080/projects/httdocs/newsystem/newqinex/src/assets/img/future3.jpg);
         background-position: $max-conv-width / 2 $max-conv-width / 2;
         background-size: cover;
         overflow: hidden;
@@ -934,4 +934,48 @@ div {
         }
 
     }
+}
+
+div {
+    position: relative;
+    width: $max-conv-width;
+}
+
+/* Minimal Theme */
+// Minimal Theme#
+
+#AppTemp {
+    position: relative;
+    width: $max-conv-width;
+    float: left;
+    padding: 80px;
+    padding-top: 30px;
+}
+
+.mainSec {
+	padding: 20px;
+	padding-left: 40px;
+	float: left;
+	width: 100%;
+	position: relative;
+	.title {
+		width: $max-conv-width;
+        float: left;
+        font-size: 57px;
+        font-family: 'Roboto';
+        /* font-weight: bold; */
+        color: #000;
+        letter-spacing: -7px;
+	}
+	.titleDown {
+		width: $max-conv-width;
+        float: left;
+        font-size: 20px;
+        font-family: 'Roboto Light';
+        color: #777;
+        margin-top: -5px;
+        letter-spacing: -1px;
+        /* padding-left: 7px; */
+        font-style: italic;
+	}
 }

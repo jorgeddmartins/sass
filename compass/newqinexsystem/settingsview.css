@@ -1,0 +1,181 @@
+.setitngsView {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 16px;
+  max-height: 970px;
+  overflow: hidden;
+  display: inline-block; }
+
+.settings_menu {
+  width: 100%;
+  padding: 0;
+  display: inline-block; }
+  .settings_menu .panel-heading {
+    padding-bottom: 10px;
+    padding-top: 0; }
+    .settings_menu .panel-heading h4 {
+      margin: 0;
+      text-transform: capitalize;
+      font-size: 22px;
+      float: left;
+      letter-spacing: 0;
+      width: 100%;
+      text-align: center; }
+  .settings_menu .btn-Grid {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: #fff;
+    border-top: 1px solid #eee; }
+  .settings_menu #grid-head-6:after,
+  .settings_menu #grid-head-7:after,
+  .settings_menu #grid-head-8:after,
+  .settings_menu #grid-head-9:after,
+  .settings_menu #grid-head-10:after,
+  .settings_menu #grid-head-11:after,
+  .settings_menu #grid-head-12:after {
+    display: none; }
+  .settings_menu .btnDisable {
+    opacity: 0.5;
+    pointer-events: none; }
+
+.menuSettingsGrid {
+  display: none; }
+
+.imagesettings .mCS-minimal.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: rgba(0, 0, 0, 0.15);
+  filter: "alpha(opacity=20)";
+  -ms-filter: "alpha(opacity=20)"; }
+
+.settingsgGrid {
+  width: 70%;
+  position: relative;
+  display: table;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto; }
+  .settingsgGrid .nav-setitngs-btns {
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    float: left; }
+  .settingsgGrid .column-dragdrop {
+    position: relative;
+    border: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff; }
+  .settingsgGrid .column-46 {
+    width: 46%; }
+    .settingsgGrid .column-46 .auto-search {
+      max-width: 520px;
+      margin: 10px auto 20px;
+      padding: 14px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      height: auto;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      border: 1px solid #eee;
+      border-bottom: 2px solid #eee;
+      box-shadow: none;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out; }
+  .settingsgGrid .column-53 {
+    width: 53%;
+    float: right; }
+  .settingsgGrid .updatenav {
+    background: #fafafa;
+    width: 60px;
+    height: 60px;
+    color: #333;
+    border: 0;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #fafafa;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left; }
+    .settingsgGrid .updatenav:focus {
+      outline: 0; }
+    .settingsgGrid .updatenav i {
+      font-size: 30px; }
+  .settingsgGrid .setpermitions {
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #FF7300;
+    color: #fff;
+    border: 0;
+    float: left; }
+    .settingsgGrid .setpermitions:focus {
+      outline: 0; }
+    .settingsgGrid .setpermitions i {
+      top: -17px;
+      position: relative;
+      font-size: 30px;
+      left: -15px; }
+  .settingsgGrid .setsave {
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    margin-right: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    background: #5cb85c;
+    border: 0;
+    float: left; }
+    .settingsgGrid .setsave:focus {
+      outline: 0; }
+    .settingsgGrid .setsave i {
+      top: -14px;
+      position: relative;
+      font-size: 30px;
+      left: -13px; }
+  .settingsgGrid .notallowed-nav {
+    opacity: 0.4;
+    pointer-events: none; }
+  .settingsgGrid #drag-menu-left,
+  .settingsgGrid #drag-menu-right {
+    height: 600px;
+    overflow: hidden; }
+
+.newSettings {
+  width: 100% !important; }
+
+/*# sourceMappingURL=settingsview.css.map */

@@ -1,12 +1,3 @@
-/*@mixin column-medium($marg: $small-fix-03 + 1 + 0.93, $posi: relative) {
-	float: $fltleft;
-    background: $white;
-    border: $small-fix-01 solid $gray-smooth;
-    border-bottom: $small-fix-01 solid $gray-darkwater;
-    @include border-radius($small-fix-03);
-    margin: $marg;
-    position: $posi;
-}*/
 #leftNav-SubAccordion {
   display: inline-block;
   width: 100%;

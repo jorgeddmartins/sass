@@ -1,0 +1,316 @@
+.row-grid-system {
+  margin: 0 !important; }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .row-grid-system {
+      margin-top: 1%;
+      margin-bottom: 2%; } }
+  .row-grid-system .t-grid-head,
+  .row-grid-system .t-grid-body,
+  .row-grid-system .t-grid-footer {
+    width: 100%;
+    float: left; }
+  .row-grid-system .t-tr {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ddd; }
+    .row-grid-system .t-tr:last-child {
+      border-bottom: 0; }
+    .row-grid-system .t-tr:hover {
+      background: #f5f5f5; }
+  .row-grid-system .back-t-tr {
+    background: #f9f9f9; }
+  .row-grid-system .tgb-50, .row-grid-system .tgb-25, .row-grid-system .tgb-30, .row-grid-system .tgb-40, .row-grid-system .tgb-35, .row-grid-system .tgb-20, .row-grid-system .tgb-45, .row-grid-system .tgb-100, .row-grid-system .tgb-70, .row-grid-system .tgb-60, .row-grid-system .tgb-10, .row-grid-system .tgb-11, .row-grid-system .tgb-15, .row-grid-system .tgb-05,
+  .row-grid-system .tgb-80, .row-grid-system .tgb-85, .row-grid-system .tgb-90, .row-grid-system .tgb-95, .row-grid-system .tgbst-100, .row-grid-system .tgbst-50, .row-grid-system .tgbst-55, .row-grid-system .tgbst-40, .row-grid-system .tgbst-45, .row-grid-system .tgbst-30, .row-grid-system .tgbst-35, .row-grid-system .tgbst-20,
+  .row-grid-system .tgbst-25, .row-grid-system .tgbst-500, .row-grid-system .tgbst-1000, .row-grid-system .tgbst-700, .row-grid-system .tgbst-1400, .row-grid-system .tgbst-250, .row-grid-system .tab-6-25, .row-grid-system .tgb-5, .row-grid-system .tgb-1-05, .row-grid-system .tgb-13 {
+    float: left;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 15px;
+    border-right: 1px dotted #eee;
+    text-align: center;
+    position: relative; }
+    .row-grid-system .tgb-50:first-child, .row-grid-system .tgb-25:first-child, .row-grid-system .tgb-30:first-child, .row-grid-system .tgb-40:first-child, .row-grid-system .tgb-35:first-child, .row-grid-system .tgb-20:first-child, .row-grid-system .tgb-45:first-child, .row-grid-system .tgb-100:first-child, .row-grid-system .tgb-70:first-child, .row-grid-system .tgb-60:first-child, .row-grid-system .tgb-10:first-child, .row-grid-system .tgb-11:first-child, .row-grid-system .tgb-15:first-child, .row-grid-system .tgb-05:first-child,
+    .row-grid-system .tgb-80:first-child, .row-grid-system .tgb-85:first-child, .row-grid-system .tgb-90:first-child, .row-grid-system .tgb-95:first-child, .row-grid-system .tgbst-100:first-child, .row-grid-system .tgbst-50:first-child, .row-grid-system .tgbst-55:first-child, .row-grid-system .tgbst-40:first-child, .row-grid-system .tgbst-45:first-child, .row-grid-system .tgbst-30:first-child, .row-grid-system .tgbst-35:first-child, .row-grid-system .tgbst-20:first-child,
+    .row-grid-system .tgbst-25:first-child, .row-grid-system .tgbst-500:first-child, .row-grid-system .tgbst-1000:first-child, .row-grid-system .tgbst-700:first-child, .row-grid-system .tgbst-1400:first-child, .row-grid-system .tgbst-250:first-child, .row-grid-system .tab-6-25:first-child, .row-grid-system .tgb-5:first-child, .row-grid-system .tgb-1-05:first-child, .row-grid-system .tgb-13:first-child {
+      padding-left: 16px;
+      text-align: left; }
+    .row-grid-system .tgb-50:last-child, .row-grid-system .tgb-25:last-child, .row-grid-system .tgb-30:last-child, .row-grid-system .tgb-40:last-child, .row-grid-system .tgb-35:last-child, .row-grid-system .tgb-20:last-child, .row-grid-system .tgb-45:last-child, .row-grid-system .tgb-100:last-child, .row-grid-system .tgb-70:last-child, .row-grid-system .tgb-60:last-child, .row-grid-system .tgb-10:last-child, .row-grid-system .tgb-11:last-child, .row-grid-system .tgb-15:last-child, .row-grid-system .tgb-05:last-child,
+    .row-grid-system .tgb-80:last-child, .row-grid-system .tgb-85:last-child, .row-grid-system .tgb-90:last-child, .row-grid-system .tgb-95:last-child, .row-grid-system .tgbst-100:last-child, .row-grid-system .tgbst-50:last-child, .row-grid-system .tgbst-55:last-child, .row-grid-system .tgbst-40:last-child, .row-grid-system .tgbst-45:last-child, .row-grid-system .tgbst-30:last-child, .row-grid-system .tgbst-35:last-child, .row-grid-system .tgbst-20:last-child,
+    .row-grid-system .tgbst-25:last-child, .row-grid-system .tgbst-500:last-child, .row-grid-system .tgbst-1000:last-child, .row-grid-system .tgbst-700:last-child, .row-grid-system .tgbst-1400:last-child, .row-grid-system .tgbst-250:last-child, .row-grid-system .tab-6-25:last-child, .row-grid-system .tgb-5:last-child, .row-grid-system .tgb-1-05:last-child, .row-grid-system .tgb-13:last-child {
+      border-right: 0; }
+  .row-grid-system .tgb-100 {
+    width: 100%; }
+  .row-grid-system .tgb-90 {
+    width: 90%; }
+  .row-grid-system .tgb-95 {
+    width: 95%; }
+  .row-grid-system .tgb-80 {
+    width: 80%; }
+  .row-grid-system .tgb-85 {
+    width: 85%; }
+  .row-grid-system .tgb-70 {
+    width: 70%; }
+  .row-grid-system .tgb-60 {
+    width: 60%; }
+  .row-grid-system .tgb-50 {
+    width: 50%; }
+  .row-grid-system .tgb-20 {
+    width: 20%; }
+  .row-grid-system .tgb-25 {
+    width: 25%; }
+  .row-grid-system .tgb-30 {
+    width: 30%; }
+  .row-grid-system .tgb-35 {
+    width: 35%; }
+  .row-grid-system .tgb-40 {
+    width: 40%; }
+  .row-grid-system .tgb-45 {
+    width: 45%; }
+  .row-grid-system .tgb-10 {
+    width: 10%; }
+  .row-grid-system .tgb-11 {
+    width: 11.11%; }
+  .row-grid-system .tgb-13 {
+    width: 16.65%; }
+  .row-grid-system .tgb-15 {
+    width: 15%; }
+  .row-grid-system .tgb-5 {
+    width: 5%; }
+  .row-grid-system .tab-6-25 {
+    width: 6.25%;
+    background: #f5f5f5;
+    border-right: 1px solid #ddd; }
+  .row-grid-system .tgb-05 {
+    width: 0.5%; }
+  .row-grid-system .t-grid-head .tgb-10 {
+    width: 9.85%;
+    max-width: 180.19px;
+    background: #f5f5f5;
+    border-right: 1px solid #ddd;
+    border-bottom: 2px solid #eee;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 13px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px; }
+    .row-grid-system .t-grid-head .tgb-10:last-child {
+      border-right: 0; }
+    .row-grid-system .t-grid-head .tgb-10:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      top: 50.5%;
+      right: 10px;
+      border-bottom: 6px solid #777;
+      transform: rotate(180deg);
+      cursor: pointer; }
+  .row-grid-system .t-grid-head .no-arrow:after {
+    position: absolute;
+    content: "";
+    border: 0 solid transparent; }
+  .row-grid-system .t-grid-head .tgb-1-05 {
+    width: 1.5%;
+    height: 40px;
+    background: #f5f5f5;
+    border-right: 1px solid #ddd;
+    border-bottom: 2px solid #eee;
+    color: #f5f5f5; }
+    .row-grid-system .t-grid-head .tgb-1-05:last-child {
+      border-right: 0; }
+  .row-grid-system .t-grid-head .tab-head-11 {
+    background: #f5f5f5 url(../../img/addgrid.svg) no-repeat;
+    background-size: 14px;
+    background-position: 50% 50%;
+    border-right: 0;
+    cursor: pointer; }
+  .row-grid-system .t-grid-head .gridInput {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 94%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #eee;
+    font-size: 12px;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; }
+  .row-grid-system .t-grid-head .tgb-11 {
+    max-width: 203.67px; }
+  .row-grid-system .t-grid-head .tgb-11,
+  .row-grid-system .t-grid-head .tgb-13 {
+    background: #f5f5f5;
+    border-right: 1px solid #ddd;
+    border-bottom: 2px solid #eee;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 13px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px; }
+    .row-grid-system .t-grid-head .tgb-11:last-child,
+    .row-grid-system .t-grid-head .tgb-13:last-child {
+      border-right: 0; }
+    .row-grid-system .t-grid-head .tgb-11:after,
+    .row-grid-system .t-grid-head .tgb-13:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      top: 50.5%;
+      right: 10px;
+      border-bottom: 6px solid #777;
+      transform: rotate(180deg);
+      cursor: pointer; }
+  .row-grid-system .t-grid-body {
+    position: relative; }
+    .row-grid-system .t-grid-body .tgb-10 {
+      width: 9.85%;
+      max-width: 180.19px;
+      border-right: 1px dotted #eee;
+      color: #000;
+      font-size: 13px;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 40px; }
+    .row-grid-system .t-grid-body .tgb-grey-color {
+      background: #f9f9f9; }
+    .row-grid-system .t-grid-body .tgb-icogrey-color {
+      background: #ddd; }
+    .row-grid-system .t-grid-body .tgb-white-color {
+      background: #fff; }
+    .row-grid-system .t-grid-body i {
+      width: auto;
+      display: block;
+      font-size: 31px;
+      text-align: center;
+      top: -6px;
+      position: relative;
+      color: #fff;
+      cursor: pointer; }
+    .row-grid-system .t-grid-body .cursPoint {
+      cursor: pointer; }
+    .row-grid-system .t-grid-body .tab-body-3:hover {
+      background: #f9f9f9;
+      font-weight: bold; }
+    .row-grid-system .t-grid-body .tgb-11 {
+      max-width: 203.67px; }
+    .row-grid-system .t-grid-body .tgb-11,
+    .row-grid-system .t-grid-body .tgb-13 {
+      border-right: 1px dotted #eee;
+      color: #000;
+      font-size: 13px;
+      text-align: left;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 40px; }
+    .row-grid-system .t-grid-body .tgb-13 input[type="text"] {
+      width: 100%;
+      border: 0;
+      background: transparent; }
+      .row-grid-system .t-grid-body .tgb-13 input[type="text"]:focus {
+        outline: 0; }
+  .row-grid-system .t-grid-footer {
+    background: #f2f2f2;
+    border-top: 1px solid #ddd;
+    padding: 17px; }
+  .row-grid-system .tgb-8-3 {
+    width: 8.3%;
+    left: 0; }
+  .row-grid-system .tgb-16-6 {
+    width: 8.3%;
+    left: 8.3%; }
+  .row-grid-system .tgb-24-9 {
+    width: 8.3%;
+    left: 16.6%; }
+  .row-grid-system .tgb-33-2 {
+    width: 8.3%;
+    left: 24.9%; }
+  .row-grid-system .tgb-41-5 {
+    width: 8.3%;
+    left: 33.2%; }
+  .row-grid-system .tgb-49-8 {
+    width: 8.3%;
+    left: 41.5%; }
+  .row-grid-system .tgb-58-1 {
+    width: 8.3%;
+    left: 49.8%; }
+  .row-grid-system .tgb-66-4 {
+    width: 8.3%;
+    left: 58.1%; }
+  .row-grid-system .tgb-74-7 {
+    width: 8.3%;
+    left: 66.4%; }
+  .row-grid-system .tgb-83 {
+    width: 8.3%;
+    left: 74.7%; }
+  .row-grid-system .tgb-91-3 {
+    width: 8.3%;
+    left: 83%; }
+  .row-grid-system .tgb-99-6 {
+    width: 8.3%;
+    left: 91.3%; }
+  .row-grid-system .tgbst-1400 {
+    width: 1400px; }
+  .row-grid-system .tgbst-1000 {
+    width: 1000px; }
+  .row-grid-system .tgbst-700 {
+    width: 700px; }
+  .row-grid-system .tgbst-500 {
+    width: 500px; }
+  .row-grid-system .tgbst-250 {
+    width: 250px; }
+  .row-grid-system .tgbst-100 {
+    width: 100px; }
+  .row-grid-system .tgbst-50 {
+    width: 50px; }
+  .row-grid-system .tgbst-55 {
+    width: 55px; }
+  .row-grid-system .tgbst-40 {
+    width: 40px; }
+  .row-grid-system .tgbst-45 {
+    width: 45px; }
+  .row-grid-system .tgbst-30 {
+    width: 30px; }
+  .row-grid-system .tgbst-35 {
+    width: 35px; }
+  .row-grid-system .tgbst-20 {
+    width: 20px; }
+  .row-grid-system .tgbst-25 {
+    width: 25px; }
+  .row-grid-system .null-bordRight {
+    border-right: 0; }
+  .row-grid-system .null-bordLeft {
+    border-left: 0; }
+  .row-grid-system .null-bord {
+    border: 0; }
+  .row-grid-system .openGrid {
+    position: relative;
+    padding: 0 !important; }
+  .row-grid-system .dispN {
+    display: none; }
+  .row-grid-system .area-right {
+    position: relative; }
+  .row-grid-system .paddGlobal {
+    padding: 7px; }
+  .row-grid-system .gridDesc {
+    margin-top: 5px;
+    float: left; }
+
+/*# sourceMappingURL=gridSystem.css.map */

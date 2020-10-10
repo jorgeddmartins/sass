@@ -1,0 +1,870 @@
+.realnav {
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12; }
+  .realnav .logo-Box {
+    width: 42px;
+    margin: 6px auto;
+    position: relative; }
+    .realnav .logo-Box img {
+      width: 100%; }
+  .realnav .avatarview {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    width: auto;
+    height: 42px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s; }
+    .realnav .avatarview .aVatar {
+      width: 42px;
+      height: 42px;
+      position: relative;
+      float: left;
+      cursor: pointer;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      overflow: hidden; }
+      .realnav .avatarview .aVatar img {
+        width: 100%; }
+    .realnav .avatarview .greeTings {
+      float: left;
+      font-size: 12px;
+      color: #025a87;
+      text-transform: uppercase;
+      position: relative;
+      top: 16px;
+      padding-right: 40px;
+      cursor: pointer;
+      text-decoration: none; }
+      .realnav .avatarview .greeTings:focus {
+        outline: 0; }
+      .realnav .avatarview .greeTings:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 5px;
+        right: 22px;
+        border-bottom: 5px solid #025a87;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        cursor: pointer;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -o-transition: 0.4s; }
+  .realnav .avatarRight {
+    right: 52px; }
+  .realnav .avatarbar {
+    position: fixed;
+    width: 120px;
+    background: #fff;
+    border: solid 1px #eee;
+    border-bottom: 2px solid #eee;
+    top: 58px;
+    right: -120px;
+    padding: 0;
+    padding-top: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+    .realnav .avatarbar:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      right: 13px;
+      left: 0;
+      margin-left: auto;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .avatarbar .avatarlink {
+      width: 100%;
+      float: left;
+      padding: 10px;
+      text-decoration: none;
+      color: #025a87;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 2px; }
+      .realnav .avatarbar .avatarlink i {
+        float: right;
+        font-size: 16px; }
+    .realnav .avatarbar .logout {
+      border-top: 1px solid #eee;
+      background: #f9f9f9;
+      text-transform: uppercase;
+      font-weight: bold; }
+  .realnav .openAvatar {
+    right: 52px; }
+  .realnav .navView {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 20px;
+    top: 6px; }
+    .realnav .navView .navView-Menu {
+      width: 100%;
+      height: 100%;
+      float: left;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer; }
+      .realnav .navView .navView-Menu:after {
+        content: '\e871';
+        font-family: Linearicons-Free;
+        color: #025a87;
+        font-size: 35px;
+        position: absolute;
+        left: 3px;
+        top: -3px; }
+    .realnav .navView .closeNav:after {
+      content: '\e870';
+      font-family: Linearicons-Free;
+      color: #025a87;
+      font-size: 35px;
+      position: absolute;
+      left: 3px;
+      top: -3px; }
+    .realnav .navView .menuName {
+      position: absolute;
+      top: 15px;
+      left: 44px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px; }
+  .realnav .navBar {
+    position: fixed;
+    width: 288px;
+    height: 100%;
+    top: 57px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #eee;
+    padding-top: 30px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-align: center;
+    /* Start Nav Icons */
+    /* End Nav Icons */ }
+    .realnav .navBar:before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      left: 25px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .navBar .navBar-Tab {
+      color: #025a87;
+      font-size: 13px;
+      float: left;
+      padding: 14px;
+      padding-left: 0;
+      padding-right: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      margin: 0;
+      z-index: 100;
+      border: 1px solid #fff;
+      position: relative;
+      width: 100%;
+      background: #f9f9f9;
+      cursor: pointer; }
+    .realnav .navBar .subTab:after {
+      position: absolute;
+      content: "";
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 34px;
+      right: 0;
+      left: -30px;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 5px solid #025a87;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg); }
+    .realnav .navBar .policies:before,
+    .realnav .navBar .chaselog:before,
+    .realnav .navBar .retention:before,
+    .realnav .navBar .compliance:before,
+    .realnav .navBar .finance:before,
+    .realnav .navBar .confirm:before,
+    .realnav .navBar .reportarget:before,
+    .realnav .navBar .settings:before {
+      font-family: Linearicons-Free;
+      color: #025a87;
+      font-size: 24px;
+      position: absolute;
+      right: 17px;
+      top: 5px; }
+    .realnav .navBar .policies:before {
+      content: '\e88e'; }
+    .realnav .navBar .chaselog:before {
+      content: '\e863'; }
+    .realnav .navBar .retention:before {
+      content: '\e80e'; }
+    .realnav .navBar .compliance:before {
+      content: '\e88b'; }
+    .realnav .navBar .finance:before {
+      content: '\e843'; }
+    .realnav .navBar .confirm:before {
+      content: '\e86d'; }
+    .realnav .navBar .reportarget:before {
+      content: '\e84c'; }
+    .realnav .navBar .settings:before {
+      content: '\e810'; }
+    .realnav .navBar .barFloor {
+      width: 100%;
+      position: relative;
+      float: left; }
+    .realnav .navBar .rotate0 {
+      border-bottom: 1px solid #025a87;
+      color: #333; }
+      .realnav .navBar .rotate0:after {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
+      .realnav .navBar .rotate0:before {
+        color: #333; }
+  .realnav .navBarLeft {
+    left: 10px; }
+  .realnav .flying-drop {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    margin-bottom: -1px;
+    display: none; }
+    .realnav .flying-drop:after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: solid 1px #eee;
+      border-bottom: 1px solid transparent;
+      border-right: 1px solid transparent;
+      top: -7px;
+      left: -10%;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    .realnav .flying-drop .subTabnav {
+      width: 100%;
+      float: left;
+      padding: 10px;
+      padding-left: 45px;
+      font-size: 11px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #333;
+      text-align: left; }
+      .realnav .flying-drop .subTabnav:hover {
+        background: #f9f9f9; }
+  .realnav .flyDown {
+    -webkit-animation: flyDown 0.3s 1 forwards;
+    -moz-animation: flyDown 0.3s 1 forwards;
+    -o-animation: flyDown 0.3s 1 forwards;
+    animation: flyDown 0.3s 1 forwards;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    display: block; }
+@keyframes flyDown {
+  0% {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    margin-top: 10px;
+    opacity: 1; } }
+@-webkit-keyframes flyDown {
+  0% {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    margin-top: 10px;
+    opacity: 1; } }
+@-moz-keyframes flyDown {
+  0% {
+    top: -276px;
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    margin-top: 10px;
+    opacity: 1; } }
+  .realnav .notallowed {
+    pointer-events: none;
+    opacity: 0.6; }
+  .realnav .greetDrop {
+    background: #fff;
+    width: 190px;
+    border: 1px solid #eee;
+    position: absolute;
+    top: 42px;
+    right: 100px;
+    margin: 0;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+    display: none; }
+    .realnav .greetDrop li span {
+      cursor: pointer; }
+    .realnav .greetDrop li a, .realnav .greetDrop li span {
+      padding: 8px;
+      width: 100%;
+      float: left;
+      position: relative;
+      text-decoration: none;
+      color: #333;
+      padding-left: 37px;
+      font-size: 12px;
+      border-bottom: 1px solid #eee;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .realnav .greetDrop li a:hover, .realnav .greetDrop li span:hover {
+        background: #f9f9f9;
+        padding-left: 50px; }
+        .realnav .greetDrop li a:hover i, .realnav .greetDrop li span:hover i {
+          padding-left: 14px; }
+      .realnav .greetDrop li a i, .realnav .greetDrop li span i {
+        position: absolute;
+        top: 7px;
+        left: 12px;
+        font-size: 18px;
+        color: #025a87;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+
+.bugModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  display: none; }
+  .bugModal .modalSplit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .bugModal .modalContent {
+    position: relative;
+    margin: -454px auto 0;
+    background: #fff;
+    width: 810px; }
+    .bugModal .modalContent .modalContent_Header {
+      width: 100%;
+      padding: 15px;
+      padding-left: 30px;
+      padding-top: 22px;
+      background: #f9f9f9;
+      float: left;
+      position: relative;
+      border-bottom: 2px solid #eee; }
+      .bugModal .modalContent .modalContent_Header h6 {
+        text-transform: uppercase;
+        margin: 0; }
+      .bugModal .modalContent .modalContent_Header i {
+        position: absolute;
+        right: 25px;
+        top: 16px;
+        font-size: 22px;
+        cursor: pointer; }
+      .bugModal .modalContent .modalContent_Header .closeTip {
+        position: absolute;
+        padding: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #1fadcf;
+        border: 1px solid #1fadcf;
+        font-size: 11px;
+        text-transform: uppercase;
+        top: -16px;
+        right: -6px;
+        color: #fff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        cursor: default;
+        display: none; }
+        .bugModal .modalContent .modalContent_Header .closeTip:after {
+          width: 0;
+          position: absolute;
+          content: "";
+          vertical-align: middle;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          top: 24px;
+          right: 0;
+          left: 0;
+          margin-left: auto;
+          margin-right: auto;
+          border-bottom: 5px solid #1fadcf;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s; }
+    .bugModal .modalContent .modalContent_Body {
+      position: relative;
+      float: left;
+      width: 100%;
+      max-height: 600px;
+      padding: 15px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background: #fff; }
+      .bugModal .modalContent .modalContent_Body label,
+      .bugModal .modalContent .modalContent_Body textarea {
+        width: 100%; }
+      .bugModal .modalContent .modalContent_Body label {
+        color: #025a87; }
+        .bugModal .modalContent .modalContent_Body label span {
+          color: #cc0000; }
+      .bugModal .modalContent .modalContent_Body textarea {
+        height: 214px;
+        display: inline-block;
+        border: 1px solid #ddd;
+        padding: 10px; }
+        .bugModal .modalContent .modalContent_Body textarea:focus {
+          outline: 0; }
+      .bugModal .modalContent .modalContent_Body .form-group,
+      .bugModal .modalContent .modalContent_Body .load_content,
+      .bugModal .modalContent .modalContent_Body .loader_Body {
+        width: 100%;
+        float: left;
+        position: relative; }
+      .bugModal .modalContent .modalContent_Body .loader_Body {
+        position: relative;
+        height: 100px; }
+        .bugModal .modalContent .modalContent_Body .loader_Body .loader {
+          margin: 17px auto 0;
+          width: 69px;
+          height: 69px;
+          display: block; }
+      .bugModal .modalContent .modalContent_Body .load_content {
+        display: none; }
+    .bugModal .modalContent .modalContent_Footer {
+      width: 100%;
+      padding: 12px;
+      padding-left: 30px;
+      padding-top: 14px;
+      background: #f9f9f9;
+      float: left;
+      position: relative;
+      border-top: 2px solid #eee; }
+      .bugModal .modalContent .modalContent_Footer .btnStopSub {
+        padding: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #025a87;
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        float: right;
+        margin-right: 10px;
+        border: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
+        .bugModal .modalContent .modalContent_Footer .btnStopSub:focus {
+          outline: 0; }
+      .bugModal .modalContent .modalContent_Footer .btnStop {
+        float: right;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 7px; }
+    .bugModal .modalContent .blue-btn {
+      background: transparent;
+      border: solid 1px #1fadcf;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      color: #1fadcf;
+      font-size: 14px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      margin: 0;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .bugModal .modalContent .blue-btn:hover, .bugModal .modalContent .blue-btn:active, .bugModal .modalContent .blue-btn:focus {
+        background: #1fadcf;
+        color: #fff; }
+      .bugModal .modalContent .blue-btn .fileUpload {
+        position: relative;
+        overflow: hidden;
+        height: 43px;
+        margin-top: 0; }
+    .bugModal .modalContent .fileUpload {
+      position: relative;
+      float: left; }
+      .bugModal .modalContent .fileUpload input.uploadlogo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        width: 100%;
+        height: 42px; }
+    .bugModal .modalContent input::-webkit-file-upload-button {
+      cursor: pointer !important;
+      height: 42px;
+      width: 100%; }
+    .bugModal .modalContent #priority-group {
+      width: 50%;
+      float: left;
+      position: relative; }
+      .bugModal .modalContent #priority-group .priority_Select {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ddd;
+        float: left;
+        position: relative;
+        background: #fff; }
+        .bugModal .modalContent #priority-group .priority_Select .form-control {
+          height: 100%;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          border-radius: 0;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          border: 0;
+          background-color: transparent;
+          cursor: pointer; }
+        .bugModal .modalContent #priority-group .priority_Select:after {
+          position: absolute;
+          content: "";
+          vertical-align: middle;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          top: 18px;
+          right: 14px;
+          border-bottom: 5px solid #000;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s;
+          cursor: pointer; }
+      .bugModal .modalContent #priority-group .rotatePriority0:after {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
+      .bugModal .modalContent #priority-group .PriorityDrop {
+        width: 96.2%;
+        position: absolute;
+        top: 102%;
+        background: #fff;
+        border: 1px solid #ddd;
+        z-index: 100;
+        display: none; }
+        .bugModal .modalContent #priority-group .PriorityDrop .option {
+          float: left;
+          width: 100%;
+          padding: 7px;
+          padding-left: 30px;
+          font-size: 13px;
+          font-weight: bold;
+          cursor: pointer;
+          border-bottom: 1px solid #eee;
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -o-transition: 0.3s; }
+          .bugModal .modalContent #priority-group .PriorityDrop .option:hover {
+            background: #f9f9f9;
+            padding-left: 40px; }
+        .bugModal .modalContent #priority-group .PriorityDrop .select {
+          position: relative;
+          background: #f9f9f9;
+          padding-left: 40px; }
+          .bugModal .modalContent #priority-group .PriorityDrop .select:before {
+            content: '\e934';
+            font-family: 'Linearicons';
+            position: absolute;
+            top: 6px;
+            right: 20px;
+            font-size: 16px;
+            color: #025a87; }
+    .bugModal .modalContent .priority_Left {
+      padding-right: 15px; }
+    .bugModal .modalContent .priority_Right {
+      padding-left: 15px; }
+
+.loadImage {
+  width: 200px;
+  height: 120px;
+  position: relative;
+  float: left;
+  left: 50px;
+  overflow: hidden;
+  background: #f9f9f9;
+  border: 1px solid #eee; }
+  .loadImage:before {
+    width: 100%;
+    content: 'Paste Image (ctrl + v)';
+    position: absolute;
+    top: 56%;
+    left: 0;
+    color: #ccc;
+    font-size: 13px;
+    text-align: center; }
+  .loadImage:after {
+    content: '\f03e';
+    font-family: FontAwesome;
+    color: #ccc;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+    left: 84px; }
+  .loadImage img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer; }
+
+.toolLoadI {
+  position: absolute;
+  background: #025a87;
+  color: #fff;
+  padding: 7px;
+  font-size: 11px;
+  border-radius: 3px;
+  top: 67px;
+  left: 56%;
+  z-index: 100;
+  display: none; }
+  .toolLoadI:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 12px;
+    left: -7px;
+    border-bottom: 5px solid #025a87;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer; }
+
+.modalContentTop {
+  -webkit-animation: modalContentTop 0.7s 1 forwards;
+  -moz-animation: modalContentTop 0.7s 1 forwards;
+  -o-animation: modalContentTop 0.7s 1 forwards;
+  animation: modalContentTop 0.7s 1 forwards; }
+
+.modalContentBottom {
+  -webkit-animation: modalContentBottom 0.3s 1 forwards;
+  -moz-animation: modalContentBottom 0.3s 1 forwards;
+  -o-animation: modalContentBottom 0.3s 1 forwards;
+  animation: modalContentBottom 0.3s 1 forwards; }
+
+.grabFiles {
+  width: 185px;
+  padding: 7px;
+  position: absolute;
+  left: 0;
+  top: 72px;
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+  background: #f9f9f9;
+  border: 1px solid #eee; }
+
+@keyframes modalContentTop {
+  0% {
+    margin: -454px auto 0; }
+  100% {
+    margin: 130px auto 0; } }
+@-weblit-keyframes modalContentTop {
+  0% {
+    margin: -454px auto 0; }
+  100% {
+    margin: 130px auto 0; } }
+@-moz-keyframes modalContentTop {
+  0% {
+    margin: -454px auto 0; }
+  100% {
+    margin: 130px auto 0; } }
+@keyframes modalContentBottom {
+  0% {
+    margin: 130px auto 0; }
+  100% {
+    margin: -454px auto 0; } }
+@-weblit-keyframes modalContentBottom {
+  0% {
+    margin: 130px auto 0; }
+  100% {
+    margin: -454px auto 0; } }
+@-moz-keyframes modalContentBottom {
+  0% {
+    margin: 130px auto 0; }
+  100% {
+    margin: -454px auto 0; } }
+@media (min-width: 220px) and (max-width: 1023px) {
+  .realnav .avatarview .greeTings {
+    display: none; }
+  .realnav .navView {
+    left: 18px; }
+  .realnav .avatarview {
+    right: 18px; }
+  .realnav .navBar:before {
+    left: 23px; }
+  .realnav .avatarbar:before {
+    left: 80px; } }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .realnav {
+    border-bottom: 1px solid #eee; }
+    .realnav .navView {
+      left: 22px; }
+    .realnav .avatarview {
+      right: 22px; }
+    .realnav .navBar:before {
+      left: 27px; }
+    .realnav .avatarbar:before {
+      left: 72px; } }
+/* Right Nav */
+.theRightNav .buttonRNav,
+.theRightNav .rightNavCover {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+.theRightNav .buttonRNav {
+  position: fixed;
+  top: 8px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  z-index: 100; }
+  .theRightNav .buttonRNav i {
+    position: absolute;
+    top: 7px;
+    font-size: 24px;
+    left: 8px;
+    color: #1fadcf; }
+.theRightNav .rightNavCover {
+  position: fixed;
+  top: 0;
+  right: -1170px;
+  width: 1170px;
+  height: 100vh;
+  border: 1px solid #eee;
+  z-index: 100;
+  padding: 7px;
+  background: #fafafa; }
+  .theRightNav .rightNavCover .whiteBlk {
+    position: relative;
+    float: left;
+    height: 32%;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    overflow: hidden; }
+  .theRightNav .rightNavCover .white100 {
+    width: 99%;
+    margin: 7px; }
+  .theRightNav .rightNavCover .white50 {
+    width: 48.787%;
+    margin: 7px; }
+.theRightNav .goRight {
+  right: 1171px; }
+.theRightNav .goRightCover {
+  right: 0; }
+
+/*# sourceMappingURL=nav.css.map */

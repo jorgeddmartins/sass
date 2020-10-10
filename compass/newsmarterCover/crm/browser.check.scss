@@ -1,0 +1,81 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+// Chrome DeskTop
+.Chrome {
+
+	.DesktopApp {}
+}
+
+// Safari DeskTop
+.Safari {
+
+	.DesktopApp {}
+}
+
+// FireFox DeskTop
+.FireFox {
+
+	.DesktopApp {}
+}
+
+// I.E. Desktop
+.Ie {
+
+	.DesktopApp {}
+}
+
+
+// This Style For Mobile Just Happend on Window Load 
+// Chrome Mobile
+.Chrome {
+
+	// Chrome Global Mobile
+	.mobileApp {}
+
+	// Chrome Iphone
+	.IphoneApp {}
+
+	// Chrome Android
+	.AndroidApp {}
+}
+
+// Safari Mobile
+.Safari {
+
+	// Safari Global Mobile
+	.mobileApp {}
+
+	// Safari Iphone
+	.IphoneApp {}
+
+	// Safari Android
+	.AndroidApp {}
+}
+
+// FireFox Mobile
+.FireFox {
+
+	// Firefox Global Mobile
+	.mobileApp {}
+
+	// FireFox Iphone
+	.IphoneApp {}
+
+	// FireFox Android
+	.AndroidApp {}
+}
+
+// I.E. Mobile
+.Ie {
+
+	// I.E. Global Mobile
+	.mobileApp {}
+
+	// I.E. Iphone
+	.IphoneApp {}
+
+	// I.E. Android
+	.AndroidApp {}
+}

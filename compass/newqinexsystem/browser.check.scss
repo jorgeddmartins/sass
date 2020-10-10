@@ -1,0 +1,51 @@
+
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+
+// Cross Browsers
+
+// FireFox & I.E.
+.FireFox, .Ie {
+
+	.TSalesGrid {
+		.HeaderGrid {
+			.Thead {
+
+				.HuserId { width: 144.34px }
+
+			    .alert { width: 63.06px }
+
+			    .LeadId { width: 67.55px }
+
+			    .Created { width: 99.11px }
+
+			    .Source { width: 74.11px }
+
+			    .Product { width: 83px }
+
+			    .TrackSummary { width: 143.72px }
+
+			    .Pix { width: 45.53px }
+
+			    .Fname { width: 91.36px }
+
+			    .Lname { width: 87.09px }
+
+			    .Landline { width: 81.59px }
+
+			    .Mobile { width: 69.38px }
+			}
+		}
+	}
+}
+
+.Ie {
+
+	.form-article-xms-spz {
+		width: 10.16%;
+	}
+}
+
+.FireFox {}

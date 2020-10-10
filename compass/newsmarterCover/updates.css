@@ -1,0 +1,231 @@
+.calendar * {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 11px; }
+
+.calendar {
+  position: absolute;
+  cursor: default;
+  float: left;
+  padding: 0;
+  padding-top: 10px;
+  background: #fff;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  display: none; }
+  .calendar .c-pad-top {
+    padding-top: 3%; }
+  .calendar .c-grid {
+    float: left;
+    width: 282px;
+    height: inherit;
+    position: relative; }
+    .calendar .c-grid .trGrid {
+      position: relative;
+      float: left;
+      width: 100%; }
+    .calendar .c-grid .c-day, .calendar .c-grid .c-day-previous-month, .calendar .c-grid .c-day-next-month {
+      width: 13%;
+      min-width: 39.25px;
+      max-width: 42px;
+      height: 31px;
+      background: rgba(31, 173, 207, 0.2);
+      color: #025a87;
+      float: left;
+      text-align: center;
+      cursor: pointer;
+      margin: 0.5px; }
+    .calendar .c-grid .c-day {
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s; }
+      .calendar .c-grid .c-day:hover {
+        background: #025a87;
+        color: #fff; }
+    .calendar .c-grid .c-day-previous-month, .calendar .c-grid .c-day-next-month {
+      opacity: 0.5; }
+    .calendar .c-grid .c-week-day {
+      width: 13.25%;
+      min-width: 40px;
+      height: 10.38%;
+      color: #025a87;
+      float: left;
+      text-align: center;
+      font-weight: bold;
+      font-size: 11px;
+      padding-top: 1%;
+      margin-bottom: 4px; }
+    .calendar .c-grid .c-month {
+      width: 85%;
+      height: 12%;
+      text-align: center; }
+    .calendar .c-grid .c-nav-btn-over {
+      font-weight: bold; }
+    .calendar .c-grid .today-select, .calendar .c-grid .thisSelect {
+      background: #025a87;
+      color: #fff; }
+    .calendar .c-grid .c-event {
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer; }
+    .calendar .c-grid .c-grid-title {
+      font-weight: bold;
+      float: left;
+      color: #025a87;
+      margin-bottom: 7px;
+      padding-top: 2% !important; }
+    .calendar .c-grid .c-next, .calendar .c-grid .c-previous {
+      width: 7.5%;
+      height: 29px;
+      text-align: center;
+      cursor: pointer;
+      padding-top: 0 !important;
+      float: left;
+      font-size: 20px;
+      font-weight: 100; }
+    .calendar .c-grid .c-next:before, .calendar .c-grid .c-previous:before {
+      font-family: 'Linearicons';
+      position: relative;
+      top: -1.5px; }
+    .calendar .c-grid .c-next:before {
+      content: "\e93c"; }
+    .calendar .c-grid .c-previous:before {
+      content: "\e93b"; }
+    .calendar .c-grid .dateTimepopUp {
+      width: 185px;
+      padding: 6px;
+      z-index: 20000; }
+    .calendar .c-grid .topFirst {
+      top: 12px; }
+    .calendar .c-grid .topSecond {
+      top: 45px; }
+    .calendar .c-grid .topThird {
+      top: 78px; }
+    .calendar .c-grid .topFourth {
+      top: 112px; }
+    .calendar .c-grid .topFifth {
+      top: 147px; }
+    .calendar .c-grid .topSixth {
+      top: 181px; }
+    .calendar .c-grid .left1 {
+      left: -70px; }
+    .calendar .c-grid .left2 {
+      left: -28px; }
+    .calendar .c-grid .left3 {
+      left: 16px; }
+    .calendar .c-grid .left4 {
+      left: 57px; }
+    .calendar .c-grid .left5 {
+      left: 102px; }
+    .calendar .c-grid .left6 {
+      left: 145px; }
+    .calendar .c-grid .left7 {
+      left: 188px; }
+  .calendar .c-Timer {
+    width: 273px; }
+    .calendar .c-Timer .cTimerIn {
+      position: relative;
+      float: left;
+      width: 100%;
+      top: 61px; }
+      .calendar .c-Timer .cTimerIn .c-Time, .calendar .c-Timer .cTimerIn .c-Time-f {
+        width: 44.34px;
+        height: 33px;
+        background: #DBEBE3;
+        color: #1A8755;
+        font-size: 12px;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+        margin: 0.5px;
+        padding-top: 4%;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        .calendar .c-Timer .cTimerIn .c-Time:hover, .calendar .c-Timer .cTimerIn .c-Time-f:hover {
+          background: #1A8755;
+          color: #fff; }
+      .calendar .c-Timer .cTimerIn .thisSelect {
+        background: #1A8755;
+        color: #fff; }
+    .calendar .c-Timer .timerTitle {
+      color: #1A8755;
+      position: absolute;
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 7px;
+      left: 0;
+      top: 2px; }
+  .calendar .c-Minute {
+    width: 187px; }
+    .calendar .c-Minute .cMinuteIn {
+      position: relative;
+      float: left;
+      width: 100%;
+      top: 61px; }
+      .calendar .c-Minute .cMinuteIn .c-Min {
+        position: relative;
+        float: left;
+        width: 45px;
+        height: 39px;
+        background: #DBEBE3;
+        color: #1A8755;
+        padding: 4px;
+        padding-right: 7px;
+        padding-top: 16px;
+        cursor: pointer;
+        margin: 0.5px;
+        font-weight: 100;
+        font-size: 11px;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s; }
+        .calendar .c-Minute .cMinuteIn .c-Min:hover {
+          background: #1A8755;
+          color: #fff; }
+      .calendar .c-Minute .cMinuteIn .thisSelect {
+        background: #1A8755;
+        color: #fff; }
+  .calendar .c-Timer, .calendar .c-Minute {
+    position: relative;
+    float: left;
+    height: 265px;
+    margin-left: 15px; }
+
+.timerSubTitle {
+  color: #1A8755;
+  position: absolute;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 7px;
+  left: 0;
+  top: 37px; }
+
+.calendar-sm .c-pad-top {
+  padding-top: 2%; }
+
+.dispBl {
+  display: block !important; }
+
+.width8 {
+  width: 818.32px; }
+
+.calendar.is-open {
+  display: block; }
+
+.calendar {
+  top: 89%; }
+
+/*# sourceMappingURL=updates.css.map */

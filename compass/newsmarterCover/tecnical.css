@@ -1,0 +1,37 @@
+.tecnical_Floor {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .tecnical_Floor .fr-box {
+    width: 43%;
+    display: inline-block; }
+  .tecnical_Floor .fr-toolbar {
+    border-top: 0;
+    box-shadow: none; }
+  .tecnical_Floor .fr-box.fr-basic .fr-element {
+    padding: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+body .fr-modal .fr-modal-wrapper {
+  border-top: 0; }
+  body .fr-modal .fr-modal-wrapper .fr-modal-head {
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(0, 0, 0, 0.14); }
+  body .fr-modal .fr-modal-wrapper .fr-modal-body {
+    overflow: hidden; }
+    body .fr-modal .fr-modal-wrapper .fr-modal-body button.fr-command {
+      font-size: 14px;
+      color: #000;
+      background: #eee;
+      font-weight: bold;
+      padding-left: 20px;
+      padding-right: 20px; }
+body .fr-box.fr-basic.fr-top .fr-wrapper {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.16);
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee; }
+
+/*# sourceMappingURL=tecnical.css.map */

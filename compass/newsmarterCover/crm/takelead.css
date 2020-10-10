@@ -1,0 +1,234 @@
+/* Start Take Lead */
+.takeLead_Btn {
+  position: relative;
+  float: left;
+  width: 18.56%;
+  max-width: 240px;
+  min-width: 200px;
+  margin: 2px;
+  margin-top: 4px; }
+
+.takeLead_Success,
+.takeLead_Error {
+  display: none; }
+
+.leadTBtn,
+.leadTSuccess,
+.leadFail {
+  background: #ffa500;
+  color: #fff;
+  border: 1px solid #ffa500;
+  width: 100%;
+  position: relative;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  float: left;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 2px;
+  letter-spacing: 2px; }
+
+.leadTSuccess:before {
+  content: '\f00c';
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0; }
+
+.leadFail:before {
+  content: '\f00d';
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0; }
+
+.aditional_Btn {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 35px;
+  background: #fff; }
+
+.boxShTakeLead {
+  -webkit-box-shadow: 0 0 7px 0 white;
+  -moz-box-shadow: 0 0 7px 0 white;
+  box-shadow: 0 0 7px 0 white;
+  background: #f9f9f9;
+  color: #000;
+  border: 1px solid #999; }
+  .boxShTakeLead:hover {
+    background: #1fadcf;
+    color: #fff;
+    border: 1px solid #1fadcf; }
+    .boxShTakeLead:hover:after {
+      border-bottom: 8px solid #1fadcf; }
+  .boxShTakeLead:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    top: 33px;
+    left: 45%;
+    border-bottom: 8px solid #fff;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg); }
+
+.smallBtn {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  background: #34c634;
+  color: #fff;
+  border-left: 1px solid #1f2d3b; }
+
+.viewBtn:before,
+.addBtn:before {
+  font-family: 'Linearicons';
+  position: absolute;
+  top: 1px;
+  font-size: 23px;
+  color: #fff; }
+
+.viewBtn:before {
+  content: '\e6a5';
+  left: 17px; }
+
+.addBtn:before {
+  content: '\e6d1';
+  left: 19px; }
+
+.btnTip {
+  position: absolute;
+  top: 18px;
+  background: #1fadcf;
+  color: #fff;
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3px;
+  text-transform: initial;
+  font-size: 12px;
+  display: none; }
+  .btnTip:after {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 8px;
+    border-bottom: 5px solid #1fadcf; }
+
+.viewTip {
+  left: -130%; }
+  .viewTip:after {
+    right: -7px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg); }
+
+.addTip {
+  right: -125%; }
+  .addTip:after {
+    left: -7px;
+    top: 8px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg); }
+
+.viewBtnLeft {
+  -webkit-animation: viewBtnLeft 0.35s 1 forwards;
+  -moz-animation: viewBtnLeft 0.35s 1 forwards;
+  -o-animation: viewBtnLeft 0.35s 1 forwards;
+  animation: viewBtnLeft 0.35s 1 forwards;
+  -webkit-animation-delay: 0.35s;
+  -moz-animation-delay: 0.35s;
+  animation-delay: 0.35s; }
+
+.addBtnTop {
+  -webkit-animation: addBtnTop 0.35s 1 forwards;
+  -moz-animation: addBtnTop 0.35s 1 forwards;
+  -o-animation: addBtnTop 0.35s 1 forwards;
+  animation: addBtnTop 0.35s 1 forwards;
+  -webkit-animation-delay: 0.55s;
+  -moz-animation-delay: 0.55s;
+  animation-delay: 0.55s; }
+
+@keyframes viewBtnLeft {
+  0% {
+    left: -10%; }
+  100% {
+    left: 40.7%; } }
+@-webkit-keyframes viewBtnLeft {
+  0% {
+    left: -10%; }
+  100% {
+    left: 40.7%; } }
+@-moz-keyframes viewBtnLeft {
+  0% {
+    left: -10%; }
+  100% {
+    left: 40.7%; } }
+@keyframes addBtnTop {
+  0% {
+    top: -370%; }
+  100% {
+    top: 88%; } }
+@-webkit-keyframes addBtnTop {
+  0% {
+    top: -370%; }
+  100% {
+    top: 88%; } }
+@-moz-keyframes addBtnTop {
+  0% {
+    top: -370%; }
+  100% {
+    top: 88%; } }
+.TakeLeadTip {
+  position: absolute;
+  padding: 3px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  top: 102%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  font-size: 9px;
+  letter-spacing: .5px;
+  text-align: center;
+  display: none; }
+  .TakeLeadTip:before {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: -5px;
+    right: 23px;
+    border-bottom: 5px solid #fff;
+    transform: rotate(0deg); }
+
+/* End Take Lead */
+
+/*# sourceMappingURL=takelead.css.map */

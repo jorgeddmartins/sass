@@ -1,0 +1,241 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+* {
+    margin: $null-conv;
+    padding: $null-conv;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ba5ea8;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav,
+section,
+header,
+footer,
+aside,
+details,
+summary,
+hgroup,
+main {
+    display: block;
+}
+
+ul { list-style: none; }
+
+
+.HomeApp {
+    width: $max-conv-width;
+    float: left;
+}
+
+.ChartApp {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    @include border-radius($max-conv-width / 2);
+    float: left;
+    background: #ad519b;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+
+    margin-top: 40%;
+
+    .chartMask {
+        position: absolute;
+        width: $max-conv-width;
+        height: $max-conv-height;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        .left-gap, 
+        .right-gap, 
+        .bottom-gap, 
+        .top-gap {
+            position: absolute;
+            background: #ad519b;
+        }
+
+        .left-gap {
+            width: 35px;
+            height: 20px;
+            top: 129px;
+            left: 8px;
+        }
+        .right-gap {
+            width: 35px;
+            height: 20px;
+            top: 129px;
+            right: 8px;
+        }
+        .bottom-gap {
+            width: 20px;
+            height: 35px;
+            bottom: 8px;
+            left: 47%;
+        }
+        .top-gap {
+            width: 20px;
+            height: 35px;
+            top: 8px;
+            left: 47%;
+        }
+    }
+}
+
+.pchart.pc-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pchart.pc-container svg.pc-chart {
+  display: block;
+  height: 100%;
+}
+
+.pchart.pc-container svg.pc-chart path.pc-bg {
+  fill: none;
+  stroke: #d8d6d6;
+  stroke-width: 4;
+  stroke-dasharray: 100,100;
+}
+
+.pchart.pc-container svg.pc-chart path.pc-fill {
+  fill: none;
+  stroke-width: 4;
+  stroke: black;
+  stroke-dasharray: 0,100;
+  -webkit-transition: stroke-dasharray 1s linear;
+  transition: stroke-dasharray 1s linear;
+}
+
+.pchart.pc-container div.pc-text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pchart.pc-container div.pc-text:hover .pc-num #pc-percent {
+  opacity: 0%;
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+}
+
+.pchart.pc-container div.pc-text:hover .pc-num #pc-actual {
+  opacity: 100%;
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+}
+
+.pchart.pc-container div.pc-text .pc-num {
+  min-height: 1px;
+  margin-top: 8%;
+  height: 25% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-percent {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: -3px;
+  position: absolute;
+  left: 50%;
+  opacity: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-actual {
+  font-size: 1.3rem;
+  font-weight: 400;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  letter-spacing: 0.075rem !important;
+  position: absolute;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.pchart.pc-container div.pc-text #pc-unit {
+    letter-spacing: 0.5px;
+    font-size: 0;
+}
+
+
+#container {
+    height: 260px;
+    width: 260px;
+    @include transform(90deg);
+}
+#container .pc-text{
+    color: #8d357b;
+    //transform: rotate(-90deg);
+    @include transform(-90deg);
+    /* top: 0; */
+    left: 2px;
+}
+#container .pc-bg {
+   stroke: transparent;
+}
+#container .pc-fill{
+    stroke: #620850;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-percent, 
+.pchart.pc-container div.pc-text .pc-num #pc-actual {
+    top: 97px;
+    font-size: 58px;
+    opacity: 1;
+}
+
+.pchart.pc-container div.pc-text .pc-num #pc-actual {
+    opacity: 0;
+}
+

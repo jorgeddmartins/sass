@@ -1,0 +1,225 @@
+.search_TopBar {
+  width: 100%;
+  display: inline-block; }
+  .search_TopBar .panel-input {
+    height: 40px;
+    position: relative;
+    float: left;
+    margin: 5px; }
+    .search_TopBar .panel-input:first-child {
+      margin-left: 0; }
+    .search_TopBar .panel-input .k-days-floor {
+      float: left;
+      height: 40px; }
+    .search_TopBar .panel-input .k-widget {
+      width: 190px;
+      height: 40px;
+      position: relative;
+      float: left;
+      background: #fff;
+      border: 1px solid #eee;
+      color: #025a87; }
+      .search_TopBar .panel-input .k-widget .k-input {
+        width: 100%;
+        height: 100%;
+        float: left;
+        padding: 7px;
+        padding-right: 45px;
+        border: 0;
+        position: absolute;
+        z-index: 1;
+        background: transparent;
+        color: #0A9A7A;
+        font-size: 13px;
+        font-weight: bold; }
+        .search_TopBar .panel-input .k-widget .k-input:focus {
+          outline: 0; }
+    .search_TopBar .panel-input .k-dropdown {
+      padding: 12px;
+      text-transform: uppercase;
+      font-size: 12px;
+      cursor: pointer; }
+      .search_TopBar .panel-input .k-dropdown:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        top: 18px;
+        right: 14px;
+        border-bottom: 5px solid #000;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        cursor: pointer; }
+    .search_TopBar .panel-input .k-days-dropDown {
+      width: 100%;
+      background: #fff;
+      border: 1px solid #eee;
+      position: absolute;
+      top: 41px;
+      left: 0;
+      margin-bottom: 0;
+      z-index: 1;
+      display: none; }
+      .search_TopBar .panel-input .k-days-dropDown:before {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        top: -7px;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 7px solid #eee;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
+      .search_TopBar .panel-input .k-days-dropDown li {
+        float: left;
+        width: 100%; }
+        .search_TopBar .panel-input .k-days-dropDown li .dropDays {
+          float: left;
+          width: 100%;
+          padding: 12px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          font-size: 13px;
+          color: #999;
+          cursor: pointer;
+          border-bottom: 1px solid #eee; }
+    .search_TopBar .panel-input .rotate0:after {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg); }
+    .search_TopBar .panel-input label, .search_TopBar .panel-input .boxSystem_Arrow {
+      padding: 0 15px;
+      position: relative;
+      height: 100%;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-right: 0;
+      line-height: 2.8em;
+      float: left;
+      margin: 0; }
+    .search_TopBar .panel-input .boxSystem_Arrow {
+      border-right: 1px solid #eee;
+      width: 44px; }
+      .search_TopBar .panel-input .boxSystem_Arrow i {
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 6px;
+        color: #000;
+        font-weight: bold; }
+    .search_TopBar .panel-input .k-widget-calendar:after {
+      content: '\f073';
+      font-family: 'FontAwesome';
+      width: 40px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: center;
+      height: 100%;
+      font-size: 20px;
+      line-height: 1.9em;
+      background: #f9f9f9;
+      border-left: 1px solid #eee;
+      color: #1A8755; }
+    .search_TopBar .panel-input .k-button {
+      height: 40px;
+      background: #0A9A7A;
+      border: 0;
+      color: #fff;
+      text-transform: uppercase;
+      padding-left: 55px;
+      padding-right: 55px;
+      border: 1px solid #0A9A7A;
+      transition: 0.7s;
+      -webkit-transition: 0.7s;
+      -moz-transition: 0.7s;
+      -o-transition: 0.7s; }
+      .search_TopBar .panel-input .k-button:hover {
+        background: #088267;
+        border: 1px solid #088267; }
+      .search_TopBar .panel-input .k-button:focus {
+        outline: 0; }
+
+.gridSystemView {
+  width: 100%;
+  height: 94%;
+  max-height: 865px;
+  float: left;
+  background: #fff;
+  overflow: auto;
+  display: block; }
+  .gridSystemView .allLeadsTab {
+    border-spacing: 2px;
+    border-collapse: initial; }
+    .gridSystemView .allLeadsTab thead .k-header {
+      padding: .5em .6em .4em .6em;
+      font-weight: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: left;
+      background: #eee; }
+      .gridSystemView .allLeadsTab thead .k-header .k-link {
+        font-size: 11px;
+        font-weight: bold;
+        display: block;
+        text-align: left;
+        padding: .4em .6em .4em .6em;
+        color: #000;
+        margin-right: 15px;
+        text-transform: uppercase; }
+    .gridSystemView .allLeadsTab thead .tabInput {
+      border: 1px solid #eee;
+      height: 27px;
+      width: 102px;
+      padding: 7px;
+      margin-bottom: 2px; }
+      .gridSystemView .allLeadsTab thead .tabInput:focus {
+        outline: 0; }
+    .gridSystemView .allLeadsTab thead .width145 {
+      width: 145px; }
+    .gridSystemView .allLeadsTab thead .width130 {
+      width: 130px; }
+    .gridSystemView .allLeadsTab tbody td[role="gridcell"] {
+      border-style: none;
+      padding: 9px;
+      overflow: hidden;
+      vertical-align: middle;
+      text-overflow: ellipsis;
+      font-size: 11px;
+      border: 1px solid #eee;
+      background: #f9f9f9;
+      position: relative; }
+      .gridSystemView .allLeadsTab tbody td[role="gridcell"] i {
+        position: absolute;
+        top: 23%;
+        left: 32%;
+        font-size: 17px;
+        cursor: pointer; }
+        .gridSystemView .allLeadsTab tbody td[role="gridcell"] i:hover {
+          color: #f55753; }
+    .gridSystemView .allLeadsTab .dispNoneInput {
+      display: none; }
+    .gridSystemView .allLeadsTab .leadUrl {
+      cursor: pointer; }
+
+/*# sourceMappingURL=gridview.css.map */

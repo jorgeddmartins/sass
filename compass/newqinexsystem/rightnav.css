@@ -1,0 +1,1774 @@
+/* Start Left Nav */
+#nav-right #button-nav-right {
+  width: 53px;
+  height: 52px;
+  background: #fff;
+  background-size: 38px;
+  background-position: 50% 50%;
+  border-right: 0;
+  position: fixed;
+  right: -1px;
+  top: 2px;
+  z-index: 320000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  cursor: pointer; }
+  #nav-right #button-nav-right:hover, #nav-right #button-nav-right:focus {
+    background: #fff;
+    background-size: 38px;
+    background-position: 50% 50%; }
+  #nav-right #button-nav-right i {
+    font-size: 23px;
+    color: #0A9A7A;
+    top: 15px;
+    left: 15px;
+    position: absolute; }
+#nav-right .right-nav {
+  width: 1170px;
+  margin-right: -1170px; }
+#nav-right .margin-right-bar {
+  margin-right: 0; }
+#nav-right .right-nav-1024 {
+  width: 965px;
+  margin-right: -965px; }
+#nav-right .right-nav {
+  background: #f9f9f9;
+  border-left: 1px solid #ddd;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 10000000000;
+  overflow: hidden; }
+  #nav-right .right-nav h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    background: #DBEBE3;
+    padding: 14px;
+    font-weight: bold;
+    color: #0A9A7A; }
+#nav-right .marchants-blk {
+  background: #fff;
+  padding: 0;
+  border: 1px solid #DBEBE3;
+  border-bottom: 2px solid #DBEBE3;
+  float: left;
+  display: block;
+  border-radius: 3px; }
+  #nav-right .marchants-blk .marchants-name {
+    background: #DBEBE3;
+    padding: 10px;
+    font-size: 15px;
+    color: #0A9A7A;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold; }
+#nav-right .marchants-commands {
+  display: inline-block;
+  padding: 12px; }
+  #nav-right .marchants-commands .right_title {
+    display: inline-block;
+    font-size: 14px;
+    color: #0A9A7A;
+    position: relative;
+    top: 0;
+    width: 68%; }
+  #nav-right .marchants-commands .rights-blk {
+    display: inline-block;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 12px;
+    position: relative; }
+    #nav-right .marchants-commands .rights-blk:last-child {
+      margin-right: 0; }
+      #nav-right .marchants-commands .rights-blk:last-child hr {
+        display: none; }
+    #nav-right .marchants-commands .rights-blk hr {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      border-top: 1px solid #DBEBE3; }
+
+#button-nav-right,
+.right-nav {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
+.margin-right {
+  margin-right: 1171px; }
+
+.teleSalesinfo,
+.productsinfo {
+  position: relative;
+  float: left;
+  width: 100%; }
+
+.productsinfo .productsTabs {
+  position: relative;
+  width: 100%;
+  display: inline-block; }
+  .productsinfo .productsTabs .productTab {
+    width: 50%;
+    padding: 16px 50px;
+    font-size: 14px;
+    background: #f3f3f4;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; }
+    .productsinfo .productsTabs .productTab span {
+      width: 20px;
+      height: 20px;
+      float: right;
+      right: 168px;
+      position: relative;
+      top: 2px;
+      cursor: pointer; }
+      .productsinfo .productsTabs .productTab span i {
+        font-size: 17px; }
+  .productsinfo .productsTabs .tabEnable {
+    background: #dbebe3;
+    color: #0A9A7A;
+    font-weight: bold;
+    cursor: default; }
+.productsinfo .RightProdBlks {
+  width: 100%;
+  padding: 15px;
+  padding-top: 3px;
+  margin-bottom: 15px;
+  float: left;
+  position: relative; }
+  .productsinfo .RightProdBlks:last-child {
+    margin-bottom: 0; }
+
+.marchants-commands .switch_prod {
+  position: absolute;
+  right: 10px;
+  top: 0.3px; }
+  .marchants-commands .switch_prod .switch {
+    top: 0;
+    width: 46px;
+    height: 22px; }
+  .marchants-commands .switch_prod .slider {
+    background: #c0392b;
+    left: 14px; }
+    .marchants-commands .switch_prod .slider:before {
+      position: absolute;
+      content: "";
+      height: 28px;
+      width: 28px;
+      left: -11px;
+      bottom: -3px;
+      background: #fff;
+      transition: 0.4s;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -o-transition: 0.4s;
+      z-index: 300;
+      border: 1px solid #ddd; }
+.marchants-commands .switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 21px;
+  top: 2px;
+  margin-bottom: 0; }
+  .marchants-commands .switch input {
+    display: none; }
+.marchants-commands .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  background: #ddd;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  height: 18px; }
+  .marchants-commands .slider:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: -5px;
+    background: #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 300;
+    border: 1px solid #eee; }
+  .marchants-commands .slider .switchBtn {
+    text-transform: uppercase; }
+    .marchants-commands .slider .switchBtn:after {
+      content: "Off";
+      position: absolute;
+      right: 6px;
+      top: 9px;
+      font-size: 10px;
+      color: #999; }
+    .marchants-commands .slider .switchBtn:before {
+      content: "On";
+      position: absolute;
+      left: 7px;
+      top: 9px;
+      font-size: 11px;
+      color: #fff; }
+.marchants-commands input:checked + .slider:before {
+  transform: translateX(11px);
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  -moz-transform: translateX(11px);
+  background: #0A9A7A;
+  border: 2px solid #0A9A7A; }
+
+.grid-conv-full {
+  width: 100%;
+  position: relative;
+  top: 0; }
+  .grid-conv-full .conv-grid-item {
+    width: 227px;
+    padding: 3px;
+    position: relative; }
+  .grid-conv-full .marchants-blk {
+    background: #fff;
+    padding: 0;
+    border: 1px solid #DBEBE3;
+    border-bottom: 2px solid #DBEBE3;
+    float: left;
+    display: block;
+    border-radius: 3px;
+    width: 100%; }
+    .grid-conv-full .marchants-blk .marchants-name {
+      background: #DBEBE3;
+      padding: 10px;
+      font-size: 15px;
+      color: #0A9A7A;
+      text-transform: uppercase;
+      display: block;
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: bold; }
+    .grid-conv-full .marchants-blk .marchants-commands {
+      display: inline-block;
+      padding: 12px;
+      width: 100%; }
+      .grid-conv-full .marchants-blk .marchants-commands .rights-blk {
+        display: inline-block;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 12px; }
+        .grid-conv-full .marchants-blk .marchants-commands .rights-blk:last-child {
+          margin-right: 0; }
+        .grid-conv-full .marchants-blk .marchants-commands .rights-blk .right_title {
+          display: inline-block;
+          font-size: 14px;
+          color: #0A9A7A;
+          position: relative;
+          top: 5px;
+          width: 68%; }
+
+.grid-conv-full {
+  margin: 0 auto;
+  height: 4000px;
+  width: 100% !important; }
+
+.teleSalesinfo .rightInfoBlks {
+  width: 100%;
+  padding: 15px;
+  padding-top: 3px;
+  margin-bottom: 15px;
+  float: left;
+  position: relative;
+  background: #f9f9f9; }
+  .teleSalesinfo .rightInfoBlks:last-child {
+    margin-bottom: 0; }
+.teleSalesinfo .infoSquare {
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  position: relative;
+  width: 18.77%;
+  float: left;
+  margin: 7px; }
+  .teleSalesinfo .infoSquare .dtaSquare {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 37px;
+    margin-bottom: 4px; }
+  .teleSalesinfo .infoSquare .titleSquare {
+    font-size: 14px;
+    color: #ccc;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .teleSalesinfo .infoSquare i {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 22px; }
+  .teleSalesinfo .infoSquare .greenPhone {
+    color: #0A9A7A; }
+  .teleSalesinfo .infoSquare .purplePhone {
+    color: #8e44ad; }
+  .teleSalesinfo .infoSquare .redPhone {
+    color: #CC0000; }
+  .teleSalesinfo .infoSquare .orangePhone {
+    color: #f5c073; }
+  .teleSalesinfo .infoSquare .bluePhone {
+    color: #0080ff; }
+.teleSalesinfo .infoCharts {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-bottom: 7px; }
+  .teleSalesinfo .infoCharts:last-of-type {
+    margin-bottom: 0; }
+  .teleSalesinfo .infoCharts .infoSquare:first-child, .teleSalesinfo .infoCharts .infoSquare:nth-child(2) {
+    cursor: pointer; }
+.teleSalesinfo .merchantInfo {
+  height: 92vh;
+  overflow-y: auto;
+  overflow-x: hidden; }
+.teleSalesinfo .chartUser,
+.teleSalesinfo .newLineChart {
+  position: relative;
+  float: left;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 7px;
+  height: 345px;
+  overflow: hidden;
+  margin-bottom: 14px; }
+  .teleSalesinfo .chartUser:last-of-type,
+  .teleSalesinfo .newLineChart:last-of-type {
+    margin-bottom: 0; }
+  .teleSalesinfo .chartUser .userChartTitle,
+  .teleSalesinfo .newLineChart .userChartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0; }
+  .teleSalesinfo .chartUser .infoBars,
+  .teleSalesinfo .newLineChart .infoBars {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px; }
+    .teleSalesinfo .chartUser .infoBars .infoBars-subtitle,
+    .teleSalesinfo .newLineChart .infoBars .infoBars-subtitle {
+      padding: 7px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer; }
+    .teleSalesinfo .chartUser .infoBars .allColor,
+    .teleSalesinfo .newLineChart .infoBars .allColor {
+      color: rgba(96, 163, 208, 0.7); }
+    .teleSalesinfo .chartUser .infoBars .hotColor,
+    .teleSalesinfo .newLineChart .infoBars .hotColor {
+      color: rgba(96, 163, 208, 0.5); }
+    .teleSalesinfo .chartUser .infoBars .pqColor,
+    .teleSalesinfo .newLineChart .infoBars .pqColor {
+      color: rgba(96, 163, 208, 0.9); }
+    .teleSalesinfo .chartUser .infoBars .notColor,
+    .teleSalesinfo .newLineChart .infoBars .notColor {
+      color: rgba(96, 163, 208, 0.4); }
+    .teleSalesinfo .chartUser .infoBars .rejectedColor,
+    .teleSalesinfo .newLineChart .infoBars .rejectedColor {
+      color: rgba(255, 181, 60, 0.6); }
+    .teleSalesinfo .chartUser .infoBars .delectedColor,
+    .teleSalesinfo .newLineChart .infoBars .delectedColor {
+      color: rgba(255, 141, 0, 0.7); }
+    .teleSalesinfo .chartUser .infoBars .retainedColor,
+    .teleSalesinfo .newLineChart .infoBars .retainedColor {
+      color: rgba(255, 104, 0, 0.7); }
+.teleSalesinfo .chartUser .infoBars {
+  margin-top: 10px; }
+.teleSalesinfo .newLineChart {
+  padding: 10px;
+  height: 380px; }
+.teleSalesinfo .teleReportbarTabs {
+  position: relative;
+  width: 100%;
+  display: inline-block; }
+  .teleSalesinfo .teleReportbarTabs .tabReportUser {
+    width: 50%;
+    padding: 17px 50px;
+    font-size: 14px;
+    background: #f3f3f4;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer; }
+  .teleSalesinfo .teleReportbarTabs .tabEnable {
+    background: #dbebe3;
+    color: #0A9A7A;
+    font-weight: bold;
+    pointer-events: none; }
+.teleSalesinfo .width50 {
+  width: 70%;
+  padding: 0;
+  margin: 25px auto 0;
+  position: relative;
+  float: none; }
+.teleSalesinfo .Uheader {
+  background: #f3f3f4;
+  width: 100%;
+  float: left; }
+  .teleSalesinfo .Uheader .UheaderElm {
+    float: left;
+    padding: 14px;
+    text-align: center;
+    border-right: 2px solid #f9f9f9;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #777;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .teleSalesinfo .Uheader .UheaderElm:last-child {
+      border-right: 0; }
+.teleSalesinfo .width10 {
+  width: 10%; }
+.teleSalesinfo .width55 {
+  width: 55%; }
+.teleSalesinfo .width35 {
+  width: 35%; }
+.teleSalesinfo .Ubody {
+  width: 100%;
+  float: left; }
+  .teleSalesinfo .Ubody .UTbody {
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #f9f9f9; }
+    .teleSalesinfo .Ubody .UTbody:last-of-type {
+      border-bottom: 0; }
+    .teleSalesinfo .Ubody .UTbody .UbodyElm {
+      position: relative;
+      float: left;
+      padding: 14px;
+      text-align: center;
+      border-right: 2px solid #f9f9f9;
+      font-size: 14px;
+      color: #000;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 47px; }
+      .teleSalesinfo .Ubody .UTbody .UbodyElm:last-child {
+        border-right: 0; }
+.teleSalesinfo .chartUserPadd {
+  padding: 13px; }
+
+.k-tooltip {
+  z-index: 2000000000000 !important; }
+
+.out-Chart-Bar {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 80%;
+  overflow: hidden; }
+
+.goleft {
+  left: 33px;
+  padding-left: 3px !important; }
+  .goleft:before {
+    content: '\f060';
+    font-family: FontAwesome; }
+
+.goright {
+  right: 33px;
+  padding-right: 3px !important; }
+  .goright:before {
+    content: '\f061';
+    font-family: FontAwesome; }
+
+.goslideHidden {
+  opacity: .4;
+  pointer-events: none; }
+
+.goleft,
+.goright {
+  position: absolute;
+  top: 23px;
+  font-size: 20px;
+  color: rgba(96, 163, 208, 0.9);
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  padding-top: 6px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(96, 163, 208, 0.15);
+  cursor: pointer; }
+  .goleft:hover, .goleft:focus,
+  .goright:hover,
+  .goright:focus {
+    color: rgba(96, 163, 208, 0.9); }
+
+.chart-bar-slide {
+  position: absolute;
+  width: 10000px;
+  bottom: 20px;
+  left: 0;
+  border-top: 1px solid #eee;
+  -webkit-animation: chartbarslide 0.7s 1 forwards;
+  -moz-animation: chartbarslide 0.7s 1 forwards;
+  -o-animation: chartbarslide 0.7s 1 forwards;
+  animation: chartbarslide 0.7s 1 forwards;
+  overflow: hidden; }
+@-webkit-keyframes chartbarslide {
+  0% {
+    height: 0; }
+  100% {
+    height: 262px; } }
+@-moz-keyframes chartbarslide {
+  0% {
+    height: 0; }
+  100% {
+    height: 262px; } }
+@-ms-keyframes chartbarslide {
+  0% {
+    height: 0; }
+  100% {
+    height: 262px; } }
+@keyframes chartbarslide {
+  0% {
+    height: 0; }
+  100% {
+    height: 262px; } }
+  .chart-bar-slide .chart-Bar-T {
+    position: relative;
+    width: 20%;
+    max-width: 227.39px;
+    float: left;
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: justify;
+    border-left: 1px solid #eee; }
+    .chart-bar-slide .chart-Bar-T:first-child {
+      border-left: 0; }
+    .chart-bar-slide .chart-Bar-T .barT-main {
+      width: 16.5%;
+      float: left;
+      height: 90%;
+      position: relative; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barD {
+        position: absolute;
+        width: 95%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barTipVal {
+        background: rgba(238, 238, 238, 0.9);
+        color: #000;
+        padding: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        top: 10px;
+        left: 31px;
+        opacity: 0;
+        white-space: nowrap;
+        font-size: 12px; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDone {
+        background: rgba(96, 163, 208, 0.7);
+        -webkit-animation: barDone 1s 1 forwards;
+        -moz-animation: barDone 1s 1 forwards;
+        -o-animation: barDone 1s 1 forwards;
+        animation: barDone 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDone:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDone:hover .tipone {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDtwo {
+        background: rgba(96, 163, 208, 0.5);
+        -webkit-animation: barDtwo 1s 1 forwards;
+        -moz-animation: barDtwo 1s 1 forwards;
+        -o-animation: barDtwo 1s 1 forwards;
+        animation: barDtwo 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDtwo:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDtwo:hover .tiptwo {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDthree {
+        background: rgba(96, 163, 208, 0.9);
+        -webkit-animation: barDthree 1s 1 forwards;
+        -moz-animation: barDthree 1s 1 forwards;
+        -o-animation: barDthree 1s 1 forwards;
+        animation: barDthree 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDthree:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDthree:hover .tipthree {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDfour {
+        background: rgba(96, 163, 208, 0.4);
+        -webkit-animation: barDfour 1s 1 forwards;
+        -moz-animation: barDfour 1s 1 forwards;
+        -o-animation: barDfour 1s 1 forwards;
+        animation: barDfour 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDfour:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDfour:hover .tipfour {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDfive {
+        background: rgba(255, 181, 60, 0.6);
+        -webkit-animation: barDfive 1s 1 forwards;
+        -moz-animation: barDfive 1s 1 forwards;
+        -o-animation: barDfive 1s 1 forwards;
+        animation: barDfive 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDfive:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDfive:hover .tipfive {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDsix {
+        background: rgba(255, 141, 0, 0.7);
+        -webkit-animation: barDsix 1s 1 forwards;
+        -moz-animation: barDsix 1s 1 forwards;
+        -o-animation: barDsix 1s 1 forwards;
+        animation: barDsix 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDsix:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDsix:hover .tipsix {
+            opacity: 1;
+            z-index: 10000000; }
+      .chart-bar-slide .chart-Bar-T .barT-main .barDseven {
+        background: rgba(255, 104, 0, 0.7);
+        -webkit-animation: barDseven 1s 1 forwards;
+        -moz-animation: barDseven 1s 1 forwards;
+        -o-animation: barDseven 1s 1 forwards;
+        animation: barDseven 1s 1 forwards;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s; }
+        .chart-bar-slide .chart-Bar-T .barT-main .barDseven:hover {
+          bottom: 3%; }
+          .chart-bar-slide .chart-Bar-T .barT-main .barDseven:hover .tipseven {
+            opacity: 1;
+            z-index: 10000000; }
+    .chart-bar-slide .chart-Bar-T .setDateUser {
+      float: left;
+      width: 100%;
+      padding: 8px;
+      text-align: center;
+      font-size: 12px; }
+  .chart-bar-slide .overTool {
+    opacity: 1 !important;
+    z-index: 10000000; }
+  .chart-bar-slide .barBott {
+    bottom: 3% !important; }
+
+/* Rounded sliders */
+.slider.round {
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  border-radius: 34px; }
+
+.slider.round:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+.userReport {
+  height: 451px !important;
+  padding-top: 5px !important; }
+
+.highcharts-button,
+.highcharts-axis-title,
+.highcharts-credits {
+  display: none; }
+
+.highcharts-tooltip .highcharts-tooltip-box {
+  stroke: transparent !important; }
+
+.modalCharts .uniqueCall-Modal:before {
+  content: "";
+  left: 100px; }
+.modalCharts .totalCalls-Modal:before {
+  content: "";
+  left: 100px; }
+.modalCharts .totalCalls-Modal,
+.modalCharts .uniqueCall-Modal {
+  position: absolute;
+  width: 55%;
+  height: 402px;
+  left: 100%;
+  top: 3px;
+  background: #fff;
+  z-index: 300000000000000000;
+  border: 1px solid #eee;
+  padding: 16px; }
+  .modalCharts .totalCalls-Modal:before,
+  .modalCharts .uniqueCall-Modal:before {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    z-index: 10;
+    top: -8px;
+    border-bottom: 8px solid #333;
+    transform: rotate(0); }
+.modalCharts .totalCalls-Modal .highcharts-container,
+.modalCharts .uniqueCall-Modal .highcharts-container {
+  height: 375px !important; }
+
+.uniqueNow {
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  top: 116px;
+  right: -100%;
+  background: rgba(219, 235, 227, 0.3);
+  z-index: 3000;
+  -webkit-animation: uniqueNow 0.7s 1 forwards;
+  -moz-animation: uniqueNow 0.7s 1 forwards;
+  -o-animation: uniqueNow 0.7s 1 forwards;
+  animation: uniqueNow 0.7s 1 forwards;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+@-webkit-keyframes uniqueNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 21.5%; } }
+@-moz-keyframes uniqueNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 21.5%; } }
+@-ms-keyframes uniqueNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 21.5%; } }
+@keyframes uniqueNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 21.5%; } }
+.callsNow {
+  -webkit-animation: callsNow 0.7s 1 forwards;
+  -moz-animation: callsNow 0.7s 1 forwards;
+  -o-animation: callsNow 0.7s 1 forwards;
+  animation: callsNow 0.7s 1 forwards; }
+
+@-webkit-keyframes callsNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 22px; } }
+@-moz-keyframes callsNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 22px; } }
+@-ms-keyframes callsNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 22px; } }
+@keyframes callsNow {
+  0% {
+    left: 100%; }
+  100% {
+    left: 22px; } }
+.callsNow,
+.callsBack {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.clseTCalls,
+.clseUCalls {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 9px; }
+
+.modalCharts-Open,
+.modalCharts-Open-Now {
+  width: 100%;
+  height: 410px;
+  position: absolute;
+  top: 116px;
+  right: -100%;
+  background: rgba(219, 235, 227, 0.3);
+  z-index: 3000;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.modalCharts-Open {
+  -webkit-animation: modalChartsOpen 0.7s 1 forwards;
+  -moz-animation: modalChartsOpen 0.7s 1 forwards;
+  -o-animation: modalChartsOpen 0.7s 1 forwards;
+  animation: modalChartsOpen 0.7s 1 forwards; }
+
+@-webkit-keyframes modalChartsOpen {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@-moz-keyframes modalChartsOpen {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@-ms-keyframes modalChartsOpen {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@keyframes modalChartsOpen {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+.modalCharts-Open-Now {
+  -webkit-animation: modalChartsOpenNow 0.7s 1 forwards;
+  -moz-animation: modalChartsOpenNow 0.7s 1 forwards;
+  -o-animation: modalChartsOpenNow 0.7s 1 forwards;
+  animation: modalChartsOpenNow 0.7s 1 forwards; }
+
+@-webkit-keyframes modalChartsOpenNow {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@-moz-keyframes modalChartsOpenNow {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@-ms-keyframes modalChartsOpenNow {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+@keyframes modalChartsOpenNow {
+  0% {
+    right: -100%; }
+  100% {
+    right: 0; } }
+.opacity07 {
+  opacity: .7 !important; }
+
+.totalCalls:hover,
+.uniqueCall:hover {
+  opacity: .7 !important; }
+
+.UserReportBtns {
+  position: relative;
+  z-index: 1;
+  padding: 12px;
+  padding-bottom: 0;
+  padding-top: 5px;
+  width: auto;
+  float: right; }
+  .UserReportBtns .ReportBtn {
+    position: relative;
+    width: 65px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-left: 0;
+    font-size: 11px;
+    background: #f9f9f9;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 2px;
+    color: #333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+    text-align: center; }
+    .UserReportBtns .ReportBtn:hover, .UserReportBtns .ReportBtn:focus {
+      text-decoration: none; }
+    .UserReportBtns .ReportBtn .Top {
+      float: left;
+      width: 100%;
+      margin: 3px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0; }
+    .UserReportBtns .ReportBtn .Bottom {
+      float: left;
+      width: 100%;
+      margin: 0;
+      font-size: 13px;
+      font-weight: bold; }
+  .UserReportBtns .ReportSmallBtn {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin: 4px;
+    float: left;
+    margin-right: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: bold; }
+  .UserReportBtns .ReportSmallBtnEbable {
+    color: #0A9A7A;
+    cursor: default; }
+  .UserReportBtns .btnEnable {
+    opacity: 1;
+    background: #0A9A7A;
+    color: #fff;
+    border: 1px solid #0A9A7A; }
+
+#chartUserReportDeleted,
+#chartUserReportRetained,
+#chartUserReportRejected,
+#chartUserReportTransPQ,
+#chartUserReportTransNotHQPQ {
+  display: none; }
+
+.highcharts-title {
+  font-size: 15px !important;
+  fill: #999 !important; }
+
+.product-telesales {
+  display: none; }
+
+.chartUserReport,
+.chartUserReport_In {
+  width: 100%;
+  position: relative;
+  float: left; }
+
+.chartUserReport {
+  height: 84%; }
+
+.chartUserReport_In {
+  height: 90%;
+  max-height: 313.73px; }
+  .chartUserReport_In .leftNumbChart {
+    width: 5%;
+    position: relative;
+    float: left;
+    margin-right: 5px; }
+  .chartUserReport_In .rightNChart {
+    width: 94%;
+    position: relative;
+    float: left;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+    .chartUserReport_In .rightNChart .trr {
+      width: 100%;
+      float: left;
+      height: 20%;
+      border-bottom: 1px solid #eee; }
+    .chartUserReport_In .rightNChart .nChartPl {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+      .chartUserReport_In .rightNChart .nChartPl .bltr {
+        width: 12.5%;
+        position: relative;
+        height: 100%;
+        float: left; }
+        .chartUserReport_In .rightNChart .nChartPl .bltr:hover {
+          background: rgba(226, 217, 242, 0.13); }
+        .chartUserReport_In .rightNChart .nChartPl .bltr .mh {
+          width: 10px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 45%; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .CBullet {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            transition: 0.1s;
+            -webkit-transition: 0.1s;
+            -moz-transition: 0.1s;
+            -o-transition: 0.1s;
+            z-index: 1000; }
+            .chartUserReport_In .rightNChart .nChartPl .bltr .mh .CBullet:hover {
+              width: 13px;
+              height: 13px;
+              left: -1.5px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .blueBlt {
+            background: #7cb5ec; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .redBlt {
+            background: #f15c80; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .blackBlt {
+            background: #000; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .greenBlt {
+            background: #90ed7d; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .orangeBlt {
+            background: #f7a35c; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .purpleBlt {
+            background: #8085e9; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .svgLine {
+            height: 2px;
+            left: 0; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b0 {
+            width: 138px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 28.4%;
+            transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b1 {
+            width: 140px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 40%;
+            transform: rotate(-16deg);
+            -webkit-transform: rotate(-16deg);
+            -moz-transform: rotate(-16deg);
+            -o-transform: rotate(-16deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b2 {
+            width: 154px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 32%;
+            transform: rotate(34.5deg);
+            -webkit-transform: rotate(34.5deg);
+            -moz-transform: rotate(34.5deg);
+            -o-transform: rotate(34.5deg);
+            left: -4px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b3 {
+            width: 187px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 39%;
+            transform: rotate(-46deg);
+            -webkit-transform: rotate(-46deg);
+            -moz-transform: rotate(-46deg);
+            -o-transform: rotate(-46deg);
+            left: -22px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b4 {
+            width: 130px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 59.5%;
+            transform: rotate(4deg);
+            -webkit-transform: rotate(4deg);
+            -moz-transform: rotate(4deg);
+            -o-transform: rotate(4deg);
+            left: 7px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b5 {
+            width: 138px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 66.3%;
+            transform: rotate(-21.9deg);
+            -webkit-transform: rotate(-21.9deg);
+            -moz-transform: rotate(-21.9deg);
+            -o-transform: rotate(-21.9deg);
+            left: 3px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .b6 {
+            width: 204px;
+            border-bottom: 2px solid #7cb5ec;
+            position: absolute;
+            bottom: 47.5%;
+            transform: rotate(52deg);
+            -webkit-transform: rotate(52deg);
+            -moz-transform: rotate(52deg);
+            -o-transform: rotate(52deg);
+            left: -31px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r0 {
+            width: 141px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 25%;
+            transform: rotate(23deg);
+            -webkit-transform: rotate(23deg);
+            -moz-transform: rotate(23deg);
+            -o-transform: rotate(23deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r1 {
+            width: 209px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 42%;
+            transform: rotate(-53deg);
+            -webkit-transform: rotate(-53deg);
+            -moz-transform: rotate(-53deg);
+            -o-transform: rotate(-53deg);
+            left: -34px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r2 {
+            width: 220px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 40%;
+            transform: rotate(54deg);
+            -webkit-transform: rotate(54deg);
+            -moz-transform: rotate(54deg);
+            -o-transform: rotate(54deg);
+            left: -37px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r3 {
+            width: 126px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 10%;
+            transform: rotate(4deg);
+            -webkit-transform: rotate(4deg);
+            -moz-transform: rotate(4deg);
+            -o-transform: rotate(4deg);
+            left: 8px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r4 {
+            width: 178px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 27%;
+            transform: rotate(-43deg);
+            -webkit-transform: rotate(-43deg);
+            -moz-transform: rotate(-43deg);
+            -o-transform: rotate(-43deg);
+            left: -17px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r5 {
+            width: 139px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 40.5%;
+            transform: rotate(19deg);
+            -webkit-transform: rotate(19deg);
+            -moz-transform: rotate(19deg);
+            -o-transform: rotate(19deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .r6 {
+            width: 191px;
+            border-bottom: 2px solid #f15c80;
+            position: absolute;
+            bottom: 55%;
+            transform: rotate(-47deg);
+            -webkit-transform: rotate(-47deg);
+            -moz-transform: rotate(-47deg);
+            -o-transform: rotate(-47deg);
+            left: -25px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl0 {
+            width: 220px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 53%;
+            transform: rotate(52deg);
+            -webkit-transform: rotate(52deg);
+            -moz-transform: rotate(52deg);
+            -o-transform: rotate(52deg);
+            left: -36px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl1 {
+            width: 163px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 41%;
+            transform: rotate(-36deg);
+            -webkit-transform: rotate(-36deg);
+            -moz-transform: rotate(-36deg);
+            -o-transform: rotate(-36deg);
+            left: -8px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl2 {
+            width: 152px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 44%;
+            transform: rotate(31deg);
+            -webkit-transform: rotate(31deg);
+            -moz-transform: rotate(31deg);
+            -o-transform: rotate(31deg);
+            left: -4px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl3 {
+            width: 139px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 22.3%;
+            transform: rotate(21deg);
+            -webkit-transform: rotate(21deg);
+            -moz-transform: rotate(21deg);
+            -o-transform: rotate(21deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl4 {
+            width: 180px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 34%;
+            transform: rotate(-43deg);
+            -webkit-transform: rotate(-43deg);
+            -moz-transform: rotate(-43deg);
+            -o-transform: rotate(-43deg);
+            left: -15px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl5 {
+            width: 172px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 71%;
+            transform: rotate(-40deg);
+            -webkit-transform: rotate(-40deg);
+            -moz-transform: rotate(-40deg);
+            -o-transform: rotate(-40deg);
+            left: -14px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .bl6 {
+            width: 284px;
+            border-bottom: 2px solid #000;
+            position: absolute;
+            bottom: 50%;
+            transform: rotate(62.5deg);
+            -webkit-transform: rotate(62.5deg);
+            -moz-transform: rotate(62.5deg);
+            -o-transform: rotate(62.5deg);
+            left: -70px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g0 {
+            width: 191px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 29%;
+            transform: rotate(133deg);
+            -webkit-transform: rotate(133deg);
+            -moz-transform: rotate(133deg);
+            -o-transform: rotate(133deg);
+            left: -21px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g1 {
+            width: 172px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 33%;
+            transform: rotate(42deg);
+            -webkit-transform: rotate(42deg);
+            -moz-transform: rotate(42deg);
+            -o-transform: rotate(42deg);
+            left: -15px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g2 {
+            width: 138px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 8.3%;
+            transform: rotate(13.5deg);
+            -webkit-transform: rotate(13.5deg);
+            -moz-transform: rotate(13.5deg);
+            -o-transform: rotate(13.5deg);
+            left: 5px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g3 {
+            width: 236px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 35%;
+            transform: rotate(123deg);
+            -webkit-transform: rotate(123deg);
+            -moz-transform: rotate(123deg);
+            -o-transform: rotate(123deg);
+            left: -45px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g4 {
+            width: 240px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 35%;
+            transform: rotate(57deg);
+            -webkit-transform: rotate(57deg);
+            -moz-transform: rotate(57deg);
+            -o-transform: rotate(57deg);
+            left: -46px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g5 {
+            width: 183px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 22%;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            left: -21px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .g6 {
+            width: 138px;
+            border-bottom: 2px solid #90ed7d;
+            position: absolute;
+            bottom: 49.4%;
+            transform: rotate(-14deg);
+            -webkit-transform: rotate(-14deg);
+            -moz-transform: rotate(-14deg);
+            -o-transform: rotate(-14deg);
+            left: 6px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org0 {
+            width: 192px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 32%;
+            left: -24px;
+            transform: rotate(48deg);
+            -webkit-transform: rotate(48deg);
+            -moz-transform: rotate(48deg);
+            -o-transform: rotate(48deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org1 {
+            width: 138px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 17%;
+            transform: rotate(-22deg);
+            -webkit-transform: rotate(-22deg);
+            -moz-transform: rotate(-22deg);
+            -o-transform: rotate(-22deg);
+            left: 2px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org2 {
+            width: 210px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 53%;
+            transform: rotate(-52deg);
+            -webkit-transform: rotate(-52deg);
+            -moz-transform: rotate(-52deg);
+            -o-transform: rotate(-52deg);
+            left: -33px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org3 {
+            width: 192px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 57%;
+            left: -24px;
+            transform: rotate(48deg);
+            -webkit-transform: rotate(48deg);
+            -moz-transform: rotate(48deg);
+            -o-transform: rotate(48deg); }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org4 {
+            width: 132px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 35.2%;
+            transform: rotate(-5.5deg);
+            -webkit-transform: rotate(-5.5deg);
+            -moz-transform: rotate(-5.5deg);
+            -o-transform: rotate(-5.5deg);
+            left: 6px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org5 {
+            width: 164px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 20%;
+            transform: rotate(39deg);
+            -webkit-transform: rotate(39deg);
+            -moz-transform: rotate(39deg);
+            -o-transform: rotate(39deg);
+            left: -12px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .org6 {
+            width: 177px;
+            border-bottom: 2px solid #f7a35c;
+            position: absolute;
+            bottom: 22%;
+            transform: rotate(-44deg);
+            -webkit-transform: rotate(-44deg);
+            -moz-transform: rotate(-44deg);
+            -o-transform: rotate(-44deg);
+            left: -16px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr0 {
+            width: 164px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 80%;
+            transform: rotate(37deg);
+            -webkit-transform: rotate(37deg);
+            -moz-transform: rotate(37deg);
+            -o-transform: rotate(37deg);
+            left: -12px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr1 {
+            width: 138px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 72%;
+            transform: rotate(-22deg);
+            -webkit-transform: rotate(-22deg);
+            -moz-transform: rotate(-22deg);
+            -o-transform: rotate(-22deg);
+            left: 2px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr2 {
+            width: 169px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 63%;
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg);
+            -o-transform: rotate(40deg);
+            left: -12px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr3 {
+            width: 132px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 43%;
+            transform: rotate(9.5deg);
+            -webkit-transform: rotate(9.5deg);
+            -moz-transform: rotate(9.5deg);
+            -o-transform: rotate(9.5deg);
+            left: 6px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr4 {
+            width: 203px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 64%;
+            transform: rotate(-50.3deg);
+            -webkit-transform: rotate(-50.3deg);
+            -moz-transform: rotate(-50.3deg);
+            -o-transform: rotate(-50.3deg);
+            left: -29px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr5 {
+            width: 252px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 55%;
+            transform: rotate(60deg);
+            -webkit-transform: rotate(60deg);
+            -moz-transform: rotate(60deg);
+            -o-transform: rotate(60deg);
+            left: -55px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .mh .pr6 {
+            width: 189px;
+            border-bottom: 2px solid #8085e9;
+            position: absolute;
+            bottom: 42%;
+            transform: rotate(-47deg);
+            -webkit-transform: rotate(-47deg);
+            -moz-transform: rotate(-47deg);
+            -o-transform: rotate(-47deg);
+            left: -21px; }
+        .chartUserReport_In .rightNChart .nChartPl .bltr .blTrTip {
+          background: rgba(249, 249, 249, 0.9);
+          border: 1px solid #eee;
+          width: 167px;
+          position: absolute;
+          right: 77px;
+          top: 23%;
+          z-index: 10000;
+          padding: 8px;
+          display: none; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .blTrTip .tipDate {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            color: #999;
+            padding-left: 10px;
+            margin-bottom: 7px; }
+          .chartUserReport_In .rightNChart .nChartPl .bltr .blTrTip .ProAc {
+            width: 100%;
+            padding-left: 16px;
+            font-size: 10px;
+            margin-bottom: 5px; }
+            .chartUserReport_In .rightNChart .nChartPl .bltr .blTrTip .ProAc:last-of-type {
+              margin-bottom: 0; }
+            .chartUserReport_In .rightNChart .nChartPl .bltr .blTrTip .ProAc .ttVal {
+              font-size: 11px;
+              float: right;
+              font-weight: bold; }
+    .chartUserReport_In .rightNChart .datChCon {
+      width: 12.5%;
+      height: 100%;
+      position: relative;
+      float: left;
+      padding: 5px;
+      text-align: center;
+      font-size: 11px;
+      color: #999; }
+      .chartUserReport_In .rightNChart .datChCon:last-of-type {
+        border-right: 1px solid #eee; }
+  .chartUserReport_In .leftNumbChart,
+  .chartUserReport_In .rightNChart {
+    height: 100%; }
+  .chartUserReport_In .leftNumbChart .chartScl {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    color: #999;
+    text-align: right;
+    position: relative;
+    margin-bottom: 83%;
+    top: -7px; }
+    .chartUserReport_In .leftNumbChart .chartScl:last-of-type {
+      margin-bottom: 0; }
+
+.ActionsPro {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding: 7px;
+  height: 60px; }
+  .ActionsPro .ActP_In {
+    position: absolute;
+    width: 45%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 8px; }
+    .ActionsPro .ActP_In .ProAc {
+      font-size: 11px;
+      font-weight: bold;
+      padding-left: 15px;
+      margin-right: 15px;
+      cursor: pointer; }
+
+.ProAc {
+  position: relative;
+  float: left; }
+  .ProAc:last-child {
+    margin-right: 0; }
+  .ProAc:before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    top: 1.85px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background: #ddd; }
+
+.trsCl:before {
+  background: #7cb5ec; }
+
+.delCl:before {
+  background: #f15c80; }
+
+.rejCl:before {
+  background: #000; }
+
+.retCl:before {
+  background: #90ed7d; }
+
+.trPQCl:before {
+  background: #f7a35c; }
+
+.trxCl:before {
+  background: #8085e9; }
+
+.linOpc {
+  color: #ddd; }
+  .linOpc:before {
+    background: #ddd; }
+
+.chartDN {
+  display: none; }
+
+.ProductsLoop {
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  column-width: 13em;
+  -moz-column-gap: 5px;
+  -webkit-column-gap: 5px;
+  column-gap: 5px;
+  position: relative; }
+  .ProductsLoop .ProdItem {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #DBEBE3;
+    margin-top: 5px; }
+    .ProductsLoop .ProdItem .prod-name {
+      width: 100%;
+      background: #eee;
+      padding: 5px 10px;
+      font-size: 11px;
+      color: #999;
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold; }
+    .ProductsLoop .ProdItem .prod-commands {
+      display: inline-block;
+      padding: 7px;
+      width: 100%; }
+      .ProductsLoop .ProdItem .prod-commands .rights-blk {
+        display: inline-block;
+        width: 100%; }
+        .ProductsLoop .ProdItem .prod-commands .rights-blk .right_title {
+          display: inline-block;
+          font-size: 11px;
+          color: #000;
+          position: relative;
+          font-weight: 500; }
+  .ProductsLoop p {
+    margin: 0;
+    text-align: left;
+    line-height: 20px; }
+  .ProductsLoop .switch_prod {
+    position: relative;
+    float: right; }
+    .ProductsLoop .switch_prod .switch {
+      height: 17px; }
+      .ProductsLoop .switch_prod .switch .slider {
+        background: transparent;
+        border: 2px solid #eee; }
+        .ProductsLoop .switch_prod .switch .slider:before {
+          content: "";
+          bottom: 1px; }
+    .ProductsLoop .switch_prod input:checked + .slider {
+      background: transparent;
+      border: 2px solid #0A9A7A; }
+  .ProductsLoop .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 21px;
+    top: 2px;
+    margin-bottom: 0; }
+    .ProductsLoop .switch input {
+      display: none; }
+  .ProductsLoop .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    background: #ddd;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    height: 18px; }
+    .ProductsLoop .slider:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      left: 2px;
+      bottom: -5px;
+      background: #eee;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      z-index: 300;
+      border: 1px solid #eee; }
+    .ProductsLoop .slider .switchBtn {
+      text-transform: uppercase; }
+      .ProductsLoop .slider .switchBtn:after {
+        content: "Off";
+        position: absolute;
+        right: 6px;
+        top: 9px;
+        font-size: 10px;
+        color: #999; }
+      .ProductsLoop .slider .switchBtn:before {
+        content: "On";
+        position: absolute;
+        left: 7px;
+        top: 9px;
+        font-size: 11px;
+        color: #fff; }
+  .ProductsLoop input:checked + .slider:before {
+    transform: translateX(11px);
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    -moz-transform: translateX(11px);
+    background: #0A9A7A;
+    border: 2px solid #0A9A7A; }
+
+.merchantInfo .ProductsLoop .ProdItem .prod-name {
+  cursor: pointer; }
+
+.teleSrightNav {
+  display: none; }
+
+/*<script>
+    $(document).ready(function () {
+        $('.grid-conv-full').masonry({
+            itemSelector: '.conv-grid-item',
+            columnWidth: 230,
+            isFitWidth: true
+        });
+    });
+ 
+</script>*/
+
+/*# sourceMappingURL=rightnav.css.map */

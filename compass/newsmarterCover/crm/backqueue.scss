@@ -1,0 +1,523 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('backQueue') {
+	.backQueueTemp {
+
+		template {
+			display: block;
+		}
+
+		.backqueueGrid, 
+		.backqueueTasks {
+			position: relative;
+			float: left;
+		}
+
+		.backqueueGrid {
+			width: $max-conv-width / 2 - 10; // 40%
+			padding-right: $small-fix-10 + 2; // 12px
+			.backQueueGr_In {
+				position: relative; 
+				width: $max-conv-width; 
+				height: $max-conv-height; 
+				border: 1px solid #ddd;
+				.GridHeader {
+					position: relative;
+					width: $max-conv-width;
+					height: $small-fix-33;
+					background: #eee;
+					border-bottom: 1px solid #ddd;
+					.ExportGridBtn {
+						position: absolute;
+					    top: 1px;
+					    left: 1px;
+					    height: $small-fix-27 + 2;
+					    background: $white;
+					    padding: $small-fix-03 + 1 + 0.5; // 4.5px
+					    padding-left: $small-fix-27 + 1;
+					    padding-right: $small-fix-15;
+					    padding-top: $small-fix-05 + 1;
+					    border: 1px solid #eee;
+					    font-size: $small-fix-10 + 1;
+					    color: #777;
+					    cursor: pointer;
+					    @include transition(.2s);
+					    &:hover {
+					    	background: #3d566e;
+    						color: $white;
+    						&:before {
+    							color: $white;
+    						}
+					    }
+					    &:before {
+					    	content: '\f1c3';
+						    font-family: FontAwesome;
+						    color: #3d566e;
+						    position: absolute;
+						    top: $small-fix-05 + 0.5;
+						    left: $small-fix-07 + 1;
+						    font-size: $small-fix-13;
+					    }
+					}
+				}
+				.GridHead {
+					width: $max-conv-width;
+					float: left;
+					.aRdTh {
+						position: relative;
+						width: 14.28%; // 7 columns width
+					    height: $small-fix-30;
+					    padding: $small-fix-05;
+					    float: left;
+					    border: 1px solid #eee;
+					    border-right: $null-conv;
+					    border-top: $null-conv;
+					    background: #f9f9f9;
+					    font-size: $small-fix-10;
+					    text-transform: uppercase;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					    padding-top: $small-fix-07 + 2;
+					    color: #777;
+					    cursor: pointer;
+					    .aRin {
+					    	position: absolute;
+						    top: 1px;
+						    border: $null-conv;
+						    height: $max-conv-height - 10; // 90%
+						    left: 1px;
+						    width: 97%;
+						    padding: $small-fix-07;
+						    &:focus {
+						    	outline: $null-conv;
+						    }
+					    }
+					}
+					.IDate {
+						&:before {
+							content: '\e836';
+							font-family: Linearicons-Free;
+							position: absolute;
+							top: $small-fix-05;
+							right: $small-fix-07 + 1;
+							z-index: 100;
+							font-size: $small-fix-15;
+						}
+					}
+					.arrdw {
+						&:before {
+					    	content: '\e874';
+					    	font-family: Linearicons-Free;
+					    	position: absolute;
+					    	top: $small-fix-07 + 2;
+					    	right: $small-fix-05;
+					    	font-size: $small-fix-07 + 2;
+					    }
+					}
+				}
+
+				.GridBody {
+					width: $max-conv-width;
+					float: left;
+					max-height: 73.6vh;
+					overflow: hidden;
+					.BTr {
+						width: $max-conv-width;
+						float: left;
+						height: 27px;
+					}
+					.aRdTd {
+						position: relative;
+						width: 14.28%; // Width For 7 Columns
+						height: $max-conv-height;
+					    padding: $small-fix-05;
+					    float: left;
+					    border: 1px solid #eee;
+					    border-right: $null-conv;
+					    border-top: $null-conv;
+					    font-size: $small-fix-10;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					    padding-top: $small-fix-07;
+					    color: #777;
+					    text-transform: capitalize;
+					}
+				}
+				.GridFooter {
+					width: $max-conv-width;
+					height: $small-fix-33; // 33px
+					float: left;
+					padding: $small-fix-07;
+					background: #eee;
+					border-top: 1px solid #ddd;
+				}
+			}
+		}
+
+		.backqueueTasks {
+			width: $max-conv-width / 2 + 10; // 60%
+			.backQueueDetails-Left, 
+			.backQueueDetails-Right {
+				position: relative;
+				width: $max-conv-width / 2;
+			}
+			.backQueueDetails {
+				&-Left {
+					float: left;
+					padding-right: $small-fix-10;
+					.formBoard_Title {
+						.pliExpandLeft, 
+						.pliNormalLeft {
+							position: absolute;
+							right: $small-fix-15;
+							top: $small-fix-03;
+							font-size: $small-fix-20;
+							cursor: pointer;
+						}
+					}
+				}
+				&-Right {
+					float: right;
+					border-left: $null-conv;
+				    padding-bottom: $small-fix-05;
+				    .detWSmall_Fl {
+				    	width: $max-conv-width;
+				    	background: #f9f9f9;
+    					padding: $small-fix-05 + 1;
+				    	.pliExpandRight, 
+						.pliNormalRight {
+							position: absolute;
+							left: $small-fix-03;
+							top: $small-fix-01;
+							font-size: $small-fix-20;
+							font-weight: bold;
+							cursor: pointer;
+						}
+				    }
+				    .boxInp {
+				    	width: 31.6%;
+				    	float: left;
+					    margin: .84%;
+					    margin-top: $small-fix-05;
+					    margin-bottom: $small-fix-05;
+					    position: relative;
+				    }
+				}
+			}
+		}
+		.taskSection {
+			display: block !important;
+			top: $null-conv;
+			padding-right: $null-conv;
+			height: auto;
+			.allTabs-Content {
+				.notes_Floor {
+					max-height: 35vh;
+				}
+			} 
+		}
+		.costumerDetails {
+			.details_Left {
+				width: $max-conv-width;
+				padding-bottom: $small-fix-15;
+				&:last-child {
+					padding-bottom: $null-conv;
+				}
+			}
+			.tAmount {
+				width: $max-conv-width;
+				float: left;
+				padding-bottom: $small-fix-10;
+				&:last-child {
+					padding-bottom: $null-conv;
+				}
+
+				label { color: #3d566e; }
+
+				.tbGrid {
+					background: #f9f9f9;
+				    padding: $small-fix-03;
+				    border: 1px solid #eee;
+				    margin-left: $small-fix-07;
+				    box-sizing: border-box;
+				    margin-right: $small-fix-07;
+				    top: 1px;
+				    position: relative;
+				    color: #3d566e;
+				    &:focus {
+				    	outline: $null-conv;
+				    }
+				}
+				.tbGridUpBt {
+					border: $null-conv;
+				    background: #1fadcf;
+				    color: $white;
+				    font-size: $small-fix-10 + 2;
+				    padding: $small-fix-05 + 0.5; // 5.5px
+				    padding-left: $small-fix-15;
+				    padding-right: $small-fix-15;
+				    &:focus {
+				    	outline: $null-conv;
+				    }
+				}
+			}
+		}
+
+		.UpdateLetter {
+			width: $max-conv-width; // 150px
+			float: left;
+	  		height: $small-fix-50; // 50px
+	  		padding: $small-fix-40 + 1; // 41px
+	  		margin-top: $small-fix-07;
+		}
+		.checkmark {
+			background: $white;
+			border: 1px solid #ddd;
+			@include border-radius($null-conv);
+		} 
+		.boxInp {
+			width: 22.6%;
+		    float: left;
+		    margin: .84%;
+		    margin-top: $small-fix-05;
+		    margin-bottom: $small-fix-05;
+		    position: relative;
+		    font-size: $small-fix-10 + 2;
+
+			select {
+			    width: $max-conv-width;
+			    height: $small-fix-30;
+			    border: 1px solid #ddd;
+			    padding-left: $small-fix-07;
+			    padding-right: $small-fix-07;
+			    font-size: $small-fix-10 + 2;
+			    &:focus {
+			    	outline: $null-conv;
+			    }
+			}
+		}
+		hr {
+			float: left;
+		    width: $max-conv-width;
+		    border-top: 2px solid $white;
+		    margin-bottom: $small-fix-07;
+		    margin-top: $small-fix-10;
+		}
+		.Uload_fl {
+			.Uload_In {
+			    background: $white;
+			}
+		}
+		.updateCurrent_Btns {
+		    right: $small-fix-07;
+		}
+		.updateCurrent_BtnsTop {
+			right: $null-conv;
+			float: left;
+			margin-left: $small-fix-07;
+			height: $small-fix-30 + 1;
+			.CurrentBtn {
+				position: relative;
+				padding: $small-fix-07 + 1;
+			    padding-left: $small-fix-15;
+			    padding-right: $small-fix-15;
+			    font-size: $small-fix-10 + 1;
+			    cursor: pointer;
+			}
+			.CurrentBtnSelected {
+				text-decoration: none;
+			    background: #1fadcf;
+			    color: $white;
+			}
+			.paddL {
+				padding-left: $small-fix-25;
+			}
+			.searchBtn, 
+			.undoBtn {
+				&:before {
+					font-family: FontAwesome;
+					position: absolute;
+					left: $small-fix-05 + 1;
+				    top: $small-fix-05 + 1;
+				    font-size: $small-fix-13 + 1;
+				}
+			}
+			.searchBtn {
+				&:before {
+					content: '\f002';
+					color: $white;
+				}
+			}
+			.undoBtn {
+				&:before {
+					content: '\f0e2';
+					color: #999;
+				}
+				&:hover {
+					&:before {
+						color: $white;
+					}
+				}
+			}
+		}
+		.container-check {
+			.checkmark {
+				&:after {
+					left: $small-fix-07 + 1;
+			    	top: $small-fix-05;
+				} 
+			}
+		}
+		.checkmark:after {
+		    left: $small-fix-07 + 1;
+		    top: $small-fix-05;
+		}
+		.costumerDetails {
+			.costumerBoard {
+				border: $null-conv;
+			}
+		}
+
+		.generateBtn_Fl {
+			.generatePacks {
+				height: 59px;
+				padding-left: $small-fix-25;
+    			padding-top: $small-fix-03 + 1;
+				&:before {
+					left: 9%;
+					top: $small-fix-17;
+				}
+			}
+		}
+		.packT {
+			float: left;
+			font-size: $small-fix-13;
+			padding: $small-fix-03;
+		}
+		.selectPack {
+			float: right; 
+			padding-bottom: $small-fix-03 + 1;
+			#ddlTemplate {
+				width: 140px;
+				background: #f9f9f9;
+			    border: 1px solid #eee;
+			    font-size: $small-fix-13;
+			    &:focus {
+			    	outline: $null-conv;
+			    }
+			}
+		}
+
+		// Record Grid
+		@include recordGrid();
+
+		.leadlink {
+		    position: absolute;
+		    right: 38px; 
+		    top: $null-conv;
+		    color: $white;
+		    font-size: $small-fix-10;
+		    text-transform: uppercase;
+		    background: #1fadcf;
+		    padding: $small-fix-05 + 0.3; // 5.3px
+		    height: $small-fix-27;
+		    padding-top: $small-fix-07;
+		    z-index: 20;
+		    line-height: $small-fix-15 + 1;
+		    cursor: pointer;
+		}
+
+		.checkLead {
+			font-size: $small-fix-17;
+		    position: relative;
+		    margin: -2px auto $null-conv;
+		    display: table;
+		    color: #ccc;
+		    &:hover {
+		    	color: #34c634;
+		    }
+		}
+
+		.mCSB_inside > {
+			.mCSB_container { margin-right: $null-conv; }
+		}
+
+		.mCS-dark-3.mCSB_scrollTools {
+			.mCSB_dragger {
+				.mCSB_dragger_bar {
+				    background-color: $black;
+				    background-color: $rgba-black-025;
+				}
+			}
+		}
+
+		.calPlt {
+			position: absolute;
+			width: $max-conv-width;
+			height: 253px;
+			z-index: 120000;
+			top: $max-conv-top + 3; // 103%
+			left: $null-conv;
+			display: none;
+			.calen_Fl {
+				width: 257px;
+				height: $max-conv-height;
+				background: $rgba-white-09;
+				border: 1px solid #ddd;
+				position: absolute;
+				top: $null-conv;
+				left: $null-conv;
+				padding: $small-fix-10;
+			}
+		}
+
+
+
+	}
+
+	.body1008 {
+		.backqueueGrid, 
+		.backqueueTasks { 
+			height: 870px;
+			margin-top: $small-fix-03; 
+		}
+		.backQueueDetails-Left, 
+		.backQueueDetails-Right { height: 41vh; }
+	}
+
+	.body969 {
+		.backqueueGrid, 
+		.backqueueTasks { height: 830px; }
+		.backQueueDetails-Left, 
+		.backQueueDetails-Right { height: 44vh; }
+	}
+
+	.widthLong { width: $max-conv-width }
+
+	.SearchTbar {
+		float: left;
+		margin-left: $small-fix-20;
+	}
+
+
+	.tbl-hdr-row {
+		width: $max-conv-width;
+		float: left;
+		.tbl-hdr-col {
+			width: $max-conv-width / 4; // 25%
+			float: left;
+			font-size: $small-fix-13;
+			margin-bottom: 1px;
+			color: #3d566e;
+		}
+	}
+	.toplabD {
+		border-bottom: 1px solid #3d566e;
+	}
+
+
+}

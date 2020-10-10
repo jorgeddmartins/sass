@@ -1,0 +1,1749 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+@include thisComponent('home') {
+
+	.leadTNav {
+		float: left;
+		position: relative;
+		margin-bottom: $small-fix-03 + 1; // 2.49px
+		.LRefr_Fl {
+			float: left;
+			max-width: 283px; // 28.5%
+			position: relative;
+	    	top: $small-fix-03; // -3px
+			.referenceLead {
+				width: $max-conv-width;
+				float: left;
+				color: #3d566e;
+				font-size: $small-fix-17 + 1;
+				letter-spacing: -.5px;
+				word-break: break-word;
+	    		white-space: nowrap;
+	    		text-transform: uppercase;
+			}
+			.refIt {
+				float: left;
+			    font-size: $small-fix-10 + 1;
+			    color: #777;
+			    position: relative;
+			    top: -3px;
+			}
+			.createdL {
+			    padding-right: $small-fix-05;
+			    border-right: 1px solid #777;
+			}
+			.modifiedL {
+				padding-left: $small-fix-05;
+			}
+		}
+
+		.bigBtn {
+			background: #eee;
+			border: 1px solid #eee;
+			width: 119.28px;
+		}
+	}
+
+	.LRefr {
+
+		&_Btns {
+			width: 9.5%;
+		    float: right;
+		    height: 35px;
+		    margin: $small-fix-02;
+		    padding: $small-fix-07 + 2; // 9px
+		    font-size: $small-fix-10 + 1; //11px
+		    color: #777;
+		    text-transform: uppercase;
+			text-align: center;
+			cursor: pointer;
+		    &:first-of-type {
+		    	margin-right: $null-conv;
+		    }
+		}
+
+		&_Btns6 { width: 6%; }
+	}
+
+	.costumerDetails {
+		width: $max-conv-width;
+		float: left;
+		position: relative;
+		margin-bottom: $small-fix-03 + 1;
+		.costumerBoard {
+			width: 49.7%;
+			position: relative;
+			border: 1px solid #ddd;
+			.formBoard_Title {
+				position: relative;
+				padding: $small-fix-03 + 1;
+				width: $max-conv-width;
+				float: left;
+				font-size: $small-fix-10 + 2;
+				font-weight: bold;
+				text-transform: uppercase;
+				background: #3d566e;
+				padding-left: $small-fix-15;
+	    		padding-right: $small-fix-15;
+	    		letter-spacing: .3px;
+	    		min-height: $small-fix-25;
+	    		color: $white;
+	    		.updaTeDetail {
+	    			position: absolute;
+	    			top: $null-conv;
+	    			right: $null-conv;
+	    			height: $max-conv-height;
+	    			color: $white;
+	    			text-transform: uppercase;
+	    			font-size: $small-fix-10;
+	    			padding: $small-fix-05 + 1;
+	    			padding-left: $small-fix-30;
+	    			padding-right: $small-fix-20;
+	    			background: #9a9a9a;
+	    			font-weight: 100;
+	    			cursor: pointer;
+	    			i {
+	    				position: absolute;
+	    				font-size: $small-fix-10 + 2;
+	    				color: $white;
+	    				position: absolute;
+	    				top: 6.5px;
+	    				left: 7.5%;
+	    			}
+	    		}
+			}
+
+			.title_BackWhite { background: $white; }
+
+			.form {
+				&_Fl {
+					width: $max-conv-width;
+					float: left;
+					padding: $small-fix-07;
+					padding-top: $small-fix-03;
+		    		padding-bottom: $small-fix-05;
+				}
+
+				&_FlPolicy {
+					height: 60.4vh;
+				}
+			}
+
+			.boxInp {
+				width: 31.645%;
+				float: left;
+				margin: .84%;
+				margin-top: $small-fix-05;
+				margin-bottom: $small-fix-05;
+				position: relative;
+				.boxLabel {
+					float: left;
+					width: $max-conv-width;
+					margin-bottom: $small-fix-02;
+					color: #777;
+					font-size: $small-fix-10 + 1;
+					font-weight: 100;
+				}
+
+				.blueLabel { color: #1fadcf; }
+
+				input, 
+				select {
+					width: $max-conv-width; // 100%, 98%
+				    height: $small-fix-30;
+				    border: 1px solid #ddd;
+				    padding: $small-fix-07;
+				    font-size: $small-fix-10 + 2;
+				    &:focus {
+				    	outline: $null-conv;
+				    }
+				}
+
+				select {
+					padding-top: 5px;
+				}
+
+				.isRequ {
+					border: 1px solid #cc0000;
+				}
+
+				.inputBox {
+					position: relative;
+					float: left;
+					width: $max-conv-width; // 100%, 98%
+					height: 32px;
+					background: $white;
+					border: 1px solid #ddd;
+					.dobDatepicker {
+						background: transparent;
+						border: $null-conv;
+						width: 85%; // 14%
+						padding: $small-fix-07;
+						// &:first-of-type {
+						// 	padding-left: $small-fix-07;
+						// }
+						// &:nth-of-type(3){
+						// 	width: 53%;
+						// }
+					}
+				}
+				.postcode_Fl {
+					border: $null-conv;
+					&:before {
+						content: '\f002';
+						width: $small-fix-30;
+						height: $small-fix-30;
+						position: absolute;
+						background: #c6c6c6;
+						color: $white;
+						font-size: $small-fix-17 + 2;
+						font-family: FontAwesome;
+						font-weight: 100;
+						top: $null-conv;
+						right: $null-conv;
+						padding-left: $small-fix-05 + 1;
+						padding-top: $small-fix-01;
+					}
+					input {
+						padding-right: 40px;
+					}
+				}
+				.datePicker_Fl {
+					&:before {
+						content: '\e788';
+						font-family: 'Linearicons';
+						position: absolute;
+						top: $null-conv;
+					    right: $small-fix-07;
+					    font-size: $small-fix-20 + 1;
+					    color: #ddd;
+					}
+				}
+			}
+
+			.detWSmall {
+				width: 32.6%; // 24.5%
+				margin: 1.5px;
+			}
+
+			.boxClZIn { z-index: 10000000000; }
+
+			.bottomForm {
+				background:#eee; 
+				width: $max-conv-width; 
+				float: left; 
+				padding: $small-fix-07;
+				.boxInp {
+					width: $max-conv-width;
+				    margin: $null-conv;
+				    padding: $small-fix-02;
+				    input {
+				    	border: $null-conv;
+				    }
+				    textarea {
+				    	width: $max-conv-width;
+				    	border: $null-conv;
+				    	height: 6vh; // 5.5vh
+				    	padding: $small-fix-07;
+				    	font-size: $small-fix-10 + 2;
+				    	&:focus {
+				    		outline: $null-conv;
+				    	}
+				    }
+				}
+			}
+
+			.boxInp23-35 { width: 23.3%; }
+
+			.boxInp73 { width: 73%; }
+
+			.GeneQtMinWith {
+				width: 48%;
+				.GeneQtBtn {
+					&:before {
+						left: 21%;
+					}
+				}
+			}
+
+			.boxInpDispNone { display: none; }
+
+			.boxInp10 { width: 14.9%; } // 15%
+			
+			.boxInp100 { width: 98%; }
+
+			.smllInp { width: 23.3%; }
+
+			.extraW { width: 48.3%; }
+
+			.wTh4 { width: 11.7%; }
+
+			.detailLeadW { width: 31.5%; }// 48%
+
+			.detailUpLeadFishing { width: 23.15%; }
+
+			.estraWPlus {
+				width: 47.65%;
+				margin: $small-fix-02;
+				margin-left: $small-fix-07;
+	   			margin-right: $small-fix-07;
+	   			height: 47px;
+			}
+
+			.mExtra {
+				height: auto; 
+				margin-right: $null-conv; 
+				float: right;
+				background: $white;
+			    padding: $small-fix-07;
+			    width: 48.9%;
+			    margin-bottom: $null-conv;
+			    padding-bottom: $null-conv;
+				.packTitle {
+					float: left; 
+					font-size: $small-fix-13; 
+					margin-top: $small-fix-05;
+					padding-left: $small-fix-07;
+				}
+
+				.selectPack {
+					float: right; 
+					padding-bottom: $small-fix-03 + 1; 
+					width: 64%;
+					background: #f9f9f9;
+				    border: 1px solid #ddd;
+				    padding: $small-fix-03 + 1;
+				    padding-left: $small-fix-20;
+					&:focus {
+						outline: $null-conv;
+					}
+				}
+			}
+
+			.Packsdrop {
+		        height: auto;
+		        min-height: 127px;
+		        padding: $small-fix-07;
+		        background: $white;
+		    }
+
+			.extraBtn {
+				width: $max-conv-width;
+				margin: $null-conv;
+			    padding: $small-fix-15;
+			    padding-top: $small-fix-17;
+	    		padding-bottom: $small-fix-15 + 1;
+			}
+
+			.addPoliBtn {
+				width: $max-conv-width;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: $small-fix-13 + 1;
+				color: $white;
+				background: #1fadcf;
+				float: left;
+				position: relative;
+				height: 47px;
+				font-weight: bold;
+	    		padding: $small-fix-13 + 1;
+	    		cursor: pointer;
+	    		text-decoration: none;
+	    		&:before {
+	    			content: '\f067';
+	    			font-family: FontAwesome;
+	    			color: $white;
+	    			font-size: $small-fix-20 + 2;
+	    			position: absolute;
+	    			top: $small-fix-07 + 2;
+	    			left: 33%;
+	    		}
+			}
+
+			.desabled_Btn {
+
+				opacity: 0.3;
+				pointer-events: none;
+			}
+
+			.SplitErrorMsg {
+				color: #cc0000;
+			    font-size: 12px;
+			    width: 100%;
+			    float: left;
+			    text-align: center;
+			    font-weight: bold;
+			    margin-top: 6px;
+			}
+
+			.formWhite { background: $white; }
+			.formGrey { 
+				background: #eee; 
+			}
+			hr {
+				float: left;
+				width: $max-conv-width; // 100%
+				border-top: $small-fix-02 solid $white;
+				margin-bottom: $small-fix-10 / 2;
+				margin-top: $small-fix-10;
+			}
+		}
+
+		.costumerRight {
+			.boxInp {
+				.datePicker_Fl { border: $null-conv; }
+			}
+		}
+
+		.costumerBoard_MaxWith { width: $max-conv-width; }
+
+		.addCustomer {
+			position: absolute;
+			width: $max-conv-width;
+			height: $max-conv-height;
+			background: rgba(255, 255, 255, .85);
+			top: $null-conv;
+			left: $null-conv;
+			z-index: 10;
+			.addCustomerBtn {
+				background: #1fadcf;
+				color: $white;
+				font-size: $small-fix-13;
+				text-transform: uppercase;
+				font-weight: bold;
+				border: $null-conv;
+				padding: $small-fix-07 + 1;
+			    padding-left: 38px;
+			    padding-right: $small-fix-20;
+			    position: relative;
+			    margin: auto;
+			    display: table;
+			    top: 42%;
+			    letter-spacing: .7px;
+			    &:focus {
+			    	outline: $null-conv;
+			    }
+			    &:before {
+			    	content: '\f055';
+				    font-family: FontAwesome;
+				    position: absolute;
+				    left: $small-fix-07 + 2;
+				    top: $small-fix-02;
+				    font-size: $small-fix-20 + 2;
+				    color: $white;
+				    font-weight: 100;
+			    }
+			}
+		}
+
+		.costumerLeft, 
+		.costumerMiddle { float: left; }
+
+		.costumerMiddle { width: $max-conv-width; }
+
+		.costumerRight { float: right; }
+
+		.costumerRightBorder {
+			border: $small-fix-01 solid #f9f9f9;
+		}
+
+		.btnsLft {
+			position: relative;
+			float: left;
+			width: 29.67%; // 27.67%
+			margin-right: $small-fix-03;
+		}
+		.QutBtn {
+			background: #1fadcf;
+			color: $white;
+			position: relative;
+			float: left;
+			padding: $small-fix-20;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: $small-fix-01 / 2; // .5px
+			padding-left: 45px;
+	    	padding-right: 45px;
+	    	text-decoration: none;
+	    	max-height: 65px;
+	    	padding-top: $small-fix-35;
+	    	font-weight: bold;
+	    	font-size: $small-fix-13;
+	    	margin-bottom: $small-fix-03;
+	    	width: $max-conv-width;
+	    	&:before {
+	    		content: '\f10e';
+			    font-family: FontAwesome;
+			    font-size: $small-fix-17;
+			    position: absolute;
+			    left: $null-conv;
+			    right: $null-conv;
+			    top: $small-fix-07;
+			    font-weight: 100;
+	    	}
+		}
+
+		.bttBtnlft {
+			position: relative;
+			float: left;
+			background: #eee;
+			color: $black;
+			font-size: $small-fix-10;
+			text-transform: uppercase;
+			text-align: center;
+			padding: $small-fix-07 + 1 + 0.4; // 8.4px
+			font-weight: bold;
+			letter-spacing: $small-fix-01 / 2;
+			margin-right: $small-fix-03;
+			padding-top: 32px;
+			max-height: 56.39px;
+			cursor: pointer;
+			&:last-of-type {
+				margin-right: $null-conv;
+			}
+		}
+		.smsBtn {
+			&:before {
+				content: '\f0e5';
+			    position: absolute;
+			    font-family: FontAwesome;
+			    font-size: $small-fix-17 + 1;
+			    left: $null-conv;
+			    right: $null-conv;
+			    color: #848484;
+			    top: $small-fix-03 + 1;
+			    font-weight: 100;
+			}
+		}
+		.Unassign {
+			&:before {
+				content: '\f141';
+			    position: absolute;
+			    font-family: FontAwesome;
+			    font-size: $small-fix-20 + 3;
+			    left: $null-conv;
+			    right: $null-conv;
+			    color: #848484;
+			    top: $small-fix-03 + 1;
+			    font-weight: 100;
+			}
+		}
+		.assignBt {
+			padding: 15.6px;
+		    padding-top: 35px;
+		    max-height: 60.5px;
+		    margin: $null-conv;
+		    margin-bottom: $small-fix-03;
+		    min-width: 82.89px;
+		    &:last-of-type {
+		    	margin-bottom: $null-conv;
+		    }
+		}
+		.updaBtn {
+			&:before {
+				content: '\f0c7';
+				position: absolute;
+			    font-family: FontAwesome;
+			    font-size: $small-fix-15 + 1;
+			    left: $null-conv;
+			    right: $null-conv;
+			    color: #848484;
+			    top: 36px;
+			    font-weight: 100;
+			}
+		}
+		.Reassign {
+			&:before {
+				content: '\f01e';
+				position: absolute;
+			    font-family: FontAwesome;
+			    font-size: $small-fix-15 + 1;
+			    left: $null-conv;
+			    right: $null-conv;
+			    color: #848484;
+			    top: $small-fix-05 + 1;
+			    font-weight: 100;
+			}
+		}
+		.ReassignBtn {
+			&:before {
+				top: $small-fix-05 + 1;
+			}
+		}
+		.btnW49 {
+			width: 49%;
+			height: 56.39px;
+		}
+		.btnW13 {
+			width: 13.2%;
+			height: 125.25px;
+	    	max-height: 125.25px;
+	    	border: $null-conv;
+	    	&:focus {
+				outline: $null-conv;
+			}
+		}
+		.downCostumer {
+			position: relative;
+		    float: left;
+		    width: 56%;
+		    border: 1px solid #ddd;
+		    padding: $small-fix-03 + 1;
+		    margin-right: $small-fix-03;
+		}
+
+		.details_Left {
+			width: 49.7%;
+			float: left;
+
+			.costumerBoard { width: $max-conv-width; }
+
+			.costumerLeft {
+				margin-bottom: $small-fix-03 + 1;
+				&:last-of-type {
+					margin-bottom: $null-conv;
+				}
+			}
+
+			.marginB3 { margin-bottom: $small-fix-03 !important; }
+
+			.top_Policies {
+				position: relative;
+				float: left;
+				width: $max-conv-width;
+			}
+		}
+
+		.GeneQtBtn {
+			background: #1fadcf;
+			color: $white !important;
+			width: $max-conv-width + 0.3;
+			float: left;
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: $small-fix-13 + 1;
+	    	padding: $small-fix-13 + 0.3; // 13.3px
+	    	padding-top: $small-fix-15;
+	    	height: 46.59px;
+	    	text-decoration: none;
+	    	@include transition(1s);
+	    	cursor: pointer;
+	    	&:before {
+	    		content: '\f013';
+	    		position: absolute;
+	    		font-size: $small-fix-20;
+	    		font-family: FontAwesome;
+	    		color: $white;
+	    		left: 31%;
+	    		top: $small-fix-10;
+	    	}
+		}
+	}
+
+	.phoneAdt_Fl {
+		position: relative;
+	    width: 90%;
+	    margin: auto;
+	    .phoneAdt {
+			width: 24px;
+			height: 24px;
+			background: #1fadcf;
+			opacity: .5;
+			@include border-radius($max-conv-width / 2);
+			float: left;
+			position: relative;
+			margin: $small-fix-07;
+			margin-bottom: $null-conv;
+			cursor: pointer;
+			@include transition(.3s);
+			&:hover {
+				background: #1fadcf;
+				opacity: 1;
+				color: $white;
+			}
+		}
+		.sc, 
+		.phoneDw, 
+		.phoneUp, 
+		.PhoneLk {
+			&:before {
+				color: $white;
+				position: absolute;
+			}
+		}
+		.sc {
+			&:before {
+				content: 'SC';
+				font-size: $small-fix-10 + 1;
+			    top: $small-fix-03 + 1;
+			    left: 4.8px;
+			}
+		}
+		.phoneDw {
+			&:before {
+				content: '\f1e4';
+				font-family: FontAwesome;
+				font-size: $small-fix-13 + 1;
+				top: 2.4px;
+				left: $small-fix-05;
+			}
+		}
+		.phoneUp {
+			&:before {
+				content: '\f095';
+				font-family: FontAwesome;
+				font-size: $small-fix-15 + 1;
+				top: 1px;
+				left: 5.7px;
+			}
+		}
+		.PhoneLk {
+			&:before {
+				content: '\f0c1';
+				font-family: FontAwesome;
+				font-size: $small-fix-13 + 1;
+				top: $small-fix-02;
+				left: 5.3px;
+			}
+		}
+	}
+
+	.CostDetInpt {
+		width: 24.5%;
+		height: $small-fix-25;
+		border: 1px solid #ddd;
+		margin: $small-fix-02 + 0.1;
+		margin-top: $null-conv;
+		margin-bottom: $small-fix-03;
+		padding: $small-fix-10 + 2;
+		font-size: $small-fix-10 + 1;
+	    color: #777;
+		&:focus {
+			outline: $null-conv;
+		}
+	}
+
+	.marginL { margin-left: $null-conv; }
+
+	.marginR { margin-right: $null-conv; }
+
+	.costumerDetailsHalf {
+		width: 49.7%;
+		.costumerBoard {
+			width: $max-conv-width;
+		}
+	}
+
+	.alertErrorBtn {
+		background: #1fadcf;
+		color: $white;
+		text-transform: uppercase;
+		font-size: $small-fix-13;
+		position: relative;
+		float: left;
+		padding: $small-fix-10 + 2;
+	    padding-left: 27px;
+	    padding-right: 27px;
+	}
+	.columnState_Fl {
+		position: relative;
+		width: $max-conv-width;
+		float: left;
+		border: 1px solid #ddd;
+		border-left: $null-conv;
+		height: 52vh;
+		.stateColumn {
+			width: 183.5px;
+			border: 1px solid #ddd;
+			border-right: $null-conv;
+			border-top: $null-conv;
+			border-bottom: $null-conv;
+			float: left;
+			height: 12.924vh;
+			padding: $small-fix-05;
+			padding-top: 1px;
+			.state-In {
+				width: $max-conv-width;
+				height: $max-conv-height;
+				background: #f2f2f2;
+				border-bottom: 1px solid #ddd;
+				text-align: center;
+				float: left;
+				font-size: $small-fix-20 + 2;
+			    text-transform: uppercase;
+			    color: #999;
+			   	font-weight: bold;
+			    padding: 49px;
+			    padding-left: $null-conv;
+			    padding-right: $null-conv;
+			    position: relative;
+			    .state-InContent {
+			    	position: absolute;
+			    	width: $max-conv-width;
+			    	height: $max-conv-height;
+			    	left: $null-conv;
+			    	top: $null-conv;
+			    	color: $white;
+			    	font-size: $small-fix-10 + 1;
+				    text-align: left;
+				    padding: $small-fix-05;
+				    font-weight: 100;
+				    text-transform: initial;
+				    .wom-res-link {
+				    	float: right;
+					    margin-right: $small-fix-05;
+					    color: $white;
+					    cursor: pointer;
+				    }
+				    .InsideTd {
+				    	width: $max-conv-width;
+					    float: left;
+					    font-size: $small-fix-10 + 1;
+					    padding: 1px;
+					    color: #777;
+				    }
+				    #quoteImg {
+				    	width: 45px;
+					    float: right;
+					    position: relative;
+					    right: $small-fix-10;
+				    }
+			    }
+			}
+			.blueBack {
+				background: #1fadcf;
+				color: $white;
+			}
+		}
+
+		.QuoteHistoryBlk {
+			width: 183.5px;
+			border: 1px solid #ddd;
+			border-right: $null-conv;
+			border-top: $null-conv;
+			border-bottom: $null-conv;
+			float: left;
+			padding: $small-fix-05;
+			padding-top: 1px;
+			.state-In { 
+				width: $max-conv-width;
+				height: 105px;
+				background: #f2f2f2;
+				border-bottom: 1px solid #ddd;
+				text-align: center;
+				float: left;
+				font-size: $small-fix-20 + 2;
+			    text-transform: uppercase;
+			    color: #999;
+			   	font-weight: bold;
+			    padding: 49px;
+			    padding-left: $null-conv;
+			    padding-right: $null-conv;
+			    position: relative;
+			    margin-bottom: $small-fix-05;
+			    .state-InContent {
+			    	position: absolute;
+			    	width: $max-conv-width;
+			    	height: $max-conv-height;
+			    	left: $null-conv;
+			    	top: $null-conv;
+			    	color: $white;
+			    	font-size: $small-fix-10 + 1;
+				    text-align: left;
+				    padding: $small-fix-05;
+				    font-weight: 100;
+				    text-transform: initial;
+				    .wom-res-link {
+				    	float: right;
+					    margin-right: $small-fix-05;
+					    color: $white;
+					    cursor: pointer;
+				    }
+				    .InsideTd {
+				    	width: $max-conv-width;
+					    float: left;
+					    font-size: $small-fix-10 + 1;
+					    padding: 1px;
+					    color: #777;
+				    }
+				    #quoteImg {
+				    	width: 45px;
+					    float: right;
+					    position: relative;
+					    right: $small-fix-15;
+				    }
+			    }
+
+			    &:last-of-type { margin-bottom: $null-conv; }
+			}
+		}
+
+		.heightLevel {
+			height: 11vh;
+			padding-top: $small-fix-05;
+		}
+		.mCSB_inside {
+			> .mCSB_container {
+				margin-right: $null-conv;
+			}	
+		}
+	}
+
+	.spinner_Fl {
+		position: absolute;
+		width: $max-conv-width;
+		height: $max-conv-height;
+		background: rgba(255, 255, 255, 0.9);
+		top: $null-conv;
+		left: $null-conv;
+		border-left: 1px solid #ddd;
+		z-index: 100;
+		.spinnerLoad {
+			position: relative;
+		    margin: 16% auto $null-conv;
+		    float: none;
+		    display: table;
+		    font-size: 66px;
+		    color: #3d566e;
+		}
+	}
+
+	.GoFishBtn {
+		background: #1fadcf;
+	    color: $white;
+	    width: $max-conv-width;
+	    float: left;
+	    text-align: center;
+	    padding: $small-fix-13;
+	    max-height: 46px;
+	    text-transform: uppercase;
+	    font-weight: bold;
+	    font-size: $small-fix-15 + 1;
+	    letter-spacing: $small-fix-01 / 2; // .5px
+	    cursor: pointer;
+	}
+	.modal-dialog {
+		width: 99%;
+	    margin: $small-fix-13 + 1 auto;
+	}
+
+	// Fishing
+	/* Fishing */
+	.theadFish {
+		width: $max-conv-width;
+		float: left;
+		.thFish {
+			width: 9%; // 9.36%
+		    float: left;
+		    font-size: $small-fix-07 + 2;
+		    color: #333;
+		    text-transform: uppercase;
+		    border-bottom: 1px solid #ddd;
+		    padding: 1px;
+		    padding-top: $small-fix-03 + 1;
+		    padding-bottom: $small-fix-03;
+		    margin: .3%;
+		    margin-bottom: $null-conv;
+		}
+
+		.actionFish { width: 13%; }
+	}
+
+	.tbodyFish, 
+	.tbodyFishHome, 
+	.tTopHomebodyFish, 
+	.tBottomHomebodyFish {
+		width: $max-conv-width;
+		float: left;
+		height: 67.5vh;
+		.trFish {
+			width: $max-conv-width;
+			float: left;
+		}
+		.tdFish {
+			width: 9%; // 9.36%
+		    float: left;
+		    font-size: $small-fix-10 + 1;
+		    color: #b7b7b7;
+		    padding: $small-fix-01;
+		    padding-top: $small-fix-03 + 1;
+		    padding-bottom: $small-fix-03;
+		    margin: .3%;
+		    height: 27px;
+		    margin-bottom: $null-conv;
+		    position: relative;
+		}
+
+		.actionFish { width: 13%; }
+
+		.mCSB_inside {
+			> .mCSB_container {
+				margin-right: $null-conv;
+			}
+		}
+	}
+
+	.tbodyFish { height: 70vh; } // 69vh
+
+	.topHomeGrid, 
+	.bottomHomeGrid {
+		.thFish {
+			width: 9.36%;
+			margin-bottom: $null-conv;
+		}
+	}
+
+	.tTopHomebodyFish {
+		height: 17.2vh; // 18.5vh
+		.tdFish {
+			margin-bottom: $null-conv;
+			border-bottom: $null-conv;
+			width: 9.36%;
+		}
+	}
+	.tBottomHomebodyFish {
+		height: 15.1vh; // 18.5vh
+		.tdFish {
+			margin-bottom: $null-conv;
+			border-bottom: $null-conv;
+			width: 9.36%;
+		}
+	}
+
+	.tdFoot {
+		width: $max-conv-width;
+		float: left;
+		height: 4.7vh;
+		padding: $small-fix-17;
+		text-align: center;
+		.pageNum {
+			width: $small-fix-25;
+			height: $small-fix-25;
+			display: inline-block;
+			position: relative;
+		    top: -6px;
+			border: 1px solid #ddd;
+			border-right: $null-conv;
+			text-align: center;
+			font-size: $small-fix-10 + 1;
+		    color: #777;
+		    padding: $small-fix-03;
+		    cursor: pointer;
+		    @include transition(.3s);
+		    &:last-of-type {
+		    	border-right: 1px solid #ddd;
+		    }
+		    &:hover {
+		    	background: #1fadcf;
+		    	color: $white;
+		    	border: 1px solid #1fadcf;
+		    	width: 27px;
+				height: 27px;
+				top: -8px;
+				@include border-radius($max-conv-width / 2);
+		    }
+		}
+	}
+
+	//Policies
+	/* Policies */
+	.content_Notes {
+		width: $max-conv-width;
+		float: left;
+		padding: $small-fix-15;
+		p {
+			font-size: $small-fix-10 + 2;
+			font-weight: bold;
+			padding-right: 40%;
+			margin: $null-conv;
+			margin-top: $small-fix-20;
+
+			&:last-of-type { padding-right: $null-conv; }
+		}
+
+		.btn_Box {
+			width: $max-conv-width;
+			float: left;
+			margin-top: $small-fix-20;
+			.Notes_Btn {
+				float: left;
+			    padding: $small-fix-07;
+			    background: #f9f9f9;
+			    color: #777;
+			    text-transform: uppercase;
+			    font-size: $small-fix-10 + 2;
+			    font-weight: bold;
+			    padding-left: 35px;
+			    padding-right: 35px;
+			    margin: $small-fix-03;
+			    border: 1px solid #eee;
+			    cursor: pointer;
+			}
+			.ApplyBtn {
+				background: #1fadcf;
+				border: 1px solid #1fadcf;
+				color: $white;
+			}
+		}
+	}
+
+	.Uload_fl {
+		width: $max-conv-width;
+		float: left;
+		padding: $small-fix-07;
+		position: relative;
+		.Uload_In {
+			float: left;
+			background: #f9f9f9;
+			width: 49.5%;
+			padding: $small-fix-07;
+			height: 100px;
+		}
+
+		.flRgh_In {
+			float: right;
+		}
+	}
+
+	.inputfile {
+	    width: 0.1px;
+	    height: 0.1px;
+	    opacity: $null-conv;
+	    overflow: hidden;
+	    position: absolute;
+	    z-index: -1;
+	}
+	.inputfile-6 + label {
+	    color: #777;
+	    padding: $null-conv;
+	    height: 29px;
+	    width: $max-conv-width;
+	    float: left;
+	}
+
+	.inputfile-6 + label span {
+	    width: 77%;
+	    height: 29px;
+	    display: inline-block;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    vertical-align: top;
+	    background: $white;
+	    padding: $small-fix-05;
+	    border: 1px solid #eee;
+	    font-size: $small-fix-10 + 2;
+	    font-weight: 100;
+	}
+
+	.inputfile-6 + label strong {
+		position: relative;
+	    height: $max-conv-height;
+	    display: inline-block;
+	    width: 29px;
+	    height: 29px;
+	    cursor: pointer;
+	    &:before {
+	    	position: absolute;
+		    content: '\f07c';
+		    font-family: FontAwesome;
+		    font-size: $small-fix-20;
+		    color: $black;
+		    top: 1px;
+		    left: $small-fix-05;
+	    }
+	}
+
+	.Upl_Btn {
+		display: inline-block;
+	    width: $max-conv-width;
+	    padding: $small-fix-07;
+	    background: #1fadcf;
+	    border: 1px solid #1fadcf;
+	    color: $white;
+	    text-transform: uppercase;
+	    text-align: center;
+	    font-size: $small-fix-10 + 2;
+	    margin-top: $small-fix-05;
+	    cursor: pointer;
+	}
+
+	.coverDrop {
+		position: relative; 
+		float: left; 
+		width: $max-conv-width;
+		input {
+			cursor: pointer;
+		}
+		&:before {
+			position: absolute;
+		    content: "";
+		    vertical-align: middle;
+		    border-left: $small-fix-05 solid transparent;
+		    border-right: $small-fix-05 solid transparent;
+		    top: $small-fix-10 + 2;
+		    right: $small-fix-07;
+		    border-bottom: $small-fix-05 solid #000;
+		    @include transform(180deg);
+		    @include transition(.3s);
+		}
+	}
+
+	.coverDropRot0 {
+		&:before {
+			@include transform(0deg);
+		}
+	}
+
+	.CDropDow {
+		width: $max-conv-width;
+		padding: $null-conv;
+		margin: $null-conv;
+		position: absolute;
+		top: $max-conv-top + 1; // 101%
+		left: $null-conv;
+		background: $white;
+		border: 1px solid #ddd;
+		z-index: 500;
+		list-style: none;
+		display: none;
+
+		li {
+			.optSelect {
+				width: $max-conv-width;
+				float: left;
+				padding: $small-fix-05;
+				padding-left: $small-fix-07;
+				font-size: $small-fix-10 + 1;
+				background: #f9f9f9;
+				color: #777;
+				border-bottom: 1px solid #eee;
+				cursor: pointer;
+				@include transition(.3s);
+
+				&:hover {
+					background: $white;
+					color: $black;
+				}
+			}
+		}
+	}
+
+	// Home Grids
+	.topHomeGrid {
+		border: 1px solid #ddd; 
+		height: 10.3vh;
+	}
+
+	.bottomHomeGrid {
+		border: 1px solid #ddd; 
+		margin-bottom: $null-conv;
+		height: 12.5vh;
+	}
+
+	.bothUp {
+		.tBottomHomebodyFish {
+			height: 10vh;
+		}
+	}
+
+	// News
+	/* News */
+	.tickerManger {
+		position: relative;
+		float: left;
+		width: $max-conv-width;
+		height: 85vh;
+		border: 1px solid #ddd;
+		padding: $small-fix-03 + 1;
+		.AddNewsBlock {
+			position: relative;
+			width: 16.1%;
+			max-width: 305.9px;
+			height: 33vh;
+			background: $white;
+			float: left;
+			border: 1px solid #ddd;
+			margin: $small-fix-05;
+			cursor: move;
+			.tickerTitle {
+				width: $max-conv-width;
+				float: left;
+				padding: $small-fix-05;
+				padding-left: $small-fix-10 + 2;
+	    		padding-right: $small-fix-10 + 2;
+				background: #1fadcf;
+				color: $white;
+				font-size: $small-fix-13;
+				text-transform: uppercase;
+				position: relative;
+				padding-left: 40%;
+				&:before {
+					content: '\f047';
+					font-family: FontAwesome;
+					color: $white;
+					font-size: 16px;
+					position: absolute;
+					top: $small-fix-03;
+					right: $small-fix-10;
+				}
+				&:after {
+					content: 'Ticker Position';
+					position: absolute;
+					top: $small-fix-05;
+					left: $small-fix-10;
+				}
+			}
+
+			.contentNews {
+				width: $max-conv-width;
+				height: 91.5%;
+				padding: $small-fix-07;
+				position: relative;
+				float: left;
+				margin-bottom: $small-fix-03;
+				.labelNews {
+					width: $max-conv-width;
+					float: left;
+					font-size: $small-fix-10;
+					text-transform: uppercase;
+					color: #333;
+					margin-bottom: $small-fix-03;
+				}
+				.editNews {
+					width: $max-conv-width;
+					height: 18vh;
+					float: left;
+					padding: $small-fix-07;
+					border: 1px solid #ddd;
+					font-size: $small-fix-10 + 1;
+					margin-bottom: $small-fix-03 + 1;
+					&:focus {
+						outline: $null-conv;
+					}
+				}
+				.urlNews {
+					width: $max-conv-width;
+					height: $small-fix-30;
+					border: 1px solid #ddd;
+					padding: $small-fix-07;
+					font-size: $small-fix-10 + 1;
+					float: left;
+					margin-bottom: $small-fix-03 + 1;
+					&:focus {
+						outline: $null-conv;
+					}
+				}
+				.actionsNews {
+					width: $max-conv-width;
+					float: left;
+					position: relative;
+					margin-top: $small-fix-05;
+					padding: $small-fix-05;
+					.container-check {
+						top: $null-conv;
+						padding-left: $null-conv;
+						width: $small-fix-20;
+	    				height: $small-fix-20;
+					}
+					.container-check input:checked ~ .checkmark {
+					    background: $white;
+					    border: 1px solid #ddd;
+					}
+					.checkmark {
+						@include border-radius($null-conv);
+						height: $small-fix-20;
+	    				width: $small-fix-20;
+	    				background-color: $white;
+	    				border: 1px solid #ddd;
+	    				&:after {
+	    					border: solid #999;
+	    					left: $small-fix-05 + 1;
+						    top: $small-fix-02;
+						    width: $small-fix-07;
+						    height: $small-fix-10 + 1;
+						    border: solid #999;
+						    border-width: $null-conv $small-fix-03 $small-fix-03 $null-conv;
+						    @include transform(45deg);
+	    				}
+					}
+					.labelCheck {
+						position: relative;
+					    float: left;
+					    font-size: $small-fix-10;
+					    text-transform: uppercase;
+					    font-weight: bold;
+					    margin: $small-fix-03 + 1;
+					    margin-left: $small-fix-05;
+					    margin-right: $small-fix-17 + 1;
+					}
+					.actTickerBtn {
+						position: relative;
+					    float: left;
+					    border: $null-conv;
+					    font-size: $small-fix-10;
+					    text-transform: uppercase;
+					    background: #eee;
+					    color: #aaa;
+					    margin: $small-fix-02;
+					    padding: $small-fix-05;
+					    margin-bottom: $null-conv;
+					    margin-top: $null-conv;
+					    padding-left: $small-fix-10;
+					    padding-right: $small-fix-10;
+					    padding-top: $small-fix-05 + 1;
+					    &:focus {
+					    	outline: $null-conv;
+					    }
+					}
+					.actTickerBtnSave {
+						background: #1fadcf;
+						color: $white;
+					}
+				}
+			}
+			.RemoveConfirm {
+				position: absolute;
+				top: $null-conv;
+				left: $null-conv;
+				width: $max-conv-width;
+				height: $max-conv-height;
+				background: $rgba-white-09;
+				display: none;
+				.textConfirm {
+					float: left;
+				    width: $max-conv-width;
+				    text-align: center;
+				    font-size: $small-fix-10 + 1; // 12px
+				    text-transform: uppercase;
+				    font-weight: bold;
+				    margin-top: 42%;
+				    color: $black;
+				}
+				.btns_Fl {
+					position: relative;
+				    margin-top: $small-fix-13;
+				    display: inline-block;
+				    width: $max-conv-width;
+				    text-align: center;
+
+				    button {
+				    	border: $null-conv;
+					    padding: $small-fix-05;
+					    padding-left: $small-fix-10 + 2;
+					    padding-right: $small-fix-10 + 2;
+					    font-size: $small-fix-10 + 2;
+					    text-transform: uppercase;
+					    &:focus {
+					    	outline: $null-conv;
+					    }
+				    }
+				    .confirmBtn {
+					    background: #1fadcf;
+					    color: $white;
+					}
+					.CancelSendSms {
+					    background: #ddd;
+					    color: #777;
+					}
+				}
+			}
+		}
+
+		.addTicker {
+			cursor: pointer;
+			&:before {
+				content: '\f055';
+				font-family: FontAwesome;
+				font-size: $small-fix-27;
+				color: #ccc;
+				position: relative;
+				top: 41%;
+				margin: auto;
+				display: table;
+			}
+			&:after {
+				content: 'Add Another';
+				position: relative;
+				top: 40%;
+				margin: auto;
+				display: table;
+				font-size: $small-fix-10 + 1;
+				color: #ccc;
+			}
+		}
+
+		.mCSB_inside > {
+			.mCSB_container {  margin-right: $null-conv; }
+		}
+	}
+
+	.customerPolicy_Title {
+		position: relative;
+		padding: $small-fix-03 + 1;
+		width: $max-conv-width;
+		float: left;
+		font-size: $small-fix-10 + 2;
+		font-weight: bold;
+		text-transform: uppercase;
+		background: #3d566e;
+		padding-left: $small-fix-15;
+		padding-right: $small-fix-15;
+		letter-spacing: .3px;
+		min-height: $small-fix-25;
+		color: $white;
+	}
+	.GeneQtSpin {
+		position: absolute;
+	    background: #1fadcf;
+	    font-size: 23px;
+	    font-family: FontAwesome;
+	    color: $white;
+	    left: 31%;
+	    top: $small-fix-13;
+	    display: none;
+	}
+
+	.GeneQtMinWith .GeneQtSpin { left: 21%; }
+
+	.searchEvent {
+		position: absolute;
+	    width: $small-fix-30;
+	    height: $small-fix-30;
+	    right: $null-conv;
+	    top: $null-conv;
+	    cursor: pointer;
+	}
+
+	// Post Code Drop
+	.postCode_fl {
+		position: absolute;
+		width: 98%;
+		background: $white;
+		border: 1px solid #ddd;
+		left: $null-conv;
+		top: 102%;
+		z-index: 100;
+		margin: $null-conv;
+		padding: $null-conv;
+		max-height: 313px;
+		display: none;
+		.AutoPostAll {
+			list-style: none;
+			float: left;
+			width: $max-conv-width;
+			padding: $small-fix-03 + 1;
+			cursor: pointer;
+			.autoPost {
+				float: left;
+				font-size: $small-fix-10;
+				color: #999;
+				line-height: $small-fix-13;
+				padding-right: $small-fix-03;
+			}
+		}
+
+		.mCSB_inside > .mCSB_container { margin-right: $null-conv; }
+	}
+
+	.dropStartDate {
+		max-height: 288px;
+		overflow: hidden;
+
+		.mCSB_inside > {
+			.mCSB_container {
+			    margin-right: $null-conv;
+			}
+		}
+	}
+
+	.height969 {
+		.tTopHomebodyFish {
+			height: 15.8vh;
+		}
+	}
+
+	.bheight969 {
+		.tBottomHomebodyFish {
+			height: 12.2vh;
+		}
+	}
+
+	.colum1008 {
+		#columnState_Fl {
+			// height: 40.5vh !important;
+			height: 45.1vh !important;
+		}
+	}
+
+	.colum969 {
+		#columnState_Fl {
+			height: 38.8vh !important;
+		}
+	}
+
+	.QtBlk {
+		width: $max-conv-width;
+		float: left;
+		cursor: pointer;
+	}
+
+	.qrItemSelected {
+	    background: rgba(31, 173, 207, 0.2) !important;
+	    .InsideTd {
+	    	color: #025a87 !important;
+	    }
+	}
+
+	#QuoteResultsHead, 
+	#pnlQuoteResults {
+		display: none;
+	}
+
+	// Time Out Call
+	.StopCall {
+		pointer-events: none;
+		background: #ddd !important;
+	}
+
+	.EditInput {
+		width: 80%; 
+		background: transparent; 
+		border: $null-conv;
+		&:focus {
+			outline: $null-conv;
+		}
+	}
+
+	.loadComponent {
+		position: absolute;
+		width: $max-conv-width;
+		height: $max-conv-height;
+		top: $null-conv;
+		left: $null-conv;
+		background: rgba(255, 255, 255, 0.8);
+		z-index: 1;
+		display: none;
+
+		i {
+			font-size: 43px;
+		    color: #777;
+		    position: relative;
+		    margin: auto;
+		    display: table;
+		    top: 37%;
+		}
+	}
+
+	.SecTaskFishing {
+		.fullTapFish {
+			position: absolute;
+		    width: $max-conv-width;
+		    height: $max-conv-height;
+		    top: $null-conv;
+		    left: $null-conv;
+		    background: rgba(255, 255, 255, 0.8);
+		    z-index: 100;
+		    .openFull {
+		    	background: #1fadcf;
+			    color: $white;
+			    font-size: $small-fix-13;
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    border: $null-conv;
+			    padding: $small-fix-07 + 1;
+			    padding-left: 38px;
+			    padding-right: $small-fix-20;
+			    position: relative;
+			    margin: auto;
+			    display: table;
+			    top: 47%;
+			    letter-spacing: .7px;
+			    cursor: pointer;
+			    @include border-radius($small-fix-03);
+			    &:before {
+			    	content: '\f055';
+				    font-family: FontAwesome;
+				    position: absolute;
+				    left: $small-fix-07 + 2;
+				    top: $small-fix-02;
+				    font-size: $small-fix-20 + 2;
+				    color: $white;
+				    font-weight: 100;
+			    }
+		    }
+		}
+	}
+
+	.AlertToastr {
+		position: absolute;
+		top: $null-conv;
+		left: $null-conv;
+		width: 600px;
+		min-height: 100px;
+		background: $white;
+		font-size: $small-fix-13;
+		color: #777;
+		border: $small-fix-01 solid #ddd;
+		right: $null-conv;
+		margin-left: auto; 
+		margin-right: auto;
+		z-index: 1000000; 
+		padding: $small-fix-10 + 2;
+
+		@include box-shadow($null-conv $null-conv $small-fix-05 $null-conv rgba(0, 0, 0, 0.35));
+
+		display: none;
+
+		.closeAlert {
+			position: absolute;
+			right: $small-fix-10 + 2;
+			top: $small-fix-10 + 2;
+			font-size: $small-fix-15;
+			color: $black;
+			cursor: pointer;
+		}
+	}
+
+	.dateCrtLead {
+		position: relative; 
+		float: right; 
+		top: $small-fix-07; 
+		margin-right: $small-fix-03 + 1;
+	}
+
+	.dupeLeadLabel {
+
+		margin-left: $small-fix-50;
+	}
+
+	.UplDocPol_Btn {
+	    width: $max-conv-width;
+	    position: relative;
+	    display: inline-block;
+	    padding: $small-fix-07;
+	    background: #1fadcf;
+	    color: $white;
+	    margin-top: $small-fix-07;
+	    font-size: $small-fix-10 + 1;
+	    text-align: left;
+	    cursor: pointer;
+	    font-weight: bold;
+	    padding-left: 56px;
+	    height: 46px;
+	    @include transition(.4s);
+	    padding-top: $small-fix-07 + 2;
+	    &:before {
+	    	content: '\f093';
+		    font: $small-fix-20 + 1 FontAwesome;
+		    position: absolute;
+		    left: $small-fix-17 + 1;
+		    top: $small-fix-13;
+	    }
+	}
+
+
+}

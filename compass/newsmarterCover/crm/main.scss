@@ -1,0 +1,1250 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+    padding: $null-conv;
+    margin: $null-conv;
+    width: $max-conv-width;
+    float: left;
+    height: 100vh;
+}
+
+template {
+    display: block;
+}
+
+// Starts Main Component
+@include thisComponent('MainComponent') {
+
+    .HeaderLeft_In, 
+    .topHeaderRight_Floor {
+        background: linear-gradient(#1f2d3b, #34495e);
+    }
+
+    .HeaderLeft {
+    	width: 68.5%;
+    	position: relative;
+    	float: left;
+    	.HeaderLeft_In {
+    		width: $max-conv-width;
+    		padding: $small-fix-02;
+        	padding-left: $small-fix-15; //40px
+        	position: relative;
+        	float: left;
+        	.logo_Box {
+        		width: $small-fix-40 + 2; // 14.28% 42px
+        		float: left;
+                margin-right: $small-fix-17 + 2;
+        		img {
+        			width: $max-conv-width;
+        		}
+        	}
+    	}
+    }
+
+    .HeaderRight {
+    	width: 31.5%;
+    	position: absolute;
+    	right: $null-conv;
+    	.topHeaderRight {
+    		width: $max-conv-width;
+    		padding: $small-fix-02;
+        	position: relative;
+        	float: left;
+        	padding-left: $null-conv;
+        	.fake_Box {
+        		width: 133px; //29.5%
+    		    float: right;
+    		    img {
+    		    	width: $max-conv-width;
+    		    }
+        	}
+        	.topHeaderRight_Floor {
+        		position: absolute;
+        		left: $null-conv;
+        		top: $null-conv;
+        		width: $max-conv-width;
+        		height: $max-conv-height;
+        		padding: $small-fix-07;
+        		padding-right: $small-fix-20; //15px
+        		padding-left: $null-conv;
+        		.newsSlider {
+        			width: 35%;
+    			    padding: $small-fix-07 + 1;
+    			    background: #1fadcf;
+    			    float: left;
+    			    @include border-radius($small-fix-02);
+    			    position: relative;
+    			    top: $null-conv;
+    			    color: $white;
+    			    font-size: $small-fix-10 + 2;
+    			    text-transform: uppercase;
+    			    font-weight: bold;
+    			    letter-spacing: $small-fix-01;
+    			    text-align: center;
+                    cursor: pointer;
+        		}
+                .alerts_Fl {
+                    width: $max-conv-width / 2;
+                    max-height: 200px;
+                    background: $white;
+                    border: 1px solid #ddd;
+                    position: absolute;
+                    top: 93%;
+                    left: -42px;
+                    z-index: 10000000000000;
+                    @include border-radius($small-fix-03 + 1);
+                    @include box-shadow($null-conv $null-conv $small-fix-05 $null-conv rgba(0,0,0,0.35));
+                    padding: $small-fix-02;
+                    display: none;
+                    .AlertIt {
+                        width: $max-conv-width;
+                        float: left;
+                        color: #848484;
+                        font-size: $small-fix-10 + 1;
+                        padding: $small-fix-07;
+                        line-height: $small-fix-13 + 1;
+                        position: relative;
+                    }
+                    .mCSB_inside > {
+                       .mCSB_container {
+                            margin-right: $null-conv;
+                            padding: $null-conv;
+                        } 
+                    }
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        border-left: $small-fix-05 + 1 solid transparent;
+                        border-right: $small-fix-05 + 1 solid transparent;
+                        top: -7px;
+                        right: 49%;
+                        border-bottom: $small-fix-07 solid $white;
+                    }
+                }
+                .withAlerts {
+                    background: rgb(52, 198, 52);
+                    @include box-shadow(0 0 0 rgba(52, 198, 52, 1));
+                    @include animation(pulse 1.2s infinite);
+                }
+        		.LoginUsers {
+    			    position: relative;
+    			    float: right;
+    			    top: $small-fix-07 + 2; // 1.3vh
+    			    .userName {
+                        color: #c6c6c6;
+    				    font-weight: bold;
+    				    text-transform: uppercase;
+    				    letter-spacing: $small-fix-01 / 2;
+    				    -webkit-text-stroke: .45px rgba(0, 0, 0, 0.1);
+    				    @include responsive-font(1vh, $small-fix-13 + 1);
+                        margin-right: $small-fix-02;
+                        padding-right: $small-fix-15 + 1;
+                        float: left;
+                        position: relative;
+                        cursor: pointer;
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            vertical-align: middle;
+                            border-left: $small-fix-03 + 1 solid transparent;
+                            border-right: $small-fix-03 + 1 solid transparent;
+                            top: $small-fix-07 + 1;
+                            right: $small-fix-03;
+                            border-bottom: $small-fix-05 solid #c6c6c6;
+                            @include transform(180deg);
+                            @include transition(.3s);
+                        }
+    			    }
+                    .dropRotate0 {
+                        &:after {
+                          @include transform(0deg);  
+                        }
+                    }
+                    .powerOff {
+                        width: $small-fix-20;
+                        height: $small-fix-20;
+                        float: right;
+                        position: relative;
+                        &:before {
+                            content: '\f011';
+                            font-family: FontAwesome;
+                            color: $white;
+                            position: absolute;
+                            top: -4px;
+                            left: $null-conv;
+                            font-size: $small-fix-20;
+                        }
+                    }
+    			    .userLog {
+    			    	float: right;
+    			    	text-decoration: none;
+    			    	text-transform: uppercase;
+    			    	font-size: $small-fix-10 + 1;
+    			    	font-weight: bold;
+    			    	color: #ddd;
+    			    	padding-right: $small-fix-10 / 2;
+        				border-right: $small-fix-02 solid;
+        				cursor: pointer;
+        				letter-spacing: $small-fix-01 / 2;
+        				&:first-of-type {
+        					border: $null-conv;
+    					    padding-right: $null-conv;
+    					    padding-left: $small-fix-10 / 2;
+        				}
+    			    }
+    			    .selected { color: #c0c0c0; }
+        		}
+                .LocalDateTime {
+                    position: relative;
+                    float: right;
+                    top: $small-fix-07;
+                    font-size: $small-fix-10 + 1;
+                    font-weight: bold;
+                    color: #ccc;
+                    letter-spacing: $small-fix-01 - 0.2; // 0.8px
+                    right: $small-fix-05 + 1;
+                    padding-right: $small-fix-10;
+                    border-right: 1px solid rgba(225,225,225,0.5);
+                    line-height: $small-fix-10 + 1;
+                    text-align: right;
+                }
+        	}
+    	}
+    }
+    .taskSection, 
+    .PoliciesLead_Fl {
+    	position: relative;
+        width: $max-conv-width;
+        height: 91vh;
+        float: left;
+        padding-right: $small-fix-15; //40px
+        top: $small-fix-10 + 0.1; // 2px
+        .borderTask {
+        	width: $small-fix-15; //40px
+        	height: $small-fix-30 + 1;
+        	background: #eee;
+        	position: absolute;
+        	top: $null-conv;
+        	right: $null-conv;
+        }
+        .topTasks, 
+        .bottomTasks, 
+        .fishingExtend {
+        	width: $max-conv-width;
+        	position: relative;
+        	float: left;
+        	margin-bottom: $small-fix-03 + 1;
+        	.topNav {
+        		position: relative;
+        		width: $max-conv-width;
+        		height: $small-fix-30 + 1;
+                background: #1f2d3b;
+        		float: left;
+        		padding-left: $small-fix-15;
+        		.addTasks {
+        			&:before {
+        				content: '\f067';
+    			    	position: absolute;
+    			    	top: $small-fix-05;
+    			    	right: $null-conv;
+    			    	font-family: FontAwesome;
+    			    	color: $white;
+    			    	font-size: $small-fix-15;
+    			    	width: $small-fix-20;
+    			    	height: $small-fix-20;
+    			    	background: #1fadcf;
+    			    	@include border-radius($max-conv-width / 2);
+    			    	padding-left: $small-fix-03 + 1; // 3.5px
+        			}
+        		}
+        		.addTasks, 
+                .addBttTasks {
+        			position: relative;
+        			float: left;
+        			color: #eee;
+        			text-transform: uppercase;
+        			font-size: $small-fix-10 + 1;
+    			    padding: $small-fix-07;
+    			    padding-right: $small-fix-25 + 2;
+    			    padding-left: $null-conv;
+    			    cursor: pointer;
+        		}
+                .leadDet {
+                    position: relative;
+                    float: left;
+                    color: #eee;
+                    text-transform: uppercase;
+                    font-size: $small-fix-10 + 1;
+                    padding: $small-fix-07 + 1;
+                    padding-right: $small-fix-25 + 2;
+                    padding-left: $null-conv;
+                }
+        	}
+        }
+        .bottomTasks { z-index: 100; } 
+        .topNav_Floor { height: 6.3vh; } // 7.1vh
+        .bottomNav_Floor { height: 8vh; }
+        .topNav_Floor, 
+        .bottomNav_Floor, 
+        .leadDetail_Floor {
+        	position: relative;
+    	    width: $max-conv-width;
+    	    border: 1px solid #ddd;
+    	    float: left;
+    	    background: $white;
+    	    overflow: hidden;
+        }
+
+        .topGo { @include animation(topNavFloor .3s 1 forwards); }
+
+        .topGoFish { @include animation(topGoFish .3s 1 forwards); }
+
+        .toUp { @include animation(toUp .3s 1 forwards); }
+
+        .toUpFish { @include animation(toUpFish .3s 1 forwards); }
+
+        @include keyframes(topNavFloor) {
+
+            0% { height: 5.5vh } 100% { height: 86.7vh }
+        }
+
+        @include keyframes(topGoFish) {
+
+            0% { height: 5.5vh } 100% { height: 67.2vh }
+        }
+
+        @include keyframes(toUp) {
+
+            0% { height: 88vh } 100% { height: 6.3vh }
+        }
+
+        @include keyframes(toUpFish) {
+
+            0% { height: 72vh } 100% { height: 5.5vh }
+        }
+
+        .topGoBtt { @include animation(topGoBtt .3s 1 forwards); }
+
+        @include keyframes(topGoBtt) {
+
+            0% { top: $null-conv; } 100% { top: -85.5% }
+        }
+
+        .topGoBttFish { @include animation(topGoBttFish .3s 1 forwards); }
+
+        @include keyframes(topGoBttFish) {
+
+            0% { top: $null-conv; } 100% { top: -60% }
+        }
+
+        .topGoDown { @include animation(topGoDown .3s 1 forwards); }
+
+        @include keyframes(topGoDown) {
+
+            0% { top: -89.4%  } 100% { top: $null-conv }
+        }
+
+        .topGoBttSms { @include animation(topGoBttSms .3s 1 forwards); }
+
+        @include keyframes(topGoBttSms) {
+
+            0% { top: $null-conv; } 100% { top: -54.5% }
+        }
+
+        .topGoBttSmsDown { @include animation(topGoBttSmsDown .3s 1 forwards); }
+
+        @include keyframes(topGoBttSmsDown) {
+
+            0% { top: -52.8% } 100% { top: $null-conv }
+        }
+
+        .bottHeight { @include animation(bottHeight .3s 1 forwards); }
+
+        @include keyframes(bottHeight) {
+
+            0% { height: 8vh } 100% { height: 85.7vh; }
+        }
+
+        .topHeight { @include animation(topHeight .3s 1 forwards); }
+
+        @include keyframes(topHeight) {
+
+            0% { height: 89.4vh; } 100% { height: 8vh }
+        }
+
+        .allTabs_Floor {
+        	position: relative;
+    	    width: $max-conv-width;
+    	    float: left;
+    	    .headerTabs {
+    	    	width: $max-conv-width;
+    	    	float: left;
+    	    	background: #9a9a9a;
+    	    	height: $small-fix-30;
+                border-bottom: $small-fix-03 solid #1f2d3b;
+    	    	overflow: hidden;
+    	    	.HTab {
+    	    		position: relative;
+    	    		float: left;
+    	    		background: #9a9a9a;
+    	    		color: $white;
+    	    		text-transform: uppercase;
+    	    		font-size: $small-fix-10 + 1;
+    	    		padding: $small-fix-05 + 1;
+    			    padding-left: $small-fix-13 + 1;
+    			    padding-right: $small-fix-17;
+    			    border-top-right-radius: $small-fix-15;
+    			    -webkit-border-top-right-radius: $small-fix-15;
+    			    -moz-border-top-right-radius: $small-fix-15;
+    			    @include box-shadow($small-fix-03 0 $small-fix-02 0 rgba(0,0,0,0.35));
+    			    cursor: pointer;
+    			    &:nth-child(1) { z-index: 5 }
+    			    &:nth-child(2) { z-index: 3 }
+    			    &:nth-child(3) { z-index: $null-conv }
+    	    	}
+    	    	.selectedHtb {
+                    background: #1f2d3b;
+    	    		padding-left: $small-fix-30 + 2; // 32px
+    			    padding-right: $small-fix-30 + 2; // 32px
+    	    		@include box-shadow(none);
+    	    		cursor: default;
+    	    		pointer-events: none;
+    	    		margin-left: -9px;
+    	    	}
+    	    	.addNote, 
+                .addNoteSms {
+    	    		width: $small-fix-20;
+    	    		height: $small-fix-20;
+    	    		background: #1fadcf;
+    	    		position: relative;
+    	    		float: right;
+    	    		@include border-radius($max-conv-width / 2);
+    	    		cursor: pointer;
+    	    		right: $small-fix-07 + 2;
+        			top: 4.1px;
+        			&:before {
+        				content: '\f067';
+    				    position: absolute;
+    				    top: $null-conv;
+    				    right: 4.3px;
+    				    font-family: FontAwesome;
+    				    color: $white;
+    				    font-size: $small-fix-15;
+        			}
+    	    	}
+                .addNoteSms {  display: none }
+                .notAllowedNote {
+                    background: #ccc;
+                    pointer-events: none;
+                }
+    	    }
+        }
+        .allTabs-Content {
+        	width: $max-conv-width;
+        	border: 1px solid #ddd;
+        	background: $white;
+        	float: left;
+        	border-top: $null-conv;
+        	.notes_Floor {
+        		width: $max-conv-width;
+                max-height: 62.2vh;
+        		float: left;
+        	}
+            .notesHeightFish { height: 43.6vh; } // 45vh 16vh
+            //29.39vh
+        }
+        .notesF_Item {
+            width: $max-conv-width;
+            float: left;
+            position: relative;
+            .NoteIt {
+                float: left;
+                color: #848484;
+                font-size: $small-fix-10 + 1;
+                padding: $small-fix-15;
+                padding-top: $small-fix-07;
+                padding-bottom: $small-fix-07;
+                line-height: $small-fix-13 + 1;
+                position: relative;
+                .NoteItEdit {
+                    position: relative;
+                    width: 111%;
+                    height: $max-conv-height;
+                    border: $null-conv;
+                    background: transparent;
+                    &:focus {
+                        outline: $null-conv;
+                    }
+                }
+            }
+            .ThisNot_Fl {
+                position: absolute;
+                top: 106%;
+                left: $null-conv;
+                width: $max-conv-width;
+                background: $white;
+                border: 1px solid #ddd;
+                z-index: 100;
+                padding: $small-fix-07;
+                display: none;
+                @include box-shadow(0 0 $small-fix-07 0 rgba(0, 0, 0, 0.4));
+                textarea {
+                    float: left;
+                    width: $max-conv-width;
+                    height: $small-fix-70; // 70px
+                    border: 1px solid #ddd;
+                    padding: $small-fix-10 / 2;
+                    &:focus {
+                        outline: $null-conv;
+                    }
+                }
+            }
+            .addTh {
+                cursor: pointer;
+                float: left;
+                width: $max-conv-width;
+                text-align: center;
+                padding: $small-fix-10;
+                background: #1fadcf;
+                color: $white;
+                text-transform: uppercase;
+                margin-top: $small-fix-07;
+            }
+            .addSmsNow { display: none; }
+
+            .paddLft { padding-left: $small-fix-07 + 2; }
+
+            .icoNote, 
+            .icoSms { padding-left: $small-fix-35 + 1; } // 36px
+          
+            .icoNote {
+                &:before {
+                    content: '\e6d1';
+                    font-family: 'Linearicons';
+                    font-size: $small-fix-15 + 1;
+                    color: #777;
+                    position: absolute;
+                    top: $small-fix-10 + 2;
+                    left: $small-fix-10 + 1;
+                }
+            }
+            .icoSms {
+                &:before {
+                    content: '\e7a8';
+                    font-family: 'Linearicons';
+                    font-size: $small-fix-15 + 1;
+                    color: #777;
+                    position: absolute;
+                    top: $small-fix-10 + 2;
+                    left: $small-fix-10 + 1;
+                }
+            }
+            .saveNote {
+                position: absolute;
+                right: $small-fix-10 + 2; // 28px
+                top: $small-fix-05 + 1; // 6px
+                width: $small-fix-20;
+                height: $small-fix-20;
+                cursor: pointer;
+                &:before {
+                    content: '\f0c7';
+                    font-family: FontAwesome;
+                    font-size: $small-fix-20 + 1;
+                    color: #1fadcf;
+                    position: absolute;
+                    top: -6px;
+                    left: -1px;
+
+                }
+            }
+            .saveNoteSpin {
+                position: absolute;
+                right: $small-fix-10 + 2; // 28px
+                top: $small-fix-05 + 1;
+                width: $small-fix-20;
+                height: $small-fix-20;
+                &:before {
+                    content: '\f110';
+                    font-family: FontAwesome;
+                    font-size: $small-fix-20 + 1;
+                    color: #1fadcf;
+                    position: absolute;
+                    top: -6px;
+                    left: -1px;
+                }
+            }
+        }
+        .atb_Top {
+            float: left;
+            width: $max-conv-width;
+            background: #c6c6c6;
+            padding: $small-fix-05 + 1;
+            .atb_Header {
+                float: left;
+                color: $white;
+                font-size: $small-fix-10 + 2;
+                padding-left: $small-fix-10 + 2;
+                padding-right: $small-fix-10 + 2;
+                border-right: 1px solid $white;
+                &:last-of-type {
+                    border-right: $null-conv;
+                }
+            }
+        }
+        .TasksTop_Fl, 
+        .calls_Floor {
+            width: $max-conv-width;
+            float: left;
+        }
+        .mCSB_inside > {
+            .mCSB_container { margin-right: $null-conv }
+        } 
+    }
+
+    .PoliciesLead_Fl {
+        top: $null-conv;
+        padding-right: $null-conv;
+    }
+
+    .width12 { width: 12%; }
+    .width20 { width: 18%; }
+    .width23 { width: 23%; }
+    .width27 { width: 27%; } 
+    .width54 { width: 54%; }
+    .width45 { width: 45%; }
+    .width17-5 { width: 17.5%; }
+
+    .noteWhite, 
+    .noteWhiteEdit {
+    	background: $white;
+    }
+    .noteGrey, 
+    .noteGreyEdit { background: #eee }
+
+    .toShow, 
+    .bottomShow, 
+    .toShowFish {
+    	font-size: $small-fix-10;
+        color: #ddd;
+        float: right;
+        text-transform: uppercase;
+        padding: $small-fix-07 + 0.5;
+        padding-left: $null-conv;
+        cursor: pointer;
+    }
+
+    // Main Section
+    .SmarterSection {
+    	width: 68.5%;
+        position: relative;
+        float: left; 
+        padding: $small-fix-10;
+        padding-left: $small-fix-15; //40px
+        padding-bottom: $null-conv;
+        padding-top: $small-fix-03 + 1;
+        background: $white;
+    }
+
+    .SmarterSectionWith { width: $max-conv-width }
+
+    .topLeadDetail { display: none }
+
+    .leadDetail_Height {
+        height: 15vh; // 12.4vh
+    }
+    .fishingTemp {
+        .costumerDetails {
+            .costumerBoard {
+               .boxInp { margin: .4% } 
+            }
+        }
+    }
+
+    .downRightHeader {
+        position: relative; 
+        width: $max-conv-width; 
+        height: $small-fix-30 + 1; // 31px
+        background: #eee; 
+        float: left;
+        display: none;
+    }
+
+    .addleadTemp {
+        .phoneAdt_Fl { display: none }
+    }
+
+    /* Add New Lead*/
+    .addNewLead {
+        position: relative;
+        float: left;
+        width: 31.85%;
+        margin-left: $small-fix-07;
+        .top_addNewLead {
+            position: relative;
+            float: left;
+            width: $max-conv-width;
+            background: #eee;
+            border: 1px solid #ddd;
+            padding: $small-fix-07;
+            margin-bottom: $small-fix-07;
+        }
+        .bottom_addNewLead {
+            position: relative;
+            float: left;
+            width: $max-conv-width;
+            background: $white;
+            border: 1px solid #ddd;
+            padding: $small-fix-07;
+            margin-bottom: $small-fix-07;
+        }
+    }
+    .boxInp {
+        width: 48.3%;
+        float: left;
+        margin: .84%;
+        margin-top: $small-fix-05;
+        margin-bottom: $small-fix-05;
+        position: relative;
+        .boxLabel {
+            float: left;
+            width: $max-conv-width;
+            margin-bottom: $small-fix-02;
+            color: #777;
+            font-size: $small-fix-10 + 1;
+            font-weight: 100;
+        }
+        input {
+            width: $max-conv-width; // 98%
+           // height: $small-fix-30;
+            border: 0;
+            padding: $small-fix-03;
+            font-size: $small-fix-10 + 2;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+        .inptCover {
+            width: $max-conv-width;
+            position: relative;
+            float: left;
+            background: $white;
+            border: 1px solid #ddd;
+            height: $small-fix-30;
+            input {
+                border: $null-conv;
+                background: transparent;
+                height: $max-conv-height;
+                cursor: pointer;
+            }
+        }
+        .lifeAddLead, 
+        .cicAddLead, 
+        .levelAddLead, 
+        .guarteedAddLead {
+            &:before {
+                position: absolute;
+                content: "";
+                vertical-align: middle;
+                border-left: $small-fix-05 solid transparent;
+                border-right: $small-fix-05 solid transparent;
+                top: $small-fix-10 + 2;
+                right: $small-fix-07;
+                border-bottom: $small-fix-05 solid $black;
+                @include transform(180deg);
+                @include transition(.3s);
+            }
+        }
+        .rotateAddLead0 {
+            &:before {
+                @include transform(0deg);
+            }
+        }
+        .dropAddLead {
+            position: absolute;
+            width: $max-conv-width;
+            background: $white;
+            border: 1px solid #ddd;
+            left: $null-conv;
+            top: $max-conv-top + 2; // 102%
+            z-index: 100;
+            list-style: none;
+            margin: $null-conv;
+            padding: $null-conv;
+            display: none;
+            li {
+                .optSelect {
+                    width: $max-conv-width;
+                    float: left;
+                    padding: $small-fix-05;
+                    padding-left: $small-fix-17;
+                    font-size: $small-fix-10 + 1;
+                    background: #f9f9f9;
+                    color: #777;
+                    border-bottom: 1px solid #eee;
+                    cursor: pointer;
+                    @include transition(.3s);
+                    &:hover {
+                        background: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    .addLeadBtn {
+        background: #1fadcf;
+        color: $white;
+        width: $max-conv-width;
+        float: left;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $small-fix-17;
+        font-weight: bold;
+        padding: $small-fix-13 + 0.3; // 13.3px
+        padding-top: $small-fix-20;
+        height: 60.59px;
+        text-decoration: none;
+        &:hover, 
+        &:focus {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    .smllInpTop {
+        width: 24.3774%;
+        margin: $small-fix-02;
+    }
+
+    /* Policy Detail */
+    .PolicyDetaBoard {
+        position: relative;
+        float: left;
+        width: $max-conv-width;
+        padding: $small-fix-07;
+        .DetaBoardTr {
+            position: relative;
+            width: $max-conv-width;
+            float: left;
+            margin-bottom: $small-fix-15; // 25px
+            &:last-of-type {
+                margin-bottom: $small-fix-05;
+            }
+        }
+        .Detalast { margin-bottom: $small-fix-05; }
+
+        .DetaBoardGrid {
+            width: 24.35%;
+            padding: $small-fix-03;
+            padding-left: $small-fix-07;
+            padding-right: $small-fix-07;
+            float: left;
+            border: $null-conv;
+            border-bottom: 1px solid #ddd;
+            font-size: $small-fix-10 + 1;
+            color: $black;
+            font-weight: bold;
+            letter-spacing: $small-fix-01 / 2;
+            margin: $small-fix-02;
+            margin-top: $null-conv;
+            &:focus {
+                outline: $null-conv;
+            }
+        }
+        .DetaBoardGridExtraW {
+            width: 49.39%;
+            margin-right: $null-conv;
+        }
+    }
+    .tbl {
+        width: $max-conv-width;
+
+        thead > tr  {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+
+        th, td {
+            width: 29%;
+
+            label { font-size: $small-fix-13; }
+        }
+
+        td { font-size: $small-fix-13; }
+    }
+    .updateCurrent_Btns {
+        width: auto;
+        height: $small-fix-25;
+        position: relative;
+        float: right;
+        .CurrentBtn {
+            float: left;
+            color: #999;
+            font-size: $small-fix-10;
+            text-transform: uppercase;
+            background: #eee;
+            padding: $small-fix-07;
+            padding-left: $small-fix-35; //35px
+            padding-right: $small-fix-35; //35px
+            height: $max-conv-height;
+            text-decoration: none;
+            margin-right: $small-fix-05;
+            @include transition(.3s);
+            &:last-child {
+                margin-right: $null-conv;
+            }
+            &:hover {
+                text-decoration: none;
+                background: #1fadcf;
+                color: $white;
+            }
+        }
+    }
+    .detWSmall_Fl {
+        position: relative;
+        width: 75.2%;
+        float: left;
+    }
+
+    .btnPols {
+        width: 24%;
+        float: right;
+    }
+
+    .UpdateLetter {
+        position: relative;
+        float: left;
+        width: 100%; // 24%
+        height: 96px;
+        background: #1fadcf;
+        color: $white;
+        border: $null-conv;
+        font-size: $small-fix-15 + 1;
+        letter-spacing: -.5px;
+        line-height: $small-fix-17 + 2;
+        padding: $small-fix-30;
+        padding-top: $small-fix-40; // 40px
+        margin-top: $small-fix-01 + 0.5; // 1.5px
+        &:focus {
+            outline: $null-conv;
+        }
+        &:before {
+            content: '\f01e';
+            position: absolute;
+            font-family: FontAwesome;
+            font-size: $small-fix-15 + 1; // 16px
+            color: $white;
+            top: $small-fix-17 + 2;
+            left: $null-conv;
+            right: $null-conv;
+        }
+    }
+
+    .generateBtn_Fl {
+        margin-right: $null-conv !important;
+        width: 48.9% !important;
+        height: 89px !important;
+        float: right;
+        background: $white;
+        padding: $small-fix-07;
+        margin-top: $null-conv !important;
+
+        .generatePacks {
+            position: relative;
+            width: $max-conv-width;
+            height: $max-conv-height;
+            background: #1fadcf;
+            border: $null-conv;
+            color: $white;
+            text-transform: uppercase;
+            padding: $null-conv;
+            &:focus { outline: $null-conv; }
+            &:before {
+                content: '\f013';
+                position: absolute;
+                font-size: $small-fix-20;
+                font-family: FontAwesome;
+                color: $white;
+                left: 16%;
+                top: $small-fix-20 + 4;
+            }
+        }
+    }
+
+    .documents {
+        font-size: 12px;
+        padding-left: 0px;
+        margin-left: 15px;
+        list-style: none;
+
+        li {
+            div {
+                a {
+                    position: relative;
+                    left: 0;
+                    margin-bottom: 2px;
+                    float: left;
+                    width: $max-conv-width;
+                    font-size: $small-fix-10 + 1;
+                }
+            }
+        }
+    }
+
+    .PoliciesLead_Fl {
+        width: $max-conv-width;
+        float: left;
+        height: 25.6vh;
+        .mCSB_inside > {
+            .mCSB_container {
+                margin-right: $null-conv;
+            }  
+        }
+    }
+
+    // Modals
+    .modal-dialog {
+        width: $max-conv-width; 
+        margin: $null-conv;
+        .modal-content {
+            padding: $null-conv;
+            height: 97vh;
+            border: $null-conv;
+            @include border-radius($null-conv);
+            text-align: center;
+            background-clip: border-box;
+            @include box-shadow(none);
+            background-color: $rgba-white-095;
+            .close-modal {
+                position: absolute;
+                top: $small-fix-25;
+                right: $small-fix-25;
+                width: $small-fix-75; // 75px
+                height: $small-fix-75; // 75px
+                background-color: transparent;
+                cursor: pointer;
+                z-index: 99999;
+                .lr {
+                    z-index: 1051;
+                    width: $small-fix-01;
+                    height: $small-fix-75; // 75px
+                    margin-left: $small-fix-35; //35px
+                    background-color: #ccc;
+                    @include transform(45deg);
+                    .rl {
+                        z-index: 1052;
+                        width: $small-fix-01;
+                        height: $small-fix-75; // 75px
+                        background-color: #ccc;
+                        @include transform(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .quoteTemp {
+        .costumerDetails {
+            .costumerBoard {
+                .boxInp { height: 47px } 
+            }  
+        }  
+    }
+    .doNClose { display: block !important }
+
+    .ViewBtnF {
+        cursor: pointer;
+        position: absolute;
+        top: -1px;
+        padding: $small-fix-03 + 1;
+        padding-left: $small-fix-07 + 2;
+        padding-right: $small-fix-07 + 2;
+        padding-top: $small-fix-03 + 1;
+        color: $white;
+        background: #ccc;
+        text-decoration: none;
+        font-size: $small-fix-10;
+        height: $small-fix-20 + 1;
+        text-transform: uppercase;
+        text-align: center;
+        &:hover {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    .listenLiveWithBtn {
+        width: 46%;
+        font-weight: bold;
+        letter-spacing: $small-fix-01;
+    }
+    .listenLiveWithBtnBl {
+        background: #1fadcf;
+    }
+    .listenLiveWithBtnOr {
+        background: #e6af00;
+    }
+    .leftView {
+        left: $small-fix-10;
+        background: #1fadcf;
+    }
+    .rightView {
+        right: $small-fix-10;
+    }
+
+    .dateCrtLead {
+        float: left;
+        margin-bottom: $small-fix-03 + 1;
+        margin-top: -1.8px;
+        .CrTitle, .CrResult {
+            font-size: $small-fix-10 + 2;
+            float: left;
+        }
+        .CrTitle {
+            font-weight: bold;
+            margin-right: $small-fix-07;
+            letter-spacing: .3px;
+        }
+        .CrResult {
+            color: #777;
+        }
+    }
+
+    .dupeLeadLabel {
+        color: #cc0000;
+        font-weight: bold;
+        float: left;
+        left: $null-conv;
+        position: relative;
+        top: $small-fix-05;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        font-size: $small-fix-15 + 1;
+    }
+    .DateTime_Fl {
+        position: absolute;
+        width: $small-fix-55; // 55px
+        height: $max-conv-height;
+        top: $null-conv;
+        right: $null-conv;
+        background: #f2f2f2;
+
+        .fa-calendar-o, 
+        .fa-clock-o {
+            position: absolute;
+            top: $small-fix-07;
+            color: #333;
+            cursor: pointer;
+        }
+        .fa-calendar-o {
+            font-size: $small-fix-15 + 1;
+            left: $small-fix-07 + 1;
+        }
+        .fa-clock-o {
+            font-size: $small-fix-17;
+            right: $small-fix-07 + 1;
+        }
+    }
+
+    .disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+    .btn-warning {
+        color: $black !important;
+        background-color: #fca40c !important;
+        border-color: #fca40c !important;
+        &:before {
+            color: $black !important;
+        }
+    }
+
+    .gridBlueSelected {
+        background: #1dafd0 !important;
+
+        .TdBody { color: $white }
+
+        .listenLiveWithBtnBl { background: #3d566e }
+    }
+
+    .phoneAdt_Fl .delayClass {
+        pointer-events: none;
+        background: #f1a83b !important;
+        @include box-shadow(0 0 0 rgba(241, 168, 59, 1));
+        @include animation(delayClass 1s infinite);
+    }
+
+    @include keyframes(delayClass) {
+
+        // From 0%
+        0% { box-shadow: 0 0 0 0 rgba(241, 168, 59, 0.7) }
+
+        // Goes To 70%
+        70% { box-shadow: 0 0 0 $small-fix-13 rgba(241, 168, 59, 0) }
+
+        // Stops On 100%
+        100% { box-shadow: 0 0 0 0 rgba(241, 168, 59, 0) }
+    }
+
+    .expandIcon, 
+    .compressIcon {
+        color: $white;
+        position: absolute;
+        top: $small-fix-07 + 1;
+        right: 50px;
+        cursor: pointer;
+    }
+}
+
+.body1008 {
+    #callsFloor {
+        height: 82.6vh !important;
+    }
+}
+
+// Tasks Zoom
+.taskZoomModal {
+    position: fixed;
+    width: $max-conv-width;
+    height: $max-conv-height;
+    background: $rgba-black-01;
+    z-index: 1000;
+    display: none;
+    .taskZoom {
+        width: 55.73%;
+        max-width: 1070px;
+        position: absolute;
+        top: 45.5px;
+        right: $null-conv;
+    }
+}
+.expandToolTip {
+    background: #1fadcf;
+    color: $white;
+    font-size: $small-fix-10;
+    text-transform: uppercase;
+    padding: $small-fix-02;
+    padding-left: $small-fix-10;
+    padding-right: $small-fix-10;
+    border-radius: $small-fix-03;
+    right: $small-fix-30;
+    position: absolute;
+    top: -19px;
+    padding-top: $small-fix-03;
+    display: none;
+    &:after {
+        position: absolute;
+        content: "";
+        vertical-align: middle;
+        width: $null-conv;
+        height: $null-conv;
+        border-left: $small-fix-03 + 1 solid transparent;
+        border-right: $small-fix-03 + 1 solid transparent;
+        top: $max-conv-top;
+        right: $small-fix-20 + $small-fix-03 + 1; // 24px
+        border-bottom: $small-fix-05 + 1 solid $black;
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,1464 @@
+.leadTNav {
+  float: left;
+  position: relative;
+  margin-bottom: 4px; }
+  .leadTNav .LRefr_Fl {
+    float: left;
+    max-width: 283px;
+    position: relative;
+    top: 3px; }
+    .leadTNav .LRefr_Fl .referenceLead {
+      width: 100%;
+      float: left;
+      color: #3d566e;
+      font-size: 18px;
+      letter-spacing: -.5px;
+      word-break: break-word;
+      white-space: nowrap;
+      text-transform: uppercase; }
+    .leadTNav .LRefr_Fl .refIt {
+      float: left;
+      font-size: 11px;
+      color: #777;
+      position: relative;
+      top: -3px; }
+    .leadTNav .LRefr_Fl .createdL {
+      padding-right: 5px;
+      border-right: 1px solid #777; }
+    .leadTNav .LRefr_Fl .modifiedL {
+      padding-left: 5px; }
+  .leadTNav .bigBtn {
+    background: #eee;
+    border: 1px solid #eee;
+    width: 119.28px; }
+
+.LRefr_Btns {
+  width: 9.5%;
+  float: right;
+  height: 35px;
+  margin: 2px;
+  padding: 9px;
+  font-size: 11px;
+  color: #777;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer; }
+  .LRefr_Btns:first-of-type {
+    margin-right: 0; }
+.LRefr_Btns6 {
+  width: 6%; }
+
+.costumerDetails {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-bottom: 4px; }
+  .costumerDetails .costumerBoard {
+    width: 49.7%;
+    position: relative;
+    border: 1px solid #ddd; }
+    .costumerDetails .costumerBoard .formBoard_Title {
+      position: relative;
+      padding: 4px;
+      width: 100%;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background: #3d566e;
+      padding-left: 15px;
+      padding-right: 15px;
+      letter-spacing: .3px;
+      min-height: 25px;
+      color: #fff; }
+      .costumerDetails .costumerBoard .formBoard_Title .updaTeDetail {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 6px;
+        padding-left: 30px;
+        padding-right: 20px;
+        background: #9a9a9a;
+        font-weight: 100;
+        cursor: pointer; }
+        .costumerDetails .costumerBoard .formBoard_Title .updaTeDetail i {
+          position: absolute;
+          font-size: 12px;
+          color: #fff;
+          position: absolute;
+          top: 6.5px;
+          left: 7.5%; }
+    .costumerDetails .costumerBoard .title_BackWhite {
+      background: #fff; }
+    .costumerDetails .costumerBoard .form_Fl {
+      width: 100%;
+      float: left;
+      padding: 7px;
+      padding-top: 3px;
+      padding-bottom: 5px; }
+    .costumerDetails .costumerBoard .form_FlPolicy {
+      height: 60.4vh; }
+    .costumerDetails .costumerBoard .boxInp {
+      width: 31.645%;
+      float: left;
+      margin: .84%;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      position: relative; }
+      .costumerDetails .costumerBoard .boxInp .boxLabel {
+        float: left;
+        width: 100%;
+        margin-bottom: 2px;
+        color: #777;
+        font-size: 11px;
+        font-weight: 100; }
+      .costumerDetails .costumerBoard .boxInp .blueLabel {
+        color: #1fadcf; }
+      .costumerDetails .costumerBoard .boxInp input {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #ddd;
+        padding: 7px;
+        font-size: 12px; }
+        .costumerDetails .costumerBoard .boxInp input:focus {
+          outline: 0; }
+      .costumerDetails .costumerBoard .boxInp .inputBox {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 32px;
+        background: #fff;
+        border: 1px solid #ddd; }
+        .costumerDetails .costumerBoard .boxInp .inputBox .dobDatepicker {
+          background: transparent;
+          border: 0;
+          width: 85%;
+          padding: 7px; }
+      .costumerDetails .costumerBoard .boxInp .postcode_Fl {
+        border: 0; }
+        .costumerDetails .costumerBoard .boxInp .postcode_Fl:before {
+          content: '\f002';
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          background: #c6c6c6;
+          color: #fff;
+          font-size: 19px;
+          font-family: FontAwesome;
+          font-weight: 100;
+          top: 0;
+          right: 0;
+          padding-left: 6px;
+          padding-top: 1px; }
+        .costumerDetails .costumerBoard .boxInp .postcode_Fl input {
+          padding-right: 40px; }
+      .costumerDetails .costumerBoard .boxInp .datePicker_Fl:before {
+        content: '\e788';
+        font-family: 'Linearicons';
+        position: absolute;
+        top: 0;
+        right: 7px;
+        font-size: 21px;
+        color: #ddd; }
+    .costumerDetails .costumerBoard .detWSmall {
+      width: 32.6%;
+      margin: 1.5px; }
+    .costumerDetails .costumerBoard .boxClZIn {
+      z-index: 10000000000; }
+    .costumerDetails .costumerBoard .bottomForm {
+      background: #eee;
+      width: 100%;
+      float: left;
+      padding: 7px; }
+      .costumerDetails .costumerBoard .bottomForm .boxInp {
+        width: 100%;
+        margin: 0;
+        padding: 2px; }
+        .costumerDetails .costumerBoard .bottomForm .boxInp input {
+          border: 0; }
+        .costumerDetails .costumerBoard .bottomForm .boxInp textarea {
+          width: 100%;
+          border: 0;
+          height: 6vh;
+          padding: 7px;
+          font-size: 12px; }
+          .costumerDetails .costumerBoard .bottomForm .boxInp textarea:focus {
+            outline: 0; }
+    .costumerDetails .costumerBoard .boxInp23-35 {
+      width: 23.3%; }
+    .costumerDetails .costumerBoard .boxInp73 {
+      width: 73%; }
+    .costumerDetails .costumerBoard .GeneQtMinWith {
+      width: 48%; }
+      .costumerDetails .costumerBoard .GeneQtMinWith .GeneQtBtn:before {
+        left: 21%; }
+    .costumerDetails .costumerBoard .boxInpDispNone {
+      display: none; }
+    .costumerDetails .costumerBoard .boxInp10 {
+      width: 14.9%; }
+    .costumerDetails .costumerBoard .boxInp100 {
+      width: 98%; }
+    .costumerDetails .costumerBoard .smllInp {
+      width: 23.3%; }
+    .costumerDetails .costumerBoard .extraW {
+      width: 48.3%; }
+    .costumerDetails .costumerBoard .wTh4 {
+      width: 11.7%; }
+    .costumerDetails .costumerBoard .detailLeadW {
+      width: 31.5%; }
+    .costumerDetails .costumerBoard .detailUpLeadFishing {
+      width: 23.15%; }
+    .costumerDetails .costumerBoard .estraWPlus {
+      width: 47.65%;
+      margin: 2px;
+      margin-left: 7px;
+      margin-right: 7px;
+      height: 47px; }
+    .costumerDetails .costumerBoard .mExtra {
+      height: auto;
+      margin-right: 0;
+      float: right;
+      background: #fff;
+      padding: 7px;
+      width: 48.9%;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+      .costumerDetails .costumerBoard .mExtra .packTitle {
+        float: left;
+        font-size: 13px;
+        margin-top: 5px;
+        padding-left: 7px; }
+      .costumerDetails .costumerBoard .mExtra .selectPack {
+        float: right;
+        padding-bottom: 4px;
+        width: 64%;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 4px;
+        padding-left: 20px; }
+        .costumerDetails .costumerBoard .mExtra .selectPack:focus {
+          outline: 0; }
+    .costumerDetails .costumerBoard .Packsdrop {
+      height: auto;
+      min-height: 127px;
+      padding: 7px;
+      background: #fff; }
+    .costumerDetails .costumerBoard .extraBtn {
+      width: 100%;
+      margin: 0;
+      padding: 15px;
+      padding-top: 17px;
+      padding-bottom: 16px; }
+    .costumerDetails .costumerBoard .addPoliBtn {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #fff;
+      background: #1fadcf;
+      float: left;
+      position: relative;
+      height: 47px;
+      font-weight: bold;
+      padding: 14px;
+      cursor: pointer;
+      text-decoration: none; }
+      .costumerDetails .costumerBoard .addPoliBtn:before {
+        content: '\f067';
+        font-family: FontAwesome;
+        color: #fff;
+        font-size: 22px;
+        position: absolute;
+        top: 9px;
+        left: 33%; }
+    .costumerDetails .costumerBoard .formWhite {
+      background: #fff; }
+    .costumerDetails .costumerBoard .formGrey {
+      background: #eee; }
+    .costumerDetails .costumerBoard hr {
+      float: left;
+      width: 100%;
+      border-top: 2px solid #fff;
+      margin-bottom: 5px;
+      margin-top: 10px; }
+  .costumerDetails .costumerRight .boxInp .datePicker_Fl {
+    border: 0; }
+  .costumerDetails .costumerBoard_MaxWith {
+    width: 100%; }
+  .costumerDetails .addCustomer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    top: 0;
+    left: 0;
+    z-index: 10; }
+    .costumerDetails .addCustomer .addCustomerBtn {
+      background: #1fadcf;
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: 0;
+      padding: 8px;
+      padding-left: 38px;
+      padding-right: 20px;
+      position: relative;
+      margin: auto;
+      display: table;
+      top: 42%;
+      letter-spacing: .7px; }
+      .costumerDetails .addCustomer .addCustomerBtn:focus {
+        outline: 0; }
+      .costumerDetails .addCustomer .addCustomerBtn:before {
+        content: '\f055';
+        font-family: FontAwesome;
+        position: absolute;
+        left: 9px;
+        top: 2px;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 100; }
+  .costumerDetails .costumerLeft,
+  .costumerDetails .costumerMiddle {
+    float: left; }
+  .costumerDetails .costumerMiddle {
+    width: 100%; }
+  .costumerDetails .costumerRight {
+    float: right; }
+  .costumerDetails .costumerRightBorder {
+    border: 1px solid #f9f9f9; }
+  .costumerDetails .btnsLft {
+    position: relative;
+    float: left;
+    width: 29.67%;
+    margin-right: 3px; }
+  .costumerDetails .QutBtn {
+    background: #1fadcf;
+    color: #fff;
+    position: relative;
+    float: left;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-decoration: none;
+    max-height: 65px;
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 3px;
+    width: 100%; }
+    .costumerDetails .QutBtn:before {
+      content: '\f10e';
+      font-family: FontAwesome;
+      font-size: 17px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 7px;
+      font-weight: 100; }
+  .costumerDetails .bttBtnlft {
+    position: relative;
+    float: left;
+    background: #eee;
+    color: #000;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8.4px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-right: 3px;
+    padding-top: 32px;
+    max-height: 56.39px;
+    cursor: pointer; }
+    .costumerDetails .bttBtnlft:last-of-type {
+      margin-right: 0; }
+  .costumerDetails .smsBtn:before {
+    content: '\f0e5';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 18px;
+    left: 0;
+    right: 0;
+    color: #848484;
+    top: 4px;
+    font-weight: 100; }
+  .costumerDetails .Unassign:before {
+    content: '\f141';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 23px;
+    left: 0;
+    right: 0;
+    color: #848484;
+    top: 4px;
+    font-weight: 100; }
+  .costumerDetails .assignBt {
+    padding: 15.6px;
+    padding-top: 35px;
+    max-height: 60.5px;
+    margin: 0;
+    margin-bottom: 3px;
+    min-width: 82.89px; }
+    .costumerDetails .assignBt:last-of-type {
+      margin-bottom: 0; }
+  .costumerDetails .updaBtn:before {
+    content: '\f0c7';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    color: #848484;
+    top: 36px;
+    font-weight: 100; }
+  .costumerDetails .Reassign:before {
+    content: '\f01e';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    color: #848484;
+    top: 6px;
+    font-weight: 100; }
+  .costumerDetails .ReassignBtn:before {
+    top: 6px; }
+  .costumerDetails .btnW49 {
+    width: 49%;
+    height: 56.39px; }
+  .costumerDetails .btnW13 {
+    width: 13.2%;
+    height: 125.25px;
+    max-height: 125.25px;
+    border: 0; }
+    .costumerDetails .btnW13:focus {
+      outline: 0; }
+  .costumerDetails .downCostumer {
+    position: relative;
+    float: left;
+    width: 56%;
+    border: 1px solid #ddd;
+    padding: 4px;
+    margin-right: 3px; }
+  .costumerDetails .details_Left {
+    width: 49.7%;
+    float: left; }
+    .costumerDetails .details_Left .costumerBoard {
+      width: 100%; }
+    .costumerDetails .details_Left .costumerLeft {
+      margin-bottom: 4px; }
+      .costumerDetails .details_Left .costumerLeft:last-of-type {
+        margin-bottom: 0; }
+    .costumerDetails .details_Left .marginB3 {
+      margin-bottom: 3px !important; }
+    .costumerDetails .details_Left .top_Policies {
+      position: relative;
+      float: left;
+      width: 100%; }
+  .costumerDetails .GeneQtBtn {
+    background: #1fadcf;
+    color: #fff !important;
+    width: 100.3%;
+    float: left;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 13.3px;
+    padding-top: 15px;
+    height: 46.59px;
+    text-decoration: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    cursor: pointer; }
+    .costumerDetails .GeneQtBtn:before {
+      content: '\f013';
+      position: absolute;
+      font-size: 20px;
+      font-family: FontAwesome;
+      color: #fff;
+      left: 31%;
+      top: 10px; }
+
+.phoneAdt_Fl {
+  position: relative;
+  width: 90%;
+  margin: auto; }
+  .phoneAdt_Fl .phoneAdt {
+    width: 24px;
+    height: 24px;
+    background: #1fadcf;
+    opacity: .5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    margin: 7px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+    .phoneAdt_Fl .phoneAdt:hover {
+      background: #1fadcf;
+      opacity: 1;
+      color: #fff; }
+  .phoneAdt_Fl .sc:before,
+  .phoneAdt_Fl .phoneDw:before,
+  .phoneAdt_Fl .phoneUp:before,
+  .phoneAdt_Fl .PhoneLk:before {
+    color: #fff;
+    position: absolute; }
+  .phoneAdt_Fl .sc:before {
+    content: 'SC';
+    font-size: 11px;
+    top: 4px;
+    left: 4.8px; }
+  .phoneAdt_Fl .phoneDw:before {
+    content: '\f1e4';
+    font-family: FontAwesome;
+    font-size: 14px;
+    top: 2.4px;
+    left: 5px; }
+  .phoneAdt_Fl .phoneUp:before {
+    content: '\f095';
+    font-family: FontAwesome;
+    font-size: 16px;
+    top: 1px;
+    left: 5.7px; }
+  .phoneAdt_Fl .PhoneLk:before {
+    content: '\f0c1';
+    font-family: FontAwesome;
+    font-size: 14px;
+    top: 2px;
+    left: 5.3px; }
+
+.CostDetInpt {
+  width: 24.5%;
+  height: 25px;
+  border: 1px solid #ddd;
+  margin: 2.1px;
+  margin-top: 0;
+  margin-bottom: 3px;
+  padding: 12px;
+  font-size: 11px;
+  color: #777; }
+  .CostDetInpt:focus {
+    outline: 0; }
+
+.marginL {
+  margin-left: 0; }
+
+.marginR {
+  margin-right: 0; }
+
+.costumerDetailsHalf {
+  width: 49.7%; }
+  .costumerDetailsHalf .costumerBoard {
+    width: 100%; }
+
+.alertErrorBtn {
+  background: #1fadcf;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  position: relative;
+  float: left;
+  padding: 12px;
+  padding-left: 27px;
+  padding-right: 27px; }
+
+.columnState_Fl {
+  position: relative;
+  width: 100%;
+  float: left;
+  border: 1px solid #ddd;
+  border-left: 0;
+  height: 52vh; }
+  .columnState_Fl .stateColumn {
+    width: 183.5px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    float: left;
+    height: 12.924vh;
+    padding: 5px;
+    padding-top: 1px; }
+    .columnState_Fl .stateColumn .state-In {
+      width: 100%;
+      height: 100%;
+      background: #f2f2f2;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      float: left;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #999;
+      font-weight: bold;
+      padding: 49px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative; }
+      .columnState_Fl .stateColumn .state-In .state-InContent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-size: 11px;
+        text-align: left;
+        padding: 5px;
+        font-weight: 100;
+        text-transform: initial; }
+        .columnState_Fl .stateColumn .state-In .state-InContent .wom-res-link {
+          float: right;
+          margin-right: 5px;
+          color: #fff;
+          cursor: pointer; }
+        .columnState_Fl .stateColumn .state-In .state-InContent .InsideTd {
+          width: 100%;
+          float: left;
+          font-size: 11px;
+          padding: 1px;
+          color: #777; }
+        .columnState_Fl .stateColumn .state-In .state-InContent #quoteImg {
+          width: 45px;
+          float: right;
+          position: relative;
+          right: 10px; }
+    .columnState_Fl .stateColumn .blueBack {
+      background: #1fadcf;
+      color: #fff; }
+  .columnState_Fl .QuoteHistoryBlk {
+    width: 183.5px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    float: left;
+    padding: 5px;
+    padding-top: 1px; }
+    .columnState_Fl .QuoteHistoryBlk .state-In {
+      width: 100%;
+      height: 105px;
+      background: #f2f2f2;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      float: left;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: #999;
+      font-weight: bold;
+      padding: 49px;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      margin-bottom: 5px; }
+      .columnState_Fl .QuoteHistoryBlk .state-In .state-InContent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        color: #fff;
+        font-size: 11px;
+        text-align: left;
+        padding: 5px;
+        font-weight: 100;
+        text-transform: initial; }
+        .columnState_Fl .QuoteHistoryBlk .state-In .state-InContent .wom-res-link {
+          float: right;
+          margin-right: 5px;
+          color: #fff;
+          cursor: pointer; }
+        .columnState_Fl .QuoteHistoryBlk .state-In .state-InContent .InsideTd {
+          width: 100%;
+          float: left;
+          font-size: 11px;
+          padding: 1px;
+          color: #777; }
+        .columnState_Fl .QuoteHistoryBlk .state-In .state-InContent #quoteImg {
+          width: 45px;
+          float: right;
+          position: relative;
+          right: 15px; }
+      .columnState_Fl .QuoteHistoryBlk .state-In:last-of-type {
+        margin-bottom: 0; }
+  .columnState_Fl .heightLevel {
+    height: 11vh;
+    padding-top: 5px; }
+  .columnState_Fl .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+
+.spinner_Fl {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  border-left: 1px solid #ddd;
+  z-index: 100; }
+  .spinner_Fl .spinnerLoad {
+    position: relative;
+    margin: 16% auto 0;
+    float: none;
+    display: table;
+    font-size: 66px;
+    color: #3d566e; }
+
+.GoFishBtn {
+  background: #1fadcf;
+  color: #fff;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 13px;
+  max-height: 46px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer; }
+
+.modal-dialog {
+  width: 99%;
+  margin: 14px auto; }
+
+/* Fishing */
+.theadFish {
+  width: 100%;
+  float: left; }
+  .theadFish .thFish {
+    width: 9%;
+    float: left;
+    font-size: 9px;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding: 1px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    margin: .3%;
+    margin-bottom: 0; }
+  .theadFish .actionFish {
+    width: 13%; }
+
+.tbodyFish,
+.tbodyFishHome,
+.tTopHomebodyFish,
+.tBottomHomebodyFish {
+  width: 100%;
+  float: left;
+  height: 67.5vh; }
+  .tbodyFish .trFish,
+  .tbodyFishHome .trFish,
+  .tTopHomebodyFish .trFish,
+  .tBottomHomebodyFish .trFish {
+    width: 100%;
+    float: left; }
+  .tbodyFish .tdFish,
+  .tbodyFishHome .tdFish,
+  .tTopHomebodyFish .tdFish,
+  .tBottomHomebodyFish .tdFish {
+    width: 9%;
+    float: left;
+    font-size: 11px;
+    color: #b7b7b7;
+    padding: 1px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    margin: .3%;
+    height: 27px;
+    margin-bottom: 0;
+    position: relative; }
+  .tbodyFish .actionFish,
+  .tbodyFishHome .actionFish,
+  .tTopHomebodyFish .actionFish,
+  .tBottomHomebodyFish .actionFish {
+    width: 13%; }
+  .tbodyFish .mCSB_inside > .mCSB_container,
+  .tbodyFishHome .mCSB_inside > .mCSB_container,
+  .tTopHomebodyFish .mCSB_inside > .mCSB_container,
+  .tBottomHomebodyFish .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+
+.tbodyFish {
+  height: 70vh; }
+
+.topHomeGrid .thFish,
+.bottomHomeGrid .thFish {
+  width: 9.36%;
+  margin-bottom: 0; }
+
+.tTopHomebodyFish {
+  height: 17.2vh; }
+  .tTopHomebodyFish .tdFish {
+    margin-bottom: 0;
+    border-bottom: 0;
+    width: 9.36%; }
+
+.tBottomHomebodyFish {
+  height: 15.1vh; }
+  .tBottomHomebodyFish .tdFish {
+    margin-bottom: 0;
+    border-bottom: 0;
+    width: 9.36%; }
+
+.tdFoot {
+  width: 100%;
+  float: left;
+  height: 4.7vh;
+  padding: 17px;
+  text-align: center; }
+  .tdFoot .pageNum {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    border: 1px solid #ddd;
+    border-right: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #777;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+    .tdFoot .pageNum:last-of-type {
+      border-right: 1px solid #ddd; }
+    .tdFoot .pageNum:hover {
+      background: #1fadcf;
+      color: #fff;
+      border: 1px solid #1fadcf;
+      width: 27px;
+      height: 27px;
+      top: -8px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+
+/* Policies */
+.content_Notes {
+  width: 100%;
+  float: left;
+  padding: 15px; }
+  .content_Notes p {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 40%;
+    margin: 0;
+    margin-top: 20px; }
+    .content_Notes p:last-of-type {
+      padding-right: 0; }
+  .content_Notes .btn_Box {
+    width: 100%;
+    float: left;
+    margin-top: 20px; }
+    .content_Notes .btn_Box .Notes_Btn {
+      float: left;
+      padding: 7px;
+      background: #f9f9f9;
+      color: #777;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin: 3px;
+      border: 1px solid #eee;
+      cursor: pointer; }
+    .content_Notes .btn_Box .ApplyBtn {
+      background: #1fadcf;
+      border: 1px solid #1fadcf;
+      color: #fff; }
+
+.Uload_fl {
+  width: 100%;
+  float: left;
+  padding: 7px;
+  position: relative; }
+  .Uload_fl .Uload_In {
+    float: left;
+    background: #f9f9f9;
+    width: 49.5%;
+    padding: 7px;
+    height: 100px; }
+  .Uload_fl .flRgh_In {
+    float: right; }
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.inputfile-6 + label {
+  color: #777;
+  padding: 0;
+  height: 29px;
+  width: 100%;
+  float: left; }
+
+.inputfile-6 + label span {
+  width: 77%;
+  height: 29px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #eee;
+  font-size: 12px;
+  font-weight: 100; }
+
+.inputfile-6 + label strong {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  cursor: pointer; }
+  .inputfile-6 + label strong:before {
+    position: absolute;
+    content: '\f07c';
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #000;
+    top: 1px;
+    left: 5px; }
+
+.Upl_Btn {
+  display: inline-block;
+  width: 100%;
+  padding: 7px;
+  background: #1fadcf;
+  border: 1px solid #1fadcf;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer; }
+
+.coverDrop {
+  position: relative;
+  float: left;
+  width: 100%; }
+  .coverDrop input {
+    cursor: pointer; }
+  .coverDrop:before {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: 12px;
+    right: 7px;
+    border-bottom: 5px solid #000;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+
+.coverDropRot0:before {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg); }
+
+.CDropDow {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 101%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 500;
+  list-style: none;
+  display: none; }
+  .CDropDow li .optSelect {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    padding-left: 7px;
+    font-size: 11px;
+    background: #f9f9f9;
+    color: #777;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s; }
+    .CDropDow li .optSelect:hover {
+      background: #fff;
+      color: #000; }
+
+.topHomeGrid {
+  border: 1px solid #ddd;
+  height: 10.3vh; }
+
+.bottomHomeGrid {
+  border: 1px solid #ddd;
+  margin-bottom: 0;
+  height: 12.5vh; }
+
+.bothUp .tBottomHomebodyFish {
+  height: 10vh; }
+
+/* News */
+.tickerManger {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 85vh;
+  border: 1px solid #ddd;
+  padding: 4px; }
+  .tickerManger .AddNewsBlock {
+    position: relative;
+    width: 16.1%;
+    max-width: 305.9px;
+    height: 33vh;
+    background: #fff;
+    float: left;
+    border: 1px solid #ddd;
+    margin: 5px;
+    cursor: move; }
+    .tickerManger .AddNewsBlock .tickerTitle {
+      width: 100%;
+      float: left;
+      padding: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      background: #1fadcf;
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 40%; }
+      .tickerManger .AddNewsBlock .tickerTitle:before {
+        content: '\f047';
+        font-family: FontAwesome;
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        top: 3px;
+        right: 10px; }
+      .tickerManger .AddNewsBlock .tickerTitle:after {
+        content: 'Ticker Position';
+        position: absolute;
+        top: 5px;
+        left: 10px; }
+    .tickerManger .AddNewsBlock .contentNews {
+      width: 100%;
+      height: 91.5%;
+      padding: 7px;
+      position: relative;
+      float: left;
+      margin-bottom: 3px; }
+      .tickerManger .AddNewsBlock .contentNews .labelNews {
+        width: 100%;
+        float: left;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 3px; }
+      .tickerManger .AddNewsBlock .contentNews .editNews {
+        width: 100%;
+        height: 18vh;
+        float: left;
+        padding: 7px;
+        border: 1px solid #ddd;
+        font-size: 11px;
+        margin-bottom: 4px; }
+        .tickerManger .AddNewsBlock .contentNews .editNews:focus {
+          outline: 0; }
+      .tickerManger .AddNewsBlock .contentNews .urlNews {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #ddd;
+        padding: 7px;
+        font-size: 11px;
+        float: left;
+        margin-bottom: 4px; }
+        .tickerManger .AddNewsBlock .contentNews .urlNews:focus {
+          outline: 0; }
+      .tickerManger .AddNewsBlock .contentNews .actionsNews {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-top: 5px;
+        padding: 5px; }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .container-check {
+          top: 0;
+          padding-left: 0;
+          width: 20px;
+          height: 20px; }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .container-check input:checked ~ .checkmark {
+          background: #fff;
+          border: 1px solid #ddd; }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .checkmark {
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          border-radius: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #fff;
+          border: 1px solid #ddd; }
+          .tickerManger .AddNewsBlock .contentNews .actionsNews .checkmark:after {
+            border: solid #999;
+            left: 6px;
+            top: 2px;
+            width: 7px;
+            height: 11px;
+            border: solid #999;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg); }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .labelCheck {
+          position: relative;
+          float: left;
+          font-size: 10px;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: 4px;
+          margin-left: 5px;
+          margin-right: 18px; }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .actTickerBtn {
+          position: relative;
+          float: left;
+          border: 0;
+          font-size: 10px;
+          text-transform: uppercase;
+          background: #eee;
+          color: #aaa;
+          margin: 2px;
+          padding: 5px;
+          margin-bottom: 0;
+          margin-top: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 6px; }
+          .tickerManger .AddNewsBlock .contentNews .actionsNews .actTickerBtn:focus {
+            outline: 0; }
+        .tickerManger .AddNewsBlock .contentNews .actionsNews .actTickerBtnSave {
+          background: #1fadcf;
+          color: #fff; }
+    .tickerManger .AddNewsBlock .RemoveConfirm {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: none; }
+      .tickerManger .AddNewsBlock .RemoveConfirm .textConfirm {
+        float: left;
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 42%;
+        color: #000; }
+      .tickerManger .AddNewsBlock .RemoveConfirm .btns_Fl {
+        position: relative;
+        margin-top: 13px;
+        display: inline-block;
+        width: 100%;
+        text-align: center; }
+        .tickerManger .AddNewsBlock .RemoveConfirm .btns_Fl button {
+          border: 0;
+          padding: 5px;
+          padding-left: 12px;
+          padding-right: 12px;
+          font-size: 12px;
+          text-transform: uppercase; }
+          .tickerManger .AddNewsBlock .RemoveConfirm .btns_Fl button:focus {
+            outline: 0; }
+        .tickerManger .AddNewsBlock .RemoveConfirm .btns_Fl .confirmBtn {
+          background: #1fadcf;
+          color: #fff; }
+        .tickerManger .AddNewsBlock .RemoveConfirm .btns_Fl .CancelSendSms {
+          background: #ddd;
+          color: #777; }
+  .tickerManger .addTicker {
+    cursor: pointer; }
+    .tickerManger .addTicker:before {
+      content: '\f055';
+      font-family: FontAwesome;
+      font-size: 27px;
+      color: #ccc;
+      position: relative;
+      top: 41%;
+      margin: auto;
+      display: table; }
+    .tickerManger .addTicker:after {
+      content: 'Add Another';
+      position: relative;
+      top: 40%;
+      margin: auto;
+      display: table;
+      font-size: 11px;
+      color: #ccc; }
+  .tickerManger .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+
+.customerPolicy_Title {
+  position: relative;
+  padding: 4px;
+  width: 100%;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #3d566e;
+  padding-left: 15px;
+  padding-right: 15px;
+  letter-spacing: .3px;
+  min-height: 25px;
+  color: #fff; }
+
+.GeneQtSpin {
+  position: absolute;
+  background: #1fadcf;
+  font-size: 23px;
+  font-family: FontAwesome;
+  color: #fff;
+  left: 31%;
+  top: 13px;
+  display: none; }
+
+.GeneQtMinWith .GeneQtSpin {
+  left: 21%; }
+
+.searchEvent {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  cursor: pointer; }
+
+.postCode_fl {
+  position: absolute;
+  width: 98%;
+  background: #fff;
+  border: 1px solid #ddd;
+  left: 0;
+  top: 102%;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  max-height: 313px;
+  display: none; }
+  .postCode_fl .AutoPostAll {
+    list-style: none;
+    float: left;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer; }
+    .postCode_fl .AutoPostAll .autoPost {
+      float: left;
+      font-size: 10px;
+      color: #999;
+      line-height: 13px;
+      padding-right: 3px; }
+  .postCode_fl .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+
+.dropStartDate {
+  max-height: 288px;
+  overflow: hidden; }
+  .dropStartDate .mCSB_inside > .mCSB_container {
+    margin-right: 0; }
+
+.height969 .tTopHomebodyFish {
+  height: 15.8vh; }
+
+.bheight969 .tBottomHomebodyFish {
+  height: 12.2vh; }
+
+.colum1008 #columnState_Fl {
+  height: 45.1vh !important; }
+
+.colum969 #columnState_Fl {
+  height: 38.8vh !important; }
+
+.QtBlk {
+  width: 100%;
+  float: left;
+  cursor: pointer; }
+
+.qrItemSelected {
+  background: rgba(31, 173, 207, 0.2) !important; }
+  .qrItemSelected .InsideTd {
+    color: #025a87 !important; }
+
+#QuoteResultsHead,
+#pnlQuoteResults {
+  display: none; }
+
+.StopCall {
+  pointer-events: none;
+  background: #ddd !important; }
+
+.EditInput {
+  width: 80%;
+  background: transparent;
+  border: 0; }
+  .EditInput:focus {
+    outline: 0; }
+
+.loadComponent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  display: none; }
+  .loadComponent i {
+    font-size: 43px;
+    color: #777;
+    position: relative;
+    margin: auto;
+    display: table;
+    top: 37%; }
+
+.SecTaskFishing .fullTapFish {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 100; }
+  .SecTaskFishing .fullTapFish .openFull {
+    background: #1fadcf;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    padding: 8px;
+    padding-left: 38px;
+    padding-right: 20px;
+    position: relative;
+    margin: auto;
+    display: table;
+    top: 47%;
+    letter-spacing: .7px;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
+    .SecTaskFishing .fullTapFish .openFull:before {
+      content: '\f055';
+      font-family: FontAwesome;
+      position: absolute;
+      left: 9px;
+      top: 2px;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 100; }
+
+.AlertToastr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  min-height: 100px;
+  background: #fff;
+  font-size: 13px;
+  color: #777;
+  border: 1px solid #ddd;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000000;
+  padding: 12px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  display: none; }
+  .AlertToastr .closeAlert {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer; }
+
+.dateCrtLead {
+  position: relative;
+  float: right;
+  top: 7px;
+  margin-right: 4px; }
+
+.dupeLeadLabel {
+  margin-left: 50px; }
+
+.UplDocPol_Btn {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 7px;
+  background: #1fadcf;
+  color: #fff;
+  margin-top: 7px;
+  font-size: 11px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 56px;
+  height: 46px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  padding-top: 9px; }
+  .UplDocPol_Btn:before {
+    content: '\f093';
+    font: 21px FontAwesome;
+    position: absolute;
+    left: 18px;
+    top: 13px; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,239 @@
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_variables';
+@import '/xampp/htdocs/projects/assets/Conv-Sass/conv-sass1.0.0/assets/sass/_conv_mixins';
+
+
+/* Start Take Lead */
+
+.takeLead_Btn {
+	position: relative;
+    float: left;
+    // width: 190px;
+    width: 18.56%;
+    max-width: 240px;
+    min-width: 200px;
+    margin: $small-fix-02;
+    margin-top: $small-fix-03 + 1;
+}
+
+.takeLead_Success, 
+.takeLead_Error {
+	display: none;
+}
+
+.leadTBtn, 
+.leadTSuccess, 
+.leadFail {
+	background: #ffa500;
+	color: $white;
+	border: $small-fix-01 solid #ffa500;
+	width: $max-conv-width; //119px
+	position: relative;
+	@include transition(.2s);
+	float: left;
+	margin: $null-conv;
+	font-size: $small-fix-20 + 2;
+	font-weight: bold;
+	padding: $small-fix-02;
+	letter-spacing: $small-fix-02;
+}
+
+.leadTSuccess {
+	&:before {
+		content: '\f00c';
+	    font-family: FontAwesome;
+	    color: $white;
+	    font-size: $small-fix-20 + 2; //22px
+	    position: absolute;
+	    top: $small-fix-03;
+	    left: $null-conv;
+	    right: $null-conv;
+	}
+}
+
+.leadFail {
+	&:before {
+		content: '\f00d';
+	    font-family: FontAwesome;
+	    color: $white;
+	    font-size: $small-fix-20 + 2;
+	    position: absolute;
+	    top: $small-fix-03;
+	    left: $null-conv;
+	    right: $null-conv;
+	}
+}
+
+.aditional_Btn {
+	width: $max-conv-width / 2;
+	position: absolute;
+    right: $null-conv;
+    top: $null-conv;
+	height: $small-fix-35;
+	background: $white;
+}
+
+.boxShTakeLead {
+	@include box-shadow($null-conv $null-conv $small-fix-07 $null-conv rgba(255, 255, 255, 1));
+	background: #f9f9f9;
+	color: $black;
+	border: $small-fix-01 solid #999;
+	&:hover {
+		background: #1fadcf;
+	    color: $white;
+	    border: $small-fix-01 solid #1fadcf;
+	    &:after {
+	    	border-bottom: $small-fix-07 + 1 solid #1fadcf;
+	    }
+	}
+	&:after {
+		position: absolute;
+	    content: "";
+	    vertical-align: middle;
+	    border-left: $small-fix-07 solid transparent;
+	    border-right: $small-fix-07 solid transparent;
+	    top: $small-fix-30 + 3;
+	    left: 45%;
+	    border-bottom: $small-fix-07 + 1 solid $white;
+	    @include transform(180deg);
+	}
+}
+.smallBtn {
+	position: relative;
+    width: $max-conv-width / 2;
+    height: $max-conv-height;
+    float: left;
+    margin: $null-conv;
+    // background: #ffa500;
+    background: rgb(52, 198, 52);
+    color: $white;
+    border-left: $small-fix-01 solid #1f2d3b;
+}
+
+.viewBtn, 
+.addBtn {
+	&:before {
+		font-family: 'Linearicons';
+		position: absolute;
+		top: $small-fix-01;
+		font-size: $small-fix-20 + 3;
+	    color: $white;
+	}
+}
+.viewBtn {
+	&:before {
+		content: '\e6a5';
+	    left: $small-fix-17;
+	}
+}
+.addBtn {
+	&:before {
+		content: '\e6d1';
+	    left: $small-fix-17 + 2;
+	}
+}
+
+.btnTip {
+	position: absolute;
+    top: $small-fix-17 + 1;
+    background: #1fadcf;
+    color: $white;
+    padding: $small-fix-03;
+    padding-left: $small-fix-20;
+    padding-right: $small-fix-20;
+    border-radius: $small-fix-03;
+    text-transform: initial;
+    font-size: $small-fix-10 + 2;
+    display: none;
+    &:after {
+    	position: absolute;
+	    content: "";
+	    vertical-align: middle;
+	    border-left: $small-fix-05 solid transparent;
+	    border-right: $small-fix-05 solid transparent;
+	    top: $small-fix-10 - 2;
+	    border-bottom: $small-fix-05 solid #1fadcf;
+    }
+}
+
+.viewTip {
+	left: -130%;
+	&:after {
+		right: -7px;
+	    @include transform(90deg);
+	}
+}
+.addTip {
+	right: -125%;
+	&:after {
+	    left: -7px;
+	    top: $small-fix-07 + 1;
+	    @include transform(-90deg);
+	}
+}
+
+.viewBtnLeft {
+	@include animation(viewBtnLeft .35s 1 forwards);
+	@include animationdelay(.35s);
+}
+
+.addBtnTop {
+	@include animation(addBtnTop .35s 1 forwards);
+	@include animationdelay(.55s);
+}
+
+@keyframes viewBtnLeft {
+	0% { left: -10% }
+	100% { left: 40.7% }
+}
+@-webkit-keyframes viewBtnLeft {
+	0% { left: -10% }
+	100% { left: 40.7% }
+}
+@-moz-keyframes viewBtnLeft {
+	0% { left: -10% }
+	100% { left: 40.7% }
+}
+
+@keyframes addBtnTop {
+	0% { top: -370% }
+	100% { top: 88% }
+}
+@-webkit-keyframes addBtnTop {
+	0% { top: -370% }
+	100% { top: 88% }
+}
+@-moz-keyframes addBtnTop {
+	0% { top: -370% }
+	100% { top: 88% }
+}
+
+
+.TakeLeadTip {
+	position: absolute;
+	padding: $small-fix-03;
+	background: $white;
+	color: $black;
+	border: 1px solid #999;
+	@include border-radius(3px);
+	top: $max-conv-top + 2; // 102%
+    left: $null-conv;
+    width: $max-conv-width;
+    z-index: 100;
+    font-size: $small-fix-07 + 2; 
+    letter-spacing: .5px;
+    text-align: center;
+    display: none;
+    &:before {
+    	position: absolute;
+	    content: "";
+	    vertical-align: middle;
+	    border-left: $small-fix-05 solid transparent;
+	    border-right: $small-fix-05 solid transparent;
+	    top: -5px;
+	    right: 23px;
+	    border-bottom: $small-fix-05 solid $white;
+	    transform: rotate(0deg);
+    }
+}
+
+/* End Take Lead */

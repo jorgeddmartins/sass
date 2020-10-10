@@ -1,0 +1,301 @@
+.Dashboard {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .Dashboard .dashCharts {
+    position: relative;
+    margin: .5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    background: #fff;
+    height: 40vh;
+    float: left; }
+    .Dashboard .dashCharts .chartTitle {
+      width: 100%;
+      float: left;
+      padding: 20px;
+      padding-bottom: 13px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #1fadcf;
+      letter-spacing: -0.5px; }
+    .Dashboard .dashCharts .chart_Floor {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      padding-top: 0;
+      padding-bottom: 0; }
+  .Dashboard .topChart {
+    width: 24%;
+    max-width: 456px; }
+  .Dashboard .bottomChart50 {
+    width: 49%;
+    max-width: 931px; }
+  .Dashboard .getDataFloor .panel-input:nth-child(1),
+  .Dashboard .getDataFloor .panel-input:nth-child(2),
+  .Dashboard .getDataFloor .panel-input:nth-child(3) {
+    display: none; }
+  .Dashboard .top-Grid {
+    padding-left: 21%;
+    margin-bottom: 5px !important; }
+
+.Allchart_Floor {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 87%; }
+  .Allchart_Floor .AllChart_Title {
+    width: 100%;
+    float: left;
+    padding: 5px;
+    text-align: center; }
+    .Allchart_Floor .AllChart_Title .AllChart_InTitle {
+      margin: 5px;
+      font-size: 11px;
+      font-weight: bold; }
+      .Allchart_Floor .AllChart_Title .AllChart_InTitle .square {
+        width: 11px;
+        height: 11px;
+        display: inline-block;
+        position: relative;
+        top: 1.5px;
+        margin-right: 3px; }
+      .Allchart_Floor .AllChart_Title .AllChart_InTitle .squareOrange {
+        background: #ff6800; }
+      .Allchart_Floor .AllChart_Title .AllChart_InTitle .squareGreen {
+        background: #a0a700; }
+  .Allchart_Floor .AllCharts_Plat {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 90%; }
+    .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat {
+      width: 91%;
+      height: 95%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: 8px;
+      border: 1px solid #eee;
+      border-bottom: 1px solid #333; }
+      .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace {
+        position: relative;
+        width: 11.1%;
+        height: 100%;
+        border-right: 1px solid #eee;
+        float: left; }
+        .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace:last-child {
+          border-right: 0; }
+        .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace span {
+          position: relative;
+          width: 100%;
+          height: 10%;
+          border-bottom: 1px solid #eee;
+          float: left; }
+          .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace span:last-child {
+            border-bottom: 0; }
+        .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0; }
+          .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .ChartBar {
+            position: absolute;
+            width: 12px;
+            bottom: 0;
+            border-bottom: 0;
+            height: 0; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .ChartBar .ChartBarToolTip {
+              position: absolute;
+              width: auto;
+              white-space: nowrap;
+              padding: 5px;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 3px;
+              height: auto;
+              top: 6px;
+              z-index: 20;
+              color: #fff;
+              font-size: 11px;
+              left: 14px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px;
+              display: none; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .ChartBar .Orange {
+              background: #ff6800; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .ChartBar .Green {
+              background: #a0a700; }
+          .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .OrangeBar {
+            background: #ff6800;
+            left: 7px; }
+          .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .GreenBar {
+            background: #a0a700;
+            left: 26px; }
+          .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .SpacePlatBar {
+            position: absolute;
+            width: 12px;
+            bottom: 0;
+            height: 0;
+            border-bottom: 0; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .SpacePlatBar .ChartBarToolTip {
+              position: absolute;
+              width: auto;
+              white-space: nowrap;
+              padding: 5px;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-bottom: 3px;
+              height: auto;
+              top: 6px;
+              z-index: 20;
+              color: #fff;
+              font-size: 11px;
+              left: 14px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              border-radius: 4px;
+              display: none; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .SpacePlatBar .Orange {
+              background: #ff6800; }
+            .Allchart_Floor .AllCharts_Plat .AllCharts_InPlat .chartSpace .chartSpacePlat .SpacePlatBar .Green {
+              background: #a0a700; }
+  .Allchart_Floor .leftScale {
+    position: absolute;
+    width: 31px;
+    top: 0;
+    left: 0;
+    height: 95%; }
+    .Allchart_Floor .leftScale span {
+      float: left;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 9.3px;
+      color: #025a87; }
+      .Allchart_Floor .leftScale span:first-child {
+        margin-top: -10px; }
+      .Allchart_Floor .leftScale span:last-child {
+        margin-bottom: 0; }
+  .Allchart_Floor .barHeight {
+    width: 14.27%;
+    height: 100%;
+    position: relative;
+    float: left;
+    border: 1px solid #eee;
+    border-right: 0;
+    border-bottom: 0; }
+    .Allchart_Floor .barHeight:first-child {
+      border-left: 0; }
+
+.sdaySundayOrange {
+  -webkit-animation: sdaySundayOrange 1s 1 forwards;
+  -moz-animation: sdaySundayOrange 1s 1 forwards;
+  -o-animation: sdaySundayOrange 1s 1 forwards;
+  animation: sdaySundayOrange 1s 1 forwards; }
+
+.sdaySundayGreen {
+  -webkit-animation: sdaySundayGreen 1s 1 forwards;
+  -moz-animation: sdaySundayGreen 1s 1 forwards;
+  -o-animation: sdaySundayGreen 1s 1 forwards;
+  animation: sdaySundayGreen 1s 1 forwards; }
+
+.sdayMondayOrange {
+  -webkit-animation: sdayMondayOrange 1s 1 forwards;
+  -moz-animation: sdayMondayOrange 1s 1 forwards;
+  -o-animation: sdayMondayOrange 1s 1 forwards;
+  animation: sdayMondayOrange 1s 1 forwards; }
+
+.sdayMondayGreen {
+  -webkit-animation: sdayMondayGreen 1s 1 forwards;
+  -moz-animation: sdayMondayGreen 1s 1 forwards;
+  -o-animation: sdayMondayGreen 1s 1 forwards;
+  animation: sdayMondayGreen 1s 1 forwards; }
+
+.sdayTuesdayOrange {
+  -webkit-animation: sdayTuesdayOrange 1s 1 forwards;
+  -moz-animation: sdayTuesdayOrange 1s 1 forwards;
+  -o-animation: sdayTuesdayOrange 1s 1 forwards;
+  animation: sdayTuesdayOrange 1s 1 forwards; }
+
+.sdayTuesdayGreen {
+  -webkit-animation: sdayTuesdayGreen 1s 1 forwards;
+  -moz-animation: sdayTuesdayGreen 1s 1 forwards;
+  -o-animation: sdayTuesdayGreen 1s 1 forwards;
+  animation: sdayTuesdayGreen 1s 1 forwards; }
+
+.sdayWednesdayOrange {
+  -webkit-animation: sdayWednesdayOrange 1s 1 forwards;
+  -moz-animation: sdayWednesdayOrange 1s 1 forwards;
+  -o-animation: sdayWednesdayOrange 1s 1 forwards;
+  animation: sdayWednesdayOrange 1s 1 forwards; }
+
+.sdayWednesdayGreen {
+  -webkit-animation: sdayWednesdayGreen 1s 1 forwards;
+  -moz-animation: sdayWednesdayGreen 1s 1 forwards;
+  -o-animation: sdayWednesdayGreen 1s 1 forwards;
+  animation: sdayWednesdayGreen 1s 1 forwards; }
+
+.active-card {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .active-card .card {
+    width: 100%;
+    height: 68%;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+    .active-card .card h6 {
+      display: block;
+      position: relative;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 6em;
+      top: 29%; }
+  .active-card .well {
+    min-height: 130px;
+    padding: 5px;
+    margin-bottom: 0;
+    font-size: 3em;
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0; }
+    .active-card .well h3 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      margin-top: 10%;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      font-size: 20px; }
+  .active-card .label-info {
+    background: #5bc0de; }
+  .active-card .green-info {
+    background: #0f9d58; }
+  .active-card .yellow-info {
+    background: #f8b2a5; }
+
+/*# sourceMappingURL=dashboard.css.map */
